@@ -1,5 +1,3 @@
-package main;
-
 public class Review {
     // NOTE: NOT USED IN SKELETON MODEL
     private String reviewID;
