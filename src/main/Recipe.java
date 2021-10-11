@@ -5,6 +5,7 @@ public class Recipe {
     private String instructions;
     private String ingredients;
     private String genre;
+    private String name;
     private int rating;
     private int ID;
     private ArrayList<Review> RecipeReviews;
@@ -12,6 +13,7 @@ public class Recipe {
     public String getInstructions() {return instructions;}
     public String getIngredients() {return ingredients;}
     public String getGenre() {return genre;}
+    public String getName() {return name;}
     public int getRating() {return rating;}
     public int getID() {return ID;}
     public ArrayList<Review> getRecipeReviews() {return RecipeReviews;}
@@ -21,7 +23,7 @@ public class Recipe {
     public void setGenre(String genre) {this.genre = genre;}
     public void setRating(int rating) {this.rating = rating;}
     public void setID(int ID) {this.ID = ID;}
-
+    public void setName(String name) {this.name = name;}
 }
 
 
