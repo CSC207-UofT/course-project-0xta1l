@@ -6,4 +6,8 @@ public class RecipeLibrary {
     public ArrayList<Recipe> getListOfAllRecipes() {
         return ListOfAllRecipes;
     }
+
+    public void addRecipes(Recipe recipe) {
+        ListOfAllRecipes.add(recipe) ;
+    }
 }
