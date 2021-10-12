@@ -10,6 +10,7 @@ public class Recipe {
     private int ID;
     private ArrayList<Review> RecipeReviews;
 
+
     public String getInstructions() {return instructions;}
     public String getIngredients() {return ingredients;}
     public String getGenre() {return genre;}
@@ -24,6 +25,9 @@ public class Recipe {
     public void setRating(int rating) {this.rating = rating;}
     public void setID(int ID) {this.ID = ID;}
     public void setName(String name) {this.name = name;}
+
+
+
 }
 
 

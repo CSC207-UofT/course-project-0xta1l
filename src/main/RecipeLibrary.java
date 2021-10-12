@@ -10,4 +10,5 @@ public class RecipeLibrary {
     public void addRecipes(Recipe recipe) {
         ListOfAllRecipes.add(recipe) ;
     }
+
 }
