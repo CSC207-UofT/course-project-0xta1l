@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class RecipeLibrary {
-    private ArrayList<Recipe> ListOfAllRecipes;
+    private ArrayList<Recipe> ListOfAllRecipes= new ArrayList<>();
 
     public ArrayList<Recipe> getListOfAllRecipes() {
         return ListOfAllRecipes;
