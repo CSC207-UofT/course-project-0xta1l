@@ -6,8 +6,8 @@ public class User {
     private String password;
     private String username;
     private String biography;
-    private ArrayList<Recipe> SavedRecipes;
-    private ArrayList<Review> UserReviews;
+    private ArrayList<Recipe> SavedRecipes = new ArrayList<>();
+    private ArrayList<Review> UserReviews = new ArrayList<>();
 
     public String getDisplayName(){return displayName;}
     public int getAge() {return age;}

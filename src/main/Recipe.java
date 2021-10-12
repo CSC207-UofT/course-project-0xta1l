@@ -8,7 +8,7 @@ public class Recipe {
     private String name;
     private int rating;
     private int ID;
-    private ArrayList<Review> RecipeReviews;
+    private ArrayList<Review> RecipeReviews = new ArrayList<>();
 
 
     public String getInstructions() {return instructions;}

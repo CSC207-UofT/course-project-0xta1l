@@ -31,15 +31,8 @@ public class UserTest {
     @Test(timeout = 50)
     public void TestgetUserSavedRecipes() {
         ArrayList<Recipe> lst = new ArrayList<>();
-        Recipe recipe1= new Recipe();
-        recipe1.setGenre("Jamaican");
-        recipe1.setID(50);
-        recipe1.setIngredients("water flour sugar");
-        recipe1.setRating(5);
-        recipe1.setName("Oxtail Stew");
-        recipe1.setInstructions("just cook");
-        lst.add(recipe1);
-        assertEquals(lst, user.getUserSavedRecipes());
+        lst.add(recipe);
+        assertEquals(lst.get(0), user.getUserSavedRecipes().get(0));
 
     }
 }
