@@ -9,7 +9,9 @@ public class Recipe {
     private int rating;
     private int ID;
     private ArrayList<Review> RecipeReviews = new ArrayList<>();
+
     private String image;
+
 
     public String getInstructions() {return instructions;}
     public String getIngredients() {return ingredients;}
@@ -26,7 +28,13 @@ public class Recipe {
     public void setRating(int rating) {this.rating = rating;}
     public void setID(int ID) {this.ID = ID;}
     public void setName(String name) {this.name = name;}
+
     public void setImage(String image) {this.image = image;}
+
+
+
+
+
 }
 
 
