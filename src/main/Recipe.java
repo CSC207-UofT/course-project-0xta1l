@@ -9,9 +9,17 @@ public class Recipe {
     private int rating;
     private int ID;
     private ArrayList<Review> RecipeReviews = new ArrayList<>();
-
     private String image;
 
+    Recipe(){}
+    Recipe(String i, String ing, String g, String name, int rating, int id, String img){
+        this.instructions = i;
+        this.ingredients = ing;
+        this.genre = g;
+        this.name = name;
+        this.rating = rating;
+        this.ID = id;
+        this.image = img;}
 
     public String getInstructions() {return instructions;}
     public String getIngredients() {return ingredients;}
