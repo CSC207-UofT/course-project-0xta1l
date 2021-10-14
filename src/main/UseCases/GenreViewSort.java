@@ -21,7 +21,7 @@ import java.util.ArrayList;
 //        Sorts list of recipe previews according to key
 //        Outputs rearranged list
 
-class GenreViewSortUseCase {
+class GenreViewSort{
 
     public ArrayList<String> genresViewList(User user){
         GenreLibrary genrelibrary = new GenreLibrary();
