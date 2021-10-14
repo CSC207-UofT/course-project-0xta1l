@@ -7,7 +7,6 @@ import java.util.ArrayList;
 
 
 public class UserTest {
-    // TODO Change this file name and add testing methods for our use cases/controllers. This test is failing btw idk why
     Recipe recipe = new Recipe();
     User user = new User();
     @Before
