@@ -10,7 +10,6 @@ public class User {
     private ArrayList<Recipe> SavedRecipes = new ArrayList<>();
 
     // For now until we properly use the review entity in the future, User reviews is an ArrayList
-    private ArrayList<Recipe> SavedRecipes = new ArrayList<>();
     private ArrayList<Review> UserReviews = new ArrayList<>();
 
     public String getDisplayName(){return displayName;}
@@ -29,6 +28,9 @@ public class User {
     public void setBiography(String biography) {this.biography = biography;}
     public void setInterests(String interests) {this.interests = interests;}
 
+    public void addSavedRecipes(Recipe recipe) {this.SavedRecipes.add(recipe);}
+    public ArrayList<Recipe> getUserSavedRecipes() {return this.getSavedRecipes();}
+
     public ArrayList<Object> getProfile(){
         ArrayList<Object> profile = new ArrayList<>();
         profile.add(getDisplayName());
@@ -37,9 +39,7 @@ public class User {
         profile.add(getBiography());
         profile.add(getAge());
         return profile;
-      
-    public void addSavedRecipes(Recipe recipe) {this.SavedRecipes.add(recipe);}
-    public ArrayList<Recipe> getUserSavedRecipes(){return this.getSavedRecipes();}
+
 
 
     }
