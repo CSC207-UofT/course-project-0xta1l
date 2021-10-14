@@ -1,7 +1,8 @@
 import org.junit.*;
 import java.util.HashMap;
+import Entities.*;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class GenreLibraryTest {
     GenreLibrary genreLibrary = new GenreLibrary();
@@ -10,16 +11,14 @@ public class GenreLibraryTest {
 
     @Before
     public void setUp() throws Exception {
-        genreLibrary.addRecipes("Western", recipe);
+        genreLibrary.addRecipes("Western", recipe);}
 
-    }
     @Test(timeout = 50)
     public void TestGenreLibraryAddRecipes() {
         HashMap<Integer, Recipe> recipe_map = new HashMap<>();
         recipe_map.put(recipe.getID(), recipe);
         HashMap<String, HashMap<Integer, Recipe>> genremap = new HashMap<>();
         genremap.put(recipe.getGenre(), recipe_map);
-
         assertEquals(genremap.get("Western"), genreLibrary.getAllRecipes("Western"));
     }
 }

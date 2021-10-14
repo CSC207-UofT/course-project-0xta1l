@@ -12,8 +12,8 @@ public class Recipe {
     private ArrayList<Review> RecipeReviews = new ArrayList<>();
     private String image;
 
-    Recipe(){}
-    Recipe(String i, String ing, String g, String name, int rating, int id, String img){
+    public Recipe(){}
+    public Recipe(String i, String ing, String g, String name, int rating, int id, String img){
         this.instructions = i;
         this.ingredients = ing;
         this.genre = g;

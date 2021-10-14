@@ -24,7 +24,8 @@ class UserCreate {
             new_user.setPassword(password);
             new_user.setUsername(username);
             new_user.setBiography(biography);
-            new_user.setInterests(interests);
+            for (String i:interests){new_user.addInterests(i);}
+
             return true;
         }
     }
