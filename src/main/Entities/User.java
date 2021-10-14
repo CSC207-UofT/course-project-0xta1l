@@ -38,7 +38,7 @@ public class User {
     public void setPassword(String password) {this.password = password;}
     public void setUsername(String username) {this.username = username;}
     public void setBiography(String biography) {this.biography = biography;}
-    public void setInterests(ArrayList<String> interests) {this.interests = interests;}
+    public void addInterests(String interest) {this.interests.add(interest);}
 
     public void addSavedRecipes(Recipe recipe) {this.SavedRecipes.add(recipe);}
     public ArrayList<Recipe> getUserSavedRecipes() {return this.getSavedRecipes();}
