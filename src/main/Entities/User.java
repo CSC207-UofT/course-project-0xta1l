@@ -1,7 +1,5 @@
 package Entities;
 
-import Entities.Recipe;
-
 import java.util.ArrayList;
 
 public class User {
@@ -16,9 +14,9 @@ public class User {
     // For now until we properly use the review entity in the future, Entities.User reviews is an ArrayList
     private ArrayList<Review> UserReviews = new ArrayList<>();
 
-    User(){}
+    public User(){}
 
-    User(String name, int age, String pws, String username, String bio, String interests){
+    public User(String name, int age, String pws, String username, String bio, ArrayList<String> interests){
         this.displayName = name;
         this.age = age;
         this.password = pws;
