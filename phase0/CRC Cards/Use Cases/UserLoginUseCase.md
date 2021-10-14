@@ -1,4 +1,4 @@
-Class name: UserLogin (USE CASE)
+Class name: UserLoginUseCase
 
 Responsibilities:
 - Logs in existing User

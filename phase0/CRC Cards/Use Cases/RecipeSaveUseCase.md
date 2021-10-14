@@ -1,4 +1,4 @@
-Class name: RecipeSave (USE CASE)
+Class name: RecipeSaveUseCase 
 
 Responsibilities:
 - Adds a recipe to User's saved recipes

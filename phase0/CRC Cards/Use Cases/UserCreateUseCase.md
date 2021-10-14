@@ -1,4 +1,4 @@
-Class name: UserCreate (USE CASE)
+Class name: UserCreateUseCase
 
 Responsibilities:
 - Creates User entities

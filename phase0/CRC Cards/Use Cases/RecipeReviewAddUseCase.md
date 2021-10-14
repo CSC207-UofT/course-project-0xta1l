@@ -1,4 +1,4 @@
-Class name: RecipeReviewAdd (USE CASE)
+Class name: RecipeReviewAddUseCase
 
 Responsibilities:
 - Creates review for recipe if user has not previously reviewed it

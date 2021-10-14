@@ -1,4 +1,4 @@
-Class name: GetReview (USE CASE)
+Class name: GetReviewUseCase
 
 Responsibilities:
 - Gets review from User or Recipe

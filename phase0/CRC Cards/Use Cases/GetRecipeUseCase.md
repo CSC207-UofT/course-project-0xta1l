@@ -1,4 +1,4 @@
-Class name: GetRecipe (USE CASE)
+Class name: GetRecipeUseCase
 
 Responsibilities:
 - Gets list of recipes from User's saved recipes or from GenreLibrary

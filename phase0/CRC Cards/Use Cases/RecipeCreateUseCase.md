@@ -1,4 +1,4 @@
-Class name: RecipeCreate (USE CASE)
+Class name: RecipeCreateUseCase
 
 Responsibilities:
 - Creates Recipe 

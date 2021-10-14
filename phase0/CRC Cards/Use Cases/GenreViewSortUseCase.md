@@ -1,4 +1,4 @@
-Class name: GenreViewSort (USE CASE)
+Class name: GenreViewSortUseCase
 
 Responsibilities:
 - Gets list of genres

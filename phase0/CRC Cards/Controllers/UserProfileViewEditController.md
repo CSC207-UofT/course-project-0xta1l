@@ -1,4 +1,4 @@
-Class name: UserProfileViewEdit (CONTROLLER)
+Class name: UserProfileViewEditController
 
 Responsibilities:
 - Calls UserProfileViewEdit to retrieve User profile information
