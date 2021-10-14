@@ -1,3 +1,7 @@
+package Entities;
+
+import Entities.Recipe;
+
 import java.util.ArrayList;
 
 public class RecipeLibrary {
