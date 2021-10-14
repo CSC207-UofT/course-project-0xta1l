@@ -7,7 +7,6 @@ import java.util.ArrayList;
 
 
 public class UserTest {
-    // TODO Change this file name and add testing methods for our use cases/controllers. This test is failing btw idk why
     Recipe recipe = new Recipe();
     User user = new User();
     @Before
@@ -19,13 +18,14 @@ public class UserTest {
         recipe.setRating(5);
         recipe.setName("Oxtail Stew");
         recipe.setInstructions("just cook");
+
         user.setAge(20);
         user.setUsername("Amir");
         user.setBiography("boy from BimTown");
         user.setPassword("password");
         user.setDisplayName("MirSki");
         user.addSavedRecipes(recipe);
-
+        user.setInterests("German");
     }
 
     @Test(timeout = 50)
@@ -33,6 +33,17 @@ public class UserTest {
         ArrayList<Recipe> lst = new ArrayList<>();
         lst.add(recipe);
         assertEquals(lst.get(0), user.getUserSavedRecipes().get(0));
+    }
 
+    @Test(timeout = 50)
+    public void TestgetUserGetProfile() {
+        ArrayList<Object> profile = new ArrayList<>();
+        profile.add("MirSki");
+        profile.add("Amir");
+        profile.add("German");
+        profile.add("boy from BimTown");
+        profile.add(20);
+
+        assertEquals(profile, user.getProfile());
     }
 }

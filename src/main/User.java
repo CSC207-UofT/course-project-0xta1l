@@ -50,7 +50,5 @@ public class User {
         profile.add(getAge());
         return profile;
 
-
-
     }
 }
