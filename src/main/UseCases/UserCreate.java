@@ -1,5 +1,4 @@
 package UseCases;
-
 import Entities.User;
 import Entities.UserSecurity;
 
@@ -12,13 +11,11 @@ import java.util.ArrayList;
 //        If in Usernames keys, do not create new User
 //        Returns a bool, True if User has been created, False if Username already exists
 
-class UserCreateUseCase {
+class UserCreate {
 
-    public boolean userCreate(String displayname, int age, String password, String username, String biography,
+    public boolean userCreate(UserSecurity usersecurity, String displayname, int age, String password, String username, String biography,
                               ArrayList<String> interests){
-        User user = new User();
-        UserSecurity usersecurity = new UserSecurity();
-        if (usersecurity.getUsernames().containsKey(user.getUsername())){
+        if (usersecurity.getUsernames().containsKey(username)){
             return false;
         } else{
             User new_user = new User();
