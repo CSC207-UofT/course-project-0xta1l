@@ -42,7 +42,9 @@ public class UserTest {
         ArrayList<Object> profile = new ArrayList<>();
         profile.add("MirSki");
         profile.add("Amir");
-        profile.add("German");
+        ArrayList<String> interests = new ArrayList<>();
+        interests.add("German");
+        profile.add(interests);
         profile.add("boy from BimTown");
         profile.add(20);
         assertEquals(profile, user.getProfile());

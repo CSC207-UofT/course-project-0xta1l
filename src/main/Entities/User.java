@@ -14,7 +14,9 @@ public class User {
     // For now until we properly use the review entity in the future, Entities.User reviews is an ArrayList
     private ArrayList<Review> UserReviews = new ArrayList<>();
 
-    public User(){}
+    public User(){
+        this.interests = new ArrayList<>();
+    }
 
     public User(String name, int age, String pws, String username, String bio, ArrayList<String> interests){
         this.displayName = name;
