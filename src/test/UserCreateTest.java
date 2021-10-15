@@ -29,7 +29,7 @@ public class UserCreateTest {
         ArrayList<String> interests = new ArrayList<String>();
         interests.add("dessert");
         interests.add("chinese");
-        boolean value = usercreate.userCreate(usersecurity, "Jo", 19, "123",
+        boolean value = usercreate.userCreate("Jo", 19, "123",
                 "James", "hi", interests);
         assertFalse(value);
     }
@@ -40,7 +40,7 @@ public class UserCreateTest {
         ArrayList<String> interests = new ArrayList<String>();
         interests.add("dessert");
         interests.add("chinese");
-        boolean value = usercreate.userCreate(usersecurity, "Jo", 19, "123", "jj",
+        boolean value = usercreate.userCreate("Jo", 19, "123", "jj",
                 "hi", interests);
         assertTrue(value);
     }

@@ -1,4 +1,5 @@
 package UseCases;
+import Constants.Constants;
 import Entities.User;
 import Entities.UserSecurity;
 
@@ -13,9 +14,9 @@ import java.util.ArrayList;
 
 public class UserCreate {
 
-    public boolean userCreate(UserSecurity userSecurity, String displayName, int age, String password, String username, String biography,
+    public boolean userCreate(String displayName, int age, String password, String username, String biography,
                               ArrayList<String> interests){
-        if (userSecurity.getUsernames().containsKey(username)){
+        if (Constants.USERSECURITY.getUsernames().containsKey(username)){
             return false;
         } else{
             User new_user = new User();
