@@ -1,9 +1,10 @@
 package Controllers;
 
 import Presenters.UserInputStatus;
-import UserSecurity; // constant? not an argument for createUser
+import UserSecurity.*; // constant? not an argument for createUser
 import Entities.UserSecurity;
 import UseCases.UserCreate;
+import UseCases.*;
 
 import java.util.ArrayList;
 
