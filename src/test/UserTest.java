@@ -27,7 +27,7 @@ public class UserTest {
         user.setPassword("password");
         user.setDisplayName("MirSki");
         user.addSavedRecipes(recipe);
-        user.setInterests("German");
+        user.addInterests("German");
     }
 
     @Test(timeout = 50)
@@ -45,7 +45,6 @@ public class UserTest {
         profile.add("German");
         profile.add("boy from BimTown");
         profile.add(20);
-
         assertEquals(profile, user.getProfile());
     }
 }
