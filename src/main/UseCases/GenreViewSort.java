@@ -3,6 +3,7 @@ package UseCases;
 import Entities.GenreLibrary;
 import Entities.Recipe;
 import Entities.User;
+import Constants.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -26,8 +27,8 @@ import java.util.Collections;
 public class GenreViewSort {
     public GenreViewSort(){}
 
-    public ArrayList<String> genresViewList(User user, GenreLibrary genrelibrary) {
-        ArrayList<String> genres = genrelibrary.getAllGenres();
+    public ArrayList<String> genresViewList(User user) {
+        ArrayList<String> genres = Constants.GENRELIBRARY.getAllGenres();
         if (user.getInterests().isEmpty()) {
             Collections.sort(genres);
         } else {
