@@ -1,4 +1,4 @@
-Class name: UserRequestSaveRecipe (CONTROLLER)
+Class name: Controllers.UserRequestSaveRecipe (CONTROLLER)
 
 Responsibilities:
 - Takes in user data and recipe to be saved
