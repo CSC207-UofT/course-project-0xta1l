@@ -16,8 +16,8 @@ import java.util.stream.Stream;
 
 public class Constants {
     // Create Constants
-    public UserSecurity USERSECURITY =  Constants.CSVUserReader("src/main/Constants/users.csv");
-    public GenreLibrary GENRELIBRARY =  Constants.createDataset();
+    public static UserSecurity USERSECURITY =  Constants.CSVUserReader("src/main/Constants/users.csv");
+    public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
 
     public Constants() throws FileNotFoundException {}
 
