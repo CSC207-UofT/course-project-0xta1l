@@ -23,7 +23,7 @@ public class GetRecipe {
         return recipeMap;
     }
 
-    public List<?> getSingleRecipe (int recipeID, String fullOrPreview) throws Exception {
+    public ArrayList<Object> getSingleRecipe (int recipeID, String fullOrPreview) throws Exception {
         ArrayList<String> validOptionsFull = new ArrayList<String>();
         validOptionsFull.add("Full");
         validOptionsFull.add("full");
