@@ -41,7 +41,6 @@ public class User {
     public void addInterests(String interest) {this.interests.add(interest);}
 
     public void addSavedRecipes(Recipe recipe) {this.SavedRecipes.add(recipe);}
-    public ArrayList<Recipe> getUserSavedRecipes() {return this.getSavedRecipes();}
 
     public ArrayList<Object> getProfile(){
         ArrayList<Object> profile = new ArrayList<>();
