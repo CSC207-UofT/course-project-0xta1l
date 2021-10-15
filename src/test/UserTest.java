@@ -43,9 +43,9 @@ public class UserTest {
         ArrayList<Object> profile = new ArrayList<>();
         profile.add("MirSki");
         profile.add("Amir");
-        ArrayList<String> interests = new ArrayList<>();
-        interests.add("German");
-        profile.add(interests);
+        ArrayList<String> interestlist = new ArrayList<>();
+        interestlist.add("German");
+        profile.add(interestlist);
         profile.add("boy from BimTown");
         profile.add(20);
         assertEquals(profile, user.getProfile());
