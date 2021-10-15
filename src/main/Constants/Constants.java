@@ -16,7 +16,10 @@ import java.util.stream.Stream;
 
 public class Constants {
     // Create Constants
-    public static UserSecurity USERSECURITY;
+
+    public static UserSecurity USERSECURITY =  Constants.CSVUserReader("src/main/Constants/users.csv");
+    public GenreLibrary GENRELIBRARY =  Constants.createDataset();
+
 
     static {
         try {
