@@ -4,12 +4,12 @@
 **CRC Model**
 
 
-**Scenario Walk-through**
+**Brief Scenario Walk-through**
 
 A user interested in cooking food is able to create an account in our Recipe Application. He can change his profile picture, username, password, age, biography and indicate a list of food genres he is interested in. The user is able to find and save various recipes that he likes and share the recipe with his friends.
 
 
-**Skeleton Program:**
+**Brief Description of the Skeleton Program:**
 
 A user creates an account: This will call UserRequestCreateLoginUser method which will call UseCreate to create a User and add it into our global library USERSECURITY.
 
