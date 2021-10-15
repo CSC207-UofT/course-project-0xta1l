@@ -15,9 +15,13 @@ import java.util.Arrays;
 import java.util.stream.Stream;
 
 public class Constants {
-    // Main function to run the program
-    // Has functions to create dataset
-    public GenreLibrary createDataset() {
+    // Create Constants
+    public UserSecurity USERSECURITY =  Constants.CSVUserReader("src/main/Constants/users.csv");
+    public GenreLibrary GENRELIBRARY =  Constants.createDataset();
+
+    public Constants() throws FileNotFoundException {}
+
+    public static GenreLibrary createDataset() {
         GenreLibrary dataset = new GenreLibrary();
 
         Recipe recipe1 = new Recipe("Set on Fire", "Salt",
@@ -43,7 +47,7 @@ public class Constants {
         return dataset;
     }
 
-    public static void CSVReader(String fileName) throws FileNotFoundException {
+    public static UserSecurity CSVUserReader(String fileName) throws FileNotFoundException {
         UserSecurity userSecurity = new UserSecurity();
         Path pathToFile = Paths.get(fileName);
         Path path = pathToFile.toAbsolutePath();
@@ -57,25 +61,12 @@ public class Constants {
             String result = s[5].replaceAll("^\"+|\"+$", "").replaceAll("\\s+","");
             ArrayList<String> s5 = new ArrayList<String>(Arrays.asList(result.split(",")));
             User user = new User(s[0],s[1],s[2],Integer.parseInt(s[3]),s[4],s5);
-            System.out.println(user.getInterests());
-        }
-
-    }
-    public UserSecurity createUserSecurity(){
-        UserSecurity userSecurity = new UserSecurity();
-        User user1 = new User();
-        User user2 = new User();
-        User user3 = new User();
-        User user4 = new User();
-        User user5 = new User();
-
-
-        return userSecurity;
+            userSecurity.addUser(user);
+        } return userSecurity;
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        CSVReader("src/main/Constants/users.csv");
-
+        UserSecurity us = CSVUserReader("src/main/Constants/users.csv");
     }
 
 }
