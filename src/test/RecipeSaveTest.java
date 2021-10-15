@@ -1,20 +1,19 @@
+import Constants.Constants;
 import Entities.Recipe;
 import Entities.User;
-import UseCases.*;
-import org.junit.Before;
+import UseCases.RecipeSave;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class RecipeSaveTest {
-    Recipe recipe = new Recipe("Boil ", "water",
-            "Western", "Stew", 5, 50, "img");
-    User user = new User()
-    @Before
-    public void setUp() throws Exception {
-        user.addSavedRecipes(recipe);
-    }
-    @Test(timeout = 50) TestRecipeSaveMessage{
-        String expectedMessage= "Recipe is already saved"
-        String actualMessage= RecipeSave(user,recipe)
-        assertEqual(expectedMessage,actualMessage);
+    Recipe recipe = Constants.GENRELIBRARY.getRecipeByID("Mexican", 1);
+    User user = Constants.USERSECURITY.getUsernames().get("username1");
+    RecipeSave recipeSave = new RecipeSave();
+
+    @Test(timeout = 50)
+    public void TestRecipeSave() throws Exception {
+       boolean bool = recipeSave.saveToUser("username1", 1, "Mexican");
+       assertEquals(true, bool);
     }
 }
