@@ -1,0 +1,6 @@
+Imagine a human(user) who wants to cook food but does not know how to cook good food. He sees our Recipe Application and decides to try it out. Firstly, the user creates a new account. He decides on a username, profile picture, biography, age and password. After creating an account, he logins into his new account. He realises he does not like his password. He decides to change his password into something easier to remember. 
+
+Afterwards, he goes to the main page and sees many different genres of food (e.g Western, Chinese, Mexican, etc). The user then chooses a category he likes, Mexican. The user then sees a list of various Mexican recipes. The user is able to sort by best recipes (which is determined by rating) and chooses one from the top few recipes. 
+
+After trying out the recipe, the user really likes it and gives the recipe a rating of 5/5 stars. He decides to write a good review for the recipe. He also decides to save the recipe into his personal library in case he wants to reference it in the future. Later on, the user's friend asks him for a recommendation for a Mexican recipe. Recalling the delicious recipe he had the other day, he views the list of recipes he saved and finds the Mexican recipe he enjoyed. He then shares the recipe with his friend on our Recipe Application. Afterwards, he logs out of his account, feeling happy. 
+ 
