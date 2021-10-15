@@ -6,8 +6,22 @@ CRC Model
 
 Scenario Walk-through
 
+A user interested in cooking food is able to create an account in our Recipe Application. He can change his profile picture, username, password, age, biography and indicate a list of food genres he is interested in. The user is able to find and save various recipes that he likes and share the recipe with his friends.
+
 
 Skeleton Program
+A user creates an account: This will call UserRequestCreateLoginUser method which will call UseCreate to create a User and add it into our global library USERSECURITY.
+
+A user browses genres: This will call UserRequestBrowse browseGenres method which will call GenreViewSort to sort genres based on a User's interests and returns a list of sorted genres. The genres will come from our global dataset of genres, GENRELIBRARY.
+
+A user selects genres: This will call UserRequestBrowse browseGenreRecipes method which will return a list of recipe previews. 
+
+A user views recipes from our dataset of recipes: This will call UserRequestRecipeView which will call RecipeDisplay that shows the recipe to the user. The user can then choose the recipe.
+
+A user saves recipes: This will call UserRequestSaveRecipe which will take the recipe the user has chosen and call RecipeSave to save the recipe into the user's list of saved recipes. 
+
+A user views saved recipes: This will call UserRequestBrowse which will call browseSavedRecipes method that will return the list of saved recipe previews. 
+
 
 
 Open questions our group is struggling with:
