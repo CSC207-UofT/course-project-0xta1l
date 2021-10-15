@@ -36,11 +36,13 @@ public class GenreViewSortTest {
     @Test(timeout = 50)
     public void TestGenresViewList() {
         GenreViewSort genreViewSort = new GenreViewSort();
-        ArrayList<String> viewlist = genreViewSort.genresViewList(user, dataset);
+        ArrayList<String> viewlist = genreViewSort.genresViewList(user);
         ArrayList<String> genrelist = new ArrayList<>();
 
         genrelist.add("Western");
+        genrelist.add("Canadian");
         genrelist.add("Chinese");
+        genrelist.add("Egyptian");
         genrelist.add("Mexican");
         assertEquals(viewlist, genrelist);
     }
