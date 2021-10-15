@@ -18,7 +18,7 @@ public class User {
         this.interests = new ArrayList<>();
     }
 
-    public User(String name, int age, String pws, String username, String bio, ArrayList<String> interests){
+    public User(String username, String pws, String name, int age, String bio, ArrayList<String> interests){
         this.displayName = name;
         this.age = age;
         this.password = pws;

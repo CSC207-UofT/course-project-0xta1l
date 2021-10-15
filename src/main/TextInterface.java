@@ -47,7 +47,7 @@ public class TextInterface {
             ArrayList<String> interests = new ArrayList<>(Arrays.asList(input.nextLine().split(", ")));
 
 
-            return new User(display, age, pass, username, bio, interests);
+            return new User(username, pass, display, age, bio, interests);
             //UserRequestCreateLogin.createUser(UserInfo);
         } if (choice.equals("login")){
             /*System.out.println("Please enter your username:");
