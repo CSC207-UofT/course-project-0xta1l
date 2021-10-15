@@ -1,9 +1,8 @@
 package UseCases;
 
-import Entities.GenreLibrary;
 import Entities.Recipe;
 import Entities.User;
-
+import Constants.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -11,11 +10,10 @@ public class GetRecipe {
     public HashMap<Integer, ArrayList<Object>> getUserSavedRecipes(User user) {
         ArrayList<Recipe> userRecipeList = user.getSavedRecipes();
 
-        GenreLibrary userLibrary = new GenreLibrary();
         HashMap<Integer, ArrayList<Object>> recipeMap = new HashMap<>();
 
         for (Recipe recipe: userRecipeList) {
-            Recipe variable = userLibrary.getRecipeByID("All", recipe.getID());
+            Recipe variable = Constants.GENRELIBRARY.getRecipeByID("All", recipe.getID());
             recipeMap.put(variable.getID(), variable.getPreview());
         }
 
@@ -36,16 +34,15 @@ public class GetRecipe {
         validOptionsPreview.add("p");
         validOptionsPreview.add("P");
 
-        GenreLibrary userLibrary = new GenreLibrary();
         ArrayList<Object> recipeProperties = new ArrayList<>();
 
         if (!validOptionsPreview.contains(fullOrPreview)
                 && !validOptionsFull.contains(fullOrPreview)) {
             throw new Exception("not a valid option");
         } else if (validOptionsPreview.contains(fullOrPreview)) {
-            recipeProperties = userLibrary.getRecipeByID("All", recipeID).getFull();
+            recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getFull();
         } else if (validOptionsFull.contains(fullOrPreview)) {
-            recipeProperties = userLibrary.getRecipeByID("All", recipeID).getFull();
+            recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getFull();
         }
 
         return recipeProperties;
@@ -54,11 +51,10 @@ public class GetRecipe {
     }
 
     public ArrayList<ArrayList<Object>> getGenreRecipes (String genreName) {
-        GenreLibrary genreLibrary = new GenreLibrary();
 
         HashMap<Integer, Recipe> genre;
-        genre = genreLibrary.getAllRecipes(genreName);
 
+        genre = Constants.GENRELIBRARY.getAllRecipes(genreName);
 
         ArrayList<ArrayList<Object>> previewList = new ArrayList<>();
         for (Recipe recipe : genre.values()) {
