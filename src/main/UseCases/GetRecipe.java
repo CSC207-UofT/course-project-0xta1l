@@ -10,7 +10,7 @@ import java.util.List;
 
 public class GetRecipe {
     public HashMap<Integer, List<?>> getUserSavedRecipes(User user) {
-        ArrayList<Recipe> userRecipeList = user.getUserSavedRecipes();
+        ArrayList<Recipe> userRecipeList = user.getSavedRecipes();
 
         GenreLibrary userLibrary = new GenreLibrary();
         HashMap<Integer, List<?>> recipeMap = new HashMap<Integer, List<?>>();
@@ -23,14 +23,14 @@ public class GetRecipe {
         return recipeMap;
     }
 
-    public ArrayList<Object> getSingleRecipe (int recipeID) {
-
-
-    }
-
-    public ArrayList<ArrayList<Object>> getGenreRecipes (String genreName) {
-
-    }
+//    public ArrayList<Object> getSingleRecipe (int recipeID) {
+//
+//
+//    }
+//
+//    public ArrayList<ArrayList<Object>> getGenreRecipes (String genreName) {
+//
+//    }
 }
 
 // Notes:
