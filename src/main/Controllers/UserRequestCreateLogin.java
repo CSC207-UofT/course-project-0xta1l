@@ -1,6 +1,6 @@
 package Controllers;
 
-import Presenters.UserInputStatus;
+import UI.UserInputStatus;
 import Entities.UserSecurity;
 import UseCases.UserCreate;
 import UseCases.*;
