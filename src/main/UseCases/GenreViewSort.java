@@ -27,7 +27,7 @@ import java.util.Collections;
 public class GenreViewSort {
     public GenreViewSort(){}
 
-    public ArrayList<String> genresViewList(User user) {
+    public static ArrayList<String> genresViewList(User user) {
         ArrayList<String> genres = Constants.GENRELIBRARY.getAllGenres();
         if (user.getInterests().isEmpty()) {
             Collections.sort(genres);
