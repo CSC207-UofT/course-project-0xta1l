@@ -16,10 +16,16 @@ import java.util.stream.Stream;
 
 public class Constants {
     // Create Constants
-    public UserSecurity USERSECURITY =  Constants.CSVUserReader("src/main/Constants/users.csv");
-    public GenreLibrary GENRELIBRARY =  Constants.createDataset();
+    public static UserSecurity USERSECURITY;
 
-    public Constants() throws FileNotFoundException {}
+    static {
+        try {
+            USERSECURITY = Constants.CSVUserReader("src/main/Constants/users.csv");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+    public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
 
     public static GenreLibrary createDataset() {
         GenreLibrary dataset = new GenreLibrary();

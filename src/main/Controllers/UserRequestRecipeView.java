@@ -1,7 +1,7 @@
 package Controllers;
 
 import UseCases.GetRecipe;
-import Presenters.RecipeDisplay;
+import UI.RecipeDisplay;
 
 public class UserRequestRecipeView {
     public void recipeView(int id) throws Exception {
