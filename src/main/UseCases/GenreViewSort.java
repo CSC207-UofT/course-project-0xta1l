@@ -22,7 +22,7 @@ import java.util.ArrayList;
 //        Sorts list of recipe previews according to key
 //        Outputs rearranged list
 
-class GenreViewSort {
+public class GenreViewSort {
 
     public ArrayList<String> genresViewList(User user, GenreLibrary genrelibrary) {
         ArrayList<String> genres = genrelibrary.getAllGenres();

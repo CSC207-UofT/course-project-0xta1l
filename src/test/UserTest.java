@@ -34,7 +34,7 @@ public class UserTest {
     public void TestgetUserSavedRecipes() {
         ArrayList<Recipe> lst = new ArrayList<>();
         lst.add(recipe);
-        assertEquals(lst.get(0), user.getUserSavedRecipes().get(0));
+        assertEquals(lst.get(0), user.getSavedRecipes().get(0));
     }
 
     @Test(timeout = 50)
