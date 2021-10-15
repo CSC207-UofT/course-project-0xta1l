@@ -1,15 +1,16 @@
-Specification
+**Specification**
 
 
-CRC Model
+**CRC Model**
 
 
-Scenario Walk-through
+**Scenario Walk-through**
 
 A user interested in cooking food is able to create an account in our Recipe Application. He can change his profile picture, username, password, age, biography and indicate a list of food genres he is interested in. The user is able to find and save various recipes that he likes and share the recipe with his friends.
 
 
-Skeleton Program
+**Skeleton Program:**
+
 A user creates an account: This will call UserRequestCreateLoginUser method which will call UseCreate to create a User and add it into our global library USERSECURITY.
 
 A user browses genres: This will call UserRequestBrowse browseGenres method which will call GenreViewSort to sort genres based on a User's interests and returns a list of sorted genres. The genres will come from our global dataset of genres, GENRELIBRARY.
@@ -24,7 +25,7 @@ A user views saved recipes: This will call UserRequestBrowse which will call bro
 
 
 
-Open questions our group is struggling with:
+**Open questions our group is struggling with:**
 
 1. Currently, we have a recipe dataset and a user dataset that stores all the recipes and usersHow do we store data about recipes and users? How do we add new recipes and new users to the GenreLibrary and UserSecurity datasets?
 
