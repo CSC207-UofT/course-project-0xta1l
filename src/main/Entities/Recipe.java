@@ -35,8 +35,28 @@ public class Recipe {
     public String getImage() {return image;}
     public String getDescription() {return description;}
     public ArrayList<Review> getRecipeReviews() {return RecipeReviews;}
-    public List<?> getPreview() {
-        return Arrays.asList(getID(), getName(), getRating(), getGenre(), getDescription());
+    public ArrayList<Object> getPreview() {
+        ArrayList<Object> previewList= new ArrayList<Object>();
+        previewList.add(getID());
+        previewList.add(getName());
+        previewList.add(getRating());
+        previewList.add(getGenre());
+        previewList.add(getDescription());
+
+        return previewList;
+    }
+
+    public ArrayList<Object> getFull() {
+        ArrayList<Object> fullList = new ArrayList<Object>();
+        fullList.add(getID());
+        fullList.add(getName());
+        fullList.add(getRating());
+        fullList.add(getGenre());
+        fullList.add(getDescription());
+        fullList.add(getIngredients());
+        fullList.add(getInstructions());
+
+        return fullList;
     }
 
     public void setInstructions(String instructions) {this.instructions = instructions;}
