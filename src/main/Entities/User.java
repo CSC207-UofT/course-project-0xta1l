@@ -39,7 +39,7 @@ public class User {
     public void setUsername(String username) {this.username = username;}
     public void setBiography(String biography) {this.biography = biography;}
     public void addInterests(String interest) {this.interests.add(interest);}
-
+  
     public void addSavedRecipes(Recipe recipe) {this.SavedRecipes.add(recipe.getID());}
 
     public ArrayList<Object> getProfile(){
