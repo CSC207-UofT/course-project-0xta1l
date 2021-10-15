@@ -14,6 +14,7 @@ public class Recipe {
     private int ID;
     private ArrayList<Review> RecipeReviews = new ArrayList<>();
     private String image;
+    private String description;
 
     public Recipe(){}
     public Recipe(String i, String ing, String g, String name, int rating, int id, String img){
@@ -32,9 +33,10 @@ public class Recipe {
     public int getRating() {return rating;}
     public int getID() {return ID;}
     public String getImage() {return image;}
+    public String getDescription() {return description;}
     public ArrayList<Review> getRecipeReviews() {return RecipeReviews;}
     public List<?> getPreview() {
-        return Arrays.asList(getID(), getName(), getGenre(), getRating());
+        return Arrays.asList(getID(), getName(), getRating(), getGenre(), getDescription());
     }
 
     public void setInstructions(String instructions) {this.instructions = instructions;}
@@ -43,6 +45,7 @@ public class Recipe {
     public void setRating(int rating) {this.rating = rating;}
     public void setID(int ID) {this.ID = ID;}
     public void setName(String name) {this.name = name;}
+    public void setDescription(String description) {this.description = description;}
 
     public void setImage(String image) {this.image = image;}
 

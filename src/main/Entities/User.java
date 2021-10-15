@@ -40,6 +40,7 @@ public class User {
     public void setBiography(String biography) {this.biography = biography;}
     public void addInterests(String interest) {this.interests.add(interest);}
 
+
     public void addSavedRecipes(Recipe recipe) {this.SavedRecipes.add(recipe);}
 
     public ArrayList<Object> getProfile(){
