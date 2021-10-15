@@ -1,6 +1,9 @@
 package Entities;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Recipe {
     private String instructions;
@@ -30,6 +33,9 @@ public class Recipe {
     public int getID() {return ID;}
     public String getImage() {return image;}
     public ArrayList<Review> getRecipeReviews() {return RecipeReviews;}
+    public List<?> getPreview() {
+        return Arrays.asList(getID(), getName(), getGenre(), getRating());
+    }
 
     public void setInstructions(String instructions) {this.instructions = instructions;}
     public void setIngredients(String ingredients) {this.ingredients = ingredients;}
