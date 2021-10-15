@@ -28,4 +28,8 @@ public class UserSecurity {
         // sets the new password for user.
         this.UsernameList.get(username).setPassword(password);
     }
+
+    public HashMap<String, User> addUser(User user, UserSecurity usersecurity) {
+        usersecurity.getUsernames().put(user.getUsername(), user);
+    }
 }
