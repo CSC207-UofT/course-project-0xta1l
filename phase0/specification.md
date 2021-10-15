@@ -18,13 +18,13 @@ Recipe
 Public Library
   - Stores a large, public collection of different recipes 
   - Presents various genres or themes of recipes(i.e Jamaican food, South Indian food, seasonal drinks, etc.)
-  - Allowing users to browse and save recipes to their personal collection
+  - Allows users to browse and save recipes to their personal collection
   - Allows users to submit reviews to recipes 
   - Allows users to view other user reviews
 
-Users generally can do:
-  - Store personal collections 
+Users:
+  - Can store personal collections of recipes (by saving them)
   - Can interact with recipes (save, rate, comment/review)
   - Store user details (display picture, name)
-  - Upload their own recipes
-  - See their own recipes 
+  - Can upload their own recipes
+  - Can See their own recipes 
