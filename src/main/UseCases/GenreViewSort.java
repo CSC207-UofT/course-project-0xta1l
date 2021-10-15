@@ -1,10 +1,11 @@
 package UseCases;
 
 import Entities.GenreLibrary;
-import Entities.User;
 import Entities.Recipe;
-import java.util.Collections;
+import Entities.User;
+
 import java.util.ArrayList;
+import java.util.Collections;
 
 //genresViewList method (takes in user)
 //        Calls GenreLibrary.getAllGenres() to get list of string genres
@@ -22,7 +23,8 @@ import java.util.ArrayList;
 //        Sorts list of recipe previews according to key
 //        Outputs rearranged list
 
-class GenreViewSort {
+public class GenreViewSort {
+    public GenreViewSort(){}
 
     public ArrayList<String> genresViewList(User user, GenreLibrary genrelibrary) {
         ArrayList<String> genres = genrelibrary.getAllGenres();
