@@ -1,6 +1,7 @@
 package Controllers;
 
-import Presenters.UserInputStatus;
+//import UI.UserInputStatus;
+import Constants.*;
 import Entities.UserSecurity;
 import UseCases.UserCreate;
 import UseCases.*;
@@ -10,8 +11,8 @@ import java.util.ArrayList;
 
 public class UserRequestCreateLogin{
 
-    public void createUser(ArrayList<Object> userInfo) throws Exception {
-        if(userInfo.size()!=5){
+    public String createUser(ArrayList<Object> userInfo) throws Exception {
+        if(userInfo.size()!=6){
             throw new Exception("You are missing information");
         }
 
@@ -22,6 +23,11 @@ public class UserRequestCreateLogin{
         String biography = (String) userInfo.get(4);
         ArrayList<String> interests = (ArrayList<String>) userInfo.get(5);
         UserCreate userCreatee = new UserCreate();
-        UserInputStatus(userCreatee.userCreate(displayName,age, password, username, biography, interests));
+        boolean UserMade = userCreatee.userCreate(displayName,age, password, username, biography, interests);
+        if (UserMade) {
+            return username;
+        } else {
+            throw new Exception("There was an error.");
+        }
     }
 }

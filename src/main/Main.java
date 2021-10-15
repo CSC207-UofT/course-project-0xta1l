@@ -8,7 +8,7 @@ import UI.CreateLoginUI;
 //import Controllers.UserRequestCreateLogin;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         UserRequestCreateLogin controller = new UserRequestCreateLogin();
 

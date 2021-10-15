@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class RecipeSave {
 
-    public static boolean saveToUser(String userID, int recipeID, String genre) throws Exception {
+    public boolean saveToUser(String userID, int recipeID, String genre) throws Exception {
         User user = Constants.USERSECURITY.getUsernames().get(userID);
         Recipe recipe = Constants.GENRELIBRARY.getRecipeByID(genre, recipeID);
 
