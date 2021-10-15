@@ -8,8 +8,7 @@ public class UserRequestSaveRecipe {
 
 
     public boolean saveRecipe(String username,int recipeID, String genre) throws Exception {
-        boolean saved_state = RecipeSave.saveToUser(username, recipeID, genre);
-        return saved_state;
+        return RecipeSave.saveToUser(username, recipeID, genre);
     }
 
 

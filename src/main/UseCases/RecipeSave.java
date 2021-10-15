@@ -13,7 +13,6 @@ public class RecipeSave {
         Recipe recipe = Constants.GENRELIBRARY.getRecipeByID(genre, recipeID);
 
         ArrayList<Recipe> recipelist = user.getSavedRecipes();
-        boolean recipe_state = false; // states whether recipe is present
         if (recipelist.contains(recipe)){
             throw new Exception("Recipe is already saved");
         }
