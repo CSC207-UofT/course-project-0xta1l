@@ -59,6 +59,7 @@ public class GetRecipe {
         HashMap<Integer, Recipe> genre;
         genre = genreLibrary.getAllRecipes(genreName);
 
+
         ArrayList<ArrayList<Object>> previewList = new ArrayList<>();
         for (Recipe recipe : genre.values()) {
             previewList.add(recipe.getPreview());

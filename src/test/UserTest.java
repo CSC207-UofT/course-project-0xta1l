@@ -1,11 +1,12 @@
 
 import Entities.Recipe;
 import Entities.User;
-import org.junit.*;
-
-import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
 
 
 public class UserTest {
@@ -34,7 +35,7 @@ public class UserTest {
     public void TestgetUserSavedRecipes() {
         ArrayList<Recipe> lst = new ArrayList<>();
         lst.add(recipe);
-        assertEquals(lst.get(0), user.getUserSavedRecipes().get(0));
+        assertEquals(lst.get(0), user.getSavedRecipes().get(0));
     }
 
     @Test(timeout = 50)
@@ -42,7 +43,9 @@ public class UserTest {
         ArrayList<Object> profile = new ArrayList<>();
         profile.add("MirSki");
         profile.add("Amir");
-        profile.add("German");
+        ArrayList<String> interestlist = new ArrayList<>();
+        interestlist.add("German");
+        profile.add(interestlist);
         profile.add("boy from BimTown");
         profile.add(20);
         assertEquals(profile, user.getProfile());

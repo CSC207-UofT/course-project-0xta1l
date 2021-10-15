@@ -8,15 +8,17 @@ public class User {
     private String password;
     private String username;
     private String biography;
-    private ArrayList<String> interests;
+    private ArrayList<String> interests= new ArrayList<>();;
     private ArrayList<Recipe> SavedRecipes = new ArrayList<>();
 
     // For now until we properly use the review entity in the future, Entities.User reviews is an ArrayList
     private ArrayList<Review> UserReviews = new ArrayList<>();
 
-    public User(){}
+    public User(){
+        this.interests = new ArrayList<>();
+    }
 
-    public User(String name, int age, String pws, String username, String bio, ArrayList<String> interests){
+    public User(String username, String pws, String name, int age, String bio, ArrayList<String> interests){
         this.displayName = name;
         this.age = age;
         this.password = pws;
@@ -39,6 +41,7 @@ public class User {
     public void setUsername(String username) {this.username = username;}
     public void setBiography(String biography) {this.biography = biography;}
     public void addInterests(String interest) {this.interests.add(interest);}
+
 
     public void addSavedRecipes(Recipe recipe) {this.SavedRecipes.add(recipe);}
 

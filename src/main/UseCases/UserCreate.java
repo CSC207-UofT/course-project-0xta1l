@@ -11,15 +11,15 @@ import java.util.ArrayList;
 //        If in Usernames keys, do not create new User
 //        Returns a bool, True if User has been created, False if Username already exists
 
-class UserCreate {
+public class UserCreate {
 
-    public boolean userCreate(UserSecurity usersecurity, String displayname, int age, String password, String username, String biography,
+    public boolean userCreate(UserSecurity userSecurity, String displayName, int age, String password, String username, String biography,
                               ArrayList<String> interests){
-        if (usersecurity.getUsernames().containsKey(username)){
+        if (userSecurity.getUsernames().containsKey(username)){
             return false;
         } else{
             User new_user = new User();
-            new_user.setDisplayName(displayname);
+            new_user.setDisplayName(displayName);
             new_user.setAge(age);
             new_user.setPassword(password);
             new_user.setUsername(username);

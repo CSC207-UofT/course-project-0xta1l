@@ -29,7 +29,7 @@ public class UserSecurity {
         this.UsernameList.get(username).setPassword(password);
     }
 
-    public HashMap<String, User> addUser(User user, UserSecurity usersecurity) {
-        usersecurity.getUsernames().put(user.getUsername(), user);
+    public void addUser(User user) {
+        getUsernames().put(user.getUsername(), user);
     }
 }

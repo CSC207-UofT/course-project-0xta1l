@@ -1,10 +1,11 @@
 package UseCases;
 
 import Entities.GenreLibrary;
-import Entities.User;
 import Entities.Recipe;
-import java.util.Collections;
+import Entities.User;
+
 import java.util.ArrayList;
+import java.util.Collections;
 
 //genresViewList method (takes in user)
 //        Calls GenreLibrary.getAllGenres() to get list of string genres
@@ -22,7 +23,8 @@ import java.util.ArrayList;
 //        Sorts list of recipe previews according to key
 //        Outputs rearranged list
 
-class GenreViewSort {
+public class GenreViewSort {
+    public GenreViewSort(){}
 
     public ArrayList<String> genresViewList(User user, GenreLibrary genrelibrary) {
         ArrayList<String> genres = genrelibrary.getAllGenres();
@@ -45,7 +47,7 @@ class GenreViewSort {
         if (sortkey.equals("")) {
                 return recipes;
         } else if (sortkey.equals("rating")) {
-            ArrayList<Recipe> grand_lst = new ArrayList<Recipe>;
+            ArrayList<Recipe> grand_lst = new ArrayList<Recipe>();
             ArrayList<Recipe> lst_1 = new ArrayList<Recipe>();
             ArrayList<Recipe> lst_2 = new ArrayList<Recipe>();
             ArrayList<Recipe> lst_3 = new ArrayList<Recipe>();
@@ -68,6 +70,8 @@ class GenreViewSort {
             grand_lst.addAll(lst1);
 
             return grand_lst;
+        } else{
+            return null;
         }
     }
 
@@ -92,15 +96,15 @@ class GenreViewSort {
     private void helperPutRecipeInRatingList(Recipe preview, ArrayList<Recipe> lst_1, ArrayList<Recipe> lst_2,
     ArrayList<Recipe> lst_3, ArrayList<Recipe> lst_4, ArrayList<Recipe> lst_5) {
         int rating = preview.getRating();
-        if (rating.equals(1)) {
+        if (rating == 1) {
             lst_1.add(preview);
-        } else if (rating.equals(2)) {
+        } else if (rating == 2) {
             lst_2.add(preview);
-        } else if (rating.equals(3)) {
+        } else if (rating == 3) {
             lst_3.add(preview);
-        } else if (rating.equals(4)) {
+        } else if (rating == 4) {
             lst_4.add(preview);
-        } else if (rating.equals(5)) {
+        } else if (rating == 5) {
             lst_5.add(preview);
         }
     }
