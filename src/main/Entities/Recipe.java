@@ -15,16 +15,21 @@ public class Recipe {
     private ArrayList<Review> RecipeReviews = new ArrayList<>();
     private String image;
     private String description;
+    private int preptime;
 
     public Recipe(){}
-    public Recipe(String i, String ing, String g, String name, int rating, int id, String img){
+    public Recipe(String i, String ing, String g, String name, int rating, int id, String img,
+                  String description, int preptime){
         this.instructions = i;
         this.ingredients = ing;
         this.genre = g;
         this.name = name;
         this.rating = rating;
         this.ID = id;
+        this.description = description;
+        this.preptime = preptime;
         this.image = img;}
+
 
     public String getInstructions() {return instructions;}
     public String getIngredients() {return ingredients;}
@@ -35,6 +40,7 @@ public class Recipe {
     public String getImage() {return image;}
     public String getDescription() {return description;}
     public ArrayList<Review> getRecipeReviews() {return RecipeReviews;}
+    public int getPreptime() {return preptime;}
     public ArrayList<Object> getPreview() {
         ArrayList<Object> previewList= new ArrayList<Object>();
         previewList.add(getID());
@@ -55,6 +61,7 @@ public class Recipe {
         fullList.add(getDescription());
         fullList.add(getIngredients());
         fullList.add(getInstructions());
+        fullList.add(getPreptime());
 
         return fullList;
     }
@@ -66,6 +73,7 @@ public class Recipe {
     public void setID(int ID) {this.ID = ID;}
     public void setName(String name) {this.name = name;}
     public void setDescription(String description) {this.description = description;}
+    public void setPreptime(int preptime) {this.preptime = preptime;}
 
     public void setImage(String image) {this.image = image;}
 
