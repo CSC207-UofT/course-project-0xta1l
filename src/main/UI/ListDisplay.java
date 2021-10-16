@@ -6,26 +6,14 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class ListDisplay {
-    public void Display(ArrayList<Object> browseInfo) {
-        if (browseInfo instanceof ArrayList<String>) {
-            for (String str : browseInfo) {
-                System.out.println(str + "\n");
+    public void lDisplay(ArrayList<Object> browseInfo) {
+        if (browseInfo.get(1).equals("Genre")) {
+            for (String genre : browseInfo.get(0)) {
+                System.out.println(genre + "\n");
             }
 
         }else{
-            for (Object r: browseInfo){
-                System.out.println(r + "\n");
-            }
-        }
-    }
-    public void tDisplay(ArrayList<String> browseInfo) {
-        if (browseInfo instanceof ArrayList<String>) {
-            for (String str : browseInfo) {
-                System.out.println(str + "\n");
-            }
-
-        }else{
-            for (Object r: browseInfo){
+            for (Object r: browseInfo.get(0)){
                 System.out.println(r + "\n");
             }
         }
