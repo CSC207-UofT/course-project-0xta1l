@@ -1,5 +1,6 @@
 package UI;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import Controllers.*;
 import UI.*;
@@ -17,12 +18,15 @@ public class ViewDisplay {
         UserRequestBrowse browse = new UserRequestBrowse();
         CreateLoginUI log = new CreateLoginUI();
         UserRequestCreateLogin createLogin = new UserRequestCreateLogin();
+        ListDisplay display = new ListDisplay();
         if (action.equals("ViewUserProfile")){
 
         }else if (action.equals("ViewGenres")){
-            browse.browseGenres(usernameResponse);
+            ArrayList<String> lst= browse.browseGenres(usernameResponse);
+            display.DisplayGenre(lst);
         }else if (action.equals("ViewUserSavedRecipe")){
-            browse.browseSavedRecipes(usernameResponse);
+                ArrayList<Object> lst = browse.browseSavedRecipes(usernameResponse);
+                display.DisplayRecipe(lst);
         }else{
             log.runLogin(createLogin);
         }
