@@ -6,7 +6,47 @@ interact with.
 
 **CRC Model**
 
+The CRC cards are sorted into their respective layers of the Clean Architecture model. The responsibilities of each 
+class are outlined in the "Responsibilities" section, and dependencies of each are outlined in the "Collaborators" 
+section of each card. 
 
+The Presenter CRC cards are ListDisplay and RecipeDisplay. Both presenters are responsible for formatting and printing 
+data to the screen. ListDisplay prints lists of genres and lists of recipes. RecipeDisplay prints recipes. The presenters 
+do not depend on any other classes, as they are called with the data to be printed included as an argument. 
+
+The UI CRC cards are CreateLoginUI and ViewUI. Both UI classes are responsible for printing the available commands to 
+the user, taking in user commands, and executing user commands by calling on the necessary controllers. CreateLoginUI 
+currently only handles user account creation in the Skeleton Program, but will additionally handle users logging in the 
+final program. ViewUI handles all other commands a user can execute, which are all to view lists of genres, lists of 
+recipes, individual recipes, or user profiles.
+
+The Controller CRC cards are UserRequestBrowse, UserRequestCreateLogin, UserRequestCreateReview, UserRequestRecipeView, 
+UserRequestSaveRecipe and UserRequestUploadRecipe. 
+Each controller takes in input from the UI, throws exceptions if the input is incorrect and then calls on the 
+necessary Use Cases to execute their respective function. 
+UserRequestBrowse handles any instance where the user requests to view a list of items, which can either be a list of genres, a list of recipes, or a list of reviews. 
+UserRequestCreateLogin handles when a user either wants to login or create a new User, which occurs at the beginning of the program. 
+UserRequestCreateReview handles when a user wants to create a Review for a recipe, UserRequestSaveRecipe handles when a 
+user wants to save a recipe to their saved recipes, and UserRequestUploadRecipe handles when a user inputs recipe data 
+that they wish to be added to the recipe database.
+
+The Use Case CRC cards are GenreViewSort, GetRecipe, GetReview, RecipeCreate, RecipeReviewAdd, RecipeSave, UserCreate, UserLogin, and UserViewEdit. Each Use Case calls on the necessary Entities and Constants to either obtain data or update parameters.
+GenreViewSort handles viewing a list of genres and sorting it. 
+GetRecipe handles getting a recipe from the database. 
+GetReview handles getting a review from either a user or a recipe. 
+RecipeCreate handles creating a new Recipe entity and adding it to the database. 
+RecipeReviewAdd adds a review to a recipe and to the user who made the review. 
+UserCreate handles creating a new User entity and adding it to the database.
+UserLogin handles checking if a user can log in by confirming that the username and password entered match. 
+UserViewEdit handles both getting and editing a user's profile details. 
+
+The Entity CRC cards are GenreLibrary, Recipe, Review, User, and UserSecurity.
+GenreLibrary and UserSecurity are both entities defining the structure of how data obtained from the database of recipes and users, respectively, are stored for use while the program is running.
+GenreLibrary and UserSecurity also both store instances of other entities (Recipe and User, respectively), once they have been created.
+Recipe, Review, and User all stores information regarding one individual recipe, review, or user, respectively.
+
+
+Currently, all aspects related to Recipe creation and Reviews have not been coded in our Skeleton model, but are outlined in the CRC model.
 
 **Brief Scenario Walk-through**
 
@@ -93,7 +133,7 @@ cases.
 Makayla: Makayla has worked on the CRC model and the progress report. She plans on curating discussions around obstacles
 and helping with presenters.
 
-Mieko: Mieko has worked on the CRC model and writing code for controllers/presenters/UI. She plans on establishing a
+Mieko: Mieko has worked on the CRC model, the CRC model summary, and writing code for the presenters and UI. She plans on establishing a
 larger database and working more on user interface. 
 
 
