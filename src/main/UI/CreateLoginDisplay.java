@@ -6,8 +6,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class CreateLoginUI {
-        public String runLogin(UserRequestCreateLogin controller) throws Exception {
+public class CreateLoginDisplay {
+        public String runLogin() throws Exception {
+                UserRequestCreateLogin CreateLoginController = new UserRequestCreateLogin();
                 Scanner input = new Scanner(System.in);
                 //System.out.println("Would you like to create a user or login? \n Please input either \"create\" or \"login\"");
                 //String UserChoice = input.nextLine();
@@ -34,7 +35,7 @@ public class CreateLoginUI {
                         ArrayList<Object> interests = new ArrayList<>(Arrays.asList(input.nextLine().replaceAll("\\s+", "").split(",")));
                         UserInfo.add(interests);
 
-                        return controller.createUser(UserInfo);
+                        return CreateLoginController.createUser(UserInfo);
                         //}
 
 
