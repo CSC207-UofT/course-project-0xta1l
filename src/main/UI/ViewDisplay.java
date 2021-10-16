@@ -26,7 +26,7 @@ public class ViewDisplay {
             display.DisplayGenre(lst);
         }else if (action.equals("ViewUserSavedRecipe")){
                 ArrayList<Object> lst = browse.browseSavedRecipes(usernameResponse);
-                display.DisplayRecipe(lst);
+                display.DisplayListOfRecipes(lst);
         }else{
             log.runLogin(createLogin);
         }
