@@ -17,14 +17,15 @@ public class Recipe {
     private String description;
 
     public Recipe(){}
-    public Recipe(String i, String ing, String g, String name, int rating, int id, String img){
+    public Recipe(String i, String ing, String g, String name, int rating, int id, String img, String description){
         this.instructions = i;
         this.ingredients = ing;
         this.genre = g;
         this.name = name;
         this.rating = rating;
         this.ID = id;
-        this.image = img;}
+        this.image = img;
+        this.description = description;}
 
     public String getInstructions() {return instructions;}
     public String getIngredients() {return ingredients;}
@@ -36,7 +37,7 @@ public class Recipe {
     public String getDescription() {return description;}
     public ArrayList<Review> getRecipeReviews() {return RecipeReviews;}
     public ArrayList<Object> getPreview() {
-        ArrayList<Object> previewList= new ArrayList<Object>();
+        ArrayList<Object> previewList= new ArrayList<>();
         previewList.add(getID());
         previewList.add(getName());
         previewList.add(getRating());
@@ -47,7 +48,7 @@ public class Recipe {
     }
 
     public ArrayList<Object> getFull() {
-        ArrayList<Object> fullList = new ArrayList<Object>();
+        ArrayList<Object> fullList = new ArrayList<>();
         fullList.add(getID());
         fullList.add(getName());
         fullList.add(getRating());

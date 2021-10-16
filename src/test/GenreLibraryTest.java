@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 public class GenreLibraryTest {
     GenreLibrary genreLibrary = new GenreLibrary();
     Recipe recipe = new Recipe("Boil ", "water",
-            "Western", "Stew", 5, 50, "img");
+            "Western", "Stew", 5, 50, "img", "");
 
     @Before
     public void setUp() throws Exception {

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class CreateLoginDisplay {
+public class CreateLoginUI {
         public String runLogin() throws Exception {
                 UserRequestCreateLogin CreateLoginController = new UserRequestCreateLogin();
                 Scanner input = new Scanner(System.in);
@@ -24,15 +24,26 @@ public class CreateLoginDisplay {
                         System.out.println("Please enter the display name you want:");
                         UserInfo.add(input.nextLine());
 
-                        System.out.println("Please enter your age:");
-                        UserInfo.add(Integer.parseInt(input.nextLine()));
+                        boolean isNotInt = true;
+                                do {
+                                        try {
+                                                System.out.println("Please enter your age:");
+                                                UserInfo.add(Integer.parseInt(input.nextLine()));
+                                                isNotInt = false;
+                                        } catch (NumberFormatException exception) {
+                                                System.out.println("Not an integer, please try again");
+                                        }
+                                } while(isNotInt);
+
+
 
                         System.out.println("Please enter a short blurb about yourself:");
                         UserInfo.add(input.nextLine());
 
-                        System.out.println("The recipe genres we currently have are: \n Mexican \n Chinese");
-                        System.out.println("Please write out the genres you are interested in, separated by a comma:");
-                        ArrayList<Object> interests = new ArrayList<>(Arrays.asList(input.nextLine().replaceAll("\\s+", "").split(",")));
+                        //System.out.println("The recipe genres we currently have are: \n Mexican \n Chinese \n Western \n Egyptian \n Canadian");
+                        //System.out.println("Please write out the genres you are interested in, separated by a comma:");
+                        //ArrayList<Object> interests = new ArrayList<>(Arrays.asList(input.nextLine().replaceAll("\\s+", "").split(",")));
+                        ArrayList<Object> interests = new ArrayList<>();
                         UserInfo.add(interests);
 
                         return CreateLoginController.createUser(UserInfo);
