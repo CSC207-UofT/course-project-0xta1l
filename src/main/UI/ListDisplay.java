@@ -1,9 +1,7 @@
 package UI;
-import Controllers.UserRequestBrowse;
+
 
 import java.util.ArrayList;
-import java.util.Objects;
-import java.util.Scanner;
 
 public class ListDisplay {
     public void DisplayGenre(ArrayList<String> browseInfo) {
