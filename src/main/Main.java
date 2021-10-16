@@ -2,7 +2,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import Controllers.UserRequestBrowse;
 import Controllers.UserRequestCreateLogin;
+import Controllers.UserRequestRecipeView;
+import Controllers.UserRequestSaveRecipe;
 import Entities.User;
 import UI.CreateLoginUI;
 //import Controllers.UserRequestCreateLogin;
@@ -10,13 +13,15 @@ import UI.CreateLoginUI;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        UserRequestCreateLogin controller = new UserRequestCreateLogin();
+        UserRequestCreateLogin CreateLoginController = new UserRequestCreateLogin();
 
-        CreateLoginUI ui = new CreateLoginUI(); //UI
-        // Note how this differs from a previous example we saw, where
-        // we "injected" the UI into the controller. Here, we are doing it
-        // the other way. Are both ways consistent with the Dependency Rule?
-        ui.runLogin(controller);
+        CreateLoginUI ui = new CreateLoginUI();
+        String user = ui.runLogin(CreateLoginController);
+
+        UserRequestBrowse BrowseController = new UserRequestBrowse();
+        UserRequestRecipeView ViewRecipeController = new UserRequestRecipeView();
+        UserRequestSaveRecipe SaveRecipeController = new UserRequestSaveRecipe();
+
     }
 
 

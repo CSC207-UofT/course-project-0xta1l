@@ -7,12 +7,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class CreateLoginUI {
-        public void runLogin(UserRequestCreateLogin controller) throws Exception {
+        public String runLogin(UserRequestCreateLogin controller) throws Exception {
                 Scanner input = new Scanner(System.in);
-                System.out.println("Would you like to create a user or login? \n Please input either \"create\" or \"login\"");
-                String UserChoice = input.nextLine();
-
+                //System.out.println("Would you like to create a user or login? \n Please input either \"create\" or \"login\"");
+                //String UserChoice = input.nextLine();
+                //if (UserChoice.equals("create")) {
                         ArrayList<Object> UserInfo = new ArrayList<>();
+                        System.out.println("Welcome! You will be making a new user account.");
                         System.out.println("Please enter the username you want (each user must have a unique username):");
                         UserInfo.add(input.nextLine());
 
@@ -33,13 +34,9 @@ public class CreateLoginUI {
                         ArrayList<Object> interests = new ArrayList<>(Arrays.asList(input.nextLine().replaceAll("\\s+", "").split(",")));
                         UserInfo.add(interests);
 
-                        String CurrentUsername = controller.createUser(UserInfo);
+                        return controller.createUser(UserInfo);
+                        //}
 
-        }
+
+                }
 }
-
-
-
-
-// TODO: implement way to ensure user input is not ""
-// TODO: do we want the parsing of the ArrayList object types to be done here? or should the use case do it
