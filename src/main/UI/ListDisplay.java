@@ -11,7 +11,7 @@ public class ListDisplay {
             System.out.println(str + "\n");
         }
     }
-    public void DisplayRecipe(ArrayList<Object> browseInfo) {
+    public void DisplayListOfRecipes(ArrayList<Object> browseInfo) {
         for(Object obj: browseInfo){
             System.out.println(obj + "\n");
         }
