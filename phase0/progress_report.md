@@ -1,47 +1,51 @@
 **Specification**
 
+Our project domain is a recipe organizer program that allows users to discover new recipes, build their own collection 
+of recipes, and review recipes. Additionally, users may upload their own recipes if they wish, which other users can 
+interact with.
 
 **CRC Model**
 
 
 
-
 **Brief Scenario Walk-through**
 
-A user interested in cooking food is able to create an account in our Recipe Application. He can change his profile picture, username, password, age, biography and indicate a list of food genres he is interested in. The user is able to find and save various recipes that he likes and share the recipe with his friends.
-
+A user interested in cooking food is able to create an account in our Recipe Application. He can change his profile 
+picture, username, password, age, biography and indicate a list of food genres he is interested in. The user is able to
+find and save various recipes that he likes and share the recipe with his friends.
 
 **Brief Description of the Skeleton Program:**
 
+A user creates an account: This will call UserRequestCreateLoginUser method which will call UseCreate to create a 
+User and add it into our global library USERSECURITY.
 
+A user browses genres: This will call UserRequestBrowse browseGenres method which will call GenreViewSort to sort 
+genres based on a User's interests and returns a list of sorted genres. The genres will come from our global dataset 
+of genres, GENRELIBRARY.
 
-Open questions our group is struggling with:
+A user selects genres: This will call UserRequestBrowse browseGenreRecipes method which will return a list of recipe 
+previews. 
 
-A user creates an account: This will call UserRequestCreateLoginUser method which will call UseCreate to create a User and add it into our global library USERSECURITY.
+A user views recipes from our dataset of recipes: This will call UserRequestRecipeView which will call RecipeDisplay 
+that shows the recipe to the user. The user can then choose the recipe.
 
-A user browses genres: This will call UserRequestBrowse browseGenres method which will call GenreViewSort to sort genres based on a User's interests and returns a list of sorted genres. The genres will come from our global dataset of genres, GENRELIBRARY.
+A user saves recipes: This will call UserRequestSaveRecipe which will take the recipe the user has chosen and call 
+RecipeSave to save the recipe into the user's list of saved recipes. 
 
-A user selects genres: This will call UserRequestBrowse browseGenreRecipes method which will return a list of recipe previews. 
-
-A user views recipes from our dataset of recipes: This will call UserRequestRecipeView which will call RecipeDisplay that shows the recipe to the user. The user can then choose the recipe.
-
-A user saves recipes: This will call UserRequestSaveRecipe which will take the recipe the user has chosen and call RecipeSave to save the recipe into the user's list of saved recipes. 
-
-A user views saved recipes: This will call UserRequestBrowse which will call browseSavedRecipes method that will return the list of saved recipe previews. 
-
-
+A user views saved recipes: This will call UserRequestBrowse which will call browseSavedRecipes method that will 
+return the list of saved recipe previews. 
 
 **Open questions our group is struggling with:**
-
 
 1. Currently, we have a recipe dataset and a user dataset, both of which are CSV files, that store all the recipes and 
 users. How do we add new recipes and new users to these datasets?
 2. How does clean architecture work with the database on the outside, if having a base of users and a base of recipes 
 is integral to the program?
 3. Is there criteria to how large a class is? Is it okay if a class has one method?
+4. How do we effectively handle Exceptions? 
+5. How do we design an effective UI, if we want to make an app with a GUI?
 
-
-What has worked well so far with our design:
+**What has worked well so far with our design:**
 
 In our design, we have emphasized the SOLID principles, especially the Single-responsibility Principle, the 
 Open-Closed Principle, and the Dependency Inversion Principle. For the 
@@ -64,10 +68,9 @@ class, the attribute ListOfAllRecipes has type HashMap<String, HashMap<Integer, 
 a hashmap that contains the recipe and its ID. The reason for this inner hashmap is that this makes it easier to
 reference the actual recipe entity by calling its ID in the hashmap, instead of using a list of recipe IDs where we 
 would then need to loop through a list of recipes to search for the matching recipe of the recipe ID. This way, we can
-also improve runtime efficiency. 
+also improve runtime efficiency.
 
-
-Each group member's summary (what they worked on + what they plan on working next):
+**Each group member's summary (what they worked on + what they plan on working next):**
 
 Amir: Amir has worked on writing code for controllers and presenters as well as writing test cases for the User entity.
 He plans on updating code for the controllers/presenters and pitching in for the user interface. 
