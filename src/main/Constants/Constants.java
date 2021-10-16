@@ -31,25 +31,34 @@ public class Constants {
         GenreLibrary dataset = new GenreLibrary();
 
         Recipe recipe1 = new Recipe("Set on Fire", "Salt",
-                "Mexican", "Burnt Food", 5, 1, "burnt.jpg");
+                "Mexican", "Burnt Food", 5, 1, "burnt.jpg", "");
 
         Recipe recipe2 = new Recipe("Throw in Oven", "Chicken",
-                "Chinese", "Chicken", 4, 2, "chicken.jpg");
+                "Chinese", "Chicken", 4, 2, "chicken.jpg", "");
 
         Recipe recipe3 = new Recipe("Pan fry in pan", "Steak, butter",
-                "Western", "Good Steak", 5, 3, "steak.jpg");
+                "Western", "Good Steak", 5, 3, "steak.jpg", "");
 
         Recipe recipe4 = new Recipe("Boil in water", "Spinach, Mushrooms",
-                "Egyptian", "Random Veggies", 2, 4, "veg.jpg");
+                "Egyptian", "Random Veggies", 2, 4, "veg.jpg", "");
 
         Recipe recipe5 = new Recipe("Throw maple syrup on pancakes", "Pancakes, salt, butter",
-                "Canadian", "Pancakes", 3, 5, "pancake.jpg");
+                "Canadian", "Pancakes", 3, 5, "pancake.jpg", "");
+
+        Recipe recipe6 = new Recipe("Throw maple syrup on pancakes", "Pancakes, salt, butter",
+                "All", "Pancakes", 3, 6, "pancake.jpg", "Pancakes with maple syrup.");
+
+        Recipe recipe7 = new Recipe("Turn on the tap", "Cup",
+                "All", "Glass of Water", 5, 7, "pancake.jpg", "A nice glass of water.");
+
 
         dataset.addRecipes(recipe1.getGenre(), recipe1);
         dataset.addRecipes(recipe2.getGenre(), recipe2);
         dataset.addRecipes(recipe3.getGenre(), recipe3);
         dataset.addRecipes(recipe4.getGenre(), recipe4);
         dataset.addRecipes(recipe5.getGenre(), recipe5);
+        dataset.addRecipes(recipe6.getGenre(), recipe6);
+        dataset.addRecipes(recipe7.getGenre(), recipe7);
         return dataset;
     }
 
@@ -64,8 +73,8 @@ public class Constants {
         Object[] list = stream.toArray();
         for (int j = 0; j < list.length; j++) {
             String[] s = list[j].toString().split(",", 6);
-            String result = s[5].replaceAll("^\"+|\"+$", "").replaceAll("\\s+","");
-            ArrayList<String> s5 = new ArrayList<String>(Arrays.asList(result.split(",")));
+            String result = s[5].replaceAll("^\"+|\"+$\\s", "");
+            ArrayList<String> s5 = new ArrayList<>(Arrays.asList(result.split(",")));
             User user = new User(s[0],s[1],s[2],Integer.parseInt(s[3]),s[4],s5);
             userSecurity.addUser(user);
         } return userSecurity;

@@ -60,7 +60,6 @@ public class GetRecipe {
         for (Recipe recipe : genre.values()) {
             previewList.add(recipe.getPreview());
         }
-
         return previewList;
     }
 }

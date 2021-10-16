@@ -13,13 +13,13 @@ public class GenreViewSortTest {
     GenreLibrary dataset = new GenreLibrary();
 
     Recipe recipe1 = new Recipe("Set on Fire", "Salt",
-            "Mexican", "Burnt Food", 3, 1, "burnt.jpg");
+            "Mexican", "Burnt Food", 3, 1, "burnt.jpg", "");
 
     Recipe recipe2 = new Recipe("Throw in Oven", "Chicken",
-            "Chinese", "Chicken", 4, 2, "chicken.jpg");
+            "Chinese", "Chicken", 4, 2, "chicken.jpg", "");
 
     Recipe recipe3 = new Recipe("Pan fry in pan", "Steak, butter",
-            "Western", "Good Steak", 5, 3, "steak.jpg");
+            "Western", "Good Steak", 5, 3, "steak.jpg", "");
 
     User user = new User();
     ArrayList<Recipe> recipelist = new ArrayList<>();
@@ -40,6 +40,7 @@ public class GenreViewSortTest {
         ArrayList<String> genrelist = new ArrayList<>();
 
         genrelist.add("Western");
+        genrelist.add("All");
         genrelist.add("Canadian");
         genrelist.add("Chinese");
         genrelist.add("Egyptian");

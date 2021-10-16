@@ -15,5 +15,5 @@ public class RecipeSaveTest {
     public void TestRecipeSave() throws Exception {
         boolean bool = recipeSave.saveToUser("username1", 1, "Mexican");
         assertEquals(true, bool);
-        }
     }
+}

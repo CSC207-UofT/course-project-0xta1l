@@ -7,12 +7,14 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class CreateLoginUI {
-        public void runLogin(UserRequestCreateLogin controller) throws Exception {
+        public String runLogin() throws Exception {
+                UserRequestCreateLogin CreateLoginController = new UserRequestCreateLogin();
                 Scanner input = new Scanner(System.in);
-                System.out.println("Would you like to create a user or login? \n Please input either \"create\" or \"login\"");
-                String UserChoice = input.nextLine();
-
+                //System.out.println("Would you like to create a user or login? \n Please input either \"create\" or \"login\"");
+                //String UserChoice = input.nextLine();
+                //if (UserChoice.equals("create")) {
                         ArrayList<Object> UserInfo = new ArrayList<>();
+                        System.out.println("Welcome! You will be making a new user account.");
                         System.out.println("Please enter the username you want (each user must have a unique username):");
                         UserInfo.add(input.nextLine());
 
@@ -22,24 +24,31 @@ public class CreateLoginUI {
                         System.out.println("Please enter the display name you want:");
                         UserInfo.add(input.nextLine());
 
-                        System.out.println("Please enter your age:");
-                        UserInfo.add(Integer.parseInt(input.nextLine()));
+                        boolean isNotInt = true;
+                                do {
+                                        try {
+                                                System.out.println("Please enter your age:");
+                                                UserInfo.add(Integer.parseInt(input.nextLine()));
+                                                isNotInt = false;
+                                        } catch (NumberFormatException exception) {
+                                                System.out.println("Not an integer, please try again");
+                                        }
+                                } while(isNotInt);
+
+
 
                         System.out.println("Please enter a short blurb about yourself:");
                         UserInfo.add(input.nextLine());
 
-                        System.out.println("The recipe genres we currently have are: \n Mexican \n Chinese");
-                        System.out.println("Please write out the genres you are interested in, separated by a comma:");
-                        ArrayList<Object> interests = new ArrayList<>(Arrays.asList(input.nextLine().replaceAll("\\s+", "").split(",")));
+                        //System.out.println("The recipe genres we currently have are: \n Mexican \n Chinese \n Western \n Egyptian \n Canadian");
+                        //System.out.println("Please write out the genres you are interested in, separated by a comma:");
+                        //ArrayList<Object> interests = new ArrayList<>(Arrays.asList(input.nextLine().replaceAll("\\s+", "").split(",")));
+                        ArrayList<Object> interests = new ArrayList<>();
                         UserInfo.add(interests);
 
-                        String CurrentUsername = controller.createUser(UserInfo);
+                        return CreateLoginController.createUser(UserInfo);
+                        //}
 
-        }
+
+                }
 }
-
-
-
-
-// TODO: implement way to ensure user input is not ""
-// TODO: do we want the parsing of the ArrayList object types to be done here? or should the use case do it
