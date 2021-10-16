@@ -10,13 +10,13 @@ import java.util.ArrayList;
 
 public class UserRequestBrowse {
 
-    public ArrayList browseGenres(String username){
+    public ArrayList<String> browseGenres(String username){
         User user = Constants.USERSECURITY.getUsernames().get(username);
         GenreViewSort g = new GenreViewSort();
         ArrayList<String> genre_list = g.genresViewList(user);
         return genre_list;
     }
-    public ArrayList browseSavedRecipes(String username){
+    public ArrayList<Object> browseSavedRecipes(String username){
         User user = Constants.USERSECURITY.getUsernames().get(username);
         ArrayList<Recipe> saved_recipes = user.getSavedRecipes();
         ArrayList<Object> recipe_previews = new ArrayList<>();
