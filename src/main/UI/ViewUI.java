@@ -56,7 +56,7 @@ public class ViewUI {
             boolean isNotAll = true;
             do {
                 try {
-                    System.out.println("Which genre would you like to view?:");
+                    System.out.println("Which genre would you like to view? (Only option is 'All'):");
                     genre = scanner.nextLine();
                     UserRequestBrowse BrowseController = new UserRequestBrowse();
                     ArrayList<ArrayList<Object>> GenreRecipes = BrowseController.browseGenreRecipes(genre);
