@@ -1,4 +1,3 @@
-
 package Controllers;
 
 import Constants.Constants;
@@ -9,32 +8,43 @@ import UseCases.GetRecipe;
 
 import java.util.ArrayList;
 
+/**
+ * This controller is responsible for coordinating the display of a list of genres, recipes or saved recipes
+ * */
+
 public class UserRequestBrowse {
 
-    public ArrayList browseGenres(String username){
+    /**
+     * Generates the required list of Strings by utilizing the UseCase GenreViewSort
+     * @param username is the username of a given User
+     * @return a list of strings representing genres
+     */
+    public ArrayList<String> browseGenres(String username){
         User user = Constants.USERSECURITY.getUsernames().get(username);
+        // theoretically have 2 userSecurity instances
+        // static, with all from csv
+        // non-static, includes csv stuff + ANY NEW USERS temporary
         GenreViewSort g = new GenreViewSort();
-        ArrayList<String> genre_list = g.genresViewList(user);
-        return genre_list;
+        return g.genresViewList(user);
     }
-    public ArrayList browseSavedRecipes(String username){
+
+    /**
+     * Generates the required list of Recipe previews
+     * @param username is the username of a given User
+     * @return a list of lists of RecipePreviews
+     */
+    public ArrayList<ArrayList<Object>> browseSavedRecipes(String username){
         User user = Constants.USERSECURITY.getUsernames().get(username);
         ArrayList<Recipe> saved_recipes = user.getSavedRecipes();
-        ArrayList<Object> recipe_previews = new ArrayList<>();
+        ArrayList<ArrayList<Object>> recipe_previews = new ArrayList<>();
         for (Recipe rec : saved_recipes){
             recipe_previews.add(rec.getPreview());
         }
         return recipe_previews;
     }
-
     public ArrayList<ArrayList<Object>> browseGenreRecipes(String genre){
-        ArrayList<ArrayList<Object>> genre_recipe_previews;
-        GetRecipe g = new  GetRecipe();
-        genre_recipe_previews = g.getGenreRecipes(genre);
-        return genre_recipe_previews;
-
-
+        GetRecipe g = new GetRecipe();
+        return g.getGenreRecipes(genre);
     }
 }
-
 
