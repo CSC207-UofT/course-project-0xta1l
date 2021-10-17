@@ -9,7 +9,7 @@ import UseCases.GetRecipe;
 import java.util.ArrayList;
 
 /**
- * This controller is responsible for coordinating the display of a list of genres, recipes or saved recipes
+ * This controller is responsible for coordinating the display of a list of genres, recipes or saved recipes.
  * */
 
 public class UserRequestBrowse {

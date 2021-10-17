@@ -82,7 +82,7 @@ public class User {
 
     /**
      * Generates a profile based on a given User's displayname, username, interests, biography and age
-     * @return ArrayList<Object> representing the profile
+     * @return ArrayList<Object> representing the profile that has been generated
      */
     public ArrayList<Object> getProfile(){
         ArrayList<Object> profile = new ArrayList<>();

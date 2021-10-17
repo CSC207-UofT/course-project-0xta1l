@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * This class is the Recipe Entity. It possesses 9 attributes:
- *  •instructions - the instruction to make the recipe (String)
+ *  •instructions - the instructions to make the recipe (String)
  *  •ingredients - the different ingredients required (String where each ingredient is
  *                 separated by a comma)
  *  •genre - the type of recipe in question, for example "Jamaican" (String)
