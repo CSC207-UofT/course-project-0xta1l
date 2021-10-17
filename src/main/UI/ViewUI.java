@@ -3,6 +3,7 @@ package UI;
 import java.util.ArrayList;
 import java.util.Scanner;
 import Controllers.*;
+import Presenters.ListDisplay;
 
 /*
 * A user interface class that handles the controls and handles the commands a user can execute.
@@ -18,7 +19,6 @@ public class ViewUI {
         System.out.println("Which would you like to do? \n ViewUserProfile, ViewGenres, ViewUserSavedRecipe or Logout");
         String action = scanner.nextLine();
         UserRequestBrowse browse = new UserRequestBrowse();
-        CreateLoginUI log = new CreateLoginUI();
         ListDisplay display = new ListDisplay();
         ViewUI nextPrompt = new ViewUI();
 

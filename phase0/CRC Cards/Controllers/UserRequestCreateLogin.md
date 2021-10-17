@@ -8,4 +8,3 @@ Responsibilities:
 Collaborators:
 - UserCreate
 - UserLogin
-- UserInputStatusDisplay
