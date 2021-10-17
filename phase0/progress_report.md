@@ -2,9 +2,11 @@
 
 Our project domain is a recipe organizer program that allows users to discover new recipes, build their own collection
 of recipes, and review recipes. Additionally, users may upload their own recipes if they wish, which other users can
+
 interact with.
 
 **CRC Model**
+
 
 The CRC cards are sorted into their respective layers of the Clean Architecture model. The responsibilities of each 
 class are outlined in the "Responsibilities" section, and dependencies of each are outlined in the "Collaborators" 
@@ -56,49 +58,50 @@ find and save various recipes that he likes and share the recipe with his friend
 
 **Brief Description of the Skeleton Program:**
 
-A user creates an account: This will call UserRequestCreateLoginUser method which will call UseCreate to create a
+
+A user creates an account: This will call UserRequestCreateLoginUser method which will call UseCreate to create a 
 User and add it into our global library USERSECURITY.
 
-A user browses genres: This will call UserRequestBrowse browseGenres method which will call GenreViewSort to sort
-genres based on a User's interests and returns a list of sorted genres. The genres will come from our global dataset
+A user browses genres: This will call UserRequestBrowse browseGenres method which will call GenreViewSort to sort 
+genres based on a User's interests and returns a list of sorted genres. The genres will come from our global dataset 
 of genres, GENRELIBRARY.
 
-A user selects genres: This will call UserRequestBrowse browseGenreRecipes method which will return a list of recipe
-previews.
+A user selects genres: This will call UserRequestBrowse browseGenreRecipes method which will return a list of recipe 
+previews. 
 
-A user views recipes from our dataset of recipes: This will call UserRequestRecipeView which will call RecipeDisplay
+A user views recipes from our dataset of recipes: This will call UserRequestRecipeView which will call RecipeDisplay 
 that shows the recipe to the user. The user can then choose the recipe.
 
-A user saves recipes: This will call UserRequestSaveRecipe which will take the recipe the user has chosen and call
-RecipeSave to save the recipe into the user's list of saved recipes.
+A user saves recipes: This will call UserRequestSaveRecipe which will take the recipe the user has chosen and call 
+RecipeSave to save the recipe into the user's list of saved recipes. 
 
-A user views saved recipes: This will call UserRequestBrowse which will call browseSavedRecipes method that will
-return the list of saved recipe previews.
+A user views saved recipes: This will call UserRequestBrowse which will call browseSavedRecipes method that will 
+return the list of saved recipe previews. 
 
 **Open questions our group is struggling with:**
 
-1. Currently, we have a recipe dataset and a user dataset, both of which are CSV files, that store all the recipes and
-   users. How do we add new recipes and new users to these datasets?
-2. How does clean architecture work with the database on the outside, if having a base of users and a base of recipes
-   is integral to the program?
+1. Currently, we have a recipe dataset and a user dataset, both of which are CSV files, that store all the recipes and 
+users. How do we add new recipes and new users to these datasets?
+2. How does clean architecture work with the database on the outside, if having a base of users and a base of recipes 
+is integral to the program?
 3. Is there criteria to how large a class is? Is it okay if a class has one method?
-4. How do we effectively handle Exceptions?
+4. How do we effectively handle Exceptions? 
 5. How do we design an effective UI, if we want to make an app with a GUI?
 
 **What has worked well so far with our design:**
 
-In our design, we have emphasized the SOLID principles, especially the Single-responsibility Principle, the
-Open-Closed Principle, and the Dependency Inversion Principle. For the
-Single-responsibility Principle, our entities, use cases, and controllers/presenters each have a single responsibility
-and do not overlap with other classes. For example, the use case UserCreate only handles user creation and its only
-reason to change is if we wanted to add another method for creating users. For the Open-Closed Principle, all of our
-classes are closed for modification, but they can each be extended. For example, the GenreViewSort class includes
-a method for sorting the recipes of a specific genre by the alphabet or by rating and this method is not open for
-modification; though, we can extend this class by adding new methods for sorting. For the Dependency Inversion
-Principle, every level of our code (ex. Entities, Use Cases, etc.) uses the same level or the level below it. For
-example, the use cases only interact with other use cases or entities.
+In our design, we have emphasized the SOLID principles, especially the Single-responsibility Principle, the 
+Open-Closed Principle, and the Dependency Inversion Principle. For the 
+Single-responsibility Principle, our entities, use cases, and controllers/presenters each have a single responsibility 
+and do not overlap with other classes. For example, the use case UserCreate only handles user creation and its only 
+reason to change is if we wanted to add another method for creating users. For the Open-Closed Principle, all of our 
+classes are closed for modification, but they can each be extended. For example, the GenreViewSort class includes 
+a method for sorting the recipes of a specific genre by the alphabet or by rating and this method is not open for 
+modification; though, we can extend this class by adding new methods for sorting. For the Dependency Inversion 
+Principle, every level of our code (ex. Entities, Use Cases, etc.) uses the same level or the level below it. For 
+example, the use cases only interact with other use cases or entities. 
 
-Another thing that has worked well so far with our design is the use of csv files for our datasets. Instead of creating
+Another thing that has worked well so far with our design is the use of csv files for our datasets. Instead of creating 
 an instance of an entity for every recipe and user (resulting in hundreds of entity instances), we created csv files to
 represent our recipe and user datasets. In each csv file, every line expresses a single user or recipe. This way, it is
 much easier to store, add, delete, change, and overall manage users and recipes.
