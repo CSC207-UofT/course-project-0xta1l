@@ -5,6 +5,7 @@ import Constants.Constants;
 import Entities.Recipe;
 import Entities.User;
 import UseCases.GenreViewSort;
+import UseCases.GetRecipe;
 
 import java.util.ArrayList;
 
@@ -24,7 +25,13 @@ public class UserRequestBrowse {
             recipe_previews.add(rec.getPreview());
         }
         return recipe_previews;
+    }
 
+    public ArrayList<ArrayList<Object>> browseGenreRecipes(String genre){
+        ArrayList<ArrayList<Object>> genre_recipe_previews;
+        GetRecipe g = new  GetRecipe();
+        genre_recipe_previews = g.getGenreRecipes(genre);
+        return genre_recipe_previews;
 
 
     }
