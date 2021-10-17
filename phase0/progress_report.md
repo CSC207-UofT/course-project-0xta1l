@@ -119,7 +119,7 @@ Amir: Amir has worked on writing code for controllers and presenters as well as 
 He plans on updating code for the controllers/presenters and pitching in for the user interface.
 
 Arpi: Arpi has worked on writing the specification, the code for the GetRecipe use case, and converting the
-GenreLibrary dataset into csv format. He plans on expanding use cases to create more functions for the user.
+GenreLibrary dataset into csv format. They plan on expanding use cases to create more functions for the user.
 
 Can: Can has worked on the RecipeSave use case and writing test cases. He plans on working on more use cases and
 writing tests.
