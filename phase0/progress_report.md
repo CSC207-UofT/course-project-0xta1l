@@ -1,9 +1,7 @@
 **Specification**
 
 Our project domain is a recipe organizer program that allows users to discover new recipes, build their own collection
-of recipes, and review recipes. Additionally, users may upload their own recipes if they wish, which other users can
-
-interact with.
+of recipes, and review recipes. Additionally, users may upload their own recipes if they wish, which other users can interact with.
 
 **CRC Model**
 
