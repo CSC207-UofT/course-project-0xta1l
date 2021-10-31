@@ -11,7 +11,7 @@ public class RecipeCreate {
     //        Creates recipe entity and adds it to the GenreLibrary
     //        Outputs the created recipe
 
-    public Recipe CreateRecipeFromUser(, String instructions, String ingredients, ArrayList<String> genres, String name,
+    public Recipe CreateRecipeFromUser(String instructions, String ingredients, ArrayList<String> genres, String name,
                                        int rating, int ID, ArrayList<Review> RecipeReviews, String image,
                                        String descriptions ){
 
