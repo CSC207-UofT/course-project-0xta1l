@@ -8,6 +8,13 @@ public class Review {
     private String comments;
     private int rating;
 
+    public Review(String reviewID,String recipeID, String userID, String comments, int rating){
+        this.rating = rating;
+        this.recipeID = recipeID;
+        this.userID = userID;
+        this.comments =  comments;
+        this.reviewID = reviewID;
+    }
     public String getReviewID() {return reviewID;}
     public String getRecipeID() {return recipeID;}
     public String getUserID() {return userID;}
