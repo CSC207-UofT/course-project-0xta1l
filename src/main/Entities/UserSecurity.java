@@ -11,6 +11,10 @@ public class UserSecurity {
 
     public HashMap<String, User> getUsernames() {return UsernameList;}
 
+    public User getUserByID (String username){
+        return UsernameList.get(username);
+    }
+
     public void checkPassword(String username, String password){
         try{
             if (this.UserPassword.get(username).equals(password)){
