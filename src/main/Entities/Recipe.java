@@ -22,7 +22,7 @@ import java.util.List;
 public class Recipe {
     private String instructions;
     private String ingredients;
-    private String genre;
+    private ArrayList<String> genre;
     private String name;
     private int rating;
     private int ID;
@@ -34,10 +34,13 @@ public class Recipe {
      * Constructor for Recipe
      */
     public Recipe(){}
-    public Recipe(String i, String ing, String g, String name, int rating, int id, String img, String description){
+    public Recipe(String i, String ing, ArrayList<String>  g, String name, int rating, int id, String img, String description){
         this.instructions = i;
         this.ingredients = ing;
-        this.genre = g;
+        ArrayList<String> genres = new ArrayList<>();
+        genres.add("All");
+        genres.addAll(g);
+        this.genre = genres;
         this.name = name;
         this.rating = rating;
         this.ID = id;
@@ -61,7 +64,7 @@ public class Recipe {
      */
     public String getInstructions() {return instructions;}
     public String getIngredients() {return ingredients;}
-    public String getGenre() {return genre;}
+    public ArrayList<String> getGenre() {return genre;}
     public String getName() {return name;}
     public int getRating() {return rating;}
     public int getID() {return ID;}
@@ -105,7 +108,7 @@ public class Recipe {
      */
     public void setInstructions(String instructions) {this.instructions = instructions;}
     public void setIngredients(String ingredients) {this.ingredients = ingredients;}
-    public void setGenre(String genre) {this.genre = genre;}
+    public void setGenre(ArrayList<String> genre) {this.genre = genre;}
     public void setRating(int rating) {this.rating = rating;}
     public void setID(int ID) {this.ID = ID;}
     public void setName(String name) {this.name = name;}
