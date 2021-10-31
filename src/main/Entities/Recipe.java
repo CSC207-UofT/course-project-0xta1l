@@ -45,7 +45,9 @@ public class Recipe {
         this.rating = rating;
         this.ID = id;
         this.image = img;
-        this.description = description;}
+        this.description = description;
+        this.RecipeReviews = new ArrayList<>();}
+
 
     /**
      * Getter Methods for Recipe:
