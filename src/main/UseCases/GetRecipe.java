@@ -69,7 +69,7 @@ public class GetRecipe {
         ArrayList<ArrayList<Object>> FilteredRecipes = new ArrayList<>();
         for (ArrayList<Object> recipe: recipes) {
             // this doesn't actually work
-            if (Arrays.asList(recipe).get(3).contains(filter)){
+            if (Arrays.asList(recipe.get(3)).contains(filter)){
                 FilteredRecipes.add(recipe);
             }
         }
