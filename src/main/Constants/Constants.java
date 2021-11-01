@@ -29,36 +29,47 @@ public class Constants {
 
     public static GenreLibrary createDataset() {
         GenreLibrary dataset = new GenreLibrary();
+        ArrayList<String> r1genres = new ArrayList<>();
+        r1genres.add("Mexican");
+        ArrayList<String> r2genres = new ArrayList<>();
+        r2genres.add("Chinese");
+        ArrayList<String> r3genres = new ArrayList<>();
+        r3genres.add("Western");
+        ArrayList<String> r4genres = new ArrayList<>();
+        r4genres.add("Egyptian");
+        ArrayList<String> r5genres = new ArrayList<>();
+        r5genres.add("Canadian");
 
         Recipe recipe1 = new Recipe("Set on Fire", "Salt",
-                "Mexican", "Burnt Food", 5, 1, "burnt.jpg", "");
+                r1genres, "Burnt Food", 5, 1, "burnt.jpg", "");
 
         Recipe recipe2 = new Recipe("Throw in Oven", "Chicken",
-                "Chinese", "Chicken", 4, 2, "chicken.jpg", "");
+                r2genres, "Chicken", 4, 2, "chicken.jpg", "");
 
         Recipe recipe3 = new Recipe("Pan fry in pan", "Steak, butter",
-                "Western", "Good Steak", 5, 3, "steak.jpg", "");
+                r3genres, "Good Steak", 5, 3, "steak.jpg", "");
 
         Recipe recipe4 = new Recipe("Boil in water", "Spinach, Mushrooms",
-                "Egyptian", "Random Veggies", 2, 4, "veg.jpg", "");
+                r4genres, "Random Veggies", 2, 4, "veg.jpg", "");
 
         Recipe recipe5 = new Recipe("Throw maple syrup on pancakes", "Pancakes, salt, butter",
-                "Canadian", "Pancakes", 3, 5, "pancake.jpg", "");
+                r5genres, "Pancakes", 3, 5, "pancake.jpg", "");
 
-        Recipe recipe6 = new Recipe("Throw maple syrup on pancakes", "Pancakes, salt, butter",
-                "All", "Pancakes", 3, 6, "pancake.jpg", "Pancakes with maple syrup.");
-
-        Recipe recipe7 = new Recipe("Turn on the tap", "Cup",
-                "All", "Glass of Water", 5, 7, "pancake.jpg", "A nice glass of water.");
-
-
-        dataset.addRecipes(recipe1.getGenre(), recipe1);
-        dataset.addRecipes(recipe2.getGenre(), recipe2);
-        dataset.addRecipes(recipe3.getGenre(), recipe3);
-        dataset.addRecipes(recipe4.getGenre(), recipe4);
-        dataset.addRecipes(recipe5.getGenre(), recipe5);
-        dataset.addRecipes(recipe6.getGenre(), recipe6);
-        dataset.addRecipes(recipe7.getGenre(), recipe7);
+        for (String g: recipe1.getGenre()){
+            dataset.addRecipes(g, recipe1);
+        }
+        for (String g: recipe2.getGenre()){
+            dataset.addRecipes(g, recipe2);
+        }
+        for (String g: recipe3.getGenre()){
+            dataset.addRecipes(g, recipe3);
+        }
+        for (String g: recipe4.getGenre()){
+            dataset.addRecipes(g, recipe4);
+        }
+        for (String g: recipe5.getGenre()){
+            dataset.addRecipes(g, recipe5);
+        }
         return dataset;
     }
 
