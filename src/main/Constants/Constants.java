@@ -1,5 +1,6 @@
 package Constants;
 
+import Commands.*;
 import Entities.GenreLibrary;
 import Entities.Recipe;
 import Entities.User;
@@ -12,12 +13,13 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.stream.Stream;
 
 public class Constants {
     // Create Constants
     public static UserSecurity USERSECURITY;
-
+    public static CommandTree  COMMANDTREE;
     static {
         try {
             USERSECURITY = Constants.CSVUserReader("src/main/Constants/users.csv");
@@ -90,9 +92,27 @@ public class Constants {
             userSecurity.addUser(user);
         } return userSecurity;
     }
+    public static CommandTree createCommandTree(Command command){
+        CommandTree commandTree = new CommandTree(new CommandTree.CommandNode());
+        commandTree.setRoot(createCommandNode(command));
 
-    public static void main(String[] args) throws FileNotFoundException {
-        UserSecurity us = CSVUserReader("src/main/Constants/users.csv");
+        return commandTree;
     }
 
+    public static CommandTree.CommandNode createCommandNode(Command command){
+
+        CommandTree.CommandNode node = new CommandTree.CommandNode();
+        node.setCommand(command);
+        ArrayList<Command> commandList = command.getSubCommands();
+
+        if (commandList.isEmpty()){
+            return node;
+        } else{
+            for(Command c: commandList){
+                CommandTree.CommandNode subNode = createCommandNode(c);
+                node.addChild(subNode);
+            }
+        }
+        return node;
+    }
 }
