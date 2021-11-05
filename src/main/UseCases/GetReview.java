@@ -8,20 +8,22 @@ import java.util.HashMap;
 public class GetReview {
 
     public ArrayList<ArrayList<Object>> getRecipeReviews(int recipeID){
-        // Implemented differently to CRC card. No use of hash map because Recipe.getRecipeReviews() returns
-        // an ArrayList
+        // Cycles through all values in Recipe.getReviews HashMap and outputs relevant review info
 
         GenreLibrary genreLibrary = new GenreLibrary();
         Recipe specificRecipe = genreLibrary.getRecipeByID("All", recipeID);
-        ArrayList<Review> reviewList = specificRecipe.getRecipeReviews();
-        // HashMap<User, Review> reviewMap = specificRecipe.getRecipeReviews();
+        HashMap<String, Review> reviewMap = specificRecipe.getRecipeReviews();
 
         ArrayList<ArrayList<Object>> finalReviewList = new ArrayList<>();
-        for (Review review: reviewList){
+        for (Review review: reviewMap.values()){
             int rating = review.getRating();
             String userID = review.getUserID();
             String comment = review.getComments();
-            finalReviewList.add(rating,comment,userID);
+            ArrayList<Object> reviewInfo = new ArrayList<>();
+            reviewInfo.add(rating);
+            reviewInfo.add(comment);
+            reviewInfo.add(userID);
+            finalReviewList.add(reviewInfo);
         }
         return finalReviewList;
     }
@@ -37,13 +39,18 @@ public class GetReview {
             int rating = review.getRating();
             String recipeID = review.getRecipeID();
             String comment = review.getComments();
-            finalReviewList.add(rating,comment,recipeID);
+            ArrayList<Object> reviewInfo = new ArrayList<>();
+            reviewInfo.add(rating);
+            reviewInfo.add(comment);
+            reviewInfo.add(recipeID);
+            finalReviewList.add(reviewInfo);
         }
         return finalReviewList;
     }
 
-    public Review getSingle(String reviewID){
-
+    // SHOULD RETURN REVIEW, BUT CHANGED TO VOID SO I COULD COMPILE TESTS
+    public void getSingle(String reviewID){
+        // TODO: will we have some constant file that stores all reviews? will we actually need this method?
     }
 
 }

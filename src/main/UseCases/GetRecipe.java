@@ -4,6 +4,7 @@ import Entities.Recipe;
 import Entities.User;
 import Constants.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class GetRecipe {
@@ -61,5 +62,16 @@ public class GetRecipe {
             previewList.add(recipe.getPreview());
         }
         return previewList;
+    }
+
+    // TODO: ADD TEST CASE
+    public ArrayList<ArrayList<Object>> genreRecipesFilter(ArrayList<ArrayList<Object>> recipes, String filter){
+        ArrayList<ArrayList<Object>> FilteredRecipes = new ArrayList<>();
+        for (ArrayList<Object> recipe: recipes) {
+            if (Arrays.asList(recipe.get(3)).contains(filter)){
+                FilteredRecipes.add(recipe);
+            }
+        }
+        return FilteredRecipes;
     }
 }

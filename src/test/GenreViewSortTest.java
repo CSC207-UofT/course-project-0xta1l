@@ -14,8 +14,9 @@ public class GenreViewSortTest {
     GenreLibrary dataset = new GenreLibrary();
     User user = new User();
     ArrayList<String> r1genre = new ArrayList<>(Arrays.asList("Mexican", "Meals"));
-    ArrayList<String> r2genre = new ArrayList<>(Arrays.asList("Chinese", "Desserts"));
+    ArrayList<String> r2genre = new ArrayList<>(Arrays.asList("Chinese", "Meals"));
     ArrayList<String> r3genre = new ArrayList<>(Arrays.asList("Western", "Drinks"));
+    ArrayList<String> r4genre = new ArrayList<>(Arrays.asList("Chinese", "Meals", "Western"));
 
     Recipe recipe1 = new Recipe("Set on Fire", "Salt",
             r1genre, "Burnt Food", 3, 1, "burnt.jpg", "");
@@ -25,6 +26,9 @@ public class GenreViewSortTest {
 
     Recipe recipe3 = new Recipe("Pan fry in pan", "Steak, butter",
             r3genre, "Good Steak", 5, 3, "steak.jpg", "");
+
+    Recipe recipe4 = new Recipe("Pan fry in pan", "Lobster, garlic",
+            r4genre, "Garlic Lobster", 5, 3, "lobster.jpg", "");
 
     ArrayList<Recipe> recipelist = new ArrayList<>();
     @Before
@@ -38,6 +42,9 @@ public class GenreViewSortTest {
         }
         for (String g: recipe2.getGenre()){
             dataset.addRecipes(g, recipe3);
+        }
+        for (String g: recipe4.getGenre()){
+            dataset.addRecipes(g, recipe4);
         }
         /*dataset.addRecipes(recipe1.getGenre(), recipe1);
         dataset.addRecipes(recipe2.getGenre(), recipe2);

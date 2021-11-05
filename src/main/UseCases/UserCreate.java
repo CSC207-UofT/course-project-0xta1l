@@ -19,13 +19,14 @@ public class UserCreate {
         if (Constants.USERSECURITY.getUsernames().containsKey(username)){
             return false;
         } else{
-            User new_user = new User();
+            /*User new_user = new User();
             new_user.setDisplayName(displayName);
             new_user.setAge(age);
             new_user.setPassword(password);
             new_user.setUsername(username);
             new_user.setBiography(biography);
-            for (String i:interests){new_user.addInterests(i);}
+            for (String i:interests){new_user.addInterests(i);}*/
+            User new_user = new User(username, password, displayName, age, biography, interests);
             Constants.USERSECURITY.addUser(new_user);
             return true;
         }
