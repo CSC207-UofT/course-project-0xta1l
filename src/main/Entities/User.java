@@ -1,6 +1,10 @@
 package Entities;
 
+import Constants.Constants;
+
+import javax.naming.ldap.HasControls;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * This class is the User Entity. It possesses 7 attributes:
@@ -19,11 +23,11 @@ public class User {
     private String password;
     private String username;
     private String biography;
-    private ArrayList<String> interests= new ArrayList<>();
+    private ArrayList<String> interests;
     private ArrayList<Recipe> SavedRecipes = new ArrayList<>();
 
-    // For now until we properly use the review entity in the future, Entities.User reviews is an ArrayList
     private ArrayList<Review> UserReviews = new ArrayList<>();
+    private HashMap<String, Double> GenreWeights = new HashMap<>();
 
     public User(){
         this.interests = new ArrayList<>();
@@ -38,7 +42,36 @@ public class User {
         this.password = pws;
         this.username = username;
         this.biography = bio;
-        this.interests = interests;}
+        this.interests = interests;
+        updateGenreWeights(this.interests);
+    }
+
+    /* Updates GenreWeights to match interests */
+    private void updateGenreWeights(ArrayList<String> interests) {
+        for (String interest: interests){
+            // Does not override previous interests data
+            if (!this.GenreWeights.containsKey(interest)){
+                this.GenreWeights.put(interest, 0.85);
+            }
+        }
+    }
+
+    /* Updates GenreWeights when a recipe is saved */
+    private void updateGenreWeights(Integer recipeID) {
+        Recipe recipe = Constants.GENRELIBRARY.getRecipeByID("All", recipeID);
+        ArrayList<String> recipeGenre = recipe.getGenre();
+        for (String genre: recipeGenre){
+            if (!genre.equals("All")) {
+                this.GenreWeights.put(genre, 0.05);
+            }
+        }
+    }
+
+    /* Updates GenreWeights when an interest is removed */
+    private void updateGenreWeights(String genre) {
+        this.GenreWeights.put(genre, 0.0);
+    }
+
 
     /**
      * Getter Methods for User:
@@ -60,6 +93,8 @@ public class User {
     public ArrayList<Recipe> getSavedRecipes() {return SavedRecipes;}
     public ArrayList<Review> getUserReviews() {return UserReviews;}
 
+    public HashMap<String, Double> getGenreWeights() { return GenreWeights; }
+
     /**
      * Setter Methods for User:
      * •setDisplayName - accepts displayname attribute for a User
@@ -75,10 +110,21 @@ public class User {
     public void setPassword(String password) {this.password = password;}
     public void setUsername(String username) {this.username = username;}
     public void setBiography(String biography) {this.biography = biography;}
-    public void addInterests(String interest) {this.interests.add(interest);}
+
+    public void addInterests(String interest) {
+        this.interests.add(interest);
+        this.updateGenreWeights(this.interests);
+    }
+    public void deleteInterests(String interest) {
+        this.interests.remove(interest);
+        this.updateGenreWeights(interest);
+    }
 
 
-    public void addSavedRecipes(Recipe recipe) {this.SavedRecipes.add(recipe);}
+    public void addSavedRecipes(Recipe recipe) {
+        this.SavedRecipes.add(recipe);
+        updateGenreWeights(recipe.getID());
+    }
 
     /**
      * Generates a profile based on a given User's displayname, username, interests, biography and age

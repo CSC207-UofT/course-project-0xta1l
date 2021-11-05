@@ -1,28 +1,24 @@
 
 import Entities.Recipe;
 import Entities.User;
+import Constants.*;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
 
 
 public class UserTest {
-    Recipe recipe = new Recipe();
+    ArrayList<String> genre = new ArrayList<>(Arrays.asList("Jamaican", "Meals"));
+    Recipe recipe = new Recipe("just cook", "water flour sugar", genre, "Oxtail Stew", 5, 50, "img", "description");
     User user = new User();
     @Before
     public void setUp() {
-        ArrayList<String> genre = new ArrayList<>();
-        genre.add("Jamaican");
-        recipe.setGenre(genre);
-        recipe.setID(50);
-        recipe.setIngredients("water flour sugar");
-        recipe.setRating(5);
-        recipe.setName("Oxtail Stew");
-        recipe.setInstructions("just cook");
-
+        Constants.GENRELIBRARY.addRecipes("All", recipe);
         user.setAge(20);
         user.setUsername("Amir");
         user.setBiography("boy from BimTown");
@@ -50,5 +46,14 @@ public class UserTest {
         profile.add("boy from BimTown");
         profile.add(20);
         assertEquals(profile, user.getProfile());
+    }
+
+    @Test(timeout = 50)
+    public void TestUserGenreWeights() {
+        HashMap<String, Double> weights = new HashMap<>();
+        weights.put("German", 0.85);
+        weights.put("Jamaican", 0.05);
+        weights.put("Meals", 0.05);
+        assertEquals(weights, user.getGenreWeights());
     }
 }
