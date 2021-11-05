@@ -51,7 +51,7 @@ public class User {
         for (String interest: interests){
             // Does not override previous interests data
             if (!this.GenreWeights.containsKey(interest)){
-                this.GenreWeights.put(interest, 0.85);
+                this.GenreWeights.put(interest, 0.70);
             }
         }
     }
@@ -63,7 +63,7 @@ public class User {
         for (String genre: recipeGenre){
             if (!genre.equals("All")) {
                 this.GenreWeights.put(genre, 0.05);
-            }
+            } // make sure that GenreWeights.get(genre) is not greater than 1.0
         }
     }
 
