@@ -13,9 +13,10 @@ public class UserTest {
     Recipe recipe = new Recipe();
     User user = new User();
     @Before
-    public void setUp() throws Exception {
-
-        recipe.setGenre("Jamaican");
+    public void setUp() {
+        ArrayList<String> genre = new ArrayList<>();
+        genre.add("Jamaican");
+        recipe.setGenre(genre);
         recipe.setID(50);
         recipe.setIngredients("water flour sugar");
         recipe.setRating(5);
