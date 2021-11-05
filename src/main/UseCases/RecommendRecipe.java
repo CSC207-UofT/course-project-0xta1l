@@ -5,7 +5,7 @@ import Entities.Recipe;
 import java.util.ArrayList;
 
 public class RecommendRecipe {
-    //public ArrayList<Recipe> recommendTwo(String username){
+    //public ArrayList<Recipe> recommend(String username, int recsNum){
 
     //}
 }
