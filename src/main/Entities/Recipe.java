@@ -3,6 +3,7 @@ package Entities;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -27,7 +28,7 @@ public class Recipe {
     private String name;
     private int rating;
     private int ID;
-    private ArrayList<Review> RecipeReviews = new ArrayList<>();
+    private HashMap<String, Review> RecipeReviews;
     private String image;
     private String description;
     public Preview preview;
@@ -48,7 +49,7 @@ public class Recipe {
         this.ID = id;
         this.image = img;
         this.description = description;
-        this.RecipeReviews = new ArrayList<>();
+        this.RecipeReviews = new Hashmap<>();
         this.preview = new Preview(id, name, rating, genres, description);
     }
 
@@ -76,8 +77,9 @@ public class Recipe {
     public int getID() {return ID;}
     public String getImage() {return image;}
     public String getDescription() {return description;}
-    public ArrayList<Review> getRecipeReviews() {return RecipeReviews;}
+    public HashMap<String, Review> getRecipeReviews() {return RecipeReviews;}
     public Preview getPreview() {return preview;}
+
     public ArrayList<Object> getFull() {
         ArrayList<Object> fullList = new ArrayList<>();
         fullList.add(getID());
