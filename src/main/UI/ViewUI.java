@@ -3,6 +3,7 @@ package UI;
 import java.util.ArrayList;
 import java.util.Scanner;
 import Controllers.*;
+import Entities.Preview;
 import Presenters.ListDisplay;
 
 /*
@@ -59,7 +60,7 @@ public class ViewUI {
                     System.out.println("Which genre would you like to view? (Only option is 'All'):");
                     genre = scanner.nextLine();
                     UserRequestBrowse BrowseController = new UserRequestBrowse();
-                    ArrayList<ArrayList<Object>> GenreRecipes = BrowseController.browseGenreRecipes(genre);
+                    ArrayList<Preview> GenreRecipes = BrowseController.browseGenreRecipes(genre);
                     display.DisplayListOfRecipes(GenreRecipes);
 
                     if (genre.equals("All")){
