@@ -1,6 +1,8 @@
 package Presenters;
 
 
+import Entities.Preview;
+
 import java.util.ArrayList;
 
 public class ListDisplay {
@@ -11,14 +13,14 @@ public class ListDisplay {
             System.out.println(str);
         }*/
     }
-    public void DisplayListOfRecipes(ArrayList<ArrayList<Object>> browseInfo) {
+    public void DisplayListOfRecipes(ArrayList<Preview> browseInfo) {
         if (browseInfo.size() == 0){
             System.out.println("No recipes to display.");
         } else{
-            for (ArrayList<Object> recipe : browseInfo) {
-                System.out.println("Recipe ID: " + recipe.get(0));
-                System.out.println("Recipe Name: " + recipe.get(1));
-                System.out.println("Recipe Rating: " + recipe.get(2) + "\n");
+            for (Preview recipe : browseInfo) {
+                System.out.println("Recipe ID: " + recipe.getID());
+                System.out.println("Recipe Name: " + recipe.getName());
+                System.out.println("Recipe Rating: " + recipe.getRating() + "\n");
             }
         }
     }
