@@ -12,8 +12,8 @@ public class RecipeSave {
         User user = Constants.USERSECURITY.getUsernames().get(userID);
         Recipe recipe = Constants.GENRELIBRARY.getRecipeByID(genre, recipeID);
 
-        ArrayList<Recipe> recipelist = user.getSavedRecipes();
-        if (recipelist.contains(recipe)){
+        ArrayList<Recipe> recipeList = user.getSavedRecipes();
+        if (recipeList.contains(recipe)){
             throw new Exception("Recipe is already saved");
         }
         else {

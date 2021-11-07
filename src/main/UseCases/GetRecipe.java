@@ -1,16 +1,18 @@
 package UseCases;
 
+import Entities.Preview;
 import Entities.Recipe;
 import Entities.User;
 import Constants.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class GetRecipe {
-    public HashMap<Integer, ArrayList<Object>> getUserSavedRecipes(User user) {
+    public HashMap<Integer, Preview> getUserSavedRecipes(User user) {
         ArrayList<Recipe> userRecipeList = user.getSavedRecipes();
 
-        HashMap<Integer, ArrayList<Object>> recipeMap = new HashMap<>();
+        HashMap<Integer, Preview> recipeMap = new HashMap<>();
 
         for (Recipe recipe: userRecipeList) {
             Recipe variable = Constants.GENRELIBRARY.getRecipeByID("All", recipe.getID());
@@ -50,16 +52,27 @@ public class GetRecipe {
 
     }
 
-    public ArrayList<ArrayList<Object>> getGenreRecipes (String genreName) {
+    public ArrayList<Preview> getGenreRecipes (String genreName) {
 
         HashMap<Integer, Recipe> genre;
 
         genre = Constants.GENRELIBRARY.getAllRecipes(genreName);
 
-        ArrayList<ArrayList<Object>> previewList = new ArrayList<>();
+        ArrayList<Preview> previewList = new ArrayList<>();
         for (Recipe recipe : genre.values()) {
             previewList.add(recipe.getPreview());
         }
         return previewList;
+    }
+
+    // TODO: ADD TEST CASE
+    public ArrayList<ArrayList<Object>> genreRecipesFilter(ArrayList<ArrayList<Object>> recipes, String filter){
+        ArrayList<ArrayList<Object>> FilteredRecipes = new ArrayList<>();
+        for (ArrayList<Object> recipe: recipes) {
+            if (Arrays.asList(recipe.get(3)).contains(filter)){
+                FilteredRecipes.add(recipe);
+            }
+        }
+        return FilteredRecipes;
     }
 }

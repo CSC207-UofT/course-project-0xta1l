@@ -6,6 +6,7 @@ import Entities.User;
 import Constants.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 //genresViewList method (takes in user)

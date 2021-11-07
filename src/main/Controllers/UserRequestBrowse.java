@@ -1,6 +1,7 @@
 package Controllers;
 
 import Constants.Constants;
+import Entities.Preview;
 import Entities.Recipe;
 import Entities.User;
 import UseCases.GenreViewSort;
@@ -33,16 +34,16 @@ public class UserRequestBrowse {
      * @param username is the username of a given User
      * @return a list of lists of RecipePreviews
      */
-    public ArrayList<ArrayList<Object>> browseSavedRecipes(String username){
+    public ArrayList<Preview> browseSavedRecipes(String username){
         User user = Constants.USERSECURITY.getUsernames().get(username);
         ArrayList<Recipe> saved_recipes = user.getSavedRecipes();
-        ArrayList<ArrayList<Object>> recipe_previews = new ArrayList<>();
+        ArrayList<Preview> recipe_previews = new ArrayList<>();
         for (Recipe rec : saved_recipes){
             recipe_previews.add(rec.getPreview());
         }
         return recipe_previews;
     }
-    public ArrayList<ArrayList<Object>> browseGenreRecipes(String genre){
+    public ArrayList<Preview> browseGenreRecipes(String genre){
         GetRecipe g = new GetRecipe();
         return g.getGenreRecipes(genre);
     }
