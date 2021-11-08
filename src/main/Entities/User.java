@@ -126,6 +126,10 @@ public class User {
         updateGenreWeights(recipe.getID());
     }
 
+    public void addSavedReviews(int reviewID, Review review) {
+        this.UserReviews.put(reviewID, review);
+    }
+
     /**
      * Generates a profile based on a given User's displayname, username, interests, biography and age
      * @return ArrayList<Object> representing the profile that has been generated
@@ -140,4 +144,6 @@ public class User {
         return profile;
 
     }
+
+
 }

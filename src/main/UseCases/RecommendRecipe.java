@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class RecommendRecipe {
-    public ArrayList<Recipe> recommend(String username, int recsNum){
+    public void recommend(String username, int recsNum){
         User user = Constants.USERSECURITY.getUserByID(username);
         HashMap<String, Double> genreWeights = user.getGenreWeights();
         ArrayList<String> highestGenres = getHighest(genreWeights);

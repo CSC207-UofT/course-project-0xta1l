@@ -30,4 +30,10 @@ public class UserRequestCreateLogin{
             throw new Exception("There was an error.");
         }
     }
+
+    public boolean loginUser(String username, String password) {
+        //boolean validated = Constants.USERSECURITY.validateLogin(username, password);
+        //return validated;
+        return Constants.USERSECURITY.checkPassword(username, password);
+    }
 }

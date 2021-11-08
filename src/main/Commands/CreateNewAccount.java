@@ -10,6 +10,8 @@ public class CreateNewAccount extends Command{
     public static String COMMANDSTRING = "create new account";
     CreateNewAccount(){
         setCOMMANDSTRING(COMMANDSTRING);
+        // because it has no children, it has no valid commands. need some sort of "back" node?
+        addSubCommands(new HomePage());
     }
 
     @Override

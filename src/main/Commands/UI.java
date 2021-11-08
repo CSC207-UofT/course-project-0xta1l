@@ -1,17 +1,19 @@
 package Commands;
+import Constants.*;
 import Entities.User;
 
 import java.util.Scanner;
 
 public class UI {
-    CommandTree commandTree = new CommandTree(new CommandTree.CommandNode());
+    //CommandTree commandTree = new CommandTree(new CommandTree.CommandNode());
+    CommandTree commandTree = Constants.COMMANDTREE;
     CommandTree.CommandNode currentNode = commandTree.root;
     boolean is_running = true;
 
     public static void main(String[] args) {
         UI ui = new UI();
         Scanner scanner = new Scanner(System.in);
-
+        System.out.println(Constants.COMMANDTREE.toString());
         //Userlogs in here
         // User user = something
         User user = new User(); //TODO: temporary change later
@@ -28,6 +30,10 @@ public class UI {
                     if (action.equals(child.getCommand().getCommandName())) {
                         child.getCommand().execute(user.getUsername());
                         ui.currentNode = child;
+                        hasMatch = true;
+                        break;
+                    } else if (action.equals("back") && !ui.currentNode.getCommand().getCommandName().equals("home")) {
+                        child.getParent().getCommand().execute(user.getUsername());
                         hasMatch = true;
                         break;
                     }

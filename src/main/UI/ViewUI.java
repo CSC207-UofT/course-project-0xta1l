@@ -92,13 +92,10 @@ public class ViewUI {
             do {
                 try {
                     System.out.println("Which recipe would you like to view? Please enter its ID:");
-                    int recipeID = Integer.parseInt(scanner.nextLine());
+                    String recipeID = scanner.nextLine();
                     UserRequestRecipeView u = new UserRequestRecipeView();
                     u.recipeView(recipeID);
                     nextPrompt.ViewRecipeOptionsDisplay(username, recipeID, genre);
-                    if ((recipeID == 6) || (recipeID == 7)) {
-                        isNotID = false;
-                    }
                 } catch (Exception exception) {
                     System.out.println("Not a valid recipe ID.");
                 }
@@ -112,7 +109,7 @@ public class ViewUI {
         }
     }
 
-    private void ViewRecipeOptionsDisplay(String username, int recipeID, String genre) throws Exception {
+    private void ViewRecipeOptionsDisplay(String username, String recipeID, String genre) throws Exception {
         ViewUI nextPrompt = new ViewUI();
 
         System.out.println("Which would you like to do? \n SaveRecipe, or GoBack");
