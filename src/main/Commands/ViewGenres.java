@@ -4,7 +4,6 @@ import Controllers.UserRequestBrowse;
 import Presenters.ListDisplay;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class ViewGenres extends Command {
     public static String COMMANDSTRING = "view genres";

@@ -5,6 +5,7 @@ import Entities.Preview;
 import Presenters.ListDisplay;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ViewGenreRecipes extends Command {
     public static String COMMANDSTRING = "view genre recipes";
@@ -16,8 +17,10 @@ public class ViewGenreRecipes extends Command {
 
 
     @Override
-    public void execute(String genre) {
-        // how do we pass in multiple values (eg we still want to store the user's id at this point)
+    public void execute(String username) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Which genre would you like to view? (Case Sensitive):");
+        String genre = input.nextLine();
         UserRequestBrowse browse = new UserRequestBrowse();
         ListDisplay display = new ListDisplay();
         ArrayList<Preview> lst = browse.browseGenreRecipes(genre);

@@ -10,6 +10,8 @@ public class HomePage extends Command{
         HomePage(){
             setCOMMANDSTRING(COMMANDSTRING);
             addSubCommands(new ViewGenres());
+            //addSubCommands(new ViewUserProfile());
+            //addSubCommands(new ViewUserSavedRecipes());
             addSubCommands(new Logout());
         }
 

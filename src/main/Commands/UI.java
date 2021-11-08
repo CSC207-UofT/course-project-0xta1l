@@ -13,7 +13,6 @@ public class UI {
     public static void main(String[] args) {
         UI ui = new UI();
         Scanner scanner = new Scanner(System.in);
-        System.out.println(Constants.COMMANDTREE.toString());
         //Userlogs in here
         // User user = something
         User user = new User(); //TODO: temporary change later
