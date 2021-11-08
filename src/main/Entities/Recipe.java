@@ -49,7 +49,7 @@ public class Recipe {
         this.ID = id;
         this.image = img;
         this.description = description;
-        this.RecipeReviews = new Hashmap<>();
+        this.RecipeReviews = new HashMap<>();
         this.preview = new Preview(id, name, rating, genres, description);
     }
 
