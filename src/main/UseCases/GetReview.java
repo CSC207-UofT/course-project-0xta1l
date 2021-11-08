@@ -1,7 +1,7 @@
 package UseCases;
 
 import Entities.*;
-import Constants.*;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -17,7 +17,7 @@ public class GetReview {
         ArrayList<ArrayList<Object>> finalReviewList = new ArrayList<>();
         for (Review review: reviewMap.values()){
             int rating = review.getRating();
-            String userID = review.getUserID();
+            String userID = review.getUsername();
             String comment = review.getComments();
             ArrayList<Object> reviewInfo = new ArrayList<>();
             reviewInfo.add(rating);
@@ -37,7 +37,7 @@ public class GetReview {
         ArrayList<ArrayList<Object>> finalReviewList = new ArrayList<>();
         for (Review review: reviewList.values()){
             int rating = review.getRating();
-            String recipeID = review.getRecipeID();
+            int recipeID = review.getRecipeID();
             String comment = review.getComments();
             ArrayList<Object> reviewInfo = new ArrayList<>();
             reviewInfo.add(rating);
@@ -48,9 +48,5 @@ public class GetReview {
         return finalReviewList;
     }
 
-    // SHOULD RETURN REVIEW, BUT CHANGED TO VOID SO I COULD COMPILE TESTS
-    public void getSingle(String reviewID){
-        // TODO: will we have some constant file that stores all reviews? will we actually need this method?
-    }
 
 }
