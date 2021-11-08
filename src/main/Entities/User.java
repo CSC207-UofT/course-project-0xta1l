@@ -91,7 +91,7 @@ public class User {
     public String getBiography() {return biography;}
     public ArrayList<String> getInterests() {return interests;}
     public ArrayList<Recipe> getSavedRecipes() {return SavedRecipes;}
-    public ArrayList<Review> getUserReviews() {return UserReviews;}
+    public HashMap<Integer, Review> getUserReviews() {return UserReviews;}
 
     public HashMap<String, Double> getGenreWeights() { return GenreWeights; }
 

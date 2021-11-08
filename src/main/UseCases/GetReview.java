@@ -32,10 +32,10 @@ public class GetReview {
         UserSecurity userSecurity = new UserSecurity();
         HashMap<String, User> userMap = userSecurity.getUsernames();
         User specificUser = userMap.get(username);
-        ArrayList<Review> reviewList = specificUser.getUserReviews();
+        HashMap<Integer, Review> reviewList = specificUser.getUserReviews();
 
         ArrayList<ArrayList<Object>> finalReviewList = new ArrayList<>();
-        for (Review review: reviewList){
+        for (Review review: reviewList.values()){
             int rating = review.getRating();
             String recipeID = review.getRecipeID();
             String comment = review.getComments();
