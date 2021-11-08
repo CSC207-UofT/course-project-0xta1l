@@ -19,5 +19,14 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="junit" level="application" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/OneDrive/Desktop/UofT Year 2 Semester 1/csc207-fall/sqlite-jdbc-3.36.0.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
