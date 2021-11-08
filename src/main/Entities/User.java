@@ -25,8 +25,9 @@ public class User {
     private String biography;
     private ArrayList<String> interests;
     private ArrayList<Recipe> SavedRecipes = new ArrayList<>();
+    private ArrayList<Review> SavedReviews = new ArrayList<>();
 
-    private ArrayList<Review> UserReviews = new ArrayList<>();
+    private HashMap<Integer, Review> UserReviews = new HashMap<>();
     private HashMap<String, Double> GenreWeights = new HashMap<>();
 
     public User(){
@@ -91,7 +92,7 @@ public class User {
     public String getBiography() {return biography;}
     public ArrayList<String> getInterests() {return interests;}
     public ArrayList<Recipe> getSavedRecipes() {return SavedRecipes;}
-    public ArrayList<Review> getUserReviews() {return UserReviews;}
+    public  HashMap<Integer, Review> getUserReviews() {return UserReviews;}
 
     public HashMap<String, Double> getGenreWeights() { return GenreWeights; }
 
@@ -139,5 +140,10 @@ public class User {
         profile.add(getAge());
         return profile;
 
+    }
+
+    public void addSavedReviews(int reviewID, Review review) {
+        this.SavedReviews.add(review);
+        updateGenreWeights(reviewID);
     }
 }
