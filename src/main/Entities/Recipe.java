@@ -31,7 +31,7 @@ public class Recipe {
     private HashMap<String, Review> RecipeReviews;
     private String image;
     private String description;
-    public Preview preview;
+    private Preview preview;
 
     /**
      * Constructor for Recipe
