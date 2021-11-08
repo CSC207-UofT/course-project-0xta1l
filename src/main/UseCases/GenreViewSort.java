@@ -97,18 +97,7 @@ public class GenreViewSort {
 
     private void helperPutRecipeInRatingList(Recipe preview, ArrayList<Recipe> lst_1, ArrayList<Recipe> lst_2,
     ArrayList<Recipe> lst_3, ArrayList<Recipe> lst_4, ArrayList<Recipe> lst_5) {
-        int rating = preview.getRating();
-        if (rating == 1) {
-            lst_1.add(preview);
-        } else if (rating == 2) {
-            lst_2.add(preview);
-        } else if (rating == 3) {
-            lst_3.add(preview);
-        } else if (rating == 4) {
-            lst_4.add(preview);
-        } else if (rating == 5) {
-            lst_5.add(preview);
-        }
+        SortByRating.helperDuplicate(preview, lst_1, lst_2, lst_3, lst_4, lst_5);
     }
 
 }
