@@ -26,7 +26,7 @@ public class User {
     private ArrayList<String> interests;
     private ArrayList<Recipe> SavedRecipes = new ArrayList<>();
 
-    private ArrayList<Review> UserReviews = new ArrayList<>();
+    private HashMap<Integer, Review> UserReviews = new HashMap<>();
     private HashMap<String, Double> GenreWeights = new HashMap<>();
 
     public User(){
