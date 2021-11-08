@@ -15,6 +15,14 @@ public class Review {
         this.comments =  comments;
         this.reviewID = reviewID;
     }
+
+    public Review(String userID, String recipeID, String comment, int rating) {
+        this.userID = userID;
+        this.recipeID = recipeID;
+        this.comments = comment;
+        this.rating = rating;
+    }
+
     public String getReviewID() {return reviewID;}
     public String getRecipeID() {return recipeID;}
     public String getUserID() {return userID;}
