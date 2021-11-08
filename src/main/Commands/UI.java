@@ -1,5 +1,6 @@
 package Commands;
 import Constants.*;
+import Controllers.UserRequestCreateLogin;
 import Entities.User;
 
 import java.util.Scanner;
@@ -13,9 +14,9 @@ public class UI {
     public static void main(String[] args) {
         UI ui = new UI();
         Scanner scanner = new Scanner(System.in);
-        //Userlogs in here
-        // User user = something
-        User user = new User(); //TODO: temporary change later
+
+        User user = login();
+        //User user = new User(); //TODO: temporary change later
 
         while(ui.is_running){
             try {
@@ -31,11 +32,11 @@ public class UI {
                         ui.currentNode = child;
                         hasMatch = true;
                         break;
-                    } else if (action.equals("back") && !ui.currentNode.getCommand().getCommandName().equals("home")) {
+                    } /*else if (action.equals("back") && !ui.currentNode.getCommand().getCommandName().equals("home")) {
                         child.getParent().getCommand().execute(user.getUsername());
                         hasMatch = true;
                         break;
-                    }
+                    }*/
                 }
                 if (!hasMatch) {
                     // TO FORCE SHUTDOWN PROGRAM
@@ -45,6 +46,29 @@ public class UI {
                 }
             } catch(Exception e){ System.out.println(e.getMessage());}
         }
+    }
+
+    private static User login(){
+        boolean loggedIn;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Username:");
+        String username = scan.nextLine();
+        System.out.println("Password:");
+        String password = scan.nextLine();
+
+        UserRequestCreateLogin login = new UserRequestCreateLogin();
+        loggedIn = login.loginUser(username, password);
+        while (!loggedIn){
+            System.out.println("Incorrect username/password. Please try again.");
+            System.out.println("Username:");
+            username = scan.nextLine();
+            System.out.println("Password:");
+            password = scan.nextLine();
+            loggedIn = login.loginUser(username, password);
+        }
+        System.out.println("login successful");
+
+        return Constants.USERSECURITY.getUserByID(username);
     }
 
 

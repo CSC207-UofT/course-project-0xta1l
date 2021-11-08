@@ -104,22 +104,22 @@ public class Constants {
         CommandTree.CommandNode node = new CommandTree.CommandNode();
         node.setCommand(command);
         ArrayList<Command> commandList = command.getSubCommands();
-        /*if (commandList.isEmpty()){
+        if (commandList.isEmpty()){
             return node;
         } else{
             for(Command c: commandList){
                 CommandTree.CommandNode subNode = createCommandNode(c);
-                System.out.println(subNode.command.getCommandName());
+                //System.out.println(subNode.command.getCommandName());
                 node.addChild(subNode);
             }
-        }*/
-        if (!commandList.isEmpty()){
+        }
+        /*if (!commandList.isEmpty()){
             for(Command c: commandList){
                 CommandTree.CommandNode subNode = createCommandNode(c);
                 node.addChild(subNode);
 
             }
-        }
+        }*/
         return node;
     }
 }
