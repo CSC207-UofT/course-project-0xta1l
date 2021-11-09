@@ -55,6 +55,24 @@ public class Recipe {
         this.preview = new Preview(id, name, rating, genres, description);
     }
 
+    public Recipe(String i, String ing, ArrayList<String>  g, String name, int rating, int id, String img,
+                  String description) {
+        this.instructions = i;
+        this.ingredients = ing;
+        ArrayList<String> genres = new ArrayList<>();
+        genres.add("All");
+        genres.addAll(g);
+        this.genre = genres;
+        this.name = name;
+        this.rating = rating;
+        this.ID = id;
+        this.image = img;
+        this.description = description;
+        this.RecipeReviews = new HashMap<>();
+        this.preview = new Preview(id, name, rating, genres, description);
+    }
+
+
     /**
      * Getter Methods for Recipe:
      * •getInstructions - returns instructions
