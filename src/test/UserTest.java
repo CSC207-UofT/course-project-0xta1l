@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
 
 public class UserTest {
     ArrayList<String> genre = new ArrayList<>(Arrays.asList("Jamaican", "Meals"));
-    Recipe recipe = new Recipe("just cook", "water flour sugar", genre, "Oxtail Stew", 5, 50, "img", "description");
+    Recipe recipe = new Recipe("just cook", "water flour sugar", genre, "Oxtail Stew", 5, 50, "img", "description", 5);
     User user = new User();
     @Before
     public void setUp() {

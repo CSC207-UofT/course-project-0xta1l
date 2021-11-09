@@ -52,6 +52,7 @@ public class Recipe {
         this.description = description;
         this.preptime = preptime;
         this.RecipeReviews = new HashMap<>();
+        this.preview = new Preview(id, name, rating, genres, description);
     }
 
 
@@ -82,11 +83,11 @@ public class Recipe {
     public int getPreptime() {return preptime;}
 
     public Preview getPreview() {
-        return new Preview(ID, name, rating, genre, description);
+        return preview;
     }
 
     public ArrayList<Object> getFull() {
-        ArrayList<Object> fullList = new ArrayList<Object>();
+        ArrayList<Object> fullList = new ArrayList<>();
         fullList.add(getID());
         fullList.add(getName());
         fullList.add(getRating());
@@ -112,12 +113,21 @@ public class Recipe {
      */
     public void setInstructions(String instructions) {this.instructions = instructions;}
     public void setIngredients(String ingredients) {this.ingredients = ingredients;}
-    public void setGenre(ArrayList<String> genre) {this.genre = genre;}
-    public void setRating(int rating) {this.rating = rating;}
-    public void setID(int ID) {this.ID = ID;}
-    public void setName(String name) {this.name = name;}
-    public void setDescription(String description) {this.description = description;}
-    public void setPreptime(int preptime) {this.preptime = preptime;}
+    public void setGenre(ArrayList<String> genre) {
+        this.genre = genre;
+        this.preview.setGenre(genre);}
+    public void setRating(int rating) {
+        this.rating = rating;
+        this.preview.setRating(rating);}
+    public void setID(int ID) {
+        this.ID = ID;
+        this.preview.setID(ID);}
+    public void setName(String name) {
+        this.name = name;
+        this.preview.setName(name);}
+    public void setDescription(String description) {
+        this.description = description;
+        this.preview.setDescription(description);}
     public void setImage(String image) {this.image = image;}
     public void setPreptime(int preptime) {this.preptime = preptime;}
 
