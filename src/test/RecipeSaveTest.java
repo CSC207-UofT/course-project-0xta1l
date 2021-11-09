@@ -21,8 +21,7 @@ public class RecipeSaveTest {
     }
 
     @Test(timeout = 50)
-    public void TestRecipeSaveWeight() throws Exception {
-        boolean bool = recipeSave.saveToUser("username1", 1, "Mexican");
+    public void TestRecipeSaveWeight() {
         HashMap<String, Double> genreWeights = user.getGenreWeights();
         Double weight = genreWeights.get("Mexican");
         assertEquals(java.util.Optional.ofNullable(weight), java.util.Optional.ofNullable(0.05));
