@@ -15,6 +15,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.stream.Stream;
+import java.io.*;
+import java.util.Scanner;
 
 public class Constants {
     // Create Constants
@@ -74,7 +76,34 @@ public class Constants {
         }
         return dataset;
     }
+    public static GenreLibrary CSVRecipeReader(String fileName) throws FileNotFoundException {
+        GenreLibrary genreLibrary = new GenreLibrary();
 
+        Scanner sc = new Scanner(new File(fileName));
+        sc.useDelimiter(",");
+
+        while (sc.hasNext()) {
+            String[] recipe = sc.next().split(",", 8);
+
+            System.out.println(sc.next());
+        }
+        sc.close();
+//        Path pathToFile = Paths.get(fileName);
+//        Path path = pathToFile.toAbsolutePath();
+//
+//        FileReader fr = new FileReader(path.toString());
+//        BufferedReader br = new BufferedReader(fr);
+//        Stream<String> stream = br.lines();
+//        Object[] list = stream.toArray();
+//
+//        for (Object recipe : list) {
+//            String[] s = recipe.toString().split(",", 6);
+//
+//            Recipe newRecipe = new Recipe();
+//            genreLibrary.addRecipes(newRecipe);
+//        }
+        return genreLibrary;
+    }
     public static UserSecurity CSVUserReader(String fileName) throws FileNotFoundException {
         UserSecurity userSecurity = new UserSecurity();
         Path pathToFile = Paths.get(fileName);
