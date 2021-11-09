@@ -11,8 +11,7 @@ public class Create {
 
         String url = "jdbc:sqlite:C:/sqlite/" + fileName;
 
-        try {
-            Connection conn = DriverManager.getConnection(url);
+        try (Connection conn = DriverManager.getConnection(url)) {
             if (conn != null) {
                 DatabaseMetaData meta = conn.getMetaData();
                 System.out.println("The driver name is " + meta.getDriverName());
@@ -25,6 +24,6 @@ public class Create {
     }
 
     public static void main(String[] args) {
-        createNewDatabase("SSSIT.db");
+        createNewDatabase("test.db");
     }
 }

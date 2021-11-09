@@ -12,11 +12,11 @@ import static org.junit.Assert.assertEquals;
 
 public class SortRecipesTest {
     ArrayList<String> genre1 = new ArrayList<>(Arrays.asList("Jamaican", "Meals"));
-    Recipe recipe1 = new Recipe("just cook", "water flour sugar", genre1, "Oxtail Stew", 5, 50, "img", "description");
+    Recipe recipe1 = new Recipe("just cook", "water flour sugar", genre1, "Oxtail Stew", 5, 50, "img", "description", 5);
     ArrayList<String> genre2 = new ArrayList<>(Arrays.asList("Japanese", "Meals"));
-    Recipe recipe2 = new Recipe("just cook", "water tofu", genre2, "Miso Soup", 4, 50, "img", "description");
+    Recipe recipe2 = new Recipe("just cook", "water tofu", genre2, "Miso Soup", 4, 50, "img", "description", 5);
     ArrayList<String> genre3 = new ArrayList<>(Arrays.asList("Jamaican", "Meals"));
-    Recipe recipe3 = new Recipe("just cook", "tea egg", genre3, "Tea Egg", 2, 50, "img", "description");
+    Recipe recipe3 = new Recipe("just cook", "tea egg", genre3, "Tea Egg", 2, 50, "img", "description", 5);
 
     ArrayList<Recipe> recipes = new ArrayList<>();
     ArrayList<Recipe> sorted_lst = new ArrayList<>();

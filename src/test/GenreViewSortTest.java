@@ -19,16 +19,16 @@ public class GenreViewSortTest {
     ArrayList<String> r4genre = new ArrayList<>(Arrays.asList("Chinese", "Meals", "Western"));
 
     Recipe recipe1 = new Recipe("Set on Fire", "Salt",
-            r1genre, "Burnt Food", 3, 1, "burnt.jpg", "");
+            r1genre, "Burnt Food", 3, 1, "burnt.jpg", "", 5);
 
     Recipe recipe2 = new Recipe("Throw in Oven", "Chicken",
-            r2genre, "Chicken", 4, 2, "chicken.jpg", "");
+            r2genre, "Chicken", 4, 2, "chicken.jpg", "", 5);
 
     Recipe recipe3 = new Recipe("Pan fry in pan", "Steak, butter",
-            r3genre, "Good Steak", 5, 3, "steak.jpg", "");
+            r3genre, "Good Steak", 5, 3, "steak.jpg", "", 5);
 
     Recipe recipe4 = new Recipe("Pan fry in pan", "Lobster, garlic",
-            r4genre, "Garlic Lobster", 5, 3, "lobster.jpg", "");
+            r4genre, "Garlic Lobster", 5, 3, "lobster.jpg", "", 5);
 
     ArrayList<Recipe> recipelist = new ArrayList<>();
     @Before
