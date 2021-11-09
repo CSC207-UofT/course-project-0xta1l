@@ -37,10 +37,10 @@ public class Recipe {
      * Constructor for Recipe
      */
     public Recipe() {}
-    public Recipe(String i, String ing, ArrayList<String>  g, String name, int rating, int id, String img,
+    public Recipe(String instructions, String ingredients, ArrayList<String>  g, String name, int rating, int id, String img,
                   String description, int preptime) {
-        this.instructions = i;
-        this.ingredients = ing;
+        this.instructions = instructions;
+        this.ingredients = ingredients;
         ArrayList<String> genres = new ArrayList<>();
         genres.add("All");
         genres.addAll(g);
@@ -54,6 +54,7 @@ public class Recipe {
         this.RecipeReviews = new HashMap<>();
         this.preview = new Preview(id, name, rating, genres, description);
     }
+
 
     /**
      * Getter Methods for Recipe:
@@ -80,10 +81,13 @@ public class Recipe {
     public String getDescription() {return description;}
     public HashMap<String, Review> getRecipeReviews() {return RecipeReviews;}
     public int getPreptime() {return preptime;}
-    public Preview getPreview() {return preview;}
+
+    public Preview getPreview() {
+        return preview;
+    }
 
     public ArrayList<Object> getFull() {
-        ArrayList<Object> fullList = new ArrayList<Object>();
+        ArrayList<Object> fullList = new ArrayList<>();
         fullList.add(getID());
         fullList.add(getName());
         fullList.add(getRating());
