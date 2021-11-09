@@ -1,5 +1,6 @@
 package UseCases;
 
+import Entities.Preview;
 import Entities.Recipe;
 
 import java.util.ArrayList;
@@ -13,29 +14,29 @@ public class SortRecipes {
     // === Class Variables ===
 
     // The list of recipes to sort.
-    public ArrayList<Recipe> recipes;
+    public ArrayList<Preview> recipes;
 
     // Constructor that takes in a list of preview recipes
-    public SortRecipes(ArrayList<Recipe> previews) {
+    public SortRecipes(ArrayList<Preview> previews) {
         this.recipes = previews;
     }
 
     // sorts recipes alphabetically
-    public ArrayList<Recipe> sort() {
+    public ArrayList<Preview> sort() {
             return alphabet();
     }
 
-    public ArrayList<Recipe> alphabet(){
+    public ArrayList<Preview> alphabet(){
         //sort alphabetically, implement directly in superclass
-        ArrayList<Recipe> output_lst = new ArrayList<Recipe>();
+        ArrayList<Preview> output_lst = new ArrayList<Preview>();
         ArrayList<String> names = new ArrayList<String>();
-        for (Recipe preview : this.recipes) {
+        for (Preview preview : this.recipes) {
             String name = preview.getName();
             names.add(name);
         }
         Collections.sort(names);
         for (String name : names) {
-            for (Recipe preview : this.recipes) {
+            for (Preview preview : this.recipes) {
                 if (preview.getName().equals(name)) {
                     output_lst.add(preview);
                 }
