@@ -37,10 +37,10 @@ public class Recipe {
      * Constructor for Recipe
      */
     public Recipe() {}
-    public Recipe(String i, String ing, ArrayList<String>  g, String name, int rating, int id, String img,
+    public Recipe(String instructions, String ingredients, ArrayList<String>  g, String name, int rating, int id, String img,
                   String description, int preptime) {
-        this.instructions = i;
-        this.ingredients = ing;
+        this.instructions = instructions;
+        this.ingredients = ingredients;
         ArrayList<String> genres = new ArrayList<>();
         genres.add("All");
         genres.addAll(g);
@@ -52,24 +52,6 @@ public class Recipe {
         this.description = description;
         this.preptime = preptime;
         this.RecipeReviews = new HashMap<>();
-        this.preview = new Preview(id, name, rating, genres, description);
-    }
-
-    public Recipe(String i, String ing, ArrayList<String>  g, String name, int rating, int id, String img,
-                  String description) {
-        this.instructions = i;
-        this.ingredients = ing;
-        ArrayList<String> genres = new ArrayList<>();
-        genres.add("All");
-        genres.addAll(g);
-        this.genre = genres;
-        this.name = name;
-        this.rating = rating;
-        this.ID = id;
-        this.image = img;
-        this.description = description;
-        this.RecipeReviews = new HashMap<>();
-        this.preview = new Preview(id, name, rating, genres, description);
     }
 
 
@@ -98,7 +80,10 @@ public class Recipe {
     public String getDescription() {return description;}
     public HashMap<String, Review> getRecipeReviews() {return RecipeReviews;}
     public int getPreptime() {return preptime;}
-    public Preview getPreview() {return preview;}
+
+    public Preview getPreview() {
+        return new Preview(ID, name, rating, genre, description);
+    }
 
     public ArrayList<Object> getFull() {
         ArrayList<Object> fullList = new ArrayList<Object>();
@@ -127,21 +112,12 @@ public class Recipe {
      */
     public void setInstructions(String instructions) {this.instructions = instructions;}
     public void setIngredients(String ingredients) {this.ingredients = ingredients;}
-    public void setGenre(ArrayList<String> genre) {
-        this.genre = genre;
-        this.preview.setGenre(genre);}
-    public void setRating(int rating) {
-        this.rating = rating;
-        this.preview.setRating(rating);}
-    public void setID(int ID) {
-        this.ID = ID;
-        this.preview.setID(ID);}
-    public void setName(String name) {
-        this.name = name;
-        this.preview.setName(name);}
-    public void setDescription(String description) {
-        this.description = description;
-        this.preview.setDescription(description);}
+    public void setGenre(ArrayList<String> genre) {this.genre = genre;}
+    public void setRating(int rating) {this.rating = rating;}
+    public void setID(int ID) {this.ID = ID;}
+    public void setName(String name) {this.name = name;}
+    public void setDescription(String description) {this.description = description;}
+    public void setPreptime(int preptime) {this.preptime = preptime;}
     public void setImage(String image) {this.image = image;}
     public void setPreptime(int preptime) {this.preptime = preptime;}
 
