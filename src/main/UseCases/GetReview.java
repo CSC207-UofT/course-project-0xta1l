@@ -12,10 +12,10 @@ public class GetReview {
 
         GenreLibrary genreLibrary = new GenreLibrary();
         Recipe specificRecipe = genreLibrary.getRecipeByID("All", recipeID);
-        HashMap<String, Review> reviewMap = specificRecipe.getRecipeReviews();
+        ArrayList<Review> reviewMap = specificRecipe.getRecipeReviews();
 
         ArrayList<ArrayList<Object>> finalReviewList = new ArrayList<>();
-        for (Review review: reviewMap.values()){
+        for (Review review: reviewMap){
             int rating = review.getRating();
             String userID = review.getUsername();
             String comment = review.getComments();
