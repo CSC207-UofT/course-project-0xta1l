@@ -1,9 +1,6 @@
 package Commands;
 
-import Controllers.UserRequestBrowse;
 import Controllers.UserRequestRecipeView;
-import Entities.Preview;
-import Presenters.ListDisplay;
 import Presenters.RecipeDisplay;
 
 import java.util.ArrayList;
@@ -14,6 +11,7 @@ public class ViewRecipe extends Command {
 
     ViewRecipe(){
         setCOMMANDSTRING(COMMANDSTRING);
+        addSubCommands(new SaveRecipe());
     }
 
 
