@@ -8,7 +8,7 @@ import java.util.List;
 public class Recipe {
     private String instructions;
     private String ingredients;
-    private String genre;
+    private ArrayList<String> genre;
     private String name;
     private int rating;
     private int ID;
@@ -18,22 +18,22 @@ public class Recipe {
     private int preptime;
 
     public Recipe(){}
-    public Recipe(String i, String ing, String g, String name, int rating, int id, String img,
-                  String description, int preptime){
-        this.instructions = i;
-        this.ingredients = ing;
-        this.genre = g;
+    public Recipe(String instructions, String ingredients, ArrayList<String> genre, String name, int rating, int id,
+                  String image, String description, int preptime){
+        this.instructions = instructions;
+        this.ingredients = ingredients;
+        this.genre = genre;
         this.name = name;
         this.rating = rating;
         this.ID = id;
         this.description = description;
         this.preptime = preptime;
-        this.image = img;}
+        this.image = image;}
 
 
     public String getInstructions() {return instructions;}
     public String getIngredients() {return ingredients;}
-    public String getGenre() {return genre;}
+    public ArrayList<String> getGenre() {return genre;}
     public String getName() {return name;}
     public int getRating() {return rating;}
     public int getID() {return ID;}
@@ -68,7 +68,7 @@ public class Recipe {
 
     public void setInstructions(String instructions) {this.instructions = instructions;}
     public void setIngredients(String ingredients) {this.ingredients = ingredients;}
-    public void setGenre(String genre) {this.genre = genre;}
+    public void setGenre(ArrayList<String> genre) {this.genre = genre;}
     public void setRating(int rating) {this.rating = rating;}
     public void setID(int ID) {this.ID = ID;}
     public void setName(String name) {this.name = name;}
