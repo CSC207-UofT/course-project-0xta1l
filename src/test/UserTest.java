@@ -51,7 +51,7 @@ public class UserTest {
     @Test(timeout = 50)
     public void TestUserGenreWeights() {
         HashMap<String, Double> weights = new HashMap<>();
-        weights.put("German", 0.85);
+        weights.put("German", 0.7);
         weights.put("Jamaican", 0.05);
         weights.put("Meals", 0.05);
         assertEquals(weights, user.getGenreWeights());

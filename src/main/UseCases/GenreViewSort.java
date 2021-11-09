@@ -1,6 +1,7 @@
 package UseCases;
 
 import Entities.GenreLibrary;
+import Entities.Preview;
 import Entities.Recipe;
 import Entities.User;
 import Constants.*;
@@ -44,26 +45,26 @@ public class GenreViewSort {
         return genres;
     }
 
-    public ArrayList<Recipe> genreRecipeSort(ArrayList<Recipe> previews, String sortkey) {
-        ArrayList<Recipe> recipes = helperMakeAlphabet(previews);
+    public ArrayList<Preview> genreRecipeSort(ArrayList<Preview> previews, String sortkey) {
+        ArrayList<Preview> recipes = helperMakeAlphabet(previews);
         if (sortkey.equals("")) {
                 return recipes;
         } else if (sortkey.equals("rating")) {
-            ArrayList<Recipe> grand_lst = new ArrayList<Recipe>();
-            ArrayList<Recipe> lst_1 = new ArrayList<Recipe>();
-            ArrayList<Recipe> lst_2 = new ArrayList<Recipe>();
-            ArrayList<Recipe> lst_3 = new ArrayList<Recipe>();
-            ArrayList<Recipe> lst_4 = new ArrayList<Recipe>();
-            ArrayList<Recipe> lst_5 = new ArrayList<Recipe>();
+            ArrayList<Preview> grand_lst = new ArrayList<>();
+            ArrayList<Preview> lst_1 = new ArrayList<>();
+            ArrayList<Preview> lst_2 = new ArrayList<>();
+            ArrayList<Preview> lst_3 = new ArrayList<>();
+            ArrayList<Preview> lst_4 = new ArrayList<>();
+            ArrayList<Preview> lst_5 = new ArrayList<>();
 
-            for (Recipe preview : previews) {
+            for (Preview preview : previews) {
                 helperPutRecipeInRatingList(preview, lst_1, lst_2, lst_3, lst_4, lst_5);
             }
-            ArrayList<Recipe> lst1 = helperMakeAlphabet(lst_1);
-            ArrayList<Recipe> lst2 = helperMakeAlphabet(lst_2);
-            ArrayList<Recipe> lst3 = helperMakeAlphabet(lst_3);
-            ArrayList<Recipe> lst4 = helperMakeAlphabet(lst_4);
-            ArrayList<Recipe> lst5 = helperMakeAlphabet(lst_5);
+            ArrayList<Preview> lst1 = helperMakeAlphabet(lst_1);
+            ArrayList<Preview> lst2 = helperMakeAlphabet(lst_2);
+            ArrayList<Preview> lst3 = helperMakeAlphabet(lst_3);
+            ArrayList<Preview> lst4 = helperMakeAlphabet(lst_4);
+            ArrayList<Preview> lst5 = helperMakeAlphabet(lst_5);
 
             grand_lst.addAll(lst5);
             grand_lst.addAll(lst4);
@@ -77,16 +78,16 @@ public class GenreViewSort {
         }
     }
 
-    private ArrayList<Recipe> helperMakeAlphabet(ArrayList<Recipe> previews) {
-        ArrayList<Recipe> output_lst = new ArrayList<Recipe>();
+    private ArrayList<Preview> helperMakeAlphabet(ArrayList<Preview> previews) {
+        ArrayList<Preview> output_lst = new ArrayList<Preview>();
         ArrayList<String> names = new ArrayList<String>();
-        for (Recipe preview : previews) {
+        for (Preview preview : previews) {
             String name = preview.getName();
             names.add(name);
         }
         Collections.sort(names);
         for (String name : names) {
-            for (Recipe preview : previews) {
+            for (Preview preview : previews) {
                 if (preview.getName().equals(name)) {
                     output_lst.add(preview);
                 }
@@ -95,8 +96,8 @@ public class GenreViewSort {
         return output_lst;
     }
 
-    private void helperPutRecipeInRatingList(Recipe preview, ArrayList<Recipe> lst_1, ArrayList<Recipe> lst_2,
-    ArrayList<Recipe> lst_3, ArrayList<Recipe> lst_4, ArrayList<Recipe> lst_5) {
+    private void helperPutRecipeInRatingList(Preview preview, ArrayList<Preview> lst_1, ArrayList<Preview> lst_2,
+                                             ArrayList<Preview> lst_3, ArrayList<Preview> lst_4, ArrayList<Preview> lst_5) {
         SortByRating.helperDuplicate(preview, lst_1, lst_2, lst_3, lst_4, lst_5);
     }
 

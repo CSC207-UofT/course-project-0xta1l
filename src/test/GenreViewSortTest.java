@@ -1,4 +1,5 @@
 import Entities.GenreLibrary;
+import Entities.Preview;
 import Entities.Recipe;
 import Entities.User;
 import UseCases.GenreViewSort;
@@ -19,18 +20,18 @@ public class GenreViewSortTest {
     ArrayList<String> r4genre = new ArrayList<>(Arrays.asList("Chinese", "Meals", "Western"));
 
     Recipe recipe1 = new Recipe("Set on Fire", "Salt",
-            r1genre, "Burnt Food", 3, 1, "burnt.jpg", "", 5);
+            r1genre, "Burnt Food", 3, 1, "burnt.jpg", "",5);
 
     Recipe recipe2 = new Recipe("Throw in Oven", "Chicken",
-            r2genre, "Chicken", 4, 2, "chicken.jpg", "", 5);
+            r2genre, "Chicken", 4, 2, "chicken.jpg", "",10);
 
     Recipe recipe3 = new Recipe("Pan fry in pan", "Steak, butter",
-            r3genre, "Good Steak", 5, 3, "steak.jpg", "", 5);
+            r3genre, "Good Steak", 5, 3, "steak.jpg", "",25);
 
     Recipe recipe4 = new Recipe("Pan fry in pan", "Lobster, garlic",
-            r4genre, "Garlic Lobster", 5, 3, "lobster.jpg", "", 5);
+            r4genre, "Garlic Lobster", 5, 3, "lobster.jpg", "",20);
 
-    ArrayList<Recipe> recipelist = new ArrayList<>();
+    ArrayList<Preview> recipelist = new ArrayList<>();
     @Before
     public void setUp() {
 
@@ -70,10 +71,10 @@ public class GenreViewSortTest {
     @Test(timeout = 50)
     public void TestgenreRecipeSort() {
         GenreViewSort genreViewSort = new GenreViewSort();
-        recipelist.add(recipe3);
-        recipelist.add(recipe2);
-        recipelist.add(recipe1);
-        ArrayList<Recipe> rlist = genreViewSort.genreRecipeSort(recipelist, "rating");
+        recipelist.add(recipe3.getPreview());
+        recipelist.add(recipe2.getPreview());
+        recipelist.add(recipe1.getPreview());
+        ArrayList<Preview> rlist = genreViewSort.genreRecipeSort(recipelist, "rating");
         assertEquals(recipelist, rlist);
     }
 

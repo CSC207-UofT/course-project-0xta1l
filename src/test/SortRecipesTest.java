@@ -1,4 +1,5 @@
 import Constants.Constants;
+import Entities.Preview;
 import Entities.Recipe;
 import UseCases.SortByRating;
 import UseCases.SortRecipes;
@@ -12,30 +13,30 @@ import static org.junit.Assert.assertEquals;
 
 public class SortRecipesTest {
     ArrayList<String> genre1 = new ArrayList<>(Arrays.asList("Jamaican", "Meals"));
-    Recipe recipe1 = new Recipe("just cook", "water flour sugar", genre1, "Oxtail Stew", 5, 50, "img", "description", 5);
+    Recipe recipe1 = new Recipe("just cook", "water flour sugar", genre1, "Oxtail Stew", 5, 50, "img", "description",5);
     ArrayList<String> genre2 = new ArrayList<>(Arrays.asList("Japanese", "Meals"));
-    Recipe recipe2 = new Recipe("just cook", "water tofu", genre2, "Miso Soup", 4, 50, "img", "description", 5);
+    Recipe recipe2 = new Recipe("just cook", "water tofu", genre2, "Miso Soup", 4, 50, "img", "description",10);
     ArrayList<String> genre3 = new ArrayList<>(Arrays.asList("Jamaican", "Meals"));
-    Recipe recipe3 = new Recipe("just cook", "tea egg", genre3, "Tea Egg", 2, 50, "img", "description", 5);
+    Recipe recipe3 = new Recipe("just cook", "tea egg", genre3, "Tea Egg", 2, 50, "img", "description",15);
 
-    ArrayList<Recipe> recipes = new ArrayList<>();
-    ArrayList<Recipe> sorted_lst = new ArrayList<>();
+    ArrayList<Preview> recipes = new ArrayList<>();
+    ArrayList<Preview> sorted_lst = new ArrayList<>();
 
     @Before
     public void setUp() {
-        recipes.add(recipe1);
-        recipes.add(recipe2);
-        recipes.add(recipe3);
+        recipes.add(recipe1.getPreview());
+        recipes.add(recipe2.getPreview());
+        recipes.add(recipe3.getPreview());
         SortRecipes s = new SortRecipes(recipes);
         sorted_lst = s.sort();
     }
 
     @Test(timeout = 50)
     public void Testsort() {
-        ArrayList<Recipe> actual_recipes = new ArrayList<>();
-        actual_recipes.add(recipe2);
-        actual_recipes.add(recipe1);
-        actual_recipes.add(recipe3);
+        ArrayList<Preview> actual_recipes = new ArrayList<>();
+        actual_recipes.add(recipe2.getPreview());
+        actual_recipes.add(recipe1.getPreview());
+        actual_recipes.add(recipe3.getPreview());
         assertEquals(actual_recipes, sorted_lst);
     }
 }

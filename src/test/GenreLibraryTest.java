@@ -12,7 +12,7 @@ public class GenreLibraryTest {
     ArrayList<String> recipeGenres = new ArrayList<>(Arrays.asList("Western", "Desserts"));
 
     Recipe recipe = new Recipe("Boil ", "water",
-            recipeGenres, "Stew", 5, 50, "img", "", 5);
+            recipeGenres, "Stew", 5, 50, "img", "",30);
 
     @Before
     public void setUp() {
