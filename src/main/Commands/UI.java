@@ -6,7 +6,6 @@ import Entities.User;
 import java.util.Scanner;
 
 public class UI {
-    //CommandTree commandTree = new CommandTree(new CommandTree.CommandNode());
     CommandTree commandTree = Constants.COMMANDTREE;
     CommandTree.CommandNode currentNode = commandTree.root;
     boolean is_running = true;
