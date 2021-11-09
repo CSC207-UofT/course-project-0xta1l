@@ -41,15 +41,8 @@ public class Recipe {
     public String getDescription() {return description;}
     public ArrayList<Review> getRecipeReviews() {return RecipeReviews;}
     public int getPreptime() {return preptime;}
-    public ArrayList<Object> getPreview() {
-        ArrayList<Object> previewList= new ArrayList<Object>();
-        previewList.add(getID());
-        previewList.add(getName());
-        previewList.add(getRating());
-        previewList.add(getGenre());
-        previewList.add(getDescription());
-
-        return previewList;
+    public Preview getPreview() {
+        return new Preview(ID, name, rating, genre, description);
     }
 
     public ArrayList<Object> getFull() {
