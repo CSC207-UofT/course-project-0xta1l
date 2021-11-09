@@ -1,5 +1,6 @@
 package UseCases;
 
+import Entities.Preview;
 import Entities.Recipe;
 import Entities.User;
 
@@ -9,23 +10,23 @@ public class SortByInterests extends SortRecipes {
 
     User user;
 
-    public SortByInterests(ArrayList<Recipe> previews, User user) {
+    public SortByInterests(ArrayList<Preview> previews, User user) {
         super(previews);
         this.user = user;
     }
 
     @Override
-    public ArrayList<Recipe> sort() {
-        ArrayList<Recipe> lst = alphabet();
+    public ArrayList<Preview> sort() {
+        ArrayList<Preview> lst = alphabet();
         return sortByInterests(lst);
     }
 
-    public ArrayList<Recipe> sortByInterests(ArrayList<Recipe> lst) {
-        ArrayList<Recipe> sorted_lst = new ArrayList<Recipe>();
-        ArrayList<Recipe> recipes = new ArrayList<Recipe>(lst);
+    public ArrayList<Preview> sortByInterests(ArrayList<Preview> lst) {
+        ArrayList<Preview> sorted_lst = new ArrayList<Preview>();
+        ArrayList<Preview> recipes = new ArrayList<Preview>(lst);
         ArrayList<String> user_interests = user.getInterests();
 
-        for (Recipe recipe : recipes) {
+        for (Preview recipe : recipes) {
             for (String genre : recipe.getGenre()) {
                 if (user_interests.contains(genre) && !(sorted_lst.contains(recipe))) {
                     sorted_lst.add(recipe);

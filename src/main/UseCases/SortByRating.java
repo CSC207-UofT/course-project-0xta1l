@@ -1,30 +1,31 @@
 package UseCases;
 
+import Entities.Preview;
 import Entities.Recipe;
 
 import java.util.ArrayList;
 
 public class SortByRating extends SortRecipes{
 
-    public SortByRating(ArrayList<Recipe> previews) {
+    public SortByRating(ArrayList<Preview> previews) {
         super(previews);
     }
 
     @Override
-    public ArrayList<Recipe> sort(){
-        ArrayList<Recipe> lst = alphabet();
+    public ArrayList<Preview> sort(){
+        ArrayList<Preview> lst = alphabet();
             return sortByRating(lst);
         }
 
-    public ArrayList<Recipe> sortByRating(ArrayList<Recipe> lst){
-        ArrayList<Recipe> grand_lst = new ArrayList<Recipe>();
-        ArrayList<Recipe> lst_1 = new ArrayList<Recipe>();
-        ArrayList<Recipe> lst_2 = new ArrayList<Recipe>();
-        ArrayList<Recipe> lst_3 = new ArrayList<Recipe>();
-        ArrayList<Recipe> lst_4 = new ArrayList<Recipe>();
-        ArrayList<Recipe> lst_5 = new ArrayList<Recipe>();
+    public ArrayList<Preview> sortByRating(ArrayList<Preview> lst){
+        ArrayList<Preview> grand_lst = new ArrayList<Preview>();
+        ArrayList<Preview> lst_1 = new ArrayList<Preview>();
+        ArrayList<Preview> lst_2 = new ArrayList<Preview>();
+        ArrayList<Preview> lst_3 = new ArrayList<Preview>();
+        ArrayList<Preview> lst_4 = new ArrayList<Preview>();
+        ArrayList<Preview> lst_5 = new ArrayList<Preview>();
 
-        for (Recipe preview : lst) {
+        for (Preview preview : lst) {
             helperPutRecipeInRatingList(preview, lst_1, lst_2, lst_3, lst_4, lst_5);
         }
 
@@ -37,14 +38,14 @@ public class SortByRating extends SortRecipes{
         return grand_lst;
     }
 
-    private void helperPutRecipeInRatingList(Recipe preview, ArrayList<Recipe> lst_1, ArrayList<Recipe> lst_2,
-                                             ArrayList<Recipe> lst_3, ArrayList<Recipe> lst_4,
-                                             ArrayList<Recipe> lst_5) {
+    private void helperPutRecipeInRatingList(Preview preview, ArrayList<Preview> lst_1, ArrayList<Preview> lst_2,
+                                             ArrayList<Preview> lst_3, ArrayList<Preview> lst_4,
+                                             ArrayList<Preview> lst_5) {
         helperDuplicate(preview, lst_1, lst_2, lst_3, lst_4, lst_5);
     }
 
-    static void helperDuplicate(Recipe preview, ArrayList<Recipe> lst_1, ArrayList<Recipe> lst_2,
-                                ArrayList<Recipe> lst_3, ArrayList<Recipe> lst_4, ArrayList<Recipe> lst_5) {
+    static void helperDuplicate(Preview preview, ArrayList<Preview> lst_1, ArrayList<Preview> lst_2,
+                                ArrayList<Preview> lst_3, ArrayList<Preview> lst_4, ArrayList<Preview> lst_5) {
         int rating = preview.getRating();
         if (rating == 1) {
             lst_1.add(preview);
