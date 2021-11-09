@@ -13,12 +13,13 @@ public class RecipeCreate {
 
     public Recipe CreateRecipeFromUser(String instructions, String ingredients, ArrayList<String> genres, String name,
                                        int rating, int ID, ArrayList<Review> RecipeReviews, String image,
-                                       String descriptions ){
+                                       String descriptions, int preptime ){
 
-        Recipe recipe = new Recipe(instructions,ingredients, genres, name, rating, ID, image, descriptions);
+        Recipe recipe = new Recipe(instructions,ingredients, genres, name, rating, ID, image, descriptions, preptime);
         for(String genre: genres){
             Constants.GENRELIBRARY.addRecipes(genre, recipe);
         }
+
         return recipe;
     }
 }
