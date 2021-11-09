@@ -15,6 +15,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.stream.Stream;
+import java.io.*;
+import java.util.Scanner;
 
 public class Constants {
     // Create Constants
@@ -43,19 +45,19 @@ public class Constants {
         r5genres.add("Canadian");
 
         Recipe recipe1 = new Recipe("Set on Fire", "Salt",
-                r1genres, "Burnt Food", 5, 1, "burnt.jpg", "");
+                r1genres, "Burnt Food", 5, 1, "burnt.jpg", "",5);
 
         Recipe recipe2 = new Recipe("Throw in Oven", "Chicken",
-                r2genres, "Chicken", 4, 2, "chicken.jpg", "");
+                r2genres, "Chicken", 4, 2, "chicken.jpg", "",10);
 
         Recipe recipe3 = new Recipe("Pan fry in pan", "Steak, butter",
-                r3genres, "Good Steak", 5, 3, "steak.jpg", "");
+                r3genres, "Good Steak", 5, 3, "steak.jpg", "",30);
 
         Recipe recipe4 = new Recipe("Boil in water", "Spinach, Mushrooms",
-                r4genres, "Random Veggies", 2, 4, "veg.jpg", "");
+                r4genres, "Random Veggies", 2, 4, "veg.jpg", "",15);
 
         Recipe recipe5 = new Recipe("Throw maple syrup on pancakes", "Pancakes, salt, butter",
-                r5genres, "Pancakes", 3, 5, "pancake.jpg", "");
+                r5genres, "Pancakes", 3, 5, "pancake.jpg", "",5);
 
         for (String g: recipe1.getGenre()){
             dataset.addRecipes(g, recipe1);
@@ -74,7 +76,34 @@ public class Constants {
         }
         return dataset;
     }
+    public static GenreLibrary CSVRecipeReader(String fileName) throws FileNotFoundException {
+        GenreLibrary genreLibrary = new GenreLibrary();
 
+        Scanner sc = new Scanner(new File(fileName));
+        sc.useDelimiter(",");
+
+        while (sc.hasNext()) {
+            String[] recipe = sc.next().split(",", 8);
+
+            System.out.println(sc.next());
+        }
+        sc.close();
+//        Path pathToFile = Paths.get(fileName);
+//        Path path = pathToFile.toAbsolutePath();
+//
+//        FileReader fr = new FileReader(path.toString());
+//        BufferedReader br = new BufferedReader(fr);
+//        Stream<String> stream = br.lines();
+//        Object[] list = stream.toArray();
+//
+//        for (Object recipe : list) {
+//            String[] s = recipe.toString().split(",", 6);
+//
+//            Recipe newRecipe = new Recipe();
+//            genreLibrary.addRecipes(newRecipe);
+//        }
+        return genreLibrary;
+    }
     public static UserSecurity CSVUserReader(String fileName) throws FileNotFoundException {
         UserSecurity userSecurity = new UserSecurity();
         Path pathToFile = Paths.get(fileName);
