@@ -66,13 +66,4 @@ public class GetRecipe {
     }
 
     // TODO: ADD TEST CASE
-    public ArrayList<ArrayList<Object>> genreRecipesFilter(ArrayList<ArrayList<Object>> recipes, String filter){
-        ArrayList<ArrayList<Object>> FilteredRecipes = new ArrayList<>();
-        for (ArrayList<Object> recipe: recipes) {
-            if (Arrays.asList(recipe.get(3)).contains(filter)){
-                FilteredRecipes.add(recipe);
-            }
-        }
-        return FilteredRecipes;
-    }
 }
