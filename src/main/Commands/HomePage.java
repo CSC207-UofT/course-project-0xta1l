@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class HomePage extends Command{
 
         public static String COMMANDSTRING = "home";
-        HomePage(){
+        public HomePage(){
             setCOMMANDSTRING(COMMANDSTRING);
             addSubCommands(new ViewGenres());
             //addSubCommands(new ViewUserProfile());

@@ -21,7 +21,7 @@ import java.util.Scanner;
 public class Constants {
     // Create Constants
     public static UserSecurity USERSECURITY;
-    public static CommandTree  COMMANDTREE = createCommandTree(new Commands.LoginPage());
+    public static CommandTree  COMMANDTREE = createCommandTree(new Commands.HomePage());
     static {
         try {
             USERSECURITY = Constants.CSVUserReader("src/main/Constants/users.csv");
