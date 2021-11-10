@@ -1,6 +1,9 @@
 package Commands;
 
+import Constants.Constants;
 import Controllers.UserRequestRecipeView;
+import Entities.FullPreview;
+import Entities.Preview;
 import Presenters.RecipeDisplay;
 
 import java.util.ArrayList;
@@ -23,8 +26,9 @@ public class ViewRecipe extends Command {
 
         // TODO Instantiation of utility class 'RecipeDisplay'
         RecipeDisplay display = new RecipeDisplay();
-        ArrayList<Object> recipe = view.recipeView(recipeID);
+        FullPreview recipe = (FullPreview) view.recipeView(recipeID);
         display.showRecipe(recipe);
+
     }
 
 }
