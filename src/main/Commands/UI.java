@@ -14,20 +14,7 @@ public class UI {
     public static void main(String[] args) {
         UI ui = new UI();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("login\ncreate account");
-        boolean userInstance = false;
-        User user = null;
-        while (!userInstance) {
-            String userOption = scanner.nextLine();
-            if (userOption.equals("login")) {
-                user = login();
-                userInstance = true;
-            } else if (userOption.equals("create account")) {
-                user = createAccount();
-                userInstance = true;
-            }
-        }
-
+        User user = getUser(scanner);
 
         while(ui.is_running){
             try {
@@ -47,6 +34,12 @@ public class UI {
                 boolean hasMatch = false;
                 for (CommandTree.CommandNode child : ui.currentNode.children) {
                     if (action.equals(child.getCommand().getCommandName())) {
+                        // reset tree, move user out of tree command line
+                        if (action.equals("logout")){
+                            child.getCommand().execute(user.getUsername());
+                            ui.currentNode = Constants.COMMANDTREE.root;
+                            user = getUser(scanner);
+                        }
                         child.getCommand().execute(user.getUsername());
                         ui.currentNode = child;
                         hasMatch = true;
@@ -81,6 +74,24 @@ public class UI {
                 }
             } catch(Exception e){ System.out.println(e.getMessage());}
         }
+    }
+
+    private static User getUser(Scanner scanner) {
+        boolean userInstance = false;
+        User user = new User();
+        System.out.println("Welcome! Please choose one of the following:");
+        while (!userInstance) {
+            System.out.println("login\ncreate account");
+            String userOption = scanner.nextLine();
+            if (userOption.equals("login")) {
+                user = login();
+                userInstance = true;
+            } else if (userOption.equals("create account")) {
+                user = createAccount();
+                userInstance = true;
+            }
+        }
+        return user;
     }
 
     private static User login(){
