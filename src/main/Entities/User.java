@@ -128,6 +128,7 @@ public class User {
 
     public void addSavedReviews(int reviewID, Review review) {
         this.UserReviews.put(reviewID, review);
+        updateGenreWeights(reviewID);
     }
 
     /**
