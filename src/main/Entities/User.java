@@ -25,7 +25,6 @@ public class User {
     private String biography;
     private ArrayList<String> interests;
     private ArrayList<Recipe> SavedRecipes = new ArrayList<>();
-    private ArrayList<Review> SavedReviews = new ArrayList<>();
 
     private HashMap<Integer, Review> UserReviews = new HashMap<>();
     private HashMap<String, Double> GenreWeights = new HashMap<>();
@@ -92,7 +91,7 @@ public class User {
     public String getBiography() {return biography;}
     public ArrayList<String> getInterests() {return interests;}
     public ArrayList<Recipe> getSavedRecipes() {return SavedRecipes;}
-    public  HashMap<Integer, Review> getUserReviews() {return UserReviews;}
+    public HashMap<Integer, Review> getUserReviews() {return UserReviews;}
 
     public HashMap<String, Double> getGenreWeights() { return GenreWeights; }
 
@@ -127,6 +126,10 @@ public class User {
         updateGenreWeights(recipe.getID());
     }
 
+    public void addSavedReviews(int reviewID, Review review) {
+        this.UserReviews.put(reviewID, review);
+    }
+
     /**
      * Generates a profile based on a given User's displayname, username, interests, biography and age
      * @return ArrayList<Object> representing the profile that has been generated
@@ -142,8 +145,5 @@ public class User {
 
     }
 
-    public void addSavedReviews(int reviewID, Review review) {
-        this.SavedReviews.add(review);
-        updateGenreWeights(reviewID);
-    }
+
 }

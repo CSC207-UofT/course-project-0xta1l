@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class LoginPage extends Command{
 
     public static String COMMANDSTRING = "login page";
-    LoginPage(){
+    public LoginPage(){
         setCOMMANDSTRING(COMMANDSTRING);
         addSubCommands(new HomePage());
         addSubCommands(new CreateNewAccount());

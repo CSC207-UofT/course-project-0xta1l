@@ -21,7 +21,7 @@ import java.util.Scanner;
 public class Constants {
     // Create Constants
     public static UserSecurity USERSECURITY;
-    public static CommandTree  COMMANDTREE;
+    public static CommandTree  COMMANDTREE = createCommandTree(new Commands.HomePage());
     static {
         try {
             USERSECURITY = Constants.CSVUserReader("src/main/Constants/users.csv");
@@ -133,13 +133,11 @@ public class Constants {
         CommandTree.CommandNode node = new CommandTree.CommandNode();
         node.setCommand(command);
         ArrayList<Command> commandList = command.getSubCommands();
-
-        if (commandList.isEmpty()){
-            return node;
-        } else{
+        if (!commandList.isEmpty()){
             for(Command c: commandList){
                 CommandTree.CommandNode subNode = createCommandNode(c);
                 node.addChild(subNode);
+
             }
         }
         return node;
