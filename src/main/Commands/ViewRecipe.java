@@ -23,8 +23,6 @@ public class ViewRecipe extends Command {
         Scanner input = new Scanner(System.in);
         String recipeID = input.nextLine();
         UserRequestRecipeView view = new UserRequestRecipeView();
-
-        // TODO Instantiation of utility class 'RecipeDisplay'
         RecipeDisplay display = new RecipeDisplay();
         FullPreview recipe = (FullPreview) view.recipeView(recipeID);
         display.showRecipe(recipe);

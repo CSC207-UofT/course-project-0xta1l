@@ -79,7 +79,7 @@ public class UI {
     private static User getUser(Scanner scanner) {
         boolean userInstance = false;
         User user = new User();
-        System.out.println("Welcome! Please choose one of the following:");
+        System.out.println("Welcome! Choose one of the following:");
         while (!userInstance) {
             System.out.println("login\ncreate account");
             String userOption = scanner.nextLine();
@@ -89,6 +89,8 @@ public class UI {
             } else if (userOption.equals("create account")) {
                 user = createAccount();
                 userInstance = true;
+            } else {
+                System.out.println("Not a valid command. Please beware of spelling and case.");
             }
         }
         return user;
