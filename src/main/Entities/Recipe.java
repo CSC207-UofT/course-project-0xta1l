@@ -74,6 +74,20 @@ public class Recipe {
     public String getInstructions() {return instructions;}
     public String getIngredients() {return ingredients;}
     public ArrayList<String> getGenre() {return genre;}
+    public String getGenreStrings(){
+        StringBuilder s = new StringBuilder();
+        int counter = 1;
+        for (String str: genre){
+            if (counter < genre.size()){
+                counter ++;
+                s.append(str).append(", ");
+            } else {
+                s.append(str);
+            }
+        }
+        return s.toString();
+    }
+
     public String getName() {return name;}
     public int getRating() {return rating;}
     public int getID() {return ID;}
