@@ -12,7 +12,7 @@ public class Logout extends Command{
     @Override
     public void execute(String username) {
 
-        System.out.println(username + " has been logged out. Have a good day");
+        System.out.println(username + " has been logged out. Have a good day! \n\n");
     }
 
 }

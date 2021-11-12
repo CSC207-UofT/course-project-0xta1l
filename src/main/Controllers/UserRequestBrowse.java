@@ -22,9 +22,6 @@ public class UserRequestBrowse {
      */
     public ArrayList<String> browseGenres(String username){
         User user = Constants.USERSECURITY.getUsernames().get(username);
-        // theoretically have 2 userSecurity instances
-        // static, with all from csv
-        // non-static, includes csv stuff + ANY NEW USERS temporary
         GenreViewSort g = new GenreViewSort();
         return g.genresViewList(user);
     }
@@ -35,13 +32,8 @@ public class UserRequestBrowse {
      * @return a list of lists of RecipePreviews
      */
     public ArrayList<Preview> browseSavedRecipes(String username){
-        User user = Constants.USERSECURITY.getUsernames().get(username);
-        ArrayList<Recipe> saved_recipes = user.getSavedRecipes();
-        ArrayList<Preview> recipe_previews = new ArrayList<>();
-        for (Recipe rec : saved_recipes){
-            recipe_previews.add(rec.getPreview());
-        }
-        return recipe_previews;
+        GetRecipe getRecipe = new GetRecipe();
+        return getRecipe.getUserSavedRecipes(username);
     }
     public ArrayList<Preview> browseGenreRecipes(String genre){
         GetRecipe g = new GetRecipe();

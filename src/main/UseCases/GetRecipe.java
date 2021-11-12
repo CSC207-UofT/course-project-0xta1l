@@ -9,20 +9,20 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 public class GetRecipe {
-    public HashMap<Integer, Preview> getUserSavedRecipes(User user) {
+    public ArrayList<Preview> getUserSavedRecipes(String username) {
+        User user = Constants.USERSECURITY.getUserByID(username);
         ArrayList<Recipe> userRecipeList = user.getSavedRecipes();
 
-        HashMap<Integer, Preview> recipeMap = new HashMap<>();
+        ArrayList<Preview> previewList = new ArrayList<>();
 
         for (Recipe recipe: userRecipeList) {
-            Recipe variable = Constants.GENRELIBRARY.getRecipeByID("All", recipe.getID());
-            recipeMap.put(variable.getID(), variable.getPreview());
+            previewList.add(recipe.getPreview());
         }
 
-        return recipeMap;
+        return previewList;
     }
 
-    public ArrayList<Object> getSingleRecipe (int recipeID, String fullOrPreview) throws Exception {
+    public Preview getSingleRecipe (int recipeID, String fullOrPreview) throws Exception {
         ArrayList<String> validOptionsFull = new ArrayList<>();
         validOptionsFull.add("Full");
         validOptionsFull.add("full");
@@ -36,13 +36,13 @@ public class GetRecipe {
         validOptionsPreview.add("p");
         validOptionsPreview.add("P");
 
-        ArrayList<Object> recipeProperties = new ArrayList<>();
+        Preview recipeProperties = new Preview();
 
         if (!validOptionsPreview.contains(fullOrPreview)
                 && !validOptionsFull.contains(fullOrPreview)) {
             throw new Exception("not a valid option");
         } else if (validOptionsPreview.contains(fullOrPreview)) {
-            recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getFull();
+            recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getPreview();
         } else if (validOptionsFull.contains(fullOrPreview)) {
             recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getFull();
         }
@@ -64,6 +64,4 @@ public class GetRecipe {
         }
         return previewList;
     }
-
-    // TODO: ADD TEST CASE
 }

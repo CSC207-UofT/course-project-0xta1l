@@ -4,7 +4,6 @@ import Entities.Preview;
 import Entities.Recipe;
 import Entities.User;
 import Constants.*;
-
 import java.util.*;
 
 public class RecommendRecipe {
@@ -96,3 +95,5 @@ public class RecommendRecipe {
     }
 
 }
+
+

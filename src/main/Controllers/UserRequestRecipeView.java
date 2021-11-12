@@ -3,10 +3,16 @@ package Controllers;
 import UseCases.GetRecipe;
 import Presenters.RecipeDisplay;
 
+import java.util.ArrayList;
+
 public class UserRequestRecipeView {
-    public void recipeView(int id) throws Exception {
+    public Entities.Preview recipeView(String id) throws Exception {
         GetRecipe getRecipe = new GetRecipe();
-        RecipeDisplay r = new RecipeDisplay();
-        r.showRecipe(getRecipe.getSingleRecipe(id,"full"));
+        try {
+            return getRecipe.getSingleRecipe(Integer.parseInt(id),"full");
+        } catch (Exception e) {
+            System.out.println("Not a valid recipe ID.");
+        }
+        return getRecipe.getSingleRecipe(Integer.parseInt(id),"full");
     }
 }
