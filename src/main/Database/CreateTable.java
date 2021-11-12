@@ -40,13 +40,35 @@ public class CreateTable {
         // SQL statement for creating a new table
         String sql = "CREATE TABLE IF NOT EXISTS users (\n"
                 + " display_name TEXT NOT NULL,\n"
-                + " age integer real,\n"
+                + " age INTEGER real,\n"
                 + " username TEXT NOT NULL PRIMARY KEY,\n"
                 + " password TEXT NOT NULL,\n"
                 + " biography TEXT NOT NULL,\n"
                 + " interests TEXT NOT NULL,\n"
-                + " saved_recipes TEXT NOT NULL\n"
+                + " saved_recipes TEXT NOT NULL,\n"
                 + " saved_reviews TEXT NOT NULL\n"
+                + ");";
+
+        try{
+            Connection conn = DriverManager.getConnection(url);
+            Statement stmt = conn.createStatement();
+            stmt.execute(sql);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public static void createNewTableReview() {
+        // SQLite connection string
+        String url = "jdbc:sqlite:C://sqlite/oxtail.db";
+
+        // SQL statement for creating a new table
+        String sql = "CREATE TABLE IF NOT EXISTS reviews (\n"
+                + " recipe_ID INTEGER real,\n"
+                + " username TEXT NOT NULL ,\n"
+                + " rating INTEGER real,\n"
+                + " comment TEXT NOT NULL,\n"
+                + " PRIMARY KEY ( recipe_ID, username)\n"
                 + ");";
 
         try{
@@ -64,6 +86,7 @@ public class CreateTable {
     public static void main(String[] args) {
         createNewTableUser();
         createNewTableRecipe();
+        createNewTableReview();
     }
 
 }  

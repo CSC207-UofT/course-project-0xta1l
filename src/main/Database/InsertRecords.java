@@ -24,7 +24,6 @@ public class InsertRecords {
         return conn;
     }
 
-
     public void insertRecipe(String name, ArrayList<String> genres, int rating, int preptime, String description,
                              String ingredients, String instructions, String img) {
 
@@ -76,6 +75,24 @@ public class InsertRecords {
             pstmt.setString(5, biography);
             pstmt.setString(6, interestList);
             pstmt.setString(7, savedRecipeList);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void insertReview(int recipeID, String username, int rating, String comment) {
+        String sql = "INSERT INTO reviews" +
+                "(recipe_ID, username, rating, comment) " +
+                "VALUES(?,?,?,?)";
+
+        try{
+            Connection conn = this.connect();
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, recipeID);
+            pstmt.setString(2, username);
+            pstmt.setInt(3, rating);
+            pstmt.setString(4, comment);
             pstmt.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
