@@ -45,8 +45,7 @@ public class CreateTable {
                 + " password TEXT NOT NULL,\n"
                 + " biography TEXT NOT NULL,\n"
                 + " interests TEXT NOT NULL,\n"
-                + " saved_recipes TEXT NOT NULL,\n"
-                + " saved_reviews TEXT NOT NULL\n"
+                + " saved_recipes TEXT NOT NULL\n"
                 + ");";
 
         try{

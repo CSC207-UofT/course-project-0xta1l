@@ -8,13 +8,14 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class InsertRecords {
 
     private Connection connect() {
         // SQLite connection string
-        String url = "jdbc:sqlite:C://sqlite/SSSIT.db";
+        String url = "jdbc:sqlite:C://sqlite/oxtail.db";
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url);
@@ -51,8 +52,7 @@ public class InsertRecords {
     }
 
     public void insertUser(String display_name, int age, String username, String password,
-                           String biography, ArrayList<String> interests, ArrayList<Recipe> savedRecipes,
-                           HashMap<Integer, Review> userReviews) {
+                           String biography, ArrayList<String> interests, ArrayList<Recipe> savedRecipes) {
         String sql = "INSERT INTO users" +
                 "(display_name, age, username, password, biography, interests, saved_recipes) " +
                 "VALUES(?,?,?,?,?,?,?)";
@@ -102,7 +102,23 @@ public class InsertRecords {
     public static void main(String[] args) {
 
         InsertRecords app = new InsertRecords();
-        // insert three new rows
+
+        // Inserting test user Billy
+        ArrayList<String> billyInterests = new ArrayList<String>(Arrays.asList("Chinese", "Mexican"));
+        ArrayList<Recipe> billySavedRecipes = new ArrayList<Recipe>();
+        app.insertUser("Billy", 20, "billybobjoe", "password",
+                "test user", billyInterests, billySavedRecipes );
+
+        // Inserting test user Bobby
+        ArrayList<String> bobbyInterests = new ArrayList<String>(Arrays.asList("Western"));
+        ArrayList<Recipe> bobbySavedRecipes = new ArrayList<Recipe>();
+        app.insertUser("Bobby", 20, "bobbybobbitybob", "password",
+                "test user", bobbyInterests, bobbySavedRecipes );
+
+        // Creating test reviews
+        app.insertReview(1, "billybobjoe", 5, "tastes amazing!");
+        app.insertReview(1, "bobbybobbitybob", 2, "tastes burnt");
+        app.insertReview(3, "billybobjoe", 1, "im a vegan");
 
     }
 
