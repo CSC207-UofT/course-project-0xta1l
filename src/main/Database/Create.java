@@ -24,6 +24,6 @@ public class Create {
     }
 
     public static void main(String[] args) {
-        createNewDatabase("test.db");
+        createNewDatabase("oxtail.db");
     }
 }
