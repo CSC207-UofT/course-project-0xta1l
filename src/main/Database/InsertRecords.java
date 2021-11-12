@@ -59,11 +59,17 @@ public class InsertRecords {
 
         String interestList = String.join(", ", interests);
 
-        ArrayList<String> savedRecipeIDList = new ArrayList<String>();
-        for (Recipe recipe: savedRecipes) {
-            savedRecipeIDList.add(String.valueOf(recipe.getID()));
+        // If the user has no saved recipes, return an empty string.
+        String savedRecipeList = "";
+
+        if (!savedRecipes.isEmpty()) {
+            ArrayList<String> savedRecipeIDList = new ArrayList<String>();
+            for (Recipe recipe: savedRecipes) {
+                savedRecipeIDList.add(String.valueOf(recipe.getID()));
+            }
+            savedRecipeList = String.join(", ", savedRecipeIDList);
         }
-        String savedRecipeList = String.join(", ", savedRecipeIDList);
+
 
         try{
             Connection conn = this.connect();
@@ -106,6 +112,7 @@ public class InsertRecords {
         // Inserting test user Billy
         ArrayList<String> billyInterests = new ArrayList<String>(Arrays.asList("Chinese", "Mexican"));
         ArrayList<Recipe> billySavedRecipes = new ArrayList<Recipe>();
+        System.out.println(billySavedRecipes.isEmpty());
         app.insertUser("Billy", 20, "billybobjoe", "password",
                 "test user", billyInterests, billySavedRecipes );
 
