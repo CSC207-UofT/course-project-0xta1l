@@ -39,10 +39,9 @@ public class CreateTable {
 
         // SQL statement for creating a new table
         String sql = "CREATE TABLE IF NOT EXISTS users (\n"
-                + " id integer PRIMARY KEY,\n"
                 + " display_name TEXT NOT NULL,\n"
                 + " age integer real,\n"
-                + " username TEXT NOT NULL,\n"
+                + " username TEXT NOT NULL PRIMARY KEY,\n"
                 + " password TEXT NOT NULL,\n"
                 + " biography TEXT NOT NULL,\n"
                 + " interests TEXT NOT NULL,\n"
