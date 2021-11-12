@@ -88,23 +88,10 @@ public class Recipe {
         return preview;
     }
 
-    /*public ArrayList<Object> getFull() {
-        ArrayList<Object> fullList = new ArrayList<>();
-        fullList.add(getID());
-        fullList.add(getName());
-        fullList.add(getRating());
-        fullList.add(getGenre());
-        fullList.add(getDescription());
-        fullList.add(getIngredients());
-        fullList.add(getInstructions());
-        fullList.add(getPreptime());
-
-        return fullList;
-    }*/
-
     public FullPreview getFull() {
         return full;
     }
+
     /**
      * Setter Methods for Recipe:
      * •setInstructions - accepts String for instructions attribute for a recipe
@@ -152,6 +139,10 @@ public class Recipe {
     public void setPreptime(int preptime) {
         this.preptime = preptime;
         this.full.setPreptime(preptime);
+    }
+
+    public void addSavedReviews(String username, Review review) {
+        this.RecipeReviews.put(username, review);
     }
 
 }

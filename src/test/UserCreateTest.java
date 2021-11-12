@@ -1,5 +1,4 @@
 import Entities.User;
-import Entities.UserSecurity;
 import UseCases.UserCreate;
 import org.junit.*;
 

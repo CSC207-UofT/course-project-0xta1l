@@ -1,4 +1,5 @@
 package Entities;
+import Constants.*;
 
 public class Review {
     // NOTE: NOT USED IN SKELETON MODEL
@@ -36,10 +37,15 @@ public class Review {
     public void setComments(String comments) {this.comments = comments;}
     public void setRating(int rating) {this.rating = rating;}
 
-    public boolean saveToUser(String username, int reviewID, Review review) {
-        UserSecurity user = new UserSecurity();
-        User accUser = user.getUserByID(username);
-        accUser.addSavedReviews(reviewID, review);
+    public boolean saveToUser(String username, int recipeID, Review review) {
+        User accUser = Constants.USERSECURITY.getUserByID(username);
+        accUser.addSavedReviews(recipeID, review);
+        return true;
+    }
+
+    public boolean saveToRecipe(int recipeID, String username, Review review) {
+        Recipe recipe = Constants.GENRELIBRARY.getRecipeByID("All", recipeID);
+        recipe.addSavedReviews(username, review);
         return true;
     }
 }
