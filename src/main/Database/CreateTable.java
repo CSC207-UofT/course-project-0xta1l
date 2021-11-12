@@ -12,7 +12,7 @@ public class CreateTable {
         String url = "jdbc:sqlite:C://sqlite/oxtail.db";
 
         // SQL statement for creating a new table  
-        String sql = "CREATE TABLE IF NOT EXISTS employees (\n"
+        String sql = "CREATE TABLE IF NOT EXISTS recipes (\n"
                 + " id integer PRIMARY KEY,\n"
                 + " name TEXT NOT NULL,\n"
                 + " genres TEXT NOT NULL,\n"
@@ -38,7 +38,7 @@ public class CreateTable {
         String url = "jdbc:sqlite:C://sqlite/oxtail.db";
 
         // SQL statement for creating a new table
-        String sql = "CREATE TABLE IF NOT EXISTS employees (\n"
+        String sql = "CREATE TABLE IF NOT EXISTS users (\n"
                 + " id integer PRIMARY KEY,\n"
                 + " display_name TEXT NOT NULL,\n"
                 + " age integer real,\n"
