@@ -9,7 +9,6 @@ public class GenreLibrary {
     public HashMap<String, HashMap<Integer, Recipe>> getListOfAllRecipes() {
         return ListOfAllRecipes;
     }
-
     public void addRecipes(String genre, Recipe recipe) {
         if (!this.ListOfAllRecipes.containsKey(genre)) {
             HashMap<Integer, Recipe> recipe_map = new HashMap<>();

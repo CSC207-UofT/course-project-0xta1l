@@ -32,13 +32,8 @@ public class UserRequestBrowse {
      * @return a list of lists of RecipePreviews
      */
     public ArrayList<Preview> browseSavedRecipes(String username){
-        User user = Constants.USERSECURITY.getUsernames().get(username);
-        ArrayList<Recipe> saved_recipes = user.getSavedRecipes();
-        ArrayList<Preview> recipe_previews = new ArrayList<>();
-        for (Recipe rec : saved_recipes){
-            recipe_previews.add(rec.getPreview());
-        }
-        return recipe_previews;
+        GetRecipe getRecipe = new GetRecipe();
+        return getRecipe.getUserSavedRecipes(username);
     }
     public ArrayList<Preview> browseGenreRecipes(String genre){
         GetRecipe g = new GetRecipe();
