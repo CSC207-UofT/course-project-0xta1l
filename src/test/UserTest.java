@@ -1,7 +1,7 @@
-
 import Entities.Recipe;
 import Entities.User;
 import Constants.*;
+import Entities.UserInfo;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -37,15 +37,15 @@ public class UserTest {
 
     @Test(timeout = 50)
     public void TestgetUserGetProfile() {
-        ArrayList<Object> profile = new ArrayList<>();
-        profile.add("MirSki");
-        profile.add("Amir");
         ArrayList<String> interestlist = new ArrayList<>();
         interestlist.add("German");
-        profile.add(interestlist);
-        profile.add("boy from BimTown");
-        profile.add(20);
-        assertEquals(profile, user.getProfile());
+        UserInfo profile = new UserInfo("Amir", "password", "MirSki", 20, "boy from BimTown", interestlist);
+        assertEquals(profile.getUsername(), user.getProfile().getUsername());
+        assertEquals(profile.getPassword(), user.getProfile().getPassword());
+        assertEquals(profile.getDisplayName(), user.getProfile().getDisplayName());
+        assertEquals(profile.getAge(), user.getProfile().getAge());
+        assertEquals(profile.getBiography(), user.getProfile().getBiography());
+        assertEquals(profile.getInterests(), user.getProfile().getInterests());
     }
 
     @Test(timeout = 50)

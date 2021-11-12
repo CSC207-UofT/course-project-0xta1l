@@ -5,10 +5,13 @@ import UseCases.RecipeSave;
 import java.util.ArrayList;
 
 public class UserRequestSaveRecipe {
+    private RecipeSave recipeSave = new RecipeSave();
+    public boolean saveRecipe(String username, String recipeID) throws Exception {
+        return recipeSave.saveToUser(username, Integer.parseInt(recipeID), "All");
+    }
 
-    public boolean saveRecipe(String username,int recipeID, String genre) throws Exception {
-        RecipeSave recipeSave = new RecipeSave();
-        return recipeSave.saveToUser(username, recipeID, genre);
+    public boolean deleteRecipe(String username, String recipeID) throws Exception {
+        return recipeSave.deleteFromUser(username, Integer.parseInt(recipeID));
     }
 
 

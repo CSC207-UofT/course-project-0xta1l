@@ -25,7 +25,6 @@ public class User {
     private String biography;
     private ArrayList<String> interests;
     private ArrayList<Recipe> SavedRecipes = new ArrayList<>();
-    private ArrayList<Review> SavedReviews = new ArrayList<>();
 
     private HashMap<Integer, Review> UserReviews = new HashMap<>();
     private HashMap<String, Double> GenreWeights = new HashMap<>();
@@ -92,7 +91,7 @@ public class User {
     public String getBiography() {return biography;}
     public ArrayList<String> getInterests() {return interests;}
     public ArrayList<Recipe> getSavedRecipes() {return SavedRecipes;}
-    public  HashMap<Integer, Review> getUserReviews() {return UserReviews;}
+    public HashMap<Integer, Review> getUserReviews() {return UserReviews;}
 
     public HashMap<String, Double> getGenreWeights() { return GenreWeights; }
 
@@ -123,27 +122,25 @@ public class User {
 
 
     public void addSavedRecipes(Recipe recipe) {
-        this.SavedRecipes.add(recipe);
+        SavedRecipes.add(recipe);
         updateGenreWeights(recipe.getID());
+    }
+
+    public void addSavedReviews(int reviewID, Review review) {
+        UserReviews.put(reviewID, review);
     }
 
     /**
      * Generates a profile based on a given User's displayname, username, interests, biography and age
      * @return ArrayList<Object> representing the profile that has been generated
      */
-    public ArrayList<Object> getProfile(){
-        ArrayList<Object> profile = new ArrayList<>();
-        profile.add(getDisplayName());
-        profile.add(getUsername());
-        profile.add(getInterests());
-        profile.add(getBiography());
-        profile.add(getAge());
+    public UserInfo getProfile(){
+        UserInfo profile = new UserInfo(username, password, displayName, age, biography, interests);
         return profile;
-
     }
 
-    public void addSavedReviews(int reviewID, Review review) {
-        this.SavedReviews.add(review);
-        updateGenreWeights(reviewID);
+
+    public void removeSavedRecipes(Recipe recipe) {
+        SavedRecipes.remove(recipe);
     }
 }

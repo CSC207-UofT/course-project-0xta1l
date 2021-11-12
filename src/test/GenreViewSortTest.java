@@ -68,16 +68,6 @@ public class GenreViewSortTest {
         genrelist.add("Mexican");
         assertEquals(viewlist, genrelist);
     }
-    @Test(timeout = 50)
-    public void TestgenreRecipeSort() {
-        GenreViewSort genreViewSort = new GenreViewSort();
-        recipelist.add(recipe3.getPreview());
-        recipelist.add(recipe2.getPreview());
-        recipelist.add(recipe1.getPreview());
-        ArrayList<Preview> rlist = genreViewSort.genreRecipeSort(recipelist, "rating");
-        assertEquals(recipelist, rlist);
-    }
-
     }
 
 

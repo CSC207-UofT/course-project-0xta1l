@@ -14,15 +14,20 @@ public class UserSecurity {
     public User getUserByID (String username){
         return UsernameList.get(username);
     }
+    public boolean validateLogin (String username, String password){
+        return UserPassword.get(username).equals(password);
+    }
 
-    public void checkPassword(String username, String password){
+    public boolean checkPassword(String username, String password){
         try{
             if (this.UserPassword.get(username).equals(password)){
                 System.out.println("Password is valid");
+                return true;
             }
         } catch(Exception e){
             System.out.println(e.getMessage());
         }
+        return false;
     }
 
     public void changePassword(String username, String password){
@@ -34,6 +39,7 @@ public class UserSecurity {
     }
 
     public void addUser(User user) {
-        getUsernames().put(user.getUsername(), user);
+        UsernameList.put(user.getUsername(), user);
+        UserPassword.put(user.getUsername(), user.getPassword());
     }
 }

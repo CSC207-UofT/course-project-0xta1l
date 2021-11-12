@@ -7,10 +7,12 @@ import java.util.ArrayList;
 
 public class ViewGenres extends Command {
     public static String COMMANDSTRING = "view genres";
-    public static ArrayList<Command> subCommands= new ArrayList<>();
 
     ViewGenres(){
-        setCOMMANDSTRING(COMMANDSTRING);}
+        setCOMMANDSTRING(COMMANDSTRING);
+        addSubCommands(new ViewGenreRecipes());
+    }
+
 
     @Override
     public void execute(String username) {
