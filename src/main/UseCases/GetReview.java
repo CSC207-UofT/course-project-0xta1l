@@ -1,6 +1,7 @@
 package UseCases;
 
 import Entities.*;
+import Constants.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,9 +30,7 @@ public class GetReview {
     }
 
     public ArrayList<ArrayList<Object>> getUserReviews(String username){
-        UserSecurity userSecurity = new UserSecurity();
-        HashMap<String, User> userMap = userSecurity.getUsernames();
-        User specificUser = userMap.get(username);
+        User specificUser = Constants.USERSECURITY.getUserByID(username);
         HashMap<Integer, Review> reviewList = specificUser.getUserReviews();
 
         ArrayList<ArrayList<Object>> finalReviewList = new ArrayList<>();

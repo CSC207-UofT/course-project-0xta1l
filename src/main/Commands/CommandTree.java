@@ -8,7 +8,7 @@ public class CommandTree{
 
     public CommandTree(CommandNode rootNode) {
         root = new CommandNode();
-        root.command = new LoginPage();
+        root.command = new HomePage();
         root.children = new ArrayList<>();
     }
     public void setRoot(CommandNode node) {

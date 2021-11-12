@@ -1,7 +1,6 @@
 package UseCases;
 import Constants.Constants;
 import Entities.User;
-import Entities.UserSecurity;
 
 import java.util.ArrayList;
 
@@ -14,18 +13,11 @@ import java.util.ArrayList;
 
 public class UserCreate {
 
-    public boolean userCreate(String displayName, int age, String password, String username, String biography,
+    public boolean userCreate(String username, String password, String displayName, int age, String biography,
                               ArrayList<String> interests){
         if (Constants.USERSECURITY.getUsernames().containsKey(username)){
             return false;
         } else{
-            /*User new_user = new User();
-            new_user.setDisplayName(displayName);
-            new_user.setAge(age);
-            new_user.setPassword(password);
-            new_user.setUsername(username);
-            new_user.setBiography(biography);
-            for (String i:interests){new_user.addInterests(i);}*/
             User new_user = new User(username, password, displayName, age, biography, interests);
             Constants.USERSECURITY.addUser(new_user);
             return true;
