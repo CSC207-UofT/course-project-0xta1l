@@ -3,13 +3,12 @@ package Commands;
 import Constants.Constants;
 import Controllers.UserRequestRecipeView;
 import Entities.FullPreview;
-import Entities.Preview;
 import Presenters.RecipeDisplay;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ViewRecipe extends Command {
+public class ViewRecipe extends RecipeCommand {
     public static String COMMANDSTRING = "view recipe";
 
     ViewRecipe(){
@@ -17,16 +16,20 @@ public class ViewRecipe extends Command {
         addSubCommands(new SaveRecipe());
     }
 
+    @Override
+    public void execute(String username, String second) throws Exception {
+        System.out.println("An error has occurred.");
+    }
 
     @Override
     public void execute(String username) throws Exception {
         Scanner input = new Scanner(System.in);
+        System.out.println("Please input the Recipe ID (number) of the recipe you want to view:");
         String recipeID = input.nextLine();
+        setVIEWEDRECIPE(recipeID);
         UserRequestRecipeView view = new UserRequestRecipeView();
         RecipeDisplay display = new RecipeDisplay();
-        FullPreview recipe = (FullPreview) view.recipeView(recipeID);
-        display.showRecipe(recipe);
-
+        display.showRecipe((FullPreview) view.recipeView(recipeID));
     }
 
 }

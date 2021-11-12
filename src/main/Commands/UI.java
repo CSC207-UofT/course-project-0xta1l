@@ -18,6 +18,7 @@ public class UI {
 
         while(ui.is_running){
             try {
+                System.out.println("\nPOSSIBLE COMMANDS:");
                 for (CommandTree.CommandNode child : ui.currentNode.children) {
                     System.out.println(child.getCommand().getCommandName());
                 }
@@ -39,16 +40,22 @@ public class UI {
                             child.getCommand().execute(user.getUsername());
                             ui.currentNode = Constants.COMMANDTREE.root;
                             user = getUser(scanner);
+                        } else if (child.getCommand() instanceof RecipeCommand
+                                && !action.equals("view recipe")
+                                && !action.equals("view saved recipe")
+                                && !ui.currentNode.getCommand().getCommandName().equals("view saved recipes")){
+                            ((RecipeCommand) child.getCommand()).execute(user.getUsername(), ((RecipeCommand) ui.currentNode.getCommand()).getViewedRecipe());
+                            ui.currentNode = child;
+                            hasMatch = true;
+                            break;
+                        }  else {
+                            child.getCommand().execute(user.getUsername());
+                            ui.currentNode = child;
+                            hasMatch = true;
+                            break;
                         }
-                        child.getCommand().execute(user.getUsername());
-                        ui.currentNode = child;
-                        hasMatch = true;
-                        break;
-                    } /*else if (action.equals("back") && !ui.currentNode.getCommand().getCommandName().equals("home")) {
-                        child.getParent().getCommand().execute(user.getUsername());
-                        hasMatch = true;
-                        break;
-                    }*/
+
+                    }
                 }
                 // checks if user wants to go back to previous page
                 CommandTree.CommandNode parent = ui.currentNode.parent;
