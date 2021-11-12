@@ -2,28 +2,20 @@ package Controllers;
 
 //import UI.UserInputStatus;
 import Constants.*;
-import Entities.UserSecurity;
+import Entities.UserInfo;
 import UseCases.UserCreate;
 import UseCases.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class UserRequestCreateLogin{
 
-    public String createUser(ArrayList<Object> userInfo) throws Exception {
-        if(userInfo.size()!=6){
-            throw new Exception("You are missing information");
-        }
-
-        String username = (String) userInfo.get(0);
-        String password = (String) userInfo.get(1);
-        String displayName = (String) userInfo.get(2);
-        int age = (int) userInfo.get(3);
-        String biography = (String) userInfo.get(4);
-        ArrayList<String> interests = (ArrayList<String>) userInfo.get(5);
+    public String createUser(String username, String password, String displayName, int age, String biography, String interests) throws Exception {
+        ArrayList<String> interestList = new ArrayList<>(Arrays.asList(interests.split("\\s*,\\s*")));
         UserCreate userCreatee = new UserCreate();
-        boolean UserMade = userCreatee.userCreate(displayName,age, password, username, biography, interests);
+        boolean UserMade = userCreatee.userCreate(username, age, displayName, password, biography, interestList);
         if (UserMade) {
             return username;
         } else {

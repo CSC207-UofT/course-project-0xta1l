@@ -126,34 +126,36 @@ public class UI {
         ArrayList<Object> UserInfo = new ArrayList<>();
         System.out.println("Welcome! You will be making a new user account.");
         System.out.println("Please enter the username you want (each user must have a unique username):");
-        UserInfo.add(input.nextLine());
+        String username = input.nextLine();
 
         System.out.println("Please enter your password:");
-        UserInfo.add(input.nextLine());
+        String password = input.nextLine();
 
         System.out.println("Please enter the display name you want:");
-        UserInfo.add(input.nextLine());
+        String displayName = input.nextLine();
 
+        int age = 0;
         boolean isNotInt = true;
         do {
             try {
                 System.out.println("Please enter your age:");
-                UserInfo.add(Integer.parseInt(input.nextLine()));
+                age = Integer.parseInt(input.nextLine());
                 isNotInt = false;
             } catch (NumberFormatException exception) {
                 System.out.println("Not an integer, please try again");
             }
         } while(isNotInt);
         System.out.println("Please enter a short blurb about yourself:");
-        UserInfo.add(input.nextLine());
-        ArrayList<Object> interests = new ArrayList<>();
-        UserInfo.add(interests);
+        String bio = input.nextLine();
+
+        // TODO: TAKE IN INTERESTS
+        String interests = input.nextLine();
         try {
-            CreateLoginController.createUser(UserInfo);
+            CreateLoginController.createUser(username,password, displayName, age, bio, interests);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return Constants.USERSECURITY.getUserByID((String) UserInfo.get(0));
+        return Constants.USERSECURITY.getUserByID(username);
     }
 
 
