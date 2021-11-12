@@ -17,8 +17,11 @@ import java.io.*;
 
 public class Constants {
     // Create Constants
-    public static UserSecurity USERSECURITY;
+    public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
+    public static UserSecurity USERSECURITY = Constants.createUsers();
     public static CommandTree  COMMANDTREE;
+
+    /* This is outdated code to read csv file.
     static {
         try {
             USERSECURITY = Constants.CSVUserReader("src/main/Constants/users.csv");
@@ -27,7 +30,7 @@ public class Constants {
             e.printStackTrace();
         }
     }
-    public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
+     */
 
     public static UserSecurity createUsers(){
         // NOTE this is temporary placeholder to test android app usage
