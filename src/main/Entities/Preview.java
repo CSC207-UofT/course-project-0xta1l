@@ -64,6 +64,19 @@ public class Preview {
     public void setName(String name) {this.name = name;}
     public void setDescription(String description) {this.description = description;}
 
-    // TODO: Add a method that returns the preview in the form of an ArrayList (reference Recipe.getFull)
+    /**
+     * This method returns a preview entity in the form of an arraylist
+     * The array list returned has all the preview attributes in the following order:
+     * @return [id, name, rating, genre, description]
+     */
+    public ArrayList<Object> toList(){
+        ArrayList<Object> lst = new ArrayList<Object>();
+        lst.add(ID);
+        lst.add(name);
+        lst.add(rating);
+        lst.add(genre);
+        lst.add(description);
+        return lst;
+    }
 
 }
