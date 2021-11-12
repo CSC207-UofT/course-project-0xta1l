@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class UserCreate {
 
-    public boolean userCreate(String displayName, int age, String password, String username, String biography,
+    public boolean userCreate(String username, String password, String displayName, int age, String biography,
                               ArrayList<String> interests){
         if (Constants.USERSECURITY.getUsernames().containsKey(username)){
             return false;

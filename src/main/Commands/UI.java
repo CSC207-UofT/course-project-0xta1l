@@ -148,10 +148,12 @@ public class UI {
         System.out.println("Please enter a short blurb about yourself:");
         String bio = input.nextLine();
 
-        // TODO: TAKE IN INTERESTS
+        System.out.println("The recipe genres we currently have are: ");
+        System.out.println(Constants.GENRELIBRARY.getAllGenres());
+        System.out.println("Please enter the genres you are interested in, each separated by a comma and space.");
         String interests = input.nextLine();
         try {
-            CreateLoginController.createUser(username,password, displayName, age, bio, interests);
+            CreateLoginController.createUser(username, password, displayName, age, bio, interests);
         } catch (Exception e) {
             e.printStackTrace();
         }

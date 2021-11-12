@@ -13,9 +13,9 @@ import java.util.Arrays;
 public class UserRequestCreateLogin{
 
     public String createUser(String username, String password, String displayName, int age, String biography, String interests) throws Exception {
-        ArrayList<String> interestList = new ArrayList<>(Arrays.asList(interests.split("\\s*,\\s*")));
+        ArrayList<String> interestList = new ArrayList<>(Arrays.asList(interests.split(",\\s*")));
         UserCreate userCreatee = new UserCreate();
-        boolean UserMade = userCreatee.userCreate(username, age, displayName, password, biography, interestList);
+        boolean UserMade = userCreatee.userCreate(username, password, displayName, age, biography, interestList);
         if (UserMade) {
             return username;
         } else {
