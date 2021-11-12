@@ -20,7 +20,7 @@ public class Constants {
 
     public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
     public static UserSecurity USERSECURITY = Constants.createUsers();
-    public static CommandTree  COMMANDTREE;
+    public static CommandTree  COMMANDTREE = createCommandTree(new Commands.HomePage());
 
     /* This is outdated code to read csv file.
 
@@ -51,10 +51,13 @@ public class Constants {
         User user2 = new User("username2", "password2", "Bob",
                 11, "I love chicken", interest2);
 
+        User user3 = new User("a", "a", "Bob",
+                11, "for text ui testing", interest2);
 
         UserSecurity us = new UserSecurity();
         us.addUser(user1);
         us.addUser(user2);
+        us.addUser(user3);
 
         // TODO: not hardcode
         ArrayList<String> r1genres = new ArrayList<>();
