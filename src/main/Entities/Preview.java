@@ -64,5 +64,6 @@ public class Preview {
     public void setName(String name) {this.name = name;}
     public void setDescription(String description) {this.description = description;}
 
+    // TODO: Add a method that returns the preview in the form of an ArrayList (reference Recipe.getFull)
 
 }
