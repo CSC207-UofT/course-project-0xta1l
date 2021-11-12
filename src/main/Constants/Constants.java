@@ -17,11 +17,15 @@ import java.io.*;
 
 public class Constants {
     // Create Constants
+
     public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
     public static UserSecurity USERSECURITY = Constants.createUsers();
     public static CommandTree  COMMANDTREE;
 
     /* This is outdated code to read csv file.
+
+    public static UserSecurity USERSECURITY;
+    public static CommandTree  COMMANDTREE = createCommandTree(new Commands.HomePage());
     static {
         try {
             USERSECURITY = Constants.CSVUserReader("src/main/Constants/users.csv");
@@ -190,15 +194,23 @@ public class Constants {
         CommandTree.CommandNode node = new CommandTree.CommandNode();
         node.setCommand(command);
         ArrayList<Command> commandList = command.getSubCommands();
-
-        if (commandList.isEmpty()){
-            return node;
-        } else{
+        if (!commandList.isEmpty()){
             for(Command c: commandList){
                 CommandTree.CommandNode subNode = createCommandNode(c);
                 node.addChild(subNode);
+
             }
         }
         return node;
     }
+
+    ArrayList<String> genreList = new ArrayList<>(Arrays.asList("Meal","Drink","Dessert","Sauce","Appetizer","Western",
+            "Fusion","Indian","Middle-Eastern","Mexican","Italian","Spanish","Japanese","Korean","Chinese","Thai",
+            "Vietnamese","Chinese", "Filipino", "Soul", "Caribbean", "Vegan/Vegetarian", "African","Alcoholic",
+            "Latin American", "Vegetarian","Salad","Chicken", "BBQ","Pie","Fruit","Cake","Seafood","Coleslaw",
+            "Doughnuts","Cookies","Muffins","Fast Food"));
+
+
+
+
 }

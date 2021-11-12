@@ -32,6 +32,7 @@ public class Recipe {
     private String description;
     private Preview preview;
     private int preptime;
+    private FullPreview full;
 
     /**
      * Constructor for Recipe
@@ -53,6 +54,7 @@ public class Recipe {
         this.preptime = preptime;
         this.RecipeReviews = new HashMap<>();
         this.preview = new Preview(id, name, rating, genres, description);
+        this.full = new FullPreview(this);
     }
 
 
@@ -100,19 +102,10 @@ public class Recipe {
         return preview;
     }
 
-    public ArrayList<Object> getFull() {
-        ArrayList<Object> fullList = new ArrayList<>();
-        fullList.add(getID());
-        fullList.add(getName());
-        fullList.add(getRating());
-        fullList.add(getGenre());
-        fullList.add(getDescription());
-        fullList.add(getIngredients());
-        fullList.add(getInstructions());
-        fullList.add(getPreptime());
-
-        return fullList;
+    public FullPreview getFull() {
+        return full;
     }
+
     /**
      * Setter Methods for Recipe:
      * •setInstructions - accepts String for instructions attribute for a recipe
@@ -125,25 +118,46 @@ public class Recipe {
      * •setDescription - accepts String for Description attribute for a recipe, alters recipe's preview
      * •setPreptime - accepts integer for preptime attribute
      */
-    public void setInstructions(String instructions) {this.instructions = instructions;}
-    public void setIngredients(String ingredients) {this.ingredients = ingredients;}
+    public void setInstructions(String instructions) {
+        this.instructions = instructions;
+        this.full.setInstructions(instructions);
+    }
+    public void setIngredients(String ingredients) {
+        this.ingredients = ingredients;
+        this.full.setIngredients(ingredients);
+    }
     public void setGenre(ArrayList<String> genre) {
         this.genre = genre;
-        this.preview.setGenre(genre);}
+        this.preview.setGenre(genre);
+    }
     public void setRating(int rating) {
         this.rating = rating;
-        this.preview.setRating(rating);}
+        this.preview.setRating(rating);
+    }
     public void setID(int ID) {
         this.ID = ID;
-        this.preview.setID(ID);}
+        this.preview.setID(ID);
+    }
     public void setName(String name) {
         this.name = name;
-        this.preview.setName(name);}
+        this.preview.setName(name);
+    }
     public void setDescription(String description) {
         this.description = description;
-        this.preview.setDescription(description);}
-    public void setImage(String image) {this.image = image;}
-    public void setPreptime(int preptime) {this.preptime = preptime;}
+        this.preview.setDescription(description);
+    }
+    public void setImage(String image) {
+        this.image = image;
+        this.full.setImage(image);
+    }
+    public void setPreptime(int preptime) {
+        this.preptime = preptime;
+        this.full.setPreptime(preptime);
+    }
+
+    public void addSavedReviews(String username, Review review) {
+        this.RecipeReviews.put(username, review);
+    }
 
 }
 

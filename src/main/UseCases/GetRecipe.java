@@ -22,7 +22,7 @@ public class GetRecipe {
         return recipeMap;
     }
 
-    public ArrayList<Object> getSingleRecipe (int recipeID, String fullOrPreview) throws Exception {
+    public Preview getSingleRecipe (int recipeID, String fullOrPreview) throws Exception {
         ArrayList<String> validOptionsFull = new ArrayList<>();
         validOptionsFull.add("Full");
         validOptionsFull.add("full");
@@ -36,13 +36,13 @@ public class GetRecipe {
         validOptionsPreview.add("p");
         validOptionsPreview.add("P");
 
-        ArrayList<Object> recipeProperties = new ArrayList<>();
+        Preview recipeProperties = new Preview();
 
         if (!validOptionsPreview.contains(fullOrPreview)
                 && !validOptionsFull.contains(fullOrPreview)) {
             throw new Exception("not a valid option");
         } else if (validOptionsPreview.contains(fullOrPreview)) {
-            recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getFull();
+            recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getPreview();
         } else if (validOptionsFull.contains(fullOrPreview)) {
             recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getFull();
         }
@@ -64,6 +64,4 @@ public class GetRecipe {
         }
         return previewList;
     }
-
-    // TODO: ADD TEST CASE
 }

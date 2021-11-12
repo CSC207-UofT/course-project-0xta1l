@@ -22,9 +22,6 @@ public class UserRequestBrowse {
      */
     public ArrayList<String> browseGenres(String username){
         User user = Constants.USERSECURITY.getUsernames().get(username);
-        // theoretically have 2 userSecurity instances
-        // static, with all from csv
-        // non-static, includes csv stuff + ANY NEW USERS temporary
         GenreViewSort g = new GenreViewSort();
         return g.genresViewList(user);
     }

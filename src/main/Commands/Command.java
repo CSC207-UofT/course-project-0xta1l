@@ -8,7 +8,7 @@ public abstract class Command {
 
     public Command(){}
 
-    public abstract void execute(String username);
+    public abstract void execute(String username) throws Exception;
 
     public String getCommandName(){return COMMANDSTRING;}
     public void addSubCommands(Command command){subCommands.add(command);}
