@@ -2,6 +2,7 @@ package UseCases;
 import Entities.Recipe;
 import Entities.Review;
 import Constants.Constants;
+import Entities.User;
 
 import java.util.ArrayList;
 
@@ -11,14 +12,17 @@ public class RecipeCreate {
     //        Creates recipe entity and adds it to the GenreLibrary
     //        Outputs the created recipe
 
-    public Recipe CreateRecipeFromUser(String instructions, String ingredients, ArrayList<String> genres, String name,
-                                       int rating, int ID, ArrayList<Review> RecipeReviews, String image,
+    public Recipe CreateRecipeFromUser(String username, String instructions, String ingredients, ArrayList<String> genres, String name,
+                                       int rating, int ID, String image,
                                        String descriptions, int preptime ){
 
         Recipe recipe = new Recipe(instructions,ingredients, genres, name, rating, ID, image, descriptions, preptime);
-        for(String genre: genres){
+        for(String genre: recipe.getGenre()){
             Constants.GENRELIBRARY.addRecipes(genre, recipe);
         }
+
+        User user = Constants.USERSECURITY.getUserByID(username);
+        user.addSavedRecipes(recipe);
 
         return recipe;
     }

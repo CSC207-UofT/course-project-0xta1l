@@ -8,6 +8,7 @@ public class HomePage extends Command{
             addSubCommands(new ViewGenres());
             addSubCommands(new ViewUserProfile());
             addSubCommands(new ViewSavedRecipes());
+            addSubCommands(new UploadRecipe());
             addSubCommands(new Logout());
         }
 
