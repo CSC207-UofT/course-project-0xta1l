@@ -17,6 +17,13 @@ import java.io.*;
 
 public class Constants {
     // Create Constants
+
+    public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
+    public static UserSecurity USERSECURITY = Constants.createUsers();
+    public static CommandTree  COMMANDTREE;
+
+    /* This is outdated code to read csv file.
+
     public static UserSecurity USERSECURITY;
     public static CommandTree  COMMANDTREE = createCommandTree(new Commands.HomePage());
     static {
@@ -27,7 +34,7 @@ public class Constants {
             e.printStackTrace();
         }
     }
-    public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
+     */
 
     public static UserSecurity createUsers(){
         // NOTE this is temporary placeholder to test android app usage
