@@ -16,5 +16,4 @@ public abstract class Command {
     public void setCOMMANDSTRING(String command){COMMANDSTRING = command;}
     public ArrayList<Command> getSubCommands() {return subCommands;}
 
-
 }

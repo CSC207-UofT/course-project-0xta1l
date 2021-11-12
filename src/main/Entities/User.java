@@ -122,28 +122,25 @@ public class User {
 
 
     public void addSavedRecipes(Recipe recipe) {
-        this.SavedRecipes.add(recipe);
+        SavedRecipes.add(recipe);
         updateGenreWeights(recipe.getID());
     }
 
     public void addSavedReviews(int reviewID, Review review) {
-        this.UserReviews.put(reviewID, review);
+        UserReviews.put(reviewID, review);
     }
 
     /**
      * Generates a profile based on a given User's displayname, username, interests, biography and age
      * @return ArrayList<Object> representing the profile that has been generated
      */
-    public ArrayList<Object> getProfile(){
-        ArrayList<Object> profile = new ArrayList<>();
-        profile.add(getDisplayName());
-        profile.add(getUsername());
-        profile.add(getInterests());
-        profile.add(getBiography());
-        profile.add(getAge());
+    public UserInfo getProfile(){
+        UserInfo profile = new UserInfo(username, password, displayName, age, biography, interests);
         return profile;
-
     }
 
 
+    public void removeSavedRecipes(Recipe recipe) {
+        SavedRecipes.remove(recipe);
+    }
 }

@@ -7,21 +7,28 @@ import Presenters.RecipeDisplay;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class SaveRecipe extends Command {
+public class SaveRecipe extends RecipeCommand {
     public static String COMMANDSTRING = "save recipe";
 
     SaveRecipe(){
         setCOMMANDSTRING(COMMANDSTRING);
     }
 
-
     @Override
     public void execute(String username) throws Exception {
-        UserRequestSaveRecipe save = new UserRequestSaveRecipe();
+        System.out.println("An error has occurred.");
+    }
 
-        // TODO figure out how to pass viewed recipe id
-        //RecipeDisplay display = new RecipeDisplay();
-        //ArrayList<Object> recipe = view.recipeView(recipeID);
-        //display.showRecipe(recipe);
+    @Override
+    public void execute(String username, String recipeID) throws Exception {
+        setVIEWEDRECIPE(recipeID);
+        UserRequestSaveRecipe save = new UserRequestSaveRecipe();
+        try {
+            save.saveRecipe(username, recipeID);
+            System.out.println("Recipe has been saved!");
+        } catch (Exception e){
+            System.out.println("Recipe has already been saved.");
+        }
+
     }
 }
