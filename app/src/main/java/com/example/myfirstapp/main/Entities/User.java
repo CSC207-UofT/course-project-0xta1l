@@ -89,6 +89,13 @@ public class User {
     public String getBiography() {return biography;}
     public ArrayList<String> getInterests() {return interests;}
     public ArrayList<Recipe> getSavedRecipes() {return SavedRecipes;}
+    public HashMap<Integer, Recipe> getSavedRecipesHash() {
+        HashMap<Integer, Recipe> h = new HashMap<>();
+        for (Recipe recipe: SavedRecipes) {
+            h.put(recipe.getID(), recipe);
+        }
+        return h;
+    }
     public HashMap<Integer, Review> getUserReviews() {return UserReviews;}
 
     public HashMap<String, Double> getGenreWeights() { return GenreWeights; }

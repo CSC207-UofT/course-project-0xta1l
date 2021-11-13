@@ -4,11 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Controllers.UserRequestSaveRecipe;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class RecipeItemActivity extends AppCompatActivity {
 
@@ -19,8 +24,12 @@ public class RecipeItemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_item);
 
+        System.out.println("The recipe id is : " + Globals.getViewRecipeId());
+
         User user = Constants.USERSECURITY.getUserByID(Globals.getUser_username());
-        Recipe recipe = user.getSavedRecipes().get(Globals.getViewRecipeId());
+        HashMap<Integer, Recipe> recipes = user.getSavedRecipesHash();
+        System.out.println("recipes is " + recipes);
+        Recipe recipe = recipes.get(Globals.getViewRecipeId());
         setTitle(recipe.getName());
 
         TextView recipeItemGenre = findViewById(R.id.recipeItemGenre);
@@ -38,5 +47,13 @@ public class RecipeItemActivity extends AppCompatActivity {
         TextView recipeItemRating = findViewById(R.id.recipeItemRating);
         recipeItemRating.setText("Rating " + recipe.getRating());
 
+    }
+    public void deleteRecipe(View v) throws Exception {
+        try {
+            UserRequestSaveRecipe saveController = new UserRequestSaveRecipe();
+            saveController.deleteRecipe(Globals.getUser_username(), String.valueOf(Globals.getViewRecipeId()));
+        } catch (Exception e){
+        e.printStackTrace();
+    }
     }
 }

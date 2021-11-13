@@ -59,39 +59,6 @@ public class Constants {
         us.addUser(user2);
         us.addUser(user3);
 
-        // TODO: not hardcode
-        ArrayList<String> r1genres = new ArrayList<>();
-        r1genres.add("Mexican");
-        ArrayList<String> r2genres = new ArrayList<>();
-        r2genres.add("Chinese");
-        ArrayList<String> r3genres = new ArrayList<>();
-        r3genres.add("Western");
-        ArrayList<String> r4genres = new ArrayList<>();
-        r4genres.add("Egyptian");
-        ArrayList<String> r5genres = new ArrayList<>();
-        r5genres.add("Canadian");
-
-        Recipe recipe1 = new Recipe("Set on Fire", "Salt",
-                r1genres, "Burnt Food", 5, 1, "burnt.jpg", "",5);
-
-        Recipe recipe2 = new Recipe("Throw in Oven", "Chicken",
-                r2genres, "Chicken", 4, 2, "chicken.jpg", "",10);
-
-        Recipe recipe3 = new Recipe("Pan fry in pan", "Steak, butter",
-                r3genres, "Good Steak", 5, 3, "steak.jpg", "",30);
-
-        Recipe recipe4 = new Recipe("Boil in water", "Spinach, Mushrooms",
-                r4genres, "Random Veggies", 2, 4, "veg.jpg", "",15);
-
-        Recipe recipe5 = new Recipe("Throw maple syrup on pancakes", "Pancakes, salt, butter",
-                r5genres, "Pancakes", 3, 5, "pancake.jpg", "",5);
-
-        user1.addSavedRecipes(recipe1);
-        user1.addSavedRecipes(recipe2);
-        user1.addSavedRecipes(recipe3);
-        user1.addSavedRecipes(recipe5);
-        user2.addSavedRecipes(recipe4);
-
         return us;
     }
     public static GenreLibrary createDataset() {

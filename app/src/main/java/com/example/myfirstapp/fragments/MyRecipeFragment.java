@@ -79,24 +79,25 @@ public class MyRecipeFragment extends Fragment {
         LinearLayout layout = (LinearLayout) v.findViewById(R.id.MyRecipeLayout);
         User user = Constants.USERSECURITY.getUserByID(Globals.getUser_username());
         ArrayList<Recipe> recipes = user.getSavedRecipes();
-        for(int newRecipeIndex = 0; newRecipeIndex < recipes.size(); newRecipeIndex++) {
+        System.out.println("Recipe size is " + recipes.size());
+        for(int i = 0; i < recipes.size(); i++) {
             TextView text = new TextView(getContext());
             text.setGravity(Gravity.CENTER);
             text.setTextColor(getResources().getColor(android.R.color.black));
             text.setPadding(100, 60, 0, 0);
             text.setTextSize(24);
             text.setGravity(Gravity.LEFT);
-            Recipe recipe = recipes.get(newRecipeIndex);
+            Recipe recipe = recipes.get(i);
             String recipeName = recipe.getName();
             text.setText(recipeName);
             text.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
             text.setClickable(true);
-            int finalNewRecipeIndex = newRecipeIndex;
+            int recipeID = recipe.getID();
             text.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Context context = getContext();
-                    Globals.setViewRecipeId(finalNewRecipeIndex);
+                    Globals.setViewRecipeId(recipeID);
                     Intent intent = new Intent(context, RecipeItemActivity.class);
                     startActivity(intent);
                 }

@@ -4,12 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Controllers.UserRequestSaveRecipe;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class GenreRecipeItemActivity extends AppCompatActivity {
@@ -39,5 +42,16 @@ public class GenreRecipeItemActivity extends AppCompatActivity {
         TextView recipeItemRating = findViewById(R.id.genreRecipeItemRating);
         recipeItemRating.setText("Rating " + recipe.getRating());
 
+    }
+    public void saveRecipe(View v) throws Exception {
+        try {
+            User user = Constants.USERSECURITY.getUserByID(Globals.getUser_username());
+            ArrayList<Recipe> recipes = user.getSavedRecipes();
+            System.out.println("Size is" + recipes.size());
+            UserRequestSaveRecipe saveController = new UserRequestSaveRecipe();
+            saveController.saveRecipe(Globals.getUser_username(), String.valueOf(Globals.getViewRecipeId()));
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
