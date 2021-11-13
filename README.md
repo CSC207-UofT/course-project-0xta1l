@@ -1,5 +1,5 @@
-## Oxtail's README
+# android_app_recipe
 
-Hi Tabeeb! We hope you are having a great weekend :D 
 
-Run main to see our code! 
+How to make a menu :^)
+https://www.youtube.com/watch?v=fODp1hZxfng&ab_channel=CodinginFlow
