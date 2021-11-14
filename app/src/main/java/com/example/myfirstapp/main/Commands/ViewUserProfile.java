@@ -9,7 +9,7 @@ public class ViewUserProfile extends Command {
 
     ViewUserProfile(){
         setCOMMANDSTRING(COMMANDSTRING);
-        addSubCommands(new ViewUserReviews())
+        addSubCommands(new ViewUserReviews());
         //addSubCommands(new ChangeSecurity());   PHASE 2!
         //addSubCommands(new ChangeAccountDetails());   PHASE 2!
     }
