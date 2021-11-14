@@ -2,7 +2,6 @@ package com.example.myfirstapp.main.Controllers;
 
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Entities.Preview;
-import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.UseCases.GenreViewSort;
 import com.example.myfirstapp.main.UseCases.GetRecipe;
