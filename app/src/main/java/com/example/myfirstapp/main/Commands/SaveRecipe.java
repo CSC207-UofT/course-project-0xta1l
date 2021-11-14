@@ -1,8 +1,8 @@
-package com.example.myfirstapp.main.Commands;
+package Commands;
 
-import com.example.myfirstapp.main.Controllers.UserRequestRecipeView;
-import com.example.myfirstapp.main.Controllers.UserRequestSaveRecipe;
-import com.example.myfirstapp.main.Presenters.RecipeDisplay;
+import Controllers.UserRequestRecipeView;
+import Controllers.UserRequestSaveRecipe;
+import Presenters.RecipeDisplay;
 
 import java.util.ArrayList;
 import java.util.Scanner;

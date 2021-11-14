@@ -1,9 +1,9 @@
-package com.example.myfirstapp.main.Commands;
+package Commands;
 
-import com.example.myfirstapp.main.Constants.Constants;
-import com.example.myfirstapp.main.Controllers.UserRequestRecipeView;
-import com.example.myfirstapp.main.Entities.FullPreview;
-import com.example.myfirstapp.main.Presenters.RecipeDisplay;
+import Constants.Constants;
+import Controllers.UserRequestRecipeView;
+import Entities.FullPreview;
+import Presenters.RecipeDisplay;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -14,6 +14,8 @@ public class ViewRecipe extends RecipeCommand {
     ViewRecipe(){
         setCOMMANDSTRING(COMMANDSTRING);
         addSubCommands(new SaveRecipe());
+        addSubCommands(new AddReview());
+        addSubCommands(new ViewReviews());
     }
 
     @Override

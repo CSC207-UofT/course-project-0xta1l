@@ -1,4 +1,4 @@
-package com.example.myfirstapp.main.Commands;
+package Commands;
 
 import java.util.ArrayList;
 

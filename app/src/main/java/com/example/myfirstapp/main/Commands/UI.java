@@ -1,8 +1,6 @@
-
-package com.example.myfirstapp.main.Commands;
-import com.example.myfirstapp.main.Constants.*;
-import com.example.myfirstapp.main.Controllers.UserRequestCreateLogin;
-import com.example.myfirstapp.main.Entities.User;
+package Commands;
+import Constants.*;
+import Controllers.UserRequestCreateLogin;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -15,7 +13,7 @@ public class UI {
     public static void main(String[] args) {
         UI ui = new UI();
         Scanner scanner = new Scanner(System.in);
-        User user = getUser(scanner);
+        String username = getUser(scanner);
 
         while(ui.is_running){
             try {
@@ -38,19 +36,19 @@ public class UI {
                     if (action.equals(child.getCommand().getCommandName())) {
                         // reset tree, move user out of tree command line
                         if (action.equals("logout")){
-                            child.getCommand().execute(user.getUsername());
+                            child.getCommand().execute(username);
                             ui.currentNode = Constants.COMMANDTREE.root;
-                            user = getUser(scanner);
+                            username = getUser(scanner);
                         } else if (child.getCommand() instanceof RecipeCommand
                                 && !action.equals("view recipe")
                                 && !action.equals("view saved recipe")
                                 && !ui.currentNode.getCommand().getCommandName().equals("view saved recipes")){
-                            ((RecipeCommand) child.getCommand()).execute(user.getUsername(), ((RecipeCommand) ui.currentNode.getCommand()).getViewedRecipe());
+                            ((RecipeCommand) child.getCommand()).execute(username, ((RecipeCommand) ui.currentNode.getCommand()).getViewedRecipe());
                             ui.currentNode = child;
                             hasMatch = true;
                             break;
                         }  else {
-                            child.getCommand().execute(user.getUsername());
+                            child.getCommand().execute(username);
                             ui.currentNode = child;
                             hasMatch = true;
                             break;
@@ -62,7 +60,7 @@ public class UI {
                 CommandTree.CommandNode parent = ui.currentNode.parent;
                 if (action.equals(parent.getCommand().getCommandName()) &&
                         !ui.currentNode.getCommand().getCommandName().equals("home")){
-                    parent.getCommand().execute(user.getUsername());
+                    parent.getCommand().execute(username);
                     ui.currentNode = parent;
                     hasMatch = true;
                 }
@@ -70,7 +68,7 @@ public class UI {
                 CommandTree.CommandNode home = Constants.COMMANDTREE.root;
                 if (action.equals("home") &&
                         !ui.currentNode.getCommand().getCommandName().equals("home")){
-                    home.getCommand().execute(user.getUsername());
+                    home.getCommand().execute(username);
                     ui.currentNode = home;
                     hasMatch = true;
                 }
@@ -84,27 +82,27 @@ public class UI {
         }
     }
 
-    private static User getUser(Scanner scanner) {
+    private static String getUser(Scanner scanner) {
         boolean userInstance = false;
-        User user = new User();
+        String username = "";
         System.out.println("Welcome! Choose one of the following:");
         while (!userInstance) {
             System.out.println("login\ncreate account");
             String userOption = scanner.nextLine();
             if (userOption.equals("login")) {
-                user = login();
+                username = login();
                 userInstance = true;
             } else if (userOption.equals("create account")) {
-                user = createAccount();
+                username = createAccount();
                 userInstance = true;
             } else {
                 System.out.println("Not a valid command. Please beware of spelling and case.");
             }
         }
-        return user;
+        return username;
     }
 
-    private static User login(){
+    private static String login(){
         boolean loggedIn;
         Scanner scan = new Scanner(System.in);
         System.out.println("Username:");
@@ -124,10 +122,10 @@ public class UI {
         }
         System.out.println("login successful");
 
-        return Constants.USERSECURITY.getUserByID(username);
+        return username;
     }
 
-    private static User createAccount(){
+    private static String createAccount(){
         UserRequestCreateLogin CreateLoginController = new UserRequestCreateLogin();
 
         Scanner input = new Scanner(System.in);
@@ -165,7 +163,7 @@ public class UI {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return Constants.USERSECURITY.getUserByID(username);
+        return username;
     }
 
 

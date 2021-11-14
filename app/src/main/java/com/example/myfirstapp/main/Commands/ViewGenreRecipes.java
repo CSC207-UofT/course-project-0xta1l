@@ -1,8 +1,8 @@
-package com.example.myfirstapp.main.Commands;
+package Commands;
 
-import com.example.myfirstapp.main.Controllers.UserRequestBrowse;
-import com.example.myfirstapp.main.Entities.Preview;
-import com.example.myfirstapp.main.Presenters.ListDisplay;
+import Controllers.UserRequestBrowse;
+import Entities.Preview;
+import Presenters.ListDisplay;
 
 import java.util.ArrayList;
 import java.util.Scanner;

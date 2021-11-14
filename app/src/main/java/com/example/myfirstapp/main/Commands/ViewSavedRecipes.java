@@ -1,7 +1,7 @@
-package com.example.myfirstapp.main.Commands;
+package Commands;
 
-import com.example.myfirstapp.main.Controllers.UserRequestBrowse;
-import com.example.myfirstapp.main.Presenters.ListDisplay;
+import Controllers.UserRequestBrowse;
+import Presenters.ListDisplay;
 
 public class ViewSavedRecipes extends Command {
     public static String COMMANDSTRING = "view saved recipes";
