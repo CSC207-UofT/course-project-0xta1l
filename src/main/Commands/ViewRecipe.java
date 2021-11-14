@@ -14,6 +14,8 @@ public class ViewRecipe extends RecipeCommand {
     ViewRecipe(){
         setCOMMANDSTRING(COMMANDSTRING);
         addSubCommands(new SaveRecipe());
+        addSubCommands(new AddReview());
+        addSubCommands(new ViewReviews());
     }
 
     @Override

@@ -10,9 +10,7 @@ public class GetReview {
 
     public ArrayList<ArrayList<Object>> getRecipeReviews(int recipeID){
         // Cycles through all values in Recipe.getReviews HashMap and outputs relevant review info
-
-        GenreLibrary genreLibrary = new GenreLibrary();
-        Recipe specificRecipe = genreLibrary.getRecipeByID("All", recipeID);
+        Recipe specificRecipe = Constants.GENRELIBRARY.getRecipeByID("All", recipeID);
         HashMap<String, Review> reviewMap = specificRecipe.getRecipeReviews();
 
         ArrayList<ArrayList<Object>> finalReviewList = new ArrayList<>();
@@ -37,11 +35,13 @@ public class GetReview {
         for (Review review: reviewList.values()){
             int rating = review.getRating();
             int recipeID = review.getRecipeID();
+            String recipeName = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getName();
             String comment = review.getComments();
             ArrayList<Object> reviewInfo = new ArrayList<>();
             reviewInfo.add(rating);
             reviewInfo.add(comment);
             reviewInfo.add(recipeID);
+            reviewInfo.add(recipeName);
             finalReviewList.add(reviewInfo);
         }
         return finalReviewList;

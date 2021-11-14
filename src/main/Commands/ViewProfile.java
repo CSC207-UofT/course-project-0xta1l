@@ -4,11 +4,12 @@ import Controllers.UserRequestProfile;
 import Presenters.ProfileDisplay;
 
 
-public class ViewUserProfile extends Command {
-    public static String COMMANDSTRING = "view user profile";
+public class ViewProfile extends Command {
+    public static String COMMANDSTRING = "view profile";
 
-    ViewUserProfile(){
+    ViewProfile(){
         setCOMMANDSTRING(COMMANDSTRING);
+        addSubCommands(new ViewUserReviews());
         //addSubCommands(new ChangeSecurity());   PHASE 2!
         //addSubCommands(new ChangeAccountDetails());   PHASE 2!
     }

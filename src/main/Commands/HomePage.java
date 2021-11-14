@@ -6,7 +6,7 @@ public class HomePage extends Command{
         public HomePage(){
             setCOMMANDSTRING(COMMANDSTRING);
             addSubCommands(new ViewGenres());
-            addSubCommands(new ViewUserProfile());
+            addSubCommands(new ViewProfile());
             addSubCommands(new ViewSavedRecipes());
             addSubCommands(new UploadRecipe());
             addSubCommands(new Logout());
