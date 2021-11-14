@@ -11,7 +11,8 @@ public class ViewSavedRecipe extends RecipeCommand {
 
     ViewSavedRecipe(){
         setCOMMANDSTRING(COMMANDSTRING);
-        //addSubCommands(new WriteReview());
+        addSubCommands(new AddReview());
+        addSubCommands(new ViewReviews());
         addSubCommands(new DeleteSavedRecipe());
     }
 
@@ -20,6 +21,7 @@ public class ViewSavedRecipe extends RecipeCommand {
     public void execute(String username) {
         UserRequestRecipeView browse = new UserRequestRecipeView();
         RecipeDisplay display = new RecipeDisplay();
+        System.out.println("Please input the Recipe ID (number) of the recipe you want to view:");
         Scanner scan = new Scanner(System.in);
         String recipeID = scan.nextLine();
         setVIEWEDRECIPE(recipeID);
