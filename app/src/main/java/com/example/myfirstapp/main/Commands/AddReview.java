@@ -1,8 +1,6 @@
 package com.example.myfirstapp.main.Commands;
 
 import com.example.myfirstapp.main.Controllers.UserRequestCreateReview;
-import com.example.myfirstapp.main.Controllers.UserRequestGetReview;
-import com.example.myfirstapp.main.Presenters.ListDisplay;
 
 import java.util.Scanner;
 

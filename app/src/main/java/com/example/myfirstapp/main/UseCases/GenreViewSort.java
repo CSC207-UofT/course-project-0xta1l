@@ -30,6 +30,7 @@ public class GenreViewSort {
         if (user.getInterests().isEmpty()) {
             Collections.sort(genres);
         } else {
+            System.out.println(Build.VERSION_CODES.N);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 genres.removeIf(genre -> user.getInterests().contains(genre));
             }
