@@ -59,6 +59,9 @@ public class Constants {
         Recipe recipe5 = new Recipe("Throw maple syrup on pancakes", "Pancakes, salt, butter",
                 r5genres, "Pancakes", 3, 5, "pancake.jpg", "",5);
 
+        Recipe recipe6 = new Recipe("Cut into rectangular prisms and cook in oven", "Potatoes, butter",
+                r3genres, "French Fries", 4, 6, "fries.jpg", "",30);
+
         for (String g: recipe1.getGenre()){
             dataset.addRecipes(g, recipe1);
         }
@@ -74,8 +77,12 @@ public class Constants {
         for (String g: recipe5.getGenre()){
             dataset.addRecipes(g, recipe5);
         }
+        for (String g: recipe6.getGenre()){
+            dataset.addRecipes(g, recipe6);
+        }
         return dataset;
     }
+
     public static GenreLibrary CSVRecipeReader(String fileName) throws FileNotFoundException {
         GenreLibrary genreLibrary = new GenreLibrary();
 
