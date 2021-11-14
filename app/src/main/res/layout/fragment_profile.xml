@@ -6,173 +6,188 @@
     android:layout_height="match_parent"
     tools:context=".fragments.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/account_header_profile"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginEnd="211dp"
-            android:text="Profile:"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/account_name"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="66dp"
-            android:layout_marginEnd="192dp"
-            android:text="Name:" />
+            <TextView
+                android:id="@+id/account_header_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="211dp"
+                android:text="Profile:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/account_bio"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="115dp"
-            android:layout_marginEnd="192dp"
-            android:text="Bio:" />
+            <TextView
+                android:id="@+id/account_name"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="66dp"
+                android:layout_marginEnd="192dp"
+                android:text="Name:" />
 
-        <TextView
-            android:id="@+id/account_interest"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="170dp"
-            android:layout_marginEnd="192dp"
-            android:text="Interests:" />
+            <TextView
+                android:id="@+id/account_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="115dp"
+                android:layout_marginEnd="192dp"
+                android:text="Bio:" />
 
-        <TextView
-            android:id="@+id/account_header_security"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="234dp"
-            android:layout_marginEnd="211dp"
-            android:text="Security"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/account_interest"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginEnd="192dp"
+                android:text="Interests:" />
 
-        <TextView
-            android:id="@+id/account_username"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="292dp"
-            android:layout_marginEnd="192dp"
-            android:text="Username" />
+            <TextView
+                android:id="@+id/account_header_security"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="234dp"
+                android:layout_marginEnd="211dp"
+                android:text="Security"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/account_password"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="362dp"
-            android:layout_marginEnd="192dp"
-            android:text="Password:" />
+            <TextView
+                android:id="@+id/account_username"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="292dp"
+                android:layout_marginEnd="192dp"
+                android:text="Username" />
 
-        <TextView
-            android:id="@+id/account_age"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="431dp"
-            android:layout_marginEnd="192dp"
-            android:text="Age:" />
+            <TextView
+                android:id="@+id/account_password"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="362dp"
+                android:layout_marginEnd="192dp"
+                android:text="Password:" />
 
-        <ImageButton
-            android:id="@+id/account_name_edit"
-            android:layout_width="29dp"
-            android:layout_height="23dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="81dp"
-            android:layout_marginEnd="29dp"
-            android:onClick="editAccountName"
-            android:src="@drawable/ic_baseline_edit_24" />
+            <TextView
+                android:id="@+id/account_age"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="431dp"
+                android:layout_marginEnd="192dp"
+                android:text="Age:" />
 
-        <ImageButton
-            android:id="@+id/account_bio_edit"
-            android:layout_width="29dp"
-            android:layout_height="23dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="120dp"
-            android:layout_marginEnd="29dp"
-            android:src="@drawable/ic_baseline_edit_24" />
+            <ImageButton
+                android:id="@+id/account_name_edit"
+                android:layout_width="29dp"
+                android:layout_height="23dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="81dp"
+                android:layout_marginEnd="29dp"
+                android:onClick="editAccountName"
+                android:src="@drawable/ic_baseline_edit_24" />
 
-        <ImageButton
-            android:id="@+id/account_interest_edit"
-            android:layout_width="29dp"
-            android:layout_height="23dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="172dp"
-            android:layout_marginEnd="29dp"
-            android:src="@drawable/ic_baseline_edit_24" />
+            <ImageButton
+                android:id="@+id/account_bio_edit"
+                android:layout_width="29dp"
+                android:layout_height="23dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="29dp"
+                android:src="@drawable/ic_baseline_edit_24" />
 
-        <ImageButton
-            android:id="@+id/account_username_edit"
-            android:layout_width="29dp"
-            android:layout_height="23dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="301dp"
-            android:layout_marginEnd="29dp"
-            android:src="@drawable/ic_baseline_edit_24" />
+            <ImageButton
+                android:id="@+id/account_interest_edit"
+                android:layout_width="29dp"
+                android:layout_height="23dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="172dp"
+                android:layout_marginEnd="29dp"
+                android:src="@drawable/ic_baseline_edit_24" />
 
-        <ImageButton
-            android:id="@+id/account_password_edit"
-            android:layout_width="29dp"
-            android:layout_height="23dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="376dp"
-            android:layout_marginEnd="29dp"
-            android:src="@drawable/ic_baseline_edit_24" />
+            <ImageButton
+                android:id="@+id/account_username_edit"
+                android:layout_width="29dp"
+                android:layout_height="23dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="301dp"
+                android:layout_marginEnd="29dp"
+                android:src="@drawable/ic_baseline_edit_24" />
 
-        <ImageButton
-            android:id="@+id/account_age_edit"
-            android:layout_width="29dp"
-            android:layout_height="23dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="434dp"
-            android:layout_marginEnd="29dp"
-            android:src="@drawable/ic_baseline_edit_24" />
+            <ImageButton
+                android:id="@+id/account_password_edit"
+                android:layout_width="29dp"
+                android:layout_height="23dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="376dp"
+                android:layout_marginEnd="29dp"
+                android:src="@drawable/ic_baseline_edit_24" />
+
+            <ImageButton
+                android:id="@+id/account_age_edit"
+                android:layout_width="29dp"
+                android:layout_height="23dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="434dp"
+                android:layout_marginEnd="29dp"
+                android:src="@drawable/ic_baseline_edit_24" />
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/account_age_edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:text="Logout" />
 
 
-    </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
 
 </FrameLayout>
