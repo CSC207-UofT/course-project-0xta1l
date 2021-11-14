@@ -12,7 +12,7 @@ public class UserRequestGetReview {
     }
 
     public ArrayList<ArrayList<Object>> getuserreview(String username)   {
-            UseCases.GetReview getusereview= new UseCases.GetReview();
+            UseCases.GetReview getusereview = new UseCases.GetReview();
             return getusereview.getUserReviews(username);
 
         }

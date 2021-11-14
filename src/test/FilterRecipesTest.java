@@ -22,7 +22,7 @@ public class FilterRecipesTest {
     ArrayList<Preview> filtered_lst = new ArrayList<>();
 
     @Before
-    public void setUp() {
+    public void setUp() throws Exception {
         recipes.add(recipe1.getPreview());
         recipes.add(recipe2.getPreview());
         recipes.add(recipe3.getPreview());

@@ -3,6 +3,7 @@ package Commands;
 import Controllers.UserRequestBrowse;
 import Entities.Preview;
 import Presenters.ListDisplay;
+import UseCases.SortByRating;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -13,6 +14,8 @@ public class ViewGenreRecipes extends Command {
     ViewGenreRecipes(){
         setCOMMANDSTRING(COMMANDSTRING);
         addSubCommands(new ViewRecipe());
+        addSubCommands(new FilterGenreRecipes());
+        addSubCommands(new SortGenreByRating());
     }
 
 
