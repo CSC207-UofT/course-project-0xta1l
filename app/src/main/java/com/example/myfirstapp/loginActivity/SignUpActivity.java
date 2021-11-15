@@ -1,4 +1,4 @@
-package com.example.myfirstapp;
+package com.example.myfirstapp.loginActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.myfirstapp.R;
+import com.example.myfirstapp.loginActivity.LoginActivity;
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Controllers.UserRequestCreateLogin;
 
