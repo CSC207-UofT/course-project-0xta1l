@@ -11,6 +11,7 @@ public class ViewGenreRecipes extends Command {
     ViewGenreRecipes(){
         setCOMMANDSTRING(COMMANDSTRING);
         addSubCommands(new ViewRecipe());
+        addSubCommands(new FilterGenreRecipes());
     }
 
 
