@@ -9,18 +9,12 @@ public class UserRequestGetReview {
         int ID = Integer.parseInt(recipeID);
 
         GetReview getrecreview = new GetReview();
-
-        getrecreview = new com.example.myfirstapp.main.UseCases.GetReview();
-
         return getrecreview.getRecipeReviews(ID);
     }
 
     public ArrayList<ArrayList<Object>> getuserreview(String username)   {
 
             GetReview getusereview= new GetReview();
-
-            getusereview= new com.example.myfirstapp.main.UseCases.GetReview();
-
             return getusereview.getUserReviews(username);
 
         }

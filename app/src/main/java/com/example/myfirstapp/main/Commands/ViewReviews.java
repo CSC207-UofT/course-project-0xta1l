@@ -9,6 +9,7 @@ public class ViewReviews extends RecipeCommand {
     ViewReviews(){
         setCOMMANDSTRING(COMMANDSTRING);
         addSubCommands(new AddReview());
+        addSubCommands(new SaveRecipe());
     }
 
     @Override

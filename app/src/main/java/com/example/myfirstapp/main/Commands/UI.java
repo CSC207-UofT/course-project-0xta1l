@@ -49,7 +49,14 @@ public class UI {
                             ui.currentNode = child;
                             hasMatch = true;
                             break;
-                        }  else {
+                        }  else if (child.getCommand() instanceof GenreCommand
+                                && !action.equals("view genre recipes")
+                                && !ui.currentNode.getCommand().getCommandName().equals("view genre")){
+                            ((GenreCommand) child.getCommand()).execute(user.getUsername(), ((GenreCommand) ui.currentNode.getCommand()).getViewedGenre());
+                            ui.currentNode = child;
+                            hasMatch = true;
+                            break;
+                        } else {
                             child.getCommand().execute(user.getUsername());
                             ui.currentNode = child;
                             hasMatch = true;
