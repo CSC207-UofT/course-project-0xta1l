@@ -1,15 +1,19 @@
-*PROGRESS REPORT*
+**PROGRESS REPORT**
 
-*Open Questions*
+**Open Questions**
 How can we effectively link a server database to the Android App?
 How can we transition from using a local database to a server based database?
 Are there popular or generic recommendation algorithms that we can refer to when improving our recommendations feature?
 
-*What has worked*
-1) We worked well as a team. Our teamwork and communication are very strong, allowing for productive meetings and collaboration.
-2)
+**What has worked**
 
-*Summary of roles*
+1) We worked well as a team. Our teamwork and communication are very strong, allowing for productive meetings and collaboration. When we were not meeting in person, we all made sure to regularly communicate via Discord or GitHub.
+
+2) We have good organization for our code, making it clear which classes belong to which layer of Clean Architecture.
+
+3) Our understanding of how to implement the different features of our project has worked well. This allowed for faster and more efficient development, as we coded with a planned algorithm and structure in mind, rather than just coding for the sake of a desired result.
+
+**Summary of roles**
 Justin:
 Worked on creating the Android Application, and implemented basic functions for the Android App. Created Entities and helped to debug/test other components of the code. Helped to create the structure for Commands using the Command Design Pattern. Plans to continue to work on the Android Application to improve the UI and user experience.
 Amir:
