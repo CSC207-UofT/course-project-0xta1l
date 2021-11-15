@@ -36,4 +36,4 @@ Jolina:
 Worked on refactoring the GenreViewSort class into two distinct classes for code clarity. Implemented the recipe filtering and sorting features. Applied the template design pattern into the SortRecipes class. Worked on the recommendation system and user text interface planning. Plans to help further develop the recommendation system and work on the graphic user interface.
 
 Arpi:
-Worked on incorporating a database (using SQLite) into our app. Created classes to perform basic CRUD operations . Plans to look into other database management systems (Realm, Firebase, MongoDB) that are non-relational and
+Worked on incorporating a database (using SQLite) into our app. Created classes to perform basic CRUD operations . Plans to look into other database management systems (Realm, Firebase, MongoDB) that are non-relational.
