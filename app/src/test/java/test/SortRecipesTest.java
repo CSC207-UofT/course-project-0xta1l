@@ -1,4 +1,4 @@
-package com.example.myfirstapp.test;
+package test;
 
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Entities.Preview;

@@ -1,4 +1,4 @@
-package com.example.myfirstapp.test;
+package test;
 
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
