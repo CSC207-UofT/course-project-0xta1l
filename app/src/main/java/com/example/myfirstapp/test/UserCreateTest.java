@@ -1,6 +1,9 @@
-import Entities.User;
-import Entities.UserSecurity;
-import UseCases.UserCreate;
+/*
+package com.example.myfirstapp.test;
+
+import com.example.myfirstapp.main.Entities.User;
+import com.example.myfirstapp.main.Entities.UserSecurity;
+import com.example.myfirstapp.main.UseCases.UserCreate;
 import org.junit.*;
 
 import java.util.ArrayList;
@@ -32,3 +35,4 @@ public class UserCreateTest {
         assertTrue(value);
     }
 }
+*/

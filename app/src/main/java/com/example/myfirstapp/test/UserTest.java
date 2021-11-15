@@ -1,8 +1,9 @@
-import Entities.Recipe;
-import Entities.User;
-import Constants.*;
-import org.junit.Before;
-import org.junit.Test;
+package com.example.myfirstapp.test;
+
+import com.example.myfirstapp.main.Entities.Recipe;
+import com.example.myfirstapp.main.Entities.User;
+import com.example.myfirstapp.main.Constants.*;
+import org.junit.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
