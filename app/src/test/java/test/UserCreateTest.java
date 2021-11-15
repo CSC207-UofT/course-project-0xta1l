@@ -1,4 +1,4 @@
-package com.example.myfirstapp.test;
+package test;
 
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
