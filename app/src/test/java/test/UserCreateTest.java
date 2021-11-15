@@ -1,4 +1,3 @@
-/*
 package com.example.myfirstapp.test;
 
 import com.example.myfirstapp.main.Entities.User;
@@ -19,8 +18,8 @@ public class UserCreateTest {
         ArrayList<String> interests = new ArrayList<>();
         interests.add("dessert");
         interests.add("chinese");
-        boolean value = usercreate.userCreate("Jo", 19, "123",
-                "username1", "hi", interests);
+        boolean value = usercreate.userCreate("username1", "123",
+                "Jo", 19,"hi", interests);
         assertFalse(value);
     }
 
@@ -30,9 +29,8 @@ public class UserCreateTest {
         ArrayList<String> interests = new ArrayList<>();
         interests.add("dessert");
         interests.add("chinese");
-        boolean value = usercreate.userCreate("Jo", 19, "123", "jj",
-                "hi", interests);
+        boolean value = usercreate.userCreate("jj", "123",
+                "Jo", 19,"hi", interests);
         assertTrue(value);
     }
 }
-*/
