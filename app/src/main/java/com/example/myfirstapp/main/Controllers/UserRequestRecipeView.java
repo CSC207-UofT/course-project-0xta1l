@@ -1,9 +1,6 @@
 package com.example.myfirstapp.main.Controllers;
 
 import com.example.myfirstapp.main.UseCases.GetRecipe;
-import com.example.myfirstapp.main.Presenters.RecipeDisplay;
-
-import java.util.ArrayList;
 
 public class UserRequestRecipeView {
     public com.example.myfirstapp.main.Entities.Preview recipeView(String id) throws Exception {

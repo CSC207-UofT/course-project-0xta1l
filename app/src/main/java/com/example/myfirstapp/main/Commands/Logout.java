@@ -1,6 +1,5 @@
 package com.example.myfirstapp.main.Commands;
 
-import java.util.ArrayList;
 
 public class Logout extends Command{
     public static String COMMANDSTRING = "logout";

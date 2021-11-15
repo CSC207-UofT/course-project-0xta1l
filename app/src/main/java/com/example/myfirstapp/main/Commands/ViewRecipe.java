@@ -1,6 +1,5 @@
 package com.example.myfirstapp.main.Commands;
 
-import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Controllers.UserRequestRecipeView;
 import com.example.myfirstapp.main.Entities.FullPreview;
 import com.example.myfirstapp.main.Presenters.RecipeDisplay;
@@ -14,6 +13,8 @@ public class ViewRecipe extends RecipeCommand {
     ViewRecipe(){
         setCOMMANDSTRING(COMMANDSTRING);
         addSubCommands(new SaveRecipe());
+        addSubCommands(new AddReview());
+        addSubCommands(new ViewReviews());
     }
 
     @Override

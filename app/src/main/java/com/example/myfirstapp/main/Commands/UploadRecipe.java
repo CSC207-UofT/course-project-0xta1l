@@ -3,7 +3,6 @@ package com.example.myfirstapp.main.Commands;
 import com.example.myfirstapp.main.Controllers.UserRequestCreateRecipe;
 import com.example.myfirstapp.main.Controllers.UserRequestRecipeView;
 import com.example.myfirstapp.main.Entities.FullPreview;
-import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Presenters.RecipeDisplay;
 
 import java.util.Scanner;
