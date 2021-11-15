@@ -10,7 +10,7 @@ public class UserRequestGetReview {
 
         GetReview getrecreview = new GetReview();
 
-        com.example.myfirstapp.main.UseCases.GetReview getrecreview = new com.example.myfirstapp.main.UseCases.GetReview();
+        getrecreview = new com.example.myfirstapp.main.UseCases.GetReview();
 
         return getrecreview.getRecipeReviews(ID);
     }
@@ -19,7 +19,7 @@ public class UserRequestGetReview {
 
             GetReview getusereview= new GetReview();
 
-        com.example.myfirstapp.main.UseCases.GetReview getusereview= new com.example.myfirstapp.main.UseCases.GetReview();
+            getusereview= new com.example.myfirstapp.main.UseCases.GetReview();
 
             return getusereview.getUserReviews(username);
 
