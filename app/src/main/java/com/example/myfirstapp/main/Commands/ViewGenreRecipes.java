@@ -1,10 +1,8 @@
 package com.example.myfirstapp.main.Commands;
 
 import com.example.myfirstapp.main.Controllers.UserRequestBrowse;
-import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Presenters.ListDisplay;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ViewGenreRecipes extends Command {
@@ -13,6 +11,7 @@ public class ViewGenreRecipes extends Command {
     ViewGenreRecipes(){
         setCOMMANDSTRING(COMMANDSTRING);
         addSubCommands(new ViewRecipe());
+        addSubCommands(new FilterGenreRecipes());
     }
 
 
@@ -23,8 +22,7 @@ public class ViewGenreRecipes extends Command {
         String genre = input.nextLine();
         UserRequestBrowse browse = new UserRequestBrowse();
         ListDisplay display = new ListDisplay();
-        ArrayList<Preview> lst = browse.browseGenreRecipes(genre);
-        display.DisplayListOfRecipes(lst);
+        display.DisplayListOfRecipes(browse.browseGenreRecipes(genre));
     }
 
 }
