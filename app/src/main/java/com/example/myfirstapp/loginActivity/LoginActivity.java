@@ -1,8 +1,7 @@
-package com.example.myfirstapp;
+package com.example.myfirstapp.loginActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.ConstraintSet;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +10,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 
+import com.example.myfirstapp.Globals;
+import com.example.myfirstapp.MainActivity;
+import com.example.myfirstapp.R;
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Entities.User;
 import com.google.android.material.snackbar.Snackbar;

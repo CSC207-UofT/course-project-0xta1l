@@ -55,7 +55,7 @@
         <!-- Recipe Activity END -->
         <!-- Genre Activity -->
         <activity
-            android:name=".GenreItemActivity"
+            android:name=".genreActivity.GenreItemActivity"
             android:parentActivityName=".MainActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
@@ -64,13 +64,13 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".GenreRecipeItemActivity"
-            android:parentActivityName=".GenreItemActivity">
+            android:name=".genreActivity.GenreRecipeItemActivity"
+            android:parentActivityName=".genreActivity.GenreItemActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".GenreItemActivity" />
+                android:value=".genreActivity.GenreItemActivity" />
         </activity>
 
         <!-- Genre Activity END -->
@@ -84,16 +84,16 @@
                 android:value=".MainActivity" />
         </activity> <!-- Login and signup activities -->
         <activity
-            android:name=".SignUpActivity"
-            android:parentActivityName=".LoginActivity">
+            android:name=".loginActivity.SignUpActivity"
+            android:parentActivityName=".loginActivity.LoginActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LoginActivity" />
+                android:value=".loginActivity.LoginActivity" />
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".loginActivity.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

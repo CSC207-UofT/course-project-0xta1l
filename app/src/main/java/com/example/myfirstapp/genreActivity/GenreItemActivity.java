@@ -1,4 +1,4 @@
-package com.example.myfirstapp;
+package com.example.myfirstapp.genreActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,13 +14,12 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.myfirstapp.Globals;
+import com.example.myfirstapp.R;
 import com.example.myfirstapp.main.Constants.Constants;
-import com.example.myfirstapp.main.Controllers.UserRequestSaveRecipe;
 import com.example.myfirstapp.main.Controllers.UserRequestSort;
 import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.Recipe;
-import com.example.myfirstapp.main.Entities.User;
-import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.HashMap;

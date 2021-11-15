@@ -14,14 +14,10 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.myfirstapp.GenreItemActivity;
+import com.example.myfirstapp.genreActivity.GenreItemActivity;
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.RecipeItemActivity;
-import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Controllers.UserRequestBrowse;
-import com.example.myfirstapp.main.Entities.Recipe;
-import com.example.myfirstapp.main.Entities.User;
 
 import java.util.ArrayList;
 

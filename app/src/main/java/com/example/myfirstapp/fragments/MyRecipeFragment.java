@@ -12,13 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.RecipeItemActivity;
-import com.example.myfirstapp.SignUpActivity;
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
