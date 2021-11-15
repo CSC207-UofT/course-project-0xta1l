@@ -1,13 +1,18 @@
-import Constants.Constants;
-import Entities.Recipe;
-import Entities.User;
-import UseCases.RecipeSave;
-import org.junit.Test;
+package com.example.myfirstapp.test;
+
+import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Entities.Recipe;
+import com.example.myfirstapp.main.Entities.User;
+import com.example.myfirstapp.main.UseCases.RecipeSave;
+import org.junit.*;
 
 import java.util.HashMap;
+import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+
+import android.os.Build;
 
 public class RecipeSaveTest {
     Recipe recipe = Constants.GENRELIBRARY.getRecipeByID("Mexican", 1);
@@ -24,7 +29,9 @@ public class RecipeSaveTest {
     public void TestRecipeSaveWeight() {
         HashMap<String, Double> genreWeights = user.getGenreWeights();
         Double weight = genreWeights.get("Mexican");
-        assertEquals(java.util.Optional.ofNullable(weight), java.util.Optional.ofNullable(0.05));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            assertEquals(Optional.ofNullable(weight), Optional.ofNullable(0.05));
+        }
     }
 
 }

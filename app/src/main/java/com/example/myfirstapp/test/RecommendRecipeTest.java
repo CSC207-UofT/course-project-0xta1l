@@ -1,9 +1,11 @@
-import Constants.Constants;
-import Entities.Preview;
-import Entities.User;
-import UseCases.RecommendRecipe;
-import org.junit.Before;
-import org.junit.Test;
+/*
+package com.example.myfirstapp.test;
+
+import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Entities.Preview;
+import com.example.myfirstapp.main.Entities.User;
+import com.example.myfirstapp.main.UseCases.RecommendRecipe;
+import org.junit.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -61,3 +63,4 @@ public class RecommendRecipeTest {
         assertEquals(expectedRecommends, actualRecommends);
     }
 }
+*/

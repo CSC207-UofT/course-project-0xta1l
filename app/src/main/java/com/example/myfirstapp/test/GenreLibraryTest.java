@@ -1,9 +1,11 @@
+package com.example.myfirstapp.test;
+
 import org.junit.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import Entities.*;
+import com.example.myfirstapp.main.Entities.*;
 
 import static org.junit.Assert.assertEquals;
 
