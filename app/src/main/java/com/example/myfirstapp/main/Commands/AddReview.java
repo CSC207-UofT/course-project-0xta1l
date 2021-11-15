@@ -32,10 +32,9 @@ public class AddReview extends RecipeCommand {
         } while(isNotInt);
         System.out.println("Comment (Press enter to leave blank): ");
         String comment = input.nextLine();
-        try {
-            create.reviewRecipe(username, Integer.parseInt(recipeID), comment, rating);
+        if (create.reviewRecipe(username, Integer.parseInt(recipeID), comment, rating)){
             System.out.println("Review saved.");
-        } catch (Exception e){
+        } else {
             System.out.println("You have already reviewed this recipe.");
         }
     }

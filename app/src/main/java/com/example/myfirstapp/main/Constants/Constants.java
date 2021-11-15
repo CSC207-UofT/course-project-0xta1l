@@ -69,6 +69,7 @@ public class Constants {
         r2genres.add("Chinese");
         ArrayList<String> r3genres = new ArrayList<>();
         r3genres.add("Western");
+        r3genres.add("Chinese");
         ArrayList<String> r4genres = new ArrayList<>();
         r4genres.add("Egyptian");
         ArrayList<String> r5genres = new ArrayList<>();
