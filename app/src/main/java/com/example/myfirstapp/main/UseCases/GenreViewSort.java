@@ -2,6 +2,8 @@ package com.example.myfirstapp.main.UseCases;
 
 import android.os.Build;
 
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.Recipe;
@@ -25,14 +27,15 @@ import java.util.Collections;
 public class GenreViewSort {
     public GenreViewSort(){}
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public ArrayList<String> genresViewList(User user) {
         ArrayList<String> genres = Constants.GENRELIBRARY.getAllGenres();
         if (user.getInterests().isEmpty()) {
             Collections.sort(genres);
         } else {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                genres.removeIf(genre -> user.getInterests().contains(genre));
-            }
+
+            genres.removeIf(genre -> user.getInterests().contains(genre));
+
             Collections.sort(genres);
             Collections.sort(user.getInterests());
             Collections.reverse(user.getInterests());
