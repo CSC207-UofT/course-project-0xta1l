@@ -1,5 +1,9 @@
 package com.example.myfirstapp.main.Controllers;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.User;
@@ -19,6 +23,7 @@ public class UserRequestBrowse {
      * @param username is the username of a given User
      * @return a list of strings representing genres
      */
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public ArrayList<String> browseGenres(String username){
         User user = Constants.USERSECURITY.getUsernames().get(username);
         GenreViewSort g = new GenreViewSort();
