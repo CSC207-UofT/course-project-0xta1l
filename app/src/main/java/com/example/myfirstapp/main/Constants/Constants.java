@@ -1,4 +1,8 @@
 package com.example.myfirstapp.main.Constants;
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
@@ -14,11 +18,12 @@ import java.util.*;
 import java.util.stream.Stream;
 import java.io.*;
 
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class Constants {
     // Create Constants
 
-    public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
-    public static UserSecurity USERSECURITY = Constants.createUsers();
+    public static GenreLibrary GENRELIBRARY =  JSONReader.readRecipes("app/src/main/java/com/example/myfirstapp/main/Constants/temp_data.json");
+    public static UserSecurity USERSECURITY = JSONReader.readUsers("app/src/main/java/com/example/myfirstapp/main/Constants/users.json");
     public static com.example.myfirstapp.main.Commands.CommandTree COMMANDTREE =
             createCommandTree(new com.example.myfirstapp.main.Commands.HomePage());
 

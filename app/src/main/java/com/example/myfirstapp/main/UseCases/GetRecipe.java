@@ -1,5 +1,9 @@
 package com.example.myfirstapp.main.UseCases;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
@@ -14,6 +18,7 @@ public class GetRecipe {
      * @param username is the username of the user
      * @return list of recipe previews
      */
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public ArrayList<Preview> getUserSavedRecipes(String username) {
         User user = Constants.USERSECURITY.getUserByID(username);
         ArrayList<Recipe> userRecipeList = user.getSavedRecipes();
@@ -32,6 +37,7 @@ public class GetRecipe {
      * @param fullOrPreview the type of recipe you want to view
      * @return a preview of a recipe
      */
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public Preview getSingleRecipe (int recipeID, String fullOrPreview) throws Exception {
         ArrayList<String> validOptionsFull = new ArrayList<>();
         validOptionsFull.add("Full");
@@ -52,9 +58,10 @@ public class GetRecipe {
                 && !validOptionsFull.contains(fullOrPreview)) {
             throw new Exception("not a valid option");
         } else if (validOptionsPreview.contains(fullOrPreview)) {
+            // TODO: redundant?
             recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getPreview();
         } else if (validOptionsFull.contains(fullOrPreview)) {
-            recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getFull();
+            recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getPreview();
         }
 
         return recipeProperties;
@@ -66,6 +73,7 @@ public class GetRecipe {
      * @param genreName is the name of the genre you want to be returned
      * @return list of recipe previews for a specified genre
      */
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public ArrayList<Preview> getGenreRecipes (String genreName) {
 
         HashMap<Integer, Recipe> genre;

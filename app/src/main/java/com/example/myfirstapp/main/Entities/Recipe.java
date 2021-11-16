@@ -32,7 +32,6 @@ public class Recipe {
     private String description;
     private Preview preview;
     private int preptime;
-    private FullPreview full;
 
     /**
      * Constructor for Recipe
@@ -53,8 +52,7 @@ public class Recipe {
         this.description = description;
         this.preptime = preptime;
         this.RecipeReviews = new HashMap<>();
-        this.preview = new Preview(id, name, rating, genres, description);
-        this.full = new FullPreview(this);
+        this.preview = new Preview(this);
     }
 
 
@@ -99,12 +97,9 @@ public class Recipe {
     public int getPreptime() {return preptime;}
 
     public Preview getPreview() {
-        return preview;
+        return new Preview(this);
     }
 
-    public FullPreview getFull() {
-        return full;
-    }
 
     /**
      * Setter Methods for Recipe:
@@ -120,11 +115,9 @@ public class Recipe {
      */
     public void setInstructions(String instructions) {
         this.instructions = instructions;
-        this.full.setInstructions(instructions);
     }
     public void setIngredients(String ingredients) {
         this.ingredients = ingredients;
-        this.full.setIngredients(ingredients);
     }
     public void setGenre(ArrayList<String> genre) {
         this.genre = genre;
@@ -148,11 +141,9 @@ public class Recipe {
     }
     public void setImage(String image) {
         this.image = image;
-        this.full.setImage(image);
     }
     public void setPreptime(int preptime) {
         this.preptime = preptime;
-        this.full.setPreptime(preptime);
     }
 
     public void addSavedReviews(String username, Review review) {

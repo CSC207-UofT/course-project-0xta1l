@@ -1,8 +1,11 @@
 package com.example.myfirstapp.main.Commands;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Controllers.UserRequestCreateRecipe;
 import com.example.myfirstapp.main.Controllers.UserRequestRecipeView;
-import com.example.myfirstapp.main.Entities.FullPreview;
 import com.example.myfirstapp.main.Presenters.RecipeDisplay;
 
 import java.util.Scanner;
@@ -14,6 +17,7 @@ public class UploadRecipe extends Command {
         setCOMMANDSTRING(COMMANDSTRING);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void execute(String username) throws Exception {
         Scanner scan = new Scanner(System.in);
@@ -30,15 +34,13 @@ public class UploadRecipe extends Command {
         String instructions = scan.nextLine();
         System.out.println("Prep Time (How long does this recipe take to make? Please input the number in minutes):");
         String preptime = scan.nextLine();
-        System.out.println("WILL BE CHANGED FOR PHASE 2\nRecipe ID:");
-        String id = scan.nextLine();
         String image = "";
-        userRequestCreateRecipe.recipe(username, instructions, ingredients, genres, name, "0", id, image, description, preptime);
+        int ID = userRequestCreateRecipe.recipe(username, instructions, ingredients, genres, name, "0", image, description, preptime);
 
         System.out.println("Success! Your new recipe has been created.");
         UserRequestRecipeView view = new UserRequestRecipeView();
         RecipeDisplay display = new RecipeDisplay();
-        display.showRecipe((FullPreview) view.recipeView(id));
+        display.showRecipe(view.recipeView(Integer.toString(ID)));
     }
 
 }

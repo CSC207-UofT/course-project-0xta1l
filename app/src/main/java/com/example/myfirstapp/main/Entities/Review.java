@@ -1,4 +1,8 @@
 package com.example.myfirstapp.main.Entities;
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Constants.*;
 
 public class Review {
@@ -44,12 +48,14 @@ public class Review {
     public void setComments(String comments) {this.comments = comments;}
     public void setRating(int rating) {this.rating = rating;}
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public boolean saveToUser(String username, int recipeID, Review review) {
         User accUser = Constants.USERSECURITY.getUserByID(username);
         accUser.addSavedReviews(recipeID, review);
         return true;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public boolean saveToRecipe(int recipeID, String username, Review review) {
         Recipe recipe = Constants.GENRELIBRARY.getRecipeByID("All", recipeID);
         recipe.addSavedReviews(username, review);
