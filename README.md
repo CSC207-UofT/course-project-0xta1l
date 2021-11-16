@@ -7,6 +7,6 @@ Android Studio Arctic Fox | 2020.3.1 Patch 3
 
 If you have Android Studio, please clone the main branch, download an emulator, and run "app".
 
-If you do not have an emulator, feel free to use our Text UI interface by cloning the "TextUI" branch in IntelliJ and running "UI" in src\main\Commands.
+If you do not have an emulator, feel free to use our Text UI interface by opening the project in IntelliJ, checking out the "TextUI" branch, and then running "UI" in src\main\Commands.
 
 Have fun! 
