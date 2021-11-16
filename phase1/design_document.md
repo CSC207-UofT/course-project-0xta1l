@@ -92,6 +92,6 @@ In this way, we have prevented a messy “if else” code structure and made it 
 
 **Data Persistence**
 
-Currently, the Text UI version of our program implements data persistence by writing and reading from CSV files. We were unable to port this data persistence implementation to the Android app GUI because Android file structure interferes with Java's filepath.
+Currently, the Text UI version of our program implements data persistence by writing and reading from CSV files. These data are stored locally. As of now, we have yet to port this data persistence implementation to the Android app GUI because Android file structure interferes with Java's filepath. 
 
-For phase 2, our Android app GUI will more robustly implement data persistence via a non-relational database.
+For Phase 2, we decide instead that the Android app GUI will robustly implement data persistence via a non-relational database instead. 
