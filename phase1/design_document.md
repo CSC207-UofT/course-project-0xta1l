@@ -1,4 +1,4 @@
-**Major Design Decisions**
+*Major Design Decisions*
 
 **Command Tree:**
 
