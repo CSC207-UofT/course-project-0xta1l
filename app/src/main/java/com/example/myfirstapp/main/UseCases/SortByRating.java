@@ -6,7 +6,11 @@ import com.example.myfirstapp.main.Entities.Recipe;
 import java.util.ArrayList;
 
 public class SortByRating extends SortRecipes{
-
+    /**
+     * Sorts recipe ratings by rating
+     * @param previews is previews of the recipes
+     * @return array list of sorted previews
+     */
     public SortByRating(ArrayList<Preview> previews) {
         super(previews);
     }
@@ -16,7 +20,11 @@ public class SortByRating extends SortRecipes{
         ArrayList<Preview> lst = alphabet();
             return sortByRating(lst);
         }
-
+    /**
+     * Sorts list of previews ratings by rating
+     * @param lst is previews of the recipes
+     * @return array list of sorted previews
+     */
     public ArrayList<Preview> sortByRating(ArrayList<Preview> lst){
         ArrayList<Preview> grand_lst = new ArrayList<Preview>();
         ArrayList<Preview> lst_1 = new ArrayList<Preview>();

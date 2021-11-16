@@ -1,9 +1,12 @@
 **PROGRESS REPORT**
 
 **Open Questions**
-How can we effectively link a server database to the Android App?
-How can we transition from using a local database to a server based database?
-Are there popular or generic recommendation algorithms that we can refer to when improving our recommendations feature?
+
+1) How can we effectively link a server database to the Android App?
+
+2) How can we transition from using a local database to a server based database?
+
+3) Are there popular or generic recommendation algorithms that we can refer to when improving our recommendations feature?
 
 **What has worked**
 
@@ -14,6 +17,7 @@ Are there popular or generic recommendation algorithms that we can refer to when
 3) Our understanding of how to implement the different features of our project has worked well. This allowed for faster and more efficient development, as we coded with a planned algorithm and structure in mind, rather than just coding for the sake of a desired result.
 
 **Summary of roles**
+
 Justin:
 Worked on creating the Android Application, and implemented basic functions for the Android App. Created Entities and helped to debug/test other components of the code. Helped to create the structure for Commands using the Command Design Pattern. Plans to continue to work on the Android Application to improve the UI and user experience.
 
