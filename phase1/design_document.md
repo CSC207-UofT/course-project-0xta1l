@@ -92,6 +92,6 @@ The Command objects shown will then be executed based on the user’s input into
 
 ### Data Persistence ###
 
-Currently, the Text UI version of our program implements data persistence by writing and reading from CSV files. These data are stored locally. As of now, we have yet to port this data persistence implementation to the Android app GUI because Android file structure interferes with Java's filepath. 
+Currently, the Text UI version of our program implements data persistence by writing to and reading from JSON files. These data are stored locally. As of now, we have yet to port this data persistence implementation to the Android app GUI because Android file structure interferes with Java's filepath. 
 
-For Phase 2, we decide instead that the Android app GUI will robustly implement data persistence via a non-relational database instead. 
+For Phase 2, we have decided that the Android app GUI will robustly implement data persistence via a non-relational database instead. 
