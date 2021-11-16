@@ -31,7 +31,7 @@ Kai:
 Worked briefly on Review use cases, implemented a UserInfo entity with the intention of it being used in UserRequestCreateLogin which has been hardcoded, however we cannot instantiate a new entity in a controller as that is a violation of clean architecture so this did not work as planned. UserInfo was later used in the displaying of user info. Hopes to be able to help with the front end (design) of the android app.
 
 Mieko:
-Implemented the CommandTree text UI and helped debug and fix various Controllers, Use Cases, and Entities. Also helped develop the CRC models for the extension to the project from phase 0, namely the filtering, sorting, recipe creation, and reviews. Mieko plans to be able to fix the architecture of the program to better adhere to Clean Architecture and SOLID principles. She also hopes to continue to work on the functionality of the UI to make it more intuitive.
+Implemented the CommandTree text UI and helped debug and fix various Controllers, Use Cases, and Entities. Implemented TextUI data persistence through writing to and reading from JSON files. Also helped develop the CRC models for the extension to the project from phase 0, namely the filtering, sorting, recipe creation, and reviews. Mieko plans to be able to fix the architecture of the program to better adhere to Clean Architecture and SOLID principles. She also hopes to continue to work on the functionality of the UI to make it more intuitive.
 
 Can:
 Implemented CreateRecipe controller  that helps users to create recipes from the input. Implemented GetReview controller that has two methods which helps  to get the review based on the input. Worked on  temp_data.csv file.  Hoping to work more on the construction of the Android App.
