@@ -10,7 +10,7 @@
 
 **What has worked**
 
-1) We worked well as a team. Our teamwork and communication are very strong, allowing for productive meetings and collaboration. When we were not meeting in person, we all made sure to regularly communicate via Discord or GitHub.
+1) We worked well as a team. Our teamwork and communication are very strong, allowing for productive meetings and collaboration. When we were not meeting in person, we all made sure to regularly communicate via Discord or GitHub. We made use of many Github features like branches to be able to work together simulatenously, coordinated and checked our code using pull requests and highlighted some issues we want to solve using the "Issues" feature. This is one of the many examples of our excellent teamwork.
 
 2) We have good organization for our code, making it clear which classes belong to which layer of Clean Architecture.
 
