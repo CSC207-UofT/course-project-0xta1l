@@ -90,4 +90,8 @@ The Command objects shown will then be executed based on the user’s input into
 In this way, we have prevented a messy “if else” code structure and made it easier to create and execute new Commands objects with many functionalities in the future.
 
 
+**Data Persistence**
 
+Currently, the Text UI version of our program implements data persistence by writing and reading from CSV files. We were unable to port this data persistence implementation to the Android app GUI because Android file structure interferes with Java's filepath.
+
+For phase 2, our Android app GUI will more robustly implement data persistence via a non-relational database.
