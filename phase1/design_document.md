@@ -73,13 +73,13 @@ For our Android Application, our GUI code has 4 packages, fragments,  accountAct
 
 Our group has mainly implemented two design patterns: the template design pattern and the command design pattern.
 
-**Template Design Pattern **
+**Template Design Pattern**
 
 The template design pattern organizes an abstract base class, which is the skeleton of an algorithm, and client subclasses that derive from the base class. The skeleton is the main structure of the algorithm and enforces the required steps as well as their ordering for the algorithm. The subclasses can extend or replace some of these steps in the skeleton for customization. The template method design pattern is useful when two or more components have similar qualities and a system can be put in place to reuse implementations. This way, we can avoid duplicate code and improve the efficiency of the program.
 
 In our program, we created a parent class called SortRecipes and subclasses called SortByInterest and SortByRating that can sort recipes by interest and rating, respectively. There is a sorting method in the parent class that sorts recipes alphabetically and enforces the main structure of the algorithm. This method is then overloaded in SortByInterest and overridden in SortByRating.
 
-**Command Design Pattern **
+**Command Design Pattern**
 
 The purpose of the Command design pattern is to encapsulate a request as an Object to allow the parametrization of clients with various requests. The Command Design pattern manages the user text-interface when the user types certain commands. to discover new recipes, build their own collection of recipes, and review recipes. To prevent multiple usages of  “if else” statements to distinguish between commands before executing them, we implemented the Command Design Pattern.
 
