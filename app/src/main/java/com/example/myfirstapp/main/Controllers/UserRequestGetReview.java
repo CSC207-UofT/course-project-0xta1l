@@ -5,6 +5,11 @@ import com.example.myfirstapp.main.UseCases.GetReview;
 import java.util.ArrayList;
 
 public class UserRequestGetReview {
+    /**
+     * User requests to see a review
+     * @param recipeID is the ID of the given recipe
+     * @return a list of reviews for a specific recipe
+     */
     public ArrayList<ArrayList<Object>> getrecipereview(String recipeID){
         int ID = Integer.parseInt(recipeID);
 
