@@ -10,6 +10,12 @@ public class FilterRecipes {
     public ArrayList<Preview> recipes;
     public String key;
 
+    /**
+     * Sorts recipes by a filter key
+     * @param recipes is the list of recipe previews
+     * @param filterkey the key you want to filter by
+     * @return void
+     */
     public FilterRecipes(ArrayList<Preview> recipes, String filterkey) {
         this.recipes = recipes;
         this.key = filterkey;

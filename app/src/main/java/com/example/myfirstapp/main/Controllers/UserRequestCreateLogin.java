@@ -8,7 +8,16 @@ import java.util.Arrays;
 
 
 public class UserRequestCreateLogin{
-
+    /**
+     * Creates a user
+     * @param username is the username of a given User
+     * @param password is the password of a given User
+     * @param displayName is the display name of a given user
+     * @param age is the age of the given user
+     * @param biography is the biography of the given user
+     * @param interests is the interests of the given user
+     * @return a string representing the username
+     */
     public String createUser(String username, String password, String displayName, int age, String biography, String interests) throws Exception {
         ArrayList<String> interestList = new ArrayList<>(Arrays.asList(interests.split(",\\s*")));
         UserCreate userCreatee = new UserCreate();
@@ -19,7 +28,12 @@ public class UserRequestCreateLogin{
             throw new Exception("There was an error.");
         }
     }
-
+    /**
+     * Logins in  a user
+     * @param username is the username of a given User
+     * @param password is the password of a given User
+     * @return whether the user was logged in
+     */
     public boolean loginUser(String username, String password) {
         //boolean validated = Constants.USERSECURITY.validateLogin(username, password);
         //return validated;

@@ -7,11 +7,21 @@ import com.example.myfirstapp.main.Entities.Review;
 import java.util.ArrayList;
 
 public class ListDisplay {
+    /**
+     * Prints the genres to the screen
+     * @param browseInfo is the information for which you want to browse by
+     * @return nothing
+     */
     public void DisplayGenre(ArrayList<String> browseInfo) {
         for(String str: browseInfo){
             System.out.println(str);
         }
     }
+    /**
+     * Prints the list of the recipes to the screen
+     * @param browseInfo is the information for which you want to browse by
+     * @return nothing
+     */
     public void DisplayListOfRecipes(ArrayList<Preview> browseInfo) {
         if (browseInfo.size() == 0){
             System.out.println("No recipes to display.");
@@ -23,6 +33,11 @@ public class ListDisplay {
             }
         }
     }
+    /**
+     * Prints the recipe reviews to the screen
+     * @param reviews is the information for which you want to browse by
+     * @return nothing
+     */
     public void recipeReviews(ArrayList<ArrayList<Object>> reviews) {
         if (reviews.size() == 0){
             System.out.println("No reviews to display.");
@@ -34,7 +49,11 @@ public class ListDisplay {
             }
         }
     }
-
+    /**
+     * Prints the user reviews  to the screen
+     * @param reviews is the information for which you want to browse by
+     * @return nothing
+     */
     public void userReviews(ArrayList<ArrayList<Object>> reviews) {
         if (reviews.size() == 0){
             System.out.println("No reviews to display.");

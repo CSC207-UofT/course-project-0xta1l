@@ -7,7 +7,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class GetReview {
-
+    /**
+     * Gets the recipe reviews by recipeID
+     * @param recipeID is the id of the recipe
+     * @return list of recipe previews
+     */
     public ArrayList<ArrayList<Object>> getRecipeReviews(int recipeID){
         // Cycles through all values in Recipe.getReviews HashMap and outputs relevant review info
         Recipe specificRecipe = Constants.GENRELIBRARY.getRecipeByID("All", recipeID);
@@ -26,7 +30,11 @@ public class GetReview {
         }
         return finalReviewList;
     }
-
+    /**
+     * Gets reviews written by a specified user
+     * @param username is the username of a specified user
+     * @return list of reviews
+     */
     public ArrayList<ArrayList<Object>> getUserReviews(String username){
         User specificUser = Constants.USERSECURITY.getUserByID(username);
         HashMap<Integer, Review> reviewList = specificUser.getUserReviews();

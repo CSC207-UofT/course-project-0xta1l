@@ -7,7 +7,13 @@ import com.example.myfirstapp.main.Constants.*;
 import java.util.ArrayList;
 
 public class RecipeSave {
-
+    /**
+     * Saves a recipe to a user's saved recipes list
+     * @param recipeID is the ID of recipe
+     * @param username the username of a specified user
+     * @param genre saves the recipe a user's saved recipes
+     * @return whether the recipe was successfully saved
+     */
     public boolean saveToUser(String username, int recipeID, String genre) throws Exception {
         User user = Constants.USERSECURITY.getUsernames().get(username);
         Recipe recipe = Constants.GENRELIBRARY.getRecipeByID(genre, recipeID);
@@ -21,7 +27,12 @@ public class RecipeSave {
             return true;
         }
     }
-
+    /**
+     * Deleted a recipe to a user's saved recipes list
+     * @param recipeID is the ID of recipe
+     * @param username the username of a specified user
+     * @return whether the recipe was successfully deleted
+     */
     public boolean deleteFromUser(String username, int recipeID) throws Exception {
         User user = Constants.USERSECURITY.getUsernames().get(username);
         Recipe recipe = Constants.GENRELIBRARY.getRecipeByID("All", recipeID);
