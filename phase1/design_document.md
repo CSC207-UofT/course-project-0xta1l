@@ -21,7 +21,7 @@ Another excellent design choice was made in the creation of the recommendation f
 The initial design of the Recipe entity included two methods, Recipe.getPreview() and Recipe.getFull(), that provided either a subset of a recipe’s attributes or all of them. While both of these methods were important, we found that Recipe.getPreview() was used much more frequently than expected due to our design decision to display recipe previews to the user when they are browsing. This decision meant that most processing and displaying of recipes would not be done with the full recipe entity but using the .getPreview() method. Due to our app’s central purpose being the manipulation of the recipe entity, this call is done in almost every class that alters the recipe or uses it’s information. While this did not create issues in the compilation of our code, it did create issues in readability. The method returns a subset of the recipe’s attributes in an ArrayList, making a call to the appropriate get function for each attribute. This creates many lines of Recipe.get(index) throughout our code, all of which bear no meaning to someone reading the code unless they have the return list memorized. Communication is crucial when working in a large group and so by creating a linked preview entity and subsequent getter methods, the .get(index) methods can be replaced with more meaningful calls that serve the same purpose.
 
 
-**How our project adheres to Clean Architecture (and any possible violations)**
+### How our project adheres to Clean Architecture (and any possible violations) ###
 
 Our project adheres to Clean Architecture by clearly sectioning off each layer of classes into Entities, Use Cases, Controllers, Presenters, and UI (Commands). Entities only interact with other Entities; Use Cases interact with other Use Cases and Entities; Controllers interact with Use Cases; Presenters interact with Controllers; and the UI interacts with Presenters and Controllers.
 
@@ -55,7 +55,7 @@ Another violation that currently exists is that some of our Entities (namely Use
 
 Another violation that currently exists that we are unsure of how to fix is that our UseCases call the Constants classes, which act as our Gateways. This is a violation of Clean Architecture because the UseCases should function without needing to access the outer layer Gateways.
 
-**How our project is consistent with SOLID design**
+### How our project is consistent with SOLID design ###
 
 Throughout phase 1, we have made decisions about our code with the SOLID principles in mind. For some principles, their application and our ability to adhere was more apparent than others. Hence, these principles were emphasized in code, specifically the Single-responsibility, Open-Closed, and Dependency Inversion principles. For the Single-responsibility principle, we ensured that each class only has one responsibility and therefore one reason to change. This can be seen in the RecipeSave use case which is only responsible for saving a recipe and so it’s only reason to change is if we wanted to change the way a recipe is saved. For the Open-Closed principle, classes such as RecipeCreate which contain methods for the ways a recipe can be created are closed for modification but open for extension in the addition of new methods to add recipes.
 
@@ -63,34 +63,34 @@ Throughout our code the Dependency Inversion principle is fulfilled as every lev
 
 We were also mindful of the Liskov Substitution principle, ensuring that any subclasses we created could be substituted by their base class and still operate without bugs. Due to our design choices, our code has very little subclassing, so this principle, while not applicable everywhere, was only considered when we created the SortRecipe abstract class. Our code adheres to the principle as the subclasses, SortByInterests and SortByRating, can be substituted for one another when using the overridden .sort() method they both implement. As previously mentioned, we use little subclassing and so our code does not contain any complex interfaces that need to be separated to adhere to the Interface Segregation principle.
 
-**Packaging Strategies**
+### Packaging Strategies ###
 
 Due to the size of our project and the magnitude of the tasks we wanted to accomplish we focused more on organization than encapsulation. Our main program at present is divided into 8 packages: Commands, Constants, Controllers, Database, Entities, Presenters, UI, UseCases. In structure this is most similar to Packaging by Layer however due to the lack of private files it does not fit this style fully. For future phases, we will begin to prioritize encapsulating more - most likely opting for the aforementioned Packaging by Layer. This packaging method seems to emphasize implementation details and other behind the scenes details being kept private which in turn would aid in our observation of Clean Architecture.
 
 For our Android Application, our GUI code has 4 packages, fragments,  accountActivity, genreActivity and loginActivity. We adopted a packaging strategy based on feature, by grouping code together based on common functionality. This packaging strategy allows for easy code navigation since all items needed for a task are in the same package and results in packages with high modularity and minimal coupling between packages.
 
-**Design Patterns Implemented**
+### Design Patterns Implemented ###
 
 Our group has mainly implemented two design patterns: the template design pattern and the command design pattern.
+
+**Template Design Pattern **
 
 The template design pattern organizes an abstract base class, which is the skeleton of an algorithm, and client subclasses that derive from the base class. The skeleton is the main structure of the algorithm and enforces the required steps as well as their ordering for the algorithm. The subclasses can extend or replace some of these steps in the skeleton for customization. The template method design pattern is useful when two or more components have similar qualities and a system can be put in place to reuse implementations. This way, we can avoid duplicate code and improve the efficiency of the program.
 
 In our program, we created a parent class called SortRecipes and subclasses called SortByInterest and SortByRating that can sort recipes by interest and rating, respectively. There is a sorting method in the parent class that sorts recipes alphabetically and enforces the main structure of the algorithm. This method is then overloaded in SortByInterest and overridden in SortByRating.
 
-The purpose of the Command design pattern is to encapsulate a request as an Object to allow the parametrization of clients with various requests.
+**Command Design Pattern **
 
-The Command Design pattern manages the user text-interface when the user types certain commands. to discover new recipes, build their own collection of recipes, and review recipes. To prevent multiple usages of  “if else” statements to distinguish between commands before executing them, we implemented the Command Design Pattern.
+The purpose of the Command design pattern is to encapsulate a request as an Object to allow the parametrization of clients with various requests. The Command Design pattern manages the user text-interface when the user types certain commands. to discover new recipes, build their own collection of recipes, and review recipes. To prevent multiple usages of  “if else” statements to distinguish between commands before executing them, we implemented the Command Design Pattern.
 
 First we created a Command interface/abstract class with an execute() method signature. Then we created a CommandTree to store the Commands in CommandNodes. Each CommandNode contains a Command and is linked to other CommandNodes depending on the functionality of the Command it contains.
 
 Then we created a UI class that issues a request by calling execute on whatever Command the CommandNode stores, depending on where in the CommandTree we are. The user will then see a small list of Commands the user is able to type in the interface. For example, if we are in the CommandNode that stores the HomePage() Command, the user will only able to call ViewGenres(), ViewUserProfile()), ViewSavedRecipes()), UploadRecipe()) and Logout() Commands.
 
-The Command objects shown will then be executed based on the user’s input into the console.
-
-In this way, we have prevented a messy “if else” code structure and made it easier to create and execute new Commands objects with many functionalities in the future.
+The Command objects shown will then be executed based on the user’s input into the console. In this way, we have prevented a messy “if else” code structure and made it easier to create and execute new Commands objects with many functionalities in the future.
 
 
-**Data Persistence**
+### Data Persistence ###
 
 Currently, the Text UI version of our program implements data persistence by writing and reading from CSV files. These data are stored locally. As of now, we have yet to port this data persistence implementation to the Android app GUI because Android file structure interferes with Java's filepath. 
 
