@@ -22,7 +22,7 @@ Justin:
 Worked on creating the Android Application, and implemented basic functions for the Android App. Created Entities and helped to debug/test other components of the code. Helped to create the structure for Commands using the Command Design Pattern. Plans to continue to work on the Android Application to improve the UI and user experience.
 
 Amir:
-Worked on the Review entity and its related packages such as Controllers and UseCases. This entailed creating the review entity, building constructors and methods to provide needed functionality in our project. Also aided in creating a working SQLite database before the database switch was cemented.
+Worked on the Review entity and its related packages such as Controllers and UseCases. This entailed creating the review entity, building constructors and methods to provide needed functionality in our project. Wrote documentation for all new classes. Also aided in creating a working SQLite database before the database switch was cemented.
 
 Makayla:
 Implemented the recommendation feature, specifically its use case and tests, to recommend a specified number of recipes depending on the user’s interest and previous behavior. Created the preview entity, to fix the overuse of recipe.getPreview() and .get(index), performing the necessary refactoring throughout the code. Makayla plans to continue improving the recommendations algorithm for phase 2 as well as assisting in the strengthening of the  connection between the android application and java code.
