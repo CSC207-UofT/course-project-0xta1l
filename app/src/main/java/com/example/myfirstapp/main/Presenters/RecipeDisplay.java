@@ -12,7 +12,7 @@ public class RecipeDisplay {
         System.out.println("Recipe Name: " + recipeFull.getName());
         System.out.println("Rating: " + recipeFull.getRating());
         System.out.println("Genres: " + recipeFull.getGenre());
-        System.out.println("Prep Time: " + recipeFull.getPreptime());
+        System.out.println("Prep Time: " + recipeFull.getPreptime() + " minutes");
         System.out.println("Description: " + recipeFull.getDescription());
         System.out.println("Ingredients: " + recipeFull.getIngredients());
         System.out.println("Instructions: " + recipeFull.getInstructions());

@@ -22,6 +22,7 @@ public class UI {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public static void main(String[] args) {
         JSONReader.readRecipes("app/src/main/java/com/example/myfirstapp/main/Constants/temp_data.json");
+        Constants.GENRELIBRARY.setHighestID(207);
         UI ui = new UI();
         Scanner scanner = new Scanner(System.in);
         User user = getUser(scanner);
