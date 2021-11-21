@@ -14,109 +14,133 @@
     "ID": 1,
     "name": "Crispy Salt and Pepper Potatoes",
     "genre": ["Meal","Western"],
+    "description": "A quick and versatile potato recipe great for pairing with many meals.",
     "ingredients": "['2 large egg whites', '1 pound new potatoes (about 1 inch in diameter)', '2 teaspoons kosher salt', '.75 teaspoon finely ground black pepper', '1 teaspoon finely chopped rosemary', '1 teaspoon finely chopped thyme', '1 teaspoon finely chopped parsley']",
     "instructions": "Preheat oven to 400F and line a rimmed baking sheet with parchment. In a large bowl, whisk the egg whites until foamy (there shouldnt be any liquid whites in the bowl). Add the potatoes and toss until theyre well coated with the egg whites, then transfer to a strainer or colander and let the excess whites drain. Season the potatoes with the salt, pepper, and herbs. Scatter the potatoes on the baking sheet (make sure theyre not touching) and roast until the potatoes are very crispy and tender when poked with a knife, 15 to 20 minutes (depending on the size of the potatoes).\nTransfer to a bowl and serve.",
     "image": "1.png",
-    "rating": 5
+    "rating": 5,
+    "preptime": 25
   },
   {
     "ID": 2,
     "name": "Thanksgiving Mac and Cheese",
     "genre": ["Meal", "Western"],
+    "description": "A silky and creamy version of a classic comfort food.",
     "ingredients": "['1 cup evaporated milk', '1 cup whole milk', '1 tsp. garlic powder', '1 tsp. onion powder', '1 tsp. smoked paprika', '.5 tsp. freshly ground black pepper', '1 tsp. kosher salt, plus more', '2 lb. extra-sharp cheddar, coarsely grated', '4 oz. full-fat cream cheese', '1 lb. elbow macaroni']",
     "instructions": "Place a rack in middle of oven; preheat to 400. Bring evaporated milk and whole milk to a bare simmer in a large saucepan over medium heat. Whisk in garlic powder, onion powder, paprika, pepper, and 1 tsp. salt. Working in batches, whisk in three fourths of the cheddar, then all of the cream cheese.\nMeanwhile, bring a large pot of generously salted water to a boil (it should have a little less salt than seawater). Cook macaroni, stirring occasionally, until very al dente, about 4 minutes. Drain in a colander.\nAdd macaroni to cheese sauce in pan and mix until well coated. Evenly spread out half of macaroni mixture in a 13x9\" baking dish. Sprinkle half of remaining cheddar evenly over. Layer remaining macaroni mixture on top and sprinkle with remaining cheddar. Bake until all of the cheese is melted, about 10 minutes. Let cool slightly before serving.",
     "image": "2.png",
-    "rating": 3
+    "rating": 3,
+    "preptime": 45
   },
   {
     "ID": 3,
     "name": "Italian Sausage and Bread Stuffing",
     "genre": ["Meal", "Italian"],
+    "description": "Rustic and rich Thanksgiving stuffing.",
     "ingredients": "['1 (.75- to 1-pound) round Italian loaf, cut into 1-inch cubes (8 cups)', '2 tablespoons olive oil, divided', '2 pounds sweet Italian sausage, casings removed, divided', '1 stick unsalted butter, cut into pieces', '3 medium onions, chopped', '4 large celery ribs, chopped', '5 garlic cloves, minced', '4 large eggs, lightly beaten', '.75 cup heavy cream, divided', '.5 cup turkey giblet stock or reduced-sodium chicken broth', '1 cup grated Parmigiano-Reggiano (2 ounces)', '.5 cup coarsely chopped flat-leaf parsley', '4-qt shallow ceramic or glass baking dish']",
     "instructions": "Preheat oven to 350F with rack in middle. Generously butter baking dish.\nPut bread in 2 shallow baking pans and bake, switching position of pans halfway through baking, until just dried out, about 10 minutes.\nHeat 1 tablespoon oil in a 12-inch heavy skillet over medium-high heat until it shimmers, then cook half of sausage, stirring and breaking it into small pieces, until golden brown, about 6 minutes. Transfer with a slotted spoon to a large bowl. Brown remaining sausage in remaining tablespoon oil, transferring to bowl.\nPour off fat from skillet and wipe clean. Heat butter over medium heat until foam subsides, then cook onions, celery, garlic, and .5 teaspoon each of salt and pepper, stirring occasionally, until golden, 12 to 15 minutes. Add vegetables and bread to sausage.\nWhisk together eggs, .5 cup cream, turkey stock, cheese, and parsley, then stir into stuffing and cool completely, about 30 minutes. Reserve 5 cups stuffing to stuff turkey and spoon remainder into baking dish, then drizzle with remaining .25 cup cream. Cover stuffing and chill.\nAbout 1 hour before stuffed turkey is finished roasting, bring dish of stuffing to room temperature. When turkey is done, increase oven temperature to 425F and bake stuffing, covered tightly with foil, until hot throughout, about 20 minutes. Remove foil and bake until top is golden and crisp, about 15 minutes more.\nCooks' Note: Bread can be toasted 3 days ahead and kept (once cool) in a sealed bag at room temperature. Stuffing can be prepared (but not baked) 4 hours before roasting turkey. If baking stuffing at the same time as potatoes, put stuffing in upper third of oven and potatoes in bottom third (allow extra time).",
     "image": "3.png",
-    "rating": 2
+    "rating": 2,
+    "preptime": 140
   },
   {
     "ID": 4,
     "name": "Newton's Law",
-    "genre": ["Drink", "Western"],
+    "genre": ["Drink", "Western", "Cocktail", "Alcoholic"],
+    "description": "An apple butter and bourbon cocktail.",
     "ingredients": "['1 teaspoon dark brown sugar', '1 teaspoon hot water', '1 .5 oz. bourbon', '.5 oz. fresh lemon juice', '2 teaspoons apple butter (storebought or homemade)', 'Garnish: orange twist and freshly grated or ground cinnamon']",
     "instructions": "Stir together brown sugar and hot water in a cocktail shaker to dissolve. Let cool, then add bourbon, lemon juice, and apple butter and fill with ice. Shake until well chilled, about 15 seconds. Strain into an ice-filled rocks glass. Garnish with orange twist and cinnamon.",
     "image": "4.png",
-    "rating": 2
+    "rating": 4,
+    "preptime": 5
   },
   {
     "ID": 5,
     "name": "Warm Comfort",
-    "genre": ["Drink", "Western"],
+    "genre": ["Drink", "Western", "Cocktail", "Alcoholic"],
+    "description": "A chamomile and tequila cocktail perfect for cold weather.",
     "ingredients": "['2 chamomile tea bags', '1.5 oz. reposado tequila', '.75 oz. fresh lemon juice', '1 Tbsp. agave nectar']",
     "instructions": "Place 2 chamomile tea bags in a heatsafe vessel, such as a large liquid measuring cup. Pour in 1 .5 cups boiling water, and let steep 5 minutes, then remove tea bags.\nAdd 1 .5 oz. reposado tequila, .75 oz. fresh lemon juice, and 1 Tbsp. agave nectar and stir until incorporated. Pour into a 16-ounce insulated mug (or two smaller 8-ounce mugs) and drink hot.",
     "image": "5.png",
-    "rating": 2
+    "rating": 1,
+    "preptime": 5
   },
   {
     "ID": 6,
     "name": "Apples and Oranges",
-    "genre": ["Drink", "Western"],
+    "genre": ["Drink", "Western", "Cocktail", "Alcoholic"],
+    "description": "A hot cider cocktail with Amaro and Marnier.",
     "ingredients": "['3 oz. Grand Marnier', '1 oz. Amaro Averna', 'Small pat salted butter (about .5 teaspoon)', '1 cup hot apple cider', '1.5 to 3 tsp. fresh lemon juice (to taste, depending on the sweetness of your cider)', 'Garnish: freshly ground pink peppercorns, plus 2 lemon wheels (optional)']",
     "instructions": "Add 3 oz. Grand Marnier, 1 oz. Amaro Averna, and a small pat of salted butter to a 16-ounce travel mug or large heatproof measuring cup. Add 1 cup hot apple cider and stir until butter melts.\nAdd 1.5 tsp. fresh lemon juice and taste for sweetness, adding additional if needed. If serving in travel mug, garnish with ground pink peppercorns and seal. If serving in mugs, divide drink between two warmed mugs and garnish each with a pink peppercorn-dusted lemon wheel.",
     "image": "6.png",
-    "rating": 4
+    "rating": 4,
+    "preptime": 5
   },
   {
     "ID": 7,
     "name": "Turmeric Hot Toddy",
-    "genre": ["Drink", "Western"],
+    "genre": ["Drink", "Western", "Cocktail", "Alcoholic"],
+    "description": "A savoury cocktail with Amontillado and turmeric.",
     "ingredients": "['.25 cup granulated sugar', '.75 tsp. ground turmeric', '1 .5 oz. Amontillado sherry', '1 oz. bourbon, aged rum, Scotch, mezcal, or gin', '1 oz. Turmeric Syrup', '.5 oz. fresh lemon juice', 'Garnish: Dehydrated lemon wheel (optional)']",
     "instructions": "For the turmeric syrup, combine .5 cup hot water and .25 cup sugar in a liquid measuring cup or mason jar. Add .75 tsp. ground turmeric and stiror seal and shakeuntil sugar is completely dissolved. (This makes enough syrup for 4 drinks. Syrup can be used immediately or refrigerated, covered, up to 10 days. Shake or stir before using to reincorporate turmeric.)\nFor the toddy, combine 1 .5 oz. Amontillado sherry, 1 oz. bourbon (or other spirit of choice), 1 oz. Turmeric Syrup, and .5 oz. fresh lemon juice in a sturdy pint glass or 16-ounce thermos. Top with 8 oz. hot water and stir gently. Garnish with dehydrated lemon wheel if desired.",
     "image": "7.png",
-    "rating": 5
+    "rating": 3,
+    "preptime": 5
   },
   {
     "ID": 8,
     "name": "Instant Pot Lamb Haleem",
-    "genre": ["Meal", "Middle-Eastern"],
+    "genre": ["Meal", "Middle-Eastern", "Pakistani"],
+    "description": "An easy way to cook Haleem, a Pakistani stew.",
     "ingredients": "['.75 cup assorted dals (such as chana dal, moong dal, masoor dal, and/or urad dal)', '.25 cup white jasmine rice or other long-grain rice', '.25 cup pearl barley', '1.5 lb. bone-in lamb stew meat', '3 tsp. kosher salt, divided, plus more', '1 6\" piece fresh ginger', '3 medium shallots, thinly sliced', ' cup ghee or vegetable oil', '4 garlic cloves, finely grated', '2 Tbsp. plus 1.5 tsp. garam masala', '1 tsp. (or more) cayenne pepper', '1 tsp. ground turmeric', '3 green Thai chiles, stems removed (optional)', '.5 cup (lightly packed) chopped cilantro, plus more for serving', '.5 white onion, finely chopped', '2 limes, cut into wedges']",
     "instructions": "Combine dals, rice, and barley in a medium bowl. Pour in water to cover and swish dals and grains around with your fingers. Drain and repeat process until water runs clear enough to see your hands through. Pour in water to cover and let dals and grains soak at room temperature at least 2 hours, or cover and chill up to 12 hours.\nPlace lamb on a plate, pat dry with paper towels, and season all over with 2 tsp. salt; set aside. Peel ginger by scraping off skin with a spoon. Finely grate half of ginger; set aside. Thinly slice remaining ginger. Stack slices and cut crosswise into matchsticks; set aside.\nIf using an electric pressure cooker, combine shallots and ghee in pot and set to saute function or high. Cook, stirring often and adjusting heat as needed if your cooker has that option, until shallots are just beginning to brown, about 8 minutes (or about 6 minutes if cooking in oil). Reduce to normal function or medium if possible, or, if your cooker doesnt have a lower setting, turn off for a minute if mixture is getting too hot. Add reserved ginger matchsticks and cook, stirring often, until shallots are brown and crisp and ginger is frizzled, 410 minutes, depending on your cooker. Using a slotted spoon, transfer shallots and ginger to a plate, spreading out into a single layer. Season lightly with salt; let cool.\nAdd garlic, garam masala, cayenne, turmeric, and reserved grated ginger, and cook, stirring constantly, until fragrant, about 30 seconds. Add lamb and stir to coat in spices. Cook, stirring often with a wooden spoon and repeatedly adding splashes of water as spices begin to stick to bottom of pot and scraping up browned bits, until flavors come together, about 15 minutes.(Bhuna, the process of repeated sticking and scraping, is a Southeast Asian cooking technique that brings out the flavor of the spices and ensures they dont taste raw and grainy.)\nDrain dal mixture and add to pot along with 1 tsp. salt and 5 cups water. Secure lid and bring to full pressure according to manufacturers directions. Cook 1.5 hours. Let sit 20 minutes, then manually release pressure and open up.\nTaste haleem and add more salt and cayenne if needed. Add chiles if using. (These are for flavor, not heat; feel free to leave them out.) Simmer on normal function or medium, stirring often, 5 minutes. Stir in .5 cup cilantro.\nServe haleem with white onion, lime wedges, reserved crispy shallots and ginger, and more chopped cilantro.\nIf using a medium Dutch oven or stovetop pressure cooker, cook shallots and ghee over high heat, stirring often, until shallots are just beginning to brown, about 8 minutes (or about 6 minutes if cooking in oil). Add reserved ginger matchsticks and cook, stirring often, until shallots are brown and crisp and ginger is frizzled, 58 minutes. Using a slotted spoon, transfer shallots and ginger to a plate, spreading out in a single layer. Season lightly with salt; let cool.\nReduce heat to medium, add garlic, garam masala, cayenne, turmeric, and reserved grated ginger, and cook, stirring constantly, until fragrant, about 30 seconds. Add lamb and stir to coat in spices. Cook, stirring often with a wooden spoon and repeatedly adding splashes of water as spices begin to stick to bottom of pot and scraping up browned bits, until flavors come together, about 15 minutes. (Bhuna, the process of repeated sticking and scraping, is a Southeast Asian cooking technique that brings out the flavor of the spices and ensures they dont taste raw and grainy.)\nDrain dal mixture and add to pot along with 1 tsp. salt and 6.5 cups water (if using a Dutch oven) or 5 cups water (for pressure cooker). Increase heat to high and bring to a boil, then reduce heat to the low, cover pot, and cook, stirring and scraping bottom of pot every 1520 minutes, until meat is falling off the bone and dals and grains have nearly melted into the stew, 4.55 hours. (If using a stovetop cooker, increase heat to high and bring to a boil. Secure lid and bring to full pressure according to manufacturers directions. Cook 1.5 hours. Let sit 20 minutes, then manually release pressure and open up.)\nTaste haleem and add more salt and cayenne if needed. Add chiles if using. (These are for flavor, not heat; feel free to leave them out.) Simmer over medium heat, stirring often, 5 minutes. Stir in .5 cup cilantro.\nServe haleem with white onion, lime wedges, reserved crispy shallots and ginger, and more chopped cilantro.\nDo ahead: Haleem can be made 1 day ahead. Let cool; cover and chill. Reheat over medium until warmed through.",
     "image": "8.png",
-    "rating": 3
+    "rating": 3,
+    "preptime": 360
   },
   {
     "ID": 9,
     "name": "Spiced Lentil and Caramelized Onion Baked Eggs",
+    "description": "A quick and flavourful meal.",
     "genre": ["Meal", "Fusion"],
     "ingredients": "['1 (14.5-ounce) can basic lentil soup, like Amys', '1 large onion, thinly sliced', '.5 tsp. turmeric', '1 tsp. cumin', '.25 tsp. Aleppo pepper or  tsp. crushed red pepper flakes', '2 Tbsp. tomato paste', '3 large eggs', '2 Tbsp. ghee, unsalted butter, or olive oil', '.5 tsp. whole cumin seeds', 'Olive oil', 'Kosher salt and freshly ground black pepper', 'Parsley, for finishing']",
     "instructions": "Place an oven rack in the center of the oven, then preheat to 350F.\nIn a medium, oven-safe pan, heat 1 Tbsp. olive oil over medium heat. Add 1 large, thinly sliced onion and .5 tsp. Kosher salt. Cook, stirring often, until golden brown, about 25 minutes.\nAdd .5 tsp. turmeric, 1 tsp. cumin, .25 tsp. Aleppo pepper (or  tsp. crushed red pepper flakes), and 2 Tbsp. tomato paste. Cook and stir constantly until the onions are coated and the tomato paste has darkened slightly, about 2 minutes. Add  cup water; stir and scrape up all the browned bits on the bottom of the pan for 1 to 2 minutes, or until the liquid looks thickened and saucy. Add one 14-oz. can of lentil soup; cook, stirring to combine, 1 to 2 minutes. Turn off the heat and season with salt, pepper, and more Aleppo pepper or red pepper flakes to taste.\nUsing a spoon, create 3 wells in the lentil mixture. Carefully crack 1 egg into each well. Transfer the pan to the oven and bake until the whites of the eggs are just set, 11 to 13 minutes.\nWhile the eggs bake, in a small pot or butter warmer, heat 2 Tbsp. unsalted butter, ghee, or olive oil over medium heat. Add .5 tsp. cumin seeds; swirl the pan until the seeds start to sizzle and brown, 30 seconds to 1 minute. Remove from the heat.\nDrizzle the finished eggs with the butter mixture, season with salt and pepper, and garnish with parsley before serving.",
     "image": "9.png",
-    "rating": 5
+    "rating": 1,
+    "preptime": 45
   },
   {
     "ID": 10,
     "name": "Hot Pimento Cheese Dip",
     "genre": ["Appetizer", "Mexican"],
+    "description": "A smooth, velvety, and versatile dip.",
     "ingredients": "['1 (7 oz./200 g) can chipotle in adobo sauce', '.5 garlic clove, minced', 'Kosher salt', '1.5 tsp. cornstarch', '1 (5 fl oz./150 ml) can evaporated milk (about .5 cup plus 2 Tbsp)', '8 oz. (230 g) sharp or extra-sharp Cheddar cheese, coarsely grated (about 2 cups)', '2 oz. (55 g) cream cheese, roughly diced, at room temperature', '.25 cup (60 g) mayonnaise', '1 (4 oz./115 g) jar diced pimento peppers, drained', '1.5 tsp. Chipotle Pepper Puree']",
     "instructions": "Put the chipotle peppers and adobo sauce in a small food processor or blender and blend until the mixture turns into a smooth puree. Set aside. The chipotle puree can be made in advance, stored in an airtight container, and refrigerated for up to 2 months.\nOn a cutting board, sprinkle the garlic with a large pinch of salt and gather it into a small mound. Holding the blunt side of the knife with both hands, press and scrape the knifes sharp end, holding it at a slight angle, across the garlic mound to flatten it. Repeat, dragging it across the garlic, until you have a smooth paste. Set aside.\nIn a small bowl, mix the cornstarch and 1.5 tsp. of the evaporated milk into a slurry. Pour the rest of the evaporated milk into a medium saucepan and stir in the slurry. Bring to a boil over medium-high heat, whisking constantly. Turn the heat to low and add the Cheddar gradually by the handful, stirring until the Cheddar is melted and the mixture is smooth. Add the cream cheese and whisk until it melts. Stir in the mayonnaise, pimento peppers, 1.5 tsp. of the chipotle puree, and the garlic paste. Season with salt. Transfer to a serving bowl or keep it warm in a slow cooker and serve immediately.\nTo reheat the sauce, microwave it, stirring every 30 seconds, until fully melted.",
     "image": "10.png",
-    "rating": 1
+    "rating": 1,
+    "preptime": 30
   },
   {
     "ID": 11,
     "name": "Spiral Ham in the Slow Cooker",
     "genre": ["Meal", "Western"],
+    "description": "An easy, flavourful way to spice-up your store-bought cooked spiral ham.",
     "ingredients": "['1 (6- to 7-pound) bone-in, hickory-smoked, uncured fully cooked ham', '5 medium parsnips, peeled and halved lengthwise', '5 medium carrots, peeled and halved lengthwise', '1 cup maple syrup', '2 cups unsweetened apple juice', '.5 cup packed dark brown sugar', '.5 cup smooth Dijon mustard', '.5 cup grainy Dijon mustard', '2 tablespoons apple cider vinegar', 'Kosher salt (if needed)']",
     "instructions": "Pour 3 cups of water into a 7-quart slow cooker. Add the ham, cut-side up, as well as the parsnips and carrots. Pour the maple syrup and apple juice over the ham, and sprinkle the brown sugar over the top. Cook on high, uncovered, for 30 to 45 minutes, then cover the slow cooker and cook on low until the ham is tender, 3 to 4 hours. Hams vary in size and tenderness, so be patient. When its tender, the meat should come off the bone with very little resistance. Taste a small piece for tenderness.\nTransfer the ham and vegetables to a deep serving platter (reserve the liquid in the pot). Use a pair of kitchen shears or scissors to cut the slices of ham off the bone and let them fall onto the platter. Stir both kinds of mustard and the vinegar into the cooking liquid left in the slow cooker and taste for seasoningthe sauce may or may not need salt. Pour the liquid over the ham and vegetables, and serve.",
     "image": "11.png",
-    "rating": 4
+    "rating": 4,
+    "preptime": 420
   },
   {
     "ID": 12,
     "name": "Butternut Squash and Apple Soup",
     "genre": ["Meal", "Western"],
+    "description": "A creamy, delicious soup perfect for cold weather.",
     "ingredients": "['6 slices bacon, cut crosswise into .5-inch pieces', '2 celery ribs, chopped', '1 carrot, chopped', '1 medium onion, chopped', '.25 teaspoon cinnamon', '.75 pound boiling potatoes', '2 medium Granny Smith apples (about .75 pound total)', '1 .5 pounds butternut squash, peeled, seeded, and cut into .5-inch pieces (3.5 to 4 cups)', '2 cups reduced-sodium chicken stock or broth', '2 to 2.5 cups water', 'Sour cream']",
     "instructions": "Cook bacon in a 6-quart heavy pot over medium heat, stirring occasionally, until crisp, then transfer with a slotted spoon to paper towels to drain, reserving 2 tablespoons fat in pot. (Add vegetable oil if your bacon is very lean and doesn't yield enough fat.)\nCook celery, carrot, and onion in fat in pot over low heat, covered, stirring occasionally, until softened but not browned, 10 to 12 minutes. Add cinnamon and cook, uncovered, stirring, 1 minute.\nWhile vegetables are cooking, peel potatoes and coarsely chop. Peel and core 1 apple and coarsely chop.\nStir squash, potato, chopped apple, stock, 2 cups water, 1 teaspoon salt and 1/2 teaspoon pepper into onion mixture, then simmer, uncovered, stirring occasionally, until vegetables are very tender, 15 to 20 minutes.\nPuree soup in 4 batches in a blender (use caution when blending hot liquids), then heat in cleaned pot over medium low heat, stirring occasionally. (Add additional 1/2 cup water to thin, if necessary.)\nWhile soup is heating, cut enough of remaining apple into thin matchsticks (about 1 1/2-inches long) to measure about 1/2 cup.\nServe soup topped with sour cream, bacon, and apple matchsticks.\nCooks' Notes: Soup can be made 2 days ahead and chilled, covered once cooled. Cooked bacon can be kept refrigerated in an airtight containerreheat in a 375F oven in a small baking pan.",
     "image": "12.png",
-    "rating": 1
+    "rating": 1,
+    "preptime": 50
   },
   {
     "ID": 13,
