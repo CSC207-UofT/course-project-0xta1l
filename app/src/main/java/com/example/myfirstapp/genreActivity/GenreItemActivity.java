@@ -72,12 +72,11 @@ public class GenreItemActivity extends AppCompatActivity{
                         break;
                     case "Interest":
                         String username = Globals.getUser_username();
-                        that.showItems(sortController.sort(previews, "Interest"));
-                        // TODO: figure out why user has a bug
+                        that.showItems(sortController.sort(previews, "Interests", username));
+
                         break;
 
                 }
-                // TODO: sort interest
 
                 Spinner spinner = (Spinner) findViewById(R.id.genreRecipeSortSpinner);
                 spinner.setOnItemSelectedListener(this);
