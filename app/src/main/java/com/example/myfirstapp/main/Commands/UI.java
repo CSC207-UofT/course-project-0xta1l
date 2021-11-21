@@ -5,6 +5,7 @@ import com.example.myfirstapp.main.Controllers.UserRequestCreateLogin;
 import com.example.myfirstapp.main.Entities.User;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class UI {
@@ -168,7 +169,8 @@ public class UI {
         System.out.println("Please enter the genres you are interested in, each separated by a comma and space.");
         String interests = input.nextLine();
         try {
-            CreateLoginController.createUser(username, password, displayName, age, bio, interests);
+            ArrayList<String> interestList = new ArrayList<>(Arrays.asList(interests.split(",\\s*")));
+            CreateLoginController.createUser(username, password, displayName, age, bio, interestList);
         } catch (Exception e) {
             e.printStackTrace();
         }

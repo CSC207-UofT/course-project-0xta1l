@@ -52,6 +52,7 @@ public class GenreRecipeItemActivity extends AppCompatActivity {
             System.out.println("Size is" + recipes.size());
             UserRequestSaveRecipe saveController = new UserRequestSaveRecipe();
             saveController.saveRecipe(Globals.getUser_username(), String.valueOf(Globals.getViewRecipeId()));
+            finish();
         } catch (Exception e){
             e.printStackTrace();
         }

@@ -54,7 +54,9 @@ public class RecommendRecipeTest {
 
     @Test(timeout = 50)
     public void Test1Recommends() {
-        ArrayList<String> expectedRecommends  = new ArrayList<>(List.of("Good Steak"));
+        List<String> strings = new ArrayList<>();
+        strings.add("Good Steak");
+        ArrayList<String> expectedRecommends  = new ArrayList<>(strings);
         ArrayList<Preview> returnedList = r.recommend("user1", 1);
         for (Preview preview : returnedList){
             actualRecommends.add(preview.getName());

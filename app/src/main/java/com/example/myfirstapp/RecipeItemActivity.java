@@ -52,8 +52,9 @@ public class RecipeItemActivity extends AppCompatActivity {
         try {
             UserRequestSaveRecipe saveController = new UserRequestSaveRecipe();
             saveController.deleteRecipe(Globals.getUser_username(), String.valueOf(Globals.getViewRecipeId()));
+            finish();
         } catch (Exception e){
-        e.printStackTrace();
-    }
+            e.printStackTrace();
+        }
     }
 }
