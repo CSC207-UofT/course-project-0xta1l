@@ -119,6 +119,18 @@ public class ProfileFragment extends Fragment {
             }
         });
 
+        ImageButton passwordButton = v.findViewById(R.id.account_password_edit);
+        passwordButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), EditPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
         return v;
+
     }
 }

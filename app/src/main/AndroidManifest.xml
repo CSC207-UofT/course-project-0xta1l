@@ -9,11 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApp">
+
         <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="false" /> <!-- Main Activity Fragments -->
         <!-- Profile Activities -->
+        <activity
+            android:name=".accountActivity.EditPasswordActivity"
+            android:parentActivityName=".MainActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fragments.ProfileFragment" />
+        </activity>
+
         <activity
             android:name=".accountActivity.EditUsernameActivity"
             android:parentActivityName=".MainActivity">
@@ -50,9 +61,7 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
-        </activity>
-
-        <!-- Recipe Activity END -->
+        </activity> <!-- Recipe Activity END -->
         <!-- Genre Activity -->
         <activity
             android:name=".genreActivity.GenreItemActivity"
@@ -71,9 +80,7 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".genreActivity.GenreItemActivity" />
-        </activity>
-
-        <!-- Genre Activity END -->
+        </activity> <!-- Genre Activity END -->
         <activity
             android:name=".DisplayMessageActivity"
             android:parentActivityName=".MainActivity">
