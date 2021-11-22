@@ -70,6 +70,13 @@ public class ProfileFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_profile, container, false);
 
+        return v;
+
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        View v = getView();
         // Load and use views afterwards
         TextView tv1 = v.findViewById(R.id.account_name);
         TextView tv2 = v.findViewById(R.id.account_bio);
@@ -128,9 +135,6 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-
-
-        return v;
-
     }
+
 }
