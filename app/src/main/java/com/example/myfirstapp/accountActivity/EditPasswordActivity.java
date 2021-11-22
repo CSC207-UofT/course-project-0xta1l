@@ -22,5 +22,6 @@ public class EditPasswordActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.editPasswordText);
         String s = editText.getText().toString();
         Globals.setUser_password(s);
+        finish();
     }
 }
