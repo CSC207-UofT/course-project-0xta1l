@@ -1426,7 +1426,7 @@
     {
         "ID": 158,
         "name": "Black-Eyed Pea Salad With Hot Sauce Vinaigrette",
-        "genre": ["Meal","Salad","Vegetarian"],
+        "genre": ["Appetizer","Vegetarian"],
         "ingredients": "['2 garlic cloves, grated on a Microplane', '2 tablespoons apple cider vinegar', '1 tablespoon yellow mustard', '1 tablespoon hot sauce', '1 teaspoon honey', 'Kosher salt and freshly ground black pepper', '6 tablespoons vegetable oil', '1 (15-ounce) can black-eyed peas, rinsed and drained', '2 mini cucumbers, cut into .5-inch dice', '.5 sweet onion, finely chopped', '1 pint cherry tomatoes or grape tomatoes, halved', '.25 cup picked fresh dill']",
         "instructions": "Whisk the garlic, vinegar, mustard, hot sauce, honey, 1/4 teaspoon salt, and .25 teaspoon pepper in a large bowl until smooth. While whisking, add the oil in a slow, steady stream. Whisk until emulsified.\nAdd the peas, cucumbers, onion, tomatoes, dill, and 1/2 teaspoon salt. Toss until well mixed. You can serve this right away or let it sit at room temperature for up to 1 hour.\nDO AHEAD: The salad can be refrigerated for up to 1 day.",
         "image": "158.png",
@@ -1435,7 +1435,7 @@
     {
         "ID": 159,
         "name": "Caribbean Smothered Chicken With Coconut, Lime, and Chiles",
-        "genre": ["Meal","Caribbean","Chicken"],
+        "genre": ["Meal","Caribbean"],
         "ingredients": "['1 teaspoon vegetable oil', '4 large bone-in, skin-on chicken thighs (1.5 pounds)', 'Kosher salt and freshly ground black pepper', '6 large sprigs thyme', '2 large onions, thinly sliced', '2 garlic cloves, chopped', '1 habanero chile, slit', '1 cup light coconut milk', 'Zest and juice of 1 large lime, plus wedges for serving', '1/2 teaspoon mild yellow curry powder']",
         "instructions": "Heat the oil in a shallow Dutch oven or casserole with a lid over high heat.\nSeason the chicken generously with salt and pepper and add to the hot oil, skin side down. Sear, flipping once, until browned on both sides and the fat renders, about 5 minutes.\nPush the chicken to one side of the pan, add the thyme and onions to the other side, and reduce the heat to medium-low.\nCook, stirring, until the onions get some color, about 4 minutes. Add the garlic, chile, .5 teaspoon salt, and .5 teaspoon pepper. Cook, stirring, for 1 minute, then add the coconut milk and .25 cup water. Bring to a boil, stirring.\nArrange the chicken in a single layer skin side up and surround with the onion mixture. The skin should be just above the liquid line. Cover and simmer until the chicken is cooked through, about 20 minutes.\nUncover and stir in the lime juice. Simmer uncovered until the sauce thickens, about 5 minutes. Stir in the curry powder and lime zest.\nServe immediately with lime wedges.\nDO AHEAD: The cooked chicken can be refrigerated for up to 3 days.",
         "image": "159.png",
@@ -1444,7 +1444,7 @@
     {
         "ID": 160,
         "name": "Watermelon Salad With Radishes and Mint",
-        "genre": ["Meal","Salad","Vegetarian"],
+        "genre": ["Appetizer","Vegetarian"],
         "ingredients": "['Kosher salt and freshly ground black pepper', '1 bunch red radishes, cut into -inch slices', '2 tablespoons red wine vinegar', '4 teaspoons extra-virgin olive oil', '.5 red onion, cut into thin slivers', '4.5 pounds watermelon (1/4 of a large melon), rind removed, flesh cut into 1-inch cubes', '2 tablespoons torn mint leaves']",
         "instructions": "Dissolve a spoonful of salt in a large bowl of ice and water. Add the radishes and let sit for a few minutes to crisp.\nWhisk the vinegar, oil, and 1 teaspoon salt in a large bowl. Drain the radishes and add to the bowl, along with the onion and watermelon.\nGently toss with your hands to coat evenly.\nSpread on a serving platter, grind pepper all over, and top with the mint.",
         "image": "160.png",
@@ -1516,7 +1516,7 @@
     {
         "ID": 168,
         "name": "Sorrel (Hibiscus) Tea",
-        "genre": ["Drink","Tea","Vegetarian"],
+        "genre": ["Drink","Vegetarian"],
         "ingredients": "['2 cups dried hibiscus (sorrel) flowers', '13 cup peeled fresh ginger slices (.25 inch thick)', '2- to 3-inch cinnamon stick', '6 whole cloves', '.25 cup grated orange zest', 'Grated zest and juice of 1 lemon', 'Demerara sugar, honey, or agave nectar', 'Mint leaves, for garnish']",
         "instructions": "In a large saucepan, bring 2 quarts water, the hibiscus, ginger, cinnamon, cloves, and orange and lemon zests to a boil over medium heat. Boil for 5 minutes. Remove from the heat. Add the lemon juice, cover tightly, and let stand for 1 to 2 days at room temperature. Strain and discard the solids. Sweeten to taste with demerara sugar, honey, or agave nectar. Chill thoroughly. Serve over ice and garnish with mint.",
         "image": "168.png",
@@ -1552,7 +1552,7 @@
     {
         "ID": 172,
         "name": "New Age Church Punch",
-        "genre": ["Drink","Fruit"],
+        "genre": ["Drink","Western"],
         "ingredients": "['One 2-pound whole pineapple', '.25 teaspoon coarse salt', '.5 teaspoon ground ginger', '1 teaspoon brown sugar', '8 cups boiling water', '2 cups hibiscus leaves', '1.75 cups granulated sugar', '1 cup fresh lime juice (about 3 limes)', '1.5 cups white rum (optional)', '4.5 cups ginger beer, or 36 ounces', '3 scoops lime sorbet (optional)']",
         "instructions": "Preheat oven to 400F.\nCut the top and bottom of pineapple. Next, sit the fruit upright and cut down the sides. Flip the pineapple on its side cut in half.\nCut into .5-inch round slices. Sprinkle pineapple slices with salt, ginger, and brown sugar. Place slices on parchment paper or Silpat (nonstick baking mat) on baking sheet or jelly roll pan. Roast for 25 minutes.\nTransfer pineapple slices to Vitamix or food processor, pulse until liquid is loose and foamy. The fragrance will be bright. Set aside.\nPlace water in a large stockpot, over medium-high heat. After coming to a boiling, drop in hibiscus leaves. Cover and let brew for 10 minutes.\nStir in sugar and turn off heat. Let completely cool.\nAdd lime juice, 2 cups of the roasted pineapple juice, rum, and ginger beer. Stir well. Transfer to punch bowl.\nPlace scoops of lime sorbet in punch bowl, if desired. The mixture will slightly foam. The sorbet will make the punch a tad sweeter.",
         "image": "172.png",
@@ -1570,7 +1570,7 @@
     {
         "ID": 174,
         "name": "White Russian",
-        "genre": ["Drink","Alcoholic","Cocktail"],
+        "genre": ["Drink","Alcoholic"],
         "ingredients": "['1.5 oz. vodka', '.75 oz. Kahla', '.75 oz. heavy cream']",
         "instructions": "Combine all the ingredients in a cocktail shaker filled with ice and shake until chilled and well integrated, about 15 seconds. Strain into a chilled Old-Fashioned glass.",
         "image": "174.png",
