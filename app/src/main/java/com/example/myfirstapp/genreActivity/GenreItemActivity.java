@@ -63,6 +63,7 @@ public class GenreItemActivity extends AppCompatActivity{
 
                 String item = (String) parent.getItemAtPosition(position);
 
+                //TODO save spinner state
                 switch (item) {
                     case "Alphabetical":
                         that.showItems(sortController.sort(previews, ""));

@@ -87,6 +87,7 @@ public class MyRecipeFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        //TODO Add a global saved spinner state where the default is "ALl"
 
         UserRequestBrowse genreController = new UserRequestBrowse();
         ArrayList<String> genres = null;

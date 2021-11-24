@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myfirstapp.main.Constants.Constants;
@@ -46,6 +47,12 @@ public class RecipeItemActivity extends AppCompatActivity {
 
         TextView recipeItemRating = findViewById(R.id.recipeItemRating);
         recipeItemRating.setText("Rating " + recipe.getRating());
+
+        String imgName = "img_" + String.valueOf(recipe.getID());
+        ImageView mImageView = findViewById(R.id.recipeItemImage);
+        mImageView.setImageResource(getResources().getIdentifier(imgName, "drawable", getPackageName()));
+
+        // TODO: add to drawables img_ID
 
     }
     public void deleteRecipe(View v) throws Exception {
