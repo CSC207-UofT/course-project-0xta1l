@@ -1,306 +1,377 @@
 [
-        {
+    {
         "ID": 0,
         "name": "Miso-Butter Roast Chicken With Acorn Squash Panzanella",
-        "genre": ["Meal","Western","Fusion"],
+        "genre": [
+            "Meal",
+            "Western",
+            "Fusion"
+        ],
         "description": "A hearty and flavourful roast chicken recipe.",
         "ingredients": "['1 (3.54-lb.) whole chicken', '2.75 tsp. kosher salt, divided, plus more', '2 small acorn squash (about 3 lb. total)', '2 Tbsp. finely chopped sage', '1 Tbsp. finely chopped rosemary', '6 Tbsp. unsalted butter, melted, plus 3 Tbsp. room temperature', '.25 tsp. ground allspice', 'Pinch of crushed red pepper flakes', 'Freshly ground black pepper', ' loaf good-quality sturdy white bread, torn into 1\" pieces (about 2.5 cups)', '2 medium apples (such as Gala or Pink Lady; about 14 oz. total), cored, cut into 1\" pieces', '2 Tbsp. extra-virgin olive oil', '.5 small red onion, thinly sliced', '3 Tbsp. apple cider vinegar', '1 Tbsp. white miso', '.25 cup all-purpose flour', '2 Tbsp. unsalted butter, room temperature', '.25 cup dry white wine', '2 cups unsalted chicken broth', '2 tsp. white miso', 'Kosher salt, freshly ground pepper']",
         "instructions": "Pat chicken dry with paper towels, season all over with 2 tsp. salt, and tie legs together with kitchen twine. Let sit at room temperature 1 hour. Put chicken in oven for 45 minutes.\nMeanwhile, halve squash and scoop out seeds. Run a vegetable peeler along ridges of squash halves to remove skin. Cut each half into .5\"-thick wedges; arrange on a rimmed baking sheet.\nCombine sage, rosemary, and 6 Tbsp. melted butter in a large bowl; pour half of mixture over squash on baking sheet. Sprinkle squash with allspice, red pepper flakes, and .5 tsp. salt and season with black pepper; toss to coat.\nAdd bread, apples, oil, and .25 tsp. salt to remaining herb butter in bowl; season with black pepper and toss to combine. Set aside.\nPlace onion and vinegar in a small bowl; season with salt and toss to coat. Let sit, tossing occasionally, until ready to serve.\nPlace a rack in middle and lower third of oven; preheat to 425F. Mix miso and 3 Tbsp. room-temperature butter in a small bowl until smooth. Pat chicken dry with paper towels, then rub or brush all over with miso butter. Place chicken in a large cast-iron skillet and roast on middle rack until an instant-read thermometer inserted into the thickest part of breast registers 155F, 5060 minutes. (Temperature will climb to 165F while chicken rests.) Let chicken rest in skillet at least 5 minutes, then transfer to a plate; reserve skillet.\nMeanwhile, roast squash on lower rack until mostly tender, about 25 minutes. Remove from oven and scatter reserved bread mixture over, spreading into as even a layer as you can manage. Return to oven and roast until bread is golden brown and crisp and apples are tender, about 15 minutes. Remove from oven, drain pickled onions, and toss to combine. Transfer to a serving dish.\nUsing your fingers, mash flour and butter in a small bowl to combine.\nSet reserved skillet with chicken drippings over medium heat. You should have about .25 cup, but a little over or under is all good. (If you have significantly more, drain off and set excess aside.) Add wine and cook, stirring often and scraping up any browned bits with a wooden spoon, until bits are loosened and wine is reduced by about half (you should be able to smell the wine), about 2 minutes. Add butter mixture; cook, stirring often, until a smooth paste forms, about 2 minutes. Add broth and any reserved drippings and cook, stirring constantly, until combined and thickened, 68 minutes. Remove from heat and stir in miso. Taste and season with salt and black pepper.\nServe chicken with gravy and squash panzanella alongside.",
-        "image": "0.png",
+        "image": "img_0.png",
         "rating": 3,
         "preptime": 90
-      },
-      {
+    },
+    {
         "ID": 1,
         "name": "Crispy Salt and Pepper Potatoes",
-        "genre": ["Meal","Western"],
+        "genre": [
+            "Meal",
+            "Western"
+        ],
         "description": "A quick and versatile potato recipe great for pairing with many meals.",
         "ingredients": "['2 large egg whites', '1 pound new potatoes (about 1 inch in diameter)', '2 teaspoons kosher salt', '.75 teaspoon finely ground black pepper', '1 teaspoon finely chopped rosemary', '1 teaspoon finely chopped thyme', '1 teaspoon finely chopped parsley']",
         "instructions": "Preheat oven to 400F and line a rimmed baking sheet with parchment. In a large bowl, whisk the egg whites until foamy (there shouldnt be any liquid whites in the bowl). Add the potatoes and toss until theyre well coated with the egg whites, then transfer to a strainer or colander and let the excess whites drain. Season the potatoes with the salt, pepper, and herbs. Scatter the potatoes on the baking sheet (make sure theyre not touching) and roast until the potatoes are very crispy and tender when poked with a knife, 15 to 20 minutes (depending on the size of the potatoes).\nTransfer to a bowl and serve.",
-        "image": "1.png",
+        "image": "img_1.png",
         "rating": 5,
         "preptime": 25
-      },
-      {
+    },
+    {
         "ID": 2,
         "name": "Thanksgiving Mac and Cheese",
-        "genre": ["Meal", "Western"],
+        "genre": [
+            "Meal",
+            "Western"
+        ],
         "description": "A silky and creamy version of a classic comfort food.",
         "ingredients": "['1 cup evaporated milk', '1 cup whole milk', '1 tsp. garlic powder', '1 tsp. onion powder', '1 tsp. smoked paprika', '.5 tsp. freshly ground black pepper', '1 tsp. kosher salt, plus more', '2 lb. extra-sharp cheddar, coarsely grated', '4 oz. full-fat cream cheese', '1 lb. elbow macaroni']",
         "instructions": "Place a rack in middle of oven; preheat to 400. Bring evaporated milk and whole milk to a bare simmer in a large saucepan over medium heat. Whisk in garlic powder, onion powder, paprika, pepper, and 1 tsp. salt. Working in batches, whisk in three fourths of the cheddar, then all of the cream cheese.\nMeanwhile, bring a large pot of generously salted water to a boil (it should have a little less salt than seawater). Cook macaroni, stirring occasionally, until very al dente, about 4 minutes. Drain in a colander.\nAdd macaroni to cheese sauce in pan and mix until well coated. Evenly spread out half of macaroni mixture in a 13x9\" baking dish. Sprinkle half of remaining cheddar evenly over. Layer remaining macaroni mixture on top and sprinkle with remaining cheddar. Bake until all of the cheese is melted, about 10 minutes. Let cool slightly before serving.",
-        "image": "2.png",
+        "image": "img_2.png",
         "rating": 3,
         "preptime": 45
-      },
-      {
+    },
+    {
         "ID": 3,
         "name": "Italian Sausage and Bread Stuffing",
-        "genre": ["Meal", "Italian"],
+        "genre": [
+            "Meal",
+            "Italian"
+        ],
         "description": "Rustic and rich Thanksgiving stuffing.",
         "ingredients": "['1 (.75- to 1-pound) round Italian loaf, cut into 1-inch cubes (8 cups)', '2 tablespoons olive oil, divided', '2 pounds sweet Italian sausage, casings removed, divided', '1 stick unsalted butter, cut into pieces', '3 medium onions, chopped', '4 large celery ribs, chopped', '5 garlic cloves, minced', '4 large eggs, lightly beaten', '.75 cup heavy cream, divided', '.5 cup turkey giblet stock or reduced-sodium chicken broth', '1 cup grated Parmigiano-Reggiano (2 ounces)', '.5 cup coarsely chopped flat-leaf parsley', '4-qt shallow ceramic or glass baking dish']",
         "instructions": "Preheat oven to 350F with rack in middle. Generously butter baking dish.\nPut bread in 2 shallow baking pans and bake, switching position of pans halfway through baking, until just dried out, about 10 minutes.\nHeat 1 tablespoon oil in a 12-inch heavy skillet over medium-high heat until it shimmers, then cook half of sausage, stirring and breaking it into small pieces, until golden brown, about 6 minutes. Transfer with a slotted spoon to a large bowl. Brown remaining sausage in remaining tablespoon oil, transferring to bowl.\nPour off fat from skillet and wipe clean. Heat butter over medium heat until foam subsides, then cook onions, celery, garlic, and .5 teaspoon each of salt and pepper, stirring occasionally, until golden, 12 to 15 minutes. Add vegetables and bread to sausage.\nWhisk together eggs, .5 cup cream, turkey stock, cheese, and parsley, then stir into stuffing and cool completely, about 30 minutes. Reserve 5 cups stuffing to stuff turkey and spoon remainder into baking dish, then drizzle with remaining .25 cup cream. Cover stuffing and chill.\nAbout 1 hour before stuffed turkey is finished roasting, bring dish of stuffing to room temperature. When turkey is done, increase oven temperature to 425F and bake stuffing, covered tightly with foil, until hot throughout, about 20 minutes. Remove foil and bake until top is golden and crisp, about 15 minutes more.\nCooks' Note: Bread can be toasted 3 days ahead and kept (once cool) in a sealed bag at room temperature. Stuffing can be prepared (but not baked) 4 hours before roasting turkey. If baking stuffing at the same time as potatoes, put stuffing in upper third of oven and potatoes in bottom third (allow extra time).",
-        "image": "3.png",
+        "image": "img_3.png",
         "rating": 2,
         "preptime": 140
-      },
-      {
+    },
+    {
         "ID": 4,
         "name": "Newton's Law",
-        "genre": ["Drink", "Western", "Cocktail", "Alcoholic"],
+        "genre": [
+            "Drink",
+            "Western",
+            "Cocktail",
+            "Alcoholic"
+        ],
         "description": "An apple butter and bourbon cocktail.",
         "ingredients": "['1 teaspoon dark brown sugar', '1 teaspoon hot water', '1 .5 oz. bourbon', '.5 oz. fresh lemon juice', '2 teaspoons apple butter (storebought or homemade)', 'Garnish: orange twist and freshly grated or ground cinnamon']",
         "instructions": "Stir together brown sugar and hot water in a cocktail shaker to dissolve. Let cool, then add bourbon, lemon juice, and apple butter and fill with ice. Shake until well chilled, about 15 seconds. Strain into an ice-filled rocks glass. Garnish with orange twist and cinnamon.",
-        "image": "4.png",
+        "image": "img_4.png",
         "rating": 4,
         "preptime": 5
-      },
-      {
+    },
+    {
         "ID": 5,
         "name": "Warm Comfort",
-        "genre": ["Drink", "Western", "Cocktail", "Alcoholic"],
+        "genre": [
+            "Drink",
+            "Western",
+            "Cocktail",
+            "Alcoholic"
+        ],
         "description": "A chamomile and tequila cocktail perfect for cold weather.",
         "ingredients": "['2 chamomile tea bags', '1.5 oz. reposado tequila', '.75 oz. fresh lemon juice', '1 Tbsp. agave nectar']",
         "instructions": "Place 2 chamomile tea bags in a heatsafe vessel, such as a large liquid measuring cup. Pour in 1 .5 cups boiling water, and let steep 5 minutes, then remove tea bags.\nAdd 1 .5 oz. reposado tequila, .75 oz. fresh lemon juice, and 1 Tbsp. agave nectar and stir until incorporated. Pour into a 16-ounce insulated mug (or two smaller 8-ounce mugs) and drink hot.",
-        "image": "5.png",
+        "image": "img_5.png",
         "rating": 1,
         "preptime": 5
-      },
-      {
+    },
+    {
         "ID": 6,
         "name": "Apples and Oranges",
-        "genre": ["Drink", "Western", "Cocktail", "Alcoholic"],
+        "genre": [
+            "Drink",
+            "Western",
+            "Cocktail",
+            "Alcoholic"
+        ],
         "description": "A hot cider cocktail with Amaro and Marnier.",
         "ingredients": "['3 oz. Grand Marnier', '1 oz. Amaro Averna', 'Small pat salted butter (about .5 teaspoon)', '1 cup hot apple cider', '1.5 to 3 tsp. fresh lemon juice (to taste, depending on the sweetness of your cider)', 'Garnish: freshly ground pink peppercorns, plus 2 lemon wheels (optional)']",
         "instructions": "Add 3 oz. Grand Marnier, 1 oz. Amaro Averna, and a small pat of salted butter to a 16-ounce travel mug or large heatproof measuring cup. Add 1 cup hot apple cider and stir until butter melts.\nAdd 1.5 tsp. fresh lemon juice and taste for sweetness, adding additional if needed. If serving in travel mug, garnish with ground pink peppercorns and seal. If serving in mugs, divide drink between two warmed mugs and garnish each with a pink peppercorn-dusted lemon wheel.",
-        "image": "6.png",
+        "image": "img_6.png",
         "rating": 4,
         "preptime": 5
-      },
-      {
+    },
+    {
         "ID": 7,
         "name": "Turmeric Hot Toddy",
-        "genre": ["Drink", "Western", "Cocktail", "Alcoholic"],
+        "genre": [
+            "Drink",
+            "Western",
+            "Cocktail",
+            "Alcoholic"
+        ],
         "description": "A savoury cocktail with Amontillado and turmeric.",
         "ingredients": "['.25 cup granulated sugar', '.75 tsp. ground turmeric', '1 .5 oz. Amontillado sherry', '1 oz. bourbon, aged rum, Scotch, mezcal, or gin', '1 oz. Turmeric Syrup', '.5 oz. fresh lemon juice', 'Garnish: Dehydrated lemon wheel (optional)']",
         "instructions": "For the turmeric syrup, combine .5 cup hot water and .25 cup sugar in a liquid measuring cup or mason jar. Add .75 tsp. ground turmeric and stiror seal and shakeuntil sugar is completely dissolved. (This makes enough syrup for 4 drinks. Syrup can be used immediately or refrigerated, covered, up to 10 days. Shake or stir before using to reincorporate turmeric.)\nFor the toddy, combine 1 .5 oz. Amontillado sherry, 1 oz. bourbon (or other spirit of choice), 1 oz. Turmeric Syrup, and .5 oz. fresh lemon juice in a sturdy pint glass or 16-ounce thermos. Top with 8 oz. hot water and stir gently. Garnish with dehydrated lemon wheel if desired.",
-        "image": "7.png",
+        "image": "img_7.png",
         "rating": 3,
         "preptime": 5
-      },
-      {
+    },
+    {
         "ID": 8,
         "name": "Instant Pot Lamb Haleem",
-        "genre": ["Meal", "Middle-Eastern", "Pakistani"],
+        "genre": [
+            "Meal",
+            "Middle-Eastern",
+            "Pakistani"
+        ],
         "description": "An easy way to cook Haleem, a Pakistani stew.",
         "ingredients": "['.75 cup assorted dals (such as chana dal, moong dal, masoor dal, and/or urad dal)', '.25 cup white jasmine rice or other long-grain rice', '.25 cup pearl barley', '1.5 lb. bone-in lamb stew meat', '3 tsp. kosher salt, divided, plus more', '1 6\" piece fresh ginger', '3 medium shallots, thinly sliced', ' cup ghee or vegetable oil', '4 garlic cloves, finely grated', '2 Tbsp. plus 1.5 tsp. garam masala', '1 tsp. (or more) cayenne pepper', '1 tsp. ground turmeric', '3 green Thai chiles, stems removed (optional)', '.5 cup (lightly packed) chopped cilantro, plus more for serving', '.5 white onion, finely chopped', '2 limes, cut into wedges']",
         "instructions": "Combine dals, rice, and barley in a medium bowl. Pour in water to cover and swish dals and grains around with your fingers. Drain and repeat process until water runs clear enough to see your hands through. Pour in water to cover and let dals and grains soak at room temperature at least 2 hours, or cover and chill up to 12 hours.\nPlace lamb on a plate, pat dry with paper towels, and season all over with 2 tsp. salt; set aside. Peel ginger by scraping off skin with a spoon. Finely grate half of ginger; set aside. Thinly slice remaining ginger. Stack slices and cut crosswise into matchsticks; set aside.\nIf using an electric pressure cooker, combine shallots and ghee in pot and set to saute function or high. Cook, stirring often and adjusting heat as needed if your cooker has that option, until shallots are just beginning to brown, about 8 minutes (or about 6 minutes if cooking in oil). Reduce to normal function or medium if possible, or, if your cooker doesnt have a lower setting, turn off for a minute if mixture is getting too hot. Add reserved ginger matchsticks and cook, stirring often, until shallots are brown and crisp and ginger is frizzled, 410 minutes, depending on your cooker. Using a slotted spoon, transfer shallots and ginger to a plate, spreading out into a single layer. Season lightly with salt; let cool.\nAdd garlic, garam masala, cayenne, turmeric, and reserved grated ginger, and cook, stirring constantly, until fragrant, about 30 seconds. Add lamb and stir to coat in spices. Cook, stirring often with a wooden spoon and repeatedly adding splashes of water as spices begin to stick to bottom of pot and scraping up browned bits, until flavors come together, about 15 minutes.(Bhuna, the process of repeated sticking and scraping, is a Southeast Asian cooking technique that brings out the flavor of the spices and ensures they dont taste raw and grainy.)\nDrain dal mixture and add to pot along with 1 tsp. salt and 5 cups water. Secure lid and bring to full pressure according to manufacturers directions. Cook 1.5 hours. Let sit 20 minutes, then manually release pressure and open up.\nTaste haleem and add more salt and cayenne if needed. Add chiles if using. (These are for flavor, not heat; feel free to leave them out.) Simmer on normal function or medium, stirring often, 5 minutes. Stir in .5 cup cilantro.\nServe haleem with white onion, lime wedges, reserved crispy shallots and ginger, and more chopped cilantro.\nIf using a medium Dutch oven or stovetop pressure cooker, cook shallots and ghee over high heat, stirring often, until shallots are just beginning to brown, about 8 minutes (or about 6 minutes if cooking in oil). Add reserved ginger matchsticks and cook, stirring often, until shallots are brown and crisp and ginger is frizzled, 58 minutes. Using a slotted spoon, transfer shallots and ginger to a plate, spreading out in a single layer. Season lightly with salt; let cool.\nReduce heat to medium, add garlic, garam masala, cayenne, turmeric, and reserved grated ginger, and cook, stirring constantly, until fragrant, about 30 seconds. Add lamb and stir to coat in spices. Cook, stirring often with a wooden spoon and repeatedly adding splashes of water as spices begin to stick to bottom of pot and scraping up browned bits, until flavors come together, about 15 minutes. (Bhuna, the process of repeated sticking and scraping, is a Southeast Asian cooking technique that brings out the flavor of the spices and ensures they dont taste raw and grainy.)\nDrain dal mixture and add to pot along with 1 tsp. salt and 6.5 cups water (if using a Dutch oven) or 5 cups water (for pressure cooker). Increase heat to high and bring to a boil, then reduce heat to the low, cover pot, and cook, stirring and scraping bottom of pot every 1520 minutes, until meat is falling off the bone and dals and grains have nearly melted into the stew, 4.55 hours. (If using a stovetop cooker, increase heat to high and bring to a boil. Secure lid and bring to full pressure according to manufacturers directions. Cook 1.5 hours. Let sit 20 minutes, then manually release pressure and open up.)\nTaste haleem and add more salt and cayenne if needed. Add chiles if using. (These are for flavor, not heat; feel free to leave them out.) Simmer over medium heat, stirring often, 5 minutes. Stir in .5 cup cilantro.\nServe haleem with white onion, lime wedges, reserved crispy shallots and ginger, and more chopped cilantro.\nDo ahead: Haleem can be made 1 day ahead. Let cool; cover and chill. Reheat over medium until warmed through.",
-        "image": "8.png",
+        "image": "img_8.png",
         "rating": 3,
         "preptime": 360
-      },
-      {
+    },
+    {
         "ID": 9,
         "name": "Spiced Lentil and Caramelized Onion Baked Eggs",
         "description": "A quick and flavourful meal.",
-        "genre": ["Meal", "Fusion"],
+        "genre": [
+            "Meal",
+            "Fusion"
+        ],
         "ingredients": "['1 (14.5-ounce) can basic lentil soup, like Amys', '1 large onion, thinly sliced', '.5 tsp. turmeric', '1 tsp. cumin', '.25 tsp. Aleppo pepper or  tsp. crushed red pepper flakes', '2 Tbsp. tomato paste', '3 large eggs', '2 Tbsp. ghee, unsalted butter, or olive oil', '.5 tsp. whole cumin seeds', 'Olive oil', 'Kosher salt and freshly ground black pepper', 'Parsley, for finishing']",
         "instructions": "Place an oven rack in the center of the oven, then preheat to 350F.\nIn a medium, oven-safe pan, heat 1 Tbsp. olive oil over medium heat. Add 1 large, thinly sliced onion and .5 tsp. Kosher salt. Cook, stirring often, until golden brown, about 25 minutes.\nAdd .5 tsp. turmeric, 1 tsp. cumin, .25 tsp. Aleppo pepper (or  tsp. crushed red pepper flakes), and 2 Tbsp. tomato paste. Cook and stir constantly until the onions are coated and the tomato paste has darkened slightly, about 2 minutes. Add  cup water; stir and scrape up all the browned bits on the bottom of the pan for 1 to 2 minutes, or until the liquid looks thickened and saucy. Add one 14-oz. can of lentil soup; cook, stirring to combine, 1 to 2 minutes. Turn off the heat and season with salt, pepper, and more Aleppo pepper or red pepper flakes to taste.\nUsing a spoon, create 3 wells in the lentil mixture. Carefully crack 1 egg into each well. Transfer the pan to the oven and bake until the whites of the eggs are just set, 11 to 13 minutes.\nWhile the eggs bake, in a small pot or butter warmer, heat 2 Tbsp. unsalted butter, ghee, or olive oil over medium heat. Add .5 tsp. cumin seeds; swirl the pan until the seeds start to sizzle and brown, 30 seconds to 1 minute. Remove from the heat.\nDrizzle the finished eggs with the butter mixture, season with salt and pepper, and garnish with parsley before serving.",
-        "image": "9.png",
+        "image": "img_9.png",
         "rating": 1,
         "preptime": 45
-      },
-      {
+    },
+    {
         "ID": 10,
         "name": "Hot Pimento Cheese Dip",
-        "genre": ["Appetizer", "Mexican"],
+        "genre": [
+            "Appetizer",
+            "Mexican"
+        ],
         "description": "A smooth, velvety, and versatile dip.",
         "ingredients": "['1 (7 oz./200 g) can chipotle in adobo sauce', '.5 garlic clove, minced', 'Kosher salt', '1.5 tsp. cornstarch', '1 (5 fl oz./150 ml) can evaporated milk (about .5 cup plus 2 Tbsp)', '8 oz. (230 g) sharp or extra-sharp Cheddar cheese, coarsely grated (about 2 cups)', '2 oz. (55 g) cream cheese, roughly diced, at room temperature', '.25 cup (60 g) mayonnaise', '1 (4 oz./115 g) jar diced pimento peppers, drained', '1.5 tsp. Chipotle Pepper Puree']",
         "instructions": "Put the chipotle peppers and adobo sauce in a small food processor or blender and blend until the mixture turns into a smooth puree. Set aside. The chipotle puree can be made in advance, stored in an airtight container, and refrigerated for up to 2 months.\nOn a cutting board, sprinkle the garlic with a large pinch of salt and gather it into a small mound. Holding the blunt side of the knife with both hands, press and scrape the knifes sharp end, holding it at a slight angle, across the garlic mound to flatten it. Repeat, dragging it across the garlic, until you have a smooth paste. Set aside.\nIn a small bowl, mix the cornstarch and 1.5 tsp. of the evaporated milk into a slurry. Pour the rest of the evaporated milk into a medium saucepan and stir in the slurry. Bring to a boil over medium-high heat, whisking constantly. Turn the heat to low and add the Cheddar gradually by the handful, stirring until the Cheddar is melted and the mixture is smooth. Add the cream cheese and whisk until it melts. Stir in the mayonnaise, pimento peppers, 1.5 tsp. of the chipotle puree, and the garlic paste. Season with salt. Transfer to a serving bowl or keep it warm in a slow cooker and serve immediately.\nTo reheat the sauce, microwave it, stirring every 30 seconds, until fully melted.",
-        "image": "10.png",
+        "image": "img_10.png",
         "rating": 1,
         "preptime": 30
-      },
-      {
+    },
+    {
         "ID": 11,
         "name": "Spiral Ham in the Slow Cooker",
-        "genre": ["Meal", "Western"],
+        "genre": [
+            "Meal",
+            "Western"
+        ],
         "description": "An easy, flavourful way to spice-up your store-bought cooked spiral ham.",
         "ingredients": "['1 (6- to 7-pound) bone-in, hickory-smoked, uncured fully cooked ham', '5 medium parsnips, peeled and halved lengthwise', '5 medium carrots, peeled and halved lengthwise', '1 cup maple syrup', '2 cups unsweetened apple juice', '.5 cup packed dark brown sugar', '.5 cup smooth Dijon mustard', '.5 cup grainy Dijon mustard', '2 tablespoons apple cider vinegar', 'Kosher salt (if needed)']",
         "instructions": "Pour 3 cups of water into a 7-quart slow cooker. Add the ham, cut-side up, as well as the parsnips and carrots. Pour the maple syrup and apple juice over the ham, and sprinkle the brown sugar over the top. Cook on high, uncovered, for 30 to 45 minutes, then cover the slow cooker and cook on low until the ham is tender, 3 to 4 hours. Hams vary in size and tenderness, so be patient. When its tender, the meat should come off the bone with very little resistance. Taste a small piece for tenderness.\nTransfer the ham and vegetables to a deep serving platter (reserve the liquid in the pot). Use a pair of kitchen shears or scissors to cut the slices of ham off the bone and let them fall onto the platter. Stir both kinds of mustard and the vinegar into the cooking liquid left in the slow cooker and taste for seasoningthe sauce may or may not need salt. Pour the liquid over the ham and vegetables, and serve.",
-        "image": "11.png",
+        "image": "img_11.png",
         "rating": 4,
         "preptime": 420
-      },
-      {
+    },
+    {
         "ID": 12,
         "name": "Butternut Squash and Apple Soup",
-        "genre": ["Meal", "Western"],
+        "genre": [
+            "Meal",
+            "Western"
+        ],
         "description": "A creamy, delicious soup perfect for cold weather.",
         "ingredients": "['6 slices bacon, cut crosswise into .5-inch pieces', '2 celery ribs, chopped', '1 carrot, chopped', '1 medium onion, chopped', '.25 teaspoon cinnamon', '.75 pound boiling potatoes', '2 medium Granny Smith apples (about .75 pound total)', '1 .5 pounds butternut squash, peeled, seeded, and cut into .5-inch pieces (3.5 to 4 cups)', '2 cups reduced-sodium chicken stock or broth', '2 to 2.5 cups water', 'Sour cream']",
         "instructions": "Cook bacon in a 6-quart heavy pot over medium heat, stirring occasionally, until crisp, then transfer with a slotted spoon to paper towels to drain, reserving 2 tablespoons fat in pot. (Add vegetable oil if your bacon is very lean and doesn't yield enough fat.)\nCook celery, carrot, and onion in fat in pot over low heat, covered, stirring occasionally, until softened but not browned, 10 to 12 minutes. Add cinnamon and cook, uncovered, stirring, 1 minute.\nWhile vegetables are cooking, peel potatoes and coarsely chop. Peel and core 1 apple and coarsely chop.\nStir squash, potato, chopped apple, stock, 2 cups water, 1 teaspoon salt and 1/2 teaspoon pepper into onion mixture, then simmer, uncovered, stirring occasionally, until vegetables are very tender, 15 to 20 minutes.\nPuree soup in 4 batches in a blender (use caution when blending hot liquids), then heat in cleaned pot over medium low heat, stirring occasionally. (Add additional 1/2 cup water to thin, if necessary.)\nWhile soup is heating, cut enough of remaining apple into thin matchsticks (about 1 1/2-inches long) to measure about 1/2 cup.\nServe soup topped with sour cream, bacon, and apple matchsticks.\nCooks' Notes: Soup can be made 2 days ahead and chilled, covered once cooled. Cooked bacon can be kept refrigerated in an airtight containerreheat in a 375F oven in a small baking pan.",
-        "image": "12.png",
+        "image": "img_12.png",
         "rating": 1,
         "preptime": 50
-      },
-      {
+    },
+    {
         "ID": 13,
         "name": "Caesar Salad Roast Chicken",
-        "genre": ["Meal", "Western"],
+        "genre": [
+            "Meal",
+            "Western"
+        ],
         "description": "A flavourful combination of two classic dishes.",
         "ingredients": "['8 anchovies, mashed to a paste', '8 garlic cloves, finely grated', '6 Tbsp. mayonnaise, divided', '1 Tbsp. Dijon mustard, plus more for serving', '2 Tbsp. extra-virgin olive oil, divided', '1.5 tsp. freshly ground black pepper, plus more', '1 (3.54-lb.) whole chicken or 4 chicken legs (thigh and drumstick; about 3 lb.)', 'Kosher salt', '8 medium shallots, unpeeled, halved lengthwise', '2 lemons, divided', '1 oz. Parmesan, finely grated', '4 oz. country-style bread, torn into (1.5\") pieces', '2 romaine hearts, leaves separated, torn']",
         "instructions": "Place a rack in lower third of oven; preheat to 450F. Whisk anchovies, garlic, 3 Tbsp. mayonnaise, 1 Tbsp. mustard, 1 Tbsp. oil, and 1.5 tsp. pepper in a small bowl. Set aside 1 Tbsp. anchovy mayo in another small bowl.\nPat chicken dry; season outside and inside all over with salt. Arrange breast side up in a cast-iron skillet and tuck wings underneath. Arrange shallots around (if using legs, nestle under and around); season with salt and pepper. Brush remaining anchovy mayo all over chicken, making sure to get it into the nooks and crannies, then brush shallots with any leftover anchovy mayo.\nPlace chicken in oven so legs are facing toward the back (this is the hottest part of the oven and will help the legs cook before the breast dries out) and roast until some anchovy mayo and fat begin to drip onto shallots, about 15 minutes. Remove from oven and, using tongs, turn shallots to coat in drippings. Return skillet to oven and continue to roast chicken, stirring shallots once or twice, until golden brown and an instant-read thermometer inserted into the thickest part of breast registers 155F, 4555 minutes. If skin starts to get too dark on the top before chicken is done, tent area with foil, leaving the rest of the bird exposed. If using chicken legs, start checking at 40 minutes (a thermometer inserted right at the joint should register 160F). Transfer chicken and shallots to a cutting board, leaving behind any juices and fat in skillet. If shallots need more time to soften and darken, roast a bit longer without chicken before proceeding. Reserve skillet.\nReduce oven temperature to 400F. Finely grate half of zest of 1 lemon into a large bowl; cut lemon in half and squeeze in juice. Add reserved 1 Tbsp. anchovy mayo, remaining 3 Tbsp. mayo, and remaining 1 Tbsp. oil and whisk to combine, then stir in Parmesan. Season with salt and pepper. Set dressing aside.\nAdd bread to reserved skillet with fat and turn to coat. Return skillet to oven and toast bread, tossing halfway through, until golden brown and crisp, 1215 minutes. Transfer croutons to bowl with reserved dressing. Add romaine and gently toss until lettuce is well coated. Season salad with salt and pepper.\nSlice remaining lemon into wedges. Carve chicken and nestle back into skillet or transfer to a platter; arrange shallots and lemon wedges around. Serve with salad and more mustard alongside.",
-        "image": "13.png",
+        "image": "img_13.png",
         "rating": 1,
         "preptime": 60
-      },
-      {
+    },
+    {
         "ID": 14,
         "name": "Chicken and Rice With Leeks and Salsa Verde",
-        "genre": ["Meal", "Western", "Mexican"],
+        "genre": [
+            "Meal",
+            "Western",
+            "Mexican"
+        ],
         "description": "A cozy and quick meal.",
         "ingredients": "['1.5 lb. skinless, boneless chicken thighs (48 depending on size)', 'Kosher salt, freshly ground pepper', '3 Tbsp. unsalted butter, divided', '2 large or 3 medium leeks, white and pale green parts only, halved lengthwise, thinly sliced', 'Zest and juice of 1 lemon, divided', '1.5 cups long-grain white rice, rinsed until water runs clear', '2.75 cups low-sodium chicken broth', '1 oil-packed anchovy fillet', '2 garlic cloves', '1 Tbsp. drained capers', 'Crushed red pepper flakes', '1 cup tender herb leaves (such as parsley, cilantro, and/or mint)', '45 Tbsp. extra-virgin olive oil']",
         "instructions": "Season chicken with salt and pepper. Melt 2 Tbsp. butter in a large high-sided skillet over medium-high heat. Add leeks and half of lemon zest, season with salt and pepper, and mix to coat leeks in butter. Reduce heat to medium-low, cover, and cook, stirring occasionally, until leeks are somewhat tender, about 5 minutes. Remove lid, increase heat to medium-high, and cook, stirring occasionally, until tender and just starting to take on color, about 3 minutes. Add rice and cook, stirring often, 3 minutes, then add broth, scraping up any browned bits. Tuck short sides of each chicken thigh underneath so they are touching and nestle seam side down into rice mixture. Bring to a simmer. Cover, reduce heat to medium-low, and cook until rice is tender and chicken is cooked through, about 20 minutes. Remove from heat. Cut remaining 1 Tbsp. butter into small pieces and scatter over mixture. Re-cover and let sit 10 minutes.\nMeanwhile, pulse anchovy, garlic, capers, a few pinches of red pepper flakes, and remaining lemon zest in a food processor until finely chopped. Add herbs; process until a paste forms. With motor running, gradually stream in oil until loosened to a thick sauce. Add half of lemon juice; season salsa verde with salt.\nDrizzle remaining lemon juice over chicken and rice. Serve with salsa verde.",
-        "image": "14.png",
+        "image": "img_14.png",
         "rating": 5,
         "preptime": 40
-      },
-      {
+    },
+    {
         "ID": 15,
         "name": "Gorditas con Camarones",
-        "genre": ["Meal", "Mexican"],
+        "genre": [
+            "Meal",
+            "Mexican"
+        ],
         "description": "Corn patties with shrimp filling.",
         "ingredients": "['1 cups instant corn masa flour (such as Maseca)', '5 Tbsp. lard, melted, or vegetable oil, divided', '2.5 tsp. Diamond Crystal or 1.5 tsp. Morton kosher salt, divided, plus more', '4 guajillo or dried New Mexico chiles, stems and seeds removed', '2 morita chiles, stems removed, or 2 canned chipotle chiles in adobo', '1 tsp. ground coriander or cumin', '1.5 lb. medium shrimp, peeled, deveined', '4 garlic cloves, thinly sliced', '2 sprigs thyme', '1 Tbsp. apple cider vinegar', '1 tsp. agave syrup or honey', '3 Tbsp. unsalted butter, cut into pieces', 'Sliced onion, sliced avocado, cilantro leaves with tender stems, and lime wedges (for serving)']",
         "instructions": "Stir masa, 1 Tbsp. lard, 1 tsp. Diamond Crystal or .5 tsp. Morton salt, and 1 cup water in a medium bowl until a soft and slightly sticky dough forms. If dry, mix in another 1 Tbsp. water. Cover and let sit at least 30 minutes and up to 3 hours.\nMeanwhile, bring guajillo chiles, morita chiles, coriander, and 1.5 cups water to a boil in a small saucepan. Cover, remove from heat, and let sit, stirring occasionally, 30 minutes to allow chiles to soften. Transfer to a blender and puree until smooth; set aside.\nPlace rack in lowest position in oven; preheat to 500F. Brush a rimmed baking sheet with 2 Tbsp. lard. Divide dough into 4 pieces and form into balls. Set on work surface and cover with a damp kitchen towel. Place 1 ball between 2 sheets of parchment or wax paper. Using a small skillet or saucepan, gently press ball into a 5\"-diameter disk. Carefully peel away parchment; place on prepared baking sheet. Repeat with remaining balls.\nBake gorditas until outer edges are lightly golden, 1012 minutes. Turn over and bake until golden brown and crisp, 1012 minutes. Transfer to plates and let cool 10 minutes. Insert a paring knife into side of gordita and, using a slow sawing motion, cut open along one side (keep other side intact).\nHeat remaining 2 Tbsp. lard in a large skillet over high. Cook shrimp until lightly browned and just cooked through, about 1 minute per side. Transfer to a medium bowl. Reduce heat to medium and cook garlic in same skillet, tossing often, until beginning to brown, about 1 minute. Add thyme sprigs, vinegar, agave, 1.5 tsp. Diamond Crystal or 1 tsp. Morton kosher salt, and reserved chile puree. Cook, stirring occasionally, until brick red and the consistency of a thick sauce, 68 minutes. Add shrimp and any juices and cook 1 minute. Remove from heat; add butter and stir constantly until melted and sauce is glossy. Season with more salt if needed. Remove and discard thyme.\nFill gorditas with shrimp mixture, onion, avocado, and cilantro. Serve with lime wedges for squeezing over.",
-        "image": "15.png",
+        "image": "img_15.png",
         "rating": 1,
         "preptime": 220
-      },
-      {
+    },
+    {
         "ID": 16,
         "name": "Enfrijoladas",
-        "genre": ["Meal", "Mexican"],
+        "genre": [
+            "Meal",
+            "Mexican"
+        ],
         "description": "Tortilla with refried beans.",
         "ingredients": "['5 Tbsp. vegetable oil, divided', '8 corn tortillas', '12 oz. fresh chorizo', '3 garlic cloves, crushed', '.5 medium white onion, thinly sliced, plus more for serving', 'Kosher salt', '2 (15-oz.) cans black beans, rinsed, or 3 cups Frijoles de la Olla, drained', '1.5 cups low-sodium chicken broth', '6 oz. queso fresco or Cotija cheese, crumbled', 'Cilantro leaves with tender stems and sliced avocado (for serving)']",
         "instructions": "Using 2 Tbsp. oil, brush both sides of each tortilla. Heat a large skillet over medium-high. Working in batches, cook until lightly browned and starting to crisp, about 1 minute per side. Set aside.\nHeat remaining 3 Tbsp. oil in same skillet over medium-high. Cook chorizo, breaking up with a wooden spoon, until browned and cooked through, 79 minutes. Using a slotted spoon, transfer to a medium bowl; set aside.\nAdd garlic and .5 onion to same skillet, season with salt, and cook, tossing occasionally, until tender and beginning to brown, 68 minutes. Using slotted spoon, transfer garlic mixture to a blender; reserve pan with oil. Add beans and broth to blender and puree until smooth (it should be the consistency of yogurt); season with salt.\nSet reserved pan over medium-high and heat oil. Transfer bean puree to skillet and bring to a boil. Reduce heat to low. Working one at a time and using tongs, dip tortillas in bean puree, turning to coat and leaving until softened, about 3 seconds per side (they will soften more as they sit). Transfer to a baking sheet as you go. Spoon 1 Tbsp. chorizo and 1 Tbsp. queso fresco across the center of each tortilla; fold over like a taco.\nDivide among plates and spoon remaining bean puree over. Top with cilantro, avocado, more onion, remaining chorizo, and remaining queso.",
-        "image": "16.png",
+        "image": "img_16.png",
         "rating": 3,
         "preptime": 40
-      },
-      {
+    },
+    {
         "ID": 17,
         "name": "Caramelized Plantain Parfait",
-        "genre": ["Dessert","Mexican"],
+        "genre": [
+            "Dessert",
+            "Mexican"
+        ],
         "description": "Sweet, soft, and custardy plantain dessert.",
         "ingredients": "['6 Tbsp. virgin coconut oil', '4 ripe (spotted) pltanos manzanos or 2 large ripe (black) plantains, peeled, sliced in half lengthwise', 'Kosher salt', '3 cups plain unsweetened coconut milk yogurt or Greek yogurt', '2 ripe mangoes, thinly sliced', 'Toasted nuts, seeds, and/or unsweetened shredded coconut (for serving)']",
         "instructions": "Heat oil in a large nonstick skillet over medium-high. Cook plantains, turning once, until deep golden brown, about 3 minutes per side. Transfer to paper towels to drain; season with salt.\nDivide yogurt among bowls; top with plantains and mangoes, then nuts, seeds, and/or coconut as desired.",
-        "image": "17.png",
+        "image": "img_17.png",
         "rating": 5,
         "preptime": 20
-      },
-      {
+    },
+    {
         "ID": 18,
         "name": "Chicken and Potato Gratin With Brown Butter Cream",
-        "genre": ["Meal", "Western"],
+        "genre": [
+            "Meal",
+            "Western"
+        ],
         "description": "A meal perfect for autumn.",
         "ingredients": "['3 lb. skin-on, bone-in chicken thighs and drumsticks', '7.5 tsp. kosher salt, divided', '1 lb. small potatoes (such as fingerling or baby Yukon Gold), halved lengthwise', '8 oz. small or medium shallots, halved through root ends', '5 Tbsp. unsalted butter, divided', '.75 cup heavy cream', '2 garlic cloves, finely grated', '.5 tsp. freshly ground black pepper', '.25 tsp. freshly grated or ground nutmeg', '8 sprigs thyme', '8 sage leaves', '3.5 oz. country-style bread, preferably day-old, torn into large pieces', '1 lemon, cut into wedges (optional)']",
         "instructions": "Season chicken all over with 4 tsp. salt. Place in an airtight container and cover. Chill at least 1 hour and up to 1 day.\nPlace a rack in middle of oven; preheat to 425F. Toss potatoes, shallots, and 2 tsp. salt in a large bowl.\nMelt 4 Tbsp. butter in a small saucepan over medium heat and cook, stirring often, until butter foams, then browns, 58 minutes. Immediately remove from heat (it will continue to darken) and stir in cream, garlic, pepper, nutmeg, and remaining 1.5 tsp. salt. Set saucepan over medium-low heat and cook, stirring, until salt is dissolved and mixture is warm to the touch. Stir in thyme and sage; remove from heat.\nHeat remaining 1 Tbsp. butter in a large stainless-steel skillet over medium-high until melted and bubbling. Working in 2 batches, cook chicken, skin side down, until golden underneath, about 5 minutes. Transfer chicken to a 13x9\" or 3-qt. baking dish and arrange skin side up. Set skillet with pan drippings aside. Nestle potatoes and shallots around chicken (dont place on top). Pour brown butter cream over chicken and vegetables, making sure herbs and spices are evenly dispersed and tucking herbs into vegetables so they dont get too crispy when they bake.\nBake gratin until cream is mostly reduced and chicken and vegetables are dark golden brown, about 40 minutes. Let gratin cool 510 minutes.\nMeanwhile, pulse bread in a food processor until pieces are about oat-size (you should have about 1.25 cups). Toss breadcrumbs in pan drippings in reserved skillet to coat. Cook over medium heat, scraping up browned bits with a spatula, until deep golden brown, 57 minutes. Let cool.\nTo serve, top gratin with breadcrumbs. Serve lemon wedges alongside for squeezing over if desired.",
-        "image": "18.png",
+        "image": "img_18.png",
         "rating": 2,
         "preptime": 75
-      },
-      {
+    },
+    {
         "ID": 19,
         "name": "Roasted Beets With Crispy Sunchokes and Pickled Orange-Ginger Puree",
-        "genre": ["Meal", "Western"],
+        "genre": [
+            "Meal",
+            "Western"
+        ],
         "description": "A colourful meal with lots of textural details",
         "ingredients": "['Strips of zest (no pith) from 1 medium orange', '2.5 ounces fresh ginger (about one 5-inch piece), peeled and thinly shaved (use a mandoline if you have one)', '.25 cup fresh lime juice', '.25 cup champagne vinegar', '.25 cup sugar', '2 tablespoons plus .75 teaspoon kosher salt', '2 tablespoons extra-virgin olive oil', '.5 Thai chile, with seeds', '1.5 pounds beets (use a mix of colors if possible), about 5 medium', '.25 cup extra-virgin olive oil', '.25 cup white wine vinegar', '.25 cup water', 'Kosher salt and freshly ground black pepper', '1 tablespoon extra-virgin olive oil', '.5 cup roughly chopped cashews', '4 large sunchokes, thinly shaved (use a mandoline if you have one)', 'Vegetable oil', 'Kosher salt', '1 medium orange', 'Roasted Beets', 'Extra-virgin olive oil', 'Kosher salt', '.25 cup Pickled Orange-Ginger Puree', 'Toasted Cashews', '1 tablespoon roughly chopped tarragon', '1 tablespoon roughly chopped dill fronds', 'Sunchoke Chips']",
         "instructions": "Place the zest strips in a small saucepan and cover with water. Bring the water to a boil, then drain. Repeat this process two more times (blanching the orange zest removes any bitter flavors). Place the ginger and orange zest in a jar or heatproof container. In a saucepan, bring the lime juice, vinegar, sugar, and .75 teaspoon salt to a boil. Pour over the ginger and orange. Let cool to room temperature, then cover and refrigerate overnight. The pickled ginger can be refrigerated for a couple of months.\nDrain the pickled ginger and orange and save 3 tablespoons of the pickling liquid. Add both to a blender or mini food processor, along with the olive oil, chile, and remaining 2 tablespoons salt. Blend until very smooth, scraping down the side of the blender as needed. Transfer to a container and refrigerate until ready to use. The puree can be made a couple of days ahead. (Makes about 1 cup.)\nPreheat the oven to 375F. Place the beets in a baking dish (if using a mix of red and golden beets, separate them into two smaller dishes and divide the oil, vinegar, and water between the two dishes). Drizzle with the oil and add the water and vinegar. Season with salt and pepper. Cover the pan with foil and roast until the beets are tender when pierced with a knife; this can take anywhere from 30 minutes to an hour, depending on the thickness of the beets. Let the beets cool, then peel and cut into 1-inch wedges. Place each color of beet, along with any accumulated juices, into a small mixing bowl.\nIn a skillet, heat the oil over medium-low heat. Add the cashews and cook, stirring constantly, until golden brown. Transfer to a heat-proof bowl.\nPour 1 inch of oil into a small saucepan and add the sunchokes (there should be just enough oil to cover the sunchokes; add more oil if needed). Turn the heat to medium and stir occasionally; when the sunchokes begin to sizzle and foam, increase the temperature to high and continue frying, stirring constantly, until the sunchokes are light golden brown. At this point the sunchokes will rapidly go from golden brown to burnt, so quickly transfer the chips to paper towels to drain. Lightly season with salt. The sunchoke chips can be stored in an airtight container at room temperature for a day or two, or until they start to soften. (Makes about .5 cup.)\nUsing a sharp knife, cut the peel and pith off the orange. Working over a bowl, cut the orange between the membranes to release the segments. Dice the segments, then return them to the bowl.\nDrizzle the beet wedges with a little bit of olive oil, season with salt, and toss.\nSpread the ginger puree on the bottom of a shallow serving bowl or plate. Arrange the beets over the puree. Sprinkle the chopped orange segments over the beets and grind some pepper over the dish. Top with the cashews, herbs, and sunchoke chips. Serve.",
-        "image": "19.png",
+        "image": "img_19.png",
         "rating": 3,
         "preptime": 300
-      },
-      {
+    },
+    {
         "ID": 20,
         "name": "Kale and Pumpkin Falafels With Pickled Carrot Slaw",
         "genre": [
-            "Meal", 
+            "Meal",
             "Middle-Eastern"
         ],
         "description": "Roasted falafels with a bright carrot slaw.",
         "ingredients": "['.75 cup (120g or 4.5 oz) toasted pepitas (pumpkin seeds)', '3 cups (90g or 3 oz) shredded kale, stems removed (about 3 large leaves)', '1 clove garlic, crushed', '1 (16 oz or 400g ) can chickpeas (garbanzo beans), rinsed, drained', '1.5 teaspoons ground turmeric', '.5 cup (6g or .25 oz) coriander (cilantro) leaves', 'Sea salt and cracked black pepper', '3 cups (450g or 1 lb) firmly packed grated pumpkin', 'Extra virgin olive oil, for brushing', 'Plain Greek-style yogurt and hulled tahini, to serve', '6 carrots, shredded using a julienne peeler', '2 tablespoons apple cider vinegar', '2 tablespoons honey', '2 large red chiles, sliced', '.5 cup (6g or .25 oz) coriander (cilantro) leaves']",
         "instructions": "Preheat oven to 220C (425F).\nPlace the pepitas into the bowl of a food processor and process until finely chopped. Add the kale, garlic, chickpeas, turmeric, coriander, salt and pepper and process until well combined. Add the pumpkin and stir through to combine. Shape large tablespoonfuls of pumpkin mixture into balls. Place on a baking tray lined with non-stick baking paper and flatten slightly. Brush well with oil, then bake for 25 minutes or until golden and crisp.\nTo make the pickled carrot slaw, place the carrots, vinegar, honey, chile and coriander in a bowl and toss to combine. Set aside for 5 minutes to pickle.\nTo serve, divide the pickled carrot slaw between bowls and top with pumpkin falafels and serve with yoghurt and tahini.",
-        "image": "20.png",
+        "image": "img_20.png",
         "rating": 2,
         "preptime": 60
-      },
-      {
+    },
+    {
         "ID": 21,
         "name": "Maple and Chile Roasted Squash With Quinoa Tabouli",
         "genre": [
-            "Meal", 
+            "Meal",
             "Middle-Eastern"
         ],
         "description": "Squash with a lemon-tahini dressing.",
         "ingredients": "['1 (2kg or 4 lb or 4 oz) butternut squash or 2 (1kg or 2 lb or 3 oz) butternut squash, halved', '2 tablespoons extra virgin olive oil', '1 tablespoon pure maple syrup', '1 teaspoon chile flakes', 'Sea salt and cracked black pepper', '1/4 cup (40g or 1 .5 oz) roasted almonds, chopped', '2 cups (320g or 11 .25 oz) cooked quinoa', '.5 cup (8g or .25 oz) torn mint leaves', '60g (2 oz) wild rocket (arugula) leaves', '.5 cup (140g or 5 oz) hulled tahini', ' cup (160ml or 5 .5 fl oz) lemon juice', '1 cup (250ml or 8 .5 fl oz) water', '1 clove garlic, crushed', 'Sea salt flakes']",
         "instructions": "Preheat oven to 220C (425F).\nScoop the seeds from the squash and discard. Place squash, cut side up, onto a baking tray. Using the tip of a sharp knife, make some shallow slashes into the squash flesh. Combine the oil, maple, chile, salt and pepper and brush over the squash. Cover with aluminium foil and roast for 20 minutes. Remove the foil and roast for a further 40 minutes or until the squash is golden and soft.\nTo make the quinoa tabouli, in a large bowl combine the quinoa, mint, and arugula.\nTo make the lemon tahini dressing, in a small bowl, place the tahini, lemon juice, water, garlic and salt. Mix to combine.\nTo serve, place the squash onto a serving platter and top with the tabouli. Drizzle with the lemon tahini dressing and sprinkle over almonds.",
-        "image": "21.png",
+        "image": "img_21.png",
         "rating": 4,
         "preptime": 45
-      },
-      {
+    },
+    {
         "ID": 22,
         "name": "Chhena Poda (Spiced Cheesecake)",
         "genre": [
-            "Dessert", 
+            "Dessert",
             "Indian"
         ],
         "description": "An Indian dessert made from roasted cheese.",
         "ingredients": "['Ghee, for the cake pan', '8 ounces paneer, preferably homemade', '.25 cup confectioners sugar', '.5 teaspoon ground cardamom', '2 tablespoons semolina', '1.5 tablespoons ghee, store-bought or homemade', '.25 cup whole milk', '2 tablespoons roasted cashews', '2 tablespoons golden raisins', '3 tablespoons granulated sugar', 'Freshly whipped cream or sliced almonds (optional), for serving']",
         "instructions": "Preheat the oven to 350F. Butter a 9-inch nonstick metal cake pan with some ghee.\nIn a large bowl, stir together the paneer, confectioners sugar, and cardamom until incorporated but still slightly chunky. Add the semolina, ghee, and milk and whisk until smooth. Stir in the cashews and raisins and set aside.\nSprinkle the granulated sugar over the bottom of the prepared cake pan. Set the pan on the stove over medium heat and once the sugar just begins to bubble and turn pale golden brown (the sugar will continue to caramelize in the oven, so dont let it get any darker right now), after 8 to 10 minutes, remove the pan from the heat using tongs. (This step is a bit tricky and you might be tempted to move the sugar around with a spoon while it is bubbling, but dont touch itjust let it caramelize on its own.) You will know its ready for the cake batter when its bubbling but is still slightly grainy and just turning a pale golden color. Pour the batter into the pan, using a rubber spatula to scrape the bowl clean. It should settle into an even layer on its own, but if it doesnt, use the spatula to create a smooth surface.\nWearing oven mitts, carefully transfer the pan to the oven and bake until a toothpick inserted into the center of the cake comes out clean, 40 to 45 minutes. Transfer to a wire rack and cool in the pan to room temperature. Run a paring knife around the cakes edges and then place a serving platter larger than the diameter of the cake over the cake and gently flip the cake overit should slide out, with caramel coming out with it like you would see in a flan (though some caramel will be left in the panthis is fine).\nSlice and serve with freshly whipped cream or sliced almonds, if desired. The cake will keep in a covered container in the refrigerator for up to 3 days.\nNote: To clean the pan, add some boiling water to the pan and let it sit for at least 30 minutes to loosen up the browned sugar sticking to the surface of the pan before cleaning it.",
-        "image": "22.png",
+        "image": "img_22.png",
         "rating": 5,
         "preptime": 60
-      },
-      {
+    },
+    {
         "ID": 23,
         "name": "Paneer",
         "genre": [
-            "Meal", 
-            "Appetizer", 
+            "Meal",
+            "Appetizer",
             "Indian"
         ],
         "description": "Indian cheese.",
         "ingredients": "['2 quarts whole milk', 'Juice of 2 lemons', '.5 teaspoon kosher salt']",
         "instructions": "In a medium saucepan, heat the milk to 195F over medium heat. Using a wooden spoon, stir frequently during the heating process to prevent the milk from scalding. Be sure to scrape the bottom of the pan when you stir because this is where the milk is most prone to sticking. The milk will become foamy and bubbles will form on its surface once it reaches the desired temperature.\nRemove from the heat and stir in the lemon juice until evenly distributed, which will cause the separation of curds from the whey. The process should begin right away, but dont fret if it takes a minute or two. Cover the pan and set aside at room temperature for 10 minutes to let the acid work its magic. Check the mixture at this point: It should be slightly yellow and the curds should have completely separated from the whey. Dont panic if this hasnt happened completely yet. Simply add another teaspoon of acid and set aside for a few minutes more. This should do the trick.\nLine a fine-mesh sieve with cheesecloth and set the sieve over a bowl. Ladle the curds and whey into the sieve. Reserve the whey for another use. Season the curds (still in the sieve) with salt, stirring it in using a wooden spoon, then gather up the edges of the cheesecloth into a tight bundle and squeeze the excess whey from the curds. Place the cheesecloth and curds on a large plate and shape them into a square. Wrap the cheesecloth edges around the paneer and place a second plate on top of it to compress it. Set aside at room temperature for 30 minutes. At this point the paneer is ready to use or it can be refrigerated in a covered container for up to 3 days.",
-        "image": "23.png",
+        "image": "img_23.png",
         "rating": 1,
         "preptime": 30
-      },
-      {
+    },
+    {
         "ID": 24,
         "name": "Sloppy Joe Shirred Eggs With Spinach",
         "genre": [
-            "Meal", 
+            "Meal",
             "Western"
         ],
         "description": "A hearty one-pan meal.",
         "ingredients": "['1 medium carrot, top removed and cut into about 6 pieces', '1 (14.5-ounce) can diced tomatoes, or 2 scant cups roughly chopped fresh tomatoes', '2 tablespoons extra virgin olive oil, divided', '3 garlic cloves, minced', '8 ounces fresh spinach (4 cups packed)', '3 teaspoons kosher salt, divided', '1 pound ground turkey', '2 teaspoons ground cumin', '1 teaspoon smoked paprika', '.5 teaspoon ground black pepper', '.5 cup R-Rated Onions', '2 tablespoons red wine vinegar', '4 large eggs Parmigiano Reggiano, for serving (optional)']",
         "instructions": "Preheat your oven to 400F. Combine the carrot, tomatoes plus their juice, and 1 cup water in a blender. Blitz till its as smooth as your blender allows.\nIn an ovenproof 12-inch saute pan or skillet set over medium heat, cook 1 tablespoon of the olive oil and the minced garlic. Watch for the garlic to start sizzling, then stir in the spinach and .5 teaspoon of the salt. Continue stirring for a minute, until all the spinach is wilted. Remove it from the pan and set aside.\nAdd the final tablespoon olive oil to the pan, raise the heat to medium, and add the turkey plus 1 teaspoon salt. Using a wooden spoon or spatula, break the turkey up into small morsels as it browns. When you have browned turkey, add the cumin, paprika, and black pepper. Stir to incorporate, toasting the spices for about 30 seconds.\nAdd the carrot-tomato mixture, the R-Rated Onions, vinegar, and .5 teaspoon salt. Let this cook for about 15 minutes, uncovered, stirring occasionally. You may need to lower the heat to prevent Joe from sticking or splattering. When the ragout is done it will be thick and juicy. If it seems too dry, stir in a little water. Taste the ragout for seasoning and adjust as you like.\nTurn the heat off and make four indentions in the ragout. Divide the spinach and put equal amounts in each indentation. Top each section of spinach with a cracked egg. Sprinkle the eggs with the remaining 1 teaspoon salt.\nSlide the skillet onto the middle rack of your preheated oven. Bake for 10 to 12 minutes, until the whites are set and the yolks are slightly runny.\nTo serve, scatter ribbons of Parmigiano Reggiano or another hard cheese over the top. If bread is your thing, this is great with toast.",
-        "image": "24.png",
+        "image": "img_24.png",
         "rating": 2,
         "preptime": 45
-      },
-      {
-      "ID": 25,
-      "name": "R-Rated Onions",
-      "genre": [
-          "Appetizer", 
-          "Western"
-      ],
-      "description": "Caramelized onions but better.",
-      "ingredients": "['4-5 large or 6-8 medium yellow or white onions', '1 Tbsp olive or vegetable oil', '1 tsp kosher salt']",
-      "instructions": "Peel your onions and cut them in half through their stem endslongways, if you will. Slice them thinly with the grain, following the line from root to stem rather than cutting the onion across its belly. This is actually important because slicing it the other way makes the path to silky onions a longer one.\nOnce your onions are sliced, heat your skillet over medium-high heat and add the oil, then the onions and the salt. Let the onions sizzle for a couple minutes. Stir with a wooden spoon or a heatproof spatula and watch as they wilt for about 3 more minutes. At this point, reduce the heat to medium low. Put a lid on and step away for a few minutes. Give the onions a stir every now and then. You dont have to stand over it like risotto, but dont go for a walk around the block either. Caramelized bits will accumulate at the bottom and sides of the pan, and thats good. Just scrape them up and stir them in. A little color building as you go is okay, but dont rush to brown them. The point is to cook the onions gently, coaxing them through stages of raw, wilted, sweaty, soft, light brown, and finally deeply caramelized\nAbout 45 minutes in, remove the lid for the last time. They should be a light caramel color. Now, with the lid off, you will need to watch more closely and stir more frequently. At some point you may find that despite your best efforts some of the caramelized bits, verging on burnt, cling to the pan and threaten over all onion ruin. Do not fret! Just add a .5 cup or so of water and use its energy to help scrape up the stubborn but tasty film. Let the water cook out of course. When youre smiling over a soft, creamy, fragrant pile of mahogany onions, youre done.\nNote: R-Rated Onions will keep in the fridge for a week and in the freezer for 3 months.",
-      "image": "25.png",
+    },
+    {
+        "ID": 25,
+        "name": "R-Rated Onions",
+        "genre": [
+            "Appetizer",
+            "Western"
+        ],
+        "description": "Caramelized onions but better.",
+        "ingredients": "['4-5 large or 6-8 medium yellow or white onions', '1 Tbsp olive or vegetable oil', '1 tsp kosher salt']",
+        "instructions": "Peel your onions and cut them in half through their stem endslongways, if you will. Slice them thinly with the grain, following the line from root to stem rather than cutting the onion across its belly. This is actually important because slicing it the other way makes the path to silky onions a longer one.\nOnce your onions are sliced, heat your skillet over medium-high heat and add the oil, then the onions and the salt. Let the onions sizzle for a couple minutes. Stir with a wooden spoon or a heatproof spatula and watch as they wilt for about 3 more minutes. At this point, reduce the heat to medium low. Put a lid on and step away for a few minutes. Give the onions a stir every now and then. You dont have to stand over it like risotto, but dont go for a walk around the block either. Caramelized bits will accumulate at the bottom and sides of the pan, and thats good. Just scrape them up and stir them in. A little color building as you go is okay, but dont rush to brown them. The point is to cook the onions gently, coaxing them through stages of raw, wilted, sweaty, soft, light brown, and finally deeply caramelized\nAbout 45 minutes in, remove the lid for the last time. They should be a light caramel color. Now, with the lid off, you will need to watch more closely and stir more frequently. At some point you may find that despite your best efforts some of the caramelized bits, verging on burnt, cling to the pan and threaten over all onion ruin. Do not fret! Just add a .5 cup or so of water and use its energy to help scrape up the stubborn but tasty film. Let the water cook out of course. When youre smiling over a soft, creamy, fragrant pile of mahogany onions, youre done.\nNote: R-Rated Onions will keep in the fridge for a week and in the freezer for 3 months.",
+        "image": "img_25.png",
         "rating": 4,
         "preptime": 75
     },
