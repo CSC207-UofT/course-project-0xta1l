@@ -694,10 +694,13 @@
             "Dessert",
             "Western"
         ],
+        "description": "A hearty and flavourful roasted squash.",
         "ingredients": "['3 acorn squash, unpeeled, halved through the stem, and seeded', '3 tablespoons unsalted butter, diced', '3 tablespoons pure maple syrup, plus extra for serving', 'Good olive oil', 'Kosher salt and freshly ground black pepper', 'Flaked sea salt, such as Maldon, for serving']",
         "instructions": "Preheat the oven to 350F.\nPlace the squash, cut sides up, on a sheet pan. Place .5 tablespoon butter and .5 tablespoon maple syrup in the cavity of each squash. Brush the cut sides with olive oil and sprinkle the squash with 3 teaspoons kosher salt and 1 teaspoon pepper. Roast for 40 to 60 minutes, depending on the size of the squash, until tender when pierced with a small knife.\nPlace the squash on a serving platter. If the halves are too large for one serving, cut each piece in half through the stem. Drizzle lightly with extra maple syrup, sprinkle with sea salt, and serve hot.\nAcorn squash is hard to cut. To halve a whole squash, plunge the blade of a large chefs knife into the side of the squash as far as it will go. Holding the handle of the knife, bang the squash (with the knife in it) on the board until the blade cuts all the way through.",
         "image": "img_52.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 90
+        
     },
     {
         "ID": 53,
@@ -706,10 +709,12 @@
             "Meal",
             "Thai"
         ],
+        "description": "A creamy coconut delight.",
         "ingredients": "['2 Tbsp. extra-virgin olive oil', '1 serrano chile or jalapeo, thinly sliced', '1 (3\") piece fresh ginger, peeled, cut into matchsticks', '4 garlic cloves, thinly sliced', '2 scallions, thinly sliced, plus more for serving', '.5 tsp. ground turmeric', '4 ears of corn, shucked, kernels removed', '1 cup cooked grains (such as freekeh, farro, or quinoa)', '1 cup unsweetened coconut milk, plus more for serving', 'Kosher salt', '4 Tbsp. store-bought crispy onions or shallots (such as Lars Own, Frenchs, or Maesri)', 'Lime wedges (for serving)']",
         "instructions": "Heat oil in a large nonstick skillet over medium. Cook chile, ginger, garlic, and 2 sliced scallions, tossing, until softened and fragrant, about 3 minutes. Add turmeric and cook, stirring frequently, just until darkened and fragrant, about 30 seconds. Add corn and increase heat to medium-high. Cook, tossing occasionally, until corn is beginning to lightly brown, about 5 minutes.\nAdd grains to skillet and cook, tossing often, until heated through and beginning to crisp around the edges, about 2 minutes. Add .5 cup coconut milk; season with salt. Bring to a simmer and cook, adding 12 Tbsp. water if needed to loosen, until flavors have come together, about 3 minutes.\nDivide corn mixture between plates or shallow bowls and drizzle with more coconut milk. Top with crispy onions and more scallion. Serve with lime wedges for squeezing over.",
         "image": "img_53.png",
-        "rating": 2
+        "rating": 2,
+        "preptime": 9
     },
     {
         "ID": 54,
@@ -718,10 +723,12 @@
             "Meal",
             "Western"
         ],
+        "description": "For tomato and pie lovers.",
         "ingredients": "['2.5 pounds mixed heirloom tomatoes, cored, sliced (.25\") thick', '3 tablespoons extra-virgin olive oil', '.75 teaspoon kosher salt, divided, plus more', '.25 teaspoon freshly ground black pepper, plus more', '6 garlic cloves, peeled', '.5 cup (1 stick) unsalted butter', '9 ounces Stoned Wheat Thins or other whole grain crackers', '2 large eggs', '10 ounces Taleggio cheese, rind removed, coarsely grated (about 1.5 cups)', '2.5 ounces finely crumbled Parmesan (about .5 cup)', '.5 cup mayonnaise', '1 tablespoon chopped thyme, plus .5 teaspoon leaves', '1 small shallot, thinly sliced', 'Special Equipment: A (9\"-diameter) springform pan']",
         "instructions": "Place a rack in middle of oven; preheat to 475F. Arrange tomatoes on a rimmed baking sheet, covering entire surface (its okay if they overlap). Drizzle with oil; season with salt and pepper. Roast until tomatoes begin to look dry on top, 2530 minutes. Let cool.\nMeanwhile, cook garlic and butter in a small saucepan over medium-low heat, swirling often, until butter foams and milk solids turn golden, 57 minutes. Strain garlic butter through a fine-mesh sieve into a heatproof measuring cup; transfer garlic and toasty bits to a cutting board. Finely chop and set aside.\nReduce oven temperature to 375F. Pulse crackers and .25 tsp. salt in a food processor until fine crumbs form (you should have about 2 cups). Add eggs and 6 Tbsp. garlic butter and pulse until mixture is the consistency of wet sand; set remaining garlic butter aside. Transfer to springform pan. Using a flat-bottomed measuring cup, press crumbs firmly onto bottom and 1.5\" up sides of pan. Bake crust until edge is just starting to take on color, 810 minutes. Transfer pan to a wire rack and let crust cool.\nMix Taleggio, Parmesan, mayonnaise, chopped thyme, remaining .5 tsp. salt, remaining .25 tsp. pepper, and reserved chopped garlic in a medium bowl. Gently dollop half of cheese mixture over bottom of crust, then spread into an even layer with an offset spatula (dont press too hard or you will break the crust). Layer half of tomato slices over and press down to even out layers. Repeat with remaining cheese mixture and tomatoes. Brush remaining garlic butter over tomatoes. Top with shallot and thyme leaves.\nSet pan on a rimmed baking sheet and bake pie until filling is bubbling vigorously and crust is browned, 6075 minutes. Transfer to rack and let cool 1 hour before serving.\nDo Ahead: Pie can be made 1 day ahead. Cover loosely and chill.",
         "image": "img_54.png",
-        "rating": 3
+        "rating": 3,
+        "preptime": 80
     },
     {
         "ID": 55,
@@ -730,22 +737,27 @@
             "Dessert",
             "Indian"
         ],
+        "description": "A lovely meal for your family.",
         "ingredients": "['6 scallions, thinly sliced', '1 (1\") piece ginger, scrubbed, cut into matchsticks', '2 garlic cloves, thinly sliced', '1 tsp. coriander seeds', '1 tsp. cumin seeds', '.5 tsp. black mustard seeds', '.5 tsp. Kashmiri chile powder or .25 tsp. cayenne powder', '.25 tsp. ground turmeric', '3 Tbsp. extra-virgin olive oil, divided', '8 oz. paneer, sliced into (.25\"-thick) planks, patted dry', 'Kosher salt', '12 oz. cherry tomatoes (about 2 cups)', '4 oz. sugar snap peas (about 1 cup), strings removed, halved on a diagonal if large', 'Pinch of sugar (optional)', '.5 cup (lightly packed) mint leaves', 'Cooked rice (for serving)']",
         "instructions": "Toss scallions, ginger, and garlic in a medium bowl to combine. Using a mortar and pestle or the side of a chefs knife, coarsely crush coriander seeds and add to vegetables along with cumin seeds, black mustard seeds, chile powder and turmeric; set aside.\nHeat 2 Tbsp. extra-virgin olive oil in a large skillet over medium-high. Arrange paneer in a single layer in pan and cook until golden brown underneath, about 1 minute. (If paneer is sticking, just give cheese a little more time to brown. It will release from pan once it is sufficiently crisped.) Using a slotted spatula or spoon, transfer paneer to a plate, leaving as much oil behind in pan as possible. Turn browned side up and season generously with salt.\nReduce heat to medium and add remaining 1 Tbsp. oil to same skillet. Cook reserved scallion mixture, stirring often, until scallions are wilted and mustard seeds begin to pop, about 2 minutes.\nAdd tomatoes, sugar snap peas, and 1 cup water to skillet and season with salt. Increase heat to medium-high and bring to a simmer. Gently smash each tomato open with a spatula (you just want to break them open a little) and simmer until tomato juices thicken slightly, about 3 minutes (it should still be pretty brothy and light). Taste sauce and add more salt if needed. If your tomatoes arent super sweet, you may need to add a pinch of sugar at this point to balance their acidity. Add paneer back to pan and simmer until warmed through.\nRemove pan from heat and toss in mint. Serve with cooked rice.",
         "image": "img_55.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 80
     },
     {
         "ID": 56,
         "name": "Sesame-Scallion Chicken Salad",
         "genre": [
             "Meal",
-            "Western"
+            "Western",
+            "Appetizer"
         ],
+        "description": "Quick and delicious appetizer.",
         "ingredients": "['2 skinless, boneless chicken breasts (11.5 lb. total)', '3 Tbsp. kosher salt, plus more', '3 scallions, thinly sliced on a deep diagonal', '3 Persian cucumbers', '.5 cup toasted sesame seeds, divided', '2 Tbsp. fresh lime juice', '2 Tbsp. tahini', '1 Tbsp. soy sauce', '1 tsp. honey', '.25 tsp. crushed red pepper flakes', '.25 head of romaine or green or red leaf lettuce or 1 head of Little Gem lettuce', 'Big handful of cilantro leaves with tender stems', '.5 lime (for serving)']",
         "instructions": "Bring chicken, 3 Tbsp. kosher salt, and 5 cups water to a bare simmer in a medium pot over medium heat (chicken should be submerged). Be patientthis will take a little while. Once liquid begins to simmer, reduce heat to low and cook (water should not be simmering at all now) until juices run clear when thickest part of chicken is pierced, 810 minutes. Transfer chicken to a medium bowl; discard poaching liquid. Let chicken sit until cool enough to handle, then shred meat into big pieces; set aside.\nMeanwhile, place scallions in a small bowl and pour in very cold water to cover; let soak 10 minutes.\nDrain scallions in a mesh sieve or colander, then rinse under cold running water, swishing vigorously to rinse and to encourage them to curl up. Shake off as much water as possible and place in a large bowl; set aside.\nWorking one at a time, slice cucumbers in half crosswise, then slice each piece in half lengthwise. Place quarters cut side down and slice in half lengthwise again to create 8 pieces total per cucumber. Add to bowl with reserved chicken.\nSet 1 Tbsp. sesame seeds aside in a small bowl for serving. Crush remaining sesame seeds in a mortar and pestle until some of the seeds have turned to powder, but with plenty of whole seeds left. (Alternatively, you can pulse seeds a few times in a food processor or spice mill, then transfer to a medium bowl before proceeding). Add lime juice, tahini, soy sauce, honey, and red pepper flakes and mash to create a paste. Add .25 cup water and whisk to combine (if you dont have a small enough whisk, work in with the pestle). Taste and season with salt.\nAdd lettuce and cilantro to bowl with reserved scallions. Pour half of dressing over and toss to coat. Arrange on a platter. Pour remaining dressing over chicken and cucumbers, toss to coat, and arrange over greens. Top salad with reserved 1 Tbsp. sesame seeds and squeeze juice from lime half over.",
         "image": "img_56.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 8
     },
     {
         "ID": 57,
@@ -754,10 +766,12 @@
             "Meal",
             "Western"
         ],
+        "description": "A hearty chicken delight with maple flavor.",
         "ingredients": "['2 Tbsp. extra-virgin olive oil', '3 garlic cloves, crushed', '6 Tbsp. double-concentrated tomato paste', '.5 cup pure maple syrup', '.25 cup soy sauce', '.25 cup Worcestershire sauce', '2 Tbsp. unseasoned rice vinegar', '4 tsp. Sriracha or other hot sauce', 'Vegetable oil (for grill)', '1 (3.54-lb.) whole chicken, cut into 68 pieces, or whatever bone-in cut of chicken you feel like cooking', 'Kosher salt']",
         "instructions": "Heat olive oil in a small saucepan over medium. Cook garlic, turning occasionally, until golden brown, about 4 minutes. Add tomato paste and cook, stirring constantly and scraping bottom of pan, until slightly darkened, about 3 minutes. Add maple syrup, soy sauce, Worcestershire sauce, vinegar, and Sriracha. Bring to a boil, then reduce heat to medium-low and simmer until flavors have come together, about 1 minute. Remove from heat. Transfer about half of barbecue sauce to a heatproof bowl and set aside for serving.\nPrepare a grill for medium-high indirect heat (for a charcoal grill, bank coals on one side of grill; for a gas grill, leave one or two burners off); oil grate. Season chicken generously with salt. Grill chicken over direct heat, turning every minute, until browned on all sides, about 5 minutes. Move chicken over indirect heat. Cover, positioning vent (if your grill has one) over chicken, and continue to grill, keeping grill covered as much as possible and turning every 5 minutes or so, until an instant-read thermometer inserted into thickest part registers 140F145F, 1825 minutes depending on the size of the pieces. Baste chicken with barbecue sauce and grill, turning and basting occasionally, until an instant-read thermometer inserted into thickest part registers 160F for breast and 165F for dark meat, about 10 minutes longer.\nArrange chicken on a platter. Serve with reserved barbecue sauce alongside.\nDo Ahead: Barbecue sauce can be made 2 weeks ahead. Transfer to an airtight container; cover and chill.",
         "image": "img_57.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 90
     },
     {
         "ID": 58,
@@ -767,10 +781,12 @@
             "Italian",
             "Western"
         ],
+        "description": "A wonderful lamb recipe with a yogurt twist.",
         "ingredients": "['3 large egg yolks', '2 cups kefir (cultured milk) or plain whole-milk yogurt', '3 cups (lightly packed) dill fronds with tender stems (about 1 large bunch), divided', '3 garlic cloves, divided', '3 Tbsp. unsalted butter', '.5 cup pine nuts or slivered almonds', '.5 cup dried currants or raisins', '1 tsp. kosher salt, plus more', '1 Tbsp. ground cumin', '1.5 tsp. freshly ground black pepper', '1 lb. ground lamb', '1 lb. orecchiette or other short pasta', '.5 lemon']",
         "instructions": "Combine egg yolks, kefir, and 1.5 cups dill in a blender; finely grate in 1 garlic clove and blend until smooth. Set puree aside. Finely chop remaining 1.5 cups dill and set aside separately.\nMelt butter over medium heat in a large skillet. Add pine nuts and cook, stirring often, until golden brown, about 2 minutes. Add dried currants and cook, stirring often, until plump, about 1 minute. Scrape nut mixture into a small bowl; season with salt.\nWipe out skillet and heat over medium-high. Stir together cumin, pepper, and 1 tsp. salt in a small bowl. Place lamb in pan and use a sturdy spatula to aggressively flatten (like youre making smash burgers); sprinkle spice mixture over. Cook, undisturbed, until lamb is well browned and crisp underneath, about 4 minutes. Hold back meat and drain off all of the fat. Break up meat into small pieces and mix in reserved nut mixture. Finely grate in remaining 2 garlic cloves and add reserved chopped dill. Cook, stirring, until herbs are wilted, about 1 minute. Set aside until pasta is ready.\nMeanwhile, cook pasta in a large pot of boiling salted water, stirring occasionally, until 1 minute shy of al dente (pasta will finish cooking in the sauce). Drain pasta and return to pot.\nPour reserved puree over pasta and set over medium heat. Cook, stirring constantly, until sauce thickens enough to cling to pasta and just comes to a simmer, about 3 minutes. Remove from heat; finely grate zest from lemon half over pasta, then squeeze in juice. Season with salt.\nDivide pasta among bowls and top with lamb mixture.",
         "image": "img_58.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 90
     },
     {
         "ID": 59,
@@ -779,10 +795,12 @@
             "Meal",
             "Western"
         ],
+        "description": "What is better than this amazing fish dish?",
         "ingredients": "['1 cup short-grain sushi rice', '8 scallions', '1 (1\") piece ginger, peeled, finely grated', '3 Tbsp. vegetable oil, divided', '1.5 lb. skinless, boneless cod, cut into 2 pieces', 'Kosher salt', '2 tsp. freshly ground black pepper', '1 Tbsp. unseasoned rice vinegar', '1 tsp. sugar', '2 Tbsp. unsalted butter, cut into pieces']",
         "instructions": "Rinse rice in several changes of cold water in a medium bowl until water runs clear. Drain well, then transfer to a small saucepan. Pour in 1.25 cups cold water and bring to a boil over medium-high heat. Give rice a stir so grains dont stick to the bottom. Cover pot and reduce heat to lowest setting. Cook, undisturbed, until water is evaporated and rice is tender, 1820 minutes. Remove from heat and let sit, still covered, 10 minutes.\nMeanwhile, trim dark green tops from scallions and thinly slice; set aside. Thinly slice white and pale green parts of scallions of a deep diagonal. Set aside separately.\nMix ginger and 2 Tbsp. oil in a medium bowl. Add cod and season with salt and sprinkle all over with pepper. Toss to coat.\nHeat remaining 1 Tbsp. oil in a large nonstick skillet over medium-high. Cook cod, undisturbed, until golden underneath, about 2 minutes. Turn over and scatter reserved white and pale green scallion parts on top. Cook, shaking the pan a few times, until fish is cooked through and some scallions are caramelized and some are just slightly softened, about 2 minutes. Remove from heat.\nStir vinegar and sugar in a small bowl until sugar dissolves. Mix into rice. Add butter and reserved dark green scallion tops and gently stir until butter is melted. Season with salt.\nTransfer rice to a platter and top with fish; pour any pan juices over.",
         "image": "img_59.png",
-        "rating": 3
+        "rating": 3,
+        "preptime": 40
     },
     {
         "ID": 60,
@@ -791,10 +809,12 @@
             "Meal",
             "Western"
         ],
+        "description": "A quick, simple yet delicious salmon burger recipe.",
         "ingredients": "['1.5 lb. boneless, skinless center-cut salmon, patted dry, cut into 2\" pieces', '5 scallions', '1 (1\") piece ginger, peeled, finely grated', '1 garlic clove, finely grated', '2 tablespoons plus  cup mayonnaise', '1 tsp. kosher salt, plus more', '1 tsp. toasted sesame oil', '4 tsp. unseasoned rice vinegar, divided', '3 medium Persian cucumbers, shaved lengthwise', '.5 serrano chile, very thinly sliced', '1 tsp. sugar', '.25 cup (or more) vegetable oil', '.5 cup rice flour', '2 cups tender herbs (such as mint and/or cilantro)', '.75 cup trimmed watercress', '2 tsp. toasted sesame seeds (optional)', '4 brioche buns, lightly toasted']",
         "instructions": "Process one third of salmon (about 8 oz.) in a food processor, scraping down sides as needed, until very smooth and paste-like. Add remaining salmon and pulse until pieces are no bigger than .25,\" 45 times (be careful not to make it too smooth). Transfer to a large bowl.\nRemove dark green tops from scallions and finely chop. Thinly slice white and pale green parts and set aside. Add chopped scallion greens, ginger, garlic, 2 Tbsp. mayonnaise, and 1 tsp. salt to salmon and gently mix to combine. Form mixture into 4 patties about .75\" thick. Transfer to a parchment-lined rimmed baking sheet and cover with plastic wrap. Chill at least 1 hour or up to 3 hours.\nMeanwhile, mix sesame oil, 1 tsp. vinegar, remaining  cup mayonnaise, and a pinch of salt in a small bowl; set aside.\nToss cucumbers with a pinch of salt in another small bowl. Massage with your hands for a few minutes to soften and expel liquid; discard liquid. Add chile, sugar, and 2 tsp. vinegar and toss to coat. Cover and chill pickles until ready to assemble burgers.\nHeat vegetable oil in a large nonstick skillet over medium-high. Remove salmon patties from refrigerator and sprinkle with flour just to coat the outside (you wont need all of it). The patties will be a little loose but you can always pat them back together with your hands before they hit the pan. Working in batches and adding more oil in between batches if needed, cook patties until golden brown, about 3 minutes per side (watch carefully; you dont want to overcook).\nToss herbs, watercress, sesame seeds (if using), reserved white and pale green parts of scallions, remaining 1 tsp. vinegar, and a pinch of salt in a medium bowl. Build burgers with buns, patties, herb mixture, pickles, and reserved sauce.",
         "image": "img_60.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 10
     },
     {
         "ID": 61,
@@ -803,10 +823,12 @@
             "Meal",
             "Mexican"
         ],
+        "description": "Taco about this amazing taco recipe!",
         "ingredients": "['10 guajillo chiles, seeds removed', '3 morita chiles, seeds removed', '3 lb. skinless striped bass or halibut fillets, cut crosswise into (1.5\"-wide) pieces', '.5 cup fresh orange juice', '.25 cup store-bought or homemade achiote paste', '5 garlic cloves, 4 whole, 1 finely chopped', '.25 cup plus 3 Tbsp. fresh lime juice', '1 Tbsp. plus 1.5 tsp. kosher salt', '.5 red onion, finely chopped', '1 habanero chile, finely chopped', '2 cups finely chopped pineapple (from about .5 medium pineapple)', '3 Tbsp. chopped cilantro, plus leaves for serving', 'Vegetable oil (for grill)', '16 corn tortillas', 'Lime wedges (for serving)']",
         "instructions": "Bring guajillo and morita chiles and 1.5 cups water to a boil in a medium saucepan. Cover, remove from heat, and let sit 30 minutes to allow chiles to soften.\nPlace fish in a large bowl or baking dish. Transfer chile mixture and soaking liquid to a blender. Add orange juice, achiote paste, 4 garlic cloves, .25 cup lime juice, and 1 Tbsp. salt and puree until smooth, about 2 minutes. Set aside 1 cup chile sauce, uncovered, at room temperature for serving. Pour remaining sauce over fish and toss to coat. Cover and chill at least 1 hour and up to 3 hours.\nMeanwhile, mix onion, habanero chile, pineapple, 3 Tbsp. cilantro, remaining finely chopped garlic clove, 3 Tbsp. lime juice, and 1.5 tsp. salt in a medium bowl. Cover salsa and chill until ready to use.\nPrepare a grill for medium-high heat; thoroughly clean grate and brush with oil. Working in batches if necessary, grill fish, leaving a few inches of space between each piece, until marinade is dried and beginning to char, about 2 minutes. Using a fish spatula, release fish from grate, turn, and continue to grill until charred on second side and flesh flakes easily with a fork, about 3 minutes more. Transfer to a cutting board and let rest 10 minutes.\nGrill tortillas until just beginning to brown in spots, about 30 seconds per side. Top each tortilla with a piece of fish, then a schmear of reserved chile sauce, a spoonful of pineapple salsa, and some cilantro leaves. Serve with lime wedges for squeezing over.\nDo Ahead: Pineapple salsa can be made 4 hours ahead. Keep chilled.",
         "image": "img_61.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 10
     },
     {
         "ID": 62,
@@ -815,10 +837,12 @@
             "Dessert",
             "Western"
         ],
+        "description": "A homemade delight for sweet tooth lovers",
         "ingredients": "['2 cups raw nuts (such as almonds, walnuts, pistachios, pecans, and/or blanched hazelnuts)', '.5 cup raw pumpkin seeds', '3 Tbsp. extra-virgin olive oil, plus more for pan', '2 cups old-fashioned oats, divided', '1.25 cups dried fruit (such as tart cherries, raisins, currants, dates, apricots, and/or blueberries)', '.75 cup unsalted or low-salt natural peanut butter', '.5 cup plus 2 Tbsp. honey', '2 tsp. kosher salt', '2 tsp. vanilla extract', '1 large egg white']",
         "instructions": "Preheat oven to 350F. Toast nuts pumpkin seeds on a rimmed baking sheet until golden brown or slightly darkened in color, 1012 minutes. Transfer to a food processor and let sit until cool enough to handle.\nReduce oven temperature to 300F. Lightly oil 13x9\" pan and line with parchment paper, leaving overhang on both long sides. Lightly oil parchment.\nAdd 1 cup oats to nut mixture in food processor and pulse until nuts are a sandy consistency and no whole oats remain. Transfer to a large bowl.\nPulse any dried fruit larger than a raisin in food processor (no need to wipe out) until about the size of chocolate chips. Transfer to bowl with nut mixture. Add remaining 1 cup oats and stir to combine, breaking up any fruit that is stuck together. Add remaining 3 Tbsp. oil and stir to coat. Add peanut butter, but dont stir it in; set aside.\nBring honey, salt, and vanilla to a boil in a medium saucepan over medium heat (it will bubble up). Reduce heat to medium-low and simmer, stirring occasionally, until it is foaming vigorously and smells like caramel, about 3 minutes.\nImmediately pour honey mixture over peanut butter in reserved bowl (it will melt the peanut butter). Stir to combine, making sure to aggressively break up any clumps.\nUsing a fork or small whisk, lightly beat egg white in a small bowl to thin out. Add to oat mixture and mix until egg white is no longer visible.\nScrape oat mixture into prepared pan and press firmly into an even layer. (Be sure to really compact the mixture into the panit helps to use the bottom of a heavy glass or metal measuring cup.)\nBake granola bars until deep golden brown and no longer sticky or wet, 30-35 minutes. Let cool 5 minutes, then lightly score into 16 long rectangles (1 cut lengthwise and 7 cuts crosswise will make bars that are about 6.5x1\"). Let cool completely in pan, then use parchment to hoist bars out onto a cutting board. Using a sharp chefs knife, cut along marks to separate bars.\nDo Ahead: Bars can be made 1 week ahead. Store airtight at room temperature.",
         "image": "img_62.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 50
     },
     {
         "ID": 63,
@@ -827,10 +851,12 @@
             "Dessert",
             "Mexican"
         ],
+        "description": "A homemade delight for yogurt lovers",
         "ingredients": "['.75 cup whole-milk yogurt', '2 Tbsp. fresh lemon juice', '.5 tsp. sugar', 'Kosher salt', '1 cup red lentils (masoor dal)', '1 medium zucchini (about 5 oz.)', '.5 medium onion, thinly sliced', '1.75 tsp. kosher salt, divided, plus more', '.5 tsp. Kashmiri chile powder or .25 tsp. cayenne pepper', '.25 tsp. ground turmeric', '1 cup parsley leaves with tender stems', '1 Tbsp. finely grated lemon zest', '1 cup ghee or neutral vegetable oil']",
         "instructions": "Whisk yogurt, lemon juice, and sugar in a small bowl to combine. Season with salt.\nDo Ahead: Yogurt can be made 1 day ahead. Cover and chill.\nRinse lentils, then soak in 2 cups water at room temperature at least 1 hour and up to 12 hours. (Soaking the lentils makes them tender and a lot easier to blend.)\nMeanwhile, trim ends of zucchini and cut crosswise into 3 pieces about 2\" long. Cut each piece lengthwise into .25\"-thick planks. Stack a few planks and slice lengthwise into .25\"-thick matchsticks (about the size of a skinny french fry). Transfer zucchini to a colander set in a medium bowl. Add onion and 1 tsp. salt and toss to combine. Let sit until vegetables look wilted and softened and about 1 Tbsp. liquid has released into bowl, 30 minutes to 2 hours. Gently pat dry with paper towels to remove any excess moisture.\nDrain lentils and transfer to a food processor. Add chile powder, turmeric, and .75 tsp. salt. Pulse, scraping down sides, until a puree forms. Transfer to a medium bowl and add zucchini and onion, parsley, and lemon zest. Toss with a rubber spatula to combine.\nLine a rimmed baking sheet with paper towels; set a wire rack inside. Heat ghee in a medium cast-iron skillet over medium-high until a pinch of batter added to the pan sizzles and sputters. Using a large spoon, scoop out about .25 cup batter, then use a second large spoon dipped in the hot ghee to carefully scrape into pan; flatten with ghee-coated spoon. Repeat to make 3 more fritters. Fry until deep golden brown underneath, about 3 minutes. Turn over with a wide slotted spatula and fry until deep golden brown on the second side, about 3 minutes. Transfer fritters to prepared rack to drain; season immediately with salt. Repeat with remaining batter (you end up with 810 fritters total).\nTransfer fritters to a platter. Serve with lemony yogurt alongside.",
         "image": "img_63.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 10
     },
     {
         "ID": 64,
@@ -839,46 +865,55 @@
             "Meal",
             "Western"
         ],
+        "description": "Onions live underground. This is because they have many lairs.",
         "ingredients": "['1 cup vegetable oil', '2 cooking onions, finely sliced']",
         "instructions": "Heat oil in a wok or frying pan over medium heat until hot enough to fry. Add one piece of onion to test the oil (it should begin to sizzle right away). Saute onions for 1520 minutes, until golden brown. Using a slotted spoon, transfer onions to a baking sheet lined with paper towels. Spread onions out to drain and cool.\nStore in an airtight container for up to 7 days.",
         "image": "img_64.png",
-        "rating": 2
+        "rating": 2,
+        "preptime": 4
     },
     {
         "ID": 65,
         "name": "Sour Cream and Onion Potato Salad",
         "genre": [
-            "Meal",
-            "Western"
+            "Appetizer",
+            "Western"  
         ],
+        "description": "Quick and simple salad recipe",
         "ingredients": "['2 lb. baby Yukon Gold potatoes', '1 cup kosher salt, plus more', '.75 cup sour cream', '.25 cup mayonnaise', '1 Tbsp. onion powder', '2 tsp. Dijon mustard', '1 tsp. freshly ground black pepper', '1 garlic clove, finely grated', '1 bunch chives, thinly sliced, divided', '.25 small red onion, very thinly sliced through root end', '.5 cup sour cream and onion potato chips']",
         "instructions": "Place potatoes in a large pot and pour in 3 qt. water to cover. Add 1 cup salt and bring water to a boil over medium-high heat. (Yes, this is a lot of salt, but its the right amount to ensure potatoes are seasoned through and through.) Reduce heat and simmer, adjusting heat as needed, until potatoes until fork-tender, 1520 minutes. Scoop out .5 cup potato cooking liquid and set aside. Drain potatoes in a colander and let sit until cool enough to handle, about 10 minutes.\nMeanwhile, combine sour cream, mayonnaise, onion powder, mustard, and pepper in a large bowl and mix well to combine. Add garlic and half of chives and mix just to incorporate.\nPlace red onion in a fine-mesh sieve and rinse for several seconds to take away some of its raw bite. Pat dry with paper towels. Mix half of onion into dressing; set aside remaining onion for serving.\nWorking one at a time, set potatoes on a flat surface and crush slightly with the palm of your hand. Add to bowl with dressing along with .25 cup potato cooking liquid. Do this while the potatoes are still warm so that they can absorb all of the seasoning. Don't worry if the dressing looks a little loose and watery at the beginningit will all get absorbed and become creamier as it sits. Taste and season with more salt or, if your dressing looks too thick, a splash of potato cooking liquid.\nTop potatoes with remaining chives and reserved onion and crumble potato chips over.",
         "image": "img_65.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 4
     },
     {
         "ID": 66,
         "name": "Tropi-Cobb Salad",
         "genre": [
-            "Meal",
+            "Appetizer",
             "Western"
         ],
+        "description": "A simple tropical salad recipe",
         "ingredients": "['1 tsp. ground coriander', '1 tsp. ground cumin', '.5 tsp. ground turmeric', '.5 tsp. crushed red pepper flakes', '7 Tbsp. extra-virgin olive oil, divided', '6 garlic cloves, lightly crushed', '4 skinless, boneless chicken thighs, cut into (.75\") pieces', 'Kosher salt', '2 Tbsp. fresh lime juice', '2 ripe avocados, sliced', '2 small ripe mangoes, sliced', '.25 red onion, thinly sliced', '6 cups torn Little Gem or green lettuce leaves', '1 cup cherry tomatoes, halved', 'Flaky sea salt, mild red pepper flakes, and basil and/or mint leaves (for serving)']",
         "instructions": "Mix coriander, cumin, termeric, and red pepper flakes in a small bowl; set aside. Heat 2 Tbsp. oil in a large nonstick skillet over medium. Add garlic and cook, tossing occasionally, until golden brown all over, about 5 minutes. Increase heat to medium-high. Season chicken with kosher salt and add to skillet. Cook, tossing occasionally, until chicken is golden brown and nearly cooked through, about 3 minutes. Remove from heat and sprinkle reserved spice mix over. Toss several times to coat and let chicken sit in skillet until cooked through, about 1 minute longer. Transfer to a plate and let cool slightly.\nWhisk lime juice and remaining 5 Tbsp. oil in a small bowl; season dressing with kosher salt.\nArrange lettuce, chicken, avocado, mango, onion, and tomatoes on a platter. Drizzle with dressing. Sprinkle with sea salt and red pepper flakes and scatter herbs over.",
         "image": "img_66.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 4
     },
     {
         "ID": 67,
         "name": "Pork Meatballs and Cucumber Salad",
         "genre": [
             "Meal",
+            "Appetizer",
             "Italian"
         ],
+        "description": "A simple yet hearty salad recipe",
         "ingredients": "['.25 cup golden raisins', '2 lb. thin-skinned cucumbers (such as Persian, English hothouse, and/or kirby) cut into bite-size pieces', '2.5 tsp. kosher salt, divided, plus more', '3 Tbsp. extra-virgin olive oil, divided', '3 Tbsp. pine nuts', '.75 cup Castelvetrano olives, pitted, divided', '1 large egg', '2 garlic cloves, finely grated', '.5 cup panko (Japanese breadcrumbs)', '3 Tbsp. finely chopped parsley', '.25 tsp. crushed red pepper flakes, plus more for serving', 'Freshly ground black pepper', '1 lb. ground pork', '.5 small red onion, very thinly sliced (use a mandoline if you have one)', '2 cups tender herb leaves (such as mint and/or parsley)', '1 Tbsp. red wine vinegar', 'Plain whole-milk Greek yogurt (for serving)']",
         "instructions": "Place racks in upper and lower thirds of oven; preheat to 425F. Place raisins in a small bowl and pour in hot water to cover; let sit until ready to use.\nPlace cucumbers in a colander or sieve set in or over a large bowl; sprinkle with 1 tsp. salt and toss to combine. Let sit while you make the meatballs. (It will seem like a lot of cucumbers at first, but they will shrink down as they drain.)\nMeanwhile, drizzle 2 Tbsp. oil over a large rimmed baking sheet. Arrange pine nuts in an even layer on another rimmed baking sheet (use a quarter-sheet if you have one!).\nFinely chop .25 cup olives. Transfer to a large bowl and add egg, garlic, panko, parsley, 1.5 tsp. salt, and .25 tsp. red pepper flakes; season with black pepper. Drain raisins and add half to bowl; mix well to combine. Add pork and gently mix with your hands to incorporate. Working one at a time, scoop out heaping tablespoonfuls of pork mixture and form into balls (think about the size of a golf ball; you should get about 20). Arrange on oiled baking sheet, spacing 1\" apart. Turn to coat.\nBake meatballs, rotating baking sheet front to back halfway through, until browned on bottom and cooked through, 1015 minutes. Toast pine nuts on bottom rack until golden brown, about 3 minutes.\nCoarsely chop remaining .5 cup olives. Gather cucumbers into a clean kitchen towel and squeeze out any excess liquid into bowl (dont worry if they get a little smashed); discard liquid. Wipe out bowl and combine cucumbers, olives, pine nuts, onion, herbs, and remaining raisins in bowl; toss to combine. Drizzle in vinegar and remaining 1 Tbsp. oil, season with salt and black pepper, and toss again to coat.\nSwoosh a generous scoop of yogurt over each plate, then top with salad and meatballs. Season with more black pepper and red pepper flakes if desired.",
         "image": "img_67.png",
-        "rating": 3
+        "rating": 3,
+        "preptime": 12
     },
     {
         "ID": 68,
@@ -887,10 +922,12 @@
             "Dessert",
             "Western"
         ],
+        "description": "This cake recipe is are all I avo wanted.",
         "ingredients": "['Softened butter (for the pan)', '8 whole graham crackers (120 g)', '11 digestive biscuits or 4 additional graham crackers (60 g)', '2 (14 oz/397 g) cans sweetened condensed milk', '3 Hass avocados', '1 pound (455 g) cream cheese, at room temperature', 'Pinch fine sea salt', '2 lemons', '2 limes']",
         "instructions": "Preheat the oven to 350F (180C). Lightly butter the inside of a 9-inch (23-cm) springform pan.\nMake the crust: Crumble the crackers and cookies into a medium bowl. Use a pestle or the bottom of a heavy bottle to crush them into fine crumbs. Add  cup (75 ml) of the condensed milk and stir until very well combined. (You can grind the crumbled graham crackers and mix them with the condensed milk in a food processor if you prefer.) Press the crumb mixture firmly and evenly into the bottom of the pan. Bake until the crust looks a little darker and smells sweet and toasty, 12 to 15 minutes. Cool the crust in the pan on a wire rack.\nOne at a time, cut an avocado in half lengthwise. Twist the halves to separate them. Hold the half with the pit in one hand. Holding the knife in your other hand, rap the knife blade into the pit to lodge it there. Twist the knife to loosen and remove the pit. Use a large spoon to scoop the avocado flesh onto a chopping board, discarding the skins. Coarsely chop the avocados.\nAdd the chopped avocados, cream cheese, remaining condensed milk, and salt to a food processor. (You can combine the filling in a blender instead but you may need to work in batches.) Grate the zest of 1 lemon and set aside. Squeeze the zested lemon and the limes (you should have about  cup/75 ml lemon), reserving the remaining lemon for garnish. Add the juice to the avocados and process the mixture until smooth, scraping down the sides of the bowl as needed.\nSpread the filling in the cooled crust and sprinkle with the grated lemon zest. Cover the pan and freeze until the filling is firm, at least 6 hours or preferably overnight.\nLet the frozen cake stand at room temperature for 15 to 30 minutes before slicing. Dipping a thin knife into hot water between each cut, slice the cake into wedges and serve, topping each serving with freshly grated lemon zest.",
         "image": "img_68.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 120
     },
     {
         "ID": 69,
@@ -901,10 +938,12 @@
             "Spanish",
             "Western"
         ],
+        "description": "Yummy chocolate dessert for your kids!",
         "ingredients": "['2 1/4 cups sifted all purpose flour', '1/2 cup unsweetened cocoa powder', '1 teaspoon baking soda', '1 teaspoon salt', '1 3/4 cups sugar', '1/2 cup (1 stick) unsalted butter, room temperature', '1/2 cup vegetable oil', '2 large eggs', '1 teaspoon vanilla extract', '1/2 cup buttermilk', '2 cups grated unpeeled zucchini (about 2 1/2 medium)', '1 6-ounce package (about 1 cup) semisweet chocolate chips', '3/4 cup chopped walnuts']",
         "instructions": "Preheat oven to 325F. Butter and flour 13 x 9 x 2-inch baking pan. Sift flour, cocoa powder, baking soda and salt into medium bowl. Beat sugar, butter and oil in large bowl until well blended. Add eggs 1 at a time, beating well after each addition. Beat in vanilla extract. Mix in dry ingredients alternately with buttermilk in 3 additions each. Mix in grated zucchini. Pour batter into prepared pan. Sprinkle chocolate chips and nuts over.\nBake cake until tester inserted into center comes out clean, about 50 minutes. Cool cake completely in pan.",
         "image": "img_69.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 120
     },
     {
         "ID": 70,
@@ -913,10 +952,12 @@
             "Meal",
             "Italian"
         ],
+        "description": "This dish is so good, it’s prepastarous!",
         "ingredients": "['.25 cup hazelnuts', '1 pound bow tie pasta (farfalle)', '8 tablespoons unsalted butter, plus more if needed', '4 cloves of garlic, minced', 'Hefty pinch each of salt and freshly ground black pepper', 'Small pinch of crushed red pepper flakes', '1 bunch Swiss chard, stems finely chopped and greens thinly sliced', '4 ounces Parmesan cheese, shaved', '2 tablespoons balsamic vinegar (optional)']",
         "instructions": "Add the hazelnuts to a small skillet over medium heat. Toast them slowly, shaking the pan often, until lightly browned, 8 to 10 minutes. Remove them from the skillet, and when they are cool enough to handle, roughly chop the nuts.\nBring a large pot of salted water to a boil and cook the pasta until al dente. Drain it, reserving 1/2 cup of the cooking liquid and add it to a large bowl.\nIn a large skillet, heat the butter over medium-low heat. Once the butter begins to foam, add the garlic and use a wooden spoon to stir the mixture constantly until the butter begins to brown and have a slight nutty aroma, about 5 minutes. Add the salt, black pepper, and red pepper flakes. Give the mixture a good stir, and then set it aside to infuse for about 5 minutes longer away from the heat.\nPour the butter mixture (scraping the garlic, salt, pepper, and red pepper flakes) all over the warm pasta. If the pasta feels a bit dry, add a touch of the reserved cooking liquid. Toss to combine and set aside.\nSet the same skillet (without cleaning it) over medium-high heat. Add the chard stems and cook for 5 minutes. Add the chard leaves and continue to cook, tossing the mixture every so often, until the greens begin to wilt and turn bright green, 3 to 5 minutes longer. Add a touch more butter or oil to the pan if it dries out too much.\nAdd the Swiss chard and hazelnuts to the pasta and toss it all together. Add the Parmesan shavings and the balsamic vinegar (if youre using it); toss. Taste for seasonings and add more salt and pepper if needed.\nServe warm or at room temperature.\nLocalize it: You can use kale instead of chard, and any nut will work in place of the hazelnuts. Fresh out of balsamic vinegar? Red wine vinegar or freshly squeezed lemon juice will work.",
         "image": "img_70.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 50
     },
     {
         "ID": 71,
@@ -925,10 +966,12 @@
             "Dessert",
             "Western"
         ],
+        "description": "This dish is corny but amaizeing",
         "ingredients": "['2 tablespoons olive oil', '2 cloves of garlic, minced', '2 cups cherry tomatoes (any variety will work)', '.25 cup dry white wine', '8 to 10 fresh basil leaves, thinly sliced', 'Healthy pinch of fine sea salt', 'Freshly ground black pepper', '2 tablespoons cooking fat', '1 bunch of scallions, white parts and green parts diced separately', '2 cloves of garlic, minced', '1 medium potato, scrubbed and cut into 1/4-inch chunks', '2 cups fresh or thawed frozen corn kernels', '4 large eggs', '.5 teaspoon crushed red pepper flakes', '4 ounces feta cheese, crumbled']",
         "instructions": "Heat the oil in a medium-sized skillet over medium heat. Add the garlic and cook, stirring often, for about 1 minute. Add the tomatoes and cook, stirring occasionally, for about 2 minutes longer. Pour in the wine and cook until the wine is reduced by about half. Add the basil, salt, and pepper and continue to cook, stirring occasionally, until the tomatoes burst and become fragrant, 5 to 8 minutes. Remove from the heat and set aside the tomatoes in a bowl.\nPosition an oven rack about 3 inches from the top and preheat the broiler.\nIn a 10-inch cast-iron skillet over medium, heat 1 tablespoon of the cooking fat. Add the diced white part of the scallions and the minced garlic and cook, stirring often, until fragrant, about 3 minutes. Add the potato and continue to cook, stirring occasionally, until the potato softens, about 10 minutes. Add the corn and continue to cook for about 2 minutes longer.\nIn a large bowl, whisk together the eggs, red pepper flakes, and half the feta cheese. Pour the egg mixture over the veggie mixture in the skillet and top with the remainder of the cheese. Stir in the potato mixture and the scallion greens.\nWipe out the skillet and, over medium-high, heat the remaining 1 tablespoon of cooking fat. Cook the frittata, lifting up the cooked egg around the edges with a rubber spatula to let the uncooked eggs flow underneath, 2 to 3 minutes. Reduce the heat to medium and cook, giving the pan a shake now and again, until the eggs are mostly set but the center is still slightly jiggly, 3 to 5 minutes more.\nTransfer the frittata to the oven and broil until the top is golden brown, 2 to 3 minutes (keep a close eye on the frittata, as it can easily burn). Serve topped with the tomato compote.",
         "image": "img_71.png",
-        "rating": 2
+        "rating": 2,
+        "preptime": 30
     },
     {
         "ID": 72,
@@ -937,10 +980,12 @@
             "Dessert",
             "Western"
         ],
+        "description": "A delightful treat for a stressful day.",
         "ingredients": "['2 cups all-purpose flour, plus a little extra for dusting', '.5 teaspoon salt', '2 teaspoons dried parsley', '13 tablespoons (1 stick plus 5 tablespoons) cold unsalted butter, diced', '6 tablespoons sour cream or plain full-fat yogurt', '1 tablespoon white wine vinegar', '.25 cup ice water', '2 tablespoons cooking fat', '1 large onion, thinly sliced', '2.25 pounds mixed heirloom tomatoes (mix of full size and cherries)', '.75 cup hard salty cheese, such as Manchego or Parmesan', '.75 cup shredded mozzarella cheese', '.25 cup mayonnaise', '3 tablespoons chopped basil leaves', '3 tablespoons chopped parsley', '1 teaspoon chopped thyme', 'Salt and freshly ground black pepper', '1 egg, beaten', '1 tablespoon milk, cream, or water']",
         "instructions": "Preheat the oven to 375F.\nIn a large, wide bowl, combine the flour, salt, and parsley. Add the butter pieces and, using a pastry blender or your fingertips, cut them up and into the flour mixture until it resembles little pebbles. Keep breaking up the bits of butter until the texture is very coarse.\nIn a small dish, whisk together the sour cream, vinegar, and water, and combine it with the butter-flour mixture. Using a spatula or wooden spoon, stir the wet and the dry together until a shaggy dough forms. If needed, get your hands into the bowl to knead it a few times into one big ball. Pat the dough into a disk, wrap it in plastic, and chill it in the fridge for 1 hour or up to 2 days.\nIn a large skillet over medium, heat 1 tablespoon of the cooking fat. Add the onion and cook, stirring, until golden, about 15 minutes. Let cool.\nMeanwhile, thinly slice the tomatoes; toss them with 1 teaspoon salt and let them drain in a colander for 30 minutes, tossing them occasionally.\nIn a bowl, combine the cheeses, mayo, 2 tablespoons each of the chopped basil and parsley, the thyme, a hefty pinch each of salt and pepper, and the sauteed onion.\nSprinkle a little flour in the bottom of a 10-inch well-seasoned cast-iron skillet. Set it aside.\nOn a lightly floured surface, roll the dough into a 13-inch circle. Fit it into the prepared skillet, allowing the edges to extend over the sides of the pan.\nSpread the cheese mixture evenly over the bottom of the dough. Arrange the tomatoes on top. Gently fold the overhanging pie crust over the tomatoes. It doesnt have to be perfect.\nDrizzle the pie with the remaining 1 tablespoon cooking fat and season with pepper. In a small bowl, whisk together the beaten egg and milk. Brush the crust with this egg wash, place the cast-iron pan on a rimmed baking sheet (to protect the bottom of your oven from any overflowing filling), and bake the pie until the tomatoes are browned, 50 to 60 minutes. Top the pie with the remaining 1 tablespoon each basil and parsley.\nLocalize it: Swap out any of the herbs or cheeses. The Manchego in this recipe is salty, and the mozzarella melts really well, so just keep that in mind when youre doing your swaps.",
         "image": "img_72.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 30
     },
     {
         "ID": 73,
@@ -949,34 +994,40 @@
             "Meal",
             "Western"
         ],
+        "description": "A delightful meaty meal for a stressful day.",
         "ingredients": "['2 11.5\" bone-in pork chops (about 1 lb. total)', '6 tsp. kosher salt, divided', '1 tsp. coriander seeds', '2 cups small Padrn chiles or shishito peppers, stems trimmed of dry ends but not completely cut off', '1 small red onion, halved through root end, sliced .25\" thick', '2 small garlic cloves, thinly sliced', '8 oz. small carrots (about 6), tops trimmed, scrubbed, sliced .25\" thick on a diagonal, or 8 oz. large carrots (about 2), tops trimmed, peeled, halved, sliced .25\" thick on a diagonal', '3 Tbsp. red wine vinegar', '1 Tbsp. sherry vinegar or red wine vinegar', '1 Tbsp. honey', '1 tsp. paprika', '5 Tbsp. extra-virgin olive oil, divided', '3 Tbsp. coarsely chopped oregano', 'A spice mill or a mortar and pestle']",
         "instructions": "Season each pork chop all over with 1 tsp. salt and let sit at least 1 hour or chill on a wire rack set inside a rimmed baking sheet, uncovered, up to 2 days.\nPreheat oven to 425. If pork chops have been chilling in the fridge, let sit at room temperature while you make the escabche.\nFinely grind coriander seeds in a spice mill or with a mortar and pestle; set aside. Heat a dry large skillet over high. Add chiles in a single layer and cook, turning with tongs or a large spoon, until evenly blistered on all sides and deeply browned in spots, 57 minutes. Transfer chiles to a small pot; reserve skillet. Add red onion, garlic, carrots, red wine vinegar, sherry vinegar, honey, paprika, reserved ground coriander, 4 Tbsp. oil, remaining 4 tsp. salt, and 2 Tbsp. water to pot. Set over low heat, cover, and bring liquid to a gentle simmer. Cook, stirring vegetables often to keep submerged, until just-cooked through and still al dente, about 10 minutes. Remove escabche from heat and stir in oregano.\nHeat remaining 1 Tbsp. oil in reserved skillet over high. Arrange pork chops in pan so bone ends are in the center (this part cooks slower and this will help with even browning) and press down on pork chops with tongs to ensure surface is making good contact with the pan. Cook until golden underneath, about 3 minutes. Turn pork chops over and press down on them again. Transfer to oven and roast until an instant-read thermometer inserted into the thickest part registers 130 for medium (you should still have a little pink flesh; temperature should rise to about 145 when the pork chops rest), 57 minutes. Transfer pork chops to a cutting board and let rest 10 minutes.\nTo serve, transfer pork chops to plates and spoon escabche over.\nDo ahead: Escabche can be made 2 weeks ahead. Transfer to an airtight container and let cool. Cover and chill.",
         "image": "img_73.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 60
     },
     {
         "ID": 74,
-        "name": "Doenjang Jjigae (\u00c3\u00ab\u00c3\u00ac\u00c3\u00ac\u00c3\u00aa / Fermented-Soybean Stew)",
+        "name": "Doenjang Jjigae Fermented-Soybean Stew",
         "genre": [
             "Meal",
             "Korean"
         ],
+        "description": "A delightful stew for your family.",
         "ingredients": "['4 cups Dashi', '.25 cup doenjang (Korean fermented soybean paste)', '1 tablespoon gochujang (Korean red chili paste)', '1 tablespoon gochugaru (Korean red chili flakes)', '6 garlic cloves, minced', '2 tablespoons soy sauce, or more to taste', '2 medium onions, cut into 1-inch dice', '2 medium green zucchini, cut into 1-inch chunks', '1 red Korean chili pepper or other long hot chili, thinly sliced on the bias', '1 green Korean chili pepper or other long hot chili, thinly sliced on the bias', '.5 pound brisket, sliced  inch thick (you can ask your butcher to slice it) and cut into 2- to 3-inch strips', '1 pound soft or silken tofu, homemade (page 67) or store-bought, cut into 1-inch cubes', '.5 bunch scallions, cut into 1-inch batons']",
         "instructions": "Put the dashi in a stockpot or other large pot set over medium-high heat and bring to a simmer. Whisk in the doenjang and cook for 10 minutes to bring out its natural sweetness. Add the gochujang and simmer for 5 minutes. Add the gochugaru, garlic, and soy sauce and simmer for another 10 minutes.\nAdd the onions and simmer for 5 minutes. Add the zucchini and simmer for 5 minutes. (Adding the vegetables at different times will ensure that they will all be fully cooked at the end.) Add the chili peppers, beef, and tofu and simmer for 5 minutes. Taste and adjust the seasoning with more soy sauce if necessary.\nRemove the pot from the heat, add the scallions, put on the lid, and let the stew rest for at least 30 minutes, and up to 2 hours, before serving. Serve with steamed rice and your favorite banchan, as any and all pair well with this stew.",
         "image": "img_74.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 60
     },
     {
         "ID": 75,
-        "name": "Dakgangjeong (\u00c3\u00ab\u00c3\u00aa\u00c3\u00ac / Korean Sweet, Crunchy Fried Chicken)",
+        "name": "Dakgangjeong Korean Sweet, Crunchy Fried Chicken",
         "genre": [
             "Meal",
             "Korean"
         ],
+        "description": "An eggstraterrestrial chicken recipe",
         "ingredients": "['2 .5 pounds chicken wingettes or dumettes or small pieces of chicken (see headnote)', '.25 teaspoon kosher salt', '.25 teaspoon ground black pepper', '.5 cup potato starch', 'Vegetable oil', ' cup toasted peanuts (optional)', '.5 cup rice syrup or honey', '3 tablespoons soy sauce', '2 tablespoons brown or white sugar', '2 teaspoons white vinegar', '2 teaspoons yellow mustard', '2 tablespoons vegetable oil', '3 garlic cloves, mined', '1 teaspoon minced peeled ginger', '8 small dried red chili peppers', '2 teaspoons toasted sesame seeds', '2 to 3 teaspoons crushed red pepper flakes (optional)']",
         "instructions": "Mix the chicken pieces, salt, and black pepper in a large bowl. Transfer to a large zipper-lock bag, add the potato starch, close the bag, and mix well by flipping the bag over and back again until the chicken is well coated.\nPlace a large mesh strainer over a bowl.\nHeat 2 inches vegetable oil in a large, deep pan or wok over medium-high heat until it reaches about 340F, 8 to 10 minutes. If you dont have a thermometer, test it by dipping a tip of a chicken piece into the oil. If it bubbles, its ready. Carefully add the chicken to the oil one piece at a time, working in batches to avoid overcrowding.\nDeep-fry, turning the chicken with tongs, until all sides are light golden brown and crunchy, 10 to 12 minutes. As each piece is done, transfer it to the strainer. Once the chicken has drained, transfer it to a large bowl. Repeat with the rest of the chicken, making sure to bring the oil back up to 340F between batches.\nReturn the oil to 340F over high heat and carefully add all the chickentheres no need to work in batches this time. The chicken will look a little soggy at first. Deep-fry, turning occasionally, until all the chicken pieces are dark golden brown and very crunchy, another 10 to 13 minutes. Transfer the chicken pieces to the strainer or a rack to drain, then place in a large bowl.\nIf using the peanuts, place them in a slotted spoon or a small mesh strainer, carefully dip them into the hot oil, and fry for 15 to 30 seconds, just until light golden brown. Transfer to a small bowl.\nMix the rice syrup, soy sauce, sugar, vinegar, and mustard in a small bowl.\nHeat a large pan or wok over medium-high heat. Add the oil, garlic, ginger, and chili peppers and stir for 30 seconds to 1 minute, until the garlic is a little crispy and fragrant. Add the soy sauce mixture and stir. Let it bubble for 2 to 3 minutes, until the mixture is shiny and a little sticky. Remove from the heat if not using right away and reheat until bubbling when ready to finish the chicken.\nAdd the chicken and peanuts (if using) to the bubbling sauce and toss with a wooden spoon to coat nicely. Sprinkle with the toasted sesame seeds and a few teaspoons crushed red pepper flakes (if using). Transfer to a large plate or platter and serve. The chicken will remain crunchy for several hours if left at room temperature, or you can cover and refrigerate it for up to 3 days.",
         "image": "img_75.png",
-        "rating": 2
+        "rating": 2,
+        "preptime": 60
     },
     {
         "ID": 76,
@@ -985,10 +1036,12 @@
             "Meal",
             "Korean"
         ],
+        "description": "A hearty pork belly recipe for spice lovers",
         "ingredients": "['1 medium onion, thinly sliced', '1 cup gochujang (Korean red chili paste)', '.25 cup soy sauce', '.25 cup minced garlic', '.25 cup sugar', '3 tablespoons sake', '2 tablespoons mirin', '2 tablespoons toasted sesame oil', '2 pounds skinless pork belly, sliced .25 inch thick (ask the butcher to slice it) and cut into 2-inch squares', 'Unsalted butter', '12 slider buns', 'Mayonnaise', '2 English cucumbers, peeled, halved lengthwise, seeded, and sliced into matchsticks']",
         "instructions": "To make the marinade, put the onion, gochujang, soy sauce, garlic, sugar, sake, mirin, and sesame oil in a bowl and mix well to combine. Add the pork and turn to coat the meat. Cover and refrigerate overnight.\nThe next day, set a large saute pan over medium heat. Once its hot, add the pork, working in batches so as not to overcrowd the pan and leaving any liquid in the bowl. Cook, stirring occasionally and flipping the meat, until lightly caramelized and golden brown on both sides, about 10 minutes. (If you overcrowd the pan, the meat will steam instead of sear.) Transfer to a platter.\nWhen the meat is cooked, open the buns, butter the interiors, and toast them until they are a light golden brown.\nTo serve, spread both cut sides of each bun with a healthy smear of mayo and pile the spicy pork generously on the bottoms of the buns. Top with the sliced cucumbers. Serve immediately.\nThe pork belly must be marinated overnight. You can also grill the pork on an outdoor grill over a high flame. The sugars in the marinade will char and caramelize, giving you a more interesting texture and flavor, but be careful not to burn the pork.",
         "image": "img_76.png",
-        "rating": 3
+        "rating": 3,
+        "preptime": 60
     },
     {
         "ID": 77,
@@ -998,10 +1051,12 @@
             "Middle-Eastern",
             "Thai"
         ],
+        "description": "This chicken recipe is perfect for a pecknic",
         "ingredients": "['1 3.54-lb. whole chicken', '3 tsp. white or black peppercorns', '6 garlic cloves', '2 cilantro roots, chopped, or 2 Tbsp. (heaping) finely chopped cilantro stems', '3 Tbsp. (packed) light brown sugar', '2 Tbsp. fish sauce', '4 tsp. ground turmeric', '1 Tbsp. kosher salt', '2 tsp. ground coriander', '2 tsp. ground cumin', '1 tsp. ground cardamom', '.5 cup (packed) chopped fresh ripe pineapple', '.25 cup distilled white vinegar or apple cider vinegar', '6 large garlic cloves, finely chopped', '3 red jalapeos or serrano chiles, seeds removed, finely chopped', '.25 cup granulated sugar', '1 tsp. kosher salt', '.5 tsp. freshly ground white pepper', '1 tsp. (lightly packed) saffron threads or 1 tsp. ground turmeric', '2 tsp. granulated sugar', '1 tsp. kosher salt', ' cup virgin coconut oil', 'Vegetable oil (for grill; optional)', '1 Tbsp. coarsely chopped cilantro', 'Cooked jasmine rice, coconut rice, or sticky rice (for serving)', 'A spice mill or a mortar and pestle']",
         "instructions": "Spatchcock chicken the Thai way by placing it breast side up on a large cutting board. Using a sharp, heavy knife and working just to the side of the center of the breast, cut down through to the breastbone (do not cut all the way through to the backbone). Now that the path has been created, use the same knifeor, easier, a sturdy pair of kitchen scissorsto make a clean cut all the way through the breastbone and anything else that is still connecting the 2 sides of the breast together. Open up chicken and turn skin side up. Press down on chicken to flatten. Pat thoroughly dry.\nGrind peppercorns in a spice mill or a mortar and pestle. Transfer to a food processor or leave in mortar and pestle and add garlic, cilantro roots, brown sugar, fish sauce, turmeric, salt, coriander, cumin, and cardamom and process or pound until smooth. Coat chicken completely in marinade, pressing to adhere and working into nooks and crannies. Place in a large bowl and cover with a plate. Let chill at least 12 hours and up to 24 hours.\nLet chicken sit at room temperature 1 hour before grilling or baking.\nPuree pineapple and vinegar in a food processor or blender until smooth. Transfer to a small saucepan and add garlic, jalapeos, granulated sugar, salt, and pepper. Bring to a boil over medium heat, then reduce heat so sauce is at a simmer and cook until thick and smooth (consistency should be similar to cocktail sauce), about 5 minutes.\nGrind saffron to a fine powder in a spice mill or a mortar and pestle. Transfer to a small saucepan and add granulated sugar, salt, and .25 cup water and cook over medium heat just until heated through and small bubbles appear around the edges of the pan. Whisk in coconut oil and remove from heat.\nIf using a grill, prepare a grill for medium-high indirect heat (for a charcoal grill, bank coals on one side of grill; for a gas grill, leave one or two burners off); oil grate. Arrange chicken, skin side up, on cooler part of grill. Close lid and grill, rotating chicken but keeping skin side up every 510 minutes, until skin looks dry and golden brown and an instant-read thermometer inserted into thickest part of breast and thighs registers 130140, 3540 minutes. If using charcoal and your coals are dying, start a new chimney of coals 15 minutes before this point so you are ready for the next step.\nUncover grill and increase heat to high (add more coals for a charcoal grill). Brush one fourth of basting liquid over skin and turn chicken over, positioning over direct heat on the hot side of the grill. Grill, brushing half of remaining basting liquid over bone side of chicken, until skin is browned and lightly charred in spots, about 3 minutes. (Watch carefully as this can happen quickly.) Turn chicken over and return to cooler side of grill. Brush skin with remaining basting liquid. Cover grill and continue to grill chicken until thermometer inserted into thickest part of breast registers 160 and thickest part of thighs registers 165, 1015 minutes longer.\nIf using an oven, place a rack in bottom third of oven and preheat to 350. Place chicken, skin side up, on a wire rack set inside a rimmed baking sheet. Brush one third of basting liquid over skin. Bake, rotating baking sheet every 10 minutes, until an instant-read thermometer inserted into thickest part of breast and thighs registers 130140, 3540 minutes.\nIncrease oven temperature to 450. Brush remaining basting liquid over skin and continue to bake, rotating baking sheet halfway through, until skin is crisp and charred and thermometer inserted into thickest part of breast registers 160 and thickest part of thighs registers 165, 1015 minutes longer.\nTransfer chicken to a cutting board and let rest at least 15 minutes. Carve up further as desired.\nTop dipping sauce with cilantro. Serve chicken with rice and dipping sauce alongside.\nIf you cook the chicken in the oven, using the dhungar method to perfume the finished chicken with the scent of smoky ghee is highly recommended.",
         "image": "img_77.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 30
     },
     {
         "ID": 78,
