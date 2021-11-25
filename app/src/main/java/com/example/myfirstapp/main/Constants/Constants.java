@@ -89,8 +89,8 @@ public class Constants {
         Recipe recipe5 = new Recipe("Throw maple syrup on pancakes", "Pancakes, salt, butter",
                 r5genres, "Pancakes", 3, 5, "pancake.jpg", "",5);
 
-        Recipe recipe6 = new Recipe("1. Catch a shark. \n2. Boil the shark for 99 seconds.\n3. Eat the shark.", "One shark",
-                r2genres, "Shark Fin Soup", 5, 6, "pancake.jpg", "This is a chinese food",100);
+        Recipe recipe6 = new Recipe("Cut into rectangular prisms and cook in oven", "Potatoes, butter",
+                r3genres, "French Fries", 4, 6, "fries.jpg", "",30);
 
         for (String g: recipe1.getGenre()){
             dataset.addRecipes(g, recipe1);

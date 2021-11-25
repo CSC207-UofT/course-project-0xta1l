@@ -11,9 +11,9 @@ public class UserRequestCreateReview { // database should be called here to writ
      * @param recipeID the recipeID
      * @param comment represents the comments on a given recipe
      * @param rating the given rating of the recipe
-     * @return the review created
+     * @return true if the review is created
      */
-    public Review reviewRecipe(String userID, int recipeID, String comment, int rating) throws Exception {
+    public boolean reviewRecipe(String userID, int recipeID, String comment, int rating) {
         RecipeReviewAdd recipeAdd = new RecipeReviewAdd();
         return recipeAdd.addReview(userID, recipeID, comment, rating);
     }

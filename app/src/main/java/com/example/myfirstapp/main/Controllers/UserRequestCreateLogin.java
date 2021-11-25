@@ -15,11 +15,10 @@ public class UserRequestCreateLogin{
      * @param displayName is the display name of a given user
      * @param age is the age of the given user
      * @param biography is the biography of the given user
-     * @param interests is the interests of the given user
+     * @param interestList is the interests of the given user
      * @return a string representing the username
      */
-    public String createUser(String username, String password, String displayName, int age, String biography, String interests) throws Exception {
-        ArrayList<String> interestList = new ArrayList<>(Arrays.asList(interests.split(",\\s*")));
+    public String createUser(String username, String password, String displayName, int age, String biography, ArrayList<String> interestList) throws Exception {
         UserCreate userCreatee = new UserCreate();
         boolean UserMade = userCreatee.userCreate(username, password, displayName, age, biography, interestList);
         if (UserMade) {

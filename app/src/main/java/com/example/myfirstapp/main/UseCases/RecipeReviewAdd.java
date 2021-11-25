@@ -6,17 +6,16 @@ import com.example.myfirstapp.main.Constants.*;
 
 public class RecipeReviewAdd {
 
-
-    public Review addReview(String username,int recipeID, String comment, int rating) throws Exception {
+    public boolean addReview(String username,int recipeID, String comment, int rating) {
         User accUser = Constants.USERSECURITY.getUserByID(username);
         Review review = new Review(username, recipeID, comment, rating);
         if (accUser.getUserReviews().containsKey(recipeID)){
-            throw new Exception("Review already exists");
+            return false;
         }
         else{
             review.saveToUser(username, recipeID, review);
             review.saveToRecipe(recipeID, username, review);
-            return review;
+            return true;
         }
     }
 }

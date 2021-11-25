@@ -2,7 +2,6 @@ package com.example.myfirstapp.main.Presenters;
 
 
 import com.example.myfirstapp.main.Entities.Preview;
-import com.example.myfirstapp.main.Entities.Review;
 
 import java.util.ArrayList;
 

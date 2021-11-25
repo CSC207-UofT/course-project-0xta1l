@@ -1,4 +1,4 @@
-Class name: UserViewEdit (USE CASE)
+Class name: UserProfileViewEdit (USE CASE)
 
 Responsibilities:
 - Edits User profile details
@@ -7,3 +7,4 @@ Responsibilities:
 Collaborators:
 - User
 - User Security
+- UserInfo

@@ -69,6 +69,10 @@ public class User {
     private void updateGenreWeights(String genre) {
         this.GenreWeights.put(genre, 0.0);
     }
+    public void updateGenreWeightsTest5(String genre) {this.GenreWeights.put(genre, 0.5);}
+    public void updateGenreWeightsTest3(String genre) {this.GenreWeights.put(genre, 0.3);}
+    public void updateGenreWeightsTest2(String genre) {this.GenreWeights.put(genre, 0.2);}
+    public void updateGenreWeightsTest1(String genre) {this.GenreWeights.put(genre, 0.1);}
 
 
     /**

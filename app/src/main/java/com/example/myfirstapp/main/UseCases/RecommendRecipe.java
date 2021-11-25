@@ -9,10 +9,10 @@ import java.util.*;
 public class RecommendRecipe {
     public ArrayList<Preview> recommend(String username, int recsNum) {
         /**
-         * This method returns an ArrayList of Preview Entities of size recsNum.
-         * If the generated list of best recommendations is less than required size recsNum,
-         * the remainder of list is composed of random recipes
+         * If the generated list of recommendations from their favourite genre is less than required size recsNum,
+         * the remainder of list is composed of recipes from their second best and so on.
          * The method takes in the String username of a user in USERSECURITY and the desired number of recommendations
+         * This methods works correctly for 0 <= recsNum <= Constants.GENRELIBRARY.getAllRecipes("All").size()
          */
         User user = Constants.USERSECURITY.getUserByID(username);
         HashMap<String, Double> genreWeights = user.getGenreWeights();
@@ -20,9 +20,8 @@ public class RecommendRecipe {
         String bestGenre = sortedGenres.get(0);
         ArrayList<Preview> sortedRecipes = getSortedPreviewsFromGenre(bestGenre);
         ArrayList<Preview> recommendations = new ArrayList<>();
-        int remainder = recsNum - sortedRecipes.size();
 
-        if (sortedRecipes.size() > remainder){
+        if (sortedRecipes.size() > recsNum){
             for (int i = 0; i < recsNum; i++) {
                 recommendations.add(sortedRecipes.get(i));
             }
@@ -30,8 +29,6 @@ public class RecommendRecipe {
         }
         else
             return recursiveRecommend(recommendations, sortedGenres,0, recsNum);
-
-
     }
 
     private ArrayList<Preview> recursiveRecommend
@@ -42,7 +39,7 @@ public class RecommendRecipe {
         recommends.addAll(previews);
         int remainder = rest - previews.size();
 
-        if (remainder >= previews2.size()){
+        if (remainder > previews2.size()){
             return recursiveRecommend(recommends, genres, genreNum+1, remainder);}
         //else
         for (int i = 0; i < remainder; i++) {recommends.add(previews2.get(i));}
@@ -60,27 +57,15 @@ public class RecommendRecipe {
         return s.sort();
     }
 
-    private ArrayList<String> getHighest(HashMap<String, Double> genreWeights) {
-        //not needed if we can just take first element of sort by weight method
-        ArrayList<String> highestGenres = new ArrayList<>();
-        Double highestWeight = 0.0;
-
-        for (String genre : genreWeights.keySet()) {
-            if (genreWeights.get(genre) > highestWeight) {
-                highestGenres = new ArrayList<>();
-                highestGenres.add(genre);
-            } else if (genreWeights.get(genre).equals(highestWeight)) {
-                highestGenres.add(genre);
-            }
-        }
-
-        return highestGenres;
-    }
-
     private ArrayList<String> sortByWeight(HashMap<String, Double> genreWeights) {
-        //this method returns a list of all the genres in the given mapping but sorted from
-        // highest to lowest weight
-        ArrayList<Double> weights = new ArrayList<>(genreWeights.values());
+        /**
+         * This method returns a list of the String keys (the genres) in the given mapping, from
+         * highest to lowest Double value (their weight)
+         */
+        ArrayList<Double> repeatedWeights = new ArrayList<>(genreWeights.values());
+        //given list might contain duplicates, so we create a new list without them
+        ArrayList<Double> weights = new ArrayList<>();
+        for (Double rw: repeatedWeights){if(!weights.contains(rw)){weights.add(rw);}}
         Collections.sort(weights);
         Collections.reverse(weights);
         ArrayList<String> sortedGenres = new ArrayList<>();

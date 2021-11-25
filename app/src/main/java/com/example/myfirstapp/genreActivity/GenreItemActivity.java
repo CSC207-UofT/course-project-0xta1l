@@ -63,25 +63,21 @@ public class GenreItemActivity extends AppCompatActivity{
 
                 String item = (String) parent.getItemAtPosition(position);
 
+                //TODO save spinner state
                 switch (item) {
-                    case "Rating +":
+                    case "Alphabetical":
                         that.showItems(sortController.sort(previews, ""));
-
-                        System.out.println("show");
                         break;
-                    case "Rating -":
+                    case "Rating":
                         that.showItems(sortController.sort(previews, "Rating"));
-
-                        System.out.println("second");
                         break;
-                    case "Interest +":
-                    case "Interest -":
-                        that.showItems(sortController.sort(previews, ""));
+                    case "Interest":
+                        String username = Globals.getUser_username();
+                        that.showItems(sortController.sort(previews, "Interests", username));
 
                         break;
 
                 }
-                // TODO: sort interest
 
                 Spinner spinner = (Spinner) findViewById(R.id.genreRecipeSortSpinner);
                 spinner.setOnItemSelectedListener(this);

@@ -10,14 +10,21 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.RecipeItemActivity;
 import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Controllers.UserRequestBrowse;
+import com.example.myfirstapp.main.Controllers.UserRequestFilter;
+import com.example.myfirstapp.main.Controllers.UserRequestSort;
+import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
 
@@ -74,10 +81,53 @@ public class MyRecipeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_my_recipe, container, false);
-        LinearLayout layout = (LinearLayout) v.findViewById(R.id.MyRecipeLayout);
+        return v;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        //TODO Add a global saved spinner state where the default is "ALl"
+
+        UserRequestBrowse genreController = new UserRequestBrowse();
+        ArrayList<String> genres = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            genres = genreController.browseGenres(Globals.getUser_username());
+        }
+        String[] genreList = new String[genres.size()];
+        genreList = genres.toArray(genreList); // List of genre (strings)
+        System.out.println("Genre list is: " + genreList);
+
+        Spinner spinner = (Spinner) getView().findViewById(R.id.myRecipeSortSpinner);
+        ArrayAdapter adapter = new ArrayAdapter(this.getContext(), android.R.layout.simple_spinner_item, genreList);
+        spinner.setAdapter(adapter);
+
         User user = Constants.USERSECURITY.getUserByID(Globals.getUser_username());
         ArrayList<Recipe> recipes = user.getSavedRecipes();
-        System.out.println("Recipe size is " + recipes.size());
+
+        MyRecipeFragment that = this;
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ArrayList<Preview> previews = new ArrayList<Preview>();
+                for (Recipe recipe : recipes) {
+                    previews.add(recipe.getPreview());
+                }
+                String item = (String) parent.getItemAtPosition(position);
+                UserRequestFilter filterController = new UserRequestFilter();
+                that.showItems(filterController.filter(previews, item), getView());
+                Spinner spinner = (Spinner) getView().findViewById(R.id.myRecipeSortSpinner);
+                spinner.setOnItemSelectedListener(this);
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+    }
+
+    public void showItems(ArrayList<Preview> recipes, View v) {
+        LinearLayout layout = (LinearLayout) v.findViewById(R.id.MyRecipeLayout);
+        layout.removeAllViews();
         for(int i = 0; i < recipes.size(); i++) {
             TextView text = new TextView(getContext());
             text.setGravity(Gravity.CENTER);
@@ -85,7 +135,7 @@ public class MyRecipeFragment extends Fragment {
             text.setPadding(100, 60, 0, 0);
             text.setTextSize(24);
             text.setGravity(Gravity.LEFT);
-            Recipe recipe = recipes.get(i);
+            Preview recipe = recipes.get(i);
             String recipeName = recipe.getName();
             text.setText(recipeName);
             text.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
@@ -100,10 +150,7 @@ public class MyRecipeFragment extends Fragment {
                     startActivity(intent);
                 }
             });
-
             layout.addView(text);
         }
-
-        return v;
     }
 }
