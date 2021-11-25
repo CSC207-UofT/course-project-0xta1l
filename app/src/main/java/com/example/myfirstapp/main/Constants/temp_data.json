@@ -1065,10 +1065,12 @@
             "Dessert",
             "Western"
         ],
+        "description": "A fresh hearty sweet dessert",
         "ingredients": "['2 large egg yolks', '1 cup all-purpose flour', '.5 cup almond flour (such as Bobs Red Mill Super-Fine Natural Almond Flour) or .5 cup all-purpose flour', '3 Tbsp. sugar', '1 tsp. kosher salt', '.5 cup (1 stick) chilled unsalted butter, cut into pieces', '2 cups whole milk', '1 tsp. vanilla paste or 1.5 tsp. vanilla extract', '4 large egg yolks', ' cup sugar', '.25 cup cornstarch', '.25 tsp. kosher salt', '3 Tbsp. unsalted butter, cut into pieces', '12 oz. fresh blueberries', '6 oz. fresh blackberries, halved if very large', 'Special Equipment: A (9\"-diameter) springform pan or tart pan with removable bottom']",
         "instructions": "Place a rack in the middle of oven; preheat to 350F. Whisk egg yolks and 1 Tbsp. cold water in a small bowl to combine.\nWhisk all-purpose flour, almond flour, sugar, and salt in a medium bowl. Add butter and rub and smash into dry ingredients with your fingers to create large, shaggy pieces (you want some pieces that are flat and thin and some that are large and irregular).\nDrizzle egg yolk mixture over flour and, using a fork or your fingers, toss into dough to incorporate. Knead dough in bowl until it starts to come together (it will still look a little dry; although, if it looks too dry and doesn't come together, add 12 Tbsp. more water, but only if needed).\nTurn dough out onto a clean work surface and knead 1 or 2 more times. Divide dough in half, stack pieces, and press down firmly to smash together. Repeat process until dough is well combined and becomes slightly sticky, 23 more times. Press dough into bottom and 1\" up sides of pan and prick all over with a fork. Freeze until very firm, 2030 minutes.\nBake crust until deep golden brown all over, 3540 minutes. Let cool.\nDo Ahead: Crust can be baked 2 days ahead. Store tightly wrapped at room temperature.\nBring milk and vanilla paste to a simmer in a medium saucepan over medium-high heat. Remove from heat.\nMeanwhile, whisk egg yolks, sugar, cornstarch, and salt in a medium bowl, starting slowlyit wont want to combine easily at firstthen vigorously whisk until mixture is very pale yellow and very thick, about 1 minute (the sugar should be nearly dissolved at this point). Whisking constantly, gradually add hot milk mixture. Return custard base to saucepan and bring to a simmer over medium heat, whisking constantly. Simmer, still whisking constantly, until custard is thickened and has no cornstarch taste, about 3 minutes.\nRemove custard from heat and add butter a couple of pieces at a time, whisking until fully melted before adding more, until all of the butter is incorporated. Transfer to a medium bowl and cover with plastic wrap, pressing directly against surface. Let cool.\nVigorously whisk custard until smooth and slightly loosened. Scrape into crust and smooth surface. Top with berries.\nDo Ahead: Custard can be made 4 days ahead. Keep chilled.",
         "image": "img_78.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 64
     },
     {
         "ID": 79,
@@ -1077,10 +1079,12 @@
             "Meal",
             "Western"
         ],
+        "description":" Tender fluffy rice with a hint of coconut.",
         "ingredients": "['1.5 cups raw Thai jasmine rice', '.5 cup coconut milk, preferably freshly extracted', '1 cup water', '1 tablespoon plus 2 teaspoons granulated sugar', '.5 teaspoon salt', '.5 cup coconut cream, preferably freshly extracted']",
         "instructions": "To make the rice, which is best done in a rice cooker, put the rice in a fine-mesh sieve or colander and rinse under cold running water until the water runs clear. Transfer the rice to a rice cooker, add the coconut milk, water, sugar, and salt, and stir to combine. Cover the rice cooker and turn it on.\nAs soon as the rice cooker turns itself off, uncover, pour the coconut cream evenly over the top of the rice (do not stir it in), and replace the lid. Keep the rice warm until serving.",
         "image": "img_79.png",
-        "rating": 2
+        "rating": 2,
+        "preptime": 30
     },
     {
         "ID": 80,
@@ -1089,10 +1093,12 @@
             "Dessert",
             "Western"
         ],
+        "description":" Fruity peachy sesame crumble with a hint of nuttiness from toasted sesame seeds",
         "ingredients": "[' cup raw sesame seeds', '1 lemon', '2.5 lb. peaches (67), thinly sliced', ' cup plus 1.25 cups sugar', '1.75 tsp. kosher salt, divided', '1 cup all-purpose flour', '.5 cup (1 stick) unsalted butter', '.5 tsp. ground cinnamon', ' cup tahini', '2 tsp. toasted sesame oil', '12 tsp. cornstarch', 'Vanilla ice cream (for serving; optional)']",
         "instructions": "Place a rack in top third of oven; preheat to 375F. Toast sesame seeds on a rimmed baking sheet, tossing halfway through, until golden brown, 1215 minutes. Immediately transfer to a large bowl.\nMeanwhile, finely grate zest from lemon into a medium bowl; set aside. Place peaches in a 13x9\" baking dish. Halve lemon and squeeze 1 Tbsp. juice over peaches, then sprinkle  cup sugar and .75 tsp. salt over. Toss to gently combine, then let sit while you prep the topping, at least 20 minutes.\nAdd flour and remaining 1.25 cups sugar and 1 tsp. salt to bowl with sesame seeds. Whisk to combine.\nAdd butter and cinnamon to bowl with lemon zest. Microwave until butter is melted, about 1 minute. (Or, if you don't have a microwave, melt butter with cinnamon and lemon zest in a small saucepan over medium.) Whisk in tahini and oil.\nScrape tahini mixture into dry ingredients and mix until incorporated (mixture should hold together when squeezed in your hand).\nThe peaches should look juicy at this point. Add 1 tsp. cornstarch. If theyre really juicy, add another 1 tsp. Gently toss to combine. (If your peaches happen to be not-so-ripe and aren't juicy, don't add any cornstarch.)\nSqueeze topping into big clumps, then break off uneven pieces and scatter over peaches.\nBake crumble until topping is well browned and firm, peaches are tender, and juices are bubbling, about 1 hour. Let cool slightly.\nDivide crumble among shallow bowls and add a scoop of ice cream if desired.",
         "image": "img_80.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 73
     },
     {
         "ID": 81,
@@ -1101,10 +1107,12 @@
             "Dessert",
             "Western"
         ],
+        "description": "Nutty frangipane tart",
         "ingredients": "['1 cup hazelnuts, toasted, loose skins rubbed off in a kitchen towel, and cooled', '1/2 cup sugar', '1/4 cup all-purpose flour', '3/4 stick (6 tablespoons) cold unsalted butter, softened', '2 large eggs', '1 teaspoon vanilla extract', '1/2 teaspoon almond extract', '1 tart shell', '3 firm-ripe Bosc or Anjou pears', '1/4 cup apricot preserves, heated and strained']",
         "instructions": "Preheat oven to 350F.\nPulse hazelnuts with 1/4 cup sugar in a food processor until finely ground, then add flour and pulse to combine.\nBeat together butter and remaining 1/4 cup sugar with an electric mixer at moderately high speed until pale and fluffy. Add eggs 1 at a time, beating well after each addition, then beat in extracts. Reduce speed to low and mix in nut mixture until just combined.\nSpread frangipane filling evenly in tart shell. Peel, halve, and core pears, then cut lengthwise into 1/4-inch-thick slices, holding slices together to keep pear shape intact. Arrange pears decoratively on filling, fanning slices slightly. Bake until pears are golden and frangipane is puffed and golden brown, 30 to 40 minutes. Brush pears (not filling) with preserves and cool tart completely in pan on rack, then remove side of pan.",
         "image": "img_81.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 63
     },
     {
         "ID": 82,
@@ -1115,10 +1123,12 @@
             "Spanish",
             "Western"
         ],
+        "description": "Savoury creamy broccoli pasta",
         "ingredients": "['Kosher salt', '2 heads (about 1 pound, or 454g, total) broccoli, cut into bitesize florets', '12 ounces (340 g) whole-wheat penne pasta, or other short tubular pasta', '3 tablespoons (45 ml) extra-virgin olive oil, divided', '1 cup (54 g) panko or Freezer Bread Crumbs (see Note)', '4 oil-packed anchovy fillets', '.25 cup (36 g) capers, chopped if large (rinsed well if salt-packed)', '2 garlic cloves, minced', '.25 teaspoon red pepper flakes']",
         "instructions": "Bring a large pot of salted water to a boil over high heat. Add the broccoli florets and cook until bright green and crisp-tender, 2 to 3 minutes. Using a slotted spoon, transfer the broccoli to a large bowl.\nAdd the pasta to the boiling water and cook for 1 minute less than the package instructions for al dente, about 9 minutes.\nMeanwhile, toast the bread crumbs. Heat 1 tablespoon (15 ml) of olive oil in a large, high-sided saute pan or skillet over medium heat. Add the breadcrumbs and saute until the crumbs are golden brown and crisp, 4 to 5 minutes. Transfer to a small bowl and set aside.\nPour the remaining 2 tablespoons (30 ml) of olive oil into the pan. Add the anchovies and saute until they disintegrate, about 1 minute. Add the capers, garlic, and red pepper flakes. Saute until fragrant, about 1 minute, and remove from the heat.\nWhen the pasta is ready, reserve 1.5 cups (360 ml) of pasta water with a measuring cup, then drain the pasta. Add the broccoli and reserved pasta water to the pan and bring to a simmer. Continue to simmer, using a wooden spoon to break the florets into small pieces as they become more tender, until the water is reduced by about half and you've been able to break apart enough florets that you're left with a very chunky mixture, 5 to 7 minutes.\nAdd the pasta to the pan. Cook, tossing and stirring, until the pasta is al dente and the sauce thickens and coats the pasta, 1 to 2 minutes. Remove from the heat, add half the toasted bread crumbs, and toss again to combine. Serve garnished with the remaining toasted bread crumbs.",
         "image": "img_82.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 35
     },
     {
         "ID": 83,
@@ -1129,10 +1139,12 @@
             "Japanese",
             "Chinese"
         ],
+        "description":" Savoury dashi",
         "ingredients": "['1 gallon cold water', '1 (6-inch) square dashima (kombu)', '3 medium dried shiitake mushrooms', '12 large dried anchovies (gutted and heads removed)']",
         "instructions": "Put the water, dashima, shiitake mushrooms, and anchovies in a covered stockpot or other large pot and let stand at room temperature overnight, or for 8 to 12 hours.\nRemove the lid, set the pot over high heat, and heat until the surface of the water begins to ripple; pay attention, and do not let it come to a boil. Lower the heat to maintain a very gentle simmer (the ideal temperature is a few degrees below a light boil) and simmer for 80 to 90 minutes. Taste the dashi every 20 minutes to monitor the changes in flavor and texture. You will notice the texture becoming softer. I describe it as having a slippery, slightly viscous texture compared to tap water. The sea flavor will become stronger, and the dashi will become darker, like pale Earl Grey tea. The sweetness will take a while to appear, but when it does, the dashi is almost ready. When you can taste the sweetness and deep sea flavors, and the dashi has a very soft texture, it is done. Be vigilant, because dashi will become bitter if cooked too long.\nStrain the dashi into a covered container and store in the refrigerator for up to 2 days. After 24 hours, the dashi will begin to lose some of its flavor and it will turn slightly flat.\nIts best to use dashi the same day you make it, though if you keep it refrigerated, you can use it for another day or two. By the third day, it will no longer taste fresh.\nVegetarians can make a dashi from just dashima and dried shiitakes.",
         "image": "img_83.png",
-        "rating": 3
+        "rating": 3,
+        "preptime": 700
     },
     {
         "ID": 84,
@@ -1141,10 +1153,12 @@
             "Drink",
             "Western"
         ],
+        "description":" Refreshing tamaring refresher",
         "ingredients": "['2.5 cups (600 ml) water', '2.5 oz (70 g) sour tamarind pulp or paste', '8 oz (225 g) fresh ginger, preferably young', '1 cup (200 g) sugar', 'One 1 L bottle chilled club soda or 4 cups (960 ml) chilled water']",
         "instructions": "Bring 1.5 cups (360 ml) of the water to a boil. Put the tamarind pulp in a heat-proof nonreactive bowl, and cover with the boiling water. Cover and let sit for about 1 hour, until the pulp has become soft and mushy. Using a small potato masher or clean hands, massage and squeeze the block to soften the pulp. Strain through a fine-mesh strainer suspended over a medium bowl, pressing the pulp through the strainer with a large spoon. Discard the seeds and other solids left behind. Refrigerate the tamarind extract in an airtight container in the refrigerator until ready to use, for up to 4 days.\nRinse the ginger and gently scrub to remove any traces of dirt. If the ginger is young, with a thin skin, leave the skin on. Otherwise, peel. Cut into thin slices. In a medium saucepan, combine the ginger, sugar, and remaining 1 cup (240 ml) water. Bring to a boil over medium-high heat and immediately remove the saucepan from the heat. Cover and steep for 10 minutes. Strain the ginger simple syrup through a fine-mesh strainer and discard the ginger.\nIn a large pitcher, mix the tamarind extract and the ginger simple syrup together. Fill eight tall glasses with ice. Pour 4 oz (120 ml) of the tamarind-ginger syrup into each glass, top with 4 oz (120 ml) of the club soda or chilled water, and stir. Store any remaining tamarind-ginger syrup in an airtight container in the refrigerator for up to 1 week.\nThis rejuvenating drink combines the mild heat of young ginger and the sourness of tamarind. Its wonderful during the warmer months. Young ginger requires no peeling before use because its outer skin is so thin. I recommend using South Asian tamarind, which is a lot more sour than the Mexican variety. Look for it in Asian and Indian markets.",
         "image": "img_84.png",
-        "rating": 4
+        "rating": 4,
+        "preptime":10
     },
     {
         "ID": 85,
@@ -1153,10 +1167,12 @@
             "Drink",
             "Middle-Eastern"
         ],
+        "description":" herby saffron refresher",
         "ingredients": "['15 to 20 saffron strands, plus a few extra strands for garnish', '.5 cup (100 g) sugar', '3 green cardamom pods, smashed', '.25 cup (30 g) ground sumac', '3 cups (700 ml) chilled club soda or water']",
         "instructions": "Grind the saffron with 2 Tbsp. of sugar to a fine powder using a mortar and pestle.\nIn a medium saucepan over medium-high heat, combine 1 cup (240 ml) water, sugar, cardamom, and powdered saffron mixture and bring to simmer, stirring until the sugar dissolves. Remove from the heat and stir in the sumac. Cover the saucepan with a lid and let it steep for 30 minutes, no more. Strain the liquid through a fine mesh strainer over a medium bowl and chill before ready to serve.\nTo serve, fill four tall glasses with ice. In a large pitcher, stir the syrup with the chilled club soda or water. Pour 1 cup (120 ml) of the drink into each glass. Garnish each glass with 1 or 2 saffron strands. Store any leftovers in an airtight container in the refrigerator for up to 1 week.\nSumac is rich in citric, malic, and tartaric acids but also bitter tannins. Steeping it in water dissolves the water-soluble acids. Gallotannin, one of the main tannins present in sumac, is bitter to taste and dissolves in water easily. Avoid steeping the sumac for too long or its tannins will make the syrup bitter. Saffron is ground to a fine powder using a little sugar as an abrasive. Grinding saffron increases the amount of color and flavor extracted than would be achieved if the strands were used directly. Club soda if used, adds a second note of acidity from the carbonic acid as well as the crackling sound of bubbles that create a sensation via chemesthesis.",
         "image": "img_85.png",
-        "rating": 2
+        "rating": 2,
+        "preptime":25
     },
     {
         "ID": 86,
@@ -1165,10 +1181,12 @@
             "Dessert",
             "Western"
         ],
+        "description":"sweet nutty brookies",
         "ingredients": "['160g (5.75 oz / .5 cup + 2 tablespoons) smooth peanut butter', '220g (8 oz / 1 cup) light brown sugar', '1 large egg, plus 2 large egg yolks', '100g (3.5 oz / .75 cup) all-purpose flour', '1 teaspoon bicarbonate of soda (baking soda)', '.5 teaspoon fine sea salt', '100g (3 oz) salted peanuts, roughly chopped', '150g (5.5 oz / 1 sticks) unsalted butter, diced, plus extra for greasing', '85g (3 oz / 1 cup) cocoa powder', '100g (3.5 oz / .5 cup) caster (superfine) sugar', '100g (3.5 oz /  cup + 2 tablespoons) light brown sugar', '.25 teaspoon fine sea salt', '1 teaspoon vanilla extract', '2 large eggs', '70g (2.5 oz / .5 cup + 1 tablespoon) all-purpose flour']",
         "instructions": "Preheat the oven to 180C (350F), Gas Mark 4. Lightly grease a 13x9\" baking tin and line with a piece of parchment paper that overhangs the two long sides. Secure in place with metal clips.\nFor the peanut butter cookie layer, mix the peanut butter and brown sugar together in a large bowl for a couple of minutes until combined and slightly lightened. Add the egg and egg yolks and beat together for a further 23 minutes. Add all the remaining ingredients (reserving 3 tablespoons of the peanuts for sprinkling over later) and gently mix together to form a uniform cookie dough. Spread the cookie dough in an even layer in the prepared tin, then set aside.\nFor the brownie layer, add the butter and cocoa to a small saucepan over a medium heat, stirring constantly, until melted and smooth. Remove from the heat and set aside. Place the sugars, salt, vanilla and eggs in a large bowl and whisk together with an electric mixer for 23 minutes or until slightly thickened and pale. Pour in the melted butter mixture, mixing briefly until combined, then fold in the flour. Pour the batter over the cookie layer and spread into an even layer, then sprinkle over the reserved peanuts.\nBake for about 2530 minutes, or until a skewer inserted into the middle comes out with a few moist crumbs.\nLeave the brookies to cool completely in the tin, before using the parchment paper to lift them from the tin and cutting into squares.Store in a sealed container for 34 days.",
         "image": "img_86.png",
-        "rating": 2
+        "rating": 2,
+        "preptime": 68
     },
     {
         "ID": 87,
@@ -1178,10 +1196,12 @@
             "Spanish",
             "Mexican"
         ],
+        "description": "cheesy flavourful shrimp tacos",
         "ingredients": "['4 teaspoons neutral cooking oil, such as canola oil', '1 onion, peeled and diced', '1 garlic clove, peeled and minced', '2 poblano chiles, stems removed, cut into 14-inch-wide strips', '8 corn tortillas', 'Juice of 3 limes', '1 slice bacon, diced small', '8 ounces peeled and deveined medium shrimp (preferably sizes 36/40 or 41/50; if you have bigger shrimp, slice them in half lengthwise)', '1 teaspoon kosher salt', '1 cup Queso Asadero cheese (if not available, substitute Teleme or Monterey Jack)', '2 limes, cut into wedges', 'Homemade or store-bought tangy red salsa']",
         "instructions": "Warm 3 teaspoons of the oil in a frying pan over medium-low heat. Add the onion and cook for 5 minutes, stirring gently. Add the garlic and continue to cook for 3 minutes. (If, at any time during the cooking process, the items in the pan dry out at all, deglaze the pan with some lime juice, scraping up the browned bits with a wooden spoon, and continue.) Turn the heat to medium and add the chiles. Cook for 10 minutes, or until the chiles are thoroughly cooked.\nAt this point, warm a separate frying pan over medium heat and add the remaining 1 teaspoon oil. Interleaved with finishing the rest of the recipe, heat each tortilla in the oil-coated pan for about 20 seconds per side, just long enough to make them the slightest bit golden but still pliable, and put between two towels to stay warm and wick away any excess oil.\nOnce the chiles have cooked for 10 minutes, pour the lime juice on the ingredients in the pan. Add the diced bacon to the pan and turn the heat to medium-high. When the pan has heated up and the bacon has started to turn color, add the shrimp and use the salt to season everything in the pan. Cook for 2 to 3 minutes, stirring and flipping the shrimp as necessary to cook them evenly. The shrimp should be bright pink and white and opaque. If they are still translucent, cook them a little longer.\nSprinkle the cheese over everything in the pan and turn the heat to low. Continue stirring until the cheese is melted. Remove the pan from the heat. Distribute the cheesy shrimp mixture equally among the tortillas, making a plate full of tacos. Serve along with the lime wedges and red salsa, if desired.",
         "image": "img_87.png",
-        "rating": 2
+        "rating": 2,
+        "preptime": 35
     },
     {
         "ID": 88,
@@ -1194,10 +1214,12 @@
             "Vietnamese",
             "Thai"
         ],
+        "description": "savoury kimchi toast",
         "ingredients": "['4 oz. cream cheese, room temperature', '.75 cup finely chopped kimchi; plus more for serving (optional)', '2 scallions, thinly sliced on a diagonal', '1 cup cilantro leaves with tender stems', '.5 lime', 'Kosher salt', '4 (.75\"-thick) slices country-style bread, grilled or toasted', 'Chili oil and toasted white sesame seeds (for serving)']",
         "instructions": "Mix cream cheese and .75 cup kimchi in a medium bowl.\nToss scallions and cilantro in a small bowl to combine. Squeeze in juice from lime, season with salt, and toss again.\nSmear kimchi cream cheese over each slice of bread. Top with scallion salad and more kimchi (if using). Drizzle with chili oil; sprinkle with sesame seeds.",
         "image": "img_88.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 25
     },
     {
         "ID": 89,
@@ -1206,10 +1228,12 @@
             "Dessert",
             "Western"
         ],
+        "description": "buttery ginger tomatoes",
         "ingredients": "['4 scallions', '4 Tbsp. unsalted butter', '1 (1\") piece ginger, peeled, cut into matchsticks', '1.5 pounds tomatoes (about 3 medium), cut into (1\") pieces', '2 Tbsp. plus 1.5 tsp. white or regular soy sauce', 'Kosher salt (optional)', 'Toasted country-style bread or cooked rice or pasta (for serving)']",
         "instructions": "Trim dark green tops from scallions and thinly slice; set aside for serving. Finely chop remaining white and pale green parts. Heat butter in a large skillet over medium. Add white and pale green parts of scallions and ginger and cook, stirring often, until fragrant, about 1 minute.\nAdd tomatoes and cook, turning gently with a spoon, until juicy and just warmed through, about 2 minutes. Add soy sauce and toss to combine. Taste and season with kosher salt if needed. Top with reserved scallion greens.\nSpoon tomatoes over toast and sprinkle with more salt if desired.",
         "image": "img_89.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 20
     },
     {
         "ID": 90,
@@ -1219,10 +1243,12 @@
             "Italian",
             "Western"
         ],
+        "description": "savoury cherry tomato pasta",
         "ingredients": "['.5 cup extra-virgin olive oil, plus more for drizzling', '6 garlic cloves, smashed', '2.5 lb. cherry tomatoes (about 4 pints)', '2 large sprigs basil, plus 1 cup basil leaves, torn if large', '.75 tsp. crushed red pepper flakes', '1.5 tsp. kosher salt, plus more', 'Pinch of sugar (optional)', '12 oz. casarecce or other medium-size pasta', '1 oz. Parmesan, finely grated (about .5 cup), plus more for serving']",
         "instructions": "Heat .5 cup oil in a large heavy pot over low. Add garlic and cook, stirring often with a wooden spoon, until softened but not browned, about 2 minutes.\nIncrease heat to medium and add tomatoes, basil sprigs, red pepper flakes, and 1.5 tsp. salt. Cook, stirring to coat, until some of the tomatoes begin to burst and release their juices, about 4 minutes. Smash some but not all of the tomatoes with the spoon to help release their liquid, then continue to cook, stirring occasionally, until a chunky, thickened sauce forms (about half the tomatoes should still be intact), 1012 minutes. Taste and add sugar if sauce is too tart and add more salt if needed. Pluck out and discard basil sprigs.\nMeanwhile, cook pasta in a large pot of boiling salted water, stirring occasionally, until al dente.\nDrain pasta, add to pot with sauce, and cook, stirring, until coated, about 1 minute. Remove from heat and stir in 1 oz. Parmesan.\nDivide pasta among bowls; drizzle with oil. Top with more Parmesan and 1 cup basil leaves.",
         "image": "img_90.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 45
     },
     {
         "ID": 91,
@@ -1231,10 +1257,12 @@
             "Dessert",
             "Western"
         ],
+        "description": "sweet and salty ice cream pie",
         "ingredients": "['1 sleeve (110 g) Ritz crackers or other cracker of your choice', ' cup (45 g) raw peanuts or other nut or seed, finely chopped', ' cup (67 g; packed) light or dark brown sugar', '.5 tsp. Diamond Crystal or .25 tsp. Morton kosher salt', '6 Tbsp. unsalted butter, melted', '3 large eggs', '.5 cup (100 g; packed) light or dark brown sugar', '.5 tsp. Diamond Crystal or .25 tsp. Morton kosher salt', '1 tsp. vanilla extract', '.5 cup (128 g) natural peanut butter or other natural nut or seed butter', '1.5 cups heavy cream', ' cup (100 g) grape jelly (preferably Bonne Maman) or other jelly, jam, or compote']",
         "instructions": "Preheat oven to 275F. Place crackers in a deep pie dish (a shallower one will work but you may have some filling left over) and gently crush with your hands until you have a mix of dime-size pieces, small crumbs, and everything in between. Add peanuts, brown sugar, and salt and toss to combine. Drizzle in butter and toss to evenly coat. Using your hands and the bottom of a measuring cup, press firmly and evenly into bottom and up sides of dish. (Mixture will look and feel crumbly, but it will hold together when baked.) Bake crust until a shade darker, 2025 minutes. Let cool.\nDo Ahead: Crust can be baked 3 days ahead. Store tightly wrapped at room temperature, or freeze up to 1 month.\nPour water into a medium saucepan to come 1.5\" up the sides and bring to a bare simmer over medium-low heat. Whisk eggs, brown sugar, and salt in a large heatproof bowl just to combine (or use the bowl of a stand mixer if youve got one). Set over saucepan (bowl should not touch water) and heat egg mixture, stirring constantly with a heatproof rubber spatula, until sugar dissolves, about 4 minutes (mixture will no longer feel gritty when rubbed between your fingers). If you are concerned about undercooked eggs, heat mixture longer, still stirring constantly, until an instant-read thermometer registers 165F, about 3 minutes more. Remove bowl from heat and add vanilla to egg mixture. Using an electric mixer, beat on high speed until thick and pale and doubled in volume, about 10 minutes. (Or, if using a stand mixer, beat with the whisk attachment, 68 minutes.)\nUsing spatula, mix peanut butter in another large bowl to loosen up and smooth out. Stir one third of egg mixture into peanut butter to lighten, then gently fold in half of remaining egg mixture, running spatula down sides and along bottom of bowl, then lifting up through center and over top while rotating bowl, until just combined. Repeat with remaining egg mixture (it will lose a lot of volume, and thats okay).\nStarting on low speed and gradually increasing to medium-high, beat cream in the same bowl you used for egg mixture (no need to wash) until soft peaks form, about 2 minutes. Gently fold into peanut butter mixture and scrape into crust. Dollop jelly all over; swirl with a butter knife. (For more defined swirls, freeze pie 30 minutes before adding jelly.) Freeze at least 8 hours before serving.\nTo slice, run a chefs knife under hot water to warm up the blade, then wipe to clean and dry between slices. Use an offset spatula or fork to loosen slices from dish. If pie is frozen very hard, you may need to let it temper in the fridge 30 minutes before serving.\nDo Ahead: Pie can be made 2 weeks ahead. Wrap tightly and freeze.",
         "image": "img_91.png",
-        "rating": 1
+        "rating": 1,
+        "preptime" : 29
     },
     {
         "ID": 92,
@@ -1258,10 +1286,12 @@
             "Western",
             "Chinese"
         ],
+        "description":"hearty tomato salad",
         "ingredients": "['1.5 lb. heirloom tomatoes (about 3 medium), sliced into 812 wedges, depending on size', '12 oz. mixed cherry tomatoes (about 2 cups), halved, quartered if large', '1.75 tsp. kosher salt, divided, plus more', '1 lemon', '.5 garlic clove', '6 Tbsp. extra-virgin olive oil', '2 Tbsp. zaatar', '2 cups pita chips', '1.5 tsp. (or more) honey', '3.5 oz. feta, thinly sliced into planks', '.5 cup basil leaves, torn if large', '.5 cup mint leaves, torn if large']",
         "instructions": "Gently toss heirloom and cherry tomatoes and 1.25 tsp. salt in a medium bowl to combine and set aside.\nFinely grate lemon zest into a small bowl, then grate in garlic; set lemon aside.\nHeat oil in a small saucepan or skillet over medium until just starting to shimmer. Add zaatar and cook, stirring occasionally, until fragrant and slightly darkened in color, about 1 minute. Add lemon zest and garlic, cook 10 seconds, then remove from heat. (You're looking to cook off the raw flavor of the garlic without losing the brightness of the lemon.) Transfer zaatar oil to a heatproof measuring cup.\nPlace pita chips in a large bowl and drizzle 2 Tbsp. zaatar oil over; season with salt. Mix well with a rubber spatula, aiming to coat chips without breaking them into too many pieces.\nCut reserved lemon in half and squeeze juice from 1 lemon half into a small bowl. Stir in honey and remaining .5 tsp. salt. Gradually add remaining za'atar oil, stirring constantly until emulsified. Taste dressing and add more lemon juice, honey, or salt if needed.\nAdd feta, basil, mint, and reserved tomatoes to bowl with chips and drizzle dressing over; toss gently to combine.\nSpoon salad onto platter, making sure to leave no juices behind. Eat fast for crunchy chips or let sit for a crispy-gone-soggy experience.",
         "image": "img_93.png",
-        "rating": 2
+        "rating": 2,
+        "preptime":12
     },
     {
         "ID": 94,
@@ -1271,10 +1301,12 @@
             "Italian",
             "Western"
         ],
+        "description": "Savoury meaty chicken thighs",
         "ingredients": "['6 skin-on, bone-in chicken thighs (about 2.25 lb. total)', '.5 tsp. kosher salt, plus more', '1.25 lb. cherry tomatoes (about 2 pints)', '.25 cup harissa paste', '3 Tbsp. red wine vinegar', '3 sprigs oregano, divided', '4 oz. feta, cut into (.25\"-thick) planks', 'Crusty bread (for serving)']",
         "instructions": "Pat chicken thighs dry with paper towels; season all over with salt. Arrange skin side down in a cold large cast-iron skillet. Set over medium heat and cook chicken, undisturbed, rotating pan as needed for even browning, until skin is very deep golden brown and crisp and chicken releases easily from pan, 1316 minutes. Using tongs, transfer chicken to a plate, arranging skin side up.\nCombine tomatoes, harissa paste, vinegar, 1 oregano sprig, and .5 tsp. salt in same skillet. Increase heat to medium-high and cook, stirring occasionally, until tomatoes burst and their juices start to thicken, 810 minutes.\nNestle chicken thighs into tomatoes, skin side up. Reduce heat to medium-low, bring to a simmer, and cook until chicken is just cooked through and flesh is no longer pink (an instant-read thermometer inserted into the thickest part near the bone will register 165F), and tomato sauce is thickened so that a wooden spoon dragged through it leaves a trail, 68 minutes. Remove from heat and let sit 5 minutes.\nBreak feta into large pieces; scatter over chicken. Some pieces will stay intact while others will soften into the sauce a littleand that's exactly what you want. Pick leaves off remaining 2 oregano sprigs and scatter on top.\nServe with bread for sopping up any extra tomato sauce.",
         "image": "img_94.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 34
     },
     {
         "ID": 95,
@@ -1284,10 +1316,12 @@
             "Middle-Eastern",
             "Indian"
         ],
+        "description": " hearty chickpea-tahini bowl",
         "ingredients": "['2 small jalapeos, seeded, chopped', '1 (.75-inch) piece ginger, peeled, finely grated', '2 small garlic cloves, finely grated', '1 cup (packed) cilantro leaves with tender stems', ' cup fresh lime juice', ' cup tahini', '1 Tbsp. plus 1.5 tsp. miso', 'Kosher salt', '3 Tbsp. extra-virgin olive oil, divided, plus more for drizzling', '2 garlic cloves, lightly crushed', '1 (14-oz.) can chickpeas rinsed, drained', '3 ears of corn, shucked, kernels removed', '1 Tbsp. spice blend (such as zaatar, vadouvan, hawaij, or berbere)', 'Kosher salt', '4 cups tender greens (such as Little Gem lettuce and/or watercress), torn if large', '2 avocados, cut into wedges', '4 small tomatoes, cut into wedges', 'Crumbled feta, cilantro sprigs, and lime wedges (for serving)']",
         "instructions": "Puree jalapeos, ginger, garlic, cilantro, lime juice, tahini, miso, and 3 Tbsp. water in a blender until smooth. Season with salt.\nDo Ahead: Dressing can be made 1 day ahead. Transfer to an airtight container and chill.\nHeat 2 Tbsp. oil in a large skillet over medium. Add garlic and cook, turning occasionally, until golden brown, about 4 minutes. Mash garlic with a spoon and stir into oil. Add chickpeas and increase heat to medium-high. Cook, undisturbed, until golden brown and beginning to crisp underneath, about 3 minutes. Toss and continue to cook, tossing occasionally, until golden brown all over, about 2 minutes more. Add corn and 1 Tbsp. oil and cook, tossing, until corn kernels are golden around the edges and tender, 57 minutes. Sprinkle spice blend over and toss to coat. Season with salt.\nCombine lettuce, avocados, and tomatoes in a large bowl. Drizzle lightly with oil and toss to combine. Season with salt.\nDivide dressing among bowls and top with salad and chickpea mixture, then feta and some cilantro. Serve with lime wedges for squeezing over.",
         "image": "img_95.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 33
     },
     {
         "ID": 96,
@@ -1305,16 +1339,18 @@
     },
     {
         "ID": 97,
-        "name": "Pla\u00c3\u0152tanos Horneados con Crema y Queso (Baked Banana With Crema and Cheese)",
+        "name": "Platanos Horneados con Crema y Queso (Baked Banana With Crema and Cheese)",
         "genre": [
             "Meal",
             "Mexican",
             "Spanish"
         ],
+        "description": "sweet and savoury platanos",
         "ingredients": "['6 heirloom bananas or small plantains, ripe but not black, unpeeled', '1 cup (230 g) crema or cre\u00c3\u0152me frai\u00c3\u0152che', '1 cup (120 g) crumbled queso fresco']",
         "instructions": "Preheat the oven to 400F.\nPlace the whole bananas or plantains on a baking sheet and bake, turning them every 10 minutes, until the peel starts to split and the inside is tender when tested with a skewer, about 40 minutes. Remove from the oven but keep on the baking sheet. Carefully slice the peel lengthwise to just reveal the flesh and drizzle with some crema and sprinkle with cheese. Transfer to plates to serve individually, on a platter, or directly on the baking sheet on the table. Either way, people should carve out their own banana. Serve the remaining crema and cheese in bowls on the side, in case anyone wants more.",
         "image": "img_97.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 30
     },
     {
         "ID": 98,
@@ -1325,10 +1361,12 @@
             "Spanish",
             "Caribbean"
         ],
+        "description":" fresh and filling tamale pie",
         "ingredients": "['1/2 pound fresh chorizo, casings removed (about 2 links), or vegetarian substitute such as Lightlife Plant-Based Italian Sausage', '1/2 pound ground beef, or vegetarian substitute such as Lightlife Plant-Based Ground', '1 tablespoon tomato paste', '2 1/2 teaspoons cumin', '1 large onion, grated on a box grater, divided', '12 medium jalapeos, thinly sliced, seeded if desired, divided', '1 3/4 teaspoons kosher salt, divided', '2 large beefsteak tomatoes (about 2 pounds), cut into 1/2\" cubes', '2 cups corn kernels (preferably fresh; from about 3 ears of corn), divided', '8 ounces cheddar cheese, grated (about 2 cups)', '2 large eggs', '6 tablespoons unsalted butter, melted', '1/3 cup sour cream, plus more for serving', '1 1/4 cups cornmeal', '1 teaspoon baking powder']",
         "instructions": "Preheat oven to 450F. Heat an 8\" cast-iron skillet over high. Pat chorizo and beef dry with paper towels, then press into an even layer in bottom of hot skillet with a spatula. Cook, undisturbed, until a brown crust begins to form on the bottom, about 6 minutes. Turn, break into pieces, and continue to cook until cooked through, about 4 minutes. Add tomato paste, cumin, half of grated onion, half of jalapeo, and 1 1/4 tsp. salt and cook, stirring constantly, until fragrant and well combined, about 1 minute. Remove from heat and stir in tomatoes, 1 1/2 cups corn, and 1 1/2 cups cheese.\nWhisk eggs, butter, 1/3 cup sour cream, and remaining onion in a medium bowl. Whisk cornmeal, baking powder, and remaining 1/2 tsp. salt in a small bowl. Add dry ingredients to butter mixture and stir to combine, then stir in 1/4 cup cheese and remaining 1/2 cup corn.\nDollop cornbread batter over meat mixture, then smooth into an even layer. Top with remaining jalapeos and 1/4 cup cheese.\nBake cornbread until golden brown, 1518 minutes. Serve with sour cream alongside.",
         "image": "img_98.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 16
     },
     {
         "ID": 99,
@@ -1338,10 +1376,12 @@
             "Italian",
             "Western"
         ],
+        "description":"acidic and sweet peach panzanella",
         "ingredients": "['2 garlic cloves, finely grated', '.5 cup sliced hot pickled peppers (such as banana peppers), plus 1 Tbsp. pickle brine', '1 Tbsp. stone-ground or whole grain mustard', '1.5 tsp. kosher salt', '1.5 lb. plum tomatoes (67 medium), sliced .5\" thick', '8 oz. thick-cut bacon (about 6 slices), cut into 1.5\" pieces', '1 (1012-oz.) loaf crusty multigrain bread, sliced .75\" thick', '3 large slightly firm peaches (about 1.25 lb.), preferably freestone, halved, pitted']",
         "instructions": "Whisk garlic, pickle brine, mustard, and salt in a large bowl to combine. Add tomatoes and pickled peppers and gently toss to combine. Let sit, tossing occasionally, while you cook the bacon, bread, and peaches.\nArrange bacon in a cold large cast-iron skillet and set over medium heat. Cook, stirring occasionally, until mostly crisp (there can still be a few soft, chewy spots if youre into that sort of thing), about 10 minutes. Transfer bacon to paper towels to drain. Pour bacon fat into a small bowl; set aside. Wipe out skillet.\nHeat 2 Tbsp. reserved bacon fat in same skillet. Working in batches and adding more bacon fat as needed, toast bread until golden (a few char marks are fine), about 2 minutes per side. Transfer to paper towels to drain. Wipe out skillet.\nHeat another 1 Tbsp. bacon fat (if youve run out, use vegetable or olive oil) in same skillet and cook peach halves, cut side down, until lightly charred, about 3 minutes. Transfer to a cutting board; let sit until cool enough to handle. Slice each half in half again or into thirds and add to bowl with tomatoes. Tear toasted bread into 1\"1.5\" pieces and add to bowl. Add bacon and toss gently to combine and saturate bread with juices collected in bowl.\nTransfer panzanella to a platter or individual bowls to serve.",
         "image": "img_99.png",
-        "rating": 2
+        "rating": 2,
+        "preptime": 30
     },
     {
         "ID": 100,
@@ -1351,10 +1391,12 @@
             "Western",
             "Vietnamese"
         ],
+        "description":"filling stuffed eggplants and zucchini",
         "ingredients": "['2.5 tbsp olive oil', '2 onions, finely diced (2.5 cups/350g)', '4 cups/1kg tomato puree', '12.25 oz/350g ripe tomatoes (2 large), coarsely grated', '3.25 cups/750ml chicken stock or water', '1 tbsp sugar', 'Salt and black pepper', '.75 cup plus 2 tbsp/175g Egyptian rice or arborio rice (see note below)', '9 oz/250g ground lamb', '.25 cup/60ml olive oil', '.5 tsp ground cinnamon', '.75 tsp ground allspice', '.5 tsp ground cumin', 'About 3 green onions, finely sliced ( cup/35g)', '.75 cup/15g mint leaves, roughly chopped', '.75 cup/15g parsley leaves, roughly chopped', '1 cup/20g dill, roughly chopped', '1 red chile, seeded and finely diced (1 tbsp/10g)', '1 lemon: finely grate the zest to get 1 tsp', '3 tbsp water', '1.5 lb/700g eggplants (between 3 and 6, depending on size)', '1.5 lb/700g zucchini (between 3 and 6, depending on size)', '7 tbsp/100ml olive oil', '6 garlic cloves, finely chopped', '1 tbsp coriander seeds, lightly crushed in a mortar and pestle', '1 red chile, seeded and finely diced (1 tbsp/10g)', '.25 cup/5g parsley leaves, roughly chopped', '.25 cup/5g mint leaves, roughly torn', '.25 cup/5g dill leaves', '1 green onion, thinly sliced (2 tbsp/10g)', '1 cup/250g Greek yogurt']",
         "instructions": "To make the sauce, put the oil into a saucepan or casserole pan with a lidabout 10 inches/25cm wideand place over medium heat. Add the onions and cook for about 10 minutes, stirring frequently, until soft and caramelized. Add the rest of the sauce ingredients, along with 2.5 tsp of salt and a good grind of black pepper. Simmer over medium heat for about 10 minutes, stirring from time to time, then remove from the heat and set aside.\nTo make the stuffing, while the sauce is cooking, place all the ingredients in a large bowl with 1.5 tsp of salt and a good grind of black pepper. Mix well, using your hands to make sure that everything is well incorporated. If making in advance, keep in the fridge until ready to use.\nTrim the stalks from the eggplants, then insert a manakra (or peeler or corer) into the eggplant; you want it to be very close to the skinabout  inch/3mm awaybut not so close that it tears and wont hold its shape when its stuffed. Scoop out the flesh to create a generous cavity. You dont need the flesh anymore, but keep it for another recipe; it can be cut into cubes and steamed or added to your next omelette. If your eggplants are particularly large, slice them in half, crosswise, and scoop out the flesh using a regular small serrated knifebe sure to keep one end of each half intact, so that the stuffing does not fall out!\nUse the manakra or a swivel peeler to scoop out the zucchini flesh. Keep about  inch/3mm of flesh attached to the skin inside the zucchini and about .5 inch/1cm from the end intactthey need to be robust enough to keep the stuffing inside. Again, keep the scooped-out flesh to use elsewhere.\nUsing your hands, so that you can push in a bit of stuffing at a time, fill all the eggplant and zucchini cavities. Stop filling them about .5 inch/1cm from the top of each vegetable; the stuffing needs some space to expand inside the vegetables when they are cooking.\nGently lower the stuffed vegetables into the sauce. They wont fit in a single layer, but try to avoid too much overlap and submerge them in the sauce as much as you can. Return the sauce to medium heat and, once simmering, decrease the heat to low. Cover the pan and simmer very gently for 90 minutes, or until the rice is completely cooked through and softtest if it is ready by sticking a knife into the middle of one of the vegetables; it should go in very easily. Dont worry if some of the rice/stuffing spills into the tomato sauce, this can happen and it will be fine when served.\nTo make the adha, meanwhile, put the oil into a small frying pan and place over medium heat. After about 1 minute, add the garlic and decrease the heat to medium-low. Cook for about 5 minutes, stirring very often, until the garlic is golden and crispy. Keep a close eye on the pan here; you dont want the oil to get too hot and for the garlic to burn. Reserving the oil as you pour, strain the garlic through a sieve. Set the garlic asideit will crisp up as it cools downand return the oil to the pan. Add the coriander seeds and chile and cook for about 1 minute, stirring a few times, until fragrant. Remove from the heat, transfer to a separate bowl, and set aside until needed.\nWhen the vegetables are cooked and the sauce is thick and rich (but still pourable), use a slotted spoon to carefully lift the vegetables out of the pan. Pour the sauce onto a large serving platter (or individual serving plates) with a rim and top with the stuffed vegetables. Spoon on the adhathe coriander-chile oil first, followed by the fried garlicthen sprinkle with the fresh herbs and green onion. Serve warm or at room temperature, with the yogurt spooned alongside.",
         "image": "img_100.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 13
     },
     {
         "ID": 101,
@@ -1364,10 +1406,12 @@
             "Italian",
             "Middle-Eastern"
         ],
+        "description":"herby chicken meatballs",
         "ingredients": "['1.75 oz/50g crustless sourdough bread, finely blitzed into crumbs, or 1 large zucchini (.5 lb/220g), coarsely grated', '1 lb 2 oz/500g ground chicken or turkey thighs', '2 garlic cloves, crushed', '1.5 tsp ground cumin', '1 tsp ground cinnamon', '.5 tsp ground allspice', '.25 tsp chile flakes', '.5 cup/10g cilantro leaves, roughly chopped', '.5 cup/10g parsley leaves, roughly chopped', '.5 cup/10g mint leaves, roughly chopped', '1 lemon: grate finely to get 1.5 tsp zest, then cut into wedges', 'Salt and black pepper', '2 tbsp olive oil', '2 garlic cloves, crushed', '1 lemon: shave the rind to get 4 strips, then juice to get 1.5 tbsp', '1.75 cups/450ml chicken stock', '1.75 lb/800g frozen molokhieh (or 1.75 lb/800g frozen chopped spinach plus 7 oz/200g okra, thinly slicedsee note below)', '.5 tsp ground cinnamon', 'Salt and black pepper', '.5 cup/10g parsley leaves, roughly chopped', '1 cup/20g cilantro leaves, roughly chopped', '.25 cup olive oil', '6 garlic cloves, crushed', '.5 tsp chile flakes', '.5 cup cilantro, roughly chopped']",
         "instructions": "To make the meatballs, place the breadcrumbs in a small bowl and cover with water. Stir, then drain through a colander, squeezing out most of the moisture from the bread. (If using grated zucchini, toss it with .5 tsp of salt and place in a sieve set over a bowl. Let to sit for 20 minutes, then use your hands to squeeze out as much liquid as possible.)\nTransfer the crumbs to a large bowl with the chicken, garlic, spices, herbs, lemon zest, .75 tsp salt, and plenty of black pepper. Using well-oiled hands, shape into about 30 small balls; roughly a scant 1 oz/25g each.\nPut 1 tbsp of oil into a large nonstick saute pan with a lid, and place over high heat. Once hot, add half the meatballs and cook for 23 minutes, turning throughout, until golden brown all over. Transfer the meatballs to a baking sheet and set aside. Keep the pan on the heat and continue with the remaining 1 tbsp of oil and remaining meatballs in the same way.\nReturn the same pan to medium-high heat. Add the 2 garlic cloves, lemon rind, and stock and bring to a boilthis should take about 3 minutes. Add the molokhieh (or the spinach and okra combination), cinnamon, 2 tsp of salt, and plenty of black pepper, then decrease the heat to medium and cook, covered, for about 20 minutes, or until the molokhieh is bubbling and completely defrosted. Add the meatballs, parsley, and .5 cup/10g of cilantro and cook, covered, for another 10 minutes, or until completely cooked through. Stir in the lemon juice.\nTo make the adha, meanwhile, put the olive oil into a small frying pan over medium-high heat. Add the garlic and cook for about 3 minutes, stirring occasionally, or until golden and crispy. Add the chile flakes, then remove from the heat and pour into a bowl. Stir in the cilantro and set aside.\nDivide the soup among four bowls and top with the fried garlic and remaining .5 cup/10g cilantro. Serve at once, with lemon wedges alongside.",
         "image": "img_101.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 30
     },
     {
         "ID": 102,
@@ -1377,10 +1421,12 @@
             "Chinese",
             "Indian"
         ],
+        "description": " one pot bisibelabath",
         "ingredients": "['2 Tbsp. (30 mL) vegetable oil, divided', '2 Tbsp. (30 mL) unsweetened coconut \u00c3\u00afakes', '1 .5 Tbsp. (22 mL) coriander seeds', '1 .5 Tbsp. (22 mL) dried chana dal', '5 black peppercorns', 'Pinch fenugreek seeds', '1 (2-inch or 5-cm) cinnamon stick', '3 whole cloves', 'Pinch asafoetida (optional)', '1 dried red chile, crushed', '1 onion, chopped', '1 Tbsp. (15 mL) kosher salt', '2 green chiles, minced', '2 tsp. (10 mL) ground turmeric', '1 tsp. (5 mL) yellow mustard seeds', '1 cup (250 mL) white basmati rice, rinsed', '1 cup (250 mL) dried lentils (toor or masoor dal)', '2 cups (500 mL) chopped trimmed acorn or butternut squash', \"2 cups (500 mL) chopped mustard greens (see Cooks' Note)\", '2 cups (500 mL) no-added-salt vegetable broth or water', 'Special Equipment: Co\u00c3\u00afee/spice grinder']",
         "instructions": "Using the Saute function on High, heat 1 teaspoon (5 mL) oil in the inner pot for 1 minute, until shimmering. Add the coconut, coriander seeds, chana dal, peppercorns, fenugreek seeds, cinnamon stick, cloves, asafoetida (if using) and dried chile; cook for about 2 minutes, until fragrant. Transfer the mixture to a clean co\u00c3\u00afee/spice grinder and grind to a powder.\nUsing the Saute function on High, heat the remaining 5 teaspoons (25 mL) oil in the inner pot for 1 minute, until shimmering. Add the onion, salt, green chiles, turmeric and mustard seeds; cook for about 2 minutes, until the mustard seeds begin to pop. Add the rice, lentils, squash, and mustard greens; stir to combine. Stir in the toasted spices, then the broth. Secure the lid and cook on high pressure for 3 minutes.\nOnce the cooking is complete, let the pressure release naturally for 10 minutes, then quick-release the remaining pressure.\nRemove the lid and stir. Transfer to a bowl; serve.\nIf you cant find mustard greens, use turnip greens, kale or any other sturdy greens.",
         "image": "img_102.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 10
     },
     {
         "ID": 103,
@@ -1390,10 +1436,12 @@
             "Indian",
             "Middle-Eastern"
         ],
+        "description":" crunchy walnut magic shell",
         "ingredients": "['.25 cup raw walnuts', '3 oz. white chocolate, chopped', ' cup refined coconut oil', '.25 cup tahini', '2 tsp. vanilla bean paste or vanilla extract', 'Pinch of kosher salt']",
         "instructions": "Preheat oven to 350F. Spread out walnuts on a small rimmed baking sheet; toast, tossing halfway through, until golden brown, 810 minutes. Let cool.\nMeanwhile, microwave white chocolate, oil, and tahini in a small microwave-proof bowl on low heat in 15 second bursts, stirring after each burst, until melted and combined.\nProcess walnuts in a food processor until a paste forms. Scrape down sides of bowl and add vanilla bean paste and salt and pulse to combine. With motor running, gradually pour in white chocolate mixture and process until smooth. Use immediately.",
         "image": "img_103.png",
-        "rating": 1
+        "rating": 1,
+        "preptime":22
     },
     {
         "ID": 104,
