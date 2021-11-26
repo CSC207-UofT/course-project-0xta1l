@@ -22,8 +22,9 @@ import java.io.*;
 public class Constants {
     // Create Constants
 
-    public static GenreLibrary GENRELIBRARY =  JSONReader.readRecipes("app/src/main/java/com/example/myfirstapp/main/Constants/temp_data.json");
-    public static UserSecurity USERSECURITY = JSONReader.readUsers("app/src/main/java/com/example/myfirstapp/main/Constants/users.json");
+    public static GenreLibrary GENRELIBRARY =  createDataset();//JSONReader.readRecipes("app/src/main/res/temp_data.json");
+    public static UserSecurity USERSECURITY = createUsers();//JSONReader.readUsers("app/src/main/res/users.json");
+
 
     //public static UserSecurity USERSECURITY = Constants.createUsers();
     public static com.example.myfirstapp.main.Commands.CommandTree COMMANDTREE =
@@ -117,6 +118,7 @@ public class Constants {
         for (String g: recipe6.getGenre()){
             dataset.addRecipes(g, recipe6);
         }
+        dataset.setHighestID(6);
         return dataset;
     }
     public static GenreLibrary CSVRecipeReader(String fileName) throws FileNotFoundException {

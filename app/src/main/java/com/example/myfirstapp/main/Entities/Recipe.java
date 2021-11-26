@@ -32,6 +32,7 @@ public class Recipe {
     private String description;
     private Preview preview;
     private int preptime;
+    private ArrayList<Integer> ratingList;
 
     /**
      * Constructor for Recipe
@@ -53,6 +54,9 @@ public class Recipe {
         this.preptime = preptime;
         this.RecipeReviews = new HashMap<>();
         this.preview = new Preview(this);
+        ArrayList<Integer> ratings = new ArrayList<>();
+        ratings.add(rating);
+        this.ratingList = ratings;
     }
 
 
@@ -148,6 +152,11 @@ public class Recipe {
 
     public void addSavedReviews(String username, Review review) {
         this.RecipeReviews.put(username, review);
+        this.ratingList.add(review.getRating());
+        double sum = 0;
+        for(Integer i : ratingList)
+            sum += i;
+        this.rating = (int) Math.round(sum/ratingList.size());
     }
 
 }
