@@ -1452,10 +1452,12 @@
             "Drink",
             "Western"
         ],
+        "description":" vermouth based cocktail perfect for happy hour",
         "ingredients": "['3 oz. dry white vermouth', '.75 oz. fresh lemon juice', '.75 oz. simple syrup (see note)', '3 orange slices']",
         "instructions": "Combine the vermouth, lemon juice, simple syrup, and 2 of the orange slices in a cocktail shaker and muddle to break down the orange. Add ice cubes to fill the shaker three-quarters full, cover, and shake to chill, about 15 seconds.\nFill a rocks glass with ice cubes and strain the cocktail over the ice. Garnish with the remaining orange slice.",
         "image": "img_104.png",
-        "rating": 3
+        "rating": 3,
+        "preptime": 10
     },
     {
         "ID": 105,
@@ -1464,10 +1466,12 @@
             "Drink",
             "Western"
         ],
+        "descrition": "a tantalizing rose based cocktail",
         "ingredients": "['2 strawberries, hulled', '4 oz. rose wine, chilled', '1 oz. Aperol', '.5 oz. fresh lemon juice', 'Soda water, chilled']",
         "instructions": "Muddle the strawberries in a mixing glass or cocktail shaker. Add the rose, Aperol, and lemon juice, and stir to incorporate. Pour into a wineglass, add a handful of ice cubes, and top with a splash of soda water.",
         "image": "img_105.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 10
     },
     {
         "ID": 106,
@@ -1476,10 +1480,12 @@
             "Meal",
             "Western"
         ],
+        "description": "the vegetarian burger alternative you needed!",
         "ingredients": "['1 cup French green or brown lentils', '.5 cup whole-milk Greek yogurt', '.25 tsp. finely grated lemon zest', '1 Tbsp. fresh lemon juice', '2 garlic cloves, finely grated, divided', 'Kosher salt', '6 oz. crimini mushrooms, stems trimmed, finely chopped', '2 Tbsp. white miso', '.25 tsp. smoked paprika', '4 Tbsp. (or more) extra-virgin olive oil, divided', '.25 cup (or more) oat flour, gluten-free 1:1 blend, or all-purpose flour', 'Whole wheat or gluten-free buns, sprouts and/or lettuce, and pickle slices (for serving)']",
         "instructions": "Place lentils in a large saucepan and pour in water to cover by 4\". Bring to a boil, reduce heat to medium, and simmer, stirring occasionally, until lentils are tender but not mushy, about 10 minutes from the time the water reaches a boil. Drain well, then let cool at least 10 minutes.\nMeanwhile, mix together yogurt, lemon zest, lemon juice, and half of garlic in a small bowl. Season with salt.\nMash mushrooms, miso, paprika, 2 Tbsp. oil, and remaining garlic in a medium bowl with a spoon to combine. Add lentils and mix and smash until partly mashed but with lots of whole lentils still remaining. Add flour and vigorously stir until mixture holds together when squeezed in your hand; if it doesnt, continue to mash until it does, adding another 12 Tbsp. flour if needed. Form into 6 patties about .75\" thick.\nHeat 1 Tbsp. oil in a large nonstick skillet (patties will stick to a regular skillet) over medium. Cook 3 patties until deeply browned and crisp underneath, about 3 minutes. Carefully turn over; cook, adding more oil as needed to maintain a light coating around patties, until deeply browned and crisp on the other side, about 3 minutes. Transfer to a plate. Repeat with remaining patties and 1 Tbsp. oil.\nSpread cut side of buns with reserved yogurt mixture. Build burgers with buns, patties, sprouts, and pickles.",
         "image": "img_106.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 45
     },
     {
         "ID": 107,
@@ -1488,10 +1494,14 @@
             "Drink",
             "Western"
         ],
+        "description": "a simple vermouth based drinked served with a cucumber wheel",
         "ingredients": "['3 oz. Noilly Prat dry vermouth', '1 oz. club soda', 'Garnish: 1 cucumber wheel']",
         "instructions": "Build in a chilled wine glass filled with ice. Garnish with the cucumber wheel.",
         "image": "img_107.png",
-        "rating": 3
+        "rating": 3,
+        "preptime": 5
+        
+        
     },
     {
         "ID": 108,
@@ -1500,10 +1510,12 @@
             "Meal",
             "Japanese"
         ],
+        "description": "perfect blend of ramen and veggies",
         "ingredients": "['.5 cup seasoned rice vinegar', '.25 cup extra-virgin olive oil', '.25 cup fresh lime juice', '.25 cup soy sauce', '2 Tbsp. toasted sesame seeds', '1 tsp. mild red pepper flakes (such as Aleppo-style or Maras)', '1 tsp. toasted sesame oil', '20 oz. fresh or 12 oz. dried ramen noodles', 'Kosher salt', '5-6 cups shredded or shaved vegetables (such as radishes, carrots, scallions, cabbage, lettuce, zucchini, and/or cucumbers)']",
         "instructions": "Whisk vinegar, olive oil, lime juice, soy sauce, sesame seeds, mild red pepper flakes, and sesame oil in a small bowl to combine. Set dressing aside.\nCook noodles in a large pot of boiling salted water according to package directions. Drain and rinse under cold water to stop the cooking. Transfer to a large bowl, add half of reserved dressing, and toss to coat.\nDivide noodles among bowls. Top with vegetables and drizzle with remaining dressing.",
         "image": "img_108.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 30
     },
     {
         "ID": 109,
@@ -1512,10 +1524,12 @@
             "Meal",
             "Japanese"
         ],
+        "description": " Tasty Miso-Glazed Salmon With Sushi Rice",
         "ingredients": "['2 cups short-grain white sushi rice, rinsed until water runs clear', '2 tsp. Diamond Crystal or 1.25 tsp. Morton kosher salt, plus more', '3 tsp. sugar', '.5 cup unseasoned rice vinegar, divided', '.25 cup pure maple syrup', '.25 cup red or white miso', '.25 cup tamari or regular soy sauce', '.5 tsp. crushed red pepper flakes, plus more for serving', '2 Tbsp. extra-virgin olive oil', '4 (56-oz.) skin-on salmon fillets', '6 scallions, thinly sliced', '1 Tbsp. toasted sesame seeds', 'Lime wedges (for serving; optional)']",
-        "instructions": "Bring rice, a pinch of salt and 2.5 cups cold water to a boil in a medium saucepan over medium-high heat. Stir once, cover, and reduce heat to low. Cook until water evaporates and rice is tender, 1820 minutes. Remove from heat and let sit, covered, 10 minutes.\nWhisk sugar, .25 cup vinegar, and 2 tsp. Diamond Crystal or 1.25 tsp. Morton kosher salt in a small bowl until sugar dissolves. Stir into rice; re-cover. Let sit until ready to use.\nWhisk maple syrup, miso, tamari, .5 tsp. red pepper flakes, and remaining .25 cup vinegar in a small bowl. Set glaze aside.\nHeat oil in a large nonstick skillet over medium. Season salmon with salt; cook, skin side down, shaking pan occasionally, until skin is very crisp and deep golden brown, 79 minutes. Turn over and cook just until flesh is very lightly browned ( it should be nearly cooked through), about 2 minutes. Using a spatula to hold back fish, pour off fat from skillet.\nReduce heat to low and add reserved glaze to skillet; cook, stirring occasionally, until it begins to thicken, about 1 minute. Baste salmon with glaze and cook, basting occasionally, until glaze evenly coats fish, about 1 minute.\nDivide rice among plates and top with salmon. Drizzle with any leftover glaze over; sprinkle with scallions, sesame seeds, and red pepper flakes. Serve with lime wedges if desired.",
+        "instructions": "Bring rice, a pinch of salt and 2.5 cups cold water to a boil in a medium saucepan over medium-high heat. Stir once, cover, and reduce heat to low. Cook until water evaporates and rice is tender, 18 - 20 minutes. Remove from heat and let sit, covered, 10 minutes.\nWhisk sugar, .25 cup vinegar, and 2 tsp. Diamond Crystal or 1.25 tsp. Morton kosher salt in a small bowl until sugar dissolves. Stir into rice; re-cover. Let sit until ready to use.\nWhisk maple syrup, miso, tamari, .5 tsp. red pepper flakes, and remaining .25 cup vinegar in a small bowl. Set glaze aside.\nHeat oil in a large nonstick skillet over medium. Season salmon with salt; cook, skin side down, shaking pan occasionally, until skin is very crisp and deep golden brown, 79 minutes. Turn over and cook just until flesh is very lightly browned ( it should be nearly cooked through), about 2 minutes. Using a spatula to hold back fish, pour off fat from skillet.\nReduce heat to low and add reserved glaze to skillet; cook, stirring occasionally, until it begins to thicken, about 1 minute. Baste salmon with glaze and cook, basting occasionally, until glaze evenly coats fish, about 1 minute.\nDivide rice among plates and top with salmon. Drizzle with any leftover glaze over; sprinkle with scallions, sesame seeds, and red pepper flakes. Serve with lime wedges if desired.",
         "image": "img_109.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 120
     },
     {
         "ID": 110,
@@ -1524,10 +1538,12 @@
             "Meal",
             "Western"
         ],
+        "description": "Grilled carrots enhanced by avocadoa and a blast of mint",
         "ingredients": "['1 tsp. cumin seeds', '3 Tbsp. fresh lemon juice', '2 tsp. honey', '.25 cup plus 2 Tbsp. extra-virgin olive oil', '1 serrano chile, seeds removed if desired, thinly sliced', '1 (1\") piece ginger, peeled, finely grated', 'Kosher salt', '1.5 lb. medium carrots with tops (about 5), tops trimmed to about .5\", scrubbed, halved lengthwise', '2 avocados, cut into large pieces', '.5 cup mint leaves']",
         "instructions": "Prepare a grill for medium heat. Toast cumin seeds in a dry small skillet over medium heat, tossing often, until fragrant, about 2 minutes. Let cool.\nCoarsely crush cumin seeds with a mortar and pestle (or on a cutting board with the flat side of a chefs knife). Transfer to a large bowl. Add lemon juice and honey. Whisk in .25 cup oil, then add chile and ginger. Season dressing with salt. Let sit while you grill carrots (this will give the chile and ginger time to infuse into dressing).\nToss carrots and remaining 2 Tbsp. oil on a rimmed baking sheet to coat; season with salt. Grill carrots, turning occasionally, until lightly charred in spots and tender, 1418 minutes. Immediately transfer carrots to bowl with dressing and toss to coat. Taste and season with more salt if needed.\nArrange carrots and avocados on a platter and spoon any dressing left in bowl over. Top with mint.",
         "image": "img_110.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 30
     },
     {
         "ID": 111,
@@ -1536,10 +1552,12 @@
             "Dessert",
             "Western"
         ],
+        "description": "the perfect ice cream cake for any occasion",
         "ingredients": "['8 oz. red or black plums (2\u00c3\u00af.5\u00c3\u00af.53), pitted, chopped', '3 Tbsp. light brown sugar', '.25 tsp. kosher salt', '.75 cup (96 g) walnuts', '.25 cup (35 g) black and/or white sesame seeds', '1 cup pure maple syrup, preferably grade B', '.25 tsp. kosher salt', '.5 cup (1 stick) unsalted butter, plus more for pan', '.75 cup (packed; 150 g) light brown sugar', '2 Tbsp. tahini', '2 tsp. vanilla bean paste or vanilla extract', '.75 tsp. kosher salt', '1 chilled large egg', '1 cup (125 g) all-purpose flour', '.75 tsp. baking powder', '5 pints high-quality vanilla ice cream, divided', 'A 9\" springform pan']",
         "instructions": "Bring plums, brown sugar, and salt to a boil in a medium heavy saucepan over medium heat, stirring constantly. Reduce heat and simmer, stirring occasionally, until fruit is softened and juices deepen in color, about 8 minutes. Strain through a fine-mesh sieve set over a medium bowl, pushing plum flesh through; discard skins. Return sauce to pan and bring to a simmer, stirring occasionally. Cook, still stirring, until reduced to about  cup, about 3 minutes. Pour ripple into a jar and let cool, then cover and chill 1 hour before using.\nPlace a rack in middle of oven; preheat to 350F. Place walnuts on 1 side of a rimmed baking sheet; season with salt. Toast, tossing halfway through, 8 minutes (nuts should not be quiet golden brown yet). Remove from oven and add sesame seeds on empty side of baking sheet. Toast until nuts and seeds are golden brown, about 2 minutes. Let cool; chop nuts. Combine nuts, sesame seeds, maple syrup, and salt in a small jar or bowl and stir well. Cover and set aside.\nLightly butter pan and line with a parchment paper round. Heat brown sugar, tahini, and remaining .5 cup (1 stick) unsalted butter until bubbling in a medium heavy saucepan over medium heat, stirring until butter is melted and sugar is dissolved. Cook, without stirring, 1 minute. Let cool slightly.\nStir vanilla bean paste and salt followed by egg into brown sugar mixture. Sift flour and baking powder through a fine-mesh sieve into mixture and fold to barely combine. Scrape batter into the prepared pan. Bake until golden around the edges, evenly tan across the top, and puffed in the center, about 20 minutes.\nTransfer pan to a wire rack and let blondie base cool. Run a knife around the sides to help base release but keep springform pan intact, then cover and chill in freezer at least 15 minutes or until ready to use.\nCut 3 pints of ice cream out of their containers and place in the bowl of a stand mixer fitted with the paddle attachment. (Alternatively, you can beat in a large bowl with a wooden spoon or stiff rubber spatula until the consistency of cake batter.) Mix on low speed 2 minutes, then working up to medium speed, beat until barely pliable. It will soften further as it sits, but you want it to be sticky and slightly challenging to spread when you assemble cake. Chill in the freezer at any point if it becomes too soft and melted.\nRemove blondie base and remaining 2 still-frozen pints of ice cream from freezer. Using an offset spatula, spread a third of softened ice cream over base. Using a spring-loaded ice cream scoop, scoop out and place mounds of 1-pint still-frozen ice cream on top in a random manner. Dollop one third of maple ripple over ice cream, avoiding edges of pan. Next, drizzle one third of plum ripple over ice cream, creating stripes. Repeat layering process, using half of remaining softened ice cream, all of remaining frozen ice cream, half of remaining maple ripple, and half of remaining plum ripple. Top with a final layer of remaining softened ice cream, smooth surface, then drizzle with remaining maple ripple and plum ripple. (If at any point the ice cream gets so soft that you cant achieve distinct layers, chill in freezer for a few minutes.) Freeze, uncovered, 2 hours, then cover and freeze at least 8 hours before serving.\nTo serve, run a knife or offset spatula around edge of pan to release. Unmold and remove parchment paper; discard. Transfer cake to a platter, smooth sides with an offset spatula, and freeze 10 minutes. Slice with a warm knife, wiping off between cuts.",
         "image": "img_111.png",
-        "rating": 3
+        "rating": 3,
+        "preptime": 120
     },
     {
         "ID": 112,
@@ -1548,10 +1566,12 @@
             "Meal",
             "Western"
         ],
+        "description": "healthy balance of fruit and greens",
         "ingredients": "['1 lb. underripe stone fruit (such as plums, nectarines, or peaches), pears, or mangoes, thinly sliced', '1 serrano chile, seeds removed if desired, thinly sliced', '2 Tbsp. unseasoned rice vinegar', '1 Tbsp. sugar', '.5 tsp. kosher salt, plus more', '1 bunch cilantro', '4 scallions, thinly sliced on a diagonal', '2 celery stalks, thinly sliced on a diagonal', '2 tsp. toasted sesame oil', '1 tsp. low-sodium soy sauce', 'Zest of 1 lime', '2 Tbsp. toasted sesame seeds', 'Lime wedges (for serving)']",
         "instructions": "Gently toss fruit, chile, vinegar, sugar, and .5 tsp. salt in a medium bowl to combine. Let sit until fruit is spicy and flavorful, about 10 minutes.\nMeanwhile, gather cilantro into a bundle and cut into 2\"-long pieces. Transfer to a medium bowl, add scallions and celery, and toss to combine.\nDrain fruit in a fine-mesh sieve set over a small bowl; set fruit aside. Add oil, soy sauce, and lime zest to marinating liquid in bowl and whisk to combine. Pour dressing over cilantro mixture and toss to coat. Add reserved fruit and sesame seeds and toss gently to combine. Taste and season with more salt if needed.\nTransfer salad to a platter and serve with lime wedges.",
         "image": "img_112.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": "15"
     },
     {
         "ID": 113,
@@ -1560,10 +1580,12 @@
             "Meal",
             "Western"
         ],
+        "description": "griled pork shoulder complemented by a homemade butter vineger sauce",
         "ingredients": "['1 Tbsp. fennel seeds', '2 Tbsp. dried oregano', '22.5-lb. boneless pork shoulder (Boston butt)', 'Grapeseed or other neutral oil (for pork)', '1 Tbsp. kosher salt, plus more', '3 chiles de rbol, torn in half, seeds removed if desired', '.5 cup apple cider vinegar', '.5 cup (1 stick) unsalted butter', '2 Tbsp. sugar', 'Special Equipment: A spice mill or mortar and pestle']",
-        "instructions": "Toast fennel seeds in a dry small skillet over medium heat, tossing often, until golden brown and starting to pop, about 3 minutes. Transfer to a spice mill or mortar and pestle and let cool; coarsely grind. Transfer to a small bowl and mix in oregano. Place pork on a wire rack set inside a rimmed baking sheet and rub with oil. Season all over with 1 Tbsp. salt, then rub with spice mixture, packing it on. Let sit at room temperature 2 hours or chill, uncovered, up to 2 days.\nBring chiles, vinegar, butter, and sugar to a simmer in a small saucepan over medium-high heat; cook, stirring occasionally, until sugar is dissolved and sauce is reduced by about a third, about 5 minutes. Season with salt; cover and keep warm over low heat until ready to use.\nPrepare a grill for medium heat. Drizzle pork all over with oil, then grill, turning every 5 minutes or so, until extremely, gorgeously browned and crisp and an instant-read thermometer inserted into thickest part registers 120F, 3545 minutes. Continue to grill, brushing with sauce and turning not quite every minute (youre going to see flare-ups, but dont worry), until pork is glazed and shiny and temperature on thermometer has risen to 130F, 510 minutes more. Transfer pork to a platter and let rest 30 minutes; reserve remaining sauce.\nTransfer pork to a cutting board and pour any accumulated juices on platter into reserved sauce. Return sauce to a simmer. Slice pork against the grain .25\" thick. Arrange on platter, spoon some sauce over, and season with salt. Serve remaining sauce alongside.\nIf using a charcoal grill, a bed of medium-hot coals will gradually lose heat. Get a chimney started when the meat first hits the grill. About halfway through, throw some new glowing coals on the pile to keep things going.",
+        "instructions": "Toast fennel seeds in a dry small skillet over medium heat, tossing often, until golden brown and starting to pop, about 3 minutes. Transfer to a spice mill or mortar and pestle and let cool; coarsely grind. Transfer to a small bowl and mix in oregano. Place pork on a wire rack set inside a rimmed baking sheet and rub with oil. Season all over with 1 Tbsp. salt, then rub with spice mixture, packing it on. Let sit at room temperature 2 hours or chill, uncovered, up to 2 days.\nBring chiles, vinegar, butter, and sugar to a simmer in a small saucepan over medium-high heat; cook, stirring occasionally, until sugar is dissolved and sauce is reduced by about a third, about 5 minutes. Season with salt; cover and keep warm over low heat until ready to use.\nPrepare a grill for medium heat. Drizzle pork all over with oil, then grill, turning every 5 minutes or so, until extremely, gorgeously browned and crisp and an instant-read thermometer inserted into thickest part registers 120F, 35 - 45 minutes. Continue to grill, brushing with sauce and turning not quite every minute (youre going to see flare-ups, but dont worry), until pork is glazed and shiny and temperature on thermometer has risen to 130F, 510 minutes more. Transfer pork to a platter and let rest 30 minutes; reserve remaining sauce.\nTransfer pork to a cutting board and pour any accumulated juices on platter into reserved sauce. Return sauce to a simmer. Slice pork against the grain .25\" thick. Arrange on platter, spoon some sauce over, and season with salt. Serve remaining sauce alongside.\nIf using a charcoal grill, a bed of medium-hot coals will gradually lose heat. Get a chimney started when the meat first hits the grill. About halfway through, throw some new glowing coals on the pile to keep things going.",
         "image": "img_113.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 240
     },
     {
         "ID": 114,
@@ -1572,10 +1594,12 @@
             "Dessert",
             "Western"
         ],
+        "description": "No churning required for this Almond and Raspberry Swirl Ice Cream recipe ;)"
         "ingredients": "['3 cups (600 g) fresh raspberries', '2 Tbsp. sugar', '1 tsp. kosher salt, divided', '1 (14-oz.) can sweetened condensed milk', '1 tsp. almond extract', '2 cups heavy cream']",
-        "instructions": "Bring raspberries, sugar, and .25 tsp. salt to a simmer in a medium saucepan over medium heat and cook, stirring often, until raspberries begin to burst and lose their shape, about 4 minutes. Strain through a fine-mesh sieve into a large measuring glass, pressing on solids; discard solids. Pour back into saucepan and return to medium heat. Cook, stirring occasionally, until sauce is thick enough to coat a spoon, 1015 minutes. (You should have about 6 Tbsp.) Transfer back to measuring glass and chill until cold, about 30 minutes.\nMix condensed milk, almond extract, and remaining .75 tsp. salt in a medium bowl to combine.\nUsing an electric mixer, beat cream in a medium bowl, starting on low speed and gradually increasing to medium-high as it thickens, until billowy and stiff peaks form, about 4 minutes.\nAdd a dollop of whipped cream to condensed milk mixture and mix in with a rubber spatula (this is just to lighten it so that the next stagefoldingis easier). Add remaining whipped cream; fold in, running spatula down sides and along bottom of bowl, then lifting up through center and over top while rotating bowl to integrate without deflating, until very few streaks of condensed milk mixture remain.\nScrape about one third of ice cream base into a loaf pan thats at least 8.5x4.5\". Drizzle over one third of raspberry syrup. Repeat layers 2 more times, ending with raspberry syrup (no need to be precise). Using a small offset spatula or butter knife, make figure-eight motions through ice cream base to swirl raspberry syrup throughout. Cover with plastic wrap or an airtight silicone lid and freeze until solid, at least 8 hours.\nTo serve, transfer loaf pan to refrigerator and let ice cream soften 10 minutes before scooping into bowls.\nDo Ahead: Ice cream can be made 1 week ahead. Keep frozen.",
+        "instructions": "Bring raspberries, sugar, and .25 tsp. salt to a simmer in a medium saucepan over medium heat and cook, stirring often, until raspberries begin to burst and lose their shape, about 4 minutes. Strain through a fine-mesh sieve into a large measuring glass, pressing on solids; discard solids. Pour back into saucepan and return to medium heat. Cook, stirring occasionally, until sauce is thick enough to coat a spoon, 10 - 15 minutes. (You should have about 6 Tbsp.) Transfer back to measuring glass and chill until cold, about 30 minutes.\nMix condensed milk, almond extract, and remaining .75 tsp. salt in a medium bowl to combine.\nUsing an electric mixer, beat cream in a medium bowl, starting on low speed and gradually increasing to medium-high as it thickens, until billowy and stiff peaks form, about 4 minutes.\nAdd a dollop of whipped cream to condensed milk mixture and mix in with a rubber spatula (this is just to lighten it so that the next stagefoldingis easier). Add remaining whipped cream; fold in, running spatula down sides and along bottom of bowl, then lifting up through center and over top while rotating bowl to integrate without deflating, until very few streaks of condensed milk mixture remain.\nScrape about one third of ice cream base into a loaf pan thats at least 8.5x4.5\". Drizzle over one third of raspberry syrup. Repeat layers 2 more times, ending with raspberry syrup (no need to be precise). Using a small offset spatula or butter knife, make figure-eight motions through ice cream base to swirl raspberry syrup throughout. Cover with plastic wrap or an airtight silicone lid and freeze until solid, at least 8 hours.\nTo serve, transfer loaf pan to refrigerator and let ice cream soften 10 minutes before scooping into bowls.\nDo Ahead: Ice cream can be made 1 week ahead. Keep frozen.",
         "image": "img_114.png",
-        "rating": 2
+        "rating": 2,
+        "preptime": 60
     },
     {
         "ID": 115,
@@ -1584,10 +1608,12 @@
             "Dessert",
             "Western"
         ],
+        "description": "No churning required for this Mint and Chocolate Ice Cream",
         "ingredients": "['.75 cup (15 g) coarsely chopped mint', '2 cups (or more) heavy cream, divided', '4 oz. bittersweet chocolate (65%75% cacao), coarsely chopped', '1 (14-oz.) can sweetened condensed milk', '1 tsp. kosher salt', '.5 cup (40 g) Dutch-process cocoa powder']",
         "instructions": "Bring mint and 1 cup cream to a bare simmer in a small saucepan over medium heat. Remove from heat, cover, and let sit 30 minutes. Strain through a fine-mesh sieve into a measuring glass, pressing on solids; discard solids. Chill cream until very cold, about 30 minutes.\nJust before cream is ready, heat chocolate in a heatproof bowl set over a saucepan of simmering water (do not let bowl touch water), stirring occasionally, until melted and smooth. (Alternatively, heat in 20-second increments in a microwave, stirring between bursts.) Mix together sweetened condensed milk and salt in a medium bowl.\nPour remaining 1 cup cream into infused cream in measuring glass. (You should have 2 cups; add more if needed.) Transfer to a medium bowl. Using an electric mixer, beat cream, starting on low speed and gradually increasing to medium-high as it thickens, until billowy and stiff peaks form, about 4 minutes.\nAdd a dollop of whipped cream to condensed milk mixture and mix in with a rubber spatula (this is just to lighten it so that the next stagefoldingis easier). Add remaining whipped cream, then sift in cocoa powder. Fold in, running spatula down sides and along bottom of bowl, then lifting up through center and over top while rotating bowl to integrate without deflating, until very few streaks of condensed milk mixture remain and cocoa powder is combined.\nScrape about one quarter of ice cream base into a loaf pan thats at least 8.5x4.5\". Using a fork, drizzle about one third of melted chocolate over. Repeat layering process, finishing with a layer of ice cream base, to create 4 layers of ice cream base total and 3 layers of drizzled chocolate. Cover with plastic wrap or an airtight silicone lid and freeze until solid, at least 8 hours.\nTo serve, transfer loaf pan to refrigerator and let ice cream soften 10 minutes before scooping into bowls.\nDo Ahead: Ice cream can be made 1 week ahead. Keep frozen.",
         "image": "img_115.png",
-        "rating": 4
+        "rating": 4,
+        preptime: 60
     },
     {
         "ID": 116,
@@ -1596,10 +1622,12 @@
             "Dessert",
             "Filipino"
         ],
+        "description": "Traditional Cassava Cake",
         "ingredients": "['4 egg yolks, beaten', 'One 1-lb (500 g) package frozen grated cassava, thawed', '1 cup (250 g) jarred macapuno coconut strings, or sweetened shredded coconut', '1.5 cups (375 ml) canned unsweetened coconut milk', '.5 cup (125 ml) sweetened condensed milk', '4 egg whites', '.25 cup (65 ml) sweetened condensed milk']",
-        "instructions": "Preheat the oven to 350F.\nTo make the cake, combine the egg yolks, cassava, macapuno (or shredded coconut, if using), coconut milk and the .5 cup sweetened condensed milk in a large bowl and mix well.\nPour the cake batter into a greased 8 x 8-in (20 x 20-cm) cake pan. The cake batter will appear to be very loose and wet at this point, but dont worry, the cassava will absorb most of the liquid during baking. Place the cake pan into the oven and bake until the top of the cake appears dry and no liquid is floating on the surface, 4560 minutes.\nMeanwhile, to make the topping, whisk together the egg whites and the .25 cup (65 ml) sweetened condensed milk in a medium bowl until very well incorporated. Although you are using egg whites, dont be concerned with making a foam or a meringue, just mix until combined.\nRemove the cake from the oven and evenly pour the topping onto the cake. Return the cake to the oven and bake until the topping sets, about 10 minutes more.\nRemove the cake from the oven and rest the cake in its pan on a cooling rack. Cool the cake completely before cutting it into squares. The cassava cake can be served at room temperature, or cold out of the refrigerator.",
+        "instructions": "Preheat the oven to 350F.\nTo make the cake, combine the egg yolks, cassava, macapuno (or shredded coconut, if using), coconut milk and the .5 cup sweetened condensed milk in a large bowl and mix well.\nPour the cake batter into a greased 8 x 8-in (20 x 20-cm) cake pan. The cake batter will appear to be very loose and wet at this point, but dont worry, the cassava will absorb most of the liquid during baking. Place the cake pan into the oven and bake until the top of the cake appears dry and no liquid is floating on the surface, 45-60 minutes.\nMeanwhile, to make the topping, whisk together the egg whites and the .25 cup (65 ml) sweetened condensed milk in a medium bowl until very well incorporated. Although you are using egg whites, dont be concerned with making a foam or a meringue, just mix until combined.\nRemove the cake from the oven and evenly pour the topping onto the cake. Return the cake to the oven and bake until the topping sets, about 10 minutes more.\nRemove the cake from the oven and rest the cake in its pan on a cooling rack. Cool the cake completely before cutting it into squares. The cassava cake can be served at room temperature, or cold out of the refrigerator.",
         "image": "img_116.png",
-        "rating": 2
+        "rating": 2,
+        "preptime": 45
     },
     {
         "ID": 117,
@@ -1608,10 +1636,12 @@
             "Dessert",
             "Western"
         ],
+        "description": "The prefect dessert for any occasion!",
         "ingredients": "['10 large peaches (about 4.5 pounds), unpeeled, cut into 1-inch chunks', 'Zest and juice of 1 large lemon', '.5 cup (1 stick) unsalted butter, softened', '2 cups sugar, divided', '1.5 cups (about 192 grams) all-purpose flour', '2 teaspoons baking powder', '1 teaspoon kosher salt', '.75 cup whole milk', '.5 cup hot tap water', 'Heavy cream, for serving']",
         "instructions": "Preheat the oven to 350 degrees F.\nPut the peaches in a 9-by-13-inch (or similar) baking pan or gratin dish. Pat the peaches into a roughly even layer, then, using a zester or a Microplane, zest the lemon evenly over the fruit and squeeze the lemon juice evenly over the top.\nIn the work bowl of a stand mixer fitted with the paddle attachment, cream the butter and 1.5 cups of the sugar on medium speed until sandy, about 1 minute. Add the flour, baking powder, and salt, and beat again for another 30 seconds, until all the flour is incorporated and the mixture is evenly crumbly. With the mixer on low speed, slowly add in the milk. Increase the speed to medium and beat until light and fluffy, about 2 minutes.\nPlop the batter in 6 large blobs over the top of the peaches. With an offset spatula or small knife, carefully spread the batter evenly over the fruit, so its no more than about .5 inch thick in any one place.\nSprinkle the remaining .5 cup sugar directly over the batter. Drizzle the hot water evenly over the sugar, using it to melt the sugar into the topping. (Use it all. Its a strange method, but it works.)\nBake the cobbler for 70 to 80 minutes, or until the top is browned and cracked. (A toothpick inserted into the topping should come out drybe sure to check in a few places.)\nLet the cobbler sit for about a half an hour to firm up before serving warm in big bowls, with heavy cream poured on top.",
         "image": "img_117.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 40
     },
     {
         "ID": 118,
@@ -1620,10 +1650,12 @@
             "Meal",
             "Korean"
         ],
+        "description": "Scallion Pancakes to die for!",
         "ingredients": "['2 cups all-purpose flour', '.5 cup cornstarch', '2 teaspoons baking powder', '2 teaspoons sugar', '1 teaspoon doenjang (Korean fermentedsoybean paste)', '.5 teaspoon freshly ground black pepper', '2 cups ice-cold club soda', '1 medium egg yolk', '2 teaspoons minced garlic', '3 bunches scallions, cut into 2-inch batons (if the scallions are thick, cut the white parts lengthwise in half before cutting into batons)', 'About 5 tablespoons grape seed or canola oil, for frying', 'Pajeon Sauce']",
         "instructions": "To make the batter, combine the flour, cornstarch, baking powder, sugar, doenjang, and pepper in a medium bowl and mix well to blend. Add the club soda, egg yolk, and garlic and mix gently using a whisk. Do not whisk too much, or extra gluten will form in the batter, making it too thick and doughy. Whisk about 10 times, then let the batter rest for 10 minutes in the freezer so any remaining small clumps of flour can dissolve and blend into the mixture by themselves.\nWhen youre ready to make the pancakes, line a sheet pan with paper towels and set aside. Fold the scallions into the cold batter.\nSet a 10-inch nonstick saute pan over high heat and add about 1 tablespoon of the oil. When the oil begins to shimmer and just barely smoke, add 1 cup of the scallion batter to the center of the pan. Using a spatula, spread it out to form a 7-inch pancake. (You dont want the pancake to touch the sides of the pan, or the edges may burn before the center is cooked through.) Reduce the heat to medium and cook for 4 to 5 minutes, until the bottom of the pancake has set. Once it has set, gently slide your spatula under the edges of the pancake and lift them, tilting the pan, so some of the hot oil runs underneath the pancake. Then cook for 2 to 3 minutes more, until the bottom is a deep golden brown and crisp. You can check the color by gently lifting an edge of the pancake with your spatula. Flip the pancake and cook on the other side for 3 to 4 minutes, until it is golden brown on the second side and cooked through. Transfer to the prepared sheet pan to drain. Wipe out the pan, set it back over high heat, add another tablespoon or so of oil, and repeat until all of the pancakes are cooked. The finished pancakes can be kept in a low (200F) oven on a clean sheet pan while you cook the remaining batches, but its best to eat them right away.\nCut each pancake into quarters and serve with small bowls of the Pajeon Sauce and ice-cold makgeolli (Korean rice wine).",
         "image": "img_118.png",
-        "rating": 2
+        "rating": 2,
+        "preptime": 40
     },
     {
         "ID": 119,
@@ -1632,10 +1664,12 @@
             "Sauce",
             "Korean"
         ],
+        "description": "A versatile and simple pajeon sauce",
         "ingredients": "['2 tablespoons water', '2 tablespoons rice vinegar', '6 tablespoons soy sauce', '1 tablespoon gochugaru (Korean red chili flakes)', '2 garlic cloves, minced', '.25 teaspoon minced ginger', '1 teaspoon toasted sesame oil', 'Sliced fresh red chile, optional']",
         "instructions": "Combine all the ingredients in a bowl and mix well. Use immediately, or store for up to 2 weeks in a tightly sealed container in the refrigerator. Shake or stir well before using.",
         "image": "img_119.png",
-        "rating": 2
+        "rating": 2,
+        "preptime": 7
     },
     {
         "ID": 120,
@@ -1644,10 +1678,12 @@
             "Meal",
             "Indian"
         ],
+        "description": "Easy and quick pickled vegetables",
         "ingredients": "[' cup vegetable oil', '4 Tbsp. whole black mustard seeds (or 4 tbsp. store-bought coarsely crushed mustard seeds)', '3 Tbsp. whole fenugreek seeds (or 3 Tbsp. store-bought coarsely crushed fenugreek)', '1 tsp. asafetida powder', '1 Tbsp. ground cayenne (to taste) or 1 large serrano pepper, deseeded, and sliced thin', ' cup julienned ginger (optional, see Pre-Prep below)', '2-4 Tbsp. white vinegar', '2 tsp. kosher salt (optional)', '2 cups mixed vegetables, prepped as follows']",
         "instructions": "Pre-Prep: Trim fresh vegetables like cauliflower, carrots, radish, and others into bite sized pieces, and no larger than the container they will be stored in. Flash steam firm vegetables like cauliflower and carrots in a colander over boiling water for just a minute or two: the pieces should still be firm. Lay them on a kitchen towel to dry. If using fresh turmeric, cover the chopping board in plastic wrap, and wear gloves. Scrape off the skin with a spoon as you would for ginger and rinse it clean to wash away any tough bits. Pat each fingerling down and slice into thin rounds or to match the ginger, and place on a paper towel to air dry. All vegetables must be dry to touch before pickling. To prepare ginger, peel and slice ginger into eighth-inch-thick slices, and chop them to look like carrot sticks. Spread on a paper towel and set aside to air dry for 15-20 minutes.\nIf using whole mustard seeds or whole fenugreek seeds, in two separate sets, crush each in a spice mill in short bursts until they each are broken down but not powdered. They should be the consistency of coffee grounds.\nMethod: Heat the oil in a large, wide mouth saucepan until it is hot but not smoking. Reduce the heat to low. Slowly add all the spices: mustard halves, fenugreek halves, asafetida powder, cayenne pepper if using, along with the serrano pepper if using, and ginger sticks. Add vinegar and salt. Allow this to sizzle for a minute on low. Stir to allow the heat to distribute evenly. When the oil is aromatic, slowly add the trimmed vegetables and stir in well. Turn up the heat and let this cook for 4-5 minutes until vegetables appear to have absorbed the spices a little. Turn off the heat and cover with a paper towel to capture any steam. Allow this to come to room temperature before storing.\nTo Store: Use smaller (4  6 oz.) sanitized and dried glass jars to store the pickle. Using a clean and dry spoon that is smaller than the mouth of the jar, ladle out portions of the pickle into each jar. Dont worry if you dont get the oils or juices when first filling the jars. Fill jars at least a half inch below the rim of the jar. Shake them once to allow the pieces to settle. Divide up any of the liquid over each of these jars, taking care that each jar has some of the spicy sauce. Lightly shake each jar to ensure the liquid finds its way into the nooks and crannies of vegetable pieces. Close the lid and store in the fridge. The pickle is ready to eat immediately after it is made, but the flavors are pronounced after a day or two. Serve using a clean and dry fork or spoon for each serving to avoid contamination.",
         "image": "img_120.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 40
     },
     {
         "ID": 121,
@@ -1656,10 +1692,12 @@
             "Meal",
             "Indian"
         ],
+        "description": "An easy and quick Mango Achaar."
         "ingredients": "['.25 cup finely diced red or white onions', '.25 tsp. fine sea salt, plus additional to taste', '1 mango (Australian preferred), skin removed, diced', '.25 tsp. ground cumin', '.25 tsp. ground coriander', '1 tsp. ground cayenne', '4 Tbsp. finely grated jaggery', 'Additional salt, to taste']",
         "instructions": "Dust the onions with the salt and set aside for 15 minutes to let the onions sweat. Using a muslin cloth or strainer, extract and remove as much of the onion juice as possible. Rinse once after done and squeeze any remaining water away from the onions. Spread the onions onto a paper towel for 5 minutes.\nMix all remaining ingredients in a large bowl until well combined. Stir carefully to keep the mango pieces intact. Add onion and mix again. Taste for salt, and adjust if needed. This salsa is best consumed cold, within 2 days of preparation.",
         "image": "img_121.png",
-        "rating": 3
+        "rating": 3,
+        "preptime": 30
     },
     {
         "ID": 122,
@@ -1668,10 +1706,12 @@
             "Meal",
             "Mexican"
         ],
+        "description": "Traditional flour tortillas",
         "ingredients": "['3 cups all-purpose flour, plus more if needed', '.5 cup pork lard (or substitute vegetable shortening), chilled', '1 tablespoon kosher salt', 'About .5 cup hot water, plus more if needed']",
         "instructions": "Mix the flour and pork lard with your fingers until the mixture is the texture of coarse sand. Then add the salt with the hot (but not scalding) water and knead well. If the dough is too sticky, add a little more flour; if its a little dry, add more hot water. The kneaded dough should be slightly tacky but not sticking to the bowl. Cover with plastic wrap and let sit at room temperature for 1 hour.\nDivide the dough into 8 pieces and roll each one into a round ball. Roll each ball between sheets of parchment paper or plastic wrap into as thin a round as possible (the rounds will contract a bit when you stop rolling). As you roll each one, place it on a hot nonstick skillet or griddle over medium heat.\nCook for about 30 seconds, or until the tortilla starts to puff. Then flip and cook another 30 seconds. It should be cooked through and just speckled with golden brown spots. As the tortillas cook, place them in your serving dish covered with a dish towel, which will help keep the tortillas soft and pliable.",
         "image": "img_122.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 60
     },
     {
         "ID": 123,
@@ -1680,10 +1720,13 @@
             "Meal",
             "Western"
         ],
+        "description": "Delicioys grilling cheese complemented by sweet peppers and lentils",
         "ingredients": "['Kosher salt', '.75 cup black beluga lentils', '3 Tbsp. sherry vinegar or red wine vinegar', '1 Tbsp. honey', '5 Tbsp. extra-virgin olive oil, divided', 'Freshly ground black pepper', '8 oz. grilling cheese (such as bread, Halloumi, or paneer), torn into 2\" pieces', '1 lb. sweet mini peppers, ribs and seeds removed, halved lengthwise, cut into thirds if large', '.5 tsp. dried oregano', '.25 cup (packed) basil leaves, torn if large', 'Flaky sea salt']",
         "instructions": "Bring a medium pot of salted water to a boil. Add lentils and cook until just tender but not falling apart (they should hold their shape), about 20 minutes. Drain well.\nMeanwhile, whisk vinegar, honey, and 3 Tbsp. oil in a small bowl to combine; season with kosher salt and pepper. Set dressing aside.\nHeat 1 Tbsp. oil in a large skillet over medium-high. Add cheese and cook, turning occasionally, until heated through and brown and crispy on all sides, about 5 minutes total. (Some varieties of paneer are made without salt; if using one of these, season your pieces of cheese while cooking.) Transfer to a plate.\nAdd remaining 1 Tbsp. oil to same pan, then add sweet peppers and oregano. Season with kosher salt and black pepper and cook over medium-high, stirring and pressing down occasionally on sweet peppers with a wooden spoon so they make good contact with the pan, until softened and blistered in spots, 2025 minutes. Remove from heat.\nAdd warm lentils and reserved dressing to pan and toss to combine, then toss in cheese.\nTransfer sweet pepper mixture to a platter or plates. Top with basil and season with sea salt and more black pepper.",
         "image": "img_123.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 40
+        
     },
     {
         "ID": 124,
@@ -1692,10 +1735,12 @@
             "Meal",
             "Western"
         ],
+        "description": "Flatfish grilled to perfection and paired with Pistachio-Herb Sauce."
         "ingredients": "['.25 cup raw pistachios', '10 prunes, pits removed, coarsely chopped', '1 garlic clove, finely grated', '2 cups finely chopped parsley', '1 cup finely chopped mint', '.25 cup finely chopped tarragon', '.25 cup kimchi or sauerkraut brine', '2 Tbsp. Champagne vinegar or white wine vinegar', 'Kosher salt', '.75 cup extra-virgin olive oil', '1 (24-lb.) flatfish (such as sole, flounder, or turbot)', 'Extra-virgin olive oil', 'Kosher salt', 'Aleppo-style pepper']",
         "instructions": "Toast pistachios in a dry small skillet over medium-low heat, tossing occasionally, until browned in spots, about 5 minutes. Let cool, then finely chop.\nGently mix pistachios, prunes, garlic, parsley, mint, tarragon, kimchi brine, and vinegar in a medium bowl to combine; season with salt. Whisk in oil, then taste and season spoon sauce with more salt if needed.\nPrepare a grill for medium heat. Using a chefs knife, cleaver, or serrated knife, cut fish crosswise into 2\"4\"-wide planks (the larger the fish, the wider the planks); halve planks if fish is large. Pat fish dry, rub all over with oil, and season with salt and Aleppo-style pepper. Grill fish, undisturbed, until about 70 percent cooked through (use a knife to slide into flesh to check), about 5 minutes. The skin should release easily from the grate when the fish is ready to turn. If its sticking, keep cooking.\nUsing a large fish spatula, turn fish over and grill until cooked through (fish is done when a paring knife easily pierces the flesh along the side), about 2 minutes.\nTransfer fish to a platter and spoon sauce over.",
         "image": "img_124.png",
-        "rating": 5
+        "rating": 5,
+        "preptime": 30
     },
     {
         "ID": 125,
@@ -1706,10 +1751,13 @@
             "Italian",
             "Fusion"
         ],
+        "description": "A simple grilled mushroom antipasto salad."
         "ingredients": "['2 lb. assorted mushrooms (such as crimini, shiitake, and/or maitake), wiped clean, trimmed, torn into big pieces if large', '7 Tbsp. extra-virgin olive oil, divided', 'Kosher salt', '2 Tbsp. Champagne vinegar or white wine vinegar', '1 tsp. Aleppo-style pepper', '1 tsp. dried oregano', '1 garlic clove, finely grated', 'Freshly ground black pepper', '2 oz. Parmesan, shaved', '.5 cup Castelvetrano olives, coarsely chopped', '.25 cup drained Peppadew peppers in brine, coarsely chopped']",
         "instructions": "Prepare a grill for high heat. Toss mushrooms and 3 Tbsp. oil in a large bowl to coat. Grill, turning occasionally with tongs, until lightly charred, 26 minutes (depending on size and type). Return to bowl; season with salt.\nWhisk vinegar, Aleppo-style pepper, oregano, garlic, and remaining 4 Tbsp. oil in a small bowl to combine; season vinaigrette with salt and black pepper. Pour over mushrooms and toss to coat. Add Parmesan, olives, and Peppadew peppers; gently toss to combine.",
         "image": "img_125.png",
-        "rating": 3
+        "rating": 3,
+        "preptime": 60
+        
     },
     {
         "ID": 126,
@@ -1718,10 +1766,12 @@
             "Sauce",
             "Western"
         ],
+        "description": "An extremely versatile sauce",
         "ingredients": "['.25 cup raw pistachios', '10 prunes, pits removed, coarsely chopped', '1 garlic clove, finely grated', '2 cups finely chopped parsley', '1 cup finely chopped mint', '.25 cup finely chopped tarragon', '.25 cup kimchi or sauerkraut brine', '2 Tbsp. Champagne vinegar or white wine vinegar', 'Kosher salt', '.75 cup extra-virgin olive oil']",
         "instructions": "Toast pistachios in a dry small skillet over medium-low heat, tossing occasionally, until browned in spots, about 5 minutes. Let cool, then finely chop.\nGently mix pistachios, prunes, garlic, parsley, mint, tarragon, kimchi brine, and vinegar in a medium bowl to combine; season with salt. Whisk in oil, then taste and season spoon sauce with more salt if needed.",
         "image": "img_126.png",
-        "rating": 1
+        "rating": 1,
+        "preptime": 15
     },
     {
         "ID": 127,
@@ -1730,10 +1780,12 @@
             "Dessert",
             "Western"
         ],
+        description: "No churning required for this tasty Labneh and Lime Ice Cream With Granola!",
         "ingredients": "['.5 cup labneh (Lebanese strained yogurt) or 1 cup plain whole-milk Greek yogurt', '.75 cup (75 g) granola', '1 (14-oz.) can sweetened condensed milk', 'Zest and juice of 2 limes', '.75 tsp. kosher salt', '1.5 cups heavy cream', 'Special Equipment: 2 layers of cheesecloth']",
         "instructions": "If using Greek yogurt, set a fine-mesh sieve over a bowl; line with cheesecloth. Place yogurt in sieve and let drain in refrigerator 4 hours (you should have .5 cup); discard drained liquid in bowl.\nPulse granola in a food processor to break up a bit. (Or roll up in a kitchen towel and gently crush with a rolling pin.)\nWhisk labneh (or strained yogurt), condensed milk, lime zest and juice, and salt in a medium bowl until smooth.\nUsing an electric mixer, beat cream in a medium bowl, starting on low speed and gradually increasing to medium-high as it thickens, until billowy and stiff peaks form, about 4 minutes.\nAdd a dollop of whipped cream to labneh mixture and mix in with a rubber spatula (this is just to lighten it so that the next stagefoldingis easier). Add remaining whipped cream and fold in, running spatula down sides and along bottom of bowl, then lifting up through center and over top while rotating bowl to integrate without deflating, until very few streaks of labneh mixture remain. Fold in granola; scrape ice cream base into a loaf pan thats at least 8.5x4.5\". Cover with plastic wrap or an airtight silicone lid and freeze until solid, at least 8 hours.\nTo serve, transfer loaf pan to refrigerator and let ice cream soften 10 minutes before scooping into bowls.\nDo Ahead: Ice cream can be made 1 week ahead. Keep frozen.",
         "image": "img_127.png",
-        "rating": 4
+        "rating": 4,
+        "preptime": 60
     },
     {
         "ID": 128,
@@ -1742,10 +1794,12 @@
             "Meal",
             "Middle-Eastern"
         ],
+        "description": "Tasty grilled eggplant served with a garlic infused Tahini-Yogurt sauce.",
         "ingredients": "['2 lb. assorted small eggplant (such as fairy tale and/or Graffiti)', '2 heads of garlic', '1 cup plain whole-milk Greek yogurt', '1 Tbsp. tahini', 'Kosher salt', '1 lemon, halved', 'Sumac (for serving)', \"Brad's Spoon Sauce\", 'Ingredient Info: Sumac, a tart, citrusy spice generally sold in ground form, can be found in the spice aisle and online.']",
-        "instructions": "Prepare a grill for medium-high indirect heat (for a charcoal grill, bank coals on one side of grill; for a gas grill, leave one or two burners off). Grill eggplant over indirect heat, turning occasionally, until completely tender, 11.5 hours (depending on size and type).\nMeanwhile, grill whole garlic heads over indirect heat until cloves are tender and jammy, 4050 minutes.\nMix together yogurt and tahini in a small bowl; season with salt. Slice heads of garlic in half crosswise and squeeze cloves into yogurt mixture; stir well to incorporate.\nCut a slit lengthwise down each eggplant and carefully pull open with your hands. Arrange on a platter and squeeze juice from lemon over; season with salt. Dollop yogurt sauce around and sprinkle with sumac. Serve with spoon sauce.",
+        "instructions": "Prepare a grill for medium-high indirect heat (for a charcoal grill, bank coals on one side of grill; for a gas grill, leave one or two burners off). Grill eggplant over indirect heat, turning occasionally, until completely tender, 1-1.5 hours (depending on size and type).\nMeanwhile, grill whole garlic heads over indirect heat until cloves are tender and jammy, 40-50 minutes.\nMix together yogurt and tahini in a small bowl; season with salt. Slice heads of garlic in half crosswise and squeeze cloves into yogurt mixture; stir well to incorporate.\nCut a slit lengthwise down each eggplant and carefully pull open with your hands. Arrange on a platter and squeeze juice from lemon over; season with salt. Dollop yogurt sauce around and sprinkle with sumac. Serve with spoon sauce.",
         "image": "img_128.png",
-        "rating": 3
+        "rating": 3,
+        "preptime": 150
     },
     {
         "ID": 129,
@@ -1756,10 +1810,12 @@
             "Japanese",
             "Fusion"
         ],
+        "description": "Classic grilled potatos served with red miso butter.",
         "ingredients": "['1.5 lb. baby Yukon Gold potatoes', '.5 cup Diamond Crystal or .25 cup Morton kosher salt', '4 Tbsp. unsalted butter', '2 Tbsp. red miso', '1 garlic clove, finely chopped', '1 Tbsp. seasoned rice vinegar', 'Freshly ground black pepper', '2 Tbsp. chopped parsley']",
-        "instructions": "Prepare a grill for medium-high heat. Bring potatoes, salt, and 1 quart water to a boil in a medium saucepan over medium-high heat. Reduce heat and simmer until tender, 1214 minutes; drain. Grill potatoes, turning often with tongs, until lightly charred, 68 minutes.\nMeanwhile, set a medium skillet, preferably cast iron, on grill. Place butter and miso in skillet and cook, stirring, until butter is melted and mixture is smooth, about 2 minutes. Remove from heat; stir in garlic and vinegar. Season with pepper.\nTransfer potatoes to skillet, breaking some in half with tongs. Toss to coat in miso butter. Add parsley; toss again.",
+        "instructions": "Prepare a grill for medium-high heat. Bring potatoes, salt, and 1 quart water to a boil in a medium saucepan over medium-high heat. Reduce heat and simmer until tender, 12-14 minutes; drain. Grill potatoes, turning often with tongs, until lightly charred, 68 minutes.\nMeanwhile, set a medium skillet, preferably cast iron, on grill. Place butter and miso in skillet and cook, stirring, until butter is melted and mixture is smooth, about 2 minutes. Remove from heat; stir in garlic and vinegar. Season with pepper.\nTransfer potatoes to skillet, breaking some in half with tongs. Toss to coat in miso butter. Add parsley; toss again.",
         "image": "img_129.png",
-        "rating": 3
+        "rating": 3,
+        "preptime": 120
     },
     {
         "ID": 130,
