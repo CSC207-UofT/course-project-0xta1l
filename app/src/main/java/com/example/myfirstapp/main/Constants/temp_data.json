@@ -1613,7 +1613,7 @@
         "instructions": "Bring mint and 1 cup cream to a bare simmer in a small saucepan over medium heat. Remove from heat, cover, and let sit 30 minutes. Strain through a fine-mesh sieve into a measuring glass, pressing on solids; discard solids. Chill cream until very cold, about 30 minutes.\nJust before cream is ready, heat chocolate in a heatproof bowl set over a saucepan of simmering water (do not let bowl touch water), stirring occasionally, until melted and smooth. (Alternatively, heat in 20-second increments in a microwave, stirring between bursts.) Mix together sweetened condensed milk and salt in a medium bowl.\nPour remaining 1 cup cream into infused cream in measuring glass. (You should have 2 cups; add more if needed.) Transfer to a medium bowl. Using an electric mixer, beat cream, starting on low speed and gradually increasing to medium-high as it thickens, until billowy and stiff peaks form, about 4 minutes.\nAdd a dollop of whipped cream to condensed milk mixture and mix in with a rubber spatula (this is just to lighten it so that the next stagefoldingis easier). Add remaining whipped cream, then sift in cocoa powder. Fold in, running spatula down sides and along bottom of bowl, then lifting up through center and over top while rotating bowl to integrate without deflating, until very few streaks of condensed milk mixture remain and cocoa powder is combined.\nScrape about one quarter of ice cream base into a loaf pan thats at least 8.5x4.5\". Using a fork, drizzle about one third of melted chocolate over. Repeat layering process, finishing with a layer of ice cream base, to create 4 layers of ice cream base total and 3 layers of drizzled chocolate. Cover with plastic wrap or an airtight silicone lid and freeze until solid, at least 8 hours.\nTo serve, transfer loaf pan to refrigerator and let ice cream soften 10 minutes before scooping into bowls.\nDo Ahead: Ice cream can be made 1 week ahead. Keep frozen.",
         "image": "img_115.png",
         "rating": 4,
-        preptime: 60
+        "preptime": 60
     },
     {
         "ID": 116,
@@ -1645,7 +1645,7 @@
     },
     {
         "ID": 118,
-        "name": "Pajeon (\u00c3\u00ad \u00c3\u00ac / Scallion Pancakes)",
+        "name": "Pajeon Scallion Pancakes",
         "genre": [
             "Meal",
             "Korean"
