@@ -21,5 +21,6 @@ public class EditUsernameActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.editUserNameText);
         String s = editText.getText().toString();
         Globals.setUser_username(s);
+        finish();
     }
 }

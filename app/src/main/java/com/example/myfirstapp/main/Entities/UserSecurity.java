@@ -46,4 +46,11 @@ public class UserSecurity {
         UsernameList.put(user.getUsername(), user);
         UserPassword.put(user.getUsername(), user.getPassword());
     }
+
+    public void changeUsername(String username, String new_username) {
+        User user = this.UsernameList.get(username);
+        user.setUsername(new_username);
+        this.UsernameList.remove(username);
+        this.UsernameList.put(new_username, user);
+    }
 }

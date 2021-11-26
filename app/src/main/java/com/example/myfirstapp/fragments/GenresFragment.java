@@ -74,9 +74,12 @@ public class GenresFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_genres, container, false);
         LinearLayout layout = (LinearLayout) v.findViewById(R.id.GenreListLayout);
         // User user = Constants.USERSECURITY.getUserByID(Globals.getUser_username());
-        //ArrayList<String> genres = user.getInterest();
+        // ArrayList<String> genres = user.getInterest();
         UserRequestBrowse genreController = new UserRequestBrowse();
-        ArrayList<String> genres = genreController.browseGenres(Globals.getUser_username());
+        ArrayList<String> genres = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            genres = genreController.browseGenres(Globals.getUser_username());
+        }
         for(int i = 0; i < genres.size(); i++) {
             TextView text = new TextView(getContext());
             text.setGravity(Gravity.CENTER);

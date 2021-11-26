@@ -73,16 +73,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signupDisplayNameInput" />
 
-    <EditText
+    <TextView
         android:id="@+id/signupInterestInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="13dp"
-        android:ems="10"
-        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signupBioInput" />
+        app:layout_constraintTop_toBottomOf="@+id/signupBioInput"
+        android:ems="10"
+        android:background="@android:drawable/editbox_background"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:drawablePadding="16dp"
+        android:hint="Select Interest"
+        android:padding="12dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -164,4 +168,5 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signupInterestInput" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

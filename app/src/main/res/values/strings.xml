@@ -15,10 +15,9 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string-array name="recipe_sort_by">
-        <item>Rating +</item>
-        <item>Rating -</item>
-        <item>Interest +</item>
-        <item>Interest -</item>
+        <item>Alphabetical</item>
+        <item>Rating</item>
+        <item>Interest</item>
     </string-array>
 
 </resources>

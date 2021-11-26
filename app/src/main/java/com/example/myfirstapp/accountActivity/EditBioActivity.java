@@ -22,5 +22,6 @@ public class EditBioActivity extends AppCompatActivity {
         EditText editText = findViewById(R.id.edit_bio_text);
         String s = editText.getText().toString();
         Globals.setUser_bio(s);
+        finish();
     }
 }
