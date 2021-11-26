@@ -135,6 +135,15 @@ public class ProfileFragment extends Fragment {
             }
         });
 
+        ImageButton ageButton = v.findViewById(R.id.account_age_edit);
+        passwordButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), EditAgeActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }
