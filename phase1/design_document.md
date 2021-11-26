@@ -1,0 +1,97 @@
+### Major Design Decisions ###
+
+**Command Tree:**
+
+During this phase, the group has made a number of major design decisions; one of which was the decision on the technique of implementing commands for the text user interface. We decided that applying the Command Design Pattern was right as it was simple and intuitive. To do this, we implemented a CommandTree which acted as a tree where each node stores a Command.  Unfortunately, we ran into an issue where some of the commands required additional input which caused the program to work incorrectly. To solve this, we created subclasses of Command called RecipeCommand which accepted more parameters to account for these issues. This decision was a difficult one to make as it increased the complexity of the inheritance and execution structure. The creation of subclasses allowed a more fluid user experience which increases the usability of our program.
+
+**UI and Presenters:**
+
+Another design decision that was made was allocating responsibility of outputs to presenters instead of leaving it up to the UI commands. Anytime data from an entity needed to be presented, a presenter would be used. This was done to reduce duplicate code; for example if we wanted to print out a list of recipes from and a genre and from saveRecipes, it is easier to call one class to do this then to duplicate code in multiple places.
+
+**Controllers and Use Cases:**
+
+We also decided to return the entity type of whatever controllers’ and use cases’ methods which created something. For example, if we had a use case RecipeCreate; it would return a Recipe as it is creating one. This was done in order to show the user that the entity was successfully created.
+
+**Recommendation Feature:**
+
+Another excellent design choice was made in the creation of the recommendation feature. Our aim was to create a function that returns a list of recommended recipes based on the user’s previous activity and preferences. Until we made the decision to use recursion, this method’s implementation was complex, error-filled, and full of code smells. In using recursion, our method’s overall length decreased and it became easier to debug and fix bugs. While still keeping the essential components, shortening the code improved readability, reduced smelliness, and meant that our code adhered more strongly to SOLID principles. As a result, it will be significantly easier to modify and expand this code going forward, reducing the amount of maintenance required and tedious refactoring required. This design choice has produced a great yield and should help our future code tremendously.
+
+**Preview Entity:**
+
+The initial design of the Recipe entity included two methods, Recipe.getPreview() and Recipe.getFull(), that provided either a subset of a recipe’s attributes or all of them. While both of these methods were important, we found that Recipe.getPreview() was used much more frequently than expected due to our design decision to display recipe previews to the user when they are browsing. This decision meant that most processing and displaying of recipes would not be done with the full recipe entity but using the .getPreview() method. Due to our app’s central purpose being the manipulation of the recipe entity, this call is done in almost every class that alters the recipe or uses it’s information. While this did not create issues in the compilation of our code, it did create issues in readability. The method returns a subset of the recipe’s attributes in an ArrayList, making a call to the appropriate get function for each attribute. This creates many lines of Recipe.get(index) throughout our code, all of which bear no meaning to someone reading the code unless they have the return list memorized. Communication is crucial when working in a large group and so by creating a linked preview entity and subsequent getter methods, the .get(index) methods can be replaced with more meaningful calls that serve the same purpose.
+
+
+### How our project adheres to Clean Architecture (and any possible violations) ###
+
+Our project adheres to Clean Architecture by clearly sectioning off each layer of classes into Entities, Use Cases, Controllers, Presenters, and UI (Commands). Entities only interact with other Entities; Use Cases interact with other Use Cases and Entities; Controllers interact with Use Cases; Presenters interact with Controllers; and the UI interacts with Presenters and Controllers.
+
+A scenario walkthrough for our program would be a user wanting to create an account, viewing the recipes in the Chinese genre, and viewing one of the recipes and its reviews before saving it. The user then would log on again later after trying out the recipe, find the recipe in their saved recipes, and add their own review.
+
+The user’s input for the commands they want to execute are handled by the TextUI or Android App.  In the TextUI, the user gets prompted to login or create an account. As the user chooses to create an account, the UserRequestCreateLogin Controller gets called. UserRequestCreateLogin then calls the UserCreate Use Case, which instantiates a new User Entity and returns True if a user was created, or False if the user was not created. UserRequestCreateLogin then receives that boolean, and either returns the username of the newly created User, or throws an exception. Once the TextUI receives the username of the User, the CommandTree gets instantiated and the root of the tree, the HomePage Command, gets executed, taking in the string username as a parameter. As the CommandTree is recursively implemented, every time one Command is finished executing, the user gets prompted to execute one of the Commands’s SubCommands, or its parent Command.
+
+ After the HomePage Command is executed, the user is prompted by TextUI to either “View Genres”, “View User Profile”, “View Saved Recipes”, “Upload Recipe”, or “Logout”, all of which are SubCommands of the HomePage Command. The user chooses to “View Genres”. This executes the ViewGenres Command, which calls the UserRequestBrowse Controller’s browseGenreRecipes method. This method calls the GenreViewSort Use Case, which returns an ArrayList of strings representing the genres in the database.  UserRequestBrowse then sends the ArrayList returned by GenreViewSort to the ListDisplay presenter, finishing the execution of the ViewGenres Command.
+
+The ViewGenres Command has the SubCommand “View Genre Recipes”, which gets executed by the user. The ViewGenreRecipes Command takes in a genre to view (for this scenario, the user enters the “Chinese” genre to view), and calls UserRequestBrowse’s browseGenreRecipes method, which in turn calls the GetRecipe Use Case’s getGenreRecipes method. GetRecipe returns an ArrayList of Preview Entities, which UserRequestBrowse returns to the ViewGenreRecipes Command. ViewGenreRecipes then passes the ArrayList of Preview Entities to ListDisplay, to display the list of recipe previews for the genre the user has requested to view.
+
+ViewGenreRecipes has the SubCommand “View Recipe”, which gets executed by the user. The ViewRecipe Command takes in the ID of the recipe the user wants to view, and calls the UserRequestRecipeView Controller with the ID as an argument. UserRequestRecipeView calls the GetRecipe Use Case, which returns a FullPreview Entity containing the recipe data. UserRequestRecipeView returns the FullPreview Entity to ViewRecipe, which then passes the FullPreview to ListDisplay to display the recipe data.
+
+ViewRecipe has the SubCommand “View Reviews”, which gets executed by the user. The ViewReviews command gets executed with the recipeID from its parent Command passed in as an argument. ViewReviews calls the UserRequestGetReview Command, which in turn calls the GetReview Use Case’s getRecipeReviews method. GetReview.getRecipeReviews then returns an ArrayList of Review Entities, which UserRequestGetReview also returns. ViewReviews then passes the ArrayList of Reviews to ListDisplay.
+
+ViewReviews has the SubCommand “Save Recipe”, which gets executed by the user. The SaveRecipe command gets executed with the recipeID from its parent Command passed in as an argument. SaveRecipe calls the UserRequestSaveRecipe Controller, which calls the RecipeSave Use Case. RecipeSave returns True if the recipe has been saved, or False if the recipe has already been saved. UserRequestSaveRecipe receives this boolean and returns it to the SaveRecipe command, which prints either a success or error message depending on the status of the save request.
+
+The user then closes the program, and then relaunches it after trying out the recipe. The user gets prompted to login or create an account by the Text UI. As the user chooses to login, the UserRequestCreateLogin Controller gets called. UserRequestCreateLogin then accesses the database via the Constants Gateway, to call the CheckPassword method to verify that the user’s username and password combination is valid. UserRequestCreateLogin returns True if the combination is valid. Once the TextUI receives the True boolean from UserRequestCreateLogin , the CommandTree gets instantiated with the username. The root of the tree, the HomePage Command, gets executed, taking in the string username as a parameter.
+
+After the HomePage Command is executed, the user is prompted by TextUI to either “View Genres”, “View User Profile”, “View Saved Recipes”, “Upload Recipe”, or “Logout”, all of which are SubCommands of the HomePage Command. The user chooses to “View Saved Recipes”. This executes the ViewSavedRecipes Command, which calls the UserRequestBrowse Controller’s browseSavedRecipes method. This method calls the GetRecipe Use Case’s getUserSavedRecipes method, which returns an ArrayList of Preview Entities, which UserRequestBrowse then returns to the ViewSavedRecipes Command. ViewSavedRecipes then passes the ArrayList of Preview Entities to ListDisplay, to display the list of recipe previews.
+
+ViewSavedRecipes has the SubCommand “View Saved Recipe”, which gets executed by the user. The ViewSavedRecipe command gets executed with the recipeID from its parent Command passed in as an argument. ViewSavedRecipe takes in the ID of the recipe the user wants to view, and calls the UserRequestRecipeView Controller with the ID as an argument. UserRequestRecipeView calls the GetRecipe Use Case, which returns a FullPreview Entity containing the recipe data. UserRequestRecipeView returns the FullPreview Entity to ViewSavedRecipe, which then passes the FullPreview to ListDisplay to display the recipe data.
+
+ViewSavedRecipe has the SubCommand “Add Review” which gets executed by the user. The AddReview command gets executed with the recipeID from its parent Command passed in as an argument. AddReview takes in the ID of the recipe the user wants to view, and calls the UserRequestCreateReview Controller. UserRequestCreateReview calls the RecipeReviewAdd Use Case, which returns True if the review was created, or False if the user already has a review for the recipe. This boolean gets returned to  AddReview, which prints either a success or error message depending on the status of the review request.
+
+The Dependency Rule is consistently followed when interacting with details in the outer layer, as Use Cases and Entities function without the use of Controllers or classes in outer layers. This is best seen in our two UIs, a text UI and Android App UI. As per Clean Architecture, the main structure of our code consisting of Entities, Use Cases, Controllers, and Presenters functions independently of the UI. This allows for our two UIs to be used interchangeably without needing to make changes to the rest of the program.
+
+One violation that currently exists is that our App UI directly interacts with Use Cases, rather than using Controllers to retrieve data. We are unsure how to fix this, as it is most efficiently and clearly implemented this way.
+
+Another violation that currently exists is that some of our Entities (namely UserInfo, Preview, FullPreview, and Review) get used and imported by some Controllers and Presenters for data retrieval, meaning that these classes are not restricted to only using the adjacent Use Case layer. This occurs because we chose to have Use Cases create and return data in Entities instead of returning ArrayLists of data to make it clear what the data being returned consists of. We are unsure of how to fix this violation while maintaining the clarity of the data.
+
+Another violation that currently exists that we are unsure of how to fix is that our UseCases call the Constants classes, which act as our Gateways. This is a violation of Clean Architecture because the UseCases should function without needing to access the outer layer Gateways.
+
+### How our project is consistent with SOLID design ###
+
+Throughout phase 1, we have made decisions about our code with the SOLID principles in mind. For some principles, their application and our ability to adhere was more apparent than others. Hence, these principles were emphasized in code, specifically the Single-responsibility, Open-Closed, and Dependency Inversion principles. For the Single-responsibility principle, we ensured that each class only has one responsibility and therefore one reason to change. This can be seen in the RecipeSave use case which is only responsible for saving a recipe and so it’s only reason to change is if we wanted to change the way a recipe is saved. For the Open-Closed principle, classes such as RecipeCreate which contain methods for the ways a recipe can be created are closed for modification but open for extension in the addition of new methods to add recipes.
+
+Throughout our code the Dependency Inversion principle is fulfilled as every level of our code (Entities, Use Cases, Controllers, etc.) only interacts with classes within its level or directly below it. For example, the UserRequestSaveRecipe controller only interacts with the RecipeSave use case. In all honesty, this is the principle we have struggled to adhere to the most. We often found ourselves instantiating entities in our controllers before realizing the improper structure and correcting it. There are still instances of this in our code, for example the User Entity is imported in the UserRequestBrowse Controller, but  given more time we might have been able to resolve this break of principle.
+
+We were also mindful of the Liskov Substitution principle, ensuring that any subclasses we created could be substituted by their base class and still operate without bugs. Due to our design choices, our code has very little subclassing, so this principle, while not applicable everywhere, was only considered when we created the SortRecipe abstract class. Our code adheres to the principle as the subclasses, SortByInterests and SortByRating, can be substituted for one another when using the overridden .sort() method they both implement. As previously mentioned, we use little subclassing and so our code does not contain any complex interfaces that need to be separated to adhere to the Interface Segregation principle.
+
+### Packaging Strategies ###
+
+Due to the size of our project and the magnitude of the tasks we wanted to accomplish we focused more on organization than encapsulation. Our main program at present is divided into 8 packages: Commands, Constants, Controllers, Database, Entities, Presenters, UI, UseCases. In structure this is most similar to Packaging by Layer however due to the lack of private files it does not fit this style fully. For future phases, we will begin to prioritize encapsulating more - most likely opting for the aforementioned Packaging by Layer. This packaging method seems to emphasize implementation details and other behind the scenes details being kept private which in turn would aid in our observation of Clean Architecture.
+
+For our Android Application, our GUI code has 4 packages, fragments,  accountActivity, genreActivity and loginActivity. We adopted a packaging strategy based on feature, by grouping code together based on common functionality. This packaging strategy allows for easy code navigation since all items needed for a task are in the same package and results in packages with high modularity and minimal coupling between packages.
+
+### Design Patterns Implemented ###
+
+Our group has mainly implemented two design patterns: the template design pattern and the command design pattern.
+
+**Template Design Pattern**
+
+The template design pattern organizes an abstract base class, which is the skeleton of an algorithm, and client subclasses that derive from the base class. The skeleton is the main structure of the algorithm and enforces the required steps as well as their ordering for the algorithm. The subclasses can extend or replace some of these steps in the skeleton for customization. The template method design pattern is useful when two or more components have similar qualities and a system can be put in place to reuse implementations. This way, we can avoid duplicate code and improve the efficiency of the program.
+
+In our program, we created a parent class called SortRecipes and subclasses called SortByInterest and SortByRating that can sort recipes by interest and rating, respectively. There is a sorting method in the parent class that sorts recipes alphabetically and enforces the main structure of the algorithm. This method is then overloaded in SortByInterest and overridden in SortByRating.
+
+**Command Design Pattern**
+
+The purpose of the Command design pattern is to encapsulate a request as an Object to allow the parametrization of clients with various requests. The Command Design pattern manages the user text-interface when the user types certain commands. to discover new recipes, build their own collection of recipes, and review recipes. To prevent multiple usages of  “if else” statements to distinguish between commands before executing them, we implemented the Command Design Pattern.
+
+First we created a Command interface/abstract class with an execute() method signature. Then we created a CommandTree to store the Commands in CommandNodes. Each CommandNode contains a Command and is linked to other CommandNodes depending on the functionality of the Command it contains.
+
+Then we created a UI class that issues a request by calling execute on whatever Command the CommandNode stores, depending on where in the CommandTree we are. The user will then see a small list of Commands the user is able to type in the interface. For example, if we are in the CommandNode that stores the HomePage() Command, the user will only able to call ViewGenres(), ViewUserProfile()), ViewSavedRecipes()), UploadRecipe()) and Logout() Commands.
+
+The Command objects shown will then be executed based on the user’s input into the console. In this way, we have prevented a messy “if else” code structure and made it easier to create and execute new Commands objects with many functionalities in the future.
+
+
+### Data Persistence ###
+
+Currently, the Text UI version of our program implements data persistence by writing to and reading from JSON files. These data are stored locally. As of now, we have yet to port this data persistence implementation to the Android app GUI because Android file structure interferes with Java's filepath. 
+
+For Phase 2, we have decided that the Android app GUI will robustly implement data persistence via a non-relational database instead. 

@@ -1,0 +1,27 @@
+package com.example.myfirstapp.main.Controllers;
+
+import com.example.myfirstapp.main.UseCases.RecipeSave;
+
+public class UserRequestSaveRecipe {
+    private RecipeSave recipeSave = new RecipeSave();
+    /**
+     * Saves a specified recipe to a user's saved recipes
+     * @param username is the username of the requested user
+     * @param recipeID the id of the recipe wanted to be saved
+     * @return whether the recipe was successfully saved
+     */
+    public boolean saveRecipe(String username, String recipeID) throws Exception {
+        return recipeSave.saveToUser(username, Integer.parseInt(recipeID), "All");
+    }
+    /**
+     * Deletes a specified recipe from a user's saved recipes
+     * @param username is the username of the requested user
+     * @param recipeID the id of the recipe wanted to be deleted
+     * @return whether the recipe was successfully deleted
+     */
+    public boolean deleteRecipe(String username, String recipeID) throws Exception {
+        return recipeSave.deleteFromUser(username, Integer.parseInt(recipeID));
+    }
+
+
+}
