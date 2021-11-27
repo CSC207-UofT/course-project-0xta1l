@@ -40,11 +40,14 @@ public class Globals {
     }
 
 
-    public static String user_username;
+    public static String user_username = "";
     public static String getUser_username(){
         return user_username;
     }
     public static void setUser_username(String s) {
+        if (!"".equals(user_username)){
+            Constants.USERSECURITY.changeUsername(getUser_username(), s);
+        }
         user_username = s;
     }
 
@@ -53,6 +56,7 @@ public class Globals {
         return user_password;
     }
     public static void setUser_password(String s) {
+        Constants.USERSECURITY.changePassword(getUser_username(),s);
         user_password = s;
     }
 
@@ -61,6 +65,7 @@ public class Globals {
         return user_name;
     }
     public static void setUser_name(String s) {
+        Constants.USERSECURITY.getUserByID(getUser_username()).setDisplayName(s);
         user_name = s;
     }
 
@@ -69,6 +74,7 @@ public class Globals {
         return user_bio;
     }
     public static void setUser_bio(String s) {
+        Constants.USERSECURITY.getUserByID(getUser_username()).setBiography(s);
         user_bio = s;
     }
 
@@ -91,6 +97,8 @@ public class Globals {
 
     private static int userAge;
     public static int getUserAge(){return userAge;}
-    public static void setUserAge(int i){userAge = i;}
+    public static void setUserAge(int i){
+        Constants.USERSECURITY.getUserByID(getUser_username()).setAge(i);
+        userAge = i;}
 
 }

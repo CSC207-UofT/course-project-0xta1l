@@ -83,22 +83,22 @@ public class Constants {
         r5genres.add("Canadian");
 
         Recipe recipe1 = new Recipe("Set on Fire", "Salt",
-                r1genres, "Burnt Food", 5, 1, "burnt.jpg", "",5);
+                r1genres, "Burnt Food", 5, 1, "burnt.jpg", "Is burnt food",5);
 
         Recipe recipe2 = new Recipe("Throw in Oven", "Chicken",
-                r2genres, "Chicken", 4, 2, "chicken.jpg", "",10);
+                r2genres, "Chicken", 4, 2, "chicken.jpg", "Is Chicken",10);
 
         Recipe recipe3 = new Recipe("Pan fry in pan", "Steak, butter",
-                r3genres, "Good Steak", 5, 3, "steak.jpg", "",30);
+                r3genres, "Good Steak", 5, 3, "steak.jpg", "Is steak",30);
 
         Recipe recipe4 = new Recipe("Boil in water", "Spinach, Mushrooms",
-                r4genres, "Random Veggies", 2, 4, "veg.jpg", "",15);
+                r4genres, "Random Veggies", 2, 4, "veg.jpg", "Is veggie",15);
 
         Recipe recipe5 = new Recipe("Throw maple syrup on pancakes", "Pancakes, salt, butter",
-                r5genres, "Pancakes", 3, 5, "pancake.jpg", "",5);
+                r5genres, "Pancakes", 3, 5, "pancake.jpg", "Is pancake",5);
 
         Recipe recipe6 = new Recipe("Cut into rectangular prisms and cook in oven", "Potatoes, butter",
-                r3genres, "French Fries", 4, 6, "fries.jpg", "",30);
+                r3genres, "French Fries", 4, 6, "fries.jpg", "Is frnch fry",30);
 
         for (String g: recipe1.getGenre()){
             dataset.addRecipes(g, recipe1);

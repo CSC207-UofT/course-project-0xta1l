@@ -43,6 +43,8 @@ public class GenreViewSort {
                 genres.add(0, interest);
             }
         }
+        genres.remove("All");
+        genres.add(0, "All");
         return genres;
     }
 }

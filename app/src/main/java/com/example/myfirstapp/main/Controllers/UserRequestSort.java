@@ -1,5 +1,6 @@
 package com.example.myfirstapp.main.Controllers;
 
+import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
@@ -25,7 +26,8 @@ public class UserRequestSort {
     }
 
     // overload sort method for sort by interests
-    public ArrayList<Preview> sort(ArrayList<Preview> recipes, String sortkey, User user) {
+    public ArrayList<Preview> sort(ArrayList<Preview> recipes, String sortkey, String username) {
+        User user = Constants.USERSECURITY.getUsernames().get(username);
         if (sortkey.isEmpty()) {
             SortRecipes s = new SortRecipes(recipes);
             return s.sort();
