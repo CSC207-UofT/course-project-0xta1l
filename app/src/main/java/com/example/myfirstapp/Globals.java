@@ -1,11 +1,16 @@
 package com.example.myfirstapp;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.UserSecurity;
 
 import java.util.ArrayList;
 
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class Globals {
     // Standard stuff for main
     public static int currentActivity = 0;

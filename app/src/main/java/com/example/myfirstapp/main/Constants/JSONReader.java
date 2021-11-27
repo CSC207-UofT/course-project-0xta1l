@@ -1,5 +1,6 @@
 package com.example.myfirstapp.main.Constants;
 
+import android.content.Context;
 import android.os.Build;
 
 import androidx.annotation.RequiresApi;
@@ -21,6 +22,26 @@ import java.util.List;
 public class JSONReader {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public static GenreLibrary readRecipes (String filepath){
+        Gson gson = new Gson();
+        try {
+            GenreLibrary genreLibrary = new GenreLibrary();
+            Reader reader = Files.newBufferedReader(Paths.get(filepath));
+            List<Recipe> recipes = new Gson().fromJson(reader, new TypeToken<List<Recipe>>() {}.getType());
+            //Recipe recipe = gson.fromJson(reader, Recipe.class);
+            for (Recipe recipe: recipes){
+                for (String genre: recipe.getGenre()){
+                    genreLibrary.addRecipes(genre, recipe);
+                }
+                genreLibrary.addRecipes("All", recipe);
+            }
+            return genreLibrary;
+        } catch (IOException e){
+            System.out.println("file not found");
+        }
+        return new GenreLibrary();
+    }
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public static GenreLibrary readRecipes (Context c, String filepath){
         Gson gson = new Gson();
         try {
             GenreLibrary genreLibrary = new GenreLibrary();
