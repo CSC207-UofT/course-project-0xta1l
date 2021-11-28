@@ -18,6 +18,7 @@ import com.example.myfirstapp.fragments.GenresFragment;
 import com.example.myfirstapp.fragments.HomeFragment;
 import com.example.myfirstapp.fragments.MyRecipeFragment;
 import com.example.myfirstapp.fragments.ProfileFragment;
+import com.example.myfirstapp.fragments.UploadFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     private HomeFragment homeFragment = new HomeFragment();
     private GenresFragment genresFragment = new GenresFragment();
+    private UploadFragment uploadFragment = new UploadFragment();
     private MyRecipeFragment myRecipeFragment = new MyRecipeFragment();
     private ProfileFragment profileFragment = new ProfileFragment();
 
@@ -64,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
                 this.currentView = "Genres";
                 this.setCurrentActivity(i);
                 this.makeCurrentFragment(this.genresFragment);
+                return true;
+            case R.id.menu_upload:
+                this.currentView = "Upload";
+                this.setCurrentActivity(i);
+                this.makeCurrentFragment(this.uploadFragment);
                 return true;
             case R.id.menu_recipes:
                 this.currentView = "My Recipes";

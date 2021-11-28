@@ -37,7 +37,5 @@ public class GenreViewSortTest {
         User user = new User("user1", "password", "jim", 29, "bio", userInterests);
         ArrayList<String> genrelist = g.genresViewList(user);
         assertEquals(test, genrelist);
-
         }
-
     }
