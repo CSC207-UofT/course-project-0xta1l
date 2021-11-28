@@ -61,6 +61,7 @@ public class GenreRecipeItemActivity extends AppCompatActivity {
             finish();
         } catch (Exception e){
             e.printStackTrace();
+            // TODO: Add snackbar to say recipe is already inside
         }
     }
 }

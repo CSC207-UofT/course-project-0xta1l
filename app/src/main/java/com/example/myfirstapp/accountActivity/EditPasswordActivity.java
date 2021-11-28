@@ -25,7 +25,7 @@ public class EditPasswordActivity extends AppCompatActivity {
     public void editPassword(View view) {
         EditText editText = (EditText) findViewById(R.id.editPasswordText);
         String s = editText.getText().toString();
-        if(s.matches("^.*(?=.{8,})(?=..*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$"))
+        if(s.matches("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"))
         {Globals.setUser_password(s);
             finish();}
         else{
