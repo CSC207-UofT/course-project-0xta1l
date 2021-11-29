@@ -201,7 +201,6 @@ public class UploadFragment extends Fragment {
             uploadGenres,
             name,
             0,
-            id,
             image,
             description,
             preptime
