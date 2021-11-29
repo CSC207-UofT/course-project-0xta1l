@@ -47,10 +47,25 @@ public class UserSecurity {
         UserPassword.put(user.getUsername(), user.getPassword());
     }
 
-    public void changeUsername(String username, String new_username) {
+    public void changeUsername(String username, String newUsername) {
         User user = this.UsernameList.get(username);
-        user.setUsername(new_username);
+        user.setUsername(newUsername);
         this.UsernameList.remove(username);
-        this.UsernameList.put(new_username, user);
+        this.UsernameList.put(newUsername, user);
+    }
+
+    public void changeBio(String username, String bio) {
+        User user = this.UsernameList.get(username);
+        user.setBiography(bio);
+    }
+
+    public void changeAge(String username, Integer age) {
+        User user = this.UsernameList.get(username);
+        user.setAge(age);
+    }
+
+    public void changeName(String username, String name) {
+        User user = this.UsernameList.get(username);
+        user.setDisplayName(name);
     }
 }

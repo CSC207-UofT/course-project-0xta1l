@@ -69,15 +69,15 @@ public class Globals {
     public static String getUser_name(){
         return user.getDisplayName();
     }
-    public static void setUser_name(String s) {
-        Constants.USERSECURITY.getUserByID(getUser_username()).setDisplayName(s);
+    public static void setUser_name(String name) {
+        Constants.USERSECURITY.changeName(getUser_username(), name);
     }
 
     public static String getUser_bio(){
         return user.getBiography();
     }
-    public static void setUser_bio(String s) {
-        Constants.USERSECURITY.getUserByID(getUser_username()).setBiography(s);
+    public static void setUser_bio(String bio) {
+        Constants.USERSECURITY.changeBio(getUser_username(), bio);
     }
 
     public static ArrayList<String> getUserInterests(){return user.getInterests();}
