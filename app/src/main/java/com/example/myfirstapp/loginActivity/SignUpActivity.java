@@ -1,6 +1,7 @@
 package com.example.myfirstapp.loginActivity;
 
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class SignUpActivity extends AppCompatActivity {
 
     private boolean[] selectedInterest;
