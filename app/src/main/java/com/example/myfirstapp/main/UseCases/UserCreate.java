@@ -1,4 +1,8 @@
 package com.example.myfirstapp.main.UseCases;
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Entities.User;
 
@@ -15,6 +19,7 @@ import java.util.ArrayList;
  */
 public class UserCreate {
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public boolean userCreate(String username, String password, String displayName, int age, String biography,
                               ArrayList<String> interests){
         if (Constants.USERSECURITY.getUsernames().containsKey(username)){

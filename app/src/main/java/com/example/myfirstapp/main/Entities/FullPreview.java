@@ -3,7 +3,6 @@ package com.example.myfirstapp.main.Entities;
 import java.util.ArrayList;
 
 public class FullPreview extends Preview{
-    private int ID;
     private String name;
     private int rating;
     private ArrayList<String> genre;

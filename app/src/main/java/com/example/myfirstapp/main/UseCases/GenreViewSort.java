@@ -27,7 +27,7 @@ import java.util.Collections;
 public class GenreViewSort {
     public GenreViewSort(){}
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public ArrayList<String> genresViewList(User user) {
         ArrayList<String> genres = Constants.GENRELIBRARY.getAllGenres();
         if (user.getInterests().isEmpty()) {

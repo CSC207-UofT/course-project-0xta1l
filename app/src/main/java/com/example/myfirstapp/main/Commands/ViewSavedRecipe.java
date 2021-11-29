@@ -1,7 +1,10 @@
 package com.example.myfirstapp.main.Commands;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Controllers.UserRequestRecipeView;
-import com.example.myfirstapp.main.Entities.FullPreview;
 import com.example.myfirstapp.main.Presenters.RecipeDisplay;
 
 import java.util.Scanner;
@@ -17,6 +20,7 @@ public class ViewSavedRecipe extends RecipeCommand {
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void execute(String username) {
         UserRequestRecipeView browse = new UserRequestRecipeView();
@@ -26,7 +30,7 @@ public class ViewSavedRecipe extends RecipeCommand {
         String recipeID = scan.nextLine();
         setVIEWEDRECIPE(recipeID);
         try {
-            display.showRecipe((FullPreview) browse.recipeView(recipeID));
+            display.showRecipe(browse.recipeView(recipeID));
         } catch (Exception e) {
             System.out.println("Recipe with such ID does not exist.");
         }

@@ -5,6 +5,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class GenreLibrary {
+    private int highestID;
+
+    public void setHighestID(int ID){
+        if (ID > highestID) {
+            highestID = ID;
+        }
+    }
+
+    public int getHighestID(){
+        return highestID;
+    }
+
     public HashMap<String, HashMap<Integer, Recipe>> ListOfAllRecipes = new HashMap<>();
 
     public HashMap<String, HashMap<Integer, Recipe>> getListOfAllRecipes() {

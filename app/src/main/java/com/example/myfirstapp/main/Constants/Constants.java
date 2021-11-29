@@ -1,4 +1,8 @@
 package com.example.myfirstapp.main.Constants;
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.Review;
@@ -15,11 +19,15 @@ import java.util.*;
 import java.util.stream.Stream;
 import java.io.*;
 
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class Constants {
     // Create Constants
 
-    public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
-    public static UserSecurity USERSECURITY = Constants.createUsers();
+    public static GenreLibrary GENRELIBRARY =  createDataset();//JSONReader.readRecipes("app/src/main/res/temp_data.json");
+    public static UserSecurity USERSECURITY = createUsers();//JSONReader.readUsers("app/src/main/res/users.json");
+
+
+    //public static UserSecurity USERSECURITY = Constants.createUsers();
     public static com.example.myfirstapp.main.Commands.CommandTree COMMANDTREE =
             createCommandTree(new com.example.myfirstapp.main.Commands.HomePage());
 
@@ -118,6 +126,7 @@ public class Constants {
         for (String g: recipe6.getGenre()){
             dataset.addRecipes(g, recipe6);
         }
+        dataset.setHighestID(6);
         return dataset;
     }
 

@@ -28,7 +28,8 @@ public class ListDisplay {
             for (Preview recipe : browseInfo) {
                 System.out.println("Recipe ID: " + recipe.getID());
                 System.out.println("Recipe Name: " + recipe.getName());
-                System.out.println("Recipe Rating: " + recipe.getRating() + "\n");
+                System.out.println("Recipe Rating: " + recipe.getRating());
+                System.out.println("Recipe Description: " + recipe.getDescription() + "\n");
             }
         }
     }

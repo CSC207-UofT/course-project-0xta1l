@@ -1,7 +1,10 @@
 package com.example.myfirstapp.main.Commands;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Controllers.UserRequestRecipeView;
-import com.example.myfirstapp.main.Entities.FullPreview;
 import com.example.myfirstapp.main.Presenters.RecipeDisplay;
 
 import java.util.ArrayList;
@@ -22,6 +25,7 @@ public class ViewRecipe extends RecipeCommand {
         System.out.println("An error has occurred.");
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void execute(String username) throws Exception {
         Scanner input = new Scanner(System.in);
@@ -30,7 +34,7 @@ public class ViewRecipe extends RecipeCommand {
         setVIEWEDRECIPE(recipeID);
         UserRequestRecipeView view = new UserRequestRecipeView();
         RecipeDisplay display = new RecipeDisplay();
-        display.showRecipe((FullPreview) view.recipeView(recipeID));
+        display.showRecipe(view.recipeView(recipeID));
     }
 
 }

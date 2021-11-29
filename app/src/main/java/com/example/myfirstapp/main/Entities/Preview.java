@@ -18,17 +18,26 @@ public class Preview {
     private int rating;
     private ArrayList<String> genre;
     private String description;
+    private String image;
+    private int preptime;
+    private String ingredients;
+    private String instructions;
 
     /**
      * Constructors for a Recipe's Preview
      */
-    public Preview(){};
+    public Preview(){}
     public Preview(Recipe recipe){
         this.ID = recipe.getID();
         this.name = recipe.getName();
         this.rating = recipe.getRating();
         this.genre = recipe.getGenre();
-        this.description = recipe.getDescription();}
+        this.description = recipe.getDescription();
+        this.image = recipe.getImage();
+        this.preptime = recipe.getPreptime();
+        this.ingredients = recipe.getIngredients();
+        this.instructions = recipe.getInstructions();}
+
     public Preview(int id, String n, int rate, ArrayList<String> genres, String description){
         this.ID = id;
         this.name = n;
@@ -49,6 +58,12 @@ public class Preview {
     public int getRating() {return rating;}
     public int getID() {return ID;}
     public String getDescription() {return description;}
+    public String getImage() {return image;}
+    public int getPreptime() {return preptime;}
+    public String getIngredients() {return ingredients;}
+    public String getInstructions() {return instructions;}
+
+
 
 
 
@@ -63,6 +78,10 @@ public class Preview {
     public void setID(int id) {this.ID = id;}
     public void setName(String name) {this.name = name;}
     public void setDescription(String description) {this.description = description;}
+    public void setImage(String img) {this.image = img;}
+    public void setPreptime(int rating) {this.rating = rating;}
+    public void setIngredients(String ingredients) {this.ingredients = ingredients;}
+    public void setInstructions(String instructions) {this.instructions = instructions;}
 
     /**
      * This method returns a preview entity in the form of an arraylist
@@ -70,7 +89,7 @@ public class Preview {
      * @return [id, name, rating, genre, description]
      */
     public ArrayList<Object> toList(){
-        ArrayList<Object> lst = new ArrayList<Object>();
+        ArrayList<Object> lst = new ArrayList<>();
         lst.add(ID);
         lst.add(name);
         lst.add(rating);
