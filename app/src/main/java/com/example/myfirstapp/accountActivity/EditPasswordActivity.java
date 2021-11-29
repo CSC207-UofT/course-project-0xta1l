@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 
 import com.example.myfirstapp.Globals;
+import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -25,12 +26,16 @@ public class EditPasswordActivity extends AppCompatActivity {
     public void editPassword(View view) {
         EditText editText = (EditText) findViewById(R.id.editPasswordText);
         String s = editText.getText().toString();
-        if(s.matches("^.*(?=.{8,})(?=..*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$"))
-        {Globals.setUser_password(s);
-            finish();}
+        if (s.isEmpty()) {
+            Notification.displaySnackBar(findViewById(R.id.editPasswordPage),"Password cannot be empty");
+            return;
+        }
+        if(s.matches("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")) {
+            Globals.setUser_password(s);
+            finish();
+        }
         else{
-            System.out.println("wrong password :(");
-            //TODO add snackbar
+            Notification.displaySnackBar(findViewById(R.id.editPasswordPage),"Invalid password");
         }
     }
 }

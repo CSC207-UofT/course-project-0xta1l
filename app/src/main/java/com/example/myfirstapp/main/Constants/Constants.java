@@ -5,6 +5,7 @@ import androidx.annotation.RequiresApi;
 
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.Recipe;
+import com.example.myfirstapp.main.Entities.Review;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
 import com.example.myfirstapp.main.Commands.*;
@@ -100,6 +101,13 @@ public class Constants {
         Recipe recipe6 = new Recipe("Cut into rectangular prisms and cook in oven", "Potatoes, butter",
                 r3genres, "French Fries", 4, 6, "fries.jpg", "Is frnch fry",30);
 
+        Review review1 = new Review(1, 1, "username1", "comments", 2);
+        Review review2 = new Review(2, 1, "a", "222222", 3);
+        Review review3 = new Review(3, 1, "username2", "333333", 4);
+
+        recipe1.addSavedReviews("username1", review1);
+        recipe1.addSavedReviews("a", review2);
+        recipe1.addSavedReviews("username2", review3);
         for (String g: recipe1.getGenre()){
             dataset.addRecipes(g, recipe1);
         }

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.UploadFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/uploadTextName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="72dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Name" />
+
+            <TextView
+                android:id="@+id/uploadGenreInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="150dp"
+                android:background="@android:drawable/editbox_background"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Select Genres"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/uploadTextInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="242dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Instructions" />
+
+            <EditText
+                android:id="@+id/uploadTextIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginTop="308dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Ingredients" />
+
+            <EditText
+                android:id="@+id/uploadTextDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="372dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Description" />
+
+            <EditText
+                android:id="@+id/uploadTextImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="441dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Image URL" />
+
+            <EditText
+                android:id="@+id/uploadTextPreptime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="82dp"
+                android:layout_marginTop="517dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Prep time" />
+
+            <Button
+                android:id="@+id/uploadButtonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uploadTextPreptime"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="160dp"
+                android:onClick="onSubmit"
+                android:text="Submit" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

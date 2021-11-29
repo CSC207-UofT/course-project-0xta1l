@@ -1,8 +1,16 @@
 package com.example.myfirstapp;
 
+import android.view.Gravity;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Entities.GenreLibrary;
+import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
@@ -35,52 +43,49 @@ public class Globals {
     }
 
 
-    public static String user_username = "";
+    private static User user;
+    public static User getUser(){
+        return user;
+    }
+    public static void setUser(User new_user){
+        user = new_user;
+    }
     public static String getUser_username(){
-        return user_username;
+        return user.getUsername();
     }
     public static void setUser_username(String s) {
-        if (!"".equals(user_username)){
+        if (!"".equals(getUser_username())){
             Constants.USERSECURITY.changeUsername(getUser_username(), s);
         }
-        user_username = s;
     }
 
-    public static String user_password;
     public static String getUser_password(){
-        return user_password;
+        return user.getPassword();
     }
     public static void setUser_password(String s) {
         Constants.USERSECURITY.changePassword(getUser_username(),s);
-        user_password = s;
     }
 
-    public static String user_name;
     public static String getUser_name(){
-        return user_name;
+        return user.getDisplayName();
     }
     public static void setUser_name(String s) {
         Constants.USERSECURITY.getUserByID(getUser_username()).setDisplayName(s);
-        user_name = s;
     }
 
-    public static String user_bio;
     public static String getUser_bio(){
-        return user_bio;
+        return user.getBiography();
     }
     public static void setUser_bio(String s) {
         Constants.USERSECURITY.getUserByID(getUser_username()).setBiography(s);
-        user_bio = s;
     }
 
-    private static ArrayList<String> userInterests;
-    public static ArrayList<String> getUserInterests(){return userInterests;}
-    public static void setUserInterests(ArrayList<String> interest_list){userInterests = interest_list;}
+    public static ArrayList<String> getUserInterests(){return user.getInterests();}
     public static String getUserStringInterests(){
         StringBuilder s = new StringBuilder();
         int counter = 1;
-        for (String str: userInterests){
-            if (counter < userInterests.size()){
+        for (String str: getUserInterests()){
+            if (counter < getUserInterests().size()){
                 counter ++;
                 s.append(str).append(", ");
             } else {
@@ -90,10 +95,8 @@ public class Globals {
         return s.toString();
     }
 
-    private static int userAge;
-    public static int getUserAge(){return userAge;}
+    public static int getUserAge(){return user.getAge();}
     public static void setUserAge(int i){
         Constants.USERSECURITY.getUserByID(getUser_username()).setAge(i);
-        userAge = i;}
-
+    }
 }

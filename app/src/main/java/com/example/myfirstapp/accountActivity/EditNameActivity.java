@@ -8,6 +8,7 @@ import android.widget.EditText;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.MainActivity;
+import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
 
 public class EditNameActivity extends AppCompatActivity {
@@ -21,6 +22,10 @@ public class EditNameActivity extends AppCompatActivity {
     public void editName(View view) {
         EditText editText = (EditText) findViewById(R.id.editNameText);
         String s = editText.getText().toString();
+        if (s.isEmpty()) {
+            Notification.displaySnackBar(findViewById(R.id.editNamePage),"Name cannot be empty");
+            return;
+        }
         Globals.setUser_name(s);
         finish();
     }

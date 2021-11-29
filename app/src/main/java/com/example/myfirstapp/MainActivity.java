@@ -18,32 +18,33 @@ import com.example.myfirstapp.fragments.GenresFragment;
 import com.example.myfirstapp.fragments.HomeFragment;
 import com.example.myfirstapp.fragments.MyRecipeFragment;
 import com.example.myfirstapp.fragments.ProfileFragment;
+import com.example.myfirstapp.fragments.UploadFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
-    private int currentActivity = 0;
-
-    private Button mLoadFragmentOne;
-    private Button mLoadFragmentTwo;
-
     public String currentView = "Home";
 
-
-    private HomeFragment homeFragment = new HomeFragment();
-    private GenresFragment genresFragment = new GenresFragment();
-    private MyRecipeFragment myRecipeFragment = new MyRecipeFragment();
-    private ProfileFragment profileFragment = new ProfileFragment();
+    private HomeFragment homeFragment;
+    private GenresFragment genresFragment;
+    private UploadFragment uploadFragment;
+    private MyRecipeFragment myRecipeFragment;
+    private ProfileFragment profileFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.currentActivity = Globals.getCurrentActivity();
+        this.homeFragment = new HomeFragment();
+        this.genresFragment = new GenresFragment();
+        this.uploadFragment = new UploadFragment();
+        this.myRecipeFragment = new MyRecipeFragment();
+        this.profileFragment = new ProfileFragment();
 
-        this.initFragment(this.getCurrentActivity());
+
+        this.initFragment(Globals.getCurrentActivity());
 
         BottomNavigationView bottom_navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottom_navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -57,22 +58,27 @@ public class MainActivity extends AppCompatActivity {
         switch (i) {
             case R.id.menu_home:
                 this.currentView = "Home";
-                this.setCurrentActivity(i);
+                Globals.setCurrentActivity(i);
                 this.makeCurrentFragment(this.homeFragment);
                 return true;
             case R.id.menu_search:
                 this.currentView = "Genres";
-                this.setCurrentActivity(i);
+                Globals.setCurrentActivity(i);
                 this.makeCurrentFragment(this.genresFragment);
+                return true;
+            case R.id.menu_upload:
+                this.currentView = "Upload";
+                Globals.setCurrentActivity(i);
+                this.makeCurrentFragment(this.uploadFragment);
                 return true;
             case R.id.menu_recipes:
                 this.currentView = "My Recipes";
-                this.setCurrentActivity(i);
+                Globals.setCurrentActivity(i);
                 this.makeCurrentFragment(this.myRecipeFragment);
                 return true;
             case R.id.menu_account:
                 this.currentView = "My Account";
-                this.setCurrentActivity(i);
+                Globals.setCurrentActivity(i);
                 this.makeCurrentFragment(this.profileFragment);
                 return true;
             default:
@@ -85,48 +91,6 @@ public class MainActivity extends AppCompatActivity {
         transaction
                 .replace(R.id.fl_wrapper, fragment)
                 .commit();
-        // String s = R.string.current_view;
     }
-    public void setCurrentActivity(int i) {
-        this.currentActivity = i;
-        Globals.setCurrentActivity(i);
-    }
-    public int getCurrentActivity() {
-        return this.currentActivity;
-    }
-
-    /** Called when the user taps the Send button */
-    public void sendMessage(View view) {
-        // Do something in response to button
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.editTextTextPersonName);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
-    }
-
-
-    public void homeButton(View view) {
-        this.currentActivity = 1;
-        this.onViewChange();
-    }
-    public void recipeButton(View view) {
-        this.currentActivity = 2;
-        this.onViewChange();
-    }
-    public void onViewChange() {
-        switch(this.currentActivity) {
-            case 1:
-
-                break;
-            case 2:
-
-                break;
-            default:
-
-                break;
-        }
-    }
-
 }
 
