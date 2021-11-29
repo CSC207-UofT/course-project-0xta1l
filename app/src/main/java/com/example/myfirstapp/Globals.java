@@ -53,17 +53,17 @@ public class Globals {
     public static String getUser_username(){
         return user.getUsername();
     }
-    public static void setUser_username(String s) {
+    public static void setUser_username(String username) {
         if (!"".equals(getUser_username())){
-            Constants.USERSECURITY.changeUsername(getUser_username(), s);
+            Constants.USERSECURITY.changeUsername(getUser_username(), username);
         }
     }
 
     public static String getUser_password(){
         return user.getPassword();
     }
-    public static void setUser_password(String s) {
-        Constants.USERSECURITY.changePassword(getUser_username(),s);
+    public static void setUser_password(String password) {
+        Constants.USERSECURITY.changePassword(getUser_username(),password);
     }
 
     public static String getUser_name(){
