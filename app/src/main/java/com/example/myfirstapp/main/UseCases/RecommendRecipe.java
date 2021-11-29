@@ -34,10 +34,18 @@ public class RecommendRecipe {
     private ArrayList<Preview> recursiveRecommend
             (ArrayList<Preview> recommends, ArrayList<String> genres, int genreNum, int rest){
 
+        if(rest == 0){return recommends;}
+
         ArrayList<Preview> previews = getSortedPreviewsFromGenre(genres.get(genreNum));
-        recommends.addAll(previews);
-        int remainder = rest - previews.size();
-        //if((remainder > 0) && (genres.size() > genreNum+1 )) {
+        int numAdded = 0;
+        for (Preview newRecommendation : previews){
+            if(!(recommends.contains(newRecommendation))){
+                recommends.add(newRecommendation);
+                numAdded++;}
+        }
+
+        int remainder = rest - numAdded;
+        if(genres.size() >= genreNum+1) {
             ArrayList<Preview> previews2 = getSortedPreviewsFromGenre(genres.get(genreNum + 1));
 
             if (remainder > previews2.size()) {
@@ -47,9 +55,9 @@ public class RecommendRecipe {
             for (int i = 0; i < remainder; i++) {
                 recommends.add(previews2.get(i));
             }
+            }
             return recommends;
-        //}
-       // else return recommends;
+
     }
 
     private ArrayList<Preview> getSortedPreviewsFromGenre(String genre) {
@@ -93,5 +101,4 @@ public class RecommendRecipe {
     }
 
 }
-
 
