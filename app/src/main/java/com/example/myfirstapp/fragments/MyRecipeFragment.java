@@ -2,10 +2,8 @@ package com.example.myfirstapp.fragments;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 
-import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 
 import android.view.Gravity;
@@ -78,7 +76,6 @@ public class MyRecipeFragment extends Fragment {
         }
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
