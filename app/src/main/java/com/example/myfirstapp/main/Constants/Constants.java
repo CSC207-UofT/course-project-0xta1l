@@ -91,7 +91,7 @@ public class Constants {
                 r5genres, "Pancakes", 3, 5, "pancake.jpg", "Is pancake",5);
 
         Recipe recipe6 = new Recipe("Cut into rectangular prisms and cook in oven", "Potatoes, butter",
-                r3genres, "French Fries", 4, 6, "fries.jpg", "Is frnch fry",30);
+                r3genres, "French Fries", 4, 6, "fries.jpg", "Is french fry",30);
 
         Review review1 = new Review(1, 1, "username1", "comments", 2);
         Review review2 = new Review(2, 1, "a", "222222", 3);
@@ -120,6 +120,7 @@ public class Constants {
         }
         return dataset;
     }
+
     public static GenreLibrary CSVRecipeReader(String fileName) throws FileNotFoundException {
         GenreLibrary genreLibrary = new GenreLibrary();
 
