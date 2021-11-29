@@ -14,6 +14,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.genreActivity.GenreItemActivity;
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
@@ -70,6 +71,8 @@ public class GenresFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        System.out.println("creating new genre view");
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_genres, container, false);
         LinearLayout layout = (LinearLayout) v.findViewById(R.id.GenreListLayout);
@@ -80,6 +83,8 @@ public class GenresFragment extends Fragment {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
             genres = genreController.browseGenres(Globals.getUser_username());
         }
+
+        System.out.println("user is" + Globals.getUser_username());
         for(int i = 0; i < genres.size(); i++) {
             TextView text = new TextView(getContext());
             text.setGravity(Gravity.CENTER);

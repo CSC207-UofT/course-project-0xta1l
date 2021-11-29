@@ -93,12 +93,9 @@ public class GenreItemActivity extends AppCompatActivity{
 
     }
     public void showItems(ArrayList<Preview> recipes) {
-        GenreItemActivity that = this;
         LinearLayout layout = (LinearLayout) this.findViewById(R.id.GenreItemLayout);
         layout.removeAllViews();
         for(Preview recipePreview: recipes) {
-            // TextView text = this.createRecipeName(recipePreview);
-            // layout.addView(text);
             RelativeLayout p = this.createRecipePreview(recipePreview);
             layout.addView(p);
         }
@@ -168,7 +165,6 @@ public class GenreItemActivity extends AppCompatActivity{
         });
         return text;
     }
-
     public int getImageHeight(Preview recipePreview) {
         ImageView text = new ImageView(this);
         text.setAdjustViewBounds(true);
@@ -180,7 +176,6 @@ public class GenreItemActivity extends AppCompatActivity{
         int h = text.getDrawable().getIntrinsicHeight();
         return h;
     }
-
     public RelativeLayout createRecipePreview(Preview recipe) {
         RelativeLayout p = new RelativeLayout(this);
         p.addView(this.createRecipeImage(recipe));
