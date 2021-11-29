@@ -18,6 +18,11 @@ public class UserRequestGetReview {
     }
 
     public ArrayList<ArrayList<Object>> getuserreview(String username)   {
+        /**
+         * Displays reviews written by a specific user
+         * @param username is the username of the user whose reviews you want to view
+         * @return a list of reviews for a specific user
+         */
 
             GetReview getusereview= new GetReview();
             return getusereview.getUserReviews(username);
