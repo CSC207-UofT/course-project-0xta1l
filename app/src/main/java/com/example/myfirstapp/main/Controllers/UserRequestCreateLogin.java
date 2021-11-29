@@ -1,5 +1,9 @@
 package com.example.myfirstapp.main.Controllers;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Constants.*;
 import com.example.myfirstapp.main.UseCases.UserCreate;
 
@@ -18,10 +22,12 @@ public class UserRequestCreateLogin{
      * @param interestList is the interests of the given user
      * @return a string representing the username
      */
+
     public String createUser(String username, String password, String displayName, int age, String biography, ArrayList<String> interestList) throws Exception {
         UserCreate userCreatee = new UserCreate();
         boolean UserMade = userCreatee.userCreate(username, password, displayName, age, biography, interestList);
         if (UserMade) {
+            JSONWriter.writeUsers("app/src/main/java/com/example/myfirstapp/main/Constants/users.json");
             return username;
         } else {
             throw new Exception("There was an error.");
@@ -33,6 +39,7 @@ public class UserRequestCreateLogin{
      * @param password is the password of a given User
      * @return whether the user was logged in
      */
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public boolean loginUser(String username, String password) {
         //boolean validated = Constants.USERSECURITY.validateLogin(username, password);
         //return validated;

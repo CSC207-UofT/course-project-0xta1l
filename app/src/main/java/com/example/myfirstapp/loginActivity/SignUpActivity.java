@@ -1,10 +1,12 @@
 package com.example.myfirstapp.loginActivity;
 
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -119,6 +121,7 @@ public class SignUpActivity extends AppCompatActivity {
 
 
     }
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void onSignUp(View view) {
         Intent intent = new Intent(this, LoginActivity.class);
         EditText usernameText = (EditText) findViewById(R.id.signupUsernameInput);
