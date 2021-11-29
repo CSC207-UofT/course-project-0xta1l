@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myfirstapp">
+    package="com.example.myfirstapp" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyFirstApp">
+        android:theme="@style/Theme.MyFirstApp" >
         <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
@@ -16,7 +16,7 @@
         <!-- Profile Activities -->
         <activity
             android:name=".accountActivity.EditAgeActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -25,7 +25,7 @@
         </activity>
         <activity
             android:name=".accountActivity.EditPasswordActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -34,7 +34,7 @@
         </activity>
         <activity
             android:name=".accountActivity.EditUsernameActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -43,7 +43,7 @@
         </activity>
         <activity
             android:name=".accountActivity.EditBioActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -52,7 +52,7 @@
         </activity>
         <activity
             android:name=".accountActivity.EditNameActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -62,7 +62,7 @@
         <!-- Recipe Activity -->
         <activity
             android:name=".RecipeItemActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -72,7 +72,7 @@
         <!-- Genre Activity -->
         <activity
             android:name=".genreActivity.GenreItemActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -81,7 +81,7 @@
         </activity>
         <activity
             android:name=".genreActivity.GenreRecipeItemActivity"
-            android:parentActivityName=".genreActivity.GenreItemActivity">
+            android:parentActivityName=".genreActivity.GenreItemActivity" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -90,7 +90,7 @@
         </activity> <!-- Genre Activity END -->
         <activity
             android:name=".DisplayMessageActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -99,7 +99,7 @@
         </activity> <!-- Login and signup activities -->
         <activity
             android:name=".loginActivity.SignUpActivity"
-            android:parentActivityName=".loginActivity.LoginActivity">
+            android:parentActivityName=".loginActivity.LoginActivity" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -108,7 +108,7 @@
         </activity>
         <activity
             android:name=".loginActivity.LoginActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

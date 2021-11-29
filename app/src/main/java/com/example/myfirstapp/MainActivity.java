@@ -2,7 +2,6 @@ package com.example.myfirstapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -10,12 +9,11 @@ import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NavUtils;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.myfirstapp.fragments.GenresFragment;
-import com.example.myfirstapp.fragments.HomeFragment;
+import com.example.myfirstapp.fragments.RecommendFragment;
 import com.example.myfirstapp.fragments.MyRecipeFragment;
 import com.example.myfirstapp.fragments.ProfileFragment;
 import com.example.myfirstapp.fragments.UploadFragment;
@@ -32,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     public String currentView = "Home";
 
 
-    private HomeFragment homeFragment = new HomeFragment();
+    private RecommendFragment recommendFragment = new RecommendFragment();
     private GenresFragment genresFragment = new GenresFragment();
     private UploadFragment uploadFragment = new UploadFragment();
     private MyRecipeFragment myRecipeFragment = new MyRecipeFragment();
@@ -60,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menu_home:
                 this.currentView = "Home";
                 this.setCurrentActivity(i);
-                this.makeCurrentFragment(this.homeFragment);
+                this.makeCurrentFragment(this.recommendFragment);
                 return true;
             case R.id.menu_search:
                 this.currentView = "Genres";
