@@ -103,7 +103,7 @@ public class Recipe {
     public Preview getPreview() {
         return new Preview(this);
     }
-
+    public ArrayList<Integer> getRatingList() { return ratingList; }
 
     /**
      * Setter Methods for Recipe:
