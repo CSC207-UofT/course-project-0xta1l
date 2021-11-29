@@ -12,6 +12,7 @@ import android.widget.FrameLayout;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.MainActivity;
+import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Entities.User;
@@ -42,44 +43,13 @@ public class LoginActivity extends AppCompatActivity {
         if (Constants.USERSECURITY.getUsernames().containsKey(username)){
             User user = Constants.USERSECURITY.getUserByID(username);
             if (password.equals(user.getPassword())){
-                Globals.setUser_username(username);
-                Globals.setUser_password(password);
-                Globals.setUser_name(user.getDisplayName());
-                Globals.setUser_bio(user.getBiography());
-                Globals.setUserInterests(user.getInterests());
-                Globals.setUserAge(user.getAge());
+                Globals.setUser(user);
                 startActivity(intent);
             } else {
-                Snackbar snack = Snackbar.make(constraintLayout,
-                        "Wrong password",
-                        Snackbar.LENGTH_SHORT);
-                // snack.setAnchorView(findViewById(R.id.loginTextUsername));
-                FrameLayout snackView = (FrameLayout) snack.getView();
-                FrameLayout.LayoutParams params =(FrameLayout.LayoutParams) snackView.getChildAt(0).getLayoutParams();
-                params.gravity = Gravity.TOP;
-                params.setMargins(
-                        10,
-                        10,
-                        10,
-                        0);
-                snackView.setLayoutParams(params);
-                snack.show();
+                Notification.displaySnackBar(constraintLayout, "Wrong password!", "top");
             }
         } else {
-            Snackbar snack = Snackbar.make(constraintLayout,
-                            "Wrong username",
-                            Snackbar.LENGTH_SHORT);
-            //snack.setAnchorView(findViewById(R.id.loginTextUsername));
-            FrameLayout snackView = (FrameLayout) snack.getView();
-            FrameLayout.LayoutParams params =(FrameLayout.LayoutParams) snackView.getChildAt(0).getLayoutParams();
-            params.gravity = Gravity.TOP;
-            params.setMargins(
-                    10,
-                    10,
-                    10,
-                    0);
-            snackView.setLayoutParams(params);
-            snack.show();
+             Notification.displaySnackBar(constraintLayout, "Wrong username", "top");
         }
     }
 }

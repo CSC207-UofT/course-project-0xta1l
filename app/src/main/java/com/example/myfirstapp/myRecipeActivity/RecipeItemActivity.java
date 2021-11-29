@@ -1,4 +1,4 @@
-package com.example.myfirstapp.genreActivity;
+package com.example.myfirstapp.myRecipeActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,63 +11,68 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
-import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
+import com.example.myfirstapp.genreActivity.GenreRecipeItemActivity;
+import com.example.myfirstapp.genreActivity.GenreRecipeItemReviewActivity;
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Controllers.UserRequestSaveRecipe;
 import com.example.myfirstapp.main.Entities.Recipe;
-import com.example.myfirstapp.main.Entities.Review;
 import com.example.myfirstapp.main.Entities.User;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class GenreRecipeItemActivity extends AppCompatActivity {
+public class RecipeItemActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // recipeItemIngredients
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_genre_recipe_item);
+        setContentView(R.layout.activity_recipe_item);
 
-        HashMap<Integer, Recipe> recipes = Constants.GENRELIBRARY.getAllRecipes(Globals.getViewGenreName());
+        System.out.println("The recipe id is : " + Globals.getViewRecipeId());
+
+        User user = Constants.USERSECURITY.getUserByID(Globals.getUser_username());
+        HashMap<Integer, Recipe> recipes = user.getSavedRecipesHash();
+        System.out.println("recipes is " + recipes);
         Recipe recipe = recipes.get(Globals.getViewRecipeId());
         setTitle(recipe.getName());
 
-        TextView recipeItemGenre = findViewById(R.id.genreRecipeItemGenre);
+        TextView recipeItemGenre = findViewById(R.id.recipeItemGenre);
         recipeItemGenre.setText("Genres: " + recipe.getGenreStrings());
 
-        TextView recipeItemId = findViewById(R.id.genreRecipeItemId);
+        TextView recipeItemId = findViewById(R.id.recipeItemId);
         recipeItemId.setText("ID: " + recipe.getID());
 
-        TextView recipeItemIngredients = findViewById(R.id.genreRecipeItemIngredients);
+        TextView recipeItemIngredients = findViewById(R.id.recipeItemIngredients);
         recipeItemIngredients.setText("Ingredients: " + recipe.getIngredients());
 
-        TextView recipeItemInstructions = findViewById(R.id.genreRecipeItemInstructions);
+        TextView recipeItemInstructions = findViewById(R.id.recipeItemInstructions);
         recipeItemInstructions.setText("Instructions: " + recipe.getInstructions());
 
-        TextView recipeItemRating = findViewById(R.id.genreRecipeItemRating);
+        TextView recipeItemRating = findViewById(R.id.recipeItemRating);
         recipeItemRating.setText("Rating " + recipe.getRating());
 
         String imgName = "img_" + String.valueOf(recipe.getID());
         ImageView mImageView = findViewById(R.id.recipeItemImage);
         mImageView.setImageResource(getResources().getIdentifier(imgName, "drawable", getPackageName()));
 
+        // TODO: add to drawables img_ID
 
     }
-    public void saveRecipe(View v) throws Exception {
+    public void deleteRecipe(View v) throws Exception {
         try {
             UserRequestSaveRecipe saveController = new UserRequestSaveRecipe();
-            saveController.saveRecipe(Globals.getUser_username(), String.valueOf(Globals.getViewRecipeId()));
+            saveController.deleteRecipe(Globals.getUser_username(), String.valueOf(Globals.getViewRecipeId()));
             finish();
         } catch (Exception e){
             e.printStackTrace();
-            Notification.displaySnackBar(findViewById(R.id.genreRecipeItemPage),"Menu already saved!","top");
         }
     }
-    public void showReviews(View v) {
-        Context context = GenreRecipeItemActivity.this;
-        Intent intent = new Intent(context, GenreRecipeItemReviewActivity.class);
+    public void addReview(View v) {
+        Context context = RecipeItemActivity.this;
+        Intent intent = new Intent(context, AddReviewActivity.class);
         startActivity(intent);
     }
 }
