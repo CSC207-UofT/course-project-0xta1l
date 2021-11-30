@@ -71,6 +71,8 @@ public class GenresFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        System.out.println("creating new genre view");
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_genres, container, false);
         LinearLayout layout = (LinearLayout) v.findViewById(R.id.GenreListLayout);
@@ -82,6 +84,7 @@ public class GenresFragment extends Fragment {
             genres = genreController.browseGenres(Globals.getUser_username());
         }
 
+        System.out.println("user is" + Globals.getUser_username());
         for(int i = 0; i < genres.size(); i++) {
             TextView text = new TextView(getContext());
             text.setGravity(Gravity.CENTER);
