@@ -8,6 +8,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Entities.GenreLibrary;
+import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
 import com.google.android.material.snackbar.Snackbar;
@@ -98,5 +99,12 @@ public class Globals {
     public static int getUserAge(){return user.getAge();}
     public static void setUserAge(int i){
         Constants.USERSECURITY.getUserByID(getUser_username()).setAge(i);
+    }
+
+    public static Recipe getRecipe() {
+        return Constants.GENRELIBRARY.getAllRecipes("All").get(viewRecipeId);
+    }
+    public static Recipe getRecipe(int id) {
+        return Constants.GENRELIBRARY.getAllRecipes("All").get(id);
     }
 }

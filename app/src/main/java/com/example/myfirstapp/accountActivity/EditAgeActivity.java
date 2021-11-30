@@ -19,10 +19,13 @@ public class EditAgeActivity extends AppCompatActivity {
         setTitle("Your Age");
     }
     public void editAge(View view) {
-        EditText editText = (EditText) findViewById(R.id.edit_age_text);
+        EditText editText = findViewById(R.id.edit_age_text);
         String s = editText.getText().toString();
         if(s.isEmpty()) {
             Notification.displaySnackBar(findViewById(R.id.editAgePage),"Age cannot be empty");
+            return;
+        } else if (s.length() > 3) {
+            Notification.displaySnackBar(findViewById(R.id.editAgePage),"At most 3 digits!");
             return;
         }
         int i = Integer.parseInt(s);

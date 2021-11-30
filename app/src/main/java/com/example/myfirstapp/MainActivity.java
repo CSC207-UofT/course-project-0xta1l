@@ -1,23 +1,17 @@
 package com.example.myfirstapp;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NavUtils;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.myfirstapp.fragments.GenresFragment;
-import com.example.myfirstapp.fragments.HomeFragment;
-import com.example.myfirstapp.fragments.MyRecipeFragment;
-import com.example.myfirstapp.fragments.ProfileFragment;
+import com.example.myfirstapp.genreActivity.GenresFragment;
+import com.example.myfirstapp.homeActivity.HomeFragment;
+import com.example.myfirstapp.myRecipeActivity.MyRecipeFragment;
+import com.example.myfirstapp.accountActivity.ProfileFragment;
 import com.example.myfirstapp.fragments.UploadFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 

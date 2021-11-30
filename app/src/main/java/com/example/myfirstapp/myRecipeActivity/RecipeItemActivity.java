@@ -31,12 +31,7 @@ public class RecipeItemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_item);
 
-        System.out.println("The recipe id is : " + Globals.getViewRecipeId());
-
-        User user = Constants.USERSECURITY.getUserByID(Globals.getUser_username());
-        HashMap<Integer, Recipe> recipes = user.getSavedRecipesHash();
-        System.out.println("recipes is " + recipes);
-        Recipe recipe = recipes.get(Globals.getViewRecipeId());
+        Recipe recipe = Globals.getRecipe();
         setTitle(recipe.getName());
 
         TextView recipeItemGenre = findViewById(R.id.recipeItemGenre);
@@ -57,9 +52,6 @@ public class RecipeItemActivity extends AppCompatActivity {
         String imgName = "img_" + String.valueOf(recipe.getID());
         ImageView mImageView = findViewById(R.id.recipeItemImage);
         mImageView.setImageResource(getResources().getIdentifier(imgName, "drawable", getPackageName()));
-
-        // TODO: add to drawables img_ID
-
     }
     public void deleteRecipe(View v) throws Exception {
         try {

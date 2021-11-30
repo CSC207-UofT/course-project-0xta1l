@@ -23,7 +23,7 @@ public class UserRequestBrowse {
      * @param username is the username of a given User
      * @return a list of strings representing genres
      */
-    @RequiresApi(api = Build.VERSION_CODES.O)
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public ArrayList<String> browseGenres(String username){
         User user = Constants.USERSECURITY.getUsernames().get(username);
         GenreViewSort g = new GenreViewSort();
@@ -35,12 +35,10 @@ public class UserRequestBrowse {
      * @param username is the username of a given User
      * @return a list of lists of RecipePreviews
      */
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public ArrayList<Preview> browseSavedRecipes(String username){
         GetRecipe getRecipe = new GetRecipe();
         return getRecipe.getUserSavedRecipes(username);
     }
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public ArrayList<Preview> browseGenreRecipes(String genre){
         GetRecipe g = new GetRecipe();
         return g.getGenreRecipes(genre);

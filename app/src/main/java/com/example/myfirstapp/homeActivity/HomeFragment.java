@@ -1,4 +1,4 @@
-package com.example.myfirstapp.fragments;
+package com.example.myfirstapp.homeActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -27,14 +27,15 @@ import com.example.myfirstapp.genreActivity.GenreItemActivity;
 import com.example.myfirstapp.genreActivity.GenreRecipeItemActivity;
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Controllers.UserRequestBrowse;
+import com.example.myfirstapp.main.Controllers.UserRequestFilter;
 import com.example.myfirstapp.main.Controllers.UserRequestRecommend;
-import com.example.myfirstapp.main.Controllers.UserRequestSort;
 import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.Recipe;
+import com.example.myfirstapp.main.Entities.User;
+import com.example.myfirstapp.myRecipeActivity.MyRecipeFragment;
+import com.example.myfirstapp.myRecipeActivity.RecipeItemActivity;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Objects;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -43,72 +44,47 @@ import java.util.Objects;
  */
 public class HomeFragment extends Fragment {
 
-
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-
-    private String mParam1;
-    private String mParam2;
-
     public HomeFragment() {
         // Required empty public constructor
     }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeFragment.
-     */
-
     public static HomeFragment newInstance(String param1, String param2) {
         HomeFragment fragment = new HomeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_home, container, false);
-
-        UserRequestRecommend r = new UserRequestRecommend();
-        String username = Globals.getUser_username();
-        ArrayList<Preview> lst = r.recommendRecipes(username, 3);
-        showItems(lst, v);
-
+        ArrayList<Preview> recipes = getRecommendedRecipes();
+        this.showItems(recipes, v);
         return v;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
+    public static ArrayList<Preview> getRecommendedRecipes() {
+        UserRequestRecommend recommendController = new UserRequestRecommend();
+        ArrayList<Preview> recipes = recommendController.recommendRecipes(Globals.getUser_username(), 1);
+        return recipes;
+    }
+
     public void showItems(ArrayList<Preview> recipes, View v) {
-        LinearLayout layout = (LinearLayout) v.findViewById(R.id.RecommendLayout);
+        LinearLayout layout = (LinearLayout) v.findViewById(R.id.RecommendRecipeLayout);
         layout.removeAllViews();
         for(Preview recipePreview: recipes) {
             RelativeLayout p = this.createRecipePreview(recipePreview);
             layout.addView(p);
         }
     }
-
-
     public TextView createRecipeName(Preview recipePreview, int height) {
         TextView text = new TextView(getContext());
         text.setGravity(Gravity.CENTER);
@@ -126,7 +102,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Context context = getContext();
                 Globals.setViewRecipeId(id);
-                Intent intent = new Intent(context, GenreRecipeItemActivity.class);
+                Intent intent = new Intent(context, RecommendRecipeItemActivity.class);
                 startActivity(intent);
             }
         });
@@ -149,7 +125,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Context context = getContext();
                 Globals.setViewRecipeId(id);
-                Intent intent = new Intent(context, GenreRecipeItemActivity.class);
+                Intent intent = new Intent(context, RecommendRecipeItemActivity.class);
                 startActivity(intent);
             }
         });
@@ -159,7 +135,7 @@ public class HomeFragment extends Fragment {
         ImageView text = new ImageView(getContext());
         int id = recipePreview.getID();
         String imgName = "img_" + String.valueOf(id);
-        text.setImageResource(getResources().getIdentifier(imgName, "drawable", requireActivity().getPackageName()));
+        text.setImageResource(getResources().getIdentifier(imgName, "drawable", getContext().getPackageName()));
         text.setPadding(10, 20, 0, 0);
         text.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
         text.setClickable(true);
@@ -168,7 +144,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Context context = getContext();
                 Globals.setViewRecipeId(id);
-                Intent intent = new Intent(context, GenreRecipeItemActivity.class);
+                Intent intent = new Intent(context, RecommendRecipeItemActivity.class);
                 startActivity(intent);
             }
         });
@@ -179,7 +155,7 @@ public class HomeFragment extends Fragment {
         text.setAdjustViewBounds(true);
         int id = recipePreview.getID();
         String imgName = "img_" + String.valueOf(id);
-        text.setImageResource(getResources().getIdentifier(imgName, "drawable", requireActivity().getPackageName()));
+        text.setImageResource(getResources().getIdentifier(imgName, "drawable", getContext().getPackageName()));
         text.setPadding(10, 20, 0, 0);
         text.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
         int h = text.getDrawable().getIntrinsicHeight();
@@ -193,7 +169,4 @@ public class HomeFragment extends Fragment {
         p.addView(this.createRecipeDetail(recipe, height));
         return p;
     }
-
-
-
 }

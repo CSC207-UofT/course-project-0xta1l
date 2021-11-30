@@ -1,29 +1,19 @@
 
 package com.example.myfirstapp.main.Commands;
-import android.os.Build;
-
-import androidx.annotation.RequiresApi;
-
 import com.example.myfirstapp.main.Constants.*;
 import com.example.myfirstapp.main.Controllers.UserRequestCreateLogin;
 import com.example.myfirstapp.main.Entities.User;
-import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-@RequiresApi(api = Build.VERSION_CODES.O)
 public class UI {
-
     CommandTree commandTree = Constants.COMMANDTREE;
     CommandTree.CommandNode currentNode = commandTree.root;
     boolean is_running = true;
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public static void main(String[] args) {
-        JSONReader.readRecipes("app/src/main/java/com/example/myfirstapp/main/Constants/temp_data.json");
-        Constants.GENRELIBRARY.setHighestID(207);
         UI ui = new UI();
         Scanner scanner = new Scanner(System.in);
         User user = getUser(scanner);

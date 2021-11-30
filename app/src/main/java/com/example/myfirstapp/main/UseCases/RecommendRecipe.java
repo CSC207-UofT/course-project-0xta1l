@@ -55,8 +55,8 @@ public class RecommendRecipe {
             for (int i = 0; i < remainder; i++) {
                 recommends.add(previews2.get(i));
             }
-            }
-            return recommends;
+        }
+        return recommends;
 
     }
 

@@ -1,4 +1,4 @@
-package com.example.myfirstapp.fragments;
+package com.example.myfirstapp.myRecipeActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,7 +19,6 @@ import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.myRecipeActivity.RecipeItemActivity;
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Controllers.UserRequestBrowse;
 import com.example.myfirstapp.main.Controllers.UserRequestFilter;

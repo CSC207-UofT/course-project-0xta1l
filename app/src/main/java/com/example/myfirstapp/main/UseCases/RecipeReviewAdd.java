@@ -1,17 +1,12 @@
 package com.example.myfirstapp.main.UseCases;
 
-import android.os.Build;
-
-import androidx.annotation.RequiresApi;
-
 import com.example.myfirstapp.main.Entities.Review;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Constants.*;
 
 public class RecipeReviewAdd {
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    public boolean addReview(String username, int recipeID, String comment, int rating) {
+    public boolean addReview(String username,int recipeID, String comment, int rating) {
         User accUser = Constants.USERSECURITY.getUserByID(username);
         Review review = new Review(username, recipeID, comment, rating);
         if (accUser.getUserReviews().containsKey(recipeID)){

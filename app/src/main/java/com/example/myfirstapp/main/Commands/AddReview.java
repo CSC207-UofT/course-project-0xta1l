@@ -1,9 +1,5 @@
 package com.example.myfirstapp.main.Commands;
 
-import android.os.Build;
-
-import androidx.annotation.RequiresApi;
-
 import com.example.myfirstapp.main.Controllers.UserRequestCreateReview;
 
 import java.util.Scanner;
@@ -15,7 +11,6 @@ public class AddReview extends RecipeCommand {
         setCOMMANDSTRING(COMMANDSTRING);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void execute(String username, String recipeID) {
         UserRequestCreateReview create = new UserRequestCreateReview();

@@ -1,11 +1,9 @@
 package com.example.myfirstapp.loginActivity;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -32,7 +30,6 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public void onLogin(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         EditText usernameText = (EditText) findViewById(R.id.loginUsernameInput);

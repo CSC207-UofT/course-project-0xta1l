@@ -1,10 +1,8 @@
 package com.example.myfirstapp.fragments;
 
 import android.content.DialogInterface;
-import android.os.Build;
 import android.os.Bundle;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
@@ -163,7 +161,6 @@ public class UploadFragment extends Fragment {
         return v;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public void onSubmit(View view) {
         EditText uploadTextName = (EditText) view.findViewById(R.id.uploadTextName);
         EditText uploadTextInstructions = (EditText) view.findViewById(R.id.uploadTextInstructions);
@@ -193,6 +190,8 @@ public class UploadFragment extends Fragment {
         }
 
 
+        int id = Constants.GENRELIBRARY.getNewId();
+
         RecipeCreate recipeController = new RecipeCreate();
 
         recipeController.CreateRecipeFromUser(
@@ -202,6 +201,7 @@ public class UploadFragment extends Fragment {
             uploadGenres,
             name,
             0,
+            id,
             image,
             description,
             preptime

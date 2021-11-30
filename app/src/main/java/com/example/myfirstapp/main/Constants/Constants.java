@@ -1,8 +1,4 @@
 package com.example.myfirstapp.main.Constants;
-import android.os.Build;
-
-import androidx.annotation.RequiresApi;
-
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.Review;
@@ -19,15 +15,11 @@ import java.util.*;
 import java.util.stream.Stream;
 import java.io.*;
 
-@RequiresApi(api = Build.VERSION_CODES.O)
 public class Constants {
     // Create Constants
 
-    public static GenreLibrary GENRELIBRARY =  createDataset();//JSONReader.readRecipes("app/src/main/res/temp_data.json");
-    public static UserSecurity USERSECURITY = createUsers();//JSONReader.readUsers("app/src/main/res/users.json");
-
-
-    //public static UserSecurity USERSECURITY = Constants.createUsers();
+    public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
+    public static UserSecurity USERSECURITY = Constants.createUsers();
     public static com.example.myfirstapp.main.Commands.CommandTree COMMANDTREE =
             createCommandTree(new com.example.myfirstapp.main.Commands.HomePage());
 
@@ -78,10 +70,12 @@ public class Constants {
         r2genres.add("Chinese");
         ArrayList<String> r3genres = new ArrayList<>();
         r3genres.add("Western");
+        r3genres.add("Korean");
         ArrayList<String> r4genres = new ArrayList<>();
         r4genres.add("Egyptian");
         ArrayList<String> r5genres = new ArrayList<>();
-        r5genres.add("Mexican");
+        r5genres.add("Canadian");
+        r5genres.add("Indian");
 
         Recipe recipe1 = new Recipe("Set on Fire", "Salt",
                 r1genres, "Burnt Food", 5, 1, "burnt.jpg", "Is burnt food",5);
@@ -99,7 +93,7 @@ public class Constants {
                 r5genres, "Pancakes", 3, 5, "pancake.jpg", "Is pancake",5);
 
         Recipe recipe6 = new Recipe("Cut into rectangular prisms and cook in oven", "Potatoes, butter",
-                r3genres, "French Fries", 4, 6, "fries.jpg", "Is french fry",30);
+                r3genres, "French Fries", 4, 6, "fries.jpg", "Is frnch fry",30);
 
         Review review1 = new Review(1, 1, "username1", "comments", 2);
         Review review2 = new Review(2, 1, "a", "222222", 3);
@@ -126,10 +120,8 @@ public class Constants {
         for (String g: recipe6.getGenre()){
             dataset.addRecipes(g, recipe6);
         }
-        dataset.setHighestID(6);
         return dataset;
     }
-
     public static GenreLibrary CSVRecipeReader(String fileName) throws FileNotFoundException {
         GenreLibrary genreLibrary = new GenreLibrary();
 

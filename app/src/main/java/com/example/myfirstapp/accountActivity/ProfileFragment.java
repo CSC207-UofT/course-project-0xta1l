@@ -1,4 +1,4 @@
-package com.example.myfirstapp.fragments;
+package com.example.myfirstapp.accountActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,7 +15,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
-import com.example.myfirstapp.accountActivity.*;
 import com.example.myfirstapp.R;
 
 /**

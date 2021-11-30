@@ -1,13 +1,10 @@
 package com.example.myfirstapp.loginActivity;
 
-
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -24,7 +21,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
-@RequiresApi(api = Build.VERSION_CODES.O)
 public class SignUpActivity extends AppCompatActivity {
 
     private boolean[] selectedInterest;
@@ -123,7 +119,6 @@ public class SignUpActivity extends AppCompatActivity {
 
 
     }
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public void onSignUp(View view) {
         Intent intent = new Intent(this, LoginActivity.class);
         EditText usernameText = (EditText) findViewById(R.id.signupUsernameInput);

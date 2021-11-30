@@ -59,7 +59,6 @@ public class User {
     }
 
     /* Updates GenreWeights when a recipe is saved */
-    @RequiresApi(api = Build.VERSION_CODES.O)
     private void updateGenreWeights(Integer recipeID) {
         Recipe recipe = Constants.GENRELIBRARY.getRecipeByID("All", recipeID);
         ArrayList<String> recipeGenre = recipe.getGenre();
