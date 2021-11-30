@@ -10,22 +10,23 @@ import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
 
-public class EditUsernameActivity extends AppCompatActivity {
+public class EditAgeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_username);
-        setTitle("Your Username");
+        setContentView(R.layout.activity_edit_age);
+        setTitle("Your Age");
     }
-    public void editUserName(View view) {
-        EditText editText = (EditText) findViewById(R.id.editUserNameText);
+    public void editAge(View view) {
+        EditText editText = (EditText) findViewById(R.id.edit_age_text);
         String s = editText.getText().toString();
         if(s.isEmpty()) {
-            Notification.displaySnackBar(findViewById(R.id.editUsernamePage),"Username cannot be empty");
+            Notification.displaySnackBar(findViewById(R.id.editAgePage),"Age cannot be empty");
             return;
         }
-        Globals.setUser_username(s);
+        int i = Integer.parseInt(s);
+        Globals.setUserAge(i);
         finish();
     }
 }
