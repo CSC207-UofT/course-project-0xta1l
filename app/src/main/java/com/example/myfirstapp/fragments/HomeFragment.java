@@ -76,20 +76,6 @@ public class HomeFragment extends Fragment {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_home, container, false);
-
-        UserRequestRecommend r = new UserRequestRecommend();
-        String username = Globals.getUser_username();
-        ArrayList<Preview> lst = r.recommendRecipes(username, 1);
-        showItems(lst);
-
-        return v;
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -99,8 +85,22 @@ public class HomeFragment extends Fragment {
         }
     }
 
-    public void showItems(ArrayList<Preview> recipes) {
-        LinearLayout layout = (LinearLayout) requireView().findViewById(R.id.RecommendLayout);
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.fragment_home, container, false);
+
+        UserRequestRecommend r = new UserRequestRecommend();
+        String username = Globals.getUser_username();
+        ArrayList<Preview> lst = r.recommendRecipes(username, 3);
+        showItems(lst, v);
+
+        return v;
+    }
+
+    public void showItems(ArrayList<Preview> recipes, View v) {
+        LinearLayout layout = (LinearLayout) v.findViewById(R.id.RecommendLayout);
         layout.removeAllViews();
         for(Preview recipePreview: recipes) {
             RelativeLayout p = this.createRecipePreview(recipePreview);
