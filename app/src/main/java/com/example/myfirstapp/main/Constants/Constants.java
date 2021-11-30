@@ -81,7 +81,7 @@ public class Constants {
         ArrayList<String> r4genres = new ArrayList<>();
         r4genres.add("Egyptian");
         ArrayList<String> r5genres = new ArrayList<>();
-        r5genres.add("Canadian");
+        r5genres.add("Mexican");
 
         Recipe recipe1 = new Recipe("Set on Fire", "Salt",
                 r1genres, "Burnt Food", 5, 1, "burnt.jpg", "Is burnt food",5);

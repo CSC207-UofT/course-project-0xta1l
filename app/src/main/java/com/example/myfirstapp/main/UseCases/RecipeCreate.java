@@ -23,7 +23,7 @@ public class RecipeCreate {
                                        int rating, String image,
                                        String descriptions, int preptime ){
 
-        int ID = Constants.GENRELIBRARY.getHighestID() + 1;
+        int ID = Constants.GENRELIBRARY.getNewID();
         Recipe recipe = new Recipe(instructions,ingredients, genres, name, rating, ID, image, descriptions, preptime);
         Constants.GENRELIBRARY.setHighestID(ID);
         for(String genre: recipe.getGenre()){

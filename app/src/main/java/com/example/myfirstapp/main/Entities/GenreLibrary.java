@@ -60,7 +60,8 @@ public class GenreLibrary {
         }
         return int_list;
     }
-    public int getNewId(){
+
+    public int getNewID() {
         ArrayList<Integer> int_list = new ArrayList<>();
         for(String genre : ListOfAllRecipes.keySet()){
             HashMap<Integer, Recipe> h = this.ListOfAllRecipes.get(genre);
