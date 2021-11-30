@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.MainActivity;
+import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.UseCases.RecipeCreate;
@@ -174,7 +175,7 @@ public class UploadFragment extends Fragment {
         String ingredients = uploadTextIngredients.getText().toString();
         String description = uploadTextDescription.getText().toString();
         String image = uploadTextImage.getText().toString();
-        int preptime = Integer.parseInt(uploadTextPreptime.getText().toString());
+        String preptime_str = uploadTextPreptime.getText().toString();
 
 
         ArrayList<String> uploadGenres = new ArrayList<>();
@@ -182,31 +183,32 @@ public class UploadFragment extends Fragment {
             uploadGenres.add(genreList[i]);
         }
 
-        // Creates user in UserSecurity
-        if(name.isEmpty() || instructions.isEmpty() || ingredients.isEmpty() || description.isEmpty() || image.isEmpty()){
-            // TODO: create snackbar
-            System.out.println("Empty");
+        if(name.isEmpty() || instructions.isEmpty() || ingredients.isEmpty()
+                || description.isEmpty() || image.isEmpty() || preptime_str.isEmpty()) {
+           Notification.displaySnackBar(getView().findViewById(R.id.UploadPage), "Please fill in everything");
             return;
+        } else{
+            int id = Constants.GENRELIBRARY.getNewId();
+            int preptime = Integer.parseInt(preptime_str);
+            RecipeCreate recipeController = new RecipeCreate();
+
+            recipeController.CreateRecipeFromUser(
+                    Globals.getUser_username(),
+                    instructions,
+                    ingredients,
+                    uploadGenres,
+                    name,
+                    0,
+                    id,
+                    image,
+                    description,
+                    preptime
+            );
+            MainActivity main = (MainActivity) getActivity();
+            main.initFragment(R.id.menu_home);
         }
 
 
-        int id = Constants.GENRELIBRARY.getNewId();
 
-        RecipeCreate recipeController = new RecipeCreate();
-
-        recipeController.CreateRecipeFromUser(
-            Globals.getUser_username(),
-            instructions,
-            ingredients,
-            uploadGenres,
-            name,
-            0,
-            id,
-            image,
-            description,
-            preptime
-        );
-        MainActivity main = (MainActivity) getActivity();
-        main.initFragment(R.id.menu_home);
     }
 }
