@@ -32,6 +32,11 @@ public class UserSecurity {
         return false;
     }
 
+    public void addUser(User user) {
+        UsernameList.put(user.getUsername(), user);
+        UserPassword.put(user.getUsername(), user.getPassword());
+    }
+
     public void changePassword(String username, String password){
         // Changes user password for given username
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -42,15 +47,25 @@ public class UserSecurity {
         this.UsernameList.get(username).setPassword(password);
     }
 
-    public void addUser(User user) {
-        UsernameList.put(user.getUsername(), user);
-        UserPassword.put(user.getUsername(), user.getPassword());
+    public void changeUsername(String username, String newUsername) {
+        User user = this.UsernameList.get(username);
+        user.setUsername(newUsername);
+        this.UsernameList.remove(username);
+        this.UsernameList.put(newUsername, user);
     }
 
-    public void changeUsername(String username, String new_username) {
+    public void changeBio(String username, String bio) {
         User user = this.UsernameList.get(username);
-        user.setUsername(new_username);
-        this.UsernameList.remove(username);
-        this.UsernameList.put(new_username, user);
+        user.setBiography(bio);
+    }
+
+    public void changeAge(String username, Integer age) {
+        User user = this.UsernameList.get(username);
+        user.setAge(age);
+    }
+
+    public void changeName(String username, String name) {
+        User user = this.UsernameList.get(username);
+        user.setDisplayName(name);
     }
 }
