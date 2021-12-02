@@ -17,7 +17,7 @@ import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.MainActivity;
 import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.UseCases.RecipeCreate;
 
 import java.util.ArrayList;

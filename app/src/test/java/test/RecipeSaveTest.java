@@ -1,10 +1,12 @@
 package test;
 
-import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.UseCases.RecipeSave;
 import org.junit.*;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Optional;

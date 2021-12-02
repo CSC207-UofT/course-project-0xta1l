@@ -4,7 +4,7 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import com.example.myfirstapp.main.Constants.*;
+import com.example.myfirstapp.main.Gateways.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 

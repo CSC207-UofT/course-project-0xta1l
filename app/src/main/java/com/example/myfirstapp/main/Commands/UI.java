@@ -1,7 +1,7 @@
 
 package com.example.myfirstapp.main.Commands;
-import com.example.myfirstapp.main.Constants.*;
-import com.example.myfirstapp.main.Controllers.UserRequestCreateLogin;
+import com.example.myfirstapp.main.Gateways.*;
+import com.example.myfirstapp.main.Controllers.*;
 import com.example.myfirstapp.main.Entities.User;
 
 import java.util.ArrayList;

@@ -1,12 +1,13 @@
 package test;
 
-import com.example.myfirstapp.main.Constants.Constants;
-import com.example.myfirstapp.main.Entities.GenreLibrary;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
 import com.example.myfirstapp.main.UseCases.RecommendRecipe;
 import org.junit.*;
+import org.junit.Before;
+import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

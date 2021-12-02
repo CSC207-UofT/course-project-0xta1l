@@ -2,8 +2,10 @@ package test;
 
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.main.Constants.*;
+import com.example.myfirstapp.main.Gateways.*;
 import org.junit.*;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,7 +1,7 @@
 package com.example.myfirstapp.main.UseCases;
 
 import com.example.myfirstapp.main.Entities.*;
-import com.example.myfirstapp.main.Constants.*;
+import com.example.myfirstapp.main.Gateways.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;

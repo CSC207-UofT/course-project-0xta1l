@@ -3,9 +3,11 @@ package test;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
 import com.example.myfirstapp.main.UseCases.UserCreate;
-import org.junit.*;
 
 import java.util.ArrayList;
+import org.junit.*;
+import org.junit.Before;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 

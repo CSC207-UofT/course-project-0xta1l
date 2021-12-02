@@ -4,6 +4,8 @@ import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.UseCases.FilterRecipes;
 import org.junit.*;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;

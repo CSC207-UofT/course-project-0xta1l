@@ -1,17 +1,10 @@
 package com.example.myfirstapp;
 
-import android.view.Gravity;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
-
-import androidx.constraintlayout.widget.ConstraintLayout;
-
-import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
-import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 

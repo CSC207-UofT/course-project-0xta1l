@@ -2,7 +2,7 @@ package com.example.myfirstapp.main.UseCases;
 
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.main.Constants.*;
+import com.example.myfirstapp.main.Gateways.*;
 
 import java.util.ArrayList;
 

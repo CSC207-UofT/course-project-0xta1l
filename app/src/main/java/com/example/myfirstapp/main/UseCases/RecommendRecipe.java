@@ -3,7 +3,7 @@ package com.example.myfirstapp.main.UseCases;
 import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.main.Constants.*;
+import com.example.myfirstapp.main.Gateways.*;
 import java.util.*;
 
 public class RecommendRecipe {
@@ -17,7 +17,10 @@ public class RecommendRecipe {
         HashMap<String, Double> genreWeights = user.getGenreWeights();
         ArrayList<String> sortedGenres = sortByWeight(genreWeights);
         System.out.println(sortedGenres);
-        String bestGenre = sortedGenres.get(0);
+        String bestGenre = "All";
+        if (sortedGenres.size() > 0){
+            bestGenre = sortedGenres.get(0);
+        }
         ArrayList<Preview> sortedRecipes = getSortedPreviewsFromGenre(bestGenre);
         ArrayList<Preview> recommendations = new ArrayList<>();
 

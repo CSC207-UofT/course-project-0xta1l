@@ -1,5 +1,5 @@
 package com.example.myfirstapp.main.UseCases;
-import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.User;
 
 import java.util.ArrayList;
