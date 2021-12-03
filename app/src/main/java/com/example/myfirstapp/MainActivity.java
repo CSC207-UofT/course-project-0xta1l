@@ -10,10 +10,16 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.myfirstapp.genreActivity.GenresFragment;
 import com.example.myfirstapp.homeActivity.HomeFragment;
+import com.example.myfirstapp.main.Entities.Recipe;
+import com.example.myfirstapp.main.Gateways.*;
 import com.example.myfirstapp.myRecipeActivity.MyRecipeFragment;
 import com.example.myfirstapp.accountActivity.ProfileFragment;
 import com.example.myfirstapp.fragments.UploadFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
@@ -31,14 +37,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         this.homeFragment = new HomeFragment();
         this.genresFragment = new GenresFragment();
         this.uploadFragment = new UploadFragment();
         this.myRecipeFragment = new MyRecipeFragment();
         this.profileFragment = new ProfileFragment();
-
-
-        this.initFragment(Globals.getCurrentActivity());
 
         BottomNavigationView bottom_navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottom_navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

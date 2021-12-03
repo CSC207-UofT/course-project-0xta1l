@@ -69,7 +69,7 @@ public class Update {
     // UPDATES (OVERRIDES WHOLE, SO CAN BE USED FOR DELETION)
     public static void recipesSaved(User user){
         DatabaseReference userSavedRef = database.getReference("users/"+user.getUsername()+"/SavedRecipes");
-        userSavedRef.removeValue();
+        userSavedRef.setValue(null);
         for (Recipe recipe: user.getSavedRecipes()){
             DatabaseReference recipeRef = database.getReference("users/"+user.getUsername()+"/SavedRecipes/"+recipe.getID());
             recipeRef.setValue(recipe);

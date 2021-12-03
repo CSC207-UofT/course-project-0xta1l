@@ -14,6 +14,10 @@ import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.User;
+import com.example.myfirstapp.main.Gateways.Create;
+import com.example.myfirstapp.main.Gateways.Read;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -34,7 +38,12 @@ public class LoginActivity extends AppCompatActivity {
         String username = usernameText.getText().toString();
         String password = passwordText.getText().toString();
 
+        Globals.us = Read.populateUserSecurity();
+        Globals.genreLibrary = Read.populateGenreLibrary();
+
         ConstraintLayout constraintLayout = findViewById(R.id.loginPage);
+
+        Create.testRecipe();
 
         // ensure user is in UserSecurity
         if (Constants.USERSECURITY.getUsernames().containsKey(username)){
