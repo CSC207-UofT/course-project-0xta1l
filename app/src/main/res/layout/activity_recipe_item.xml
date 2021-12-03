@@ -13,7 +13,7 @@
       android:layout_height="wrap_content"
       android:layout_marginStart="50dp"
       android:layout_marginTop="36dp"
-      android:text="ingredients"
+      android:text="Ingredients"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/recipeItemGenre" />
 
@@ -23,7 +23,7 @@
       android:layout_height="wrap_content"
       android:layout_marginStart="50dp"
       android:layout_marginTop="61dp"
-      android:text="genre"
+      android:text="Genre"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,7 +33,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="36dp"
       android:layout_marginEnd="42dp"
-      android:text="rating"
+      android:text="Rating"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/recipeItemId" />
 
@@ -43,7 +43,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="61dp"
       android:layout_marginEnd="42dp"
-      android:text="id"
+      android:text="Recipe ID"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,7 +53,7 @@
       android:layout_height="wrap_content"
       android:layout_marginStart="50dp"
       android:layout_marginTop="36dp"
-      android:text="instructions"
+      android:text="Instructions"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/recipeItemIngredients" />
 
@@ -74,6 +74,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="68dp"
       android:layout_marginEnd="32dp"
+      android:background="@color/darkBlue"
       android:onClick="deleteRecipe"
       android:text="Delete"
       app:layout_constraintEnd_toEndOf="parent"

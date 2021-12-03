@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/loginPage"
+    android:background="@color/greyBlue"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -12,35 +13,41 @@
       android:id="@+id/loginButton"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="47dp"
+      android:layout_marginTop="40dp"
       android:onClick="onLogin"
       android:text="Login"
+      android:textSize="35sp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/loginPasswordInput" />
 
   <TextView
       android:id="@+id/loginTextUsername"
+      android:textColor="@color/darkBlue"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="36dp"
       android:layout_marginTop="168dp"
       android:text="Username"
+      android:textSize="20sp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
       android:id="@+id/loginTextPassword"
+      android:textColor="@color/darkBlue"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="36dp"
       android:layout_marginTop="40dp"
       android:text="Password"
+      android:textSize="20sp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/loginTextUsername" />
 
   <EditText
       android:id="@+id/loginPasswordInput"
+      android:textColor="@color/darkBlue"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="20dp"
@@ -52,6 +59,7 @@
 
   <EditText
       android:id="@+id/loginUsernameInput"
+      android:textColor="@color/darkBlue"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="152dp"
@@ -63,11 +71,13 @@
 
   <TextView
       android:id="@+id/loginTextSignup"
+      android:textColor="@color/darkBlue"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="50dp"
       android:onClick="onSignUp"
       android:text="Don't have an account? Sign up now!"
+      android:textSize="20sp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/loginButton" />
