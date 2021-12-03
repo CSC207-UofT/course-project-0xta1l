@@ -1,6 +1,7 @@
 package com.example.myfirstapp.main.Gateways;
 
 import com.example.myfirstapp.main.Entities.Recipe;
+import com.example.myfirstapp.main.Entities.Review;
 import com.example.myfirstapp.main.Entities.User;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -17,7 +18,6 @@ public class Create{
         DatabaseReference reference = database.getReference("recipes/"+ recipe.getID());
         reference.setValue(recipe);
     }
-
     public static void testCreate(){
         ArrayList<String> interests = new ArrayList<>();
         interests.add("Western");
