@@ -26,7 +26,14 @@ public class Read {
     private static final DatabaseReference mRecipeRef = mRootRef.child("recipes");
     private static final DatabaseReference mUserRef = mRootRef.child("users");
 
-    public  static UserSecurity populateUserSecurity() {
+    public interface userDataStatus {
+        void userSecurityLoaded(UserSecurity userSecurity);
+    }
+    public interface recipeDataStatus {
+        void genreLibraryLoaded(GenreLibrary genreLibrary);
+    }
+
+    public  static UserSecurity populateUserSecurity(final userDataStatus dataStatus) {
         // Initialize an empty UserSecurity object to populate
         final UserSecurity[] populatedUserSecurity = {new UserSecurity()};
 
@@ -36,7 +43,7 @@ public class Read {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // Populate the UserSecurity object
                 UserSecurity newUserSecurity = Read.fillUserSecurity(dataSnapshot);
-                populatedUserSecurity[0] = newUserSecurity;
+                dataStatus.userSecurityLoaded(newUserSecurity);
             }
 
             @Override
@@ -80,7 +87,7 @@ public class Read {
     }
 
 
-    public static GenreLibrary populateGenreLibrary() {
+    public static GenreLibrary populateGenreLibrary(final recipeDataStatus dataStatus) {
         // Initialize an empty GenreLibrary object to populate
         final GenreLibrary[] populatedGenreLibrary = {new GenreLibrary()};
 
@@ -90,7 +97,7 @@ public class Read {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // Populate the GenreLibrary object
                 GenreLibrary newGenreLibrary = Read.fillGenreLibrary(dataSnapshot);
-                populatedGenreLibrary[0] = newGenreLibrary;
+                dataStatus.genreLibraryLoaded(newGenreLibrary);
             }
 
             @Override

@@ -12,6 +12,8 @@ import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.MainActivity;
 import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
+import com.example.myfirstapp.main.Entities.GenreLibrary;
+import com.example.myfirstapp.main.Entities.UserSecurity;
 import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Gateways.Create;
@@ -26,6 +28,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         setTitle("Login");
+        Read read = new Read();
+        read.populateUserSecurity(userSecurity -> Constants.USERSECURITY = userSecurity);
+        //read.populateGenreLibrary(genreLibrary -> Constants.GENRELIBRARY = genreLibrary);
+
     }
     public void onSignUp(View view) {
         Intent intent = new Intent(this, SignUpActivity.class);
@@ -38,8 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         String username = usernameText.getText().toString();
         String password = passwordText.getText().toString();
 
-        Globals.us = Read.populateUserSecurity();
-        Globals.genreLibrary = Read.populateGenreLibrary();
+
 
         ConstraintLayout constraintLayout = findViewById(R.id.loginPage);
 
