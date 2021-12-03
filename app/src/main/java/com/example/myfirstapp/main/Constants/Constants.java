@@ -23,19 +23,6 @@ public class Constants {
     public static com.example.myfirstapp.main.Commands.CommandTree COMMANDTREE =
             createCommandTree(new com.example.myfirstapp.main.Commands.HomePage());
 
-    /* This is outdated code to read csv file.
-
-    public static UserSecurity USERSECURITY;
-    public static CommandTree  COMMANDTREE = createCommandTree(new Commands.HomePage());
-    static {
-        try {
-            USERSECURITY = Constants.CSVUserReader("src/main/Constants/users.csv");
-            System.out.println(USERSECURITY);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-     */
 
     public static UserSecurity createUsers(){
         // NOTE this is temporary placeholder to test android app usage

@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Collections;
 
+// TODO: Needs documentation
+
 public class GenreLibrary {
     public HashMap<String, HashMap<Integer, Recipe>> ListOfAllRecipes = new HashMap<>();
 
