@@ -1,5 +1,9 @@
 package com.example.myfirstapp.main.Entities;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Constants.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -59,8 +63,15 @@ public class User {
         Recipe recipe = Constants.GENRELIBRARY.getRecipeByID("All", recipeID);
         ArrayList<String> recipeGenre = recipe.getGenre();
         for (String genre: recipeGenre){
-            if (!genre.equals("All")) {
-                this.GenreWeights.put(genre, 0.05);
+            if (!genre.equals("All") && !genre.equals("Meal") && !genre.equals("Appetizer")) {
+                if (!GenreWeights.containsKey(genre)){
+                    this.GenreWeights.put(genre, 0.05);
+                } else {
+                    if (GenreWeights.get(genre) <= 0.95){
+                        GenreWeights.put(genre, GenreWeights.get(genre) + 0.05);
+                    }
+                }
+
             } // make sure that GenreWeights.get(genre) is not greater than 1.0
         }
     }
@@ -130,6 +141,7 @@ public class User {
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void addSavedRecipes(Recipe recipe) {
         SavedRecipes.add(recipe);
         updateGenreWeights(recipe.getID());
@@ -144,8 +156,7 @@ public class User {
      * @return ArrayList<Object> representing the profile that has been generated
      */
     public UserInfo getProfile(){
-        UserInfo profile = new UserInfo(username, password, displayName, age, biography, interests);
-        return profile;
+        return new UserInfo(username, password, displayName, age, biography, interests);
     }
 
 

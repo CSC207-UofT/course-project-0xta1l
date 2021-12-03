@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myfirstapp">
+    package="com.example.myfirstapp" >
 
     <application
         android:allowBackup="true"
@@ -8,64 +8,98 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyFirstApp">
-
+        android:theme="@style/Theme.MyFirstApp" >
         <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="false" /> <!-- Main Activity Fragments -->
+        <activity
+            android:name=".homeActivity.RecommendRecipeItemActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize" >
+
+        <!-- The meta-data tag is required if you support API level 15 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".accountActivity.ProfileFragment" />
+        </activity>
         <!-- Profile Activities -->
         <activity
-            android:name=".accountActivity.EditPasswordActivity"
-            android:parentActivityName=".MainActivity">
+            android:name=".accountActivity.EditAgeActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".fragments.ProfileFragment" />
+                android:value=".accountActivity.ProfileFragment" />
         </activity>
+        <activity
+            android:name=".accountActivity.EditPasswordActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize" >
 
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".accountActivity.ProfileFragment" />
+        </activity>
         <activity
             android:name=".accountActivity.EditUsernameActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".fragments.ProfileFragment" />
+                android:value=".accountActivity.ProfileFragment" />
         </activity>
         <activity
             android:name=".accountActivity.EditBioActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".fragments.ProfileFragment" />
+                android:value=".accountActivity.ProfileFragment" />
         </activity>
         <activity
             android:name=".accountActivity.EditNameActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".fragments.ProfileFragment" />
+                android:value=".accountActivity.ProfileFragment" />
         </activity> <!-- Profile Activity END -->
         <!-- Recipe Activity -->
         <activity
-            android:name=".RecipeItemActivity"
-            android:parentActivityName=".MainActivity">
+            android:name=".myRecipeActivity.RecipeItemActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".myRecipeActivity.AddReviewActivity"
+            android:parentActivityName=".myRecipeActivity.RecipeItemActivity"
+            android:windowSoftInputMode="adjustResize" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".myRecipeActivity.RecipeItemActivity" />
         </activity> <!-- Recipe Activity END -->
         <!-- Genre Activity -->
         <activity
             android:name=".genreActivity.GenreItemActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -74,16 +108,29 @@
         </activity>
         <activity
             android:name=".genreActivity.GenreRecipeItemActivity"
-            android:parentActivityName=".genreActivity.GenreItemActivity">
+            android:parentActivityName=".genreActivity.GenreItemActivity"
+            android:windowSoftInputMode="adjustResize" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".genreActivity.GenreItemActivity" />
+        </activity>
+        <activity
+            android:name=".genreActivity.GenreRecipeItemReviewActivity"
+            android:exported="false"
+            android:parentActivityName=".genreActivity.GenreRecipeItemActivity"
+            android:windowSoftInputMode="adjustResize" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".genreActivity.GenreRecipeItemActivity" />
         </activity> <!-- Genre Activity END -->
         <activity
             android:name=".DisplayMessageActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -92,7 +139,8 @@
         </activity> <!-- Login and signup activities -->
         <activity
             android:name=".loginActivity.SignUpActivity"
-            android:parentActivityName=".loginActivity.LoginActivity">
+            android:parentActivityName=".loginActivity.LoginActivity"
+            android:windowSoftInputMode="adjustResize" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -101,7 +149,8 @@
         </activity>
         <activity
             android:name=".loginActivity.LoginActivity"
-            android:exported="true">
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

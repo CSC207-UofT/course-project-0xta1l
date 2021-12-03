@@ -3,16 +3,20 @@ package com.example.myfirstapp.genreActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
+import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Controllers.UserRequestSaveRecipe;
 import com.example.myfirstapp.main.Entities.Recipe;
+import com.example.myfirstapp.main.Entities.Review;
 import com.example.myfirstapp.main.Entities.User;
 
 import java.util.ArrayList;
@@ -53,14 +57,17 @@ public class GenreRecipeItemActivity extends AppCompatActivity {
     }
     public void saveRecipe(View v) throws Exception {
         try {
-            User user = Constants.USERSECURITY.getUserByID(Globals.getUser_username());
-            ArrayList<Recipe> recipes = user.getSavedRecipes();
-            System.out.println("Size is" + recipes.size());
             UserRequestSaveRecipe saveController = new UserRequestSaveRecipe();
             saveController.saveRecipe(Globals.getUser_username(), String.valueOf(Globals.getViewRecipeId()));
             finish();
         } catch (Exception e){
             e.printStackTrace();
+            Notification.displaySnackBar(findViewById(R.id.genreRecipeItemPage),"Menu already saved!","top");
         }
+    }
+    public void showReviews(View v) {
+        Context context = GenreRecipeItemActivity.this;
+        Intent intent = new Intent(context, GenreRecipeItemReviewActivity.class);
+        startActivity(intent);
     }
 }

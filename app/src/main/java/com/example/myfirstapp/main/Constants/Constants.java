@@ -1,6 +1,7 @@
 package com.example.myfirstapp.main.Constants;
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.Recipe;
+import com.example.myfirstapp.main.Entities.Review;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
 import com.example.myfirstapp.main.Commands.*;
@@ -69,10 +70,12 @@ public class Constants {
         r2genres.add("Chinese");
         ArrayList<String> r3genres = new ArrayList<>();
         r3genres.add("Western");
+        r3genres.add("Korean");
         ArrayList<String> r4genres = new ArrayList<>();
         r4genres.add("Egyptian");
         ArrayList<String> r5genres = new ArrayList<>();
         r5genres.add("Canadian");
+        r5genres.add("Indian");
 
         Recipe recipe1 = new Recipe("Set on Fire", "Salt",
                 r1genres, "Burnt Food", 5, 1, "burnt.jpg", "Is burnt food",5);
@@ -90,8 +93,15 @@ public class Constants {
                 r5genres, "Pancakes", 3, 5, "pancake.jpg", "Is pancake",5);
 
         Recipe recipe6 = new Recipe("Cut into rectangular prisms and cook in oven", "Potatoes, butter",
-                r3genres, "French Fries", 4, 6, "fries.jpg", "Is french fry",30);
+                r3genres, "French Fries", 4, 6, "fries.jpg", "Is frnch fry",30);
 
+        Review review1 = new Review(1, 1, "username1", "comments", 2);
+        Review review2 = new Review(2, 1, "a", "222222", 3);
+        Review review3 = new Review(3, 1, "username2", "333333", 4);
+
+        recipe1.addSavedReviews("username1", review1);
+        recipe1.addSavedReviews("a", review2);
+        recipe1.addSavedReviews("username2", review3);
         for (String g: recipe1.getGenre()){
             dataset.addRecipes(g, recipe1);
         }
@@ -112,7 +122,6 @@ public class Constants {
         }
         return dataset;
     }
-
     public static GenreLibrary CSVRecipeReader(String fileName) throws FileNotFoundException {
         GenreLibrary genreLibrary = new GenreLibrary();
 

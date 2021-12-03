@@ -1,4 +1,4 @@
-package com.example.myfirstapp.fragments;
+package com.example.myfirstapp.accountActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,7 +15,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
-import com.example.myfirstapp.accountActivity.*;
 import com.example.myfirstapp.R;
 
 /**
@@ -131,6 +130,15 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), EditPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton ageButton = v.findViewById(R.id.account_age_edit);
+        ageButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), EditAgeActivity.class);
                 startActivity(intent);
             }
         });

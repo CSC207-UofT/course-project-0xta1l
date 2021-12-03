@@ -10,7 +10,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -91,34 +93,96 @@ public class GenreItemActivity extends AppCompatActivity{
 
     }
     public void showItems(ArrayList<Preview> recipes) {
-        GenreItemActivity that = this;
         LinearLayout layout = (LinearLayout) this.findViewById(R.id.GenreItemLayout);
         layout.removeAllViews();
         for(Preview recipePreview: recipes) {
-            TextView text = new TextView(this);
-            text.setGravity(Gravity.CENTER);
-            text.setTextColor(getResources().getColor(android.R.color.black));
-            text.setPadding(100, 60, 0, 0);
-            text.setTextSize(24);
-            text.setGravity(Gravity.LEFT);
-            String recipeName = recipePreview.getName();
-            text.setText(recipeName);
-            text.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
-            text.setClickable(true);
-            int id = recipePreview.getID();
-            text.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Context context = that;
-                    Globals.setViewRecipeId(id);
-                    Intent intent = new Intent(context, GenreRecipeItemActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            layout.addView(text);
+            RelativeLayout p = this.createRecipePreview(recipePreview);
+            layout.addView(p);
         }
     }
-
+    public TextView createRecipeName(Preview recipePreview, int height) {
+        TextView text = new TextView(this);
+        text.setGravity(Gravity.CENTER);
+        text.setTextColor(getResources().getColor(android.R.color.black));
+        text.setPadding(40, 40 + height, 40, 0);
+        text.setTextSize(24);
+        text.setGravity(Gravity.LEFT);
+        String recipeName = recipePreview.getName();
+        text.setText(recipeName);
+        text.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
+        text.setClickable(true);
+        int id = recipePreview.getID();
+        text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = GenreItemActivity.this;
+                Globals.setViewRecipeId(id);
+                Intent intent = new Intent(context, GenreRecipeItemActivity.class);
+                startActivity(intent);
+            }
+        });
+        return text;
+    }
+    public TextView createRecipeDetail(Preview recipePreview, int height) {
+        TextView text = new TextView(this);
+        text.setGravity(Gravity.CENTER);
+        text.setTextColor(getResources().getColor(android.R.color.black));
+        text.setPadding(100, 120 + height, 40, 40);
+        text.setTextSize(18);
+        text.setGravity(Gravity.LEFT);
+        String recipeDescription = recipePreview.getDescription();
+        text.setText(recipeDescription);
+        text.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
+        text.setClickable(true);
+        int id = recipePreview.getID();
+        text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = GenreItemActivity.this;
+                Globals.setViewRecipeId(id);
+                Intent intent = new Intent(context, GenreRecipeItemActivity.class);
+                startActivity(intent);
+            }
+        });
+        return text;
+    }
+    public ImageView createRecipeImage(Preview recipePreview) {
+        ImageView text = new ImageView(this);
+        int id = recipePreview.getID();
+        String imgName = "img_" + String.valueOf(id);
+        text.setImageResource(getResources().getIdentifier(imgName, "drawable", getPackageName()));
+        text.setPadding(10, 20, 0, 0);
+        text.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
+        text.setClickable(true);
+        text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = GenreItemActivity.this;
+                Globals.setViewRecipeId(id);
+                Intent intent = new Intent(context, GenreRecipeItemActivity.class);
+                startActivity(intent);
+            }
+        });
+        return text;
+    }
+    public int getImageHeight(Preview recipePreview) {
+        ImageView text = new ImageView(this);
+        text.setAdjustViewBounds(true);
+        int id = recipePreview.getID();
+        String imgName = "img_" + String.valueOf(id);
+        text.setImageResource(getResources().getIdentifier(imgName, "drawable", getPackageName()));
+        text.setPadding(10, 20, 0, 0);
+        text.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
+        int h = text.getDrawable().getIntrinsicHeight();
+        return h;
+    }
+    public RelativeLayout createRecipePreview(Preview recipe) {
+        RelativeLayout p = new RelativeLayout(this);
+        p.addView(this.createRecipeImage(recipe));
+        int height = this.getImageHeight(recipe);
+        p.addView(this.createRecipeName(recipe, height));
+        p.addView(this.createRecipeDetail(recipe, height));
+        return p;
+    }
 
 }

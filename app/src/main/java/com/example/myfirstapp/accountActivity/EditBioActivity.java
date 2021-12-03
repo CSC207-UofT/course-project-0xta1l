@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.example.myfirstapp.Globals;
+import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
 
 public class EditBioActivity extends AppCompatActivity {
@@ -21,6 +22,10 @@ public class EditBioActivity extends AppCompatActivity {
     public void editBio(View view) {
         EditText editText = findViewById(R.id.edit_bio_text);
         String s = editText.getText().toString();
+        if (s.isEmpty()) {
+            Notification.displaySnackBar(findViewById(R.id.editBioPage),"Bio cannot be empty");
+            return;
+        }
         Globals.setUser_bio(s);
         finish();
     }
