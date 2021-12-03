@@ -1831,7 +1831,7 @@
             "Dessert",
             "Western"
         ],
-        description: "No churning required for this tasty Labneh and Lime Ice Cream With Granola!",
+        "description": "No churning required for this tasty Labneh and Lime Ice Cream With Granola!",
         "ingredients": "['.5 cup labneh (Lebanese strained yogurt) or 1 cup plain whole-milk Greek yogurt', '.75 cup (75 g) granola', '1 (14-oz.) can sweetened condensed milk', 'Zest and juice of 2 limes', '.75 tsp. kosher salt', '1.5 cups heavy cream', 'Special Equipment: 2 layers of cheesecloth']",
         "instructions": "If using Greek yogurt, set a fine-mesh sieve over a bowl; line with cheesecloth. Place yogurt in sieve and let drain in refrigerator 4 hours (you should have .5 cup); discard drained liquid in bowl.\nPulse granola in a food processor to break up a bit. (Or roll up in a kitchen towel and gently crush with a rolling pin.)\nWhisk labneh (or strained yogurt), condensed milk, lime zest and juice, and salt in a medium bowl until smooth.\nUsing an electric mixer, beat cream in a medium bowl, starting on low speed and gradually increasing to medium-high as it thickens, until billowy and stiff peaks form, about 4 minutes.\nAdd a dollop of whipped cream to labneh mixture and mix in with a rubber spatula (this is just to lighten it so that the next stagefoldingis easier). Add remaining whipped cream and fold in, running spatula down sides and along bottom of bowl, then lifting up through center and over top while rotating bowl to integrate without deflating, until very few streaks of labneh mixture remain. Fold in granola; scrape ice cream base into a loaf pan thats at least 8.5x4.5\". Cover with plastic wrap or an airtight silicone lid and freeze until solid, at least 8 hours.\nTo serve, transfer loaf pan to refrigerator and let ice cream soften 10 minutes before scooping into bowls.\nDo Ahead: Ice cream can be made 1 week ahead. Keep frozen.",
         "image": "img_127.png",
@@ -1871,334 +1871,288 @@
     {
         "ID": 130,
         "name": "Cooler-Steamed Corn",
-        "genre": [
-            "Meal",
-            "Western"
-        ],
+        "genre": ["Meal","Western"],
+        "description": "A side dish of corn both grilled and steamed",
         "ingredients": "['6 Tbsp. Diamond Crystal or 3 Tbsp. plus 1.25 tsp. Morton kosher salt', '6 ears of corn, in husk']",
         "instructions": "Combine salt and 3 quarts water in a large pot; stir until salt is dissolved. Add corn; let sit at room temperature at least 2 hours, or cover and chill up to 12 hours.\nPrepare a grill for high heat. Drain corn and grill until husks are lightly charred all over, about 15 minutes. Wrap in a clean towel and place in a cooler. Let steam at least 15 minutes and up to 3 hours.",
-        "image": "img_130.png",
-        "rating": 2
+        "image": "130.png",
+        "rating": 2,
+        "preptime": 10
     },
     {
         "ID": 131,
         "name": "Honey-Glazed Pepper Chicken",
-        "genre": [
-            "Meal",
-            "Chinese"
-        ],
+        "genre": ["Meal", "Chinese"],
+        "description": "A sweet and savoury chicken dish",
         "ingredients": "['2 Tbsp. black peppercorns', '4 Tbsp. pink peppercorns, divided', '6 tsp. Diamond Crystal or 3.25 tsp. Morton kosher salt, divided', '1 (3.54-lb.) whole chicken', '1 Tbsp. vegetable oil, plus more for grill', '2 medium Fresno chiles, thinly sliced', '.5 cup fermented garlic honey, honey, or pure maple syrup', '3 Tbsp. Champagne vinegar or white wine vinegar', 'Special Equipment: A spice mill or mortar and pestle']",
         "instructions": "Finely grind black peppercorns and 2 Tbsp. pink peppercorns in a spice mill or mortar and pestle. Transfer to a small bowl and mix in 5 tsp. Diamond Crystal or 2.75 tsp. Morton kosher salt; set seasoning aside.\nPlace chicken, breast side down, on a cutting board and use kitchen shears to cut along both sides of the backbone to remove (freeze and save it for stock!). Open chicken and turn skin side up. Press down on center of breast to flatten chickenyou should hear the breastbone crack. Using a chefs knife or cleaver, split chicken in half through breastbone. Pat dry; rub all over with 1 Tbsp. oil. Sprinkle reserved seasoning all over, making sure to get into all the nooks and crannies. Place on a wire rack set inside a rimmed baking sheet. Chill, uncovered, at least 8 hours and up to 2 days.\nCoarsely grind remaining 2 Tbsp. pink peppercorns in spice mill or mortar and pestle. Cook chiles, honey, vinegar, and remaining 1 tsp. Diamond Crystal or .5 tsp. Morton kosher salt over medium heat, stirring occasionally, until mixture just turns amber in color and is reduced by about half (it should coat a spoon), 1012 minutes. Stir in pink pepper and set aside.\nPrepare a grill for medium heat. Lightly oil grate. Set chicken on grate, cover, positioning vent over chicken if your grill has one, and grill, turning every 5 minutes, until an instant-read thermometer inserted into the thickest part of thighs registers 120130F, 1520 minutes. Continue to grill, basting with honey mixture and turning chicken every 23 minutes, until an instant-read thermometer inserted into the thickest part of thighs registers 175F and 155F in the thickest part of breast, 1015 minutes longer. Transfer to a cutting board and place skin side up. Let rest 30 minutes before carving.",
-        "image": "img_131.png",
-        "rating": 2
+        "image": "131.png",
+        "rating": 2,
+        "preptime": 20
     },
     {
         "ID": 132,
         "name": "Pork Shoulder Steaks With Horseradish-Mustard Sauce",
-        "genre": [
-            "Meal",
-            "Western"
-        ],
+        "genre": ["Meal", "Western"],
+        "description": "Moist pork steaks elevated by flavourful mustard",
         "ingredients": "['2 Tbsp. finely grated peeled horseradish or 1 Tbsp. (packed) drained prepared horseradish', '2 Tbsp. Dijon mustard', '1 Tbsp. whole grain mustard', '1 tsp. honey', 'Kosher salt', '1 toasted nori sheet (optional)', '1 Tbsp. ground coriander', '1 Tbsp. mustard powder', '2 tsp. light brown sugar', '1 tsp. freshly ground black pepper', '1 tsp. garlic powder', 'Vegetable oil (for grill)', '4 (.75\"-thick) pork shoulder steaks (1.52 lb.)', 'Kosher salt', '2 Tbsp. finely grated peeled horseradish or 1 Tbsp. (packed) drained prepared horseradish', 'Special Equipment: A spice mill or mortar and pestle']",
         "instructions": "Mix horseradish, both mustards, and honey in a small bowl to combine; season with salt.\nIf using nori, finely grind in a spice mill or mortar and pestle. Mix coriander, mustard powder, brown sugar, pepper, garlic powder, and half of nori powder (if using) in a small bowl. This is your dry rub. Set remaining nori powder aside for serving.\nPrepare a grill for medium-high heat; oil grate. Season steaks generously with salt. Sprinkle generously all over with dry rub. Grill, turning every 12 minutes, until lightly charred and an instant-read thermometer inserted into the thickest part of pork registers 140F, 79 minutes. Transfer to a cutting board and let rest 510 minutes before thinly slicing.\nSpread mustard sauce onto plates and arrange pork over. Top with horseradish and sprinkle with reserved nori powder.",
-        "image": "img_132.png",
-        "rating": 2
+        "image": "132.png",
+        "rating": 2,
+        "preptime": 60
     },
     {
         "ID": 133,
         "name": "Speedy Summer Gazpacho",
-        "genre": [
-            "Meal",
-            "Italian"
-        ],
+        "genre": ["Meal","Italian"],
+        "description": "A quick and simple spanish tomato soup",
         "ingredients": "['1 cucumber, roughly chopped', '6 medium tomatoes (heirloom variety if possible)', '.5 oz basil leaves, stems removed', '1 celery stalk, roughly chopped', '.5 red pepper, deseeded and roughly chopped', '2 garlic cloves, grated', 'Juice of 1 lemon', '1 tbsp extra-virgin olive oil, plus extra for drizzling', '1 tbsp red wine vinegar', 'Sea salt and freshly ground black pepper']",
         "instructions": "Put all the ingredients in a food processor and blitz until smooth, then season to taste with salt and pepper.\nAdd some water to loosen the soup if needed, then divide it between bowls and drizzle some more oil on top to serve.",
-        "image": "img_133.png",
-        "rating": 5
+        "image": "133.png",
+        "rating": 5,
+        "preptime": 45
     },
     {
         "ID": 134,
         "name": "Black-Eyed Pea Burgers With Creamy Barbecue Sauce and Chowchow",
-        "genre": [
-            "Meal",
-            "Vegan",
-            "Vegetarian"
-        ],
+        "genre": ["Meal","Vegan/Vegetarian"],
+        "description": "Vegan version of an All-American classic, the burger",
         "ingredients": "['1 cup amaranth', '2 scallions, coarsely chopped', '2 large crimini or button mushrooms, sliced', '1 small Scotch bonnet or habanero chile, seeds removed, finely chopped', '2 (15-oz.) cans black-eyed peas (not seasoned), rinsed', '.5 cup parsley leaves with tender stems', '3 Tbsp. tamari soy sauce', '2 Tbsp. flaxseed meal', '2 Tbsp. miso', '.5 tsp. kosher salt, plus more', 'Freshly ground black pepper', 'Extra-virgin olive oil (for frying)', '.5 cup store-bought barbecue sauce', '.25 cup mayonnaise', '1 Tbsp. chili-garlic sauce (such as Huy Fong)', '1 Tbsp. Dijon mustard', '1 tsp. fresh lemon juice', '1 tsp. apple cider vinegar', '6 hamburger buns or brioche buns, toasted', 'Chowchow (for serving)']",
         "instructions": "Cook amaranth, according to package directions. Spread out on a rimmed baking sheet and let cool.\nCombine scallions, mushrooms, chile, black-eyed peas, parsley, tamari, flaxseed meal, miso, and .5 tsp. salt in a food processor. Sprinkle 12 Tbsp. cooled amaranth over mixture and pulse until just combined. Repeat process until all of amaranth has been incorporated. Taste and season puree with pepper and more salt if needed. Scoop onto a parchment-lined baking sheet to make 6 portions (a cookie scoop works great if youve got one) and form into patties that match the size of your buns. Freeze 30 minutes.\nWhile the patties are chilling, make the sauce. Whisk barbecue sauce, mayonnaise, chili-garlic sauce, mustard, lemon juice, and vinegar in a small bowl to combine. Sauce should taste spicy, tart, and sweet.\nHeat a large skillet, preferably cast-iron, over medium-low. Pour in oil just to thinly coat bottom of pan. Working in 3 batches to avoid crowding, cook patties, adjusting heat and adding more oil as needed, until browned (a crisp crust should form), about 5 minutes per side. (You can keep patties warm on a fresh parchment-lined baking sheet in a 250 oven if needed.)\nBuild burgers with patties, buns, sauce, and chowchow.\nDo ahead: Sauce can be made 1 month ahead. Cover and chill. Bring to room temperature before serving.",
-        "image": "img_134.png",
-        "rating": 4
+        "image": "134.png",
+        "rating": 4,
+        "preptime": 50
     },
     {
         "ID": 135,
         "name": "Chowchow",
-        "genre": [
-            "Meal",
-            "Chinese",
-            "Western"
-        ],
+        "genre": ["Meal","Chinese","Western"],
+        "description": "Flavourful paste eaten alone or as a condiment",
         "ingredients": "['1 small green cabbage (about 2 lb.), chopped into .5\" pieces (about 10 cups)2 large green tomatoes, cut into .5\" pieces', '1 large sweet onion, cut into .5\" pieces', '1 large green bell pepper, seeds and ribs removed, cut into .5\" pieces', '1 large red bell pepper, seeds and ribs removed, cut into .5\" pieces', '2 Tbsp. pickling salt or 3 Tbsp. kosher salt', '1 Tbsp. yellow mustard seeds', '1.5 cups apple cider vinegar', '1.5 cups distilled white vinegar', '2 cups cane sugar (such as Wholesome) or raw sugar', '1 Tbsp. yellow mustard', '1 tsp. ground turmeric', '2 garlic cloves, finely chopped']",
         "instructions": "Toss cabbage, green tomatoes, onion, bell peppers, and salt in a large bowl until all of the vegetables are coated in salt (this will help them release some water). Cover and chill at least 8 hours and up to 12 hours. Drain vegetables.\nToast mustard seeds in a large pot over medium-high heat, shaking pan, until fragrant and slightly darkened in color, about 2 minutes. Add both vinegars, sugar, mustard, and turmeric. Bring to a boil, then reduce heat to medium-low and simmer 10 minutes.\nAdd garlic and drained vegetables to pickling liquid and mix well. Increase heat to medium-high and bring to a boil; cook 5 minutes. Reduce heat to medium-low and simmer until flavors have melded and liquid is slightly reduced, about 15 minutes. The cabbage and green tomatoes should still have a bit of a crunch. Let cool (this will take about 1 hour).\nUsing a slotted spoon, divide chowchow among sterilized glass jars of choice and spoon pickling liquid over (chowchow should be submerged and there should be about .5\" space at the top of each jar. Cover and chill.\nDo ahead: Chowchow can be made 1 month ahead. Keep chilled. If youd like to keep it longer, you can use the water bath boiling technique to make the jarred chowchow shelf stable.",
-        "image": "img_135.png",
-        "rating": 2
+        "image": "135.png",
+        "rating": 2,
+        "preptime": 30
     },
     {
         "ID": 136,
         "name": "Creole Caesar Salad With Corn Bread Croutons",
-        "genre": [
-            "Meal",
-            "Soul",
-            "Caribbean"
-        ],
+        "genre": ["Meal","Soul","Caribbean"],
+        "description": "Caesar salad with creole elements",
         "ingredients": "['2 cups Fried Okra', '2 heads romaine lettuce, leaves separated', '1 cup cooked fresh corn kernels, chilled', '2.5 cups cubed corn bread, toasted', '.5 cup sliced grape tomatoes', '.5 cup sliced seedless cucumber', '.25 cup sliced red onion', 'Creole Caesar Dressing (recipe follows)', ' cup extra-virgin olive oil', '3 garlic cloves, peeled', '2 tablespoons chopped onion', '2 tablespoons red wine vinegar', '.5 roasted red bell pepper', '1 tablespoon finely chopped celery', '1 teaspoon light brown sugar', '.25 teaspoon cayenne pepper', '2 tablespoons mayonnaise', '.25 cup grated Parmesan cheese', 'Salt and pepper']",
         "instructions": "Place half the fried okra in a large bowl and add the romaine, corn, corn bread, tomatoes, cucumber, and onion. Add the dressing and toss until well coated.\nDivide the salad among six serving plates and top evenly with the remaining okra. Serve immediately.\nIn a small saucepan, combine the oil, garlic, and onion. Cook over low heat until the garlic and onion are golden and tender, about 15 minutes. Using a slotted spoon, transfer the garlic and onion to a food processor; reserve the oil.\nAdd the vinegar, bell pepper, celery, sugar, cayenne, mayonnaise, Parmesan, and a pinch each of salt and black pepper to the food processor. Pulse until smooth. With the machine running, add the oil in a thin stream and process until emulsified. Taste and season with salt and pepper. Use immediately or store in an airtight container in the refrigerator for up to 1 week.",
-        "image": "img_136.png",
-        "rating": 1
+        "image": "136.png",
+        "rating": 1,
+        "preptime": 25
     },
     {
         "ID": 137,
         "name": "Jerk Potato Salad",
-        "genre": [
-            "Meal",
-            "Caribbean"
-        ],
+        "genre": ["Meal","Caribbean"],
+        "description": "Traditional potato salad combined with powerful jerk flavours",
         "ingredients": "['Zest and juice of 2 limes', '2 habanero chiles (with seeds), finely chopped', '1 2\"-piece ginger, scrubbed, finely grated', '5 garlic cloves, finely chopped', ' cup chopped scallions', '2 Tbsp. finely chopped thyme', '2 Tbsp. vegetable oil', '2 Tbsp. dark or light brown sugar', '4 tsp. ground allspice', '1 Tbsp. Diamond Crystal or 1.75 tsp. Morton kosher salt', '2 tsp. dried thyme', '1 tsp. coarsely ground black pepper', '1 tsp. granulated garlic', '1 tsp. ground cinnamon', '1 tsp. ground ginger', '1 tsp. ground nutmeg', '.5 tsp. cayenne pepper', '.5 tsp. ground cumin', '5 large Yukon Gold potatoes (about 2 lb. total), scrubbed, cut into 1\" pieces', '1 large sweet potato (about 12 oz.), peeled, cut into 1\" pieces', '1 tsp. Diamond Crystal or .5 tsp. Morton kosher salt; plus more (optional)', '.75 cup mayonnaise', '.25 large red onion, finely chopped', '2 scallions, chopped', '.5 tsp. coarsely ground black pepper']",
         "instructions": "Using a fork, mix lime zest and juice, chiles, ginger, chopped garlic, scallions, chopped thyme, oil, brown sugar, allspice, salt, dried thyme, black pepper, granulated garlic, cinnamon, ginger, nutmeg, cayenne, and cumin in a medium bowl to combine (adding the chiles to the lime juice and zest at the beginning is important: it allows the juice to slightly blunt some of the sting of the chile).\nDo ahead: Rub can be made 1 week ahead. Cover and chill.\nCombine Yukon Gold and sweet potatoes in a large pot, pour in water to cover, and season with salt if desired. Bring to a boil over medium heat and cook until fork-tender, about 40 minutes. Drain and transfer to a large bowl (potatoes will be crushed at this point, especially the sweet potato, and thats okay).\nMeanwhile, mix mayonnaise and 2 Tbsp. jerk rub in a small bowl to combine (you will have leftover rub, see headnote for other uses). Set dressing aside.\nAdd red onion, scallions, 1 tsp. Diamond Crystal or .5 tsp. Morton kosher salt, and .5 tsp. black pepper to potatoes and toss to combine. Add dressing and fold into potatoes with a rubber spatula until well coated. Serve potato salad warm, room temperature, or chilled.\nDo ahead: Potato salad can be made 2 days ahead (it will get more spicy). Cover and chill.",
-        "image": "img_137.png",
-        "rating": 1
+        "image": "137.png",
+        "rating": 1,
+        "preptime": 45
     },
     {
         "ID": 138,
         "name": "Grilled Peach Toast With Pimiento Cheese",
-        "genre": [
-            "Meal",
-            "Soul"
-        ],
+        "genre": ["Meal","Soul"],
+        "description": "A sweet modern twist on a traditional dish",
         "ingredients": "['2 firm-ripe peaches, halved and pitted', '2 tablespoons plus 1 teaspoon blended oil', '1 medium-size ripe avocado', '4 (12-inch-thick) slices multigrain boule-style bread', 'Smoky Pimiento Cheese With Bacon', '2 tablespoons extra-virgin olive oil', '14 cup thinly sliced red radishes (about 3 ounces)', '1 bunch watercress', '1 teaspoon gray sea salt', '12 teaspoon coarsely ground black pepper']",
         "instructions": "Preheat a grill to medium-high (450F).\nBrush the peach halves with 1 tablespoon of the blended oil, and place on the grill grates, cut sides down. Grill, uncovered, until grill marks appear and the juices begin to release, about 3 minutes. Remove from the grill, and slice. Set aside.\nCut the avocado in half lengthwise, pit, and brush cut sides with 1 teaspoon of the blended oil. Place halves, cut sides down, on the grill grates. Grill, uncovered, just until the avocado is charred and begins to soften, about 5 minutes. Remove from the grill.\nBrush the bread slices with the remaining 1 tablespoon oil, and place on the grill grates. Grill until the bread is toasted, about 2 minutes per side. Remove from the grill.\nSpread Pimiento Cheese onto 1 side of each piece of toast. Cut each piece into 4 equal rectangles, keeping the pieces together.\nScoop the avocado from the peel into a medium bowl and mash with 1 tablespoon of the extra-virgin olive oil until it is chunky and spreadable. Spoon onto the toast, and top with sliced peaches.\nTop the toast slices with radish slices and watercress leaves. Drizzle the remaining 1 tablespoon extra-virgin olive oil over the toast slices, and sprinkle with gray sea salt and black pepper.",
-        "image": "img_138.png",
-        "rating": 1
+        "image": "138.png",
+        "rating": 1,
+        "preptime": 40
     },
     {
         "ID": 139,
         "name": "Homestyle Dosas with Tomato Chutney",
-        "genre": [
-            "Meal",
-            "Indian"
-        ],
+        "genre": ["Meal","Indian"],
+        "description": "A deeply flavoured savory dish",
         "ingredients": "['2 cups long-grain white rice', '.5 cup whole or split urad dal (black gram)', '.5 tsp. fenugreek seeds', '1 tsp. kosher salt', '2 tsp. plus 2 Tbsp. vegetable oil', '1 small onion, finely chopped', '23 small green chiles (such as serrano), seeds removed if desired, finely chopped', '4 small tomatoes or canned whole peeled tomatoes, chopped', 'Kosher salt', '2 tsp. black mustard seeds', '810 fresh or frozen curry leaves', '1 dried red chile (such as bird or chile de rbol)', '1 tsp. split or whole urad dal (black gram)', 'A pinch of asafoetida (optional)', '1 tsp. ghee or clarified butter, melted, divided, plus more for griddle']",
         "instructions": "The morning before you make your batter, rinse rice in a fine-mesh sieve under cold running water, until water runs almost clear. Transfer to a large bowl and cover with 4 cups cold water. If your tap water is heavily chlorinated, use filtered water for soaking as chlorine will inhibit fermentation later on.\nPick over dal for debris, then rinse in sieve under cold running water. Transfer to a medium bowl and add fenugreek. Cover with 2 cups cold water (again using filtered if needed). Let rice and dal soak at least 8 hours and up to 10 hours.\nDrain rice, holding back grains with your hand and pouring off most of the soaking liquid into a pitcher or large measuring glass. Transfer rice to a blender. Pulse to get things going, then puree, sparingly adding soaking liquid as needed, until a paste forms (mixture should be foamy and still slightly gritty when rubbed between your fingers). Pour into a clean large bowl. Repeat process with dal mixture, then vigorously stir blended dal into rice paste.\nAdd reserved soaking liquid as needed to create a pourable batter that falls off the spoon in a steady stream and gradually dissolves into itself. Stir in salt. (If you are in a warm climate, add salt after fermentation to keep batter from becoming overly sour.) Cover bowl with a kitchen towel, then a silicone lid (this will keep the surface of the batter from drying out). Set bowl in a warm spot (a proofing box or an oven with the light on and a bowl of hot water placed inside work well). Let batter sit until airy and pleasantly sour (when you drizzle it from a spoon, it should fall on itself in slowly dissolving ribbons), 46 hours in a very warm environment and as long as 2 days in a very cool environment. In general, 14 hours is a safe starting point.\nDo ahead: Batter can be made 1 week ahead. Once fermented, cover and chill. Bring to room temperature before cooking. Thin with water if needed to reach a thick but pourable consistency.\nHeat 2 tsp. oil in a medium skillet over medium. Cook onion, stirring occasionally, until translucent, about 3 minutes. Add green chiles and cook, stirring, 1 minute. Reduce heat to low, add tomatoes and any juices and a generous pinch of salt. Cook, stirring often, until tomatoes are tender, 79 minutes. Carefully transfer to clean blender or a food processor and blend until smooth; reserve skillet. Taste chutney and season with more salt if needed. Transfer to a small bowl.\nWipe out reserved skillet and heat remaining 2 Tbsp. oil in skillet over medium. Cook mustard seeds, stirring constantly, until they start to pop, about 30 seconds. Add curry leaves, dried red chile, and dal and cook, stirring occasionally, until curry leaves wilt and crisp and dal is starting to brown, about 2 minutes. Mix in asafoetida, if using, and remove spice oil from heat. Mix into chutney.\nTo cook dosas, heat a griddle or large skillet (the larger the better; you want the batter to have room to spread) over medium. Sprinkle a little water on surface; if it sizzles youre good to go. (Its important though not to let griddle get hotter than medium. If its too hot, the batter will start to cook before its fully spread out, yielding a thick dosa, or worse, a thin dosa that tears. Adjust heat as needed). Brush griddle with a thin layer of ghee, wiping off excess with a folded paper towel. Ladle a generous -cupful of batter in the center of griddle and use ladle to spread batter, working outward in continuous circles and never lifting ladle off surface, to create an 8\"-diameter round. Ridges of thick and thin batter will form naturally. Cook dosa 30 seconds, then drizzle  tsp. ghee over batter. For a spongier dosa, cover with a large bowl and steam until cooked through, about 2 minutes (cooked underside should show through thinner spots, and thicker spots should be opaque and bouncy). For a drier dosa, cook until surface is mostly set, about 2 minutes, then, using a fish spatula or other wide spatula, flip dosa over (it should easily lift from the griddle at this point) and cook until second side is lightly golden, about 20 seconds. Fold dosa in half so toasted side is facing out and transfer to a plate. Repeat process with remaining batter and ghee.\nServe dosas as they are ready with chutney alongside for dipping.",
-        "image": "img_139.png",
-        "rating": 5
+        "image": "139.png",
+        "rating": 5,
+        "preptime": 30
     },
     {
         "ID": 140,
         "name": "Shimbra Wat (Chickpeas With Spicy Flaxseed Paste)",
-        "genre": [
-            "Meal",
-            "African"
-        ],
+        "genre": ["Meal","African"],
+        "description": "A traditional chickpea dish with added spice",
         "ingredients": "['3 tablespoons brown or golden flaxseed', '3 tablespoons awaze dipping sauce', '14 oz (400 g) cooked or canned chickpeas, drained and rinsed', 'Salt']",
         "instructions": "Heat a small dry frying pan over medium-low heat. Add the flaxseed and lightly dry-toast for about 2 minutes, stirring and shaking the pan, until aromatic. Transfer to a dish and leave to cool. Once cool, grind using an electric spice or coffee grinder.\nIn a Dutch oven or saute pan, heat 2 tablespoons of water over low heat and stir in 1 tablespoon of the awaze. Cook for 2 minutes, stirring continuously, then gradually work in the remaining 2 tablespoons of awaze, along with the ground flaxseed and 1 cup (250 ml) of water. Reduce the heat to its lowest possible level, cover, and cook, stirring frequently, for 20 minutes. Add a touch more water if it looks like the mixture is drying outit should still be a bit runny at the end.\nMeanwhile, place the chickpeas in a saucepan and cover with 2 cups (500 ml) of water. Bring to a boil, remove from the heat, and soak in the liquid until ready to use. Drain the chickpeas, reserving about 1 cup (240 ml) of the liquid. Add the chickpeas to the awaze-flaxseed mixture, generously season with salt, and mix well. Tip in some of the reserved cooking water if needed so that the sauce is a touch runny and evenly coats the chickpeas. Cook for a couple of minutes to combine the flavors before serving.",
-        "image": "img_140.png",
-        "rating": 4
+        "image": "140.png",
+        "rating": 4,
+        "preptime": 20
     },
     {
         "ID": 141,
         "name": "Infinity Pool",
-        "genre": [
-            "Drink",
-            "Alcoholic",
-            "Mexican",
-            "Italian"
-        ],
+        "genre": ["Drink","Alcoholic","Mexican","Italian"],
+        "description": "Celery inspired cocktail makes for a refreshing cocktail",
         "ingredients": "['1 cups chilled mezcal', '1 cups chilled Lillet blanc', ' cup chilled 1:1 simple syrup (see Note)', '2.25 teaspoons celery bitters', '.75 cup plus 2 tablespoons water', '1 cups fresh celery juice (from about 12 celery stalks)', '1 cup fresh lemon juice', 'Garnish: Smoked sea salt and thinly sliced lemon wheels']",
         "instructions": "Up to 1 day before serving, make the batch. Pour chilled mezcal, chilled Lillet blanc, chilled simple syrup, celery bitters, and water into a 2-quart pitcher and stir to mix. Seal well, covering with plastic wrap if needed, and refrigerate.\nUp to 2 hours before serving, prepare celery and lemon juices and stir into pitcher mix. Reseal and return to refrigerator if not serving immediately.\nTo serve, stir mixture well. Place a large ice cube in each rocks glass, then pour in cocktail and garnish with a small pinch of smoked salt and a lemon wheel, if desired.",
-        "image": "img_141.png",
-        "rating": 2
+        "image": "141.png",
+        "rating": 2,
+        "preptime": 5
     },
     {
         "ID": 142,
         "name": "Division Bell",
-        "genre": [
-            "Drink",
-            "Alcoholic",
-            "Mexican",
-            "Italian"
-        ],
+        "genre": ["Drink","Alcoholic","Mexican","Italian"],
+        "description": "Sweet, smokey and bitter mezcal cocktail",
         "ingredients": "['1.5 oz. mezcal, such as Del Maguey Vida', '.75 oz. Aperol', '.5 oz. maraschino liqueur', '.75 oz. fresh lime juice', '1 grapefruit twist']",
         "instructions": "Shake mezcal, Aperol, maraschino liqueur, and lime juice together with ice. Strain into a chilled cocktail glass. Express the oils from a grapefruit peel over the top of the drink and discard.",
-        "image": "img_142.png",
-        "rating": 2
+        "image": "142.png",
+        "rating": 2,
+        "preptime": 5
     },
     {
         "ID": 143,
         "name": "Mezcal Mule",
-        "genre": [
-            "Drink",
-            "Alcoholic",
-            "Mexican"
-        ],
+        "genre": ["Drink","Alcoholic","Mexican"],
+        "description": "Classic mezcal mule cocktail",
         "ingredients": "['2 oz. mezcal, such as Vago Espadi\u00c3\u0152n', '.5 oz. fresh lime juice', '.5 oz. fresh ginger juice', '1 oz. agave nectar', '1.5 oz. sparkling water']",
         "instructions": "Add all ingredients to a cocktail shaker and dry shake. Carefulthe bubbles in the soda water will give a little pushback, but dont sweat it! Strain into a copper mule mug and add fresh rocks. Garnish with a sprig of mint and a quartered lime (optional).",
-        "image": "img_143.png",
-        "rating": 3
+        "image": "143.png",
+        "rating": 3,
+        "preptime": 5
     },
     {
         "ID": 144,
         "name": "Electron",
-        "genre": [
-            "Drink",
-            "Alcoholic",
-            "Mexican"
-        ],
+        "genre": ["Drink","Alcoholic","Mexican"],
+        "description": "Flavourful carrot mezcal cocktail",
         "ingredients": "['1.75 oz. mezcal, such as Don Amado Rstico', '.5 oz. cinnamon syrup (see Note)', '.75 oz. fresh lime juice', '.75 oz. fresh fresh carrot juice', '2 dashes Regans Orange Bitters', 'Pink peppercorn, for rim', 'Salt, for rim']",
         "instructions": "Rim coupe glass with ground pink peppercorn and salt. Combine all other ingredients in a shaker tin with ice. Shake until the tin feels cold. Strain into prepared glass.",
-        "image": "img_144.png",
-        "rating": 4
+        "image": "144.png",
+        "rating": 4,
+        "preptime": 5
     },
     {
         "ID": 145,
         "name": "Killer Bee",
-        "genre": [
-            "Drink",
-            "Alcoholic",
-            "Mexican"
-        ],
+        "genre": ["Drink","Alcoholic","Mexican"],
+        "description": "Vibrant mezcal, lemon and, honey cocktail",
         "ingredients": "['1 12 ounces honey', '2 ounces mezcal, such as Del Maguey Vida brand', '1 12 ounces freshly squeezed lemon juice (from 1 lemon)']",
         "instructions": "To make a honey syrup, in a small bowl or jar, combine the honey with 1 12 ounces water.\nIn a cocktail shaker, combine the mezcal, lemon juice, and 34 ounce of the honey syrup (save the remaining honey syrup for another cocktail). Fill the shaker three-quarters of the way with ice and shake vigorously for 10 seconds if serving on the rocks or 15 seconds if serving up. Strain into an ice-filled double old-fashioned glass or bucket glass, or serve up with no ice.",
-        "image": "img_145.png",
-        "rating": 3
+        "image": "145.png",
+        "rating": 3,
+        "preptime": 5
     },
     {
         "ID": 146,
         "name": "La Pina",
-        "genre": [
-            "Drink",
-            "Alcoholic",
-            "Mexican"
-        ],
+        "genre": ["Drink","Alcoholic","Mexican"],
+        "description": "Refreshing mezcal cocktail with pinapple and cilantro",
         "ingredients": "['1 large ice cube, plus more ice cubes for the cocktail shaker', '1 slice serrano chile, seeded', '5 or 6 fresh cilantro leaves', '2 oz. [60 ml] mezcal', '1 oz. [30 ml] fresh pineapple juice', '3/4 oz. [22.5 ml] rich simple syrup (see note)', '1/2 oz. [15 ml] fresh lime juice', '1 pineapple leaf for garnish']",
         "instructions": "Put the large ice cube in an old-fashioned glass. Muddle the serrano chile with the cilantro leaves in a cocktail shaker. Add the mezcal, pineapple juice, simple syrup, lime juice, and ice cubes. Shake vigorously and strain over the large ice cube in the glass. Garnish with the pineapple leaf.",
-        "image": "img_146.png",
-        "rating": 5
+        "image": "146.png",
+        "rating": 5,
+        "preptime": 5
     },
     {
         "ID": 147,
         "name": "Arinato",
-        "genre": [
-            "Drink",
-            "Alcoholic",
-            "Mexican"
-        ],
+        "genre": ["Drink","Alcoholic","Mexican"],
+        "description": "Alcoholic drink with a smokey aftertaste",
         "ingredients": "['1.5 oz. mezcal, such as Ilegal Mezcal Joven', '.75 oz. Lillet Blanc', '.5 oz. Dolin Dry Vermouth', '.25 oz. Yellow Chartreuse', '.5 tsp. Luxardo Maraschino Liqueur', '2 dashes Peychauds Bitters', 'Grapefruit twist for garnish']",
         "instructions": "Add all the ingredients, except the grapefruit twist, to a mixing glass with ice and stir. Strain over a large ice cube in a rocks glass. Express the grapefruit twist over the drink and then rest the twist on the cube in the glass.",
-        "image": "img_147.png",
-        "rating": 1
+        "image": "147.png",
+        "rating": 1,
+        "preptime": 5
     },
     {
         "ID": 148,
         "name": "Ti' Punch",
-        "genre": [
-            "Drink",
-            "Alcoholic",
-            "Caribbean"
-        ],
+        "genre": ["Drink","Alcoholic","Caribbean"],
+        "description": "Alcoholic drink with strong notes of sugarcane",
         "ingredients": "['1 lime', '1 bar spoon cane or simple syrup', '2 ounces rhum agricole blanc, preferably 50 percent ABV or above, such as Damoiseau 110 Proof Rhum Agricole Blanc']",
         "instructions": "With a sharp paring knife, cut a disc of skin from the lime about the size of a silver dollar, taking as little of the pith and actual flesh of the lime as possible. In a rocks glass, muddle the lime disk with cane or simple syrup, then top with rhum. Stir well to mix.",
-        "image": "img_148.png",
-        "rating": 1
+        "image": "148.png",
+        "rating": 1,
+        "preptime": 5
     },
     {
         "ID": 149,
         "name": "Royal Dock Cooler",
-        "genre": [
-            "Drink",
-            "Alcoholic",
-            "Caribbean"
-        ],
+        "genre": ["Drink","Alcoholic","Caribbean"],
+        "description": "A light and simple play on a daiquiri",
         "ingredients": "['750 milliliters (25 ounces) pot still Jamaican rum, such as Hamilton Jamaican Pot Still Black Rum', '250 milliliters (8.5 ounces) pineapple syrup (see Note)', '200 milliliters (6.75 ounces) grapefruit juice', '50 milliliters (1.5 ounces) brewed Earl Grey tea', 'Garnish: Lime wheels']",
         "instructions": "Combine all ingredients and stir to mix. Keep at least 4 hours or up to overnight in a covered container in the refrigerator. Stir before serving. If utilizing a punch bowl, pour over a large block of ice to slow dilution. Garnish with fresh lime wheels.",
-        "image": "img_149.png",
-        "rating": 1
+        "image": "149.png",
+        "rating": 1,
+        "preptime": 5
     },
     {
         "ID": 150,
         "name": "Jungle Bird",
-        "genre": [
-            "Drink",
-            "Alcoholic",
-            "Caribbean",
-            "Italian"
-        ],
+        "genre": ["Drink","Alcoholic","Caribbean","Italian"],
+        "description": "A sweet tropical rum cocktail",
         "ingredients": "['1.5 oz. blackstrap rum', '1 .5 oz. freshly squeezed pineapple juice', '.75 oz. Campari', '.5 oz. freshly squeezed lime juice', '.5 oz. simple syrup (1:1)', 'Garnish: pineapple chunk and/or pineapple leaf']",
         "instructions": "Combine all the ingredients except the garnish in a cocktail shaker filled with ice. Shake until chilled and strain into a double old-fashioned glass over a large ice cube. Garnish with the pineapple chunk or leaf (or both).",
-        "image": "img_150.png",
-        "rating": 5
+        "image": "150.png",
+        "rating": 5,
+        "preptime": 5
     },
     {
         "ID": 151,
         "name": "Savory Gruyre Bread With Ham",
-        "genre": [
-            "Meal",
-            "Western"
-        ],
+        "genre": ["Meal","Western"],
+        "description": "Savory gruyre bread paired with chopped scallion and ham",
         "ingredients": "['4 tablespoons (.5 stick/56 grams) unsalted butter, melted and cooled, plus more for the pan', '2.5 cups (325 grams) all-purpose flour, plus more for the pan', '1.5 teaspoons baking powder', '1 teaspoon fine sea salt', '.5 teaspoon baking soda', '1 cup (180 grams) coarsely chopped ham', '3 tablespoons thinly sliced scallions, white and green parts (optional)', '1 tablespoon chopped fresh thyme leaves', '2 cups (8 ounces/198 grams) grated Gruyre or sharp cheddar cheese', '2 large eggs', '1 cup (240 milliliters) buttermilk']",
         "instructions": "Heat the oven to 350F. Butter and flour a metal 9  5-inch loaf pan and set it aside.\nIn a large bowl, whisk together the flour, baking powder, salt, and baking soda. Stir in the chopped ham, scallions if using, thyme, and 1.75 cups (7 ounces) of the Gruyre (reserving the rest for topping). In a separate bowl, whisk together the melted butter, eggs, and buttermilk. Add the wet mixture to the flour mixture and stir to combine. The batter will be thick.\nTransfer the batter to the prepared loaf pan and spread it out evenly, smoothing the top. Sprinkle the remaining .25 cup (1 ounce) cheese over the top. Bake until the top springs back when lightly pressed and a skewer inserted in the center comes out with some moist crumbs attached, 45 to 55 minutes.\nTransfer the pan to a wire rack and let it cool for 10 minutes. Then remove the bread from the pan and let it cool completely on the wire rack.",
-        "image": "img_151.png",
-        "rating": 1
+        "image": "151.png",
+        "rating": 1,
+        "preptime": 90
     },
     {
         "ID": 152,
         "name": "Grilled Cauliflower Wedges With Herb Tarator",
-        "genre": [
-            "Meal",
-            "Vegan",
-            "Vegetarian",
-            "Western"
-        ],
+        "genre": ["Meal","Vegan/Vegetarian","Western"],
+        "description": "Delicious vegan cauliflower wedges drizzled in herb tarator ",
         "ingredients": "['.25 cup sliced or slivered almonds', '2 garlic cloves, finely grated', '1 cup chopped dill', '.5 cup mint leaves', '.5 cup tahini', ' cup fresh lemon juice', 'Kosher salt, freshly ground pepper', '1 small cauliflower (about 1.5 lb.)', '.25 cup extra-virgin olive oil (for drizzling)', '.5 tsp. ground coriander', '.5 tsp. ground cumin', '.5 tsp. turmeric', 'Handful of tender herbs (such as dill, mint, parsley, cilantro, basil, and/or chives)']",
         "instructions": "Toast almonds in a dry small skillet over medium heat, tossing occasionally, until golden brown, about 5 minutes. Transfer to a small bowl and let cool. Set aside for serving.\nBlend garlic, dill, mint, tahini, and  cup water in a blender or food processor until a thick paste forms. Add lemon juice and blend again, adding an additional 12 Tbsp. water if sauce is too thick. It should be easily spreadable but not runny. Season with salt and lots of pepper.\nRemove outer leaves and trim stem from cauliflower so it sits flat. Cut cauliflower into 4 wedges.\nWhisk oil, coriander, cumin, turmeric, and a big pinch of salt in a large bowl to combine. Add cauliflower and coat in oil. The cauliflower can fall apart easily, so handle with care and use your fingers to work oil into the uneven surface.\nPrepare a grill for medium-high heat (if using a charcoal grill, bank most of the coals on one side of the grill). Place cauliflower, cut side down, on grate over hottest part of grill and grill, undisturbed, until char marks form, about 3 minutes (you can carefully lift to check, but try not to move too much). Turn over onto other cut side and grill, undisturbed, until grill marks form, about 3 minutes. Turn onto uneven floret side and slide over to cooler part of grill or reduce heat to low and cover with lid. Grill until tender (if a bamboo skewer easily slides through the thickest part, its done), 1015 minutes. (And if you dont have a grill, you can do this in a grill pan over high. Once pan is very hot, add cauliflower, reduce heat to medium-high, and cook both cut sides as above. When you turn cauliflower over onto uneven floret side, reduce heat to low and cover pan with foil to finish cooking.)\nTo serve, spread some tarator onto individual plates or a platter. Arrange cauliflower wedges on top and dollop remaining tarator over. Scatter mixed tender herbs and almonds on top.",
-        "image": "img_152.png",
-        "rating": 3
+        "image": "152.png",
+        "rating": 3,
+        "preptime": 40
     },
     {
         "ID": 153,
         "name": "Open-Face Mushroom Sandwiches With Pecorino Salsa Verde",
-        "genre": [
-            "Meal",
-            "Vegan",
-            "Vegetarian",
-            "Western"
-        ],
+        "genre": ["Meal","Vegan/Vegetarian","Western"],
+        "description": "A vegan sandwich with open-face mushrooms and salsa verde",
         "ingredients": "['3 medium shallots, thinly sliced crosswise, rings separated', '1 Tbsp. plus 1.5 tsp. red wine vinegar', '1 tsp. crushed red pepper flakes', '1 tsp. freshly ground black pepper', 'Kosher salt', '3 oz. Pecorino Romano, Grana Padano, or Parmigiano-Reggiano', '2 cups (loosely packed) mixed tender herb leaves or greens (such as parsley and dill or dill and arugula)', '5 Tbsp. extra-virgin olive oil', '1 lb. king trumpet or crimini mushrooms, trimmed', '6 Tbsp. extra-virgin olive oil', '6 1\"-thick slices country-style bread']",
         "instructions": "Sixeight 10\" metal skewers or bamboo skewers, soaked (optional)\nToss shallots, vinegar, red pepper flakes, and black pepper in a small bowl to combine; lightly season with salt (the Pecorino will add some saltiness, so bear that in mind). Let sit 3 minutes.\nMeanwhile, very thinly slice Pecorino into tiles with a knife (irregular pieces are okay).\nAdd Pecorino, herbs, and oil to pickled shallots and toss gently to combine. Taste and season with more salt if needed; set aside.\nPrepare a grill for medium-high heat; clean grate. Working one at a time, set mushrooms on their sides and slice lengthwise .25\" thick to make 34 planks per mushroom, depending their size. If your mushrooms are particularly small or you are using crimini, slice .5\" thick and thread onto skewers to keep them from falling through grate.\nUsing some of the oil, brush cut sides of mushrooms and transfer to a large bowl or arrange on a rimmed baking sheet if skewered. Lightly brush both sides of each slice of bread with remaining oil and transfer to a platter.\nPress each slice of bread down across grate for even contact and grill until browned with some lightly charred spots, about 2 minutes per side. The goal is a crunchy exterior with a still chewy center. Transfer bread back to platter.\nBrush grate to clean. If using a gas grill, turn heat down to medium. A charcoal grill should be at the tail end of medium-high and headed toward medium at this point, but wait a few minutes if needed. Grill mushrooms, turning halfway through and moving around as needed to avoid flare-ups, until golden all over with lightly charred edges, 68 minutes for small pieces and 810 minutes for large ones. Return to bowl (slide off of skewers if needed). Add Pecorino salsa verde and toss to combine. Spoon mushroom mixture over grilled bread.",
-        "image": "img_153.png",
-        "rating": 3
+        "image": "153.png",
+        "rating": 3,
+        "preptime": 35
     },
     {
         "ID": 154,
         "name": "Hickory-Smoked Baby Back Ribs",
-        "genre": [
-            "Meal",
-            "Western"
-        ],
+        "genre": ["Meal","Western"],
+        "description": "Traditional smokey flavored baby back ribs",
         "ingredients": "['5 Tbsp (75 mL) packed brown sugar', '3 Tbsp (45 mL) kosher salt', '2 Tbsp (30 mL) sweet smoked paprika 4 tsp (20 mL) ancho chili powder', '1 Tbsp (15 mL) paprika', '1 Tbsp (15 mL) onion powder', '1 Tbsp (15 mL) freshly cracked black pepper 2 tsp (10 mL) dried thyme leaves', '6 racks baby back ribs, about 6 lb (2.7 kg)', '4 medium chunks hickory wood, soaked in water for at least 2 hours (if using a charcoal grill) or 4 cups (1 L) hickory wood chips, soaked in water for at least 2 hours (if using a gas grill)', '34 cup (185 mL) apple cider', '12 cup (125 mL) ketchup', '3 Tbsp (45 mL) red wine vinegar', '1 Tbsp (15 mL) Dijon mustard', '2 tsp (10 mL) light soy sauce', '1 tsp (5 mL) Worcestershire sauce', '1 tsp (5 mL) molasses', '12 tsp (2 mL) ancho chili powder', '12 tsp (2 mL) ground cumin', '12 tsp (2 mL) minced garlic', '14 tsp (1 mL) freshly ground black pepper']",
         "instructions": "For the ribs, stir together the sugar, salt, smoked paprika, chili powder, regular paprika, onion powder, black pepper and thyme. Set aside.\nWith a small, sharp knife, release the edge of the membrane on the back of each rack of ribs. Grasp the edge with needle-nose pliers or a piece of paper towel and peel the membrane off the rack. (If you leave the membrane on, the ribs will be chewy.)\nSpread the dry rub all over each rack of ribs until completely coated. Make sure you press the dry rub into the meat. This is where your flavor is going to come from. Arrange the ribs in a rib rack, with all the racks facing the same direction. A rib rack has 8 slab compartments, looks like a rack of coat hangers and can be purchased at most barbecue stores.\nFire up your charcoal grill and prep the grill for cooking over indirect heat. You need a low temperature of around 250 to 300F (120 to 150C) to grill the ribs. For gas grills, preheat the grill to low then turn off one side of the grill to achieve indirect heat. Place a drip tray on the cooler side of the grate and half fill the pan with warm water or the beer of your choice.\nDrain 2 chunks of hickory, place them on top of the charcoal and set the grate in place. For gas barbecues, place half of the hickory chips in a foil pouch and place the pouch directly on the heated side of the grill. Wait for the hickory to start to smoke.\nPlace the rib racks over indirect heat as far from the heat as possible, with the bone sides facing toward the heat. Close the lid and close the top vent on a charcoal grill about halfway. This will maintain a temperature between 250 and 300F (120 and 150C). Cook the ribs for 2 hours.\nOnce the ribs are on, its time to start working on the barbecue sauce. If you have a side burner this can be done outside. If you dont, go inside and use your stove top to simmer your sauce. Combine all the ingredients in a small saucepan set over medium heat. Simmer for 20 to 30 minutes or until the sauce reaches a glaze consistency. Remove the saucepan from the heat and set aside to cool.\nThe first batch of charcoal should be cooling down after 2 hours. Now is the time to use your chimney starter and get another batch of charcoal lit. Add the remaining wood chunks to the coals to get a little more smoke. If using a gas grill, wrap the remaining chips in foil and place directly on the hotter side of the grate. Close the lid and grill for another 2 hours. Make sure to come back every hour on the hour to check the temperature and to add more charcoal, if necessary. In the last hour of grilling, your ribs will start to show signs of cooking all the way through. When the meat pulls back from the bone, the ribs are almost ready. Baste the ribs with the barbecue sauce during the last 5 to 10 minutes of cooking. I like to tent my ribs before serving, so take them off the grill and let them rest, loosely covered with foil, for 10 minutes.",
-        "image": "img_154.png",
-        "rating": 1
+        "image": "154.png",
+        "rating": 1,
+        "preptime": 120
     },
     {
         "ID": 155,
         "name": "Grilled Watermelon Salad With Lime Mango Dressing and Cornbread Croutons",
-        "genre": [
-            "Meal",
-            "Soul"
-        ],
+        "genre": ["Meal","Soul"],
+        "description": "An interesting twist on classic summer fruit",
         "ingredients": "['.5 cup coarsely chopped ripe mango', '.25 cup fresh lime juice', '.25 cup dry sake', '2 tablespoons champagne vinegar', '1 teaspoon minced seeded birds-eye chile', '.5 teaspoon kosher salt', '.25 cup canola oil', '3 pounds seedless watermelon, peel left on, cut into 1-inch-thick slabs', 'Olive oil', 'Kosher salt', '.5 cup hulled pumpkin seeds', '.25 teaspoon ground cayenne', '1 teaspoon sugar', '4 cups 1-inch cubes homemade or store-bought cornbread', '2 tablespoons unsalted butter, melted', '8 fresh shiso leaves, shredded (or Thai basil or mint)', '.5 cup dates, pitted and chopped', '1 serrano chile, sliced into rings', 'Freshly ground black pepper', '.5 cup ricotta or mascarpone']",
         "instructions": "Put all of the ingredients except the oil in a blender. Blend on high. After the ingredients are blended, slowly add the oil and continue to blend until the mixture is thickened and emulsified. (Makes 1 cup.)\nHeat a grill pan to medium-high heat. Drizzle the watermelon slices with just enough oil to thinly coat and place them on the hot grill.\nGrill each side of the watermelon slices for about 2 minutes, until charred. Transfer to a plate and season with salt.\nRemove the rind and dice the grilled watermelon into large cubes.\nPreheat the oven to 350F. Toss the pumpkin seeds with the cayenne, sugar, and 2 teaspoons oil and place on a small baking sheet. Roast for 6 to 10 minutes, until golden.\nBrush the cornbread cubes with the melted butter and place in a single layer on a baking sheet. Put in the oven along with the pumpkin seeds and bake for 10 minutes, turning halfway with a flexible spatula. Remove from the oven when the croutons are toasted and golden.\nToss the watermelon, shiso, dates, and chile in the bowl with .25 cup Lime Mango Dressing (reserve remaining dressing for another use). Taste and adjust the seasoning with salt and pepper. Add the cornbread croutons and toss very gently to combine without breaking the croutons. Spoon the salad onto a large platter and garnish with the pumpkin seeds and cheese.",
-        "image": "img_155.png",
-        "rating": 5
+        "image": "155.png",
+        "rating": 4,
+        "preptime": 50
     },
     {
         "ID": 156,
