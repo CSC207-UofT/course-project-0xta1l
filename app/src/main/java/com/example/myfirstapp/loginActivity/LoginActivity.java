@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         setTitle("Login");
         Read read = new Read();
         read.populateUserSecurity(userSecurity -> Constants.USERSECURITY = userSecurity);
-        //read.populateGenreLibrary(genreLibrary -> Constants.GENRELIBRARY = genreLibrary);
+        read.populateGenreLibrary(genreLibrary -> Constants.GENRELIBRARY = genreLibrary);
 
     }
     public void onSignUp(View view) {

@@ -109,42 +109,48 @@ public class Read {
         return populatedGenreLibrary[0];
     }
 
-    /*
-    note: dataSnapshot must be mRecipeRef
+    /**
+     * note: dataSnapshot must be mRecipeRef
      */
-    @RequiresApi(api = Build.VERSION_CODES.N)
     private static GenreLibrary fillGenreLibrary(DataSnapshot dataSnapshot) {
         // Create empty GenreLibrary object
-        GenreLibrary recipeGenreLibrary = new GenreLibrary();
-
+        GenreLibrary genreLibrary = new GenreLibrary();
         // Loop through all the recipes in the database
-        for(DataSnapshot ds : dataSnapshot.getChildren()){
-
-            // TODO: figure out how to input a genre string and what that means
-            // Add a recipe from the database to the GenreLibrary object
+        for (DataSnapshot ds : dataSnapshot.getChildren()) {
             Recipe recipe = readRecipe(ds);
-            recipeGenreLibrary.addRecipes("filler string", recipe);
+//            System.out.println(recipe.getName());
+
+            // Add each recipe to recipeGenreLibrary
+            for(String genre: recipe.getGenre()){
+                genreLibrary.addRecipes(genre, recipe);
+            }
+
         }
-
-        return recipeGenreLibrary;
+        return genreLibrary;
     }
-
-    @RequiresApi(api = Build.VERSION_CODES.N)
+    /**
+     * @param singleRecipeRef
+     * @return
+     */
     public static Recipe readRecipe(DataSnapshot singleRecipeRef) {
         // Read recipe attributes from singleRecipeRef
         int recipeID = singleRecipeRef.child("id").getValue(Integer.class);
         String recipeDescription = singleRecipeRef.child("description").getValue(String.class);
-        // TODO: add genre values to our recipes in the database and add them
+
+
         ArrayList<String> recipeGenres = new ArrayList<>();
+        DataSnapshot recipeGenreListDatabase = singleRecipeRef.child("genre");
+        for (DataSnapshot genre : recipeGenreListDatabase.getChildren()) {
+            recipeGenres.add(genre.getValue(String.class));
+        }
+
         String recipeImage = singleRecipeRef.child("image").getValue(String.class);
         String recipeIngredients = singleRecipeRef.child("ingredients").getValue(String.class);
         String recipeInstructions = singleRecipeRef.child("instructions").getValue(String.class);
         String recipeName = singleRecipeRef.child("name").getValue(String.class);
-        int recipePreptime = 60;
-        if (!(singleRecipeRef.child("preptime").getValue() == null)){
-            recipePreptime = singleRecipeRef.child("preptime").getValue(Integer.class);
-        }
-        int recipeRating = singleRecipeRef.child("rating").getValue(Integer.class);
+
+        int recipePreptime = recipePrepReader(singleRecipeRef);
+        int recipeRating = recipeRatingReader(singleRecipeRef);
 
         // Construct and return a new recipe
         Recipe recipe = new Recipe(recipeInstructions, recipeIngredients,
@@ -152,5 +158,43 @@ public class Read {
                 recipeDescription, recipePreptime);
 
         return recipe;
+    }
+
+    private static int recipePrepReader(DataSnapshot singleRecipeRef) {
+
+        // Check if the recipe from the database has a valid prep time attribute.
+        // If it does, return the prep time attribute value.
+        if (singleRecipeRef.child("prep time").exists()) {
+            Object recipePrepHolder = singleRecipeRef.child("preptime").getValue();
+
+            if (recipePrepHolder instanceof Integer) {
+                return (Integer) recipePrepHolder;
+
+            }
+        }
+
+        // If no eligible value for prep time exists, return default value of 60 minutes.
+        return 60;
+
+
+    }
+
+    private static int recipeRatingReader(DataSnapshot singleRecipeRef) {
+
+        // Check if the recipe from the database has a valid rating attribute.
+        // If it does, return the rating attribute value.
+        if (singleRecipeRef.child("rating").exists()) {
+            Object recipeRatingHolder = singleRecipeRef.child("rating").getValue();
+
+            if (recipeRatingHolder instanceof Integer) {
+                return (Integer) recipeRatingHolder;
+
+            }
+        }
+
+        // If no eligible value for rating exists, return default value of 60 minutes.
+        return 60;
+
+
     }
 }
