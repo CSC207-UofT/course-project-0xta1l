@@ -38,7 +38,6 @@ public class UserSecurity {
     public void addUser(User user) {
         UsernameList.put(user.getUsername(), user);
         UserPassword.put(user.getUsername(), user.getPassword());
-        Create.createUser(user);
     }
 
     public void changePassword(String username, String password){
@@ -58,7 +57,7 @@ public class UserSecurity {
         user.setUsername(newUsername);
         this.UsernameList.remove(username);
         this.UsernameList.put(newUsername, user);
-        Update.userProfile(username, newUsername, "username");
+        Update.username(newUsername, user);
     }
 
     public void changeBio(String username, String bio) {

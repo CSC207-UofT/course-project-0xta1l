@@ -15,6 +15,8 @@ public class RecipeReviewAdd {
         else{
             review.saveToUser(username, recipeID, review);
             review.saveToRecipe(recipeID, username, review);
+            Update.reviewCreated(review);
+            Update.recipeRating(Constants.GENRELIBRARY.getRecipeByID("All", recipeID));
             return true;
         }
     }

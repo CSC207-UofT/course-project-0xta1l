@@ -24,6 +24,8 @@ public class RecipeSave {
         }
         else {
             user.addSavedRecipes(recipe);
+            Update.recipesSaved(user);
+            Update.userGenreWeights(user);
             return true;
         }
     }
@@ -40,6 +42,8 @@ public class RecipeSave {
         ArrayList<Recipe> recipeList = user.getSavedRecipes();
         if (recipeList.contains(recipe)){
             user.removeSavedRecipes(recipe);
+            Update.recipesSaved(user);
+            Update.userGenreWeights(user);
             return true;
         }
         else {

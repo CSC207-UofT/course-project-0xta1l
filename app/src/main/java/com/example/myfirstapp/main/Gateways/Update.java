@@ -91,9 +91,21 @@ public class Update {
         userRef.setValue(property);
     }
 
+    public static void username(String newUsername, User user){
+        DatabaseReference userRef = database.getReference("users/"+user.getUsername());
+        userRef.removeValue();
+        DatabaseReference newUserRef = database.getReference("users/"+newUsername);
+        newUserRef.setValue(user);
+    }
+
     // updates user genre weights (to be used after saving recipe, adding/deleting interests)
     public static void userGenreWeights(String username, Map<String, Double> genreWeights){
         DatabaseReference userRef = database.getReference("users/"+username+"/genreWeights");
         userRef.setValue(genreWeights);
+    }
+
+    public static void userGenreWeights(User user){
+        DatabaseReference userRef = database.getReference("users/"+user.getUsername()+"/genreWeights");
+        userRef.setValue(user.getGenreWeights());
     }
 }
