@@ -2164,10 +2164,12 @@
 			"Fusion",
 			"Vegetarian"
 		],
+		"description": "Warm, crispy, and sweet plantain chips.",
 		"ingredients": "['2 tablespoons sunflower oil or other neutral oil', '4 medium shallots, finely chopped', '3 Scotch Bonnet chiles, or to taste, cored, seeded, and finely chopped (see Note)', '3 garlic cloves, chopped', '1 (.25-inch) piece fresh turmeric, peeled and finely chopped, or 1 teaspoon ground turmeric', '.25 cup chopped fresh mango', '.25 teaspoon sea salt, plus more to taste', '.25 cup sugarcane vinegar or apple cider vinegar', '.25 cup orange juice', '1 cup sour cream', '.5 teaspoon lime zest', '1 tablespoon fresh lime juice', '1 teaspoon sea salt', 'Vegetable oil, for frying', '6 green plantains', 'Sea salt and freshly ground black pepper']",
 		"instructions": "Make the mango hot sauce: Heat the oil in a medium pan over low heat. Add the shallots, chiles, garlic, turmeric, and mango and saute for 5 to 7 minutes, until the aromatics start to soften. Add the salt, vinegar, and .5 cup water. Stir to combine, then cover and simmer until the aromatics are completely softened and the liquid thickens slightly, about 10 minutes.\nTransfer the mixture to a blender and blend until smooth. Stir in the orange juice and season with more salt to taste. Transfer the hot sauce to a resealable glass jar and refrigerate until ready to use. (The hot sauce will keep for up to 2 weeks.)\nMake the lime sour cream: In a medium bowl, stir together the sour cream, lime zest and juice, and salt. Refrigerate until ready to serve.\nMake the plantains: Fill a large Dutch oven or heavy-bottomed pot about two-thirds of the way with vegetable oil. Heat over medium heat until the oil reaches 375F.\nWith a very sharp knife, peel the plantains, then slice lengthwise about  inch thick. Working in batches, fry the plantains in the hot oil, flipping occasionally, until golden brown on both sides, 4 to 6 minutes. Using a slotted spoon, transfer to a paper towellined plate to drain. Season with salt and pepper.\nServe the fried plantains with the mango hot sauce and lime sour cream for dipping.",
 		"image": "img_156.png",
-		"rating": 4
+		"rating": 4,
+		"preptime": 40
 	},
 	{
 		"ID": 157,
@@ -2179,10 +2181,12 @@
 			"Southern",
 			"Vegetarian"
 		],
+		"description": "A salty side that tastes great hot or cold.",
 		"ingredients": "['5 tablespoons unsalted butter, melted and cooled slightly, plus more for greasing', '2 large eggs, beaten', ' cup sugar', '.5 cup whole milk', '.25 cup heavy cream', '.75 cup sour cream', '.5 cup all-purpose flour', '.5 cup coarse yellow cornmeal', '1 teaspoon kosher salt', ' teaspoon white pepper', ' teaspoon paprika', ' teaspoon baking soda', '.25 cup chopped yellow onion', '.5 cup chopped celery', '1 pound fresh corn kernels, cut from 4 cobs', '1 cup shredded cheddar cheese', '1 cup butter cracker crumbs, such as Ritz']",
 		"instructions": "Set a rack in the lower third of the oven. Preheat the oven to 350F. Grease a 9 by 13-inch casserole dish with butter, making sure to get in all the corners and sides of the dish.\nIn a medium bowl, whisk together the eggs and sugar until well combined. Add the melted butter, milk, heavy cream, and sour cream and whisk to incorporate.\nIn a large bowl, whisk together the flour, cornmeal, salt, pepper, paprika, and baking soda.\nUsing a spatula, fold the wet ingredients, 1 cup at a time, into the dry ingredients until well combined.\nFold in the onion, celery, corn, and cheese.\nPour the batter into the prepared baking dish and sprinkle the cracker crumbs on top. Bake the pudding for 30 to 40 minutes, rotating halfway through, until lightly browned on top and the tip of a knife inserted in the center comes out clean.",
 		"image": "img_157.png",
-		"rating": 3
+		"rating": 3,
+		"preptime": 60
 	},
 	{
 		"ID": 158,
@@ -2191,10 +2195,12 @@
 			"Appetizer",
 			"Vegetarian"
 		],
+		"description": "A lovely summer salad that won't wilt",
 		"ingredients": "['2 garlic cloves, grated on a Microplane', '2 tablespoons apple cider vinegar', '1 tablespoon yellow mustard', '1 tablespoon hot sauce', '1 teaspoon honey', 'Kosher salt and freshly ground black pepper', '6 tablespoons vegetable oil', '1 (15-ounce) can black-eyed peas, rinsed and drained', '2 mini cucumbers, cut into .5-inch dice', '.5 sweet onion, finely chopped', '1 pint cherry tomatoes or grape tomatoes, halved', '.25 cup picked fresh dill']",
 		"instructions": "Whisk the garlic, vinegar, mustard, hot sauce, honey, 1/4 teaspoon salt, and .25 teaspoon pepper in a large bowl until smooth. While whisking, add the oil in a slow, steady stream. Whisk until emulsified.\nAdd the peas, cucumbers, onion, tomatoes, dill, and 1/2 teaspoon salt. Toss until well mixed. You can serve this right away or let it sit at room temperature for up to 1 hour.\nDO AHEAD: The salad can be refrigerated for up to 1 day.",
 		"image": "img_158.png",
-		"rating": 1
+		"rating": 1,
+		"preptime": 50
 	},
 	{
 		"ID": 159,
@@ -2203,10 +2209,12 @@
 			"Meal",
 			"Caribbean"
 		],
+		"description": "Flavourful chicken.",
 		"ingredients": "['1 teaspoon vegetable oil', '4 large bone-in, skin-on chicken thighs (1.5 pounds)', 'Kosher salt and freshly ground black pepper', '6 large sprigs thyme', '2 large onions, thinly sliced', '2 garlic cloves, chopped', '1 habanero chile, slit', '1 cup light coconut milk', 'Zest and juice of 1 large lime, plus wedges for serving', '1/2 teaspoon mild yellow curry powder']",
 		"instructions": "Heat the oil in a shallow Dutch oven or casserole with a lid over high heat.\nSeason the chicken generously with salt and pepper and add to the hot oil, skin side down. Sear, flipping once, until browned on both sides and the fat renders, about 5 minutes.\nPush the chicken to one side of the pan, add the thyme and onions to the other side, and reduce the heat to medium-low.\nCook, stirring, until the onions get some color, about 4 minutes. Add the garlic, chile, .5 teaspoon salt, and .5 teaspoon pepper. Cook, stirring, for 1 minute, then add the coconut milk and .25 cup water. Bring to a boil, stirring.\nArrange the chicken in a single layer skin side up and surround with the onion mixture. The skin should be just above the liquid line. Cover and simmer until the chicken is cooked through, about 20 minutes.\nUncover and stir in the lime juice. Simmer uncovered until the sauce thickens, about 5 minutes. Stir in the curry powder and lime zest.\nServe immediately with lime wedges.\nDO AHEAD: The cooked chicken can be refrigerated for up to 3 days.",
 		"image": "img_159.png",
-		"rating": 4
+		"rating": 30,
+		"preptime": 60
 	},
 	{
 		"ID": 160,
@@ -2215,10 +2223,12 @@
 			"Appetizer",
 			"Vegetarian"
 		],
+		"description": "A lovely sweet summer salad.",
 		"ingredients": "['Kosher salt and freshly ground black pepper', '1 bunch red radishes, cut into -inch slices', '2 tablespoons red wine vinegar', '4 teaspoons extra-virgin olive oil', '.5 red onion, cut into thin slivers', '4.5 pounds watermelon (1/4 of a large melon), rind removed, flesh cut into 1-inch cubes', '2 tablespoons torn mint leaves']",
 		"instructions": "Dissolve a spoonful of salt in a large bowl of ice and water. Add the radishes and let sit for a few minutes to crisp.\nWhisk the vinegar, oil, and 1 teaspoon salt in a large bowl. Drain the radishes and add to the bowl, along with the onion and watermelon.\nGently toss with your hands to coat evenly.\nSpread on a serving platter, grind pepper all over, and top with the mint.",
 		"image": "img_160.png",
-		"rating": 1
+		"rating": 1,
+		"preptime": 30
 	},
 	{
 		"ID": 161,
@@ -2228,10 +2238,12 @@
 			"Western",
 			"BBQ"
 		],
+		"description": "A sweet and smoky side dish.",
 		"ingredients": "['.25 pound thick-cut bacon, diced', '.5 large onion, chopped', '1 red bell pepper, chopped', '3 16-ounce cans kidney beans', '.5 cup brown sugar', '3 tablespoons ketchup', '3 tablespoons apple cider vinegar', '3 tablespoons maple syrup', '3 tablespoons molasses', '3 tablespoons yellow mustard', '1 tablespoon hot sauce', '2 teaspoons Creole seasoning']",
 		"instructions": "Preheat grill to high.\nPlace a large Dutch oven or cast-iron pot over direct heat and cook bacon until fat has begun to render. Add onion and red pepper and cook until they begin to soften, about 3-5 minutes. Add the beans, including canning liquid, and bring to a simmer.\nAdd brown sugar, ketchup, apple cider vinegar, maple syrup, molasses, mustard, hot sauce, and Creole seasoning and stir to combine. Close the lid and cook the beans until the liquid has thickened, about 60 minutes. Cover the pot and move to the cooler side of the grill, then cook for another 20-30 minutes or until desired tenderness.",
 		"image": "img_161.png",
-		"rating": 5
+		"rating": 5,
+		"preptime": 200
 	},
 	{
 		"ID": 162,
@@ -2242,10 +2254,12 @@
 			"Pie",
 			"Vegetarian"
 		],
+		"description": "A quick and easy pie.",
 		"ingredients": "['2.5 cups graham cracker crumbs', '12 tablespoons (1.5 sticks) unsalted butter, melted', '.25 cup sugar', '3 large eggs, separated', 'Juice of 3 lemons', '1 (14-ounce) can sweetened condensed milk', '1 teaspoon cream of tartar', '3 tablespoons sugar']",
 		"instructions": "Preheat the oven to 300F. In a medium bowl, combine the graham cracker crumbs, melted butter, and sugar until the crumbs are evenly moistened. Press the mixture into the bottom and sides of a 9-inch pie tin.\nCover and chill the egg whites. In a medium bowl, combine the egg yolks, lemon juice, and condensed milk. Mix well and pour over the graham cracker crust.\nBake until stiff, about 30 minutes. Let cool to room temperature, then chill for at least 3 hours or up to overnight.\nWhen ready to assemble the pie, preheat the oven to 350F.\nIn the bowl of a stand mixer fitted with the whisk attachment, beat the egg whites and cream of tartar on high speed. With the mixer running, gradually add the sugar and beat until stiff peaks form.\nSpread the meringue over the pie filling.\nBake until the meringue is golden brown, about 12 minutes. Let cool for 30 minutes, then chill for 30 minutes before serving.",
 		"image": "img_162.png",
-		"rating": 5
+		"rating": 5,
+		"preptime": 90
 	},
 	{
 		"ID": 163,
@@ -2256,10 +2270,12 @@
 			"American",
 			"Southern"
 		],
+		"description": "An easy one-pot seafood dinner.",
 		"ingredients": "['12 to 14 cups water, fish stock, or seafood stock', '4 bay leaves', '.25 cup plus 2 tablespoons Old Bay seasoning', '1 cup chopped celery', '1 cup chopped onions', '.5 cup whole peeled garlic cloves', '3 whole birds-eye chiles', '1 pound small red potatoes, scrubbed, or 6 purple yams, cut into 2-inch chunks', '1 pound smoked hot sausage links or chicken sage sausage, cut into 2-inch pieces', '6 ears corn, shucked and quartered', '2 pounds shell-on large shrimp', '2 pounds shelled scallops', '1 cup dry white wine', 'Salt and pepper', 'Coarsely chopped fresh cilantro, for garnish']",
 		"instructions": "In a large stockpot, combine 12 cups of the water or stock, the bay leaves, Old Bay, celery, onions, garlic, and chiles and bring to a boil over high heat. Add the potatoes and cook until tender, about 15 minutes.\nAdd the sausage and cook until heated through, about 5 minutes. Add the corn and cook until just tender, about 3 minutes. Stir in the shrimp, scallops, and wine and cook until the shrimp are cooked through, about 4 minutes. Season with salt and pepper and pour the stew into a large serving bowl. For more casual gatherings, serve directly from the pot on the stove. Garnish each serving with cilantro and serve immediately.",
 		"image": "img_163.png",
-		"rating": 3
+		"rating": 3,
+		"preptime": 40
 	},
 	{
 		"ID": 164,
