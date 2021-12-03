@@ -15,6 +15,7 @@ public class RecipeReviewAdd {
         else{
             review.saveToUser(username, recipeID, review);
             review.saveToRecipe(recipeID, username, review);
+            Update.reviewCreated(review);
             return true;
         }
     }
