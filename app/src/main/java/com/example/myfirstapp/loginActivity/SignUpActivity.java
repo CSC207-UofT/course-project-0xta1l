@@ -10,8 +10,11 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
+import com.example.myfirstapp.loginActivity.LoginActivity;
 import com.example.myfirstapp.main.Gateways.Constants;
+import com.example.myfirstapp.main.Controllers.UserRequestBrowse;
 import com.example.myfirstapp.main.Controllers.UserRequestCreateLogin;
 
 import java.util.ArrayList;
