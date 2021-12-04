@@ -12,16 +12,28 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
+import com.example.myfirstapp.genreActivity.GenreItemActivity;
+import com.example.myfirstapp.genreActivity.GenreRecipeItemActivity;
+import com.example.myfirstapp.main.Gateways.Constants;
+import com.example.myfirstapp.main.Controllers.UserRequestBrowse;
+import com.example.myfirstapp.main.Controllers.UserRequestFilter;
 import com.example.myfirstapp.main.Controllers.UserRequestRecommend;
 import com.example.myfirstapp.main.Entities.Preview;
+import com.example.myfirstapp.main.Entities.Recipe;
+import com.example.myfirstapp.main.Entities.User;
+import com.example.myfirstapp.myRecipeActivity.MyRecipeFragment;
+import com.example.myfirstapp.myRecipeActivity.RecipeItemActivity;
 
 import java.util.ArrayList;
 
@@ -61,7 +73,7 @@ public class HomeFragment extends Fragment {
     @RequiresApi(api = Build.VERSION_CODES.N)
     public static ArrayList<Preview> getRecommendedRecipes() {
         UserRequestRecommend recommendController = new UserRequestRecommend();
-        ArrayList<Preview> recipes = recommendController.recommendRecipes(Globals.getUser_username(), 2);
+        ArrayList<Preview> recipes = recommendController.recommendRecipes(Globals.getUser_username(), 1);
         return recipes;
     }
 

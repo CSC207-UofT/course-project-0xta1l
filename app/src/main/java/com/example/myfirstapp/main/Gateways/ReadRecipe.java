@@ -53,15 +53,11 @@ public class ReadRecipe {
         // Check if the recipe from the database has a valid rating attribute.
         // If it does, return the rating attribute value.
         if (singleRecipeRef.child("rating").exists()) {
-            Object recipeRatingHolder = singleRecipeRef.child("rating").getValue();
-
-            if (recipeRatingHolder instanceof Integer) {
-                return (Integer) recipeRatingHolder;
-
-            }
+            Object recipeRatingHolder = singleRecipeRef.child("rating").getValue(Integer.class);
+            return (Integer) recipeRatingHolder;
         }
 
-        // If no eligible value for rating exists, return default value of 60 minutes.
+        // If no eligible value for rating exists, return default value of 3.
         return 3;
 
 

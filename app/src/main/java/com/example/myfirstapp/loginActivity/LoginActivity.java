@@ -48,8 +48,6 @@ public class LoginActivity extends AppCompatActivity {
 
         ConstraintLayout constraintLayout = findViewById(R.id.loginPage);
 
-        Create.testRecipe();
-
         // ensure user is in UserSecurity
         if (Constants.USERSECURITY.getUsernames().containsKey(username)){
             User user = Constants.USERSECURITY.getUserByID(username);

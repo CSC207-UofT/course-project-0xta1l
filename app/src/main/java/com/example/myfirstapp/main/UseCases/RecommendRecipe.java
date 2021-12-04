@@ -16,20 +16,17 @@ public class RecommendRecipe {
          */
         HashMap<String, Double> genreWeights = user.getGenreWeights();
         ArrayList<String> sortedGenres = sortByWeight(genreWeights);
-        System.out.println(sortedGenres);
+
         String bestGenre = "All";
         if (sortedGenres.size() > 0){
             bestGenre = sortedGenres.get(0);
         }
         ArrayList<Preview> sortedRecipes = getSortedPreviewsFromGenre(bestGenre);
         ArrayList<Preview> recommendations = new ArrayList<>();
-        System.out.println(sortedRecipes.size());
-        if (sortedRecipes.size() > recsNum){
+        if (sortedRecipes.size() >= recsNum){
             for (int i = 0; i < recsNum; i++) {
                 recommendations.add(sortedRecipes.get(i));
             }
-
-            System.out.println(recommendations);
             return recommendations;
         }
         else
@@ -50,7 +47,7 @@ public class RecommendRecipe {
         }
 
         int remainder = rest - numAdded;
-        if(genreNum < genres.size()-1) {
+        if(genres.size()!= genreNum+1 && remainder>0) {
             ArrayList<Preview> previews2 = getSortedPreviewsFromGenre(genres.get(genreNum + 1));
 
             if (remainder > previews2.size()) {
@@ -71,12 +68,16 @@ public class RecommendRecipe {
          * @param genre is the genre whose recipes are needed to be sorted
          * @return a list of recipe previews from highest to lowest rating
          */
+        System.out.println("Genre is" +genre);
+        System.out.println(Constants.GENRELIBRARY.getAllRecipes(genre).size());
         HashMap<Integer, Recipe> recipesWithID = Constants.GENRELIBRARY.getAllRecipes(genre);
         ArrayList<Recipe> recipes = new ArrayList<>(recipesWithID.values());
+
         ArrayList<Preview> previews = new ArrayList<>();
         for (Recipe recipe : recipes) {
             previews.add(recipe.getPreview());
         }
+
         SortByRating s = new SortByRating(previews);
         return s.sort();
     }
