@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/justi/OneDrive/Desktop/GitHub/android_app_recipe/app/src/main/res/layout/activity_recipe_item.xml" value="0.3666666666666667" />
+        <entry key="app/src/main/res/layout/activity_genre_item.xml" value="0.13179347826086957" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.13179347826086957" />
+        <entry key="app/src/main/res/layout/fragment_my_recipe.xml" value="0.13179347826086957" />
       </map>
     </option>
   </component>
