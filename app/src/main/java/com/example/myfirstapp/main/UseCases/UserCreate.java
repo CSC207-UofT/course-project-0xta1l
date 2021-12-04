@@ -1,6 +1,7 @@
 package com.example.myfirstapp.main.UseCases;
-import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.User;
+import com.example.myfirstapp.main.Gateways.Create;
 
 import java.util.ArrayList;
 
@@ -20,8 +21,9 @@ public class UserCreate {
         if (Constants.USERSECURITY.getUsernames().containsKey(username)){
             return false;
         } else{
-            User new_user = new User(username, password, displayName, age, biography, interests);
-            Constants.USERSECURITY.addUser(new_user);
+            User newUser = new User(username, password, displayName, age, biography, interests);
+            Constants.USERSECURITY.addUser(newUser);
+            Create.createUser(newUser);
             return true;
         }
     }

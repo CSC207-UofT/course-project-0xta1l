@@ -11,9 +11,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
+import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.loginActivity.LoginActivity;
-import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Controllers.UserRequestBrowse;
 import com.example.myfirstapp.main.Controllers.UserRequestCreateLogin;
 
@@ -64,7 +65,7 @@ public class SignUpActivity extends AppCompatActivity {
                         } else {
                             // when checkbox unselected
                             // Remove position from langList
-                            interestList.remove(i);
+                            interestList.remove(Integer.valueOf(i));
                         }
                     }
                 });
@@ -161,8 +162,7 @@ public class SignUpActivity extends AppCompatActivity {
         if(password.equals(confirm)){
             startActivity(intent);
         } else{
-            // TODO: Put a display message
-            System.out.println("Retype Password");
+            Notification.displaySnackBar(view.findViewById(R.id.signupPage), "Retype Password");
         }
         //startActivity(intent);
     }

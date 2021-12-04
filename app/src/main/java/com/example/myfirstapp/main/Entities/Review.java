@@ -1,5 +1,5 @@
 package com.example.myfirstapp.main.Entities;
-import com.example.myfirstapp.main.Constants.*;
+import com.example.myfirstapp.main.Gateways.Constants;
 
 public class Review {
     // NOTE: NOT USED IN SKELETON MODEL
