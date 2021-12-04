@@ -12,15 +12,8 @@ import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.genreActivity.GenreRecipeItemActivity;
-import com.example.myfirstapp.genreActivity.GenreRecipeItemReviewActivity;
-import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Controllers.UserRequestSaveRecipe;
 import com.example.myfirstapp.main.Entities.Recipe;
-import com.example.myfirstapp.main.Entities.User;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class RecipeItemActivity extends AppCompatActivity {
 

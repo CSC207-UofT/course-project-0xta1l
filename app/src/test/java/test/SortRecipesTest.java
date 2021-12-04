@@ -1,9 +1,7 @@
 package test;
 
-import com.example.myfirstapp.main.Constants.Constants;
 import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.Recipe;
-import com.example.myfirstapp.main.UseCases.SortByRating;
 import com.example.myfirstapp.main.UseCases.SortRecipes;
 import org.junit.*;
 

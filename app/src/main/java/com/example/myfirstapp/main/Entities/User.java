@@ -4,7 +4,7 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import com.example.myfirstapp.main.Constants.*;
+import com.example.myfirstapp.main.Gateways.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -45,22 +45,41 @@ public class User {
         this.username = username;
         this.biography = bio;
         this.interests = interests;
-        updateGenreWeights(this.interests);
+        initializeGenreWeights(this.interests);
+    }
+
+    /* Updates GenreWeights to match interests */
+    private void initializeGenreWeights(ArrayList<String> interests) {
+        for (String interest: interests){
+            if (!this.GenreWeights.containsKey(interest)){
+                this.GenreWeights.put(interest, 0.70);
+            }
+        }
+        for (String genre: Constants.GENRELIBRARY.getAllGenres()){
+            if (!this.GenreWeights.containsKey(genre)){
+                this.GenreWeights.put(genre, 0.0);
+            }
+        }
+
     }
 
     /* Updates GenreWeights to match interests */
     private void updateGenreWeights(ArrayList<String> interests) {
         for (String interest: interests){
-            // Does not override previous interests data
-            if (!this.GenreWeights.containsKey(interest)){
-                this.GenreWeights.put(interest, 0.70);
-            }
+            this.GenreWeights.put(interest, 0.70);
         }
     }
 
+    private void deleteGenreWeights(String deleted) {
+        this.GenreWeights.put(deleted, (this.GenreWeights.get(deleted) - 0.70));
+    }
+
+    public void updateGenreWeight(String genre, Double weight) {
+        this.GenreWeights.put(genre, weight);
+    }
+
     /* Updates GenreWeights when a recipe is saved */
-    private void updateGenreWeights(Integer recipeID) {
-        Recipe recipe = Constants.GENRELIBRARY.getRecipeByID("All", recipeID);
+    private void updateGenreWeights(Recipe recipe) {
         ArrayList<String> recipeGenre = recipe.getGenre();
         for (String genre: recipeGenre){
             if (!genre.equals("All") && !genre.equals("Meal") && !genre.equals("Appetizer")) {
@@ -80,6 +99,7 @@ public class User {
     private void updateGenreWeights(String genre) {
         this.GenreWeights.put(genre, 0.0);
     }
+
     public void updateGenreWeightsTest5(String genre) {this.GenreWeights.put(genre, 0.5);}
     public void updateGenreWeightsTest3(String genre) {this.GenreWeights.put(genre, 0.3);}
     public void updateGenreWeightsTest2(String genre) {this.GenreWeights.put(genre, 0.2);}
@@ -137,14 +157,14 @@ public class User {
     }
     public void deleteInterests(String interest) {
         this.interests.remove(interest);
-        this.updateGenreWeights(interest);
+        this.deleteGenreWeights(interest);
     }
 
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void addSavedRecipes(Recipe recipe) {
         SavedRecipes.add(recipe);
-        updateGenreWeights(recipe.getID());
+        updateGenreWeights(recipe);
     }
 
     public void addSavedReviews(int reviewID, Review review) {

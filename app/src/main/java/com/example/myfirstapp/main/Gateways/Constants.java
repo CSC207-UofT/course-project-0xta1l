@@ -1,4 +1,4 @@
-package com.example.myfirstapp.main.Constants;
+package com.example.myfirstapp.main.Gateways;
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.Review;

@@ -2,7 +2,8 @@ package com.example.myfirstapp.main.UseCases;
 
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.main.Constants.*;
+import com.example.myfirstapp.main.Gateways.Constants;
+import com.example.myfirstapp.main.Gateways.Update;
 
 import java.util.ArrayList;
 
@@ -24,6 +25,8 @@ public class RecipeSave {
         }
         else {
             user.addSavedRecipes(recipe);
+            Update.recipesSaved(user);
+            Update.userGenreWeights(user);
             return true;
         }
     }
@@ -38,12 +41,16 @@ public class RecipeSave {
         Recipe recipe = Constants.GENRELIBRARY.getRecipeByID("All", recipeID);
 
         ArrayList<Recipe> recipeList = user.getSavedRecipes();
-        if (recipeList.contains(recipe)){
-            user.removeSavedRecipes(recipe);
-            return true;
+        System.out.println(recipeList.toString());
+        for (Recipe savedRecipe: recipeList){
+            if (savedRecipe.getID() == recipeID){
+                user.removeSavedRecipes(savedRecipe);
+                Update.recipesSaved(user);
+                Update.userGenreWeights(user);
+                return true;
+            }
         }
-        else {
-            throw new Exception("Recipe not in saved recipes.");
-        }
+
+        throw new Exception("Recipe not in saved recipes.");
     }
 }
