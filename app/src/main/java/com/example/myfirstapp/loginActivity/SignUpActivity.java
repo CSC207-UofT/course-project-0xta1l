@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
+import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.loginActivity.LoginActivity;
 import com.example.myfirstapp.main.Constants.Constants;
@@ -161,8 +162,7 @@ public class SignUpActivity extends AppCompatActivity {
         if(password.equals(confirm)){
             startActivity(intent);
         } else{
-            // TODO: Put a display message
-            System.out.println("Retype Password");
+            Notification.displaySnackBar(view.findViewById(R.id.signupPage), "Retype Password");
         }
         //startActivity(intent);
     }
