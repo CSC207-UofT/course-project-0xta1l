@@ -36,7 +36,6 @@ public class ReadUser {
         DataSnapshot userSavedRecipeSnapshot = singleUserRef.child("SavedRecipes");
         for (DataSnapshot savedRecipeSnap : userSavedRecipeSnapshot.getChildren()) {
             Recipe savedRecipe = ReadRecipe.readRecipe(savedRecipeSnap);
-            System.out.println(userUsername);
             newUser.addSavedRecipes(savedRecipe);
         }
 
