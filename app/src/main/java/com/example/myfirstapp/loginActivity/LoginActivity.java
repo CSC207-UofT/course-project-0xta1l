@@ -29,8 +29,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         setTitle("Login");
         Read read = new Read();
-        read.populateUserSecurity(userSecurity -> Constants.USERSECURITY = userSecurity);
         read.populateGenreLibrary(genreLibrary -> Constants.GENRELIBRARY = genreLibrary);
+        read.populateUserSecurity(userSecurity -> Constants.USERSECURITY = userSecurity);
 
     }
     public void onSignUp(View view) {
