@@ -13,7 +13,7 @@
       android:id="@+id/loginButton"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="40dp"
+      android:layout_marginTop="52dp"
       android:onClick="onLogin"
       android:text="Login"
       android:textSize="35sp"
@@ -23,24 +23,24 @@
 
   <TextView
       android:id="@+id/loginTextUsername"
-      android:textColor="@color/darkBlue"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="36dp"
-      android:layout_marginTop="168dp"
+      android:layout_marginTop="260dp"
       android:text="Username"
+      android:textColor="@color/darkBlue"
       android:textSize="20sp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
       android:id="@+id/loginTextPassword"
-      android:textColor="@color/darkBlue"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="36dp"
+      android:layout_marginStart="40dp"
       android:layout_marginTop="40dp"
       android:text="Password"
+      android:textColor="@color/darkBlue"
       android:textSize="20sp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/loginTextUsername" />
@@ -59,26 +59,37 @@
 
   <EditText
       android:id="@+id/loginUsernameInput"
-      android:textColor="@color/darkBlue"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="152dp"
-      android:layout_marginEnd="48dp"
+      android:layout_marginTop="244dp"
+      android:layout_marginEnd="52dp"
       android:ems="10"
       android:inputType="textEmailAddress"
+      android:textColor="@color/darkBlue"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
       android:id="@+id/loginTextSignup"
-      android:textColor="@color/darkBlue"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="50dp"
+      android:layout_marginTop="52dp"
       android:onClick="onSignUp"
       android:text="Don't have an account? Sign up now!"
+      android:textColor="@color/darkBlue"
       android:textSize="20sp"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.494"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="180dp"
+      android:layout_height="148dp"
+      android:layout_marginStart="112dp"
+      android:layout_marginTop="56dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/forklogo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

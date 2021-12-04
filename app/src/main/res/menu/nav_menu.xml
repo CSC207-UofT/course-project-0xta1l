@@ -23,13 +23,13 @@
         android:id="@+id/menu_recipes"
         android:icon="@drawable/ic_baseline_menu_book_24"
         android:title="Saved Recipes"
-        android:titleTextColor="@color/greyBlue"
+        android:titleTextColor="@color/white"
         />
     <item
         android:id="@+id/menu_account"
         android:icon="@drawable/ic_baseline_person_24"
+        android:titleTextColor="@color/darkGreen"
         android:title="Profile"
-        android:titleTextColor="@color/greyBlue"
         />
 
 </menu>

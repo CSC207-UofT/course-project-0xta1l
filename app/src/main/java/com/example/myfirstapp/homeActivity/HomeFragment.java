@@ -2,6 +2,7 @@ package com.example.myfirstapp.homeActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -90,8 +91,9 @@ public class HomeFragment extends Fragment {
         text.setGravity(Gravity.CENTER);
         text.setTextColor(getResources().getColor(android.R.color.black));
         text.setPadding(40, 40 + height, 40, 0);
-        text.setTextSize(24);
-        text.setGravity(Gravity.LEFT);
+        text.setTextSize(26);
+        text.setGravity(Gravity.CENTER);
+        text.setTextColor(Color.rgb(22,83,126));
         String recipeName = recipePreview.getName();
         text.setText(recipeName);
         text.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
@@ -113,8 +115,9 @@ public class HomeFragment extends Fragment {
         text.setGravity(Gravity.CENTER);
         text.setTextColor(getResources().getColor(android.R.color.black));
         text.setPadding(100, 120 + height, 40, 40);
-        text.setTextSize(18);
+        text.setTextSize(20);
         text.setGravity(Gravity.LEFT);
+        text.setTextColor(Color.rgb(22,83,126));
         String recipeDescription = recipePreview.getDescription();
         text.setText(recipeDescription);
         text.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));

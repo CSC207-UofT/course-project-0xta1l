@@ -13,4 +13,6 @@
     <color name="greyBlue">#d0e0e3</color>
     <color name="lightBlue">#6fa8dc</color>
     <color name="darkBlue">#16537e</color>
+    <color name="darkerBlue">#0a3c5e</color>
+
 </resources>

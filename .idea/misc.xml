@@ -18,14 +18,17 @@
         <entry key="app/src/main/res/layout/activity_edit_username.xml" value="0.10182370820668693" />
         <entry key="app/src/main/res/layout/activity_genre_item.xml" value="0.10182370820668693" />
         <entry key="app/src/main/res/layout/activity_genre_recipe_item.xml" value="0.10182370820668693" />
+        <entry key="app/src/main/res/layout/activity_genre_recipe_item_review.xml" value="0.13645833333333332" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_recipe_item.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.10182370820668693" />
+        <entry key="app/src/main/res/layout/activity_recommend_recipe_item.xml" value="0.25174205802974736" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.3104053553789664" />
         <entry key="app/src/main/res/layout/fragment_genres.xml" value="0.10182370820668693" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.10182370820668693" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.17507448879422527" />
         <entry key="app/src/main/res/layout/fragment_my_recipe.xml" value="0.10182370820668693" />
-        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.10182370820668693" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.2711637883506933" />
+        <entry key="app/src/main/res/layout/fragment_upload.xml" value="0.1640625" />
         <entry key="app/src/main/res/menu/nav_menu.xml" value="0.20615384615384616" />
       </map>
     </option>
