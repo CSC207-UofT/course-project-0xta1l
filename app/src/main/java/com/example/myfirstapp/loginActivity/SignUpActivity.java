@@ -61,7 +61,7 @@ public class SignUpActivity extends AppCompatActivity {
                         } else {
                             // when checkbox unselected
                             // Remove position from langList
-                            interestList.remove(i);
+                            interestList.remove(Integer.valueOf(i));
                         }
                     }
                 });
