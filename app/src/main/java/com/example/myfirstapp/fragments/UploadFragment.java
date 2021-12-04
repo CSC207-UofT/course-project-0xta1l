@@ -185,7 +185,7 @@ public class UploadFragment extends Fragment {
 
         if(name.isEmpty() || instructions.isEmpty() || ingredients.isEmpty()
                 || description.isEmpty() || image.isEmpty() || preptime_str.isEmpty()) {
-           Notification.displaySnackBar(getView().findViewById(R.id.UploadPage), "Please fill in everything");
+            Notification.displaySnackBar(getView().findViewById(R.id.UploadPage), "Please fill in everything");
             return;
         } else{
             int id = Constants.GENRELIBRARY.getNewId();
