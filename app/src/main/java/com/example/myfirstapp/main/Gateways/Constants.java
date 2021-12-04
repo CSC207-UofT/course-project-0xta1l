@@ -1,4 +1,4 @@
-package com.example.myfirstapp.main.Constants;
+package com.example.myfirstapp.main.Gateways;
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.Review;
@@ -6,13 +6,8 @@ import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
 import com.example.myfirstapp.main.Commands.*;
 
-import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
-import java.util.stream.Stream;
 import java.io.*;
 
 public class Constants {

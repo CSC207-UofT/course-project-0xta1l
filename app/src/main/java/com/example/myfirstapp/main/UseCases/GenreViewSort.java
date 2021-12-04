@@ -4,14 +4,10 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import com.example.myfirstapp.main.Entities.GenreLibrary;
-import com.example.myfirstapp.main.Entities.Preview;
-import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.main.Constants.*;
+import com.example.myfirstapp.main.Gateways.Constants;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 //genresViewList method (takes in user)

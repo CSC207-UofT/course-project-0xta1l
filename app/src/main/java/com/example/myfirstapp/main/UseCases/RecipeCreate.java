@@ -1,8 +1,9 @@
 package com.example.myfirstapp.main.UseCases;
 import com.example.myfirstapp.main.Entities.Recipe;
-import com.example.myfirstapp.main.Entities.Review;
-import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.User;
+import com.example.myfirstapp.main.Gateways.Create;
+import com.example.myfirstapp.main.Gateways.Update;
 
 import java.util.ArrayList;
 
@@ -26,6 +27,8 @@ public class RecipeCreate {
         User user = Constants.USERSECURITY.getUserByID(username);
         user.addSavedRecipes(recipe);
 
+        Update.recipesSaved(user);
+        Create.createRecipe(recipe);
         return recipe;
     }
 }

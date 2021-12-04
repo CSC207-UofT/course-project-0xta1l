@@ -8,8 +8,7 @@ import android.widget.EditText;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.main.Constants.Constants;
-import com.example.myfirstapp.main.Controllers.UserRequestCreateLogin;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Controllers.UserRequestCreateReview;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;

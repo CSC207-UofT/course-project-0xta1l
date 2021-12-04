@@ -1,7 +1,6 @@
 package test;
 
-import com.example.myfirstapp.main.Constants.Constants;
-import com.example.myfirstapp.main.Entities.GenreLibrary;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
