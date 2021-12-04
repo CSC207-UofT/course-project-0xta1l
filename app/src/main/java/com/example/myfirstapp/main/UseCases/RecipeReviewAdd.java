@@ -2,7 +2,7 @@ package com.example.myfirstapp.main.UseCases;
 
 import com.example.myfirstapp.main.Entities.Review;
 import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.main.Constants.*;
+import com.example.myfirstapp.main.Gateways.*;
 
 public class RecipeReviewAdd {
 
@@ -15,6 +15,8 @@ public class RecipeReviewAdd {
         else{
             review.saveToUser(username, recipeID, review);
             review.saveToRecipe(recipeID, username, review);
+            Update.reviewCreated(review);
+            Update.recipeRating(Constants.GENRELIBRARY.getRecipeByID("All", recipeID));
             return true;
         }
     }
