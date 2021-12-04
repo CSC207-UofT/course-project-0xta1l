@@ -47,10 +47,10 @@ public class LoginActivity extends AppCompatActivity {
                 Globals.setUser(user);
                 startActivity(intent);
             } else {
-                Notification.displaySnackBar(constraintLayout, "Wrong password!", "top");
+                Notification.displaySnackBar(constraintLayout, "Incorrect Password!", "top");
             }
         } else {
-             Notification.displaySnackBar(constraintLayout, "Wrong username", "top");
+             Notification.displaySnackBar(constraintLayout, "Incorrect Username", "top");
         }
     }
 }
