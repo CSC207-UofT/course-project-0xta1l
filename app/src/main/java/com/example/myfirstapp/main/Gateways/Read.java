@@ -78,8 +78,11 @@ public class Read {
         String userBiography = singleUserRef.child("biography").getValue(String.class);
         int userAge = singleUserRef.child("age").getValue(Integer.class);
 
-        // TODO: fix this one and fix the database for it
         ArrayList<String> userInterests = new ArrayList<>();
+        DataSnapshot userInterestSnapshot = singleUserRef.child("interests");
+        for (DataSnapshot interest : userInterestSnapshot.getChildren()) {
+            userInterests.add(interest.getValue(String.class));
+        }
 
         // Construct and return a new user
         User newUser = new User(userUsername, userPassword, userDisplayName, userAge, userBiography, userInterests);

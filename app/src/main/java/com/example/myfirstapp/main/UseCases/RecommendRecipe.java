@@ -23,11 +23,13 @@ public class RecommendRecipe {
         }
         ArrayList<Preview> sortedRecipes = getSortedPreviewsFromGenre(bestGenre);
         ArrayList<Preview> recommendations = new ArrayList<>();
-
+        System.out.println(sortedRecipes.size());
         if (sortedRecipes.size() > recsNum){
             for (int i = 0; i < recsNum; i++) {
                 recommendations.add(sortedRecipes.get(i));
             }
+
+            System.out.println(recommendations);
             return recommendations;
         }
         else
@@ -48,7 +50,7 @@ public class RecommendRecipe {
         }
 
         int remainder = rest - numAdded;
-        if(genres.size() >= genreNum+1) {
+        if(genreNum < genres.size()-1) {
             ArrayList<Preview> previews2 = getSortedPreviewsFromGenre(genres.get(genreNum + 1));
 
             if (remainder > previews2.size()) {
