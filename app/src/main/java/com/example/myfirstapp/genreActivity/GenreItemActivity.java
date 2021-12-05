@@ -1,7 +1,7 @@
 package com.example.myfirstapp.genreActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.graphics.Typeface;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -106,6 +106,7 @@ public class GenreItemActivity extends AppCompatActivity{
         text.setTextColor(getResources().getColor(android.R.color.black));
         text.setPadding(40, 40 + height, 40, 0);
         text.setTextSize(24);
+        text.setTypeface(null, Typeface.BOLD);
         text.setGravity(Gravity.LEFT);
         String recipeName = recipePreview.getName();
         text.setText(recipeName);
@@ -127,7 +128,7 @@ public class GenreItemActivity extends AppCompatActivity{
         TextView text = new TextView(this);
         text.setGravity(Gravity.CENTER);
         text.setTextColor(getResources().getColor(android.R.color.black));
-        text.setPadding(100, 120 + height, 40, 40);
+        text.setPadding(100, 200 + height, 40, 40);
         text.setTextSize(18);
         text.setGravity(Gravity.LEFT);
         String recipeDescription = recipePreview.getDescription();
