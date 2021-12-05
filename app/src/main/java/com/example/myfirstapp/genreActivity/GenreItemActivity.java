@@ -1,7 +1,7 @@
 package com.example.myfirstapp.genreActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.graphics.Typeface;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
