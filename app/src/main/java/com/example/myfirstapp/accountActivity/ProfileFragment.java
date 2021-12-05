@@ -2,9 +2,11 @@ package com.example.myfirstapp.accountActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -16,6 +18,11 @@ import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
+import com.example.myfirstapp.loginActivity.SignUpActivity;
+import com.example.myfirstapp.main.Gateways.Constants;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -142,6 +149,9 @@ public class ProfileFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        //TODO Add Interest Activity
+
 
     }
 

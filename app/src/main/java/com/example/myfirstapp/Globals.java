@@ -36,6 +36,15 @@ public class Globals {
         viewRecipeId = i;
     }
 
+    public static String genreItemSortState = "Alphabetical";
+    public static String getGenreItemSortState(){
+        return genreItemSortState;
+    }
+    public static void setGenreItemSortState(String s) {
+        genreItemSortState = s;
+    }
+
+
 
     private static User user;
     public static User getUser(){
