@@ -136,7 +136,7 @@ public class Constants {
 
     public static ArrayList<String> GENRELIST = new ArrayList<>(Arrays.asList("Meal","Drink","Dessert","Sauce","Appetizer","Western",
             "Fusion","Indian","Middle-Eastern","Mexican","Italian","Spanish","Japanese","Korean","Chinese","Thai",
-            "Vietnamese","Chinese", "Filipino", "Soul", "Caribbean", "Vegan/Vegetarian", "African","Alcoholic",
+            "Vietnamese","Chinese", "Filipino", "Soul", "Caribbean", "Vegan", "Vegetarian", "African","Alcoholic",
             "Latin American", "Vegetarian","Salad","Chicken", "BBQ","Pie","Fruit","Cake","Seafood","Coleslaw",
             "Doughnuts","Cookies","Muffins","Fast Food"));
 
