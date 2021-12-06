@@ -1,6 +1,5 @@
 package com.example.myfirstapp.main.Entities;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 

@@ -31,7 +31,11 @@ public class EditUsernameActivity extends AppCompatActivity {
             Notification.displaySnackBar(findViewById(R.id.editUsernamePage),"Username cannot be empty");
             return;
         }
-        Globals.setUser_username(s);
-        finish();
+        if (Globals.setUser_username(s)){
+            finish();
+        } else {
+            Notification.displaySnackBar(findViewById(R.id.editUsernamePage),"Username is unavailable");
+            return;
+        }
     }
 }

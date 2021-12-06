@@ -1,5 +1,6 @@
 package com.example.myfirstapp;
 
+import com.example.myfirstapp.main.Controllers.UserRequestProfile;
 import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.Recipe;
@@ -9,6 +10,7 @@ import com.example.myfirstapp.main.Entities.UserSecurity;
 import java.util.ArrayList;
 
 public class Globals {
+    private static UserRequestProfile userEdit = new UserRequestProfile();
 
     /**
      * Has static methods to store:
@@ -58,15 +60,17 @@ public class Globals {
     public static User getUser(){
         return user;
     }
-    public static void setUser(User new_user){
-        user = new_user;
+    public static void setUser(User newUser){
+        user = newUser;
     }
     public static String getUser_username(){
         return user.getUsername();
     }
-    public static void setUser_username(String s) {
+    public static boolean setUser_username(String s) {
         if (!"".equals(getUser_username())){
-            Constants.USERSECURITY.changeUsername(getUser_username(), s);
+            return userEdit.changeUsername(getUser_username(), s);
+        } else {
+            return false;
         }
     }
 
@@ -74,21 +78,21 @@ public class Globals {
         return user.getPassword();
     }
     public static void setUser_password(String password) {
-        Constants.USERSECURITY.changePassword(getUser_username(),password);
+        userEdit.changePassword(getUser_username(),password);
     }
 
     public static String getUser_name(){
         return user.getDisplayName();
     }
     public static void setUser_name(String name) {
-        Constants.USERSECURITY.changeName(getUser_username(), name);
+        userEdit.changeName(getUser_username(), name);
     }
 
     public static String getUser_bio(){
         return user.getBiography();
     }
     public static void setUser_bio(String bio) {
-        Constants.USERSECURITY.changeBio(getUser_username(), bio);
+        userEdit.changeBio(getUser_username(), bio);
     }
 
     public static ArrayList<String> getUserInterests(){return user.getInterests();}
@@ -106,12 +110,12 @@ public class Globals {
         return s.toString();
     }
     public static void setUserInterests(ArrayList<String> interests) {
-        Constants.USERSECURITY.changeInterests(getUser_username(), interests);
+        userEdit.changeInterests(getUser_username(), interests);
     }
 
     public static int getUserAge(){return user.getAge();}
     public static void setUserAge(int age){
-        Constants.USERSECURITY.changeAge(getUser_username(), age);
+        userEdit.changeAge(getUser_username(), age);
     }
 
     public static Recipe getRecipe() {

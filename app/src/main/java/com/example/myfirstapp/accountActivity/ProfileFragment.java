@@ -18,8 +18,6 @@ import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.fragments.UploadFragment;
-import com.example.myfirstapp.loginActivity.SignUpActivity;
 import com.example.myfirstapp.main.Gateways.Constants;
 
 import java.util.ArrayList;

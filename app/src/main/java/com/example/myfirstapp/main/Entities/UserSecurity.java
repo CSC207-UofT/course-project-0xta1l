@@ -2,9 +2,6 @@ package com.example.myfirstapp.main.Entities;
 
 import android.os.Build;
 
-import com.example.myfirstapp.main.Gateways.Create;
-import com.example.myfirstapp.main.Gateways.Update;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -49,7 +46,6 @@ public class UserSecurity {
 
         // sets the new password for user.
         this.UsernameList.get(username).setPassword(password);
-        Update.userProfile(username, password, "password");
     }
 
     public void changeUsername(String username, String newUsername) {
@@ -57,31 +53,25 @@ public class UserSecurity {
         user.setUsername(newUsername);
         this.UsernameList.remove(username);
         this.UsernameList.put(newUsername, user);
-        Update.username(newUsername, user);
     }
 
     public void changeBio(String username, String bio) {
         User user = this.UsernameList.get(username);
         user.setBiography(bio);
-        Update.userProfile(username, bio, "biography");
     }
 
     public void changeAge(String username, Integer age) {
         User user = this.UsernameList.get(username);
         user.setAge(age);
-        Update.userProfile(username, age, "age");
     }
 
     public void changeName(String username, String name) {
         User user = this.UsernameList.get(username);
         user.setDisplayName(name);
-        Update.userProfile(username, name, "displayName");
     }
 
     public void changeInterests(String username, ArrayList<String> interests) {
         User user = this.UsernameList.get(username);
         user.setInterests(user.getInterests(), interests);
-        Update.userProfile(username, interests, "interests");
-        Update.userProfile(username, user.getGenreWeights(), "genreWeights");
     }
 }

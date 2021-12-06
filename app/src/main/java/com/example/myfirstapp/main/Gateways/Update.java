@@ -7,7 +7,6 @@ import androidx.annotation.RequiresApi;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.Review;
 import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.main.Entities.UserSecurity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -49,18 +48,13 @@ public class Update {
         userRef.setValue(property);
     }
 
-    public static void username(String newUsername, User user){
-        DatabaseReference userRef = database.getReference("users/"+user.getUsername());
+    public static void username(String oldUsername, String newUsername, User user){
+        DatabaseReference userRef = database.getReference("users/"+oldUsername);
         userRef.removeValue();
         DatabaseReference newUserRef = database.getReference("users/"+newUsername);
         newUserRef.setValue(user);
     }
 
-    // updates user genre weights (to be used after saving recipe, adding/deleting interests)
-    public static void userGenreWeights(String username, Map<String, Double> genreWeights){
-        DatabaseReference userRef = database.getReference("users/"+username+"/genreWeights");
-        userRef.setValue(genreWeights);
-    }
 
     public static void userGenreWeights(User user){
         DatabaseReference userRef = database.getReference("users/"+user.getUsername()+"/genreWeights");
