@@ -28,7 +28,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class GenreItemActivity extends AppCompatActivity{
-
+    /**
+     //        The page where user are able to see all the
+     //        available recipes based on genre selected
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

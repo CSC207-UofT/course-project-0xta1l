@@ -11,6 +11,12 @@ import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
 
 public class EditBioActivity extends AppCompatActivity {
+    /**
+     editBio method  (creates a recipe entity from user)
+     //        Takes in the current View
+     //        Gets Users input
+     //        Sets the user's biography to the user's input
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

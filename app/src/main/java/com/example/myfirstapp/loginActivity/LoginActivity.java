@@ -17,6 +17,10 @@ import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Gateways.Read;
 
 public class LoginActivity extends AppCompatActivity {
+    /**
+     //        The login page were the user logins
+     //
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

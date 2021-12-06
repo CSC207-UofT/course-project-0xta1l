@@ -19,6 +19,10 @@ import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public class RecommendRecipeReviewActivity extends AppCompatActivity {
+    /**
+     //        The page where user are able to see the selected
+     //        recommended recipe reviews
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

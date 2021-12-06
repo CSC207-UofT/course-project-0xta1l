@@ -49,7 +49,10 @@ public class ProfileFragment extends Fragment {
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
      * @return A new instance of fragment ProfileFragment.
+     *
+     * The Account Page where the user can change their personal information
      */
+
 
     public static ProfileFragment newInstance(String param1, String param2) {
         ProfileFragment fragment = new ProfileFragment();

@@ -23,6 +23,10 @@ import java.util.Collections;
 import java.util.HashMap;
 
 public class SignUpActivity extends AppCompatActivity {
+    /**
+     //        The page where user is able to sign up
+     //
+     */
 
     private boolean[] selectedInterest;
     private ArrayList<Integer> interestList = new ArrayList<>();

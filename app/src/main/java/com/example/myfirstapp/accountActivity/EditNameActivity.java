@@ -12,6 +12,12 @@ import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
 
 public class EditNameActivity extends AppCompatActivity {
+    /**
+     editName method  (creates a recipe entity from user)
+     //        Takes in the current View
+     //        Gets Users input
+     //        Sets the user's display name to the user's input
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

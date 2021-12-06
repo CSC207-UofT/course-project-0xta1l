@@ -33,7 +33,10 @@ import java.util.ArrayList;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
-
+    /**
+     //        The page where user are able to see all the
+     //        recommended recipes based on the user's interests
+     */
     public HomeFragment() {
         // Required empty public constructor
     }

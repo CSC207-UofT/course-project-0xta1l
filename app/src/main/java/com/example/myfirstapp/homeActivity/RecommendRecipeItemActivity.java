@@ -25,6 +25,10 @@ import com.example.myfirstapp.main.Entities.Recipe;
 import java.util.ArrayList;
 
 public class RecommendRecipeItemActivity extends AppCompatActivity {
+    /**
+     //        The page where user are able to see all the
+     //        recommended recipe details based on the user's interests
+     */
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @SuppressLint("SetTextI18n")
@@ -34,25 +38,6 @@ public class RecommendRecipeItemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_genre_recipe_item);
         Recipe recipe = Globals.getRecipe();
         setTitle(recipe.getName());
-
-//        TextView recipeItemGenre = findViewById(R.id.recommendRecipeItemGenre);
-//        recipeItemGenre.setText("Genres: " + recipe.getGenreStrings());
-//
-//        TextView recipeItemId = findViewById(R.id.recommendRecipeItemId);
-//        recipeItemId.setText("ID: " + recipe.getID());
-//
-//        TextView recipeItemIngredients = findViewById(R.id.recommendRecipeItemIngredients);
-//        recipeItemIngredients.setText("Ingredients: " + recipe.getIngredients());
-//
-//        TextView recipeItemInstructions = findViewById(R.id.recommendRecipeItemInstructions);
-//        recipeItemInstructions.setText("Instructions: " + recipe.getInstructions());
-//
-//        TextView recipeItemRating = findViewById(R.id.recommendRecipeItemRating);
-//        recipeItemRating.setText("Rating " + recipe.getRating());
-//
-//        String imgName = "img_" + String.valueOf(recipe.getID());
-//        ImageView mImageView = findViewById(R.id.recipeItemImage);
-//        mImageView.setImageResource(getResources().getIdentifier(imgName, "drawable", getPackageName()));
 
         TextView recipeItemGenre = findViewById(R.id.genreRecipeItemGenre);
         recipeItemGenre.setText("Genres: " + recipe.getGenreStrings());

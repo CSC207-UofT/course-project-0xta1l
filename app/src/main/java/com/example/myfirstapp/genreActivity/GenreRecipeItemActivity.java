@@ -21,6 +21,11 @@ import java.util.HashMap;
 
 public class GenreRecipeItemActivity extends AppCompatActivity {
 
+    /**
+     //        The page where user are able to see information of the
+     //        recipe selected
+     //        User can save recipe or view reviews
+     */
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
