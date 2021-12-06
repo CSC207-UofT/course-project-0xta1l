@@ -22,8 +22,12 @@ import java.util.Collections;
 
 public class GenreViewSort {
     public GenreViewSort(){}
-
+    /** gets the list of genres from the user
+     * @param user the user
+     * @return list of genres
+     */
     @RequiresApi(api = Build.VERSION_CODES.N)
+
     public ArrayList<String> genresViewList(User user) {
         ArrayList<String> genres = Constants.GENRELIBRARY.getAllGenres();
         if (user.getInterests().isEmpty()) {

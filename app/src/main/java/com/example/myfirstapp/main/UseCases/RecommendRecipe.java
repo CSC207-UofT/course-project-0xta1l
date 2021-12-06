@@ -8,6 +8,13 @@ import com.example.myfirstapp.main.Gateways.Constants;
 import java.util.*;
 
 public class RecommendRecipe {
+    /**
+     * generates list of recommendations for user
+     * @param user the user
+     * @param recsNum the amount of recommendations wanted to generate
+     * @return list of recommendations
+     */
+
     public ArrayList<Preview> recommend(User user, int recsNum) {
         /**
          * If the generated list of recommendations from their favourite genre is less than required size recsNum,
@@ -31,7 +38,14 @@ public class RecommendRecipe {
         else
             return recursiveRecommend(recommendations, sortedGenres,0, recsNum);
     }
-
+    /**
+     * helper method for recommend method
+     * @param recommends list of recommendations
+     * @param genres list of genres
+     * @param genreNum number of genres
+     * @param rest remaining number of recipes to be generated
+     * @return list of recommendations
+     */
     private ArrayList<Preview> recursiveRecommend
             (ArrayList<Preview> recommends, ArrayList<String> genres, int genreNum, int rest){
 
@@ -60,6 +74,7 @@ public class RecommendRecipe {
         return recommends;
 
     }
+
 
     private ArrayList<Preview> getSortedPreviewsFromGenre(String genre) {
         /**

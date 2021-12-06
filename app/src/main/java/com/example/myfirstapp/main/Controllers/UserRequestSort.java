@@ -10,6 +10,12 @@ import com.example.myfirstapp.main.UseCases.SortRecipes;
 import java.util.ArrayList;
 
 public class UserRequestSort {
+    /**
+     * sorts recipe according to user's filter
+     * @param recipes is the list of recipe previews
+     * @param sortkey the key you want to filter by
+     * @return list of recipes if can't null
+     */
 
     //sort method
     public ArrayList<Preview> sort(ArrayList<Preview> recipes, String sortkey) {
@@ -23,6 +29,13 @@ public class UserRequestSort {
             return null;
         }
     }
+    /**
+     * sorts recipe according to user's interests
+     * @param recipes is the list of recipe previews
+     * @param sortkey  the key you want to filter by
+     * @param username the username of a specified user
+     * @return list of recipes if can't null
+     */
 
     // overload sort method for sort by interests
     public ArrayList<Preview> sort(ArrayList<Preview> recipes, String sortkey, String username) {
