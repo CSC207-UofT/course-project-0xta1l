@@ -19,8 +19,8 @@ import java.util.HashMap;
 
 public class GenreRecipeItemReviewActivity extends AppCompatActivity {
     /**
-     //        The page where user are able to see all the
-     //        reviews of the recipe selected
+     * //        The page where user are able to see all the
+     * //        reviews of the recipe selected
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class GenreRecipeItemReviewActivity extends AppCompatActivity {
 
         LinearLayout layout = (LinearLayout) this.findViewById(R.id.GenreRecipeReviewLayout);
         layout.removeAllViews();
-        for(Review review: reviews.values()) {
+        for (Review review : reviews.values()) {
             RelativeLayout p = this.createRecipeReview(review);
             layout.addView(p);
         }

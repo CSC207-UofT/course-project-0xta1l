@@ -8,8 +8,8 @@ import android.widget.TextView;
 
 public class DisplayMessageActivity extends AppCompatActivity {
     /**
-     //      Class that is able to display a message
-     //
+     * //      Class that is able to display a message
+     * //
      */
 
     @Override

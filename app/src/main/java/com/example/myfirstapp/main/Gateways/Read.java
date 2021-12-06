@@ -24,6 +24,7 @@ public class Read {
     public interface userDataStatus {
         void userSecurityLoaded(UserSecurity userSecurity);
     }
+
     public interface recipeDataStatus {
         void genreLibraryLoaded(GenreLibrary genreLibrary);
     }
@@ -53,7 +54,7 @@ public class Read {
         UserSecurity usersUserSecurity = new UserSecurity();
 
         // Loop through all the users in the database
-        for(DataSnapshot singleUserRef : dataSnapshot.getChildren()){
+        for (DataSnapshot singleUserRef : dataSnapshot.getChildren()) {
 
             // Add a user from the database to the UserSecurity object
             User user = ReadUser.readUser(singleUserRef);
@@ -90,10 +91,9 @@ public class Read {
         // Loop through all the recipes in the database
         for (DataSnapshot ds : dataSnapshot.getChildren()) {
             Recipe recipe = ReadRecipe.readRecipe(ds);
-//            System.out.println(recipe.getName());
 
             // Add each recipe to recipeGenreLibrary
-            for(String genre: recipe.getGenre()){
+            for (String genre : recipe.getGenre()) {
                 genreLibrary.addRecipes(genre, recipe);
             }
 

@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     public boolean initFragment(int i) {
         switch (i) {
             case R.id.menu_home:
@@ -89,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 return false;
         }
     }
+
     private void makeCurrentFragment(Fragment fragment) {
         setTitle(currentView);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();

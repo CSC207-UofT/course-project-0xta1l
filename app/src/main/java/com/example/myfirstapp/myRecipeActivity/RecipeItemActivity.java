@@ -46,15 +46,17 @@ public class RecipeItemActivity extends AppCompatActivity {
         ImageView mImageView = findViewById(R.id.recipeItemImage);
         mImageView.setImageResource(getResources().getIdentifier(imgName, "drawable", getPackageName()));
     }
+
     public void deleteRecipe(View v) throws Exception {
         try {
             UserRequestSaveRecipe saveController = new UserRequestSaveRecipe();
             saveController.deleteRecipe(Globals.getUser_username(), String.valueOf(Globals.getViewRecipeId()));
             finish();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     public void addReview(View v) {
         Context context = RecipeItemActivity.this;
         Intent intent = new Intent(context, AddReviewActivity.class);

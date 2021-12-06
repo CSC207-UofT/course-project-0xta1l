@@ -1,7 +1,6 @@
 package com.example.myfirstapp.main.UseCases;
 
 import com.example.myfirstapp.main.Entities.Preview;
-import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
 
 import java.util.ArrayList;
@@ -20,8 +19,10 @@ public class SortByInterests extends SortRecipes {
         ArrayList<Preview> lst = alphabet();
         return sortByInterests(lst);
     }
+
     /**
      * sorts recipes by the interests of the user
+     *
      * @param lst list of recipes
      * @return sorted list of recipes
      */
@@ -38,7 +39,7 @@ public class SortByInterests extends SortRecipes {
                 }
             }
         }
-        for (Preview recipe: recipes) {
+        for (Preview recipe : recipes) {
             if (!(sorted_lst.contains(recipe))) {
                 other_recipes.add(recipe);
             }

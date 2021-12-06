@@ -11,17 +11,15 @@ import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.Review;
 
 import java.util.HashMap;
-import java.util.concurrent.TimeUnit;
 
 public class RecommendRecipeReviewActivity extends AppCompatActivity {
     /**
-     //        The page where user are able to see the selected
-     //        recommended recipe reviews
+     * //        The page where user are able to see the selected
+     * //        recommended recipe reviews
      */
 
     @Override
@@ -35,7 +33,7 @@ public class RecommendRecipeReviewActivity extends AppCompatActivity {
 
         LinearLayout layout = (LinearLayout) this.findViewById(R.id.GenreRecipeReviewLayout);
         layout.removeAllViews();
-        for(Review review: reviews.values()) {
+        for (Review review : reviews.values()) {
             RelativeLayout p = this.createRecipeReview(review);
             layout.addView(p);
         }
