@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Typeface;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -27,7 +28,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class GenreItemActivity extends AppCompatActivity{
-
+    /**
+     //        The page where user are able to see all the
+     //        available recipes based on genre selected
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

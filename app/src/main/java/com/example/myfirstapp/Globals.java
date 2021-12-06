@@ -9,6 +9,14 @@ import com.example.myfirstapp.main.Entities.UserSecurity;
 import java.util.ArrayList;
 
 public class Globals {
+
+    /**
+     * Has static methods to store:
+     * Current Activity
+     * Current Genre being Viewed
+     * User and user's attributes
+     * Current Recipe being Viewed
+     */
     // Standard stuff for main
     public static int currentActivity = 0;
     public static UserSecurity us = Constants.USERSECURITY;
@@ -35,6 +43,15 @@ public class Globals {
     public static void setViewRecipeId(int i) {
         viewRecipeId = i;
     }
+
+    public static String genreItemSortState = "Alphabetical";
+    public static String getGenreItemSortState(){
+        return genreItemSortState;
+    }
+    public static void setGenreItemSortState(String s) {
+        genreItemSortState = s;
+    }
+
 
 
     private static User user;

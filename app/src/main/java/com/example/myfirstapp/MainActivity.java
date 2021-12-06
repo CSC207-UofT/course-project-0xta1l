@@ -16,6 +16,16 @@ import com.example.myfirstapp.fragments.UploadFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
+
+    /**
+     * The main activity that stores the fragments:
+     * HomeFragment()
+     * GenresFragment()
+     * UploadFragment()
+     * MyRecipeFragment()
+     * ProfileFragment()
+     */
+
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
     public String currentView = "Home";

@@ -18,7 +18,10 @@ import com.example.myfirstapp.main.Entities.Review;
 import java.util.HashMap;
 
 public class GenreRecipeItemReviewActivity extends AppCompatActivity {
-
+    /**
+     //        The page where user are able to see all the
+     //        reviews of the recipe selected
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

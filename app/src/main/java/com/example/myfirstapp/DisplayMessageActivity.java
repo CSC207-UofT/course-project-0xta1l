@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class DisplayMessageActivity extends AppCompatActivity {
+    /**
+     //      Class that is able to display a message
+     //
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

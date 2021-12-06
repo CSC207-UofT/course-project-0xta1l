@@ -46,7 +46,10 @@ public class GenresFragment extends Fragment {
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
      * @return A new instance of fragment GenresFragment.
+     *
+     * User will see a list of available genres to select from
      */
+
 
     public static GenresFragment newInstance(String param1, String param2) {
         GenresFragment fragment = new GenresFragment();
