@@ -20,7 +20,11 @@ public class SortByInterests extends SortRecipes {
         ArrayList<Preview> lst = alphabet();
         return sortByInterests(lst);
     }
-
+    /**
+     * sorts recipes by the interests of the user
+     * @param lst list of recipes
+     * @return sorted list of recipes
+     */
     public ArrayList<Preview> sortByInterests(ArrayList<Preview> lst) {
         ArrayList<Preview> recipes = new ArrayList<>(lst);
         ArrayList<Preview> sorted_lst = new ArrayList<>();
