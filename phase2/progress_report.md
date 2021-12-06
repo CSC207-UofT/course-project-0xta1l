@@ -1,43 +1,59 @@
-**PROGRESS REPORT**
+# PROGRESS REPORT
+### Open Questions ###
+1) Are there free Android App templates that we can use instead of building one from scratch?
+2) Are there popular or generic recommendation algorithms that we can refer to when improving our recommendations feature?
+3) How do you propose we improve our application?
 
-**Open Questions**
 
-1) How can we effectively link a server database to the Android App?
+### What has worked ### 
+We worked well as a team. Our teamwork and communication are very strong, allowing for productive meetings and collaboration. When we were not meeting in person, we all made sure to regularly communicate via Discord or GitHub. We made use of many Github features like branches to be able to work together simultaneously, coordinated and checked our code using pull requests and highlighted some issues we want to solve using the "Issues" feature. This is one of the many examples of our excellent teamwork.
+We have good organization for our code, making it clear which classes belong to which layer of Clean Architecture.
+Our understanding of how to implement the different features of our project has worked well. This allowed for faster and more efficient development, as we coded with a planned algorithm and structure in mind, rather than just coding for the sake of a desired result.
 
-2) How can we transition from using a local database to a server based database?
+### Summary of work done in phase 2 ###
 
-3) Are there popular or generic recommendation algorithms that we can refer to when improving our recommendations feature?
+Justin: 
 
-**What has worked**
+https://github.com/CSC207-UofT/course-project-0xta1l/pull/110 This is my most significant pull request as I have successfully moved our application from a using a TextUI to an Android App GUI. There are also many other pull requests that slowly transform the Android App into what it is now. 
 
-1) We worked well as a team. Our teamwork and communication are very strong, allowing for productive meetings and collaboration. When we were not meeting in person, we all made sure to regularly communicate via Discord or GitHub. We made use of many Github features like branches to be able to work together simulatenously, coordinated and checked our code using pull requests and highlighted some issues we want to solve using the "Issues" feature. This is one of the many examples of our excellent teamwork.
-
-2) We have good organization for our code, making it clear which classes belong to which layer of Clean Architecture.
-
-3) Our understanding of how to implement the different features of our project has worked well. This allowed for faster and more efficient development, as we coded with a planned algorithm and structure in mind, rather than just coding for the sake of a desired result.
-
-**Summary of roles**
-
-Justin:
-Worked on creating the Android Application, and implemented basic functions for the Android App. Created Entities and helped to debug/test other components of the code. Helped to create the structure for Commands using the Command Design Pattern. Plans to continue to work on the Android Application to improve the UI and user experience.
+The Android App GUI can be split into 7 components,  
+1) AccountActivity: Contains classes that allows the user to change their personal infomation such as password and biography;  
+2) Fragments: contains an upload fragment where user can upload their recipes; 
+3) GenreActivity: Contains classes that allows users to select a specific genre, sort the recipes by Alphabetical, Rating or Interest, then select a specific recipe and save it or view the recipe's reviews; 
+4) HomeActivity: Contains classes that display recommended recipes and allows user to view the recipe and save it or view the recipe's reviews. 
+5) LoginActivity: Contains classes that allows user to login using their password and username, and also allows users to sign up if they do not have an account 
+6) MyRecipeActivity: Contains classes that allows users to view their saved recipes, delete it or write a review
+7) Others: Contains classes that complement the other activities. For example, the Notification class creates a message to notify the user that an exception has occurred. 
+This pull request is significant as it transformed our backend code into something that can be visually represented, making it very much applicable in real life. It is much more exciting to be able to visually see the methods you implement work properly rather than just a boring textUI!
 
 Amir:
-Worked on the Review entity and its related packages such as Controllers and UseCases. This entailed creating the review entity, building constructors and methods to provide needed functionality in our project. Wrote documentation for all new classes. Also aided in creating a working SQLite database before the database switch was cemented.
+
+For phase 2, I worked on the database and documentation of the product. For documentation, I added comments in the code improving the readability of our code. Specifically, this documentation described purposes of methods and explained variable names and what they were storing. With respect to the database, I worked on creating and writing to the realtime database that the team decided on. Below are links to important pull requests that I made and their explanations.
+
+https://github.com/CSC207-UofT/course-project-0xta1l/pull/156
+
+This pull request added the Create class for the database. This class allows us to write recipes and user objects to the database which is particularly useful for the creation of new recipes and user objects. I believe this is substantial as the feature allows users to update the database whenever users create new accounts or upload their own recipes. This broadens the scope of the project by adding data persistence in the form of a database (Firebase).
+
+https://github.com/CSC207-UofT/course-project-0xta1l/actions/runs/1435900757 
+
+Added Review Use Case and Entity class. These changes provided the basis of important functionalities our program would later implement. Some of these features allow users to create a review for a specified recipe, allows recipes to store a list of user written reviews about that specific recipe and allows users to store a list of all reviews written by a specific user. The use cases allows for retrieval of reviews by recipe and user
 
 Makayla:
-Implemented the recommendation feature, specifically its use case and tests, to recommend a specified number of recipes depending on the user’s interest and previous behavior. Created the preview entity, to fix the overuse of recipe.getPreview() and .get(index), performing the necessary refactoring throughout the code. Makayla plans to continue improving the recommendations algorithm for phase 2 as well as assisting in the strengthening of the  connection between the android application and java code.
+
+https://github.com/CSC207-UofT/course-project-0xta1l/pull/115 
+My most significant pull request fully implemented the recommendations algorithm and made the appropriate adjustments throughout the code to allow for it.  This algorithm is the basis for what appears on the homepage of the app, it creates unique recipe recommendations based on the user’s interests and/or app interactions. 
+
+Since phase 1, Makayla has worked to create and finalize the recommendations algorithm and worked with others to design and shape the aesthetics of the app. The recommendations feature required extensive testing to ensure it worked in all scenarios (no user interests, small number of recipes in genre, large number of wanted recommendations). The process of designing the app included choosing a colour palette (light and dark), an appropriate font size, visual/textual placements, and other similar design choices. All choices were made to keep in mind accessibility features and implementation .
 
 Kai:
-Worked briefly on Review use cases, implemented a UserInfo entity with the intention of it being used in UserRequestCreateLogin which has been hardcoded, however we cannot instantiate a new entity in a controller as that is a violation of clean architecture so this did not work as planned. UserInfo was later used in the displaying of user info. Hopes to be able to help with the front end (design) of the android app.
 
 Mieko:
-Implemented the CommandTree text UI and helped debug and fix various Controllers, Use Cases, and Entities. Implemented TextUI data persistence through writing to and reading from JSON files. Also helped develop the CRC models for the extension to the project from phase 0, namely the filtering, sorting, recipe creation, and reviews. Mieko plans to be able to fix the architecture of the program to better adhere to Clean Architecture and SOLID principles. She also hopes to continue to work on the functionality of the UI to make it more intuitive.
 
-Can:
-Implemented CreateRecipe controller  that helps users to create recipes from the input. Implemented GetReview controller that has two methods which helps  to get the review based on the input. Worked on  temp_data.csv file.  Hoping to work more on the construction of the Android App.
+Can: 
 
 Jolina:
-Worked on refactoring the GenreViewSort class into two distinct classes for code clarity. Implemented the recipe filtering and sorting features. Applied the template design pattern into the SortRecipes class. Worked on the recommendation system and user text interface planning. Plans to help further develop the recommendation system and work on the graphic user interface.
 
 Arpi:
-Worked on incorporating a database (using SQLite) into our app. Created classes to perform basic CRUD operations . Plans to look into other database management systems (Realm, Firebase, MongoDB) that are non-relational.
+
+
+
