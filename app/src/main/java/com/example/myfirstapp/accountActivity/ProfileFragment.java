@@ -143,8 +143,7 @@ public class ProfileFragment extends Fragment {
                         for (int m: interestList) {
                             uploadGenres.add(genreList[m]);
                         }
-                        Globals.getUser().setInterests(uploadGenres);
-                        //TODO connect to database
+                        Globals.setUserInterests(uploadGenres);
                     }
                 });
 

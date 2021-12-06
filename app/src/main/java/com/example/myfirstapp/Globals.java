@@ -105,6 +105,9 @@ public class Globals {
         }
         return s.toString();
     }
+    public static void setUserInterests(ArrayList<String> interests) {
+        Constants.USERSECURITY.changeInterests(getUser_username(), interests);
+    }
 
     public static int getUserAge(){return user.getAge();}
     public static void setUserAge(int age){

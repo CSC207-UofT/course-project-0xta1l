@@ -82,5 +82,6 @@ public class UserSecurity {
         User user = this.UsernameList.get(username);
         user.setInterests(user.getInterests(), interests);
         Update.userProfile(username, interests, "interests");
+        Update.userProfile(username, user.getGenreWeights(), "genreWeights");
     }
 }
