@@ -32,7 +32,6 @@
 
             <TextView
                 android:id="@+id/uploadGenreInput"
-                android:backgroundTint="@color/darkBlue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="83dp"
@@ -41,7 +40,7 @@
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:drawablePadding="16dp"
                 android:ems="10"
-                android:textColorHint="@color/greyBlue"
+                android:textColorHint="@color/darkBlue"
                 android:hint="Select Genres"
                 android:padding="12dp" />
 
