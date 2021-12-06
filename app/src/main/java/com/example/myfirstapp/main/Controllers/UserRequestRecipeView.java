@@ -8,6 +8,7 @@ import com.example.myfirstapp.main.UseCases.GetRecipe;
 public class UserRequestRecipeView {
     /**
      * Displays the profile of a specific user
+     *
      * @param id is the id of the requested recipe
      * @return a preview of the recipe
      */
@@ -15,10 +16,10 @@ public class UserRequestRecipeView {
         GetRecipe getRecipe = new GetRecipe();
         try {
             Recipe recipe = Constants.GENRELIBRARY.getRecipeByID("All", Integer.parseInt(id));
-            return getRecipe.getSingleRecipe(recipe,"full");
+            return getRecipe.getSingleRecipe(recipe, "full");
         } catch (Exception e) {
             System.out.println("Not a valid recipe ID.");
         }
-        return getRecipe.getSingleRecipe(Constants.GENRELIBRARY.getRecipeByID("All", Integer.parseInt(id)),"full");
+        return getRecipe.getSingleRecipe(Constants.GENRELIBRARY.getRecipeByID("All", Integer.parseInt(id)), "full");
     }
 }

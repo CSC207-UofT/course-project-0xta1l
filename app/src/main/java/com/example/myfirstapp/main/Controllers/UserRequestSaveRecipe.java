@@ -8,8 +8,10 @@ import com.example.myfirstapp.main.UseCases.RecipeSave;
 
 public class UserRequestSaveRecipe {
     private RecipeSave recipeSave = new RecipeSave();
+
     /**
      * Saves a specified recipe to a user's saved recipes
+     *
      * @param username is the username of the requested user
      * @param recipeID the id of the recipe wanted to be saved
      * @return whether the recipe was successfully saved
@@ -26,8 +28,10 @@ public class UserRequestSaveRecipe {
             return false;
         }
     }
+
     /**
      * Deletes a specified recipe from a user's saved recipes
+     *
      * @param username is the username of the requested user
      * @param recipeID the id of the recipe wanted to be deleted
      * @return whether the recipe was successfully deleted

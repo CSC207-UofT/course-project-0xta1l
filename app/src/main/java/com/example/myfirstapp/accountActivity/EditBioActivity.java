@@ -12,10 +12,10 @@ import com.example.myfirstapp.R;
 
 public class EditBioActivity extends AppCompatActivity {
     /**
-     editBio method  (creates a recipe entity from user)
-     //        Takes in the current View
-     //        Gets Users input
-     //        Sets the user's biography to the user's input
+     * editBio method  (creates a recipe entity from user)
+     * //        Takes in the current View
+     * //        Gets Users input
+     * //        Sets the user's biography to the user's input
      */
 
     @Override
@@ -25,11 +25,12 @@ public class EditBioActivity extends AppCompatActivity {
         setTitle("Your Biography");
 
     }
+
     public void editBio(View view) {
         EditText editText = findViewById(R.id.edit_bio_text);
         String s = editText.getText().toString();
         if (s.isEmpty()) {
-            Notification.displaySnackBar(findViewById(R.id.editBioPage),"Bio cannot be empty");
+            Notification.displaySnackBar(findViewById(R.id.editBioPage), "Bio cannot be empty");
             return;
         }
         Globals.setUser_bio(s);

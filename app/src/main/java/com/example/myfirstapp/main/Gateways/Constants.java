@@ -1,35 +1,31 @@
 package com.example.myfirstapp.main.Gateways;
+
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.Review;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
 
-import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
-import java.util.stream.Stream;
 import java.io.*;
 
 public class Constants {
     // Create Constants
-    public static ArrayList<String> GENRELIST = new ArrayList<>(Arrays.asList("All","African",
-            "Alcoholic","American","Appetizer","BBQ","Cake","Caribbean","Chinese","Cocktail",
-            "Dessert","Drink","European","Filipino","Fusion","Greek","Indian","Italian","Jamaican",
-            "Japanese","Korean","Meal","Mexican","Middle-Eastern","Pakistani","Peach","Pie","Sauce",
-            "Soul","Southern","Spanish","Thai","Vegan","Vegetarian","Vietnamese","Western"));
+    public static ArrayList<String> GENRELIST = new ArrayList<>(Arrays.asList("All", "African",
+            "Alcoholic", "American", "Appetizer", "BBQ", "Cake", "Caribbean", "Chinese", "Cocktail",
+            "Dessert", "Drink", "European", "Filipino", "Fusion", "Greek", "Indian", "Italian", "Jamaican",
+            "Japanese", "Korean", "Meal", "Mexican", "Middle-Eastern", "Pakistani", "Peach", "Pie", "Sauce",
+            "Soul", "Southern", "Spanish", "Thai", "Vegan", "Vegetarian", "Vietnamese", "Western"));
 
-    public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
+    public static GenreLibrary GENRELIBRARY = Constants.createDataset();
     public static UserSecurity USERSECURITY = Constants.createUsers();
 
-    public static UserSecurity createUsers(){
+    public static UserSecurity createUsers() {
         // NOTE this is temporary placeholder to test android app usage
 
-        List<String> interestList1 = Arrays.asList( "Mexican", "Western");
-        List<String> interestList2 = Arrays.asList( "Chinese", "Indian", "Korean");
+        List<String> interestList1 = Arrays.asList("Mexican", "Western");
+        List<String> interestList2 = Arrays.asList("Chinese", "Indian", "Korean");
 
         ArrayList<String> interest1 = new ArrayList<>(interestList1);
         ArrayList<String> interest2 = new ArrayList<>(interestList2);
@@ -50,6 +46,7 @@ public class Constants {
 
         return us;
     }
+
     public static GenreLibrary createDataset() {
         GenreLibrary dataset = new GenreLibrary();
         ArrayList<String> r1genres = new ArrayList<>();
@@ -66,22 +63,22 @@ public class Constants {
         r5genres.add("Indian");
 
         Recipe recipe1 = new Recipe("Set on Fire", "Salt",
-                r1genres, "Burnt Food", 5, 1, "burnt.jpg", "Is burnt food",5);
+                r1genres, "Burnt Food", 5, 1, "burnt.jpg", "Is burnt food", 5);
 
         Recipe recipe2 = new Recipe("Throw in Oven", "Chicken",
-                r2genres, "Chicken", 4, 2, "chicken.jpg", "Is Chicken",10);
+                r2genres, "Chicken", 4, 2, "chicken.jpg", "Is Chicken", 10);
 
         Recipe recipe3 = new Recipe("Pan fry in pan", "Steak, butter",
-                r3genres, "Good Steak", 5, 3, "steak.jpg", "Is steak",30);
+                r3genres, "Good Steak", 5, 3, "steak.jpg", "Is steak", 30);
 
         Recipe recipe4 = new Recipe("Boil in water", "Spinach, Mushrooms",
-                r4genres, "Random Veggies", 2, 4, "veg.jpg", "Is veggie",15);
+                r4genres, "Random Veggies", 2, 4, "veg.jpg", "Is veggie", 15);
 
         Recipe recipe5 = new Recipe("Throw maple syrup on pancakes", "Pancakes, salt, butter",
-                r5genres, "Pancakes", 3, 5, "pancake.jpg", "Is pancake",5);
+                r5genres, "Pancakes", 3, 5, "pancake.jpg", "Is pancake", 5);
 
         Recipe recipe6 = new Recipe("Cut into rectangular prisms and cook in oven", "Potatoes, butter",
-                r3genres, "French Fries", 4, 6, "fries.jpg", "Is frnch fry",30);
+                r3genres, "French Fries", 4, 6, "fries.jpg", "Is frnch fry", 30);
 
         Review review1 = new Review("username1", 1, "comments", 2);
         Review review2 = new Review("a", 1, "222222", 3);
@@ -90,26 +87,27 @@ public class Constants {
         recipe1.addSavedReviews("username1", review1);
         recipe1.addSavedReviews("a", review2);
         recipe1.addSavedReviews("username2", review3);
-        for (String g: recipe1.getGenre()){
+        for (String g : recipe1.getGenre()) {
             dataset.addRecipes(g, recipe1);
         }
-        for (String g: recipe2.getGenre()){
+        for (String g : recipe2.getGenre()) {
             dataset.addRecipes(g, recipe2);
         }
-        for (String g: recipe3.getGenre()){
+        for (String g : recipe3.getGenre()) {
             dataset.addRecipes(g, recipe3);
         }
-        for (String g: recipe4.getGenre()){
+        for (String g : recipe4.getGenre()) {
             dataset.addRecipes(g, recipe4);
         }
-        for (String g: recipe5.getGenre()){
+        for (String g : recipe5.getGenre()) {
             dataset.addRecipes(g, recipe5);
         }
-        for (String g: recipe6.getGenre()){
+        for (String g : recipe6.getGenre()) {
             dataset.addRecipes(g, recipe6);
         }
         return dataset;
     }
+
     public static GenreLibrary CSVRecipeReader(String fileName) throws FileNotFoundException {
         GenreLibrary genreLibrary = new GenreLibrary();
 
@@ -138,7 +136,6 @@ public class Constants {
 //        }
         return genreLibrary;
     }
-
 
 
 }

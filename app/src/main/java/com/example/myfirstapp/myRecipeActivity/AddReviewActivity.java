@@ -18,8 +18,9 @@ import java.util.HashMap;
 public class AddReviewActivity extends AppCompatActivity {
 
     private User user;
-    private HashMap<Integer, Recipe> recipes ;
-    private Recipe recipe ;
+    private HashMap<Integer, Recipe> recipes;
+    private Recipe recipe;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +40,7 @@ public class AddReviewActivity extends AppCompatActivity {
         String comment = commentText.getText().toString();
         EditText ratingText = findViewById(R.id.add_rating_text);
         int rating = Integer.parseInt(ratingText.getText().toString());
-        reviewController.reviewRecipe(user.getUsername(),recipe.getID(), comment, rating);
+        reviewController.reviewRecipe(user.getUsername(), recipe.getID(), comment, rating);
         finish();
     }
 }

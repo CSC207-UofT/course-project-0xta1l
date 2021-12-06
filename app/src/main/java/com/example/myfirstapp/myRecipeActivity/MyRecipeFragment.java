@@ -117,6 +117,7 @@ public class MyRecipeFragment extends Fragment {
                 Spinner spinner = (Spinner) getView().findViewById(R.id.myRecipeSortSpinner);
                 spinner.setOnItemSelectedListener(this);
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }
@@ -126,7 +127,7 @@ public class MyRecipeFragment extends Fragment {
     public void showItems(ArrayList<Preview> recipes, View v) {
         LinearLayout layout = (LinearLayout) v.findViewById(R.id.MyRecipeLayout);
         layout.removeAllViews();
-        for(int i = 0; i < recipes.size(); i++) {
+        for (int i = 0; i < recipes.size(); i++) {
             TextView text = new TextView(getContext());
             text.setGravity(Gravity.CENTER);
             text.setTextColor(getResources().getColor(android.R.color.black));

@@ -12,6 +12,7 @@ import java.util.ArrayList;
 public class UserRequestSort {
     /**
      * sorts recipe according to user's filter
+     *
      * @param recipes is the list of recipe previews
      * @param sortkey the key you want to filter by
      * @return list of recipes if can't null
@@ -29,9 +30,11 @@ public class UserRequestSort {
             return null;
         }
     }
+
     /**
      * sorts recipe according to user's interests
-     * @param recipes is the list of recipe previews
+     *
+     * @param recipes  is the list of recipe previews
      * @param sortkey  the key you want to filter by
      * @param username the username of a specified user
      * @return list of recipes if can't null

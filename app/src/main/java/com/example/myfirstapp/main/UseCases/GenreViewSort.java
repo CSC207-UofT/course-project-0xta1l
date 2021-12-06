@@ -20,8 +20,12 @@ import java.util.Collections;
 //
 
 public class GenreViewSort {
-    public GenreViewSort(){}
-    /** gets the list of genres from the user
+    public GenreViewSort() {
+    }
+
+    /**
+     * gets the list of genres from the user
+     *
      * @param user the user
      * @return list of genres
      */

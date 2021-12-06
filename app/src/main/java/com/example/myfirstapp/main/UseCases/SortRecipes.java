@@ -22,10 +22,10 @@ public class SortRecipes {
 
     // sorts recipes alphabetically
     public ArrayList<Preview> sort() {
-            return alphabet();
+        return alphabet();
     }
 
-    public ArrayList<Preview> alphabet(){
+    public ArrayList<Preview> alphabet() {
         //sort alphabetically, implement directly in superclass
         ArrayList<Preview> output_lst = new ArrayList<Preview>();
         ArrayList<String> names = new ArrayList<String>();

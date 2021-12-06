@@ -1,10 +1,10 @@
 package com.example.myfirstapp.genreActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.graphics.Typeface;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -27,10 +27,10 @@ import com.example.myfirstapp.main.Entities.Recipe;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class GenreItemActivity extends AppCompatActivity{
+public class GenreItemActivity extends AppCompatActivity {
     /**
-     //        The page where user are able to see all the
-     //        available recipes based on genre selected
+     * //        The page where user are able to see all the
+     * //        available recipes based on genre selected
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class GenreItemActivity extends AppCompatActivity{
         HashMap<Integer, Recipe> recipesHash = Constants.GENRELIBRARY.getAllRecipes(Globals.getViewGenreName());
         ArrayList<Recipe> recipesRecipe = new ArrayList<>(recipesHash.values());
         ArrayList<Preview> recipes = new ArrayList<>();
-        for (Recipe recipeRecipe: recipesRecipe) {
+        for (Recipe recipeRecipe : recipesRecipe) {
             recipes.add(recipeRecipe.getPreview());
         }
         showItems(recipes);
@@ -62,7 +62,7 @@ public class GenreItemActivity extends AppCompatActivity{
                 // parent.getItemAtPosition(pos)
                 View constraintLayout = findViewById(R.id.GenreItemConstraintLayout);
                 ArrayList<Preview> previews = new ArrayList<Preview>();
-                for (Preview recipePreview: recipes) {
+                for (Preview recipePreview : recipes) {
                     previews.add(recipePreview);
                 }
                 UserRequestSort sortController = new UserRequestSort();
@@ -96,14 +96,16 @@ public class GenreItemActivity extends AppCompatActivity{
         });
 
     }
+
     public void showItems(ArrayList<Preview> recipes) {
         LinearLayout layout = (LinearLayout) this.findViewById(R.id.GenreItemLayout);
         layout.removeAllViews();
-        for(Preview recipePreview: recipes) {
+        for (Preview recipePreview : recipes) {
             RelativeLayout p = this.createRecipePreview(recipePreview);
             layout.addView(p);
         }
     }
+
     public TextView createRecipeName(Preview recipePreview, int height) {
         TextView text = new TextView(this);
         text.setGravity(Gravity.CENTER);
@@ -128,6 +130,7 @@ public class GenreItemActivity extends AppCompatActivity{
         });
         return text;
     }
+
     public TextView createRecipeDetail(Preview recipePreview, int height) {
         TextView text = new TextView(this);
         text.setGravity(Gravity.CENTER);
@@ -151,6 +154,7 @@ public class GenreItemActivity extends AppCompatActivity{
         });
         return text;
     }
+
     public ImageView createRecipeImage(Preview recipePreview) {
         ImageView text = new ImageView(this);
         int id = recipePreview.getID();
@@ -170,6 +174,7 @@ public class GenreItemActivity extends AppCompatActivity{
         });
         return text;
     }
+
     public int getImageHeight(Preview recipePreview) {
         ImageView text = new ImageView(this);
         text.setAdjustViewBounds(true);
@@ -181,6 +186,7 @@ public class GenreItemActivity extends AppCompatActivity{
         int h = text.getDrawable().getIntrinsicHeight();
         return h;
     }
+
     public RelativeLayout createRecipePreview(Preview recipe) {
         RelativeLayout p = new RelativeLayout(this);
         p.addView(this.createRecipeImage(recipe));

@@ -10,6 +10,7 @@ import java.util.HashMap;
 public class GetRecipe {
     /**
      * Gets the user's saved recipes
+     *
      * @param user is the user
      * @return list of recipe previews
      */
@@ -18,19 +19,21 @@ public class GetRecipe {
 
         ArrayList<Preview> previewList = new ArrayList<>();
 
-        for (Recipe recipe: userRecipeList) {
+        for (Recipe recipe : userRecipeList) {
             previewList.add(recipe.getPreview());
         }
 
         return previewList;
     }
+
     /**
      * Gets the user saved recipes by username
-     * @param recipe is the the specified recipe
+     *
+     * @param recipe        is the the specified recipe
      * @param fullOrPreview the type of recipe you want to view
      * @return a preview of a recipe
      */
-    public Preview getSingleRecipe (Recipe recipe, String fullOrPreview) throws Exception {
+    public Preview getSingleRecipe(Recipe recipe, String fullOrPreview) throws Exception {
         ArrayList<String> validOptionsFull = new ArrayList<>();
         validOptionsFull.add("Full");
         validOptionsFull.add("full");
@@ -59,12 +62,14 @@ public class GetRecipe {
 
 
     }
+
     /**
      * Gets the genre recipes by genreName
+     *
      * @param genre is collection of recipes to generate a preview for
      * @return list of recipe previews for a specified genre
      */
-    public ArrayList<Preview> getGenreRecipes (HashMap<Integer, Recipe> genre) {
+    public ArrayList<Preview> getGenreRecipes(HashMap<Integer, Recipe> genre) {
         ArrayList<Preview> previewList = new ArrayList<>();
         for (Recipe recipe : genre.values()) {
             previewList.add(recipe.getPreview());

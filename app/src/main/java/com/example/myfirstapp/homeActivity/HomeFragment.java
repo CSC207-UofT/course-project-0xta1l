@@ -1,9 +1,9 @@
 package com.example.myfirstapp.homeActivity;
+
 import android.graphics.Typeface;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -34,12 +34,13 @@ import java.util.ArrayList;
  */
 public class HomeFragment extends Fragment {
     /**
-     //        The page where user are able to see all the
-     //        recommended recipes based on the user's interests
+     * //        The page where user are able to see all the
+     * //        recommended recipes based on the user's interests
      */
     public HomeFragment() {
         // Required empty public constructor
     }
+
     public static HomeFragment newInstance(String param1, String param2) {
         HomeFragment fragment = new HomeFragment();
         return fragment;
@@ -73,11 +74,12 @@ public class HomeFragment extends Fragment {
     public void showItems(ArrayList<Preview> recipes, View v) {
         LinearLayout layout = (LinearLayout) v.findViewById(R.id.RecommendRecipeLayout);
         layout.removeAllViews();
-        for(Preview recipePreview: recipes) {
+        for (Preview recipePreview : recipes) {
             RelativeLayout p = this.createRecipePreview(recipePreview);
             layout.addView(p);
         }
     }
+
     public TextView createRecipeName(Preview recipePreview, int height) {
         TextView text = new TextView(getContext());
         text.setGravity(Gravity.CENTER);
@@ -85,7 +87,7 @@ public class HomeFragment extends Fragment {
         text.setPadding(40, 40 + height, 40, 0);
         text.setTextSize(26);
         text.setGravity(Gravity.CENTER);
-        text.setTextColor(Color.rgb(22,83,126));
+        text.setTextColor(Color.rgb(22, 83, 126));
         text.setTypeface(null, Typeface.BOLD);
         String recipeName = recipePreview.getName();
         text.setText(recipeName);
@@ -103,6 +105,7 @@ public class HomeFragment extends Fragment {
         });
         return text;
     }
+
     public TextView createRecipeDetail(Preview recipePreview, int height) {
         TextView text = new TextView(getContext());
         text.setGravity(Gravity.CENTER);
@@ -110,7 +113,7 @@ public class HomeFragment extends Fragment {
         text.setPadding(100, 200 + height, 40, 40);
         text.setTextSize(20);
         text.setGravity(Gravity.LEFT);
-        text.setTextColor(Color.rgb(22,83,126));
+        text.setTextColor(Color.rgb(22, 83, 126));
         String recipeDescription = recipePreview.getDescription();
         text.setText(recipeDescription);
         text.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
@@ -127,6 +130,7 @@ public class HomeFragment extends Fragment {
         });
         return text;
     }
+
     public ImageView createRecipeImage(Preview recipePreview) {
         ImageView text = new ImageView(getContext());
         int id = recipePreview.getID();
@@ -146,6 +150,7 @@ public class HomeFragment extends Fragment {
         });
         return text;
     }
+
     public int getImageHeight(Preview recipePreview) {
         ImageView text = new ImageView(getContext());
         text.setAdjustViewBounds(true);
@@ -157,6 +162,7 @@ public class HomeFragment extends Fragment {
         int h = text.getDrawable().getIntrinsicHeight();
         return h;
     }
+
     public RelativeLayout createRecipePreview(Preview recipe) {
         RelativeLayout p = new RelativeLayout(getContext());
         p.addView(this.createRecipeImage(recipe));

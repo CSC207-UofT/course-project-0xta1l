@@ -46,7 +46,7 @@ public class GenresFragment extends Fragment {
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
      * @return A new instance of fragment GenresFragment.
-     *
+     * <p>
      * User will see a list of available genres to select from
      */
 
@@ -86,7 +86,7 @@ public class GenresFragment extends Fragment {
         }
 
         System.out.println("user is" + Globals.getUser_username());
-        for(int i = 0; i < genres.size(); i++) {
+        for (int i = 0; i < genres.size(); i++) {
             TextView text = new TextView(getContext());
             text.setGravity(Gravity.CENTER);
             text.setTextColor(getResources().getColor(android.R.color.black));

@@ -23,9 +23,11 @@ public class UserInfo {
     /**
      * Constructors for a UserInfo
      */
-    public UserInfo(){}
+    public UserInfo() {
+    }
+
     public UserInfo(String username, String password, String displayName, int age, String biography,
-                    ArrayList<String> interests){
+                    ArrayList<String> interests) {
         this.username = username;
         this.password = password;
         this.displayName = displayName;
@@ -37,25 +39,56 @@ public class UserInfo {
     /**
      * Getter Methods for UserInfo
      */
-    public String getUsername() {return username;}
-    public String getPassword() {return password;}
-    public String getDisplayName() {return displayName;}
-    public int getAge() {return age;}
-    public String getBiography() {return biography;}
-    public ArrayList<String> getInterests() {return interests;}
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getDisplayName() {
+        return displayName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getBiography() {
+        return biography;
+    }
+
+    public ArrayList<String> getInterests() {
+        return interests;
+    }
 
     /**
      * Setter Methods for UserInfo
      */
-    public void setUsername(String username) {this.username = username;}
-    public void setPassword(String password) {this.password = password;}
-    public void setDisplayName(String displayName) {this.displayName = displayName;}
-    public void setAge(int age) {this.age = age;}
-    public void setBiography(String biography) {this.biography = biography;}
-    public void setInterests(ArrayList<String> interests) {this.interests = interests;}
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
+    }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setBiography(String biography) {
+        this.biography = biography;
+    }
+
+    public void setInterests(ArrayList<String> interests) {
+        this.interests = interests;
+    }
 
 
 }

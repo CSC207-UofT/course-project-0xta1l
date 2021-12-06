@@ -10,12 +10,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.loginActivity.LoginActivity;
 import com.example.myfirstapp.main.Gateways.Constants;
-import com.example.myfirstapp.main.Controllers.UserRequestBrowse;
 import com.example.myfirstapp.main.Controllers.UserRequestCreateLogin;
 
 import java.util.ArrayList;
@@ -24,8 +21,8 @@ import java.util.HashMap;
 
 public class SignUpActivity extends AppCompatActivity {
     /**
-     //        The page where user is able to sign up
-     //
+     * //        The page where user is able to sign up
+     * //
      */
 
     private boolean[] selectedInterest;
@@ -124,6 +121,7 @@ public class SignUpActivity extends AppCompatActivity {
 
 
     }
+
     public void onSignUp(View view) {
         Intent intent = new Intent(this, LoginActivity.class);
         EditText usernameText = (EditText) findViewById(R.id.signupUsernameInput);
@@ -141,7 +139,7 @@ public class SignUpActivity extends AppCompatActivity {
         String age = ageText.getText().toString();
 
         // Creates user in UserSecurity
-        if(!Constants.USERSECURITY.getUsernames().containsKey(username)){
+        if (!Constants.USERSECURITY.getUsernames().containsKey(username)) {
             UserRequestCreateLogin CreateLoginController = new UserRequestCreateLogin();
             HashMap<String, Object> UserInfo = new HashMap<>();
             UserInfo.put("username", username);
@@ -151,21 +149,21 @@ public class SignUpActivity extends AppCompatActivity {
             UserInfo.put("biography", bio);
             // Adding all interest from checkbox
             ArrayList<String> interests = new ArrayList<>();
-            for (int i: interestList) {
+            for (int i : interestList) {
                 interests.add(genreList[i]);
             }
             UserInfo.put("interests", interests);
             try {
                 CreateLoginController.createUser(username, password, displayName,
-                        Integer.parseInt(age),bio, interests);
+                        Integer.parseInt(age), bio, interests);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
 
-        if(password.equals(confirm)){
+        if (password.equals(confirm)) {
             startActivity(intent);
-        } else{
+        } else {
             Notification.displaySnackBar(view.findViewById(R.id.signupPage), "Retype Password");
         }
         //startActivity(intent);

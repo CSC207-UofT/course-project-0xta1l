@@ -10,10 +10,11 @@ import java.util.ArrayList;
 public class UserRequestGetReview {
     /**
      * User requests to see a review
+     *
      * @param recipeID is the ID of the given recipe
      * @return a list of reviews for a specific recipe
      */
-    public ArrayList<ArrayList<Object>> getRecipeReview(String recipeID){
+    public ArrayList<ArrayList<Object>> getRecipeReview(String recipeID) {
         int ID = Integer.parseInt(recipeID);
 
         GetReview getRecReview = new GetReview();
@@ -21,18 +22,18 @@ public class UserRequestGetReview {
         return getRecReview.getRecipeReviews(recipe);
     }
 
-    public ArrayList<ArrayList<Object>> getUserReview(String username)   {
+    public ArrayList<ArrayList<Object>> getUserReview(String username) {
         /**
          * Displays reviews written by a specific user
          * @param username is the username of the user whose reviews you want to view
          * @return a list of reviews for a specific user
          */
 
-            GetReview getUserReview = new GetReview();
-            User user = Constants.USERSECURITY.getUserByID(username);
-            return getUserReview.getUserReviews(Constants.GENRELIBRARY, user);
-
-        }
+        GetReview getUserReview = new GetReview();
+        User user = Constants.USERSECURITY.getUserByID(username);
+        return getUserReview.getUserReviews(Constants.GENRELIBRARY, user);
 
     }
+
+}
 

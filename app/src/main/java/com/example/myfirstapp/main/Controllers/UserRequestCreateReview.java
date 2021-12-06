@@ -7,16 +7,15 @@ import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Gateways.Update;
 import com.example.myfirstapp.main.UseCases.RecipeReviewAdd;
 
-import java.util.concurrent.CompletionStage;
 
-
-public class UserRequestCreateReview { // database should be called here to write recipe to database
+public class UserRequestCreateReview {
     /**
      * Creates a review
-     * @param userID is the ID of the user
+     *
+     * @param userID   is the ID of the user
      * @param recipeID the recipeID
-     * @param comment represents the comments on a given recipe
-     * @param rating the given rating of the recipe
+     * @param comment  represents the comments on a given recipe
+     * @param rating   the given rating of the recipe
      * @return true if the review is created
      */
     public boolean reviewRecipe(String userID, int recipeID, String comment, int rating) {

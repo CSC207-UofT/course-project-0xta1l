@@ -4,9 +4,10 @@ import com.example.myfirstapp.main.Entities.Preview;
 
 import java.util.ArrayList;
 
-public class SortByRating extends SortRecipes{
+public class SortByRating extends SortRecipes {
     /**
      * Sorts recipe ratings by rating
+     *
      * @param previews is previews of the recipes
      * @return array list of sorted previews
      */
@@ -15,16 +16,18 @@ public class SortByRating extends SortRecipes{
     }
 
     @Override
-    public ArrayList<Preview> sort(){
+    public ArrayList<Preview> sort() {
         ArrayList<Preview> lst = alphabet();
-            return sortByRating(lst);
-        }
+        return sortByRating(lst);
+    }
+
     /**
      * Sorts list of previews ratings by rating
+     *
      * @param lst is previews of the recipes
      * @return array list of sorted previews
      */
-    public ArrayList<Preview> sortByRating(ArrayList<Preview> lst){
+    public ArrayList<Preview> sortByRating(ArrayList<Preview> lst) {
         ArrayList<Preview> grand_lst = new ArrayList<Preview>();
         ArrayList<Preview> lst_1 = new ArrayList<Preview>();
         ArrayList<Preview> lst_2 = new ArrayList<Preview>();
