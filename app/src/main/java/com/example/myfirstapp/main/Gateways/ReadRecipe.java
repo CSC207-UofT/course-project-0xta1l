@@ -1,6 +1,7 @@
 package com.example.myfirstapp.main.Gateways;
 
 import com.example.myfirstapp.main.Entities.Recipe;
+import com.example.myfirstapp.main.Entities.Review;
 import com.google.firebase.database.DataSnapshot;
 
 import java.util.ArrayList;
@@ -23,10 +24,19 @@ public class ReadRecipe {
         int recipePreptime = recipePrepReader(singleRecipeRef);
         int recipeRating = recipeRatingReader(singleRecipeRef);
 
-        // Construct and return a new recipe
-        return new Recipe(recipeInstructions, recipeIngredients,
+        // Construct and a new recipe
+        Recipe newRecipe = new Recipe(recipeInstructions, recipeIngredients,
                 recipeGenres, recipeName, recipeRating, recipeID, recipeImage,
                 recipeDescription, recipePreptime);
+
+        // Load in saved reviews
+        DataSnapshot recipeReviewsSnapshot = singleRecipeRef.child("RecipeReviews");
+        for (DataSnapshot recipeReviewSnap : recipeReviewsSnapshot.getChildren()) {
+            Review recipeReview = ReadReview.readReview(recipeReviewSnap);
+            newRecipe.addSavedReviews(recipeReview.getUsername(), recipeReview);
+        }
+
+        return newRecipe;
     }
 
     private static int recipePrepReader(DataSnapshot singleRecipeRef) {
@@ -63,7 +73,5 @@ public class ReadRecipe {
 
         // If no eligible value for rating exists, return default value of 3.
         return 3;
-
-
     }
 }

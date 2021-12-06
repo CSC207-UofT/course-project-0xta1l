@@ -4,7 +4,6 @@ import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.Review;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
-import com.example.myfirstapp.main.Commands.*;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -20,22 +19,6 @@ public class Constants {
 
     public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
     public static UserSecurity USERSECURITY = Constants.createUsers();
-    public static com.example.myfirstapp.main.Commands.CommandTree COMMANDTREE =
-            createCommandTree(new com.example.myfirstapp.main.Commands.HomePage());
-
-    /* This is outdated code to read csv file.
-
-    public static UserSecurity USERSECURITY;
-    public static CommandTree  COMMANDTREE = createCommandTree(new Commands.HomePage());
-    static {
-        try {
-            USERSECURITY = Constants.CSVUserReader("src/main/Constants/users.csv");
-            System.out.println(USERSECURITY);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-     */
 
     public static UserSecurity createUsers(){
         // NOTE this is temporary placeholder to test android app usage
@@ -150,31 +133,10 @@ public class Constants {
 //        }
         return genreLibrary;
     }
-    public static CommandTree createCommandTree(Command command){
-        CommandTree commandTree = new CommandTree(new CommandTree.CommandNode());
-        commandTree.setRoot(createCommandNode(command));
-
-        return commandTree;
-    }
-
-    public static CommandTree.CommandNode createCommandNode(Command command){
-
-        CommandTree.CommandNode node = new CommandTree.CommandNode();
-        node.setCommand(command);
-        ArrayList<Command> commandList = command.getSubCommands();
-        if (!commandList.isEmpty()){
-            for(Command c: commandList){
-                CommandTree.CommandNode subNode = createCommandNode(c);
-                node.addChild(subNode);
-
-            }
-        }
-        return node;
-    }
 
     public static ArrayList<String> GENRELIST = new ArrayList<>(Arrays.asList("Meal","Drink","Dessert","Sauce","Appetizer","Western",
             "Fusion","Indian","Middle-Eastern","Mexican","Italian","Spanish","Japanese","Korean","Chinese","Thai",
-            "Vietnamese","Chinese", "Filipino", "Soul", "Caribbean", "Vegan/Vegetarian", "African","Alcoholic",
+            "Vietnamese","Chinese", "Filipino", "Soul", "Caribbean", "Vegan", "Vegetarian", "African","Alcoholic",
             "Latin American", "Vegetarian","Salad","Chicken", "BBQ","Pie","Fruit","Cake","Seafood","Coleslaw",
             "Doughnuts","Cookies","Muffins","Fast Food"));
 
