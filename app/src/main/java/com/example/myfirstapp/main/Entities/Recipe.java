@@ -163,6 +163,12 @@ public class Recipe {
         this.full.setPreptime(preptime);
     }
 
+    /**
+     * Adds review to RecipeReviews, updates rating with new Review rating
+     * @param username is the user who saved the recipe
+     * @param review the key you want to filter by
+     * @return void
+     */
     public void addSavedReviews(String username, Review review) {
         this.RecipeReviews.put(username, review);
         this.ratingList.add(review.getRating());

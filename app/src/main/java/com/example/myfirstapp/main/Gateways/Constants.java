@@ -16,6 +16,11 @@ import java.io.*;
 
 public class Constants {
     // Create Constants
+    public static ArrayList<String> GENRELIST = new ArrayList<>(Arrays.asList("All","African",
+            "Alcoholic","American","Appetizer","BBQ","Cake","Caribbean","Chinese","Cocktail",
+            "Dessert","Drink","European","Filipino","Fusion","Greek","Indian","Italian","Jamaican",
+            "Japanese","Korean","Meal","Mexican","Middle-Eastern","Pakistani","Peach","Pie","Sauce",
+            "Soul","Southern","Spanish","Thai","Vegan","Vegetarian","Vietnamese","Western"));
 
     public static GenreLibrary GENRELIBRARY =  Constants.createDataset();
     public static UserSecurity USERSECURITY = Constants.createUsers();
@@ -30,13 +35,13 @@ public class Constants {
         ArrayList<String> interest2 = new ArrayList<>(interestList2);
 
         User user1 = new User("username1", "password1", "Dan",
-                10, "I love food", interest1);
+                10, "I love food", interest1, GENRELIBRARY.getAllGenres());
 
         User user2 = new User("username2", "password2", "Bob",
-                11, "I love chicken", interest2);
+                11, "I love chicken", interest2, GENRELIBRARY.getAllGenres());
 
         User user3 = new User("a", "a", "Bob",
-                11, "for text ui testing", interest2);
+                11, "for text ui testing", interest2, GENRELIBRARY.getAllGenres());
 
         UserSecurity us = new UserSecurity();
         us.addUser(user1);
@@ -78,9 +83,9 @@ public class Constants {
         Recipe recipe6 = new Recipe("Cut into rectangular prisms and cook in oven", "Potatoes, butter",
                 r3genres, "French Fries", 4, 6, "fries.jpg", "Is frnch fry",30);
 
-        Review review1 = new Review(1, 1, "username1", "comments", 2);
-        Review review2 = new Review(2, 1, "a", "222222", 3);
-        Review review3 = new Review(3, 1, "username2", "333333", 4);
+        Review review1 = new Review("username1", 1, "comments", 2);
+        Review review2 = new Review("a", 1, "222222", 3);
+        Review review3 = new Review("username2", 1, "333333", 4);
 
         recipe1.addSavedReviews("username1", review1);
         recipe1.addSavedReviews("a", review2);
@@ -134,10 +139,6 @@ public class Constants {
         return genreLibrary;
     }
 
-    public static ArrayList<String> GENRELIST = new ArrayList<>(Arrays.asList("Meal","Drink","Dessert","Sauce","Appetizer","Western",
-            "Fusion","Indian","Middle-Eastern","Mexican","Italian","Spanish","Japanese","Korean","Chinese","Thai",
-            "Vietnamese","Chinese", "Filipino", "Soul", "Caribbean", "Vegan", "Vegetarian", "African","Alcoholic",
-            "Latin American", "Vegetarian","Salad","Chicken", "BBQ","Pie","Fruit","Cake","Seafood","Coleslaw",
-            "Doughnuts","Cookies","Muffins","Fast Food"));
+
 
 }

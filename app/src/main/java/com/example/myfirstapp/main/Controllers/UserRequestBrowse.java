@@ -27,7 +27,7 @@ public class UserRequestBrowse {
     public ArrayList<String> browseGenres(String username){
         User user = Constants.USERSECURITY.getUsernames().get(username);
         GenreViewSort g = new GenreViewSort();
-        return g.genresViewList(user);
+        return g.genresViewList(Constants.GENRELIBRARY.getAllGenres(), user);
     }
 
     /**
@@ -37,11 +37,12 @@ public class UserRequestBrowse {
      */
     public ArrayList<Preview> browseSavedRecipes(String username){
         GetRecipe getRecipe = new GetRecipe();
-        return getRecipe.getUserSavedRecipes(username);
+        User user = Constants.USERSECURITY.getUserByID(username);
+        return getRecipe.getUserSavedRecipes(user);
     }
     public ArrayList<Preview> browseGenreRecipes(String genre){
         GetRecipe g = new GetRecipe();
-        return g.getGenreRecipes(genre);
+        return g.getGenreRecipes(Constants.GENRELIBRARY.getAllRecipes(genre));
     }
 }
 

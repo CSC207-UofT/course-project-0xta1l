@@ -16,6 +16,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ReadUser {
+    // Declare database references
+    private static final DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
+    private static final DatabaseReference mRecipeRef = mRootRef.child("recipes");
+    private static final DatabaseReference mUserRef = mRootRef.child("users");
+
     @RequiresApi(api = Build.VERSION_CODES.O)
     public static User readUser(DataSnapshot singleUserRef) {
         // Read user attributes from singleUserRef
@@ -32,7 +37,7 @@ public class ReadUser {
 
         // Construct a new user object
         User newUser = new User(userUsername, userPassword, userDisplayName,
-                userAge, userBiography, userInterests);
+                userAge, userBiography, userInterests, Constants.GENRELIST);
 
         // Load in user saved recipes
         DataSnapshot userSavedRecipeSnapshot = singleUserRef.child("SavedRecipes");
@@ -41,7 +46,7 @@ public class ReadUser {
             newUser.addSavedRecipes(savedRecipe);
         }
 
-        // Load in user genre weights
+        Map<String, Double> userGenreWeights = new HashMap<>();
         DataSnapshot userGenreWeightsSnapshot = singleUserRef.child("genreWeights");
         for (DataSnapshot genreWeightSnap : userGenreWeightsSnapshot.getChildren()) {
             String genreWeightName = genreWeightSnap.getKey();
@@ -53,7 +58,6 @@ public class ReadUser {
         DataSnapshot userReviewsSnapshot = singleUserRef.child("UserReviews");
         for (DataSnapshot userReviewSnap : userReviewsSnapshot.getChildren()) {
             Review userReview = ReadReview.readReview(userReviewSnap);
-            int reviewID = userReview.getReviewID();
             newUser.addSavedReviews(userReview.getRecipeID(), userReview);
         }
 

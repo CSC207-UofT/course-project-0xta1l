@@ -1,7 +1,6 @@
 package com.example.myfirstapp.main.UseCases;
 
 import com.example.myfirstapp.main.Entities.Preview;
-import com.example.myfirstapp.main.Entities.Recipe;
 
 import java.util.ArrayList;
 import java.util.Collections;

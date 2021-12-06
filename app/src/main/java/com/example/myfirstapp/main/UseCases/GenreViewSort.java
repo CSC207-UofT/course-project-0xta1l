@@ -5,7 +5,6 @@ import android.os.Build;
 import androidx.annotation.RequiresApi;
 
 import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.main.Gateways.Constants;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -28,8 +27,7 @@ public class GenreViewSort {
      */
     @RequiresApi(api = Build.VERSION_CODES.N)
 
-    public ArrayList<String> genresViewList(User user) {
-        ArrayList<String> genres = Constants.GENRELIBRARY.getAllGenres();
+    public ArrayList<String> genresViewList(ArrayList<String> genres, User user) {
         if (user.getInterests().isEmpty()) {
             Collections.sort(genres);
         } else {

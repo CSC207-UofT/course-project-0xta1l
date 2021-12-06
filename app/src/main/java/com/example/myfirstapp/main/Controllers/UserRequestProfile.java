@@ -1,5 +1,7 @@
 package com.example.myfirstapp.main.Controllers;
+import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserInfo;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.UseCases.UserProfileViewEdit;
 
 public class UserRequestProfile {
@@ -10,7 +12,8 @@ public class UserRequestProfile {
      * @return the user's profile
      */
     public UserInfo getProfile (String username) {
-        return profile.get(username);
+        User user = Constants.USERSECURITY.getUserByID(username);
+        return profile.get(user);
     }
 
     /**

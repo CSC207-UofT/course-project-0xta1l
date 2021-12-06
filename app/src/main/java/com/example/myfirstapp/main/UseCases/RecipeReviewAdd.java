@@ -1,31 +1,30 @@
 package com.example.myfirstapp.main.UseCases;
 
+import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.Review;
 import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.main.Gateways.*;
 
 public class RecipeReviewAdd {
     /**
      * add reviews to recipes
-     * @param username is the username of a specified user
-     * @param recipeID the unique identifier for the recipe
+     * @param accUser is the specified user
+     * @param recipe is the specified recipe
      * @param comment  user's comment for the recipe
      * @param rating the rating given to the Recipe as designated by users (int from 1-5)
      * @return whether the review was successfully added
      */
 
-    public boolean addReview(String username,int recipeID, String comment, int rating) {
-        User accUser = Constants.USERSECURITY.getUserByID(username);
-        Review review = new Review(username, recipeID, comment, rating);
+    public Review addReview(User accUser, Recipe recipe, String comment, int rating) {
+        int recipeID = recipe.getID();
+        String username = accUser.getUsername();
         if (accUser.getUserReviews().containsKey(recipeID)){
-            return false;
+            return null;
         }
         else{
-            review.saveToUser(username, recipeID, review);
-            review.saveToRecipe(recipeID, username, review);
-            Update.reviewCreated(review);
-            Update.recipeRating(Constants.GENRELIBRARY.getRecipeByID("All", recipeID));
-            return true;
+            Review review = new Review(username, recipeID, comment, rating);
+            accUser.addSavedReviews(recipeID, review);
+            recipe.addSavedReviews(username, review);
+            return review;
         }
     }
 }

@@ -40,24 +40,24 @@ public class User {
     /**
      * Constructor for User
      */
-    public User(String username, String pws, String name, int age, String bio, ArrayList<String> interests){
+    public User(String username, String pws, String name, int age, String bio, ArrayList<String> interests, ArrayList<String> genreList){
         this.displayName = name;
         this.age = age;
         this.password = pws;
         this.username = username;
         this.biography = bio;
         this.interests = interests;
-        initializeGenreWeights(this.interests);
+        initializeGenreWeights(this.interests, genreList);
     }
 
     /* Updates GenreWeights to match interests */
-    private void initializeGenreWeights(ArrayList<String> interests) {
+    private void initializeGenreWeights(ArrayList<String> interests, ArrayList<String> genreList) {
         for (String interest: interests){
             if (!this.GenreWeights.containsKey(interest)){
                 this.GenreWeights.put(interest, 0.70);
             }
         }
-        for (String genre: Constants.GENRELIBRARY.getAllGenres()){
+        for (String genre: genreList){
             if (!this.GenreWeights.containsKey(genre)){
                 this.GenreWeights.put(genre, 0.0);
             }
@@ -160,7 +160,6 @@ public class User {
         this.interests = interests;
         deleteGenreWeights(previousInterests);
         updateGenreWeights(this.interests);
-
     }
 
 
@@ -170,8 +169,8 @@ public class User {
         updateGenreWeights(recipe);
     }
 
-    public void addSavedReviews(int reviewID, Review review) {
-        UserReviews.put(reviewID, review);
+    public void addSavedReviews(int recipeID, Review review) {
+        UserReviews.put(recipeID, review);
     }
 
     /**

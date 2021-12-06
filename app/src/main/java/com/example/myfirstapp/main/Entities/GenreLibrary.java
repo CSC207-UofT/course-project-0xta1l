@@ -4,6 +4,11 @@ import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * This class is the GenreLibrary Entity. It possesses 1 attribute:
+ *  •ListOfAllRecipes - A hashmap of String genres, to a hashmap of recipeIDs to Recipe entities
+ */
+
 public class GenreLibrary {
     public HashMap<String, HashMap<Integer, Recipe>> ListOfAllRecipes = new HashMap<>();
 

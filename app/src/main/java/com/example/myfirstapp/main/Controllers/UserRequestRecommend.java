@@ -21,6 +21,6 @@ public class UserRequestRecommend {
     public ArrayList<Preview> recommendRecipes(String username, int num){
         User user = Constants.USERSECURITY.getUserByID(username);
         RecommendRecipe r = new RecommendRecipe();
-        return r.recommend(user, num);
+        return r.recommend(user, num, Constants.GENRELIBRARY);
     }
 }

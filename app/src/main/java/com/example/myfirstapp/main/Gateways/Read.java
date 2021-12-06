@@ -90,7 +90,6 @@ public class Read {
         // Loop through all the recipes in the database
         for (DataSnapshot ds : dataSnapshot.getChildren()) {
             Recipe recipe = ReadRecipe.readRecipe(ds);
-//            System.out.println(recipe.getName());
 
             // Add each recipe to recipeGenreLibrary
             for(String genre: recipe.getGenre()){

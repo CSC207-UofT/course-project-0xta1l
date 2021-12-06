@@ -1,9 +1,9 @@
 package com.example.myfirstapp.main.UseCases;
-import com.example.myfirstapp.main.Gateways.Constants;
+import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.main.Gateways.Create;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 //userCreate method (Handles User Creation)
 
@@ -22,17 +22,17 @@ public class UserCreate {
      * @param age the age of the user
      * @param biography a description of the user
      * @param interests a list of genres the user is interested in
-     * @return whether the user was successfully created
+     * @param existingUsers a HashMap of existing usernames to User entities
+     * @param genreList a list of all existing recipe genres
+     * @return the User created
      */
-    public boolean userCreate(String username, String password, String displayName, int age, String biography,
-                              ArrayList<String> interests){
-        if (Constants.USERSECURITY.getUsernames().containsKey(username)){
-            return false;
+    public User userCreate(String username, String password, String displayName, int age, String biography,
+                           ArrayList<String> interests, HashMap<String, User> existingUsers, ArrayList<String> genreList){
+        if (existingUsers.containsKey(username)){
+            return null;
         } else{
-            User newUser = new User(username, password, displayName, age, biography, interests);
-            Constants.USERSECURITY.addUser(newUser);
-            Create.createUser(newUser);
-            return true;
+            User newUser = new User(username, password, displayName, age, biography, interests, genreList);
+            return newUser;
         }
     }
 }

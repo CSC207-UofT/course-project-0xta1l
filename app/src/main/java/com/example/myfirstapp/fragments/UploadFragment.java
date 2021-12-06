@@ -17,6 +17,7 @@ import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.MainActivity;
 import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
+import com.example.myfirstapp.main.Controllers.UserRequestCreateRecipe;
 import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.UseCases.RecipeCreate;
 
@@ -189,20 +190,19 @@ public class UploadFragment extends Fragment {
             return;
         } else{
             int id = Constants.GENRELIBRARY.getNewId();
-            int preptime = Integer.parseInt(preptime_str);
-            RecipeCreate recipeController = new RecipeCreate();
+            UserRequestCreateRecipe recipeController = new UserRequestCreateRecipe();
 
-            recipeController.CreateRecipeFromUser(
+            recipeController.recipe(
                     Globals.getUser_username(),
                     instructions,
                     ingredients,
                     uploadGenres,
                     name,
-                    0,
+                    "0",
                     id,
                     image,
                     description,
-                    preptime
+                    preptime_str
             );
             MainActivity main = (MainActivity) getActivity();
             main.initFragment(R.id.menu_home);
