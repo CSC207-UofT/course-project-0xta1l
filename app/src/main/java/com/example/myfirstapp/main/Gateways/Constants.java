@@ -33,9 +33,9 @@ public class Constants {
                 11, "for text ui testing", interest2);
 
         UserSecurity us = new UserSecurity();
-        us.addUser(user1);
-        us.addUser(user2);
-        us.addUser(user3);
+        us.addUserLocal(user1);
+        us.addUserLocal(user2);
+        us.addUserLocal(user3);
 
         return us;
         //return Read.populateUserSecurity();

@@ -41,6 +41,11 @@ public class UserSecurity {
         Create.createUser(user);
     }
 
+    public void addUserLocal(User user) {
+        UsernameList.put(user.getUsername(), user);
+        UserPassword.put(user.getUsername(), user.getPassword());
+    }
+
     public void changePassword(String username, String password){
         // Changes user password for given username
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {

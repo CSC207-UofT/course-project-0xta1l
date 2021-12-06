@@ -59,8 +59,7 @@ public class User {
     }
 
     /* Updates GenreWeights when a recipe is saved */
-    private void updateGenreWeights(Integer recipeID) {
-        Recipe recipe = Constants.GENRELIBRARY.getRecipeByID("All", recipeID);
+    private void updateGenreWeights(Recipe recipe) {
         ArrayList<String> recipeGenre = recipe.getGenre();
         for (String genre: recipeGenre){
             if (!genre.equals("All") && !genre.equals("Meal") && !genre.equals("Appetizer")) {
@@ -144,7 +143,7 @@ public class User {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void addSavedRecipes(Recipe recipe) {
         SavedRecipes.add(recipe);
-        updateGenreWeights(recipe.getID());
+        updateGenreWeights(recipe);
     }
 
     public void addSavedReviews(int reviewID, Review review) {
