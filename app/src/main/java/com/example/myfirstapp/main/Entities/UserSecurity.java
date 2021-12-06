@@ -5,6 +5,7 @@ import android.os.Build;
 import com.example.myfirstapp.main.Gateways.Create;
 import com.example.myfirstapp.main.Gateways.Update;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class UserSecurity {
@@ -75,5 +76,11 @@ public class UserSecurity {
         User user = this.UsernameList.get(username);
         user.setDisplayName(name);
         Update.userProfile(username, name, "displayName");
+    }
+
+    public void changeInterests(String username, ArrayList<String> interests) {
+        User user = this.UsernameList.get(username);
+        user.setInterests(user.getInterests(), interests);
+        Update.userProfile(username, interests, "interests");
     }
 }
