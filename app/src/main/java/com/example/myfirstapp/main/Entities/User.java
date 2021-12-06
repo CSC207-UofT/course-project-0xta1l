@@ -5,6 +5,8 @@ import android.os.Build;
 import androidx.annotation.RequiresApi;
 
 import com.example.myfirstapp.main.Gateways.*;
+
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -66,12 +68,14 @@ public class User {
     /* Updates GenreWeights to match interests */
     private void updateGenreWeights(ArrayList<String> interests) {
         for (String interest: interests){
-            this.GenreWeights.put(interest, 0.70);
+            this.GenreWeights.put(interest, (this.GenreWeights.get(interest) + 0.70));
         }
     }
 
-    private void deleteGenreWeights(String deleted) {
-        this.GenreWeights.put(deleted, (this.GenreWeights.get(deleted) - 0.70));
+    private void deleteGenreWeights(ArrayList<String> deleted) {
+        for (String delete: deleted){
+            this.GenreWeights.put(delete, (this.GenreWeights.get(delete) - 0.70));
+        }
     }
 
     public void updateGenreWeight(String genre, Double weight) {
@@ -152,13 +156,11 @@ public class User {
     public void setBiography(String biography) {this.biography = biography;}
     public void setInterests(ArrayList<String> s){this.interests = s;}
 
-    public void addInterests(String interest) {
-        this.interests.add(interest);
-        this.updateGenreWeights(this.interests);
-    }
-    public void deleteInterests(String interest) {
-        this.interests.remove(interest);
-        this.deleteGenreWeights(interest);
+    public void setInterests(ArrayList<String> previousInterests, ArrayList<String> interests){
+        this.interests = interests;
+        deleteGenreWeights(previousInterests);
+        updateGenreWeights(this.interests);
+
     }
 
 
