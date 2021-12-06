@@ -1,4 +1,4 @@
-package com.example.myfirstapp.genreActivity;
+package com.example.myfirstapp.homeActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,20 +16,20 @@ import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.Review;
 
 import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
 
-public class GenreRecipeItemReviewActivity extends AppCompatActivity {
+public class RecommendRecipeReviewActivity extends AppCompatActivity {
     /**
-     //        The page where user are able to see all the
-     //        reviews of the recipe selected
+     //        The page where user are able to see the selected
+     //        recommended recipe reviews
      */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_genre_recipe_item_review);
-        HashMap<Integer, Recipe> recipes = Constants.GENRELIBRARY.getAllRecipes(Globals.getViewGenreName());
 
-
-        Recipe recipe = recipes.get(Globals.getViewRecipeId());
+        Recipe recipe = Globals.getRecipe();
         HashMap<String, Review> reviews = recipe.getRecipeReviews();
         setTitle(recipe.getName() + " - Reviews");
 

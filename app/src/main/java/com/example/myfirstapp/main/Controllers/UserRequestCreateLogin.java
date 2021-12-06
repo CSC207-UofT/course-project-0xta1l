@@ -1,10 +1,9 @@
 package com.example.myfirstapp.main.Controllers;
 
-import com.example.myfirstapp.main.Constants.*;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.UseCases.UserCreate;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 
 public class UserRequestCreateLogin{

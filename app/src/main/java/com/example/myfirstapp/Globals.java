@@ -1,21 +1,22 @@
 package com.example.myfirstapp;
 
-import android.view.Gravity;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
-
-import androidx.constraintlayout.widget.ConstraintLayout;
-
-import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.GenreLibrary;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
-import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
 public class Globals {
+
+    /**
+     * Has static methods to store:
+     * Current Activity
+     * Current Genre being Viewed
+     * User and user's attributes
+     * Current Recipe being Viewed
+     */
     // Standard stuff for main
     public static int currentActivity = 0;
     public static UserSecurity us = Constants.USERSECURITY;
@@ -43,6 +44,15 @@ public class Globals {
         viewRecipeId = i;
     }
 
+    public static String genreItemSortState = "Alphabetical";
+    public static String getGenreItemSortState(){
+        return genreItemSortState;
+    }
+    public static void setGenreItemSortState(String s) {
+        genreItemSortState = s;
+    }
+
+
 
     private static User user;
     public static User getUser(){
@@ -63,22 +73,22 @@ public class Globals {
     public static String getUser_password(){
         return user.getPassword();
     }
-    public static void setUser_password(String s) {
-        Constants.USERSECURITY.changePassword(getUser_username(),s);
+    public static void setUser_password(String password) {
+        Constants.USERSECURITY.changePassword(getUser_username(),password);
     }
 
     public static String getUser_name(){
         return user.getDisplayName();
     }
-    public static void setUser_name(String s) {
-        Constants.USERSECURITY.getUserByID(getUser_username()).setDisplayName(s);
+    public static void setUser_name(String name) {
+        Constants.USERSECURITY.changeName(getUser_username(), name);
     }
 
     public static String getUser_bio(){
         return user.getBiography();
     }
-    public static void setUser_bio(String s) {
-        Constants.USERSECURITY.getUserByID(getUser_username()).setBiography(s);
+    public static void setUser_bio(String bio) {
+        Constants.USERSECURITY.changeBio(getUser_username(), bio);
     }
 
     public static ArrayList<String> getUserInterests(){return user.getInterests();}
@@ -97,8 +107,8 @@ public class Globals {
     }
 
     public static int getUserAge(){return user.getAge();}
-    public static void setUserAge(int i){
-        Constants.USERSECURITY.getUserByID(getUser_username()).setAge(i);
+    public static void setUserAge(int age){
+        Constants.USERSECURITY.changeAge(getUser_username(), age);
     }
 
     public static Recipe getRecipe() {

@@ -4,14 +4,10 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import com.example.myfirstapp.main.Entities.GenreLibrary;
-import com.example.myfirstapp.main.Entities.Preview;
-import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.main.Constants.*;
+import com.example.myfirstapp.main.Gateways.Constants;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 //genresViewList method (takes in user)
@@ -26,8 +22,12 @@ import java.util.Collections;
 
 public class GenreViewSort {
     public GenreViewSort(){}
-
+    /** gets the list of genres from the user
+     * @param user the user
+     * @return list of genres
+     */
     @RequiresApi(api = Build.VERSION_CODES.N)
+
     public ArrayList<String> genresViewList(User user) {
         ArrayList<String> genres = Constants.GENRELIBRARY.getAllGenres();
         if (user.getInterests().isEmpty()) {

@@ -31,10 +31,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="?android:attr/windowBackground"
-        app:itemBackground="@color/teal_700"
-        app:titleTextColor="@color/white"
-        app:subtitleTextColor="@color/white"
+        app:itemBackground="@color/darkBlue"
         app:itemIconTint="#fff"
-        app:menu="@menu/nav_menu" />
+        app:menu="@menu/nav_menu"
+        app:subtitleTextColor="@color/greyBlue"
+        app:titleTextColor="@color/greyBlue" />
 
 </RelativeLayout>

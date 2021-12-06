@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayMessageActivity">
+    tools:context=".DisplayMessageActivity"
+    android:background="@color/greyBlue">
 
     <TextView
         android:id="@+id/textView"
@@ -13,7 +14,7 @@
         android:layout_marginTop="16dp"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/darkBlue"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,7 +1,9 @@
 package com.example.myfirstapp.homeActivity;
-
+import android.graphics.Typeface;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -12,28 +14,16 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.genreActivity.GenreItemActivity;
-import com.example.myfirstapp.genreActivity.GenreRecipeItemActivity;
-import com.example.myfirstapp.main.Constants.Constants;
-import com.example.myfirstapp.main.Controllers.UserRequestBrowse;
-import com.example.myfirstapp.main.Controllers.UserRequestFilter;
 import com.example.myfirstapp.main.Controllers.UserRequestRecommend;
 import com.example.myfirstapp.main.Entities.Preview;
-import com.example.myfirstapp.main.Entities.Recipe;
-import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.myRecipeActivity.MyRecipeFragment;
-import com.example.myfirstapp.myRecipeActivity.RecipeItemActivity;
 
 import java.util.ArrayList;
 
@@ -43,7 +33,10 @@ import java.util.ArrayList;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
-
+    /**
+     //        The page where user are able to see all the
+     //        recommended recipes based on the user's interests
+     */
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -73,7 +66,7 @@ public class HomeFragment extends Fragment {
     @RequiresApi(api = Build.VERSION_CODES.N)
     public static ArrayList<Preview> getRecommendedRecipes() {
         UserRequestRecommend recommendController = new UserRequestRecommend();
-        ArrayList<Preview> recipes = recommendController.recommendRecipes(Globals.getUser_username(), 1);
+        ArrayList<Preview> recipes = recommendController.recommendRecipes(Globals.getUser_username(), 3);
         return recipes;
     }
 
@@ -90,8 +83,10 @@ public class HomeFragment extends Fragment {
         text.setGravity(Gravity.CENTER);
         text.setTextColor(getResources().getColor(android.R.color.black));
         text.setPadding(40, 40 + height, 40, 0);
-        text.setTextSize(24);
-        text.setGravity(Gravity.LEFT);
+        text.setTextSize(26);
+        text.setGravity(Gravity.CENTER);
+        text.setTextColor(Color.rgb(22,83,126));
+        text.setTypeface(null, Typeface.BOLD);
         String recipeName = recipePreview.getName();
         text.setText(recipeName);
         text.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
@@ -112,9 +107,10 @@ public class HomeFragment extends Fragment {
         TextView text = new TextView(getContext());
         text.setGravity(Gravity.CENTER);
         text.setTextColor(getResources().getColor(android.R.color.black));
-        text.setPadding(100, 120 + height, 40, 40);
-        text.setTextSize(18);
+        text.setPadding(100, 200 + height, 40, 40);
+        text.setTextSize(20);
         text.setGravity(Gravity.LEFT);
+        text.setTextColor(Color.rgb(22,83,126));
         String recipeDescription = recipePreview.getDescription();
         text.setText(recipeDescription);
         text.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));

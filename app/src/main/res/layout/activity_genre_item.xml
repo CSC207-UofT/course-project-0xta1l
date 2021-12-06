@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".genreActivity.GenreItemActivity"
-    android:id="@+id/GenreItemConstraintLayout">
+    android:id="@+id/GenreItemConstraintLayout"
+    android:background="@color/greyBlue">
 
     <Spinner
         android:id="@+id/genreRecipeSortSpinner"

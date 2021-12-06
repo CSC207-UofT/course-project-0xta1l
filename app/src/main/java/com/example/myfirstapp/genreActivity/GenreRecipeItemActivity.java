@@ -13,17 +13,19 @@ import android.widget.TextView;
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.main.Constants.Constants;
+import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Controllers.UserRequestSaveRecipe;
 import com.example.myfirstapp.main.Entities.Recipe;
-import com.example.myfirstapp.main.Entities.Review;
-import com.example.myfirstapp.main.Entities.User;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class GenreRecipeItemActivity extends AppCompatActivity {
 
+    /**
+     //        The page where user are able to see information of the
+     //        recipe selected
+     //        User can save recipe or view reviews
+     */
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

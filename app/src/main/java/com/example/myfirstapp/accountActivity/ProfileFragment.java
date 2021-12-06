@@ -2,9 +2,11 @@ package com.example.myfirstapp.accountActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -16,6 +18,12 @@ import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
+import com.example.myfirstapp.fragments.UploadFragment;
+import com.example.myfirstapp.loginActivity.SignUpActivity;
+import com.example.myfirstapp.main.Gateways.Constants;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,6 +35,12 @@ public class ProfileFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    private boolean[] selectedInterest;
+    private ArrayList<Integer> interestList = new ArrayList<>();
+    // Getting all genres
+    private ArrayList<String> genres = Constants.GENRELIBRARY.getUploadGenres();
+    private String[] genreList = new String[genres.size()];
 
     private String mParam1;
     private String mParam2;
@@ -42,7 +56,10 @@ public class ProfileFragment extends Fragment {
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
      * @return A new instance of fragment ProfileFragment.
+     *
+     * The Account Page where the user can change their personal information
      */
+
 
     public static ProfileFragment newInstance(String param1, String param2) {
         ProfileFragment fragment = new ProfileFragment();
@@ -69,8 +86,95 @@ public class ProfileFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        return v;
+        genreList = genres.toArray(genreList); // List of genre (strings)
+        TextView interestText = (TextView) v.findViewById(R.id.account_interest);
+        selectedInterest = new boolean[genreList.length];
+        String[] finalGenreList = genreList;
+        interestText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Initialize alert dialog
+                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
 
+                // set title
+                builder.setTitle("Select Genres");
+
+                // set dialog non cancelable
+                builder.setCancelable(false);
+
+                builder.setMultiChoiceItems(finalGenreList, selectedInterest, new DialogInterface.OnMultiChoiceClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i, boolean b) {
+                        // check condition
+                        if (b) {
+                            // when checkbox selected
+                            // Add position  in lang list
+                            interestList.add(i);
+                            // Sort array list
+                            Collections.sort(interestList);
+                        } else {
+                            // when checkbox unselected
+                            // Remove position from langList
+                            interestList.remove(Integer.valueOf(i));
+                        }
+                    }
+                });
+
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // Initialize string builder
+                        StringBuilder stringBuilder = new StringBuilder();
+                        // use for loop
+                        for (int j = 0; j < interestList.size(); j++) {
+                            // concat array value
+                            stringBuilder.append(finalGenreList[interestList.get(j)]);
+                            // check condition
+                            if (j != interestList.size() - 1) {
+                                // When j value  not equal
+                                // to lang list size - 1
+                                // add comma
+                                stringBuilder.append(", ");
+                            }
+                        }
+                        // set text on textView
+                        interestText.setText("Interest: " + stringBuilder.toString());
+                        ArrayList<String> uploadGenres = new ArrayList<>();
+                        for (int m: interestList) {
+                            uploadGenres.add(genreList[m]);
+                        }
+                        Globals.getUser().setInterests(uploadGenres);
+                        //TODO connect to database
+                    }
+                });
+
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // dismiss dialog
+                        dialogInterface.dismiss();
+                    }
+                });
+                builder.setNeutralButton("Clear All", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // use for loop
+                        for (int j = 0; j < selectedInterest.length; j++) {
+                            // remove all selection
+                            selectedInterest[j] = false;
+                            // clear interest list
+                            interestList.clear();
+                            // clear text view value
+                            interestText.setText("");
+                        }
+                    }
+                });
+                // show dialog
+                builder.show();
+            }
+        });
+
+        return v;
     }
     @Override
     public void onResume() {
@@ -142,6 +246,9 @@ public class ProfileFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        //TODO Add Interest Activity
+
 
     }
 

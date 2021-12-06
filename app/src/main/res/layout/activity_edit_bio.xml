@@ -6,7 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".accountActivity.EditBioActivity">
+    tools:context=".accountActivity.EditBioActivity"
+    android:background="@color/greyBlue">
 
     <Button
         android:id="@+id/edit_bio_button"
@@ -33,7 +34,7 @@
         android:minLines="5"
         android:scrollHorizontally="false"
         android:scrollbars="vertical"
-
+        android:textColorHint="@color/darkBlue"
         android:hint="Enter your new biography"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

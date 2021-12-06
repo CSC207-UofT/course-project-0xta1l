@@ -6,27 +6,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".genreActivity.GenreRecipeItemActivity">
+    tools:context=".genreActivity.GenreRecipeItemActivity"
+    android:background="@color/greyBlue">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/GenreListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/genreRecipeItemIngredients"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="36dp"
-        android:text="ingredients"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/genreRecipeItemGenre" />
+            <ImageView
+                android:id="@+id/recipeItemImage"
+                android:layout_width="match_parent"
+                android:layout_height="258dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-    <TextView
-        android:id="@+id/genreRecipeItemGenre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="61dp"
-        android:text="genre"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/genreRecipeItemGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="61dp"
+                android:layout_marginEnd="100dp"
+                android:textColor="@color/darkBlue"
+                android:text="genre"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipeItemImage" />
 
     <TextView
         android:id="@+id/genreRecipeItemRating"
@@ -34,58 +43,68 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="42dp"
+        android:textColor="@color/darkBlue"
         android:text="rating"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/genreRecipeItemId" />
 
+            <TextView
+                android:id="@+id/genreRecipeItemId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="61dp"
+                android:layout_marginEnd="42dp"
+                android:textColor="@color/darkBlue"
+                android:text="id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipeItemImage" />
+
     <TextView
-        android:id="@+id/genreRecipeItemId"
-        android:layout_width="wrap_content"
+        android:id="@+id/genreRecipeItemIngredients"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="42dp"
-        android:text="id"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/darkBlue"
+        android:text="ingredients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genreRecipeItemGenre" />
 
     <TextView
         android:id="@+id/genreRecipeItemInstructions"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
+        android:layout_marginEnd="150dp"
         android:layout_marginTop="36dp"
+        android:textColor="@color/darkBlue"
         android:text="instructions"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/genreRecipeItemIngredients" />
 
-    <ImageView
-        android:id="@+id/recipeItemImage"
-        android:layout_width="match_parent"
-        android:layout_height="258dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="20dp"
-        android:onClick="saveRecipe"
-        android:text="Save"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:onClick="saveRecipe"
+                android:text="Save"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/genreRecipeItemRating" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="265dp"
-        android:layout_marginEnd="20dp"
-        android:onClick="showReviews"
-        android:text="Reviews"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:onClick="showReviews"
+                android:text="Reviews"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

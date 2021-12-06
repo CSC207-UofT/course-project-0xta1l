@@ -5,21 +5,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginActivity.SignUpActivity">
+    tools:context=".loginActivity.SignUpActivity"
+    android:background="@color/greyBlue">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/SignUpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
     <Button
         android:id="@+id/signupButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_width="130dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="100dp"
         android:onClick="onSignUp"
         android:text="Sign Up!"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupAgeInput" />
 
     <EditText
         android:id="@+id/signupUsernameInput"
+        android:textColor="@color/darkBlue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -31,6 +42,7 @@
 
     <EditText
         android:id="@+id/signupPasswordInput"
+        android:textColor="@color/darkBlue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
@@ -44,10 +56,11 @@
         android:id="@+id/signupConfirmInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="12dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="@color/darkBlue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signupPasswordInput" />
 
@@ -55,10 +68,11 @@
         android:id="@+id/signupDisplayNameInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="13dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/darkBlue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signupConfirmInput" />
 
@@ -66,10 +80,11 @@
         android:id="@+id/signupBioInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="13dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/darkBlue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signupDisplayNameInput" />
 
@@ -77,23 +92,28 @@
         android:id="@+id/signupInterestInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="13dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signupBioInput"
-        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
         android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/darkBlue"
         android:drawableRight="@android:drawable/arrow_down_float"
         android:drawablePadding="16dp"
+        android:ems="10"
         android:hint="Select Interest"
-        android:padding="12dp" />
+        android:padding="12dp"
+        android:textColor="@color/darkBlue"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupBioInput" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:textColor="@color/darkBlue"
+        android:textSize="20dp"
         android:text="Username"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -102,19 +122,25 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/darkBlue"
+        android:textSize="20dp"
         android:text="Password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="3dp"
         android:text="Confirm Password"
+        android:textColor="@color/darkBlue"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/signupConfirmInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -122,9 +148,13 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="67dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="14dp"
         android:text="Display Name"
+        android:textColor="@color/darkBlue"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/signupDisplayNameInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -132,9 +162,11 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="41dp"
-        android:text="Bio"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/darkBlue"
+        android:textSize="20dp"
+        android:text="Biography"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -142,8 +174,10 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/darkBlue"
+        android:textSize="20dp"
         android:text="Interest"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -152,9 +186,11 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="59dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="44dp"
         android:text="Age"
+        android:textColor="@color/darkBlue"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -162,11 +198,13 @@
         android:id="@+id/signupAgeInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signupInterestInput" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,6 @@ package com.example.myfirstapp.accountActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -15,6 +14,14 @@ import com.example.myfirstapp.R;
 import com.google.android.material.snackbar.Snackbar;
 
 public class EditPasswordActivity extends AppCompatActivity {
+    /**
+     editPassword method  (creates a recipe entity from user)
+     //        Takes in the current View
+     //        Gets Users input
+     //        Sets the user's password to the user's input based on the regex
+     //        password must have at least 8 characters, a special character, number and an
+     //        uppercase letter and a lowercase letter
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

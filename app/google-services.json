@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "739939566459",
+    "firebase_url": "https://oxtail-default-rtdb.firebaseio.com",
+    "project_id": "oxtail",
+    "storage_bucket": "oxtail.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739939566459:android:087f9303fcdc66956833de",
+        "android_client_info": {
+          "package_name": "com.example.myfirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739939566459-gf0qo4g4n8mgafgqia11qql5g50vjj09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-vRZjI75UVYzB5AYLrxybGI71ldF3pIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739939566459-gf0qo4g4n8mgafgqia11qql5g50vjj09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

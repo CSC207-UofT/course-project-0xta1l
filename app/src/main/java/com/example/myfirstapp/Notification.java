@@ -7,7 +7,10 @@ import android.widget.FrameLayout;
 import com.google.android.material.snackbar.Snackbar;
 
 public class Notification {
-
+    /**
+     //        This class is able to give a user a notification by creating a SnackBar
+     //
+     */
     public static void displaySnackBar(ViewGroup layout, String message){
         Snackbar snack = Snackbar.make(layout,
                 message,
