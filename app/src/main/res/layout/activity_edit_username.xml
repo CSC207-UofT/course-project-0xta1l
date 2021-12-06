@@ -5,7 +5,8 @@
     android:id="@+id/editUsernamePage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".accountActivity.EditUsernameActivity">
+    tools:context=".accountActivity.EditUsernameActivity"
+    android:background="@color/greyBlue">
 
     <EditText
         android:id="@+id/editUserNameText"
@@ -16,6 +17,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:maxLength="20"
+        android:textColorHint="@color/darkBlue"
         android:hint="Enter a new Username"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

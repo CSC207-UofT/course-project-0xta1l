@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".myRecipeActivity.AddReviewActivity">
+    tools:context=".myRecipeActivity.AddReviewActivity"
+    android:background="@color/greyBlue">
 
     <EditText
         android:id="@+id/add_review_text"
@@ -15,6 +16,7 @@
         android:layout_marginRight="20dp"
         android:ems="10"
         android:gravity="top|left"
+        android:textColorHint="@color/darkBlue"
         android:hint="Enter your review here!"
         android:inputType="textEmailAddress|textMultiLine"
         android:lines="20"
@@ -36,6 +38,7 @@
         android:digits="012345"
         android:ems="10"
         android:inputType="number"
+        android:textColorHint="@color/darkBlue"
         android:hint="Your rating!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_review_text" />

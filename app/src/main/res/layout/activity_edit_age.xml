@@ -5,7 +5,8 @@
     android:id="@+id/editAgePage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".accountActivity.EditAgeActivity">
+    tools:context=".accountActivity.EditAgeActivity"
+    android:background="@color/greyBlue">
 
     <Button
         android:id="@+id/edit_Age_button"
