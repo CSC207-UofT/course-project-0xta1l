@@ -14,30 +14,35 @@ Our understanding of how to implement the different features of our project has 
 
 Justin: 
 
-https://github.com/CSC207-UofT/course-project-0xta1l/pull/110
-This is my most significant pull request as I have successfully moved our application from a using a TextUI to an Android App GUI. There are also many other pull requests that slowly transform the Android App into what it is now. 
+https://github.com/CSC207-UofT/course-project-0xta1l/pull/110 This is my most significant pull request as I have successfully moved our application from a using a TextUI to an Android App GUI. There are also many other pull requests that slowly transform the Android App into what it is now. 
+
 The Android App GUI can be split into 7 components,  
-AccountActivity: Contains classes that allows the user to change their personal infomation such as password and biography;  
-Fragments: contains an upload fragment where user can upload their recipes; 
-GenreActivity: Contains classes that allows users to select a specific genre, sort the recipes by Alphabetical, Rating or Interest, then select a specific recipe and save it or view the recipe's reviews; 
-HomeActivity: Contains classes that display recommended recipes and allows user to view the recipe and save it or view the recipe's reviews. 
-LoginActivity: Contains classes that allows user to login using their password and username, and also allows users to sign up if they do not have an account 
-MyRecipeActivity: Contains classes that allows users to view their saved recipes, delete it or write a review
-Others: Contains classes that complement the other activities. For example, the Notification class creates a message to notify the user that an exception has occurred. 
+1) AccountActivity: Contains classes that allows the user to change their personal infomation such as password and biography;  
+2) Fragments: contains an upload fragment where user can upload their recipes; 
+3) GenreActivity: Contains classes that allows users to select a specific genre, sort the recipes by Alphabetical, Rating or Interest, then select a specific recipe and save it or view the recipe's reviews; 
+4) HomeActivity: Contains classes that display recommended recipes and allows user to view the recipe and save it or view the recipe's reviews. 
+5) LoginActivity: Contains classes that allows user to login using their password and username, and also allows users to sign up if they do not have an account 
+6) MyRecipeActivity: Contains classes that allows users to view their saved recipes, delete it or write a review
+7) Others: Contains classes that complement the other activities. For example, the Notification class creates a message to notify the user that an exception has occurred. 
 This pull request is significant as it transformed our backend code into something that can be visually represented, making it very much applicable in real life. It is much more exciting to be able to visually see the methods you implement work properly rather than just a boring textUI!
 
 Amir:
 
 For phase 2, I worked on the database and documentation of the product. For documentation, I added comments in the code improving the readability of our code. Specifically, this documentation described purposes of methods and explained variable names and what they were storing. With respect to the database, I worked on creating and writing to the realtime database that the team decided on. Below are links to important pull requests that I made and their explanations.
+
 https://github.com/CSC207-UofT/course-project-0xta1l/pull/156
+
 This pull request added the Create class for the database. This class allows us to write recipes and user objects to the database which is particularly useful for the creation of new recipes and user objects. I believe this is substantial as the feature allows users to update the database whenever users create new accounts or upload their own recipes. This broadens the scope of the project by adding data persistence in the form of a database (Firebase).
+
 https://github.com/CSC207-UofT/course-project-0xta1l/actions/runs/1435900757 
+
 Added Review Use Case and Entity class. These changes provided the basis of important functionalities our program would later implement. Some of these features allow users to create a review for a specified recipe, allows recipes to store a list of user written reviews about that specific recipe and allows users to store a list of all reviews written by a specific user. The use cases allows for retrieval of reviews by recipe and user
 
 Makayla:
 
 https://github.com/CSC207-UofT/course-project-0xta1l/pull/115 
 My most significant pull request fully implemented the recommendations algorithm and made the appropriate adjustments throughout the code to allow for it.  This algorithm is the basis for what appears on the homepage of the app, it creates unique recipe recommendations based on the user’s interests and/or app interactions. 
+
 Since phase 1, Makayla has worked to create and finalize the recommendations algorithm and worked with others to design and shape the aesthetics of the app. The recommendations feature required extensive testing to ensure it worked in all scenarios (no user interests, small number of recipes in genre, large number of wanted recommendations). The process of designing the app included choosing a colour palette (light and dark), an appropriate font size, visual/textual placements, and other similar design choices. All choices were made to keep in mind accessibility features and implementation .
 
 Kai:
