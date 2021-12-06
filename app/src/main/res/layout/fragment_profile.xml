@@ -56,14 +56,20 @@
             <TextView
                 android:id="@+id/account_interest"
                 android:layout_width="wrap_content"
-                android:layout_height="37dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="170dp"
                 android:layout_marginEnd="192dp"
-                android:text="Interests:" />
+                android:background="@android:drawable/editbox_background"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Change Interest"
+                android:padding="12dp"
+                />
 
             <TextView
                 android:id="@+id/account_header_security"
@@ -133,16 +139,6 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="120dp"
-                android:layout_marginEnd="29dp"
-                android:src="@drawable/ic_baseline_edit_24" />
-
-            <ImageButton
-                android:id="@+id/account_interest_edit"
-                android:layout_width="29dp"
-                android:layout_height="23dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="172dp"
                 android:layout_marginEnd="29dp"
                 android:src="@drawable/ic_baseline_edit_24" />
 

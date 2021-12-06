@@ -150,6 +150,7 @@ public class User {
     public void setPassword(String password) {this.password = password;}
     public void setUsername(String username) {this.username = username;}
     public void setBiography(String biography) {this.biography = biography;}
+    public void setInterests(ArrayList<String> s){this.interests = s;}
 
     public void addInterests(String interest) {
         this.interests.add(interest);
