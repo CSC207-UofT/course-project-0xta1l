@@ -17,8 +17,8 @@ import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.MainActivity;
 import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
+import com.example.myfirstapp.main.Controllers.UserRequestCreateRecipe;
 import com.example.myfirstapp.main.Gateways.Constants;
-import com.example.myfirstapp.main.UseCases.RecipeCreate;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -152,7 +152,7 @@ public class UploadFragment extends Fragment {
 
         Button b = v.findViewById(R.id.uploadButtonSubmit);
         UploadFragment that = this;
-        b.setOnClickListener(new View.OnClickListener(){
+        b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v_useless) {
                 that.onSubmit(v);
@@ -179,35 +179,33 @@ public class UploadFragment extends Fragment {
 
 
         ArrayList<String> uploadGenres = new ArrayList<>();
-        for (int i: interestList) {
+        for (int i : interestList) {
             uploadGenres.add(genreList[i]);
         }
 
-        if(name.isEmpty() || instructions.isEmpty() || ingredients.isEmpty()
+        if (name.isEmpty() || instructions.isEmpty() || ingredients.isEmpty()
                 || description.isEmpty() || image.isEmpty() || preptime_str.isEmpty()) {
             Notification.displaySnackBar(getView().findViewById(R.id.UploadPage), "Please fill in everything");
             return;
-        } else{
+        } else {
             int id = Constants.GENRELIBRARY.getNewId();
-            int preptime = Integer.parseInt(preptime_str);
-            RecipeCreate recipeController = new RecipeCreate();
+            UserRequestCreateRecipe recipeController = new UserRequestCreateRecipe();
 
-            recipeController.CreateRecipeFromUser(
+            recipeController.recipe(
                     Globals.getUser_username(),
                     instructions,
                     ingredients,
                     uploadGenres,
                     name,
-                    0,
+                    "0",
                     id,
                     image,
                     description,
-                    preptime
+                    preptime_str
             );
             MainActivity main = (MainActivity) getActivity();
             main.initFragment(R.id.menu_home);
         }
-
 
 
     }

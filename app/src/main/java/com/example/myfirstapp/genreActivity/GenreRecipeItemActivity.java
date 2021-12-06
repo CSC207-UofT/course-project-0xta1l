@@ -22,9 +22,9 @@ import java.util.HashMap;
 public class GenreRecipeItemActivity extends AppCompatActivity {
 
     /**
-     //        The page where user are able to see information of the
-     //        recipe selected
-     //        User can save recipe or view reviews
+     * //        The page where user are able to see information of the
+     * //        recipe selected
+     * //        User can save recipe or view reviews
      */
     @SuppressLint("SetTextI18n")
     @Override
@@ -57,16 +57,18 @@ public class GenreRecipeItemActivity extends AppCompatActivity {
 
 
     }
+
     public void saveRecipe(View v) throws Exception {
         try {
             UserRequestSaveRecipe saveController = new UserRequestSaveRecipe();
             saveController.saveRecipe(Globals.getUser_username(), String.valueOf(Globals.getViewRecipeId()));
             finish();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-            Notification.displaySnackBar(findViewById(R.id.genreRecipeItemPage),"Menu already saved!","top");
+            Notification.displaySnackBar(findViewById(R.id.genreRecipeItemPage), "Menu already saved!", "top");
         }
     }
+
     public void showReviews(View v) {
         Context context = GenreRecipeItemActivity.this;
         Intent intent = new Intent(context, GenreRecipeItemReviewActivity.class);

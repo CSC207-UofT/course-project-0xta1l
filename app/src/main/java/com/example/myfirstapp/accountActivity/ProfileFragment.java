@@ -18,8 +18,6 @@ import android.widget.TextView;
 
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.fragments.UploadFragment;
-import com.example.myfirstapp.loginActivity.SignUpActivity;
 import com.example.myfirstapp.main.Gateways.Constants;
 
 import java.util.ArrayList;
@@ -56,7 +54,7 @@ public class ProfileFragment extends Fragment {
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
      * @return A new instance of fragment ProfileFragment.
-     *
+     * <p>
      * The Account Page where the user can change their personal information
      */
 
@@ -140,7 +138,7 @@ public class ProfileFragment extends Fragment {
                         // set text on textView
                         interestText.setText("Interest: " + stringBuilder.toString());
                         ArrayList<String> uploadGenres = new ArrayList<>();
-                        for (int m: interestList) {
+                        for (int m : interestList) {
                             uploadGenres.add(genreList[m]);
                         }
                         Globals.setUserInterests(uploadGenres);
@@ -175,6 +173,7 @@ public class ProfileFragment extends Fragment {
 
         return v;
     }
+
     @Override
     public void onResume() {
         super.onResume();
@@ -195,7 +194,7 @@ public class ProfileFragment extends Fragment {
         tv6.setText("Age: " + Globals.getUserAge());
 
         ImageButton edit_name_button = v.findViewById(R.id.account_name_edit);
-        edit_name_button.setOnClickListener(new View.OnClickListener(){
+        edit_name_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Context context = getContext();
@@ -205,7 +204,7 @@ public class ProfileFragment extends Fragment {
         });
 
         ImageButton edit_bio_button = v.findViewById(R.id.account_bio_edit);
-        edit_bio_button.setOnClickListener(new View.OnClickListener(){
+        edit_bio_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), EditBioActivity.class);
@@ -214,7 +213,7 @@ public class ProfileFragment extends Fragment {
         });
 
         ImageButton edit_username_button = v.findViewById(R.id.account_username_edit);
-        edit_username_button.setOnClickListener(new View.OnClickListener(){
+        edit_username_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), EditUsernameActivity.class);
@@ -229,7 +228,7 @@ public class ProfileFragment extends Fragment {
         });
 
         ImageButton passwordButton = v.findViewById(R.id.account_password_edit);
-        passwordButton.setOnClickListener(new View.OnClickListener(){
+        passwordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), EditPasswordActivity.class);
@@ -238,7 +237,7 @@ public class ProfileFragment extends Fragment {
         });
 
         ImageButton ageButton = v.findViewById(R.id.account_age_edit);
-        ageButton.setOnClickListener(new View.OnClickListener(){
+        ageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), EditAgeActivity.class);

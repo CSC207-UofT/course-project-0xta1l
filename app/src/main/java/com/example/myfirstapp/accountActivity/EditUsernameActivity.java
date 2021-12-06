@@ -12,10 +12,10 @@ import com.example.myfirstapp.R;
 
 public class EditUsernameActivity extends AppCompatActivity {
     /**
-     editUserName method  (creates a recipe entity from user)
-     //        Takes in the current View
-     //        Gets Users input
-     //        Sets the user's username to the user's input
+     * editUserName method  (creates a recipe entity from user)
+     * //        Takes in the current View
+     * //        Gets Users input
+     * //        Sets the user's username to the user's input
      */
 
     @Override
@@ -24,14 +24,19 @@ public class EditUsernameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_edit_username);
         setTitle("Your Username");
     }
+
     public void editUserName(View view) {
         EditText editText = (EditText) findViewById(R.id.editUserNameText);
         String s = editText.getText().toString();
-        if(s.isEmpty()) {
-            Notification.displaySnackBar(findViewById(R.id.editUsernamePage),"Username cannot be empty");
+        if (s.isEmpty()) {
+            Notification.displaySnackBar(findViewById(R.id.editUsernamePage), "Username cannot be empty");
             return;
         }
-        Globals.setUser_username(s);
-        finish();
+        if (Globals.setUser_username(s)) {
+            finish();
+        } else {
+            Notification.displaySnackBar(findViewById(R.id.editUsernamePage), "Username is unavailable");
+            return;
+        }
     }
 }

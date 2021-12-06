@@ -3,36 +3,37 @@ package com.example.myfirstapp.main.UseCases;
 import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
-import com.example.myfirstapp.main.Gateways.Constants;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class GetRecipe {
     /**
-     * Gets the user saved recipes by username
-     * @param username is the username of the user
+     * Gets the user's saved recipes
+     *
+     * @param user is the user
      * @return list of recipe previews
      */
-    public ArrayList<Preview> getUserSavedRecipes(String username) {
-        User user = Constants.USERSECURITY.getUserByID(username);
+    public ArrayList<Preview> getUserSavedRecipes(User user) {
         ArrayList<Recipe> userRecipeList = user.getSavedRecipes();
 
         ArrayList<Preview> previewList = new ArrayList<>();
 
-        for (Recipe recipe: userRecipeList) {
+        for (Recipe recipe : userRecipeList) {
             previewList.add(recipe.getPreview());
         }
 
         return previewList;
     }
+
     /**
      * Gets the user saved recipes by username
-     * @param recipeID is the id of the specified recipe
+     *
+     * @param recipe        is the the specified recipe
      * @param fullOrPreview the type of recipe you want to view
      * @return a preview of a recipe
      */
-    public Preview getSingleRecipe (int recipeID, String fullOrPreview) throws Exception {
+    public Preview getSingleRecipe(Recipe recipe, String fullOrPreview) throws Exception {
         ArrayList<String> validOptionsFull = new ArrayList<>();
         validOptionsFull.add("Full");
         validOptionsFull.add("full");
@@ -52,26 +53,23 @@ public class GetRecipe {
                 && !validOptionsFull.contains(fullOrPreview)) {
             throw new Exception("not a valid option");
         } else if (validOptionsPreview.contains(fullOrPreview)) {
-            recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getPreview();
+            recipeProperties = recipe.getPreview();
         } else if (validOptionsFull.contains(fullOrPreview)) {
-            recipeProperties = Constants.GENRELIBRARY.getRecipeByID("All", recipeID).getFull();
+            recipeProperties = recipe.getFull();
         }
 
         return recipeProperties;
 
 
     }
+
     /**
      * Gets the genre recipes by genreName
-     * @param genreName is the name of the genre you want to be returned
+     *
+     * @param genre is collection of recipes to generate a preview for
      * @return list of recipe previews for a specified genre
      */
-    public ArrayList<Preview> getGenreRecipes (String genreName) {
-
-        HashMap<Integer, Recipe> genre;
-
-        genre = Constants.GENRELIBRARY.getAllRecipes(genreName);
-
+    public ArrayList<Preview> getGenreRecipes(HashMap<Integer, Recipe> genre) {
         ArrayList<Preview> previewList = new ArrayList<>();
         for (Recipe recipe : genre.values()) {
             previewList.add(recipe.getPreview());

@@ -8,14 +8,15 @@ import java.util.ArrayList;
 public class UserRequestFilter {
     /**
      * User requests to filter recipes
+     *
      * @param filterkey is the key you want to filter the data by
-     * @param recipes a list of recipe previews
+     * @param recipes   a list of recipe previews
      * @return a list of recipe previews
      */
     //filter method
     public ArrayList<Preview> filter(ArrayList<Preview> recipes, String filterkey) {
         FilterRecipes f = new FilterRecipes(recipes, filterkey);
         return f.filterRecipes();
-        }
     }
+}
 

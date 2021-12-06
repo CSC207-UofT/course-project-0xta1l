@@ -15,19 +15,15 @@ import android.widget.TextView;
 import com.example.myfirstapp.Globals;
 import com.example.myfirstapp.Notification;
 import com.example.myfirstapp.R;
-import com.example.myfirstapp.genreActivity.GenreRecipeItemActivity;
-import com.example.myfirstapp.genreActivity.GenreRecipeItemReviewActivity;
-import com.example.myfirstapp.main.Controllers.UserRequestRecommend;
 import com.example.myfirstapp.main.Controllers.UserRequestSaveRecipe;
-import com.example.myfirstapp.main.Entities.Preview;
 import com.example.myfirstapp.main.Entities.Recipe;
 
 import java.util.ArrayList;
 
 public class RecommendRecipeItemActivity extends AppCompatActivity {
     /**
-     //        The page where user are able to see all the
-     //        recommended recipe details based on the user's interests
+     * //        The page where user are able to see all the
+     * //        recommended recipe details based on the user's interests
      */
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -65,9 +61,9 @@ public class RecommendRecipeItemActivity extends AppCompatActivity {
             UserRequestSaveRecipe saveController = new UserRequestSaveRecipe();
             saveController.saveRecipe(Globals.getUser_username(), String.valueOf(Globals.getViewRecipeId()));
             finish();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-            Notification.displaySnackBar(findViewById(R.id.recommendRecipePage),"Menu already saved!","top");
+            Notification.displaySnackBar(findViewById(R.id.recommendRecipePage), "Menu already saved!", "top");
         }
     }
 

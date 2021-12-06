@@ -18,8 +18,8 @@ import com.example.myfirstapp.main.Gateways.Read;
 
 public class LoginActivity extends AppCompatActivity {
     /**
-     //        The login page were the user logins
-     //
+     * //        The login page were the user logins
+     * //
      */
 
     @Override
@@ -31,10 +31,12 @@ public class LoginActivity extends AppCompatActivity {
         read.populateGenreLibrary(genreLibrary -> Constants.GENRELIBRARY = genreLibrary);
         read.populateUserSecurity(userSecurity -> Constants.USERSECURITY = userSecurity);
     }
+
     public void onSignUp(View view) {
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
+
     public void onLogin(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         EditText usernameText = (EditText) findViewById(R.id.loginUsernameInput);
@@ -45,16 +47,16 @@ public class LoginActivity extends AppCompatActivity {
         ConstraintLayout constraintLayout = findViewById(R.id.loginPage);
 
         // ensure user is in UserSecurity
-        if (Constants.USERSECURITY.getUsernames().containsKey(username)){
+        if (Constants.USERSECURITY.getUsernames().containsKey(username)) {
             User user = Constants.USERSECURITY.getUserByID(username);
-            if (password.equals(user.getPassword())){
+            if (password.equals(user.getPassword())) {
                 Globals.setUser(user);
                 startActivity(intent);
             } else {
                 Notification.displaySnackBar(constraintLayout, "Incorrect Password!", "top");
             }
         } else {
-             Notification.displaySnackBar(constraintLayout, "Incorrect Username", "top");
+            Notification.displaySnackBar(constraintLayout, "Incorrect Username", "top");
         }
     }
 }
