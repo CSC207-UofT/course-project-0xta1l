@@ -66,7 +66,7 @@ public class HomeFragment extends Fragment {
     @RequiresApi(api = Build.VERSION_CODES.N)
     public static ArrayList<Preview> getRecommendedRecipes() {
         UserRequestRecommend recommendController = new UserRequestRecommend();
-        ArrayList<Preview> recipes = recommendController.recommendRecipes(Globals.getUser_username(), 1);
+        ArrayList<Preview> recipes = recommendController.recommendRecipes(Globals.getUser_username(), 3);
         return recipes;
     }
 

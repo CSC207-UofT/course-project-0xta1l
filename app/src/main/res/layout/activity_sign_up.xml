@@ -7,18 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".loginActivity.SignUpActivity"
     android:background="@color/greyBlue">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/SignUpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
     <Button
         android:id="@+id/signupButton"
         android:layout_width="130dp"
         android:layout_height="66dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="100dp"
         android:onClick="onSignUp"
         android:text="Sign Up!"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupAgeInput" />
 
     <EditText
         android:id="@+id/signupUsernameInput"
@@ -196,5 +204,7 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signupInterestInput" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

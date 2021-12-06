@@ -1,4 +1,8 @@
 package com.example.myfirstapp.main.UseCases;
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Gateways.Constants;
 import com.example.myfirstapp.main.Entities.User;
@@ -29,6 +33,7 @@ public class RecipeCreate {
      * @return recipe
      */
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public Recipe CreateRecipeFromUser(String username, String instructions, String ingredients, ArrayList<String> genres, String name,
                                        int rating, int ID, String image,
                                        String descriptions, int preptime ){

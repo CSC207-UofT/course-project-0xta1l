@@ -25,7 +25,8 @@
                 android:layout_marginStart="7dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="211dp"
-                android:text="Profile:"
+                android:textColor="@color/darkBlue"
+                android:text="Profile"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -39,6 +40,7 @@
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="66dp"
                 android:layout_marginEnd="192dp"
+                android:textColor="@color/darkBlue"
                 android:text="Name:" />
 
             <TextView
@@ -51,19 +53,28 @@
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="115dp"
                 android:layout_marginEnd="192dp"
+                android:textColor="@color/darkBlue"
                 android:text="Bio:" />
 
             <TextView
                 android:id="@+id/account_interest"
                 android:layout_width="wrap_content"
-                android:layout_height="37dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="170dp"
                 android:layout_marginEnd="192dp"
-                android:text="Interests:" />
+                android:background="@android:drawable/editbox_background"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Change Interest"
+                android:padding="12dp"
+                android:textColor="@color/darkBlue"
+                 />
+
 
             <TextView
                 android:id="@+id/account_header_security"
@@ -75,6 +86,7 @@
                 android:layout_marginStart="7dp"
                 android:layout_marginTop="234dp"
                 android:layout_marginEnd="211dp"
+                android:textColor="@color/darkBlue"
                 android:text="Security"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -89,6 +101,7 @@
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="292dp"
                 android:layout_marginEnd="192dp"
+                android:textColor="@color/darkBlue"
                 android:text="Username" />
 
             <TextView
@@ -101,6 +114,7 @@
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="362dp"
                 android:layout_marginEnd="192dp"
+                android:textColor="@color/darkBlue"
                 android:text="Password:" />
 
             <TextView
@@ -113,67 +127,65 @@
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="431dp"
                 android:layout_marginEnd="192dp"
+                android:textColor="@color/darkBlue"
                 android:text="Age:" />
 
             <ImageButton
                 android:id="@+id/account_name_edit"
-                android:layout_width="29dp"
-                android:layout_height="23dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="81dp"
                 android:layout_marginEnd="29dp"
+                android:background="@color/greyBlue"
                 android:onClick="editAccountName"
-                android:src="@drawable/ic_baseline_edit_24" />
+                android:src="@drawable/ic_baseline_edit_24"
+                android:contentDescription="Edit button" />
 
             <ImageButton
                 android:id="@+id/account_bio_edit"
-                android:layout_width="29dp"
-                android:layout_height="23dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="120dp"
                 android:layout_marginEnd="29dp"
+                android:background="@color/greyBlue"
                 android:src="@drawable/ic_baseline_edit_24" />
 
             <ImageButton
-                android:id="@+id/account_interest_edit"
-                android:layout_width="29dp"
-                android:layout_height="23dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="172dp"
-                android:layout_marginEnd="29dp"
-                android:src="@drawable/ic_baseline_edit_24" />
 
-            <ImageButton
                 android:id="@+id/account_username_edit"
-                android:layout_width="29dp"
-                android:layout_height="23dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="301dp"
                 android:layout_marginEnd="29dp"
+                android:background="@color/greyBlue"
                 android:src="@drawable/ic_baseline_edit_24" />
 
             <ImageButton
                 android:id="@+id/account_password_edit"
-                android:layout_width="29dp"
-                android:layout_height="23dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="376dp"
                 android:layout_marginEnd="29dp"
+                android:background="@color/greyBlue"
                 android:src="@drawable/ic_baseline_edit_24" />
 
             <ImageButton
                 android:id="@+id/account_age_edit"
-                android:layout_width="29dp"
-                android:layout_height="23dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="434dp"
                 android:layout_marginEnd="29dp"
+                android:background="@color/greyBlue"
                 android:src="@drawable/ic_baseline_edit_24" />
 
             <Button

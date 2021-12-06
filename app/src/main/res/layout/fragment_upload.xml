@@ -14,7 +14,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <EditText
                 android:id="@+id/uploadTextName"
@@ -25,8 +25,10 @@
                 android:layout_marginStart="83dp"
                 android:layout_marginTop="72dp"
                 android:ems="10"
+                android:hint="Name"
                 android:inputType="textPersonName"
-                android:hint="Name" />
+                android:minHeight="48dp"
+                android:textColorHint="@color/darkBlue" />
 
             <TextView
                 android:id="@+id/uploadGenreInput"
@@ -38,6 +40,7 @@
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:drawablePadding="16dp"
                 android:ems="10"
+                android:textColorHint="@color/darkBlue"
                 android:hint="Select Genres"
                 android:padding="12dp" />
 
@@ -50,8 +53,10 @@
                 android:layout_marginStart="83dp"
                 android:layout_marginTop="242dp"
                 android:ems="10"
+                android:hint="Instructions"
                 android:inputType="textPersonName"
-                android:hint="Instructions" />
+                android:minHeight="48dp"
+                android:textColorHint="@color/darkBlue" />
 
             <EditText
                 android:id="@+id/uploadTextIngredients"
@@ -62,8 +67,10 @@
                 android:layout_marginStart="81dp"
                 android:layout_marginTop="308dp"
                 android:ems="10"
+                android:hint="Ingredients"
                 android:inputType="textPersonName"
-                android:hint="Ingredients" />
+                android:minHeight="48dp"
+                android:textColorHint="@color/darkBlue" />
 
             <EditText
                 android:id="@+id/uploadTextDescription"
@@ -74,8 +81,10 @@
                 android:layout_marginStart="83dp"
                 android:layout_marginTop="372dp"
                 android:ems="10"
+                android:hint="Description"
                 android:inputType="textPersonName"
-                android:hint="Description" />
+                android:minHeight="48dp"
+                android:textColorHint="@color/darkBlue" />
 
             <EditText
                 android:id="@+id/uploadTextImage"
@@ -86,8 +95,10 @@
                 android:layout_marginStart="83dp"
                 android:layout_marginTop="441dp"
                 android:ems="10"
+                android:hint="Image URL"
                 android:inputType="textPersonName"
-                android:hint="Image URL" />
+                android:minHeight="48dp"
+                android:textColorHint="@color/darkBlue" />
 
             <EditText
                 android:id="@+id/uploadTextPreptime"
@@ -98,8 +109,11 @@
                 android:layout_marginStart="82dp"
                 android:layout_marginTop="517dp"
                 android:ems="10"
+                android:hint="Prep time"
                 android:inputType="number"
-                android:hint="Prep time" />
+                android:minHeight="48dp"
+                android:textColorHint="@color/darkBlue"
+                android:autofillHints="" />
 
             <Button
                 android:id="@+id/uploadButtonSubmit"
