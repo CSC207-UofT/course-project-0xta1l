@@ -27,8 +27,8 @@ public class UserRequestBrowse {
     @RequiresApi(api = Build.VERSION_CODES.N)
     public ArrayList<String> browseGenres(String username) {
         User user = Constants.USERSECURITY.getUsernames().get(username);
-        GenreViewSort g = new GenreViewSort();
-        return g.genresViewList(Constants.GENRELIBRARY.getAllGenres(), user);
+        GenreViewSort genres = new GenreViewSort();
+        return genres.genresViewList(Constants.GENRELIBRARY.getAllGenres(), user);
     }
 
     /**
@@ -44,8 +44,8 @@ public class UserRequestBrowse {
     }
 
     public ArrayList<Preview> browseGenreRecipes(String genre) {
-        GetRecipe g = new GetRecipe();
-        return g.getGenreRecipes(Constants.GENRELIBRARY.getAllRecipes(genre));
+        GetRecipe get = new GetRecipe();
+        return get.getGenreRecipes(Constants.GENRELIBRARY.getAllRecipes(genre));
     }
 }
 

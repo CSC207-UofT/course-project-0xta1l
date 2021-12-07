@@ -27,12 +27,12 @@ public class EditUsernameActivity extends AppCompatActivity {
 
     public void editUserName(View view) {
         EditText editText = (EditText) findViewById(R.id.editUserNameText);
-        String s = editText.getText().toString();
-        if (s.isEmpty()) {
+        String username = editText.getText().toString();
+        if (username.isEmpty()) {
             Notification.displaySnackBar(findViewById(R.id.editUsernamePage), "Username cannot be empty");
             return;
         }
-        if (Globals.setUser_username(s)) {
+        if (Globals.setUser_username(username)) {
             finish();
         } else {
             Notification.displaySnackBar(findViewById(R.id.editUsernamePage), "Username is unavailable");

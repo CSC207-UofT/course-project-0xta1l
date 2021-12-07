@@ -27,12 +27,12 @@ public class EditNameActivity extends AppCompatActivity {
 
     public void editName(View view) {
         EditText editText = (EditText) findViewById(R.id.editNameText);
-        String s = editText.getText().toString();
-        if (s.isEmpty()) {
+        String name = editText.getText().toString();
+        if (name.isEmpty()) {
             Notification.displaySnackBar(findViewById(R.id.editNamePage), "Name cannot be empty");
             return;
         }
-        Globals.setUser_name(s);
+        Globals.setUser_name(name);
         finish();
     }
 }

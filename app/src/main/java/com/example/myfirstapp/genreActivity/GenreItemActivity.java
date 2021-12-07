@@ -101,8 +101,8 @@ public class GenreItemActivity extends AppCompatActivity {
         LinearLayout layout = (LinearLayout) this.findViewById(R.id.GenreItemLayout);
         layout.removeAllViews();
         for (Preview recipePreview : recipes) {
-            RelativeLayout p = this.createRecipePreview(recipePreview);
-            layout.addView(p);
+            RelativeLayout preview = this.createRecipePreview(recipePreview);
+            layout.addView(preview);
         }
     }
 
@@ -183,17 +183,17 @@ public class GenreItemActivity extends AppCompatActivity {
         text.setImageResource(getResources().getIdentifier(imgName, "drawable", getPackageName()));
         text.setPadding(10, 20, 0, 0);
         text.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
-        int h = text.getDrawable().getIntrinsicHeight();
-        return h;
+        int height = text.getDrawable().getIntrinsicHeight();
+        return height;
     }
 
     public RelativeLayout createRecipePreview(Preview recipe) {
-        RelativeLayout p = new RelativeLayout(this);
-        p.addView(this.createRecipeImage(recipe));
+        RelativeLayout preview = new RelativeLayout(this);
+        preview.addView(this.createRecipeImage(recipe));
         int height = this.getImageHeight(recipe);
-        p.addView(this.createRecipeName(recipe, height));
-        p.addView(this.createRecipeDetail(recipe, height));
-        return p;
+        preview.addView(this.createRecipeName(recipe, height));
+        preview.addView(this.createRecipeDetail(recipe, height));
+        return preview;
     }
 
 }
