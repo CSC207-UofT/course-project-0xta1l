@@ -34,8 +34,8 @@ public class EditAgeActivity extends AppCompatActivity {
             Notification.displaySnackBar(findViewById(R.id.editAgePage), "At most 3 digits!");
             return;
         }
-        int i = Integer.parseInt(s);
-        Globals.setUserAge(i);
+        int age = Integer.parseInt(s);
+        Globals.setUserAge(age);
         finish();
     }
 }

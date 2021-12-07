@@ -94,8 +94,8 @@ public class RecommendRecipe {
         for (Recipe recipe : recipes) {
             previews.add(recipe.getPreview());
         }
-        SortByRating s = new SortByRating(previews);
-        return s.sort();
+        SortByRating sortByRating = new SortByRating(previews);
+        return sortByRating.sort();
     }
 
     public ArrayList<String> sortByWeight(HashMap<String, Double> genreWeights) {
@@ -116,9 +116,9 @@ public class RecommendRecipe {
         Collections.sort(weights);
         Collections.reverse(weights);
         ArrayList<String> sortedGenres = new ArrayList<>();
-        for (Double w : weights) {
+        for (Double weight : weights) {
             for (String genre : genreWeights.keySet()) {
-                if (Objects.equals(genreWeights.get(genre), w)) {
+                if (Objects.equals(genreWeights.get(genre), weight)) {
                     sortedGenres.add(genre);
                 }
             }

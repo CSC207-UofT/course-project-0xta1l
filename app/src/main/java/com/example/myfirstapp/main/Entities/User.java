@@ -211,7 +211,7 @@ public class User {
     public void setInterests(ArrayList<String> previousInterests, ArrayList<String> interests) {
         this.interests = interests;
         deleteGenreWeights(previousInterests);
-        updateGenreWeights(this.interests);
+        updateGenreWeights(interests);
     }
 
 

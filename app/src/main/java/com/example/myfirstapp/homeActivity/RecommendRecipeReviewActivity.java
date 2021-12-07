@@ -34,14 +34,14 @@ public class RecommendRecipeReviewActivity extends AppCompatActivity {
         LinearLayout layout = (LinearLayout) this.findViewById(R.id.GenreRecipeReviewLayout);
         layout.removeAllViews();
         for (Review review : reviews.values()) {
-            RelativeLayout p = this.createRecipeReview(review);
-            layout.addView(p);
+            RelativeLayout reviewDisplay = this.createRecipeReview(review);
+            layout.addView(reviewDisplay);
         }
 
     }
 
     public RelativeLayout createRecipeReview(Review review) {
-        RelativeLayout p = new RelativeLayout(this);
+        RelativeLayout layout = new RelativeLayout(this);
         TextView text = new TextView(this);
         text.setGravity(Gravity.CENTER);
         text.setGravity(Gravity.LEFT);
@@ -50,7 +50,7 @@ public class RecommendRecipeReviewActivity extends AppCompatActivity {
         text.setTextSize(24);
         text.setText("Name: " + review.getUsername());
         text.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
-        p.addView(text);
+        layout.addView(text);
 
         TextView text2 = new TextView(this);
         text2.setGravity(Gravity.CENTER);
@@ -60,7 +60,7 @@ public class RecommendRecipeReviewActivity extends AppCompatActivity {
         text2.setText("Rating: " + review.getRating());
         text2.setTextSize(18);
         text2.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
-        p.addView(text2);
+        layout.addView(text2);
 
         TextView text3 = new TextView(this);
         text3.setGravity(Gravity.CENTER);
@@ -70,7 +70,7 @@ public class RecommendRecipeReviewActivity extends AppCompatActivity {
         text3.setText("Comments: " + review.getComments());
         text3.setTextSize(18);
         text3.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT));
-        p.addView(text3);
-        return p;
+        layout.addView(text3);
+        return layout;
     }
 }

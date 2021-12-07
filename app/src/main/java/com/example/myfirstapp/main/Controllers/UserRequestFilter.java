@@ -15,8 +15,8 @@ public class UserRequestFilter {
      */
     //filter method
     public ArrayList<Preview> filter(ArrayList<Preview> recipes, String filterkey) {
-        FilterRecipes f = new FilterRecipes(recipes, filterkey);
-        return f.filterRecipes();
+        FilterRecipes filter = new FilterRecipes(recipes, filterkey);
+        return filter.filterRecipes();
     }
 }
 

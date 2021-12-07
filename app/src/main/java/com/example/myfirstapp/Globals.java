@@ -79,6 +79,7 @@ public class Globals {
 
     public static boolean setUser_username(String s) {
         if (!"".equals(getUser_username())) {
+            user.setUsername(s);
             return userEdit.changeUsername(getUser_username(), s);
         } else {
             return false;
@@ -91,6 +92,7 @@ public class Globals {
 
     public static void setUser_password(String password) {
         userEdit.changePassword(getUser_username(), password);
+        user.setPassword(password);
     }
 
     public static String getUser_name() {
@@ -99,6 +101,7 @@ public class Globals {
 
     public static void setUser_name(String name) {
         userEdit.changeName(getUser_username(), name);
+        user.setDisplayName(name);
     }
 
     public static String getUser_bio() {
@@ -107,6 +110,7 @@ public class Globals {
 
     public static void setUser_bio(String bio) {
         userEdit.changeBio(getUser_username(), bio);
+        user.setBiography(bio);
     }
 
     public static ArrayList<String> getUserInterests() {
@@ -129,14 +133,17 @@ public class Globals {
 
     public static void setUserInterests(ArrayList<String> interests) {
         userEdit.changeInterests(getUser_username(), interests);
+        user.setInterests(interests);
     }
 
     public static int getUserAge() {
+        System.out.println(user.getAge());
         return user.getAge();
     }
 
     public static void setUserAge(int age) {
         userEdit.changeAge(getUser_username(), age);
+        user.setAge(age);
     }
 
     public static Recipe getRecipe() {
