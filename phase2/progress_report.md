@@ -51,13 +51,17 @@ Since phase 1, Makayla has worked to create and finalize the recommendations alg
 Kai:
 
 Mieko:
+
 For phase 2, I worked on implementing the database and refactoring the code to adhere to Clean Architecture. I also improved the functionality of the genre weighting and recipe review functionalities of the program.
 
 For refactoring, I predominantly changed parameter types to eliminate any Use Case dependencies on Gateway classes by moving the data access functionality to the Controller, which then passes in the data when it calls the Use Case. I also fixed portions of the app that made direct calls to Use Cases, which required coding new Controllers and editing the methods of pre-existing Controllers. I also cleaned up the imports for all files by removing unused imports.
 For the database implementation, we initially coded and tested in a separate project file, to simplify the project file structure. I was responsible for implementing the Update class, that writes to the database when an existing user or recipe's properties are updated. I also was responsible for moving the database code over from the test application into the main project, and any associated installations. Lastly, I implemented an interface in the Read method (UserDataStatus and RecipeDataStatus) that allows for the rest of the Android app to be alerted once the data from the database is fully loaded by the default Firebase asynchronous methods triggered by EventListeners.
 
+
 Two main pull requests containing the changes outlined above are:
+
 Refactoring: https://github.com/CSC207-UofT/course-project-0xta1l/pull/168
+
 Database: https://github.com/CSC207-UofT/course-project-0xta1l/pull/153
 
 Can: 
