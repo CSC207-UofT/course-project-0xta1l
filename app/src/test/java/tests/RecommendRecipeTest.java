@@ -30,7 +30,7 @@ public class RecommendRecipeTest {
     public void setUp() {
         us.addUser(user1);
         interests.add("Western");
-        user1.setInterests(interests);
+        user1.initializeGenreWeights(interests, genrelibrary.getAllGenres());
         user1.updateGenreWeightsTest1("Canadian");
         user1.updateGenreWeightsTest2("Egyptian");
         user1.updateGenreWeightsTest5("Mexican");
