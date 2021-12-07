@@ -21,9 +21,9 @@ public class SortByInterestsTest {
     ArrayList<String> genre1 = new ArrayList<>(Arrays.asList("Jamaican", "Meals"));
     Recipe recipe1 = new Recipe("just cook", "water flour sugar", genre1, "Oxtail Stew", 5, 50, "img", "description",5);
     ArrayList<String> genre2 = new ArrayList<>(Arrays.asList("Japanese", "Meals"));
-    Recipe recipe2 = new Recipe("just cook", "water tofu", genre2, "Miso Soup", 4, 50, "img", "description",10);
+    Recipe recipe2 = new Recipe("just cook", "water tofu", genre2, "Tea Egg", 4, 50, "img", "description",10);
     ArrayList<String> genre3 = new ArrayList<>(Arrays.asList("Chinese", "Meals"));
-    Recipe recipe3 = new Recipe("just cook", "tea egg", genre3, "Tea Egg", 2, 50, "img", "description",15);
+    Recipe recipe3 = new Recipe("just cook", "tea egg", genre3, "Miso", 4, 50, "img", "description",15);
 
     ArrayList<Preview> recipes = new ArrayList<>();
     ArrayList<Preview> sorted_lst = new ArrayList<>();
