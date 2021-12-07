@@ -3,6 +3,7 @@
 1) Are there free Android App templates that we can use instead of building one from scratch?
 2) Are there popular or generic recommendation algorithms that we can refer to when improving our recommendations feature?
 3) How do you propose we improve our application?
+4) Is there an efficient way to go through our recipe data (particularly the instructions) to make them more readable? 
 
 
 ### What has worked ### 
@@ -14,7 +15,7 @@ Our understanding of how to implement the different features of our project has 
 
 Justin: 
 
-For Phase 2, I mainly worked on implementing more features of our code into the GUI, such as recommendations, a spinner for user to sort by interests, rating or alphabetically, an upload feature wher users can upload their own recipes and also helped to improve the aesthetics of the Android GUI. I have also added a Notification feature where a notifcation will appear when a user does not enter a correct input (E.g user chooses a password with of too little length). 
+For Phase 2, I mainly worked on implementing more features of our code into the GUI, such as recommendations, a spinner for user to sort by interests, rating or alphabetically, an upload feature wher users can upload their own recipes and also helped to improve the aesthetics of the Android GUI. I have also added a Notification feature where a notification will appear when a user does not enter a correct input (E.g user chooses a password with of too little length). 
 
 https://github.com/CSC207-UofT/course-project-0xta1l/pull/110 This is my most significant pull request as I have successfully moved our application from a using a TextUI to an Android App GUI. There are also many other pull requests that slowly transform the Android App into what it is now. 
 
@@ -50,6 +51,14 @@ Since phase 1, Makayla has worked to create and finalize the recommendations alg
 Kai:
 
 Mieko:
+For phase 2, I worked on implementing the database and refactoring the code to adhere to Clean Architecture. I also improved the functionality of the genre weighting and recipe review functionalities of the program.
+
+For refactoring, I predominantly changed parameter types to eliminate any Use Case dependencies on Gateway classes by moving the data access functionality to the Controller, which then passes in the data when it calls the Use Case. I also fixed portions of the app that made direct calls to Use Cases, which required coding new Controllers and editing the methods of pre-existing Controllers. I also cleaned up the imports for all files by removing unused imports.
+For the database implementation, we initially coded and tested in a separate project file, to simplify the project file structure. I was responsible for implementing the Update class, that writes to the database when an existing user or recipe's properties are updated. I also was responsible for moving the database code over from the test application into the main project, and any associated installations. Lastly, I implemented an interface in the Read method (UserDataStatus and RecipeDataStatus) that allows for the rest of the Android app to be alerted once the data from the database is fully loaded by the default Firebase asynchronous methods triggered by EventListeners.
+
+Two main pull requests containing the changes outlined above are:
+Refactoring: https://github.com/CSC207-UofT/course-project-0xta1l/pull/168
+Database: https://github.com/CSC207-UofT/course-project-0xta1l/pull/153
 
 Can: 
 
