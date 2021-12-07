@@ -14,6 +14,8 @@ Our understanding of how to implement the different features of our project has 
 
 Justin: 
 
+For Phase 2, I mainly worked on implementing more features of our code into the GUI, such as recommendations, a spinner for user to sort by interests, rating or alphabetically, an upload feature wher users can upload their own recipes and also helped to improve the aesthetics of the Android GUI. I have also added a Notification feature where a notifcation will appear when a user does not enter a correct input (E.g user chooses a password with of too little length). 
+
 https://github.com/CSC207-UofT/course-project-0xta1l/pull/110 This is my most significant pull request as I have successfully moved our application from a using a TextUI to an Android App GUI. There are also many other pull requests that slowly transform the Android App into what it is now. 
 
 The Android App GUI can be split into 7 components,  
