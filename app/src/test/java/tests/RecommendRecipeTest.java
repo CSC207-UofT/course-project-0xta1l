@@ -24,7 +24,7 @@ public class RecommendRecipeTest {
     User user1 = new User("user1", "password", "jim", 29, "bio", userInterests, genrelist);
     UserSecurity us = Constants.createUsers();
     ArrayList<String> interests = new ArrayList<>();
-    GenreLibrary genrelibrary = new GenreLibrary();
+    GenreLibrary genrelibrary = Constants.createDataset();
 
     @Before
     public void setUp() {
@@ -41,6 +41,7 @@ public class RecommendRecipeTest {
         genrelist.add("Mexican");
         genrelist.add("Chinese");
         genrelist.add("Western");
+
     }
 
     @Test(timeout = 50)

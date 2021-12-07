@@ -2,6 +2,7 @@ package tests;
 
 import com.example.myfirstapp.main.Entities.Recipe;
 import com.example.myfirstapp.main.Entities.User;
+import com.example.myfirstapp.main.Entities.UserInfo;
 import com.example.myfirstapp.main.Gateways.Constants;
 
 import org.junit.*;
@@ -11,6 +12,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
+
+import android.provider.ContactsContract;
 
 
 public class UserTest {
@@ -39,15 +42,14 @@ public class UserTest {
 
     @Test(timeout = 50)
     public void TestgetUserGetProfile() {
-        ArrayList<Object> profile = new ArrayList<>();
-        profile.add("MirSki");
-        profile.add("Amir");
         ArrayList<String> interestlist = new ArrayList<>();
-        interestlist.add("German");
-        profile.add(interestlist);
-        profile.add("boy from BimTown");
-        profile.add(20);
-        assertEquals(profile, user.getProfile());
+        UserInfo profileTest = new UserInfo("Amir", "password", "MirSki", 20, "boy from BimTown", interestlist);
+        assertEquals(profileTest.getAge(), user.getProfile().getAge());
+        assertEquals(profileTest.getBiography(), user.getProfile().getBiography());
+        assertEquals(profileTest.getDisplayName(), user.getProfile().getDisplayName());
+        assertEquals(profileTest.getUsername(), user.getProfile().getUsername());
+        assertEquals(profileTest.getInterests(), user.getProfile().getInterests());
+        assertEquals(profileTest.getPassword(), user.getProfile().getPassword());
     }
 
     @Test(timeout = 50)
