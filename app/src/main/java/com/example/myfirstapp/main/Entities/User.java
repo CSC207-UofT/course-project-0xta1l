@@ -49,7 +49,7 @@ public class User {
     }
 
     /* Updates GenreWeights to match interests */
-    private void initializeGenreWeights(ArrayList<String> interests, ArrayList<String> genreList) {
+    public void initializeGenreWeights(ArrayList<String> interests, ArrayList<String> genreList) {
         for (String interest : interests) {
             if (!this.GenreWeights.containsKey(interest)) {
                 this.GenreWeights.put(interest, 0.70);
