@@ -53,6 +53,14 @@ Can:
 
 Jolina:
 
+For phase 2, I worked on the recommendations system in the Android user interface by adding code to the Home page and connecting the recommendations algorithm in the backend to the interface. I did some edits to the genre browse feature and fixed the test cases. I also worked on the accessibility report.
+
+Two significant pull requests that I have made this term are for the sorting and filtering features I implemented. For sorting, I applied the template design pattern and wrote a parent class SortRecipes and two subclasses SortByRating and SortByInterest. These classes allow our program to sort the recipes alphabetically, by rating (from highest to lowest), and by interest (user’s interests come before other genres/recipes). For filtering, I wrote a class that takes in a genre keyword and filters through a list of recipes to yield a list of recipes that are in this genre category. This feature can be seen in the “My Recipes” page in the UI, where a user can select the genre they want to filter by and then filter their collection of saved recipes.
+
+Sorting: https://github.com/CSC207-UofT/course-project-0xta1l/pull/76
+
+Filtering: https://github.com/CSC207-UofT/course-project-0xta1l/pull/83
+
 Arpi:
 
 
