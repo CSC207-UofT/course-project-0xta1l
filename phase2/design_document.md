@@ -12,7 +12,7 @@ For extended functionality from phase 1, we have implemented a recommendation sy
 
 **Command Tree:**
 
-During this phase, the group has made a number of major design decisions; one of which was the decision on the technique of implementing commands for the text user interface. We decided that applying the Command Design Pattern was right as it was simple and intuitive. To do this, we implemented a CommandTree which acted as a tree where each node stores a Command.  Unfortunately, we ran into an issue where some of the commands required additional input which caused the program to work incorrectly. To solve this, we created subclasses of Command called RecipeCommand which accepted more parameters to account for these issues. This decision was a difficult one to make as it increased the complexity of the inheritance and execution structure. The creation of subclasses allowed a more fluid user experience which increases the usability of our program.
+The group has made a number of major design decisions; one of which was the decision on the technique of implementing commands for the text user interface. We decided that applying the Command Design Pattern was right as it was simple and intuitive. To do this, we implemented a CommandTree which acted as a tree where each node stores a Command.  Unfortunately, we ran into an issue where some of the commands required additional input which caused the program to work incorrectly. To solve this, we created subclasses of Command called RecipeCommand which accepted more parameters to account for these issues. This decision was a difficult one to make as it increased the complexity of the inheritance and execution structure. The creation of subclasses allowed a more fluid user experience which increases the usability of our program. Eventually, although the textUI became obsolete as we transitioned from a textUI to an Android GUI, we still implemented the command design pattern for our text interface which can be checked out in the TextUI branch.
 
 **UI and Presenters:**
 
@@ -33,15 +33,13 @@ The initial design of the Recipe entity included two methods, Recipe.getPreview(
 
 ### How our project adheres to Clean Architecture (and any possible violations) ###
 
-Our project adheres to Clean Architecture by clearly sectioning off each layer of classes into Entities, Use Cases, Controllers, Presenters, and UI (Commands). Entities only interact with other Entities; Use Cases interact with other Use Cases and Entities; Controllers interact with Use Cases; Presenters interact with Controllers; and the UI interacts with Presenters and Controllers.
-
+Our project adheres to Clean Architecture by clearly sectioning off each layer of classes into Entities, Use Cases, Controllers, Presenters, and UI (Commands). Entities only interact with other Entities; Use Cases interact with other Use Cases and Entities; Controllers interact with Use Cases and Gateways; and the UI interacts with Gateways and Controllers.
 A scenario walkthrough for our program would be a user wanting to create an account, viewing the recipes in the Chinese genre, and viewing one of the recipes and its reviews before saving it. The user then would log on again later after trying out the recipe, find the recipe in their saved recipes, and add their own review.
 
-The Dependency Rule is consistently followed when interacting with details in the outer layer, as Use Cases and Entities function without the use of Controllers or classes in outer layers. This is best seen in our two UIs, a text UI and Android App UI. As per Clean Architecture, the main structure of our code consisting of Entities, Use Cases, Controllers, and Presenters functions independently of the UI. This allows for our two UIs to be used interchangeably without needing to make changes to the rest of the program.
+The Dependency Rule is consistently followed when interacting with details in the outer layer, as Use Cases and Entities function without the use of Controllers or classes in outer layers. This is best seen in the  Android App UI. As per Clean Architecture, the main structure of our code consisting of Entities, Use Cases, Controllers, and Presenters functions independently of the UI. This allows for our UI to be changed without needing to make changes to the rest of the program.
 
-Another violation that currently exists is that some of our Entities (namely UserInfo, Preview, FullPreview, and Review) get used and imported by some Controllers and Presenters for data retrieval, meaning that these classes are not restricted to only using the adjacent Use Case layer. This occurs because we chose to have Use Cases create and return data in Entities instead of returning ArrayLists of data to make it clear what the data being returned consists of. We are unsure of how to fix this violation while maintaining the clarity of the data.
+A violation that currently exists, that we were unable to successfully remove, is that some of our Entities get used and imported by some Controllers and GUI for data retrieval, meaning that these classes are not restricted to only being used by the adjacent Use Case layer. This occurs because we chose to have Use Cases create and return data in Entities instead of returning ArrayLists of data to make it clear what the data being returned consists of. We are unsure of how to fix this violation while maintaining the clarity of the data.
 
-Another violation that currently exists that we are unsure of how to fix is that our UseCases call the Constants classes, which act as our Gateways. This is a violation of Clean Architecture because the UseCases should function without needing to access the outer layer Gateways.
 
 ### How our project is consistent with SOLID design ###
 
@@ -60,7 +58,7 @@ For our Android Application, our GUI code has many packages, fragments, accountA
 
 ### Design Patterns Implemented ###
 
-Our group has mainly implemented design pattern: the template design pattern.
+Our group has mainly implemented design pattern: the template design pattern for phase 2.
 
 **Template Design Pattern**
 
