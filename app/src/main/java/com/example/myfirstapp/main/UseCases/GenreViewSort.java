@@ -24,10 +24,11 @@ public class GenreViewSort {
     }
 
     /**
-     * gets the list of genres from the user
+     * Sorts a list of genres according to the user's interests
      *
      * @param user the user
-     * @return list of genres
+     * @param genres the list of genres to be sorted
+     * @return sorted list of genres
      */
     @RequiresApi(api = Build.VERSION_CODES.N)
 

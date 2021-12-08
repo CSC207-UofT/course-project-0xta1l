@@ -17,19 +17,19 @@ public class UserProfileViewEdit {
         return user.getProfile();
     }
 
-
+    /**
+     * Methods to change User attributes:
+     * •editUsername - updates the User's biography
+     * •editPassword -  updates the User's password
+     * •editBio - updates the User's biography
+     * •editAge - updates the User's age
+     * •editName - updates the User's display name
+     * •editInterests - updates the User's interests
+     */
     public void editUsername(String username, String newUsername, UserSecurity userSecurity) {
         userSecurity.changeUsername(username, newUsername);
     }
 
-    /**
-     * changes the password of the user
-     *
-     * @param username     is the username of a specified user
-     * @param newPassword  new password desired by the user
-     * @param userSecurity is the repository of users
-     * @return void
-     */
     public void editPassword(String username, String newPassword, UserSecurity userSecurity) {
         userSecurity.changePassword(username, newPassword);
     }
