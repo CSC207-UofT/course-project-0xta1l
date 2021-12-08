@@ -13,7 +13,7 @@ Our understanding of how to implement the different features of our project has 
 
 ### Summary of work done in phase 2 ###
 
-Justin: 
+# Justin #: 
 
 For Phase 2, I mainly worked on implementing more features of our code into the GUI, such as recommendations, a spinner for user to sort by interests, rating or alphabetically, an upload feature wher users can upload their own recipes and also helped to improve the aesthetics of the Android GUI. I have also added a Notification feature where a notification will appear when a user does not enter a correct input (E.g user chooses a password with of too little length). 
 
@@ -29,7 +29,7 @@ The Android App GUI can be split into 7 components,
 7) Others: Contains classes that complement the other activities. For example, the Notification class creates a message to notify the user that an exception has occurred. 
 This pull request is significant as it transformed our backend code into something that can be visually represented, making it very much applicable in real life. It is much more exciting to be able to visually see the methods you implement work properly rather than just a boring textUI!
 
-Amir:
+# Amir #:
 
 For phase 2, I worked on the database and documentation of the product. For documentation, I added comments in the code improving the readability of our code. Specifically, this documentation described purposes of methods and explained variable names and what they were storing. With respect to the database, I worked on creating and writing to the realtime database that the team decided on. Below are links to important pull requests that I made and their explanations.
 
@@ -41,16 +41,16 @@ https://github.com/CSC207-UofT/course-project-0xta1l/actions/runs/1435900757
 
 Added Review Use Case and Entity class. These changes provided the basis of important functionalities our program would later implement. Some of these features allow users to create a review for a specified recipe, allows recipes to store a list of user written reviews about that specific recipe and allows users to store a list of all reviews written by a specific user. The use cases allows for retrieval of reviews by recipe and user
 
-Makayla:
+# Makayla #:
 
 https://github.com/CSC207-UofT/course-project-0xta1l/pull/115 
 My most significant pull request fully implemented the recommendations algorithm and made the appropriate adjustments throughout the code to allow for it.  This algorithm is the basis for what appears on the homepage of the app, it creates unique recipe recommendations based on the user’s interests and/or app interactions. 
 
 Since phase 1, Makayla has worked to create and finalize the recommendations algorithm and worked with others to design and shape the aesthetics of the app. The recommendations feature required extensive testing to ensure it worked in all scenarios (no user interests, small number of recipes in genre, large number of wanted recommendations). The process of designing the app included choosing a colour palette (light and dark), an appropriate font size, visual/textual placements, and other similar design choices. All choices were made to keep in mind accessibility features and implementation .
 
-Kai:
+# Kai #:
 
-Mieko:
+# Mieko #:
 
 For phase 2, I worked on implementing the database and refactoring the code to adhere to Clean Architecture. I also improved the functionality of the genre weighting and recipe review functionalities of the program.
 
@@ -65,14 +65,14 @@ Refactoring: https://github.com/CSC207-UofT/course-project-0xta1l/pull/168
 
 Database: https://github.com/CSC207-UofT/course-project-0xta1l/pull/153
 
-Can: 
+# Can #: 
 
 For phase 2, I worked on documentation and commenting on Use Cases, Controllers, and Presenters. I added documentation to Use Cases, Controllers, and Presenters to improve the understandability of our code. In the documentation I described what the method does, parameters and their descriptions, and what the method returns. I also created UML diagrams to show how our code works. The first UML diagram shows the pattern for creating a user. The second diagram shows the pattern for viewing a recipe. The dependency of each layer is visible on the UML diagram and the methods that should be called are shown.
 
 My first  significant pull request was adding documentation to our code. https://github.com/CSC207-UofT/course-project-0xta1l/pull/161. It is crucial for our project for the reasons that I mentioned above. My second significant pull request is creating a recipe controller. https://github.com/CSC207-UofT/course-project-0xta1l/pull/97 . Since it helps users to create recipe from the input.
 
 
-Jolina:
+# Jolina #:
 
 For phase 2, I worked on the recommendations system in the Android user interface by adding code to the Home page and connecting the recommendations algorithm in the backend to the interface. I did some edits to the genre browse feature and fixed the test cases. I also worked on the accessibility report.
 
@@ -82,7 +82,7 @@ Sorting: https://github.com/CSC207-UofT/course-project-0xta1l/pull/76
 
 Filtering: https://github.com/CSC207-UofT/course-project-0xta1l/pull/83
 
-Arpi:
+# Arpi #:
 
 
 
