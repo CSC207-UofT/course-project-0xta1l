@@ -31,17 +31,16 @@ public class RecommendRecipeTest {
         us.addUser(user1);
         interests.add("Western");
         user1.initializeGenreWeights(interests, genrelibrary.getAllGenres());
-        user1.updateGenreWeightsTest1("Canadian");
-        user1.updateGenreWeightsTest2("Egyptian");
-        user1.updateGenreWeightsTest5("Mexican");
-        user1.updateGenreWeightsTest3("Chinese");
+        user1.updateGenreWeight("Canadian", 0.1);
+        user1.updateGenreWeight("Egyptian", 0.2);
+        user1.updateGenreWeight("Mexican", 0.5);
+        user1.updateGenreWeight("Chinese", 0.3);
 
         genrelist.add("Canadian");
         genrelist.add("Egyptian");
         genrelist.add("Mexican");
         genrelist.add("Chinese");
         genrelist.add("Western");
-
     }
 
     @Test(timeout = 50)

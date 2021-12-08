@@ -48,7 +48,7 @@ public class User {
         initializeGenreWeights(this.interests, genreList);
     }
 
-    /* Updates GenreWeights to match interests */
+    /* Sets GenreWeights to match interests, and sets all other genres' weights to 0 */
     public void initializeGenreWeights(ArrayList<String> interests, ArrayList<String> genreList) {
         for (String interest : interests) {
             if (!this.GenreWeights.containsKey(interest)) {
@@ -70,12 +70,14 @@ public class User {
         }
     }
 
+    /* Updates GenreWeights to remove old interests */
     private void deleteGenreWeights(ArrayList<String> deleted) {
         for (String delete : deleted) {
             this.GenreWeights.put(delete, (this.GenreWeights.get(delete) - 0.70));
         }
     }
 
+    /* Updates GenreWeights with a specific genre and weight */
     public void updateGenreWeight(String genre, Double weight) {
         this.GenreWeights.put(genre, weight);
     }
@@ -93,31 +95,9 @@ public class User {
                     }
                 }
 
-            } // make sure that GenreWeights.get(genre) is not greater than 1.0
+            }
         }
     }
-
-    /* Updates GenreWeights when an interest is removed */
-    private void updateGenreWeights(String genre) {
-        this.GenreWeights.put(genre, 0.0);
-    }
-
-    public void updateGenreWeightsTest5(String genre) {
-        this.GenreWeights.put(genre, 0.5);
-    }
-
-    public void updateGenreWeightsTest3(String genre) {
-        this.GenreWeights.put(genre, 0.3);
-    }
-
-    public void updateGenreWeightsTest2(String genre) {
-        this.GenreWeights.put(genre, 0.2);
-    }
-
-    public void updateGenreWeightsTest1(String genre) {
-        this.GenreWeights.put(genre, 0.1);
-    }
-
 
     /**
      * Getter Methods for User:
@@ -128,6 +108,7 @@ public class User {
      * •getBiography - returns biography
      * •getInterests - returns interests
      * •getSavedRecipes - returns SavedRecipes
+     * •getSavedRecipesHash - returns a HashMap of saved recipeIDs to Recipe entities
      * •getUserReviews - returns UserReviews
      */
     public String getDisplayName() {

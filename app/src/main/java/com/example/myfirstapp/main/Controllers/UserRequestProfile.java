@@ -8,6 +8,10 @@ import com.example.myfirstapp.main.UseCases.UserProfileViewEdit;
 
 import java.util.ArrayList;
 
+/**
+ * This controller is responsible for displaying and updating a user's profile information both in the app and in the database
+ */
+
 public class UserRequestProfile {
     private UserProfileViewEdit profile = new UserProfileViewEdit();
 
@@ -53,6 +57,13 @@ public class UserRequestProfile {
         Update.userProfile(username, password, "password");
     }
 
+    /**
+     * Checks if newUsername has been taken, and then updates the user's username
+     *
+     * @param username    is the username of the user
+     * @param newUsername the user's desired new username
+     * @return whether the username has been successfully changed
+     */
     public boolean changeUsername(String username, String newUsername) {
         boolean taken = Constants.USERSECURITY.getUsernames().containsKey(newUsername);
         if (!taken) {
@@ -65,6 +76,13 @@ public class UserRequestProfile {
         }
     }
 
+    /**
+     * Methods to change other User profile attributes:
+     * •changeBio - updates the User's biography
+     * •changeAge -  updates the User's age
+     * •changeName - updates the User's display name
+     * •changeInterests - updates the User's interests
+     */
     public void changeBio(String username, String newBio) {
         profile.editBio(username, newBio, Constants.USERSECURITY);
         Update.userProfile(username, newBio, "biography");

@@ -10,17 +10,21 @@ public class FilterRecipes {
     public String key;
 
     /**
-     * Sorts recipes by a filter key
+     * FilterRecipes constructor
      *
      * @param recipes   is the list of recipe previews
      * @param filterkey the key you want to filter by
-     * @return void
      */
     public FilterRecipes(ArrayList<Preview> recipes, String filterkey) {
         this.recipes = recipes;
         this.key = filterkey;
     }
 
+    /**
+     * Filters the stored list of recipes by a filter key
+     *
+     * @return list of recipe previews that include the genre filtered
+     */
     public ArrayList<Preview> filterRecipes() {
         ArrayList<Preview> filtered_recipes = new ArrayList<>();
         for (Preview recipe : this.recipes) {
