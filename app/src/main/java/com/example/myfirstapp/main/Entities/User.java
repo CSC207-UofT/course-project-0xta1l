@@ -18,6 +18,7 @@ import java.util.HashMap;
  * •interests- a list of genres(Strings) the user is interested in (ArrayList<String>)
  * •SavedRecipes - a list of the recipes the user has saved (ArrayList<Recipe>)
  * •UserReviews - a list of the reviews the user has made (ArrayList<Review>)
+ * •GenreWeights - a HashMap of each genre to how much the user has interacted with it (HashMap<String, Integer>)
  */
 public class User {
     private String displayName;
@@ -110,6 +111,7 @@ public class User {
      * •getSavedRecipes - returns SavedRecipes
      * •getSavedRecipesHash - returns a HashMap of saved recipeIDs to Recipe entities
      * •getUserReviews - returns UserReviews
+     * •getGenreWeights - returns GenreWeights
      */
     public String getDisplayName() {
         return displayName;
@@ -164,6 +166,8 @@ public class User {
      * •setBiography - accepts biography attribute for a User
      * •addInterests - adds an interest to the given User's interests
      * •addSavedRecipes - adds a Recipe to the given User's  SavedRecipes
+     * •removeSavedRecipe - removes a Recipe to the given User's  SavedRecipes
+     * •addSavedReviews - adds a Review to the given User's  UserReviews
      */
     public void setDisplayName(String displayName) {
         this.displayName = displayName;
@@ -202,9 +206,14 @@ public class User {
         updateGenreWeights(recipe);
     }
 
+    public void removeSavedRecipes(Recipe recipe) {
+        SavedRecipes.remove(recipe);
+    }
+
     public void addSavedReviews(int recipeID, Review review) {
         UserReviews.put(recipeID, review);
     }
+
 
     /**
      * Generates a profile based on a given User's displayname, username, interests, biography and age
@@ -215,8 +224,4 @@ public class User {
         return new UserInfo(username, password, displayName, age, biography, interests);
     }
 
-
-    public void removeSavedRecipes(Recipe recipe) {
-        SavedRecipes.remove(recipe);
-    }
 }
