@@ -13,7 +13,7 @@ Our understanding of how to implement the different features of our project has 
 
 ### Summary of work done in phase 2 ###
 
-# Justin #: 
+## Justin ##: 
 
 For Phase 2, I mainly worked on implementing more features of our code into the GUI, such as recommendations, a spinner for user to sort by interests, rating or alphabetically, an upload feature wher users can upload their own recipes and also helped to improve the aesthetics of the Android GUI. I have also added a Notification feature where a notification will appear when a user does not enter a correct input (E.g user chooses a password with of too little length). 
 
