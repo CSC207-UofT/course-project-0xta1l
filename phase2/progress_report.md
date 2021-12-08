@@ -66,6 +66,7 @@ Refactoring: https://github.com/CSC207-UofT/course-project-0xta1l/pull/168
 Database: https://github.com/CSC207-UofT/course-project-0xta1l/pull/153
 
 Can: 
+
 For phase 2, I worked on documentation and commenting on Use Cases, Controllers, and Presenters. I added documentation to Use Cases, Controllers, and Presenters to improve the understandability of our code. In the documentation I described what the method does, parameters and their descriptions, and what the method returns. I also created UML diagrams to show how our code works. The first UML diagram shows the pattern for creating a user. The second diagram shows the pattern for viewing a recipe. The dependency of each layer is visible on the UML diagram and the methods that should be called are shown.
 
 My first  significant pull request was adding documentation to our code. https://github.com/CSC207-UofT/course-project-0xta1l/pull/161. It is crucial for our project for the reasons that I mentioned above. My second significant pull request is creating a recipe controller. https://github.com/CSC207-UofT/course-project-0xta1l/pull/97 . Since it helps users to create recipe from the input.
