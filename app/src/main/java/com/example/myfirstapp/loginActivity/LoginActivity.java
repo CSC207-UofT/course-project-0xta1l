@@ -27,9 +27,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         setTitle("Login");
-        Read read = new Read();
-        read.populateGenreLibrary(genreLibrary -> Constants.GENRELIBRARY = genreLibrary);
-        read.populateUserSecurity(userSecurity -> Constants.USERSECURITY = userSecurity);
+
+        // Calls to the Database to load in data
+        Read.populateGenreLibrary(genreLibrary -> Constants.GENRELIBRARY = genreLibrary);
+        Read.populateUserSecurity(userSecurity -> Constants.USERSECURITY = userSecurity);
     }
 
     public void onSignUp(View view) {

@@ -6,9 +6,7 @@ import com.example.myfirstapp.main.Entities.Review;
 import com.example.myfirstapp.main.Entities.User;
 import com.example.myfirstapp.main.Entities.UserSecurity;
 
-import java.io.FileNotFoundException;
 import java.util.*;
-import java.io.*;
 
 public class Constants {
     // Create Constants
@@ -21,9 +19,10 @@ public class Constants {
     public static GenreLibrary GENRELIBRARY = Constants.createDataset();
     public static UserSecurity USERSECURITY = Constants.createUsers();
 
+    /**
+     * Generates a UserSecurity Entity with data for testing
+     */
     public static UserSecurity createUsers() {
-        // NOTE this is temporary placeholder to test android app usage
-
         List<String> interestList1 = Arrays.asList("Mexican", "Western");
         List<String> interestList2 = Arrays.asList("Chinese", "Indian", "Korean");
 
@@ -47,6 +46,9 @@ public class Constants {
         return us;
     }
 
+    /**
+     * Generates a GenreLibrary Entity with data for testing
+     */
     public static GenreLibrary createDataset() {
         GenreLibrary dataset = new GenreLibrary();
         ArrayList<String> r1genres = new ArrayList<>();
@@ -107,35 +109,5 @@ public class Constants {
         }
         return dataset;
     }
-
-    public static GenreLibrary CSVRecipeReader(String fileName) throws FileNotFoundException {
-        GenreLibrary genreLibrary = new GenreLibrary();
-
-        Scanner sc = new Scanner(new File(fileName));
-        sc.useDelimiter(",");
-
-        while (sc.hasNext()) {
-            String[] recipe = sc.next().split(",", 8);
-
-            System.out.println(sc.next());
-        }
-        sc.close();
-//        Path pathToFile = Paths.get(fileName);
-//        Path path = pathToFile.toAbsolutePath();
-//
-//        FileReader fr = new FileReader(path.toString());
-//        BufferedReader br = new BufferedReader(fr);
-//        Stream<String> stream = br.lines();
-//        Object[] list = stream.toArray();
-//
-//        for (Object recipe : list) {
-//            String[] s = recipe.toString().split(",", 6);
-//
-//            Recipe newRecipe = new Recipe();
-//            genreLibrary.addRecipes(newRecipe);
-//        }
-        return genreLibrary;
-    }
-
 
 }

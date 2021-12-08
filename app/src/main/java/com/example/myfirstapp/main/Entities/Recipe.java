@@ -17,6 +17,9 @@ import java.util.HashMap;
  * •description - brief description of the recipe(String)
  * •preview - contains a subset of the recipe's attributes (name, id, genres, rating, description)
  * •preptime  - the number of minutes it takes to prepare for the cooking/baking of recipe
+ * •full  - contains a larger subset of the recipe's attributes (name, id, genres, rating, description,
+ *          image, preptime, ingredients, instructions)
+ * •ratingList  - a list of all the ratings given by the reviews, to calculate the overall rating
  */
 
 public class Recipe {
