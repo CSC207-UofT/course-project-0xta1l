@@ -54,7 +54,7 @@ public class ReadUser {
      * Update a User object by adding its saved reviews attribute.
      *
      * @param singleUserRef is a dataSnapshot object with an individual user as its root node
-     * @param newUser       is the newly constructed user that will be updated
+     * @param newUser       is the newly constructed User object that will be updated
      */
     private static void loadUserSavedReviews(DataSnapshot singleUserRef, User newUser) {
         // Load in user saved reviews
@@ -69,7 +69,7 @@ public class ReadUser {
      * Update a User object by adding its genre weights attribute.
      *
      * @param singleUserRef is a dataSnapshot object with an individual user as its root node
-     * @param newUser       is the newly constructed user that will be updated
+     * @param newUser       is the newly constructed User object that will be updated
      */
     private static void loadUserGenreWeights(DataSnapshot singleUserRef, User newUser) {
         Map<String, Double> userGenreWeights = new HashMap<>();
@@ -85,7 +85,7 @@ public class ReadUser {
      * Update a User object by adding its saved recipes attribute.
      *
      * @param singleUserRef is a dataSnapshot object with an individual user as its root node
-     * @param newUser       is the newly constructed user that will be updated
+     * @param newUser       is the newly constructed User object that will be updated
      */
     @RequiresApi(api = Build.VERSION_CODES.O)
     private static void loadUserSavedRecipes(DataSnapshot singleUserRef, User newUser) {
