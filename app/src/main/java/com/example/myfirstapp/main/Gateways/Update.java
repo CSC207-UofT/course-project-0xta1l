@@ -6,7 +6,9 @@ import com.example.myfirstapp.main.Entities.User;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
+/**
+ * This class is responsible for updating existing entries in the database.
+ */
 public class Update {
     private static FirebaseDatabase database = FirebaseDatabase.getInstance();
 
@@ -46,8 +48,8 @@ public class Update {
     /**
      * Updates a specified property of the user's profile
      *
-     * @param username is the username of the user
-     * @param property is the value of the property
+     * @param username     is the username of the user
+     * @param property     is the value of the property
      * @param propertyName is the name of the property being changed
      */
     public static void userProfile(String username, Object property, String propertyName) {
@@ -61,7 +63,7 @@ public class Update {
      *
      * @param oldUsername is their previous username
      * @param newUsername is their changed username
-     * @param user is the user whose username is changing
+     * @param user        is the user whose username is changing
      */
     public static void username(String oldUsername, String newUsername, User user) {
         DatabaseReference userRef = database.getReference("users/" + oldUsername);

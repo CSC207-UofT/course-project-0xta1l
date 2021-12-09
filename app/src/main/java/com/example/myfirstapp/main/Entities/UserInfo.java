@@ -10,7 +10,7 @@ public class UserInfo {
      * •password - the collection of characters to be used as a security check during log in (String)
      * •displayName - the name the user chooses to appear as to the public (String)
      * •age - the age of the user (int)
-     * •biograpphy - a description of the user (String)
+     * •biography - a description of the user (String)
      * •interests - a list of genres(Strings) the user is interested in (ArrayList<String>)
      */
     private String username;
