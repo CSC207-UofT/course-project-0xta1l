@@ -45,20 +45,20 @@ A violation that currently exists, that we were unable to successfully remove, i
 
 Throughout phase 2, we have made decisions about our code with the SOLID principles in mind. For some principles, their application and our ability to adhere was more apparent than others. Hence, these principles were emphasized in code, specifically the Single-responsibility, Open-Closed, and Dependency Inversion principles. For the Single-responsibility principle, we ensured that each class only has one responsibility and therefore one reason to change. This can be seen in the RecipeSave use case which is only responsible for saving a recipe and so it’s only reason to change is if we wanted to change the way a recipe is saved. For the Open-Closed principle, classes such as RecipeCreate which contain methods for the ways a recipe can be created are closed for modification but open for extension in the addition of new methods to add recipes.
 
-Throughout our code the Dependency Inversion principle is fulfilled as every level of our code (Entities, Use Cases, Controllers, etc.) only interacts with classes within its level or directly below it. For example, the UserRequestSaveRecipe controller only interacts with the RecipeSave use case. In all honesty, this is the principle we have struggled to adhere to the most. We often found ourselves instantiating entities in our controllers before realizing the improper structure and correcting it. There are still instances of this in our code, for example the User Entity is imported in the UserRequestBrowse Controller, but  given more time we might have been able to resolve this break of principle.
+Throughout our code the Dependency Inversion principle is fulfilled as every level of our code (Entities, Use Cases, Controllers, etc.) only interacts with classes within its level or directly below it. For example, the UserRequestSaveRecipe controller only interacts with the RecipeSave use case. In all honesty, this is the principle we have struggled to adhere to the most. We often found ourselves instantiating entities in our controllers before realizing the improper structure and correcting it. There are still instances of this in our code, for example the User Entity is imported in the UserRequestBrowse Controller, but given more time we might have been able to resolve this break of principle.
 
 We were also mindful of the Liskov Substitution principle, ensuring that any subclasses we created could be substituted by their base class and still operate without bugs. Due to our design choices, our code has very little subclassing, so this principle, while not applicable everywhere, was only considered when we created the SortRecipe abstract class. Our code adheres to the principle as the subclasses, SortByInterests and SortByRating, can be substituted for one another when using the overridden .sort() method they both implement. As previously mentioned, we use little subclassing and so our code does not contain any complex interfaces that need to be separated to adhere to the Interface Segregation principle.
 
 ### Packaging Strategies ###
 
-Due to the size of our project and the magnitude of the tasks we wanted to accomplish we focused more on organization than encapsulation. Our main program at present is divided into various packages: Gateways, Controllers, Database, Entities, UseCases. In structure this is most similar to Packaging by Layer. Packaging by layer emphasizes our observation of Clean Architecture. This is because classes from other packages must be imported in from other layers, so violations of Clean Architecture can be easily identified by the packages, and therefore the layers, of classes being imported.
+Due to the size of our project and the magnitude of the tasks we wanted to accomplish we focused more on organization than encapsulation. Our main program at present is divided into various packages: Gateways, Controllers, UseCases, and Entities. In structure this is most similar to Packaging by Layer. Packaging by layer emphasizes our observation of Clean Architecture. This is because classes from other packages must be imported in from other layers, so violations of Clean Architecture can be easily identified by the packages, and therefore the layers, of classes being imported.
 
 For our Android Application, our GUI code has many packages, fragments, accountActivity, genreActivity, myRecipeActivity, homeActivity and loginActivity. We adopted a packaging strategy based on feature, by grouping code together based on common functionality. This packaging strategy allows for easy code navigation since all items needed for a task are in the same package and results in packages with high modularity and minimal coupling between packages.
 
 
 ### Design Patterns Implemented ###
 
-Our group has mainly implemented design pattern: the template design pattern for phase 2.
+Our group has mainly implemented the template design pattern for phase 2.
 
 **Template Design Pattern**
 
@@ -79,6 +79,8 @@ We have robusted implemented data persistence of our Android App GUI via a non-r
 For the testing of our program, we have chosen to test the main features of our program, mainly the Use Cases and Entities. We tested them to ensure that the main functionalities of our program are running as intended.
  
 These functionalities for Use Cases include the filtering/sorting of our recipes by genre, interest and rating, saving recipes and creating reviews and users. We also tested the basic features of the our 2 main entities, User and GenreLibrary to ensure that our base code is accurately coded. 
+
+The database we chose to use is a cloud-hosted database, so we could not effectively use JUnit for testing. Thus, all database testing was done by running code and checking to see if the real-time database matched the expected outcome. 
  
 By ensuring that our main functionalities are accurately coded via testing, this allows us to robustly implement other parts of the code, mainly the controllers and the Android App GUI without constantly changing the methods in Use Cases/Entities.
 
