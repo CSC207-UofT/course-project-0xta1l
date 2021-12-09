@@ -29,13 +29,13 @@ public class EditPasswordActivity extends AppCompatActivity {
 
     public void editPassword(View view) {
         EditText editText = (EditText) findViewById(R.id.editPasswordText);
-        String s = editText.getText().toString();
-        if (s.isEmpty()) {
+        String password = editText.getText().toString();
+        if (password.isEmpty()) {
             Notification.displaySnackBar(findViewById(R.id.editPasswordPage), "Password cannot be empty");
             return;
         }
-        if (s.matches("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")) {
-            Globals.setUser_password(s);
+        if (password.matches("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")) {
+            Globals.setUser_password(password);
             finish();
         } else {
             Notification.displaySnackBar(findViewById(R.id.editPasswordPage), "Invalid password");

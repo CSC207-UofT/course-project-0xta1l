@@ -4,7 +4,7 @@ public class Review {
     /**
      * This class is the Review Entity. It possesses 5 attributes:
      * •rating - the rating given to the Recipe as designated by users (int from 1-5)
-     * •reviewID - the unique identifier for the review (int)
+     * •recipeID - the unique identifier for the recipe the review is about (int)
      * •username - the username of the user that wrote a specific review (String)
      * •comments - the comments on the specific review
      */

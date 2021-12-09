@@ -45,8 +45,6 @@ public class Read {
      * @param dataStatus is the interface mentioned earlier.
      */
     public static void populateUserSecurity(final userDataStatus dataStatus) {
-        // Initialize an empty UserSecurity object to populate
-
         // Add a listener event object to the user database reference
         mUserRef.addValueEventListener(new ValueEventListener() {
             @RequiresApi(api = Build.VERSION_CODES.O)

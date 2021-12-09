@@ -27,12 +27,12 @@ public class UserRequestBrowse {
     @RequiresApi(api = Build.VERSION_CODES.N)
     public ArrayList<String> browseGenres(String username) {
         User user = Constants.USERSECURITY.getUsernames().get(username);
-        GenreViewSort g = new GenreViewSort();
-        return g.genresViewList(Constants.GENRELIBRARY.getAllGenres(), user);
+        GenreViewSort genres = new GenreViewSort();
+        return genres.genresViewList(Constants.GENRELIBRARY.getAllGenres(), user);
     }
 
     /**
-     * Generates the required list of Recipe previews
+     * Generates the list of Recipe previews for a User's saved recipes
      *
      * @param username is the username of a given User
      * @return a list of lists of RecipePreviews
@@ -43,9 +43,15 @@ public class UserRequestBrowse {
         return getRecipe.getUserSavedRecipes(user);
     }
 
+    /**
+     * Generates a list of Recipe previews for the selected genre
+     *
+     * @param genre is the name of a genre
+     * @return a list of lists of RecipePreviews
+     */
     public ArrayList<Preview> browseGenreRecipes(String genre) {
-        GetRecipe g = new GetRecipe();
-        return g.getGenreRecipes(Constants.GENRELIBRARY.getAllRecipes(genre));
+        GetRecipe get = new GetRecipe();
+        return get.getGenreRecipes(Constants.GENRELIBRARY.getAllRecipes(genre));
     }
 }
 

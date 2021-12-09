@@ -78,8 +78,8 @@ public class MyRecipeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_my_recipe, container, false);
-        return v;
+        View view = inflater.inflate(R.layout.fragment_my_recipe, container, false);
+        return view;
     }
 
     @Override

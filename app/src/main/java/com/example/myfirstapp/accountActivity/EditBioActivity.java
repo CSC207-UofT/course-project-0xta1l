@@ -28,12 +28,12 @@ public class EditBioActivity extends AppCompatActivity {
 
     public void editBio(View view) {
         EditText editText = findViewById(R.id.edit_bio_text);
-        String s = editText.getText().toString();
-        if (s.isEmpty()) {
+        String bio = editText.getText().toString();
+        if (bio.isEmpty()) {
             Notification.displaySnackBar(findViewById(R.id.editBioPage), "Bio cannot be empty");
             return;
         }
-        Globals.setUser_bio(s);
+        Globals.setUser_bio(bio);
         finish();
     }
 }

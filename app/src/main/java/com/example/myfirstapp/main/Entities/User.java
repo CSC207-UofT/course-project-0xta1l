@@ -18,6 +18,7 @@ import java.util.HashMap;
  * •interests- a list of genres(Strings) the user is interested in (ArrayList<String>)
  * •SavedRecipes - a list of the recipes the user has saved (ArrayList<Recipe>)
  * •UserReviews - a list of the reviews the user has made (ArrayList<Review>)
+ * •GenreWeights - a HashMap of each genre to how much the user has interacted with it (HashMap<String, Integer>)
  */
 public class User {
     private String displayName;
@@ -48,8 +49,8 @@ public class User {
         initializeGenreWeights(this.interests, genreList);
     }
 
-    /* Updates GenreWeights to match interests */
-    private void initializeGenreWeights(ArrayList<String> interests, ArrayList<String> genreList) {
+    /* Sets GenreWeights to match interests, and sets all other genres' weights to 0 */
+    public void initializeGenreWeights(ArrayList<String> interests, ArrayList<String> genreList) {
         for (String interest : interests) {
             if (!this.GenreWeights.containsKey(interest)) {
                 this.GenreWeights.put(interest, 0.70);
@@ -70,12 +71,14 @@ public class User {
         }
     }
 
+    /* Updates GenreWeights to remove old interests */
     private void deleteGenreWeights(ArrayList<String> deleted) {
         for (String delete : deleted) {
             this.GenreWeights.put(delete, (this.GenreWeights.get(delete) - 0.70));
         }
     }
 
+    /* Updates GenreWeights with a specific genre and weight */
     public void updateGenreWeight(String genre, Double weight) {
         this.GenreWeights.put(genre, weight);
     }
@@ -93,31 +96,9 @@ public class User {
                     }
                 }
 
-            } // make sure that GenreWeights.get(genre) is not greater than 1.0
+            }
         }
     }
-
-    /* Updates GenreWeights when an interest is removed */
-    private void updateGenreWeights(String genre) {
-        this.GenreWeights.put(genre, 0.0);
-    }
-
-    public void updateGenreWeightsTest5(String genre) {
-        this.GenreWeights.put(genre, 0.5);
-    }
-
-    public void updateGenreWeightsTest3(String genre) {
-        this.GenreWeights.put(genre, 0.3);
-    }
-
-    public void updateGenreWeightsTest2(String genre) {
-        this.GenreWeights.put(genre, 0.2);
-    }
-
-    public void updateGenreWeightsTest1(String genre) {
-        this.GenreWeights.put(genre, 0.1);
-    }
-
 
     /**
      * Getter Methods for User:
@@ -128,7 +109,9 @@ public class User {
      * •getBiography - returns biography
      * •getInterests - returns interests
      * •getSavedRecipes - returns SavedRecipes
+     * •getSavedRecipesHash - returns a HashMap of saved recipeIDs to Recipe entities
      * •getUserReviews - returns UserReviews
+     * •getGenreWeights - returns GenreWeights
      */
     public String getDisplayName() {
         return displayName;
@@ -183,6 +166,8 @@ public class User {
      * •setBiography - accepts biography attribute for a User
      * •addInterests - adds an interest to the given User's interests
      * •addSavedRecipes - adds a Recipe to the given User's  SavedRecipes
+     * •removeSavedRecipe - removes a Recipe to the given User's  SavedRecipes
+     * •addSavedReviews - adds a Review to the given User's  UserReviews
      */
     public void setDisplayName(String displayName) {
         this.displayName = displayName;
@@ -211,7 +196,7 @@ public class User {
     public void setInterests(ArrayList<String> previousInterests, ArrayList<String> interests) {
         this.interests = interests;
         deleteGenreWeights(previousInterests);
-        updateGenreWeights(this.interests);
+        updateGenreWeights(interests);
     }
 
 
@@ -221,9 +206,14 @@ public class User {
         updateGenreWeights(recipe);
     }
 
+    public void removeSavedRecipes(Recipe recipe) {
+        SavedRecipes.remove(recipe);
+    }
+
     public void addSavedReviews(int recipeID, Review review) {
         UserReviews.put(recipeID, review);
     }
+
 
     /**
      * Generates a profile based on a given User's displayname, username, interests, biography and age
@@ -234,8 +224,4 @@ public class User {
         return new UserInfo(username, password, displayName, age, biography, interests);
     }
 
-
-    public void removeSavedRecipes(Recipe recipe) {
-        SavedRecipes.remove(recipe);
-    }
 }

@@ -7,19 +7,29 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
+/**
+ * This class is responsible for creating new entries in the database.
+ */
 public class Create {
     private static FirebaseDatabase database = FirebaseDatabase.getInstance();
 
+    /**
+     * Creates a new user entry in the database
+     */
     public static void createUser(User user) {
         DatabaseReference reference = database.getReference("users/" + user.getUsername());
         reference.setValue(user);
     }
 
+    /**
+     * Creates a new recipe entry in the database
+     */
     public static void createRecipe(Recipe recipe) {
         DatabaseReference reference = database.getReference("recipes/" + recipe.getID());
         reference.setValue(recipe);
     }
 
+    // test function for createUser
     public static void testCreate() {
         ArrayList<String> interests = new ArrayList<>();
         interests.add("Western");
@@ -29,6 +39,7 @@ public class Create {
 
     }
 
+    // test function for createRecipe
     public static void testRecipe() {
         ArrayList<String> interests = new ArrayList<>();
         interests.add("Western");

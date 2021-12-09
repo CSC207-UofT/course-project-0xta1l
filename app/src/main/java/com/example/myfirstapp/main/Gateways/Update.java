@@ -6,11 +6,15 @@ import com.example.myfirstapp.main.Entities.User;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
+/**
+ * This class is responsible for updating existing entries in the database.
+ */
 public class Update {
     private static FirebaseDatabase database = FirebaseDatabase.getInstance();
 
-    // updates recipe rating (to be used after updating recipe reviews)
+    /**
+     * Updates a recipe's rating
+     */
     public static void recipeRating(Recipe recipe) {
         DatabaseReference recipeRatingRef = database.getReference("recipes/" + recipe.getID() + "/rating");
         DatabaseReference recipeRatingListRef = database.getReference("recipes/" + recipe.getID() + "/ratingList");
@@ -18,7 +22,9 @@ public class Update {
         recipeRatingListRef.setValue(recipe.getRatingList());
     }
 
-    // UPDATES (OVERRIDES WHOLE, SO CAN BE USED FOR DELETION)
+    /**
+     * Updates a user's saved recipes list
+     */
     public static void recipesSaved(User user) {
         DatabaseReference userSavedRef = database.getReference("users/" + user.getUsername() + "/SavedRecipes");
         userSavedRef.setValue(null);
@@ -28,7 +34,9 @@ public class Update {
         }
     }
 
-    // Updates User and Recipe's List of Reviews
+    /**
+     * Updates a User and Recipe's list of reviews
+     */
     public static void reviewCreated(Review review) {
         DatabaseReference userReviewsRef = database.getReference("users/" + review.getUsername() + "/UserReviews/" + review.getRecipeID());
         DatabaseReference recipeReviewsRef = database.getReference("recipes/" + review.getRecipeID() + "/RecipeReviews/" + review.getUsername());
@@ -37,12 +45,26 @@ public class Update {
         recipeReviewsRef.setValue(review);
     }
 
-    // updates specific property of user profile
+    /**
+     * Updates a specified property of the user's profile
+     *
+     * @param username     is the username of the user
+     * @param property     is the value of the property
+     * @param propertyName is the name of the property being changed
+     */
     public static void userProfile(String username, Object property, String propertyName) {
         DatabaseReference userRef = database.getReference("users/" + username + "/" + propertyName);
         userRef.setValue(property);
     }
 
+    /**
+     * Deletes a user's reference at their old username, and
+     * creates a new reference at their new username
+     *
+     * @param oldUsername is their previous username
+     * @param newUsername is their changed username
+     * @param user        is the user whose username is changing
+     */
     public static void username(String oldUsername, String newUsername, User user) {
         DatabaseReference userRef = database.getReference("users/" + oldUsername);
         userRef.removeValue();
@@ -50,7 +72,9 @@ public class Update {
         newUserRef.setValue(user);
     }
 
-
+    /**
+     * Updates a user's list of genre weights
+     */
     public static void userGenreWeights(User user) {
         DatabaseReference userRef = database.getReference("users/" + user.getUsername() + "/genreWeights");
         userRef.setValue(user.getGenreWeights());

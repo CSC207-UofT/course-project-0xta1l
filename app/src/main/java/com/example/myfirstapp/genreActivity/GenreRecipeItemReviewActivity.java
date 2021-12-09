@@ -36,8 +36,8 @@ public class GenreRecipeItemReviewActivity extends AppCompatActivity {
         LinearLayout layout = (LinearLayout) this.findViewById(R.id.GenreRecipeReviewLayout);
         layout.removeAllViews();
         for (Review review : reviews.values()) {
-            RelativeLayout p = this.createRecipeReview(review);
-            layout.addView(p);
+            RelativeLayout view = this.createRecipeReview(review);
+            layout.addView(view);
         }
 
     }

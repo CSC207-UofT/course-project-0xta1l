@@ -159,16 +159,16 @@ public class HomeFragment extends Fragment {
         text.setImageResource(getResources().getIdentifier(imgName, "drawable", getContext().getPackageName()));
         text.setPadding(10, 20, 0, 0);
         text.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
-        int h = text.getDrawable().getIntrinsicHeight();
-        return h;
+        int height = text.getDrawable().getIntrinsicHeight();
+        return height;
     }
 
     public RelativeLayout createRecipePreview(Preview recipe) {
-        RelativeLayout p = new RelativeLayout(getContext());
-        p.addView(this.createRecipeImage(recipe));
+        RelativeLayout preview = new RelativeLayout(getContext());
+        preview.addView(this.createRecipeImage(recipe));
         int height = this.getImageHeight(recipe);
-        p.addView(this.createRecipeName(recipe, height));
-        p.addView(this.createRecipeDetail(recipe, height));
-        return p;
+        preview.addView(this.createRecipeName(recipe, height));
+        preview.addView(this.createRecipeDetail(recipe, height));
+        return preview;
     }
 }

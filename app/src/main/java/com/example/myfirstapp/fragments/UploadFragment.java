@@ -1,8 +1,10 @@
 package com.example.myfirstapp.fragments;
 
 import android.content.DialogInterface;
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
@@ -153,6 +155,7 @@ public class UploadFragment extends Fragment {
         Button b = v.findViewById(R.id.uploadButtonSubmit);
         UploadFragment that = this;
         b.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v_useless) {
                 that.onSubmit(v);
@@ -162,6 +165,7 @@ public class UploadFragment extends Fragment {
         return v;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void onSubmit(View view) {
         EditText uploadTextName = (EditText) view.findViewById(R.id.uploadTextName);
         EditText uploadTextInstructions = (EditText) view.findViewById(R.id.uploadTextInstructions);
@@ -179,8 +183,8 @@ public class UploadFragment extends Fragment {
 
 
         ArrayList<String> uploadGenres = new ArrayList<>();
-        for (int i : interestList) {
-            uploadGenres.add(genreList[i]);
+        for (int genre : interestList) {
+            uploadGenres.add(genreList[genre]);
         }
 
         if (name.isEmpty() || instructions.isEmpty() || ingredients.isEmpty()
