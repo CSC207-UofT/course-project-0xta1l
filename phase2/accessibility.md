@@ -14,7 +14,7 @@ The program’s design is easy to understand, regardless of the user’s experie
 
 **Principle 4: Perceptible Information**
 
-Our app design aims to communicate necessary information effectively to the user, regardless of ambient conditions. We include a picture in each recipe to avoid redundant presentation of essential information, high contrast such as between recipe titles/images and the background as well as between recipe information and the save/reviews buttons, and maximal legibility for headings and buttons. We hope to implement a text-to-speech feature in the future to communicate to users with sensory limitations.
+Our app design aims to communicate necessary information effectively to the user, regardless of ambient conditions. We include a picture in each recipe to avoid redundant presentation of essential information; high contrast such as between recipe titles/images and the background, between recipe information and the save/reviews buttons, as well as between the background and text colours; and maximal legibility for headings and buttons. We hope to implement a text-to-speech feature in the future to communicate to users with sensory limitations.
 
 **Principle 5: Tolerance for Error**
 
@@ -22,7 +22,7 @@ This principle does not apply to our program because there is no way for any haz
 
 **Principle 6: Low Physical Effort**
 
-Our program can be used efficiently and comfortably and with a minimum of fatigue. We do not enforce any strenuous activity during our app, so the user can maintain a neutral body position. The only actions that a user needs to make physically is to click/press buttons and type information. To minimize repetitive actions, there is a navigation bar located at the bottom of the app’s screen. This bar contains all the main pages a user can go to such as the recommended recipes page, the search recipes page, the upload recipes page, the user’s saved recipes page, and the user profile page so that the user does not have to click the back arrow all the time.
+Our program can be used efficiently, comfortably, and with a minimum of fatigue. We do not enforce any strenuous activity during our app, so the user can maintain a neutral body position. The only actions that a user needs to make physically is to click/press buttons and type information. To minimize repetitive actions, there is a navigation bar located at the bottom of the app’s screen. This bar contains all the main pages a user can go to such as the recommended recipes page, the search recipes page, the upload recipes page, the user’s saved recipes page, and the user profile page so that the user does not have to click the back arrow all the time.
 
 **Principle 7: Size and Space for Approach and Use**
 
