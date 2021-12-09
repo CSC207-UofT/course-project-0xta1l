@@ -91,5 +91,12 @@ Filtering: https://github.com/CSC207-UofT/course-project-0xta1l/pull/83
 
 #### Arpi:
 
+For phase 2, I mainly focused on the database side of the project. I started with researching different database management systems (mongoDB, Postgres, Firebase). After we decided on Firebase, I built an app called ArpiTestApp where Mieko, Amir, and I could work on the database code without worrying about the rest of the app. I wrote the code in Read, ReadUser, ReadRecipe, and ReadReview. I also wrote about the database design decision in the Design Document.
+
+Pull Request: https://github.com/CSC207-UofT/course-project-0xta1l/pull/157
+My most significant pull request was adding in all the gateway classes needed for reading from the database. The Read class adds a listener event object to the database reference which reads from that database reference on startup and whenever the reference is changed. Inside the listener event object, the onDataChange method calls fillUserSecurity and fillGenreLibrary, which use ReadUser, ReadRecipe, and ReadReview to read data from the database and use it to construct custom java objects. 
+
+ArpiTestApp:  https://github.com/Arpi-Yang/ArpiTestApp 
+This test app ended up being really useful because it provided a playground where we could experiment with Firebase and develop code without having to worry about how it might interact with the rest of the program. Errors were isolated to this test app, which made testing and debugging a lot easier. By isolating this section of the project, it made development more manageable and enjoyable.
 
 
