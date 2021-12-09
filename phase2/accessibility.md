@@ -14,7 +14,7 @@ The program’s design is easy to understand, regardless of the user’s experie
 
 **Principle 4: Perceptible Information**
 
-Our app design aims to communicate necessary information effectively to the user, regardless of ambient conditions. We include a picture in each recipe to avoid redundant presentation of essential information; high contrast such as between recipe titles/images and the background, between recipe information and the save/reviews buttons, as well as between the background and text colours; and maximal legibility for headings and buttons. We hope to implement a text-to-speech feature in the future to communicate to users with sensory limitations.
+Our app design aims to communicate necessary information effectively to the user, regardless of ambient conditions. We include a picture in each recipe to avoid redundant presentation of essential information; high contrast such as between recipe titles/images and the background, between recipe information and the save/reviews buttons, as well as between the background and text colours; and a clear and simple font for maximal text legibility. We hope to implement a text-to-speech feature in the future to communicate to users with sensory limitations, as well as a dark mode that can be toggled on and off to accomodate for eye strain.
 
 **Principle 5: Tolerance for Error**
 
