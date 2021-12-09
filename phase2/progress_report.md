@@ -49,6 +49,13 @@ My most significant pull request fully implemented the recommendations algorithm
 Since phase 1, Makayla has worked to create and finalize the recommendations algorithm and worked with others to design and shape the aesthetics of the app. The recommendations feature required extensive testing to ensure it worked in all scenarios (no user interests, small number of recipes in genre, large number of wanted recommendations). The process of designing the app included choosing a colour palette (light and dark), an appropriate font size, visual/textual placements, and other similar design choices. All choices were made to keep in mind accessibility features and implementation .
 
 #### Kai:
+My most significant pull request was the creation of the userinfo entity:https://github.com/CSC207-UofT/course-project-0xta1l/pull/87
+This was used in the user display of user info. Outside of this I worked on documentation in order to improve the functionality and readability of our code and on some controllers and use cases.
+
+For Phase 2 , I mainly worked on the android app:
+Here I implemented the edit password function:https://github.com/CSC207-UofT/course-project-0xta1l/pull/124 . This allowed for greater flexibility in use  and tolerance for error through the facilitation of potential user error or simply the user’s prerogative to make changes.
+I worked on the implementation of a dark mode for the app, but unfortunately  have not been able to efficiently execute it
+
 
 #### Mieko:
 
