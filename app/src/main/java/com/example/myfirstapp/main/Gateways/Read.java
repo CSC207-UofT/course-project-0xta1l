@@ -30,9 +30,6 @@ public class Read {
     }
 
     public static void populateUserSecurity(final userDataStatus dataStatus) {
-        // Initialize an empty UserSecurity object to populate
-        final UserSecurity[] populatedUserSecurity = {new UserSecurity()};
-
         // Add a listener event object to the user database reference
         mUserRef.addValueEventListener(new ValueEventListener() {
             @Override
